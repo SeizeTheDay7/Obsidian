@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C# Note.md",
+                "file": "ClipStudio Note.md",
                 "mode": "source",
                 "source": false
               }
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "C# Note.md",
+                "file": "ClipStudio Note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "C# Note.md",
+                "file": "ClipStudio Note.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "C# Note.md"
+                "file": "ClipStudio Note.md"
               }
             }
           },
@@ -189,12 +189,12 @@
   },
   "active": "9574ee2f4da3bfa4",
   "lastOpenFiles": [
-    "test.md",
+    "Unity Note.md",
     "C# Note.md",
+    "test.md",
     "ClipStudio Note.md",
     "README.md",
     "Blender Note.md",
-    "Unity Note.md",
     "CodingApple/Html.md",
     "CodingApple",
     "개발일지/2023-12-04.md",
