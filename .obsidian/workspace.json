@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "9ec79e54dd36d0f9",
+    "type": "split",
+    "children": [
+      {
+        "id": "dafb080ada2bdbbf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dd06df14f69bcc01",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CodingApple/Html.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9574ee2f4da3bfa4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ClipStudio Note.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "04cddb896f5de14f",
+    "type": "split",
+    "children": [
+      {
+        "id": "9a2ebbee816bee26",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "170bc86352e12229",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "14892e318100b672",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "25de75910cc108de",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "65d7321f3ee43a19",
+            "type": "leaf",
+            "state": {
+              "type": "mk-file-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f9ff6239eab50c7f",
+    "type": "split",
+    "children": [
+      {
+        "id": "64f5d47efea61e49",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3b2e7df7d08c63f3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ClipStudio Note.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cc8cac10bc75d313",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ClipStudio Note.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "27ed6c622f493e33",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "422649cf9fc307a8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ClipStudio Note.md"
+              }
+            }
+          },
+          {
+            "id": "8f3e711280a3cdbe",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "65d1c4cf97866270",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "9574ee2f4da3bfa4",
+  "lastOpenFiles": [
+    "README.md",
+    "C# Note.md",
+    "Blender Note.md",
+    "Unity Note.md",
+    "ClipStudio Note.md",
+    "CodingApple/Html.md",
+    "CodingApple",
+    "개발일지/2023-12-04.md",
+    "개발일지/2023-12-03.md",
+    "개발일지/2023-12-07.md",
+    "개발일지/2024-01-14.md",
+    "Pasted image 20240303030809.png",
+    "Pic/Pasted image 20231204234041.png",
+    "Pic/Pasted image 20240114175411.png",
+    "Pic/Pasted image 20240114182240.png",
+    "Pic/Pasted image 20240114183153.png",
+    "Pic/Pasted image 20240117232616.png",
+    "Pic/Pasted image 20240128153139.png",
+    "Pic/Pasted image 20240128153034.png",
+    "Pic/3D 기능 소개 1.png",
+    "3D 기능 소개.png",
+    "개발일지/Untitled.md",
+    "Spaces/Home/템플릿.md",
+    "Pic/Pic.md",
+    "Pic",
+    "개발일지/개발일지.md",
+    "Obsidian Vault.md",
+    "개발일지/2023-12-05.md",
+    "개발일지/231203.md",
+    "무제 파일 1.md",
+    "무제 파일.md",
+    "Spaces/Home",
+    "Spaces",
+    "개발일지"
+  ]
+}
