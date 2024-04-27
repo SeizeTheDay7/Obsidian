@@ -11,3 +11,5 @@ html 문서 안에서 css 사용법
 
 
 태그 > 클래스 > 아이디
+
+css에 background-image만 넣으면 안되고 width랑 height도 지정해줘야 한다
