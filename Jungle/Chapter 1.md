@@ -19,6 +19,8 @@ html 문서 안에서 css 사용법
 
 태그 > 클래스 > 아이디
 
+div 전체 정렬하는 법 : 요소 전체를 감싸는 div를 만들어 width를 주고, margin: auto를 사용하면 된다.
+
 css에 background-image만 넣으면 안되고 width랑 height도 지정해줘야 한다
 
 <h2>background size 속성</h2>
