@@ -36,13 +36,12 @@
   "deleteFileOption": "trash",
   "expandedSpaces": [
     "/",
-    "//Spaces",
     "//Spaces/Spaces/Home",
     "spaces://$tags/spaces://#내일할것",
     "//개발일지",
-    "//Spaces",
     "//개발일지",
-    "//CodingApple"
+    "//Jungle",
+    "//Jungle"
   ],
   "expandFolderOnClick": true,
   "menuTriggerChar": "/",
@@ -68,7 +67,8 @@
     "spaces://$tags"
   ],
   "rootSpaces": [
-    "Pic"
+    "Pic",
+    "Jungle"
   ],
   "spacesUseAlias": false,
   "fmKeyAlias": "aliases",
