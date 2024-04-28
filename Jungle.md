@@ -193,5 +193,8 @@ $.ajax({
 })
 
 ```
-'
-'
+
+```javascript
+$("#img-cat").attr("src", imgurl);
+// id가 img-cat인 개체의 src 속성을 imgurl로 바꾼다
+```
