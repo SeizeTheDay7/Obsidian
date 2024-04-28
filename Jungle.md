@@ -57,3 +57,12 @@ names = [{'name':'bob','age':20},{'name':'carry','age':38}]
 CSS에서 선택자로 class를 주로 사용한다면,
 jQuery에서는 고유한 하나의 요소를 가리키는 id를 주로 사용한다.
 
+
+jQuery 값 인출, 입력
+```javascript
+let url = $('#post-url').val(); 
+// id post-url인 곳을 가리키고, val()로 값을 가져온다
+
+#('#post-url').val("새 글입니다");
+// 값을 입력한다
+```
