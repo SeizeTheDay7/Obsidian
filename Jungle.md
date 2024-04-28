@@ -168,18 +168,30 @@ $.ajax({
 
 개발자 도구 콘솔에 도봉구 미세먼지 값 찍어보기
 ``` javascript
+// $.ajax 메서드를 사용하여 AJAX 요청을 설정합니다.
 $.ajax({
-  type: "GET",
-  url: "http://openapi.seoul.go.kr:8088/6d4d776b466c656533356a4b4b5872/json/RealtimeCityAir/1/99",
-  data: {},
-  success: function(response){
-		// 값 중 도봉구의 미세먼지 값만 가져와보기
-		let dobong = response["RealtimeCityAir"]["row"][11];
-		let gu_name = dobong['MSRSTE_NM'];
-		let gu_mise = dobong['IDEX_MVL'];
-		console.log(gu_name, gu_mise);
+  type: "GET", // 요청의 타입을 GET으로 설정합니다. 
+  // GET은 서버로부터 정보를 조회할 때 사용합니다.
+  
+  url: "http://openapi.seoul.go.kr:8088/6d4d776b466c656533356a4b4b5872/json/RealtimeCityAir/1/99", // 요청을 보낼 URL입니다. 이 URL은 서울시 대기질 정보 API.
+  
+  data: {}, // 요청과 함께 서버로 보낼 데이터입니다. 
+  // 이 경우, 별도의 데이터를 보내지 않으므로 빈 객체를 사용합니다.
+
+  success: function(response) { 
+    // 서버로부터 응답을 성공적으로 받았을 때 실행될 함수입니다.
+    // response 객체에서 도봉구의 대기 질 정보를 가져옵니다. 
+    let dobong = response["RealtimeCityAir"]["row"][11]; 
+    // 'row' 배열의 12번째(인덱스는 11) 요소가 도봉구의 데이터입니다.
+    let gu_name = dobong['MSRSTE_NM']; 
+    // 'MSRSTE_NM' 키를 통해 구 이름을 가져옵니다.
+    let gu_mise = dobong['IDEX_MVL']; 
+    // 'IDEX_MVL' 키를 통해 미세먼지 수치를 가져옵니다.
+    console.log(gu_name, gu_mise); 
+    // 콘솔에 구 이름과 미세먼지 수치를 출력합니다.
   }
 })
+
 ```
 '
 '
