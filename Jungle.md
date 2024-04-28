@@ -35,3 +35,9 @@ css에 background-image만 넣으면 안되고 width랑 height도 지정해줘�
 |**크기 값**|너비 값과 높이 값을 지정|
 |**백분율**|지정한 요소를 기준으로 백분율 값을 지정|
 
+특정 문자를 다른 문자로 바꾸기
+```Javascript
+let txt = '서울시-마포구-망원동' 
+let names = txt.split('-'); // ['서울시','마포구','망원동'] 
+let result = names.join('>'); // '서울시>마포구>망원동'
+```
