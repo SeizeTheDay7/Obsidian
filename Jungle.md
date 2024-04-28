@@ -41,3 +41,15 @@ let txt = '서울시-마포구-망원동'
 let names = txt.split('-'); // ['서울시','마포구','망원동'] 
 let result = names.join('>'); // '서울시>마포구>망원동'
 ```
+
+
+리스트와 딕셔너리 선언
+```Javascript
+let a_list = [1,2,'hey',3] // 다른 자료형 섞기 가능
+let b_list = [1, 4, 2, [3, 1]] // 리스트 안에 리스트 넣기 가능
+
+let a_dict = {'name':'Bob','age':21} // 딕셔너리 선언 예시
+
+names = [{'name':'bob','age':20},{'name':'carry','age':38}]
+// 딕셔너리들을 요소로 갖는 리스트도 만들 수 있음
+```
