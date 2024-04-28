@@ -63,8 +63,11 @@ jQuery 값 인출, 입력
 let url = $('#post-url').val(); 
 // id post-url인 곳을 가리키고, val()로 값을 가져온다
 
+let btn_next = $('#btn-posting-box').text();
+// text()로 텍스트를 가져온다.
+
 #('#post-url').val("새 글입니다");
-// 값을 입력한다
+// val()에 뭐 넣으면 값을 입력한다
 ```
 
 jQuery div 숨기기, 보이기
