@@ -99,7 +99,7 @@ CSS에서 선택자로 class를 주로 사용한다면,
 jQuery에서는 고유한 하나의 요소를 가리키는 id를 주로 사용한다.
 
 
-jQuery 값 인출, 입력
+jQuery 값 인출, 입력, 삭제
 ```javascript
 let url = $('#post-url').val(); 
 // id post-url인 곳을 가리키고, val()로 값을 가져온다
@@ -107,8 +107,10 @@ let url = $('#post-url').val();
 let btn_next = $('#btn-posting-box').text();
 // text()로 텍스트를 가져온다.
 
-#('#post-url').val("새 글입니다");
+$('#post-url').val("새 글입니다");
 // val()에 뭐 넣으면 값을 입력한다
+
+$('...').empty(); // 삭제
 ```
 
 jQuery div 숨기기, 보이기
