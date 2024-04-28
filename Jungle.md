@@ -66,3 +66,8 @@ let url = $('#post-url').val();
 #('#post-url').val("새 글입니다");
 // 값을 입력한다
 ```
+
+jQuery div 숨기기, 보이기
+```javascript
+$('#post-box').hide();
+```
