@@ -92,4 +92,14 @@ let b_str = `abcdefg
 // 탬플릿 문자열에서는 따옴표 없이 직접 HTML 태그, Javascript 변수를 작성할 수 있다.
 ```
 
+페이지 로딩이 완료되면 실행하기
+```javascript
+<script>
+
+#(document).ready(function(){
+	alert('페이지가 로딩되었습니다')
+});
+
+</script>
+```
 
