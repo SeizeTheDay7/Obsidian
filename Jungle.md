@@ -70,4 +70,5 @@ let url = $('#post-url').val();
 jQuery div 숨기기, 보이기
 ```javascript
 $('#post-box').hide();
+$('#post-box').show();
 ```
