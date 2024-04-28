@@ -75,3 +75,16 @@ jQuery div 숨기기, 보이기
 $('#post-box').hide();
 $('#post-box').show();
 ```
+
+백틱 = 템플릿 리터럴(Template Literals)이란?
+```javascript
+// 일반 문자열을 쓸 때 // 백슬래시(\)로 문자열이 다음줄에 이어짐을 알려줘야한다. // 줄바꿈 이스케이프코드인 \n로 실제로 줄바꿈을 해주어야한다. 
+let a_str = "abcdefg\n\ 
+				hijklmn" 
+
+// 템플릿 리터럴을 사용할 때 
+let b_str = `abcdefg 
+			hijklmn`
+
+
+```
