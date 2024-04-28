@@ -146,6 +146,7 @@ let b_str = `abcdefg
 </script>
 ```
 
+API 기초
 ```
 ? : 여기서부터 전달할 데이터가 작성된다는 의미
 & : 전달할 데이터가 더 있다는 뜻
@@ -153,3 +154,14 @@ let b_str = `abcdefg
 예시) google.com/search?q=아이폰&sourceid=chrome&ie=UTF-8
 ```
 
+Ajax 기본 골격
+```javascript
+$.ajax({
+  type: "GET", // GET 방식으로 요청한다.
+  url: "http://openapi.seoul.go.kr:8088/6d4d776b466c656533356a4b4b5872/json/RealtimeCityAir/1/99",
+  data: {}, // 요청하면서 함께 줄 데이터 (GET 요청시엔 비워두세요)
+  success: function(response){ // 서버에서 준 결과를 response라는 변수에 담음
+    console.log(response) // 서버에서 준 결과를 이용해서 나머지 코드를 작성
+  }
+})
+```
