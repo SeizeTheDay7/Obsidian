@@ -86,5 +86,6 @@ let a_str = "abcdefg\n\
 let b_str = `abcdefg 
 			hijklmn`
 
-
+// 일반 문자열을 쓸 때, 문자열 더하기를 이용해 긴 문자열을 만든다. console.log("num is " + num + ".") 
+// 템플릿 문자열을 쓸 때 ${}를 이용해 긴 문자열 중간에 값을 넣어줄 수 있다. console.log(`num is ${num}.`)
 ```
