@@ -53,3 +53,7 @@ let a_dict = {'name':'Bob','age':21} // 딕셔너리 선언 예시
 names = [{'name':'bob','age':20},{'name':'carry','age':38}]
 // 딕셔너리들을 요소로 갖는 리스트도 만들 수 있음
 ```
+
+CSS에서 선택자로 class를 주로 사용한다면,
+jQuery에서는 고유한 하나의 요소를 가리키는 id를 주로 사용한다.
+
