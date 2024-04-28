@@ -146,3 +146,10 @@ let b_str = `abcdefg
 </script>
 ```
 
+```
+? : 여기서부터 전달할 데이터가 작성된다는 의미
+& : 전달할 데이터가 더 있다는 뜻
+
+예시) google.com/search?q=아이폰&sourceid=chrome&ie=UTF-8
+```
+
