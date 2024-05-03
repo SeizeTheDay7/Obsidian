@@ -266,10 +266,16 @@ powershell에서 디렉토리를 변경할 때 경로에 공백이 포함되어 
 
 파이썬 가상환경
 ```cmd
-python -m venv .venv // 새 가상환경 만들기
+python -m venv .venv //cmd에서 cd로 루트 디렉토리로 설정하고 새 가상환경 만들기
+
+.venv\Scripts\activate //Powershell에서 가상환경 활성화
+
 
 
 ```
 
+>[!bug]
+>보안 문제로 활성화가 실패하면 PowerShell에서 다음 명령어 실행
+>Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 
