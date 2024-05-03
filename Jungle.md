@@ -295,4 +295,9 @@ headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/
 
 data = requests.get('https://serieson.naver.com/v3/movie/ranking/realtime', headers=headers)
 # 타겟 URL을 읽어서 HTML을 받아온다
+
+soup = BeautifulSoup(data.text, 'html.parser')
+print(soup)
+# 받아온 HTML을 BeautifulSoup라는 라이브러리로 검색하기 용이한 상태로 만듦
+# soup라는 변수에 "파싱 용이해진 html"이 담긴 상태가 됨
 ```
