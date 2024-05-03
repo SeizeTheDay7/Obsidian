@@ -260,3 +260,11 @@ def f(x):
     return 2*x+3   # 중괄호 대신에 들여쓰기로 각 블록의 범위를 표시한다.
 ```
 
+>[!bug] 
+powershell에서 디렉토리를 변경할 때 경로에 공백이 포함되어 있으면 오류가 발생함
+'cd 'C:\Users\bioma\OneDrive\바탕 화면\Jungle' 이렇게 따옴표로 감싸야 한다
+
+
+
+
+
