@@ -1,8 +1,9 @@
+<h1> HTML, CSS </h1>
+
 탐색한 태그
 ```html
 <b></b> 볼드체 텍스트
 ```
-
 
 
 head : 페이지의 속성 정보
@@ -64,7 +65,7 @@ div 전체 정렬하는 법 : 요소 전체를 감싸는 div를 만들어 width�
 
 css에 background-image만 넣으면 안되고 width랑 height도 지정해줘야 한다
 
-<h2>background size 속성</h2>
+<h4>background size 속성</h4>
 ![](Pasted%20image%2020240427184239.png)
 
 |   |   |
@@ -75,6 +76,11 @@ css에 background-image만 넣으면 안되고 width랑 height도 지정해줘�
 |**cover**|지정한 요소를 다 덮도록 배경이미지를 확대/축소|
 |**크기 값**|너비 값과 높이 값을 지정|
 |**백분율**|지정한 요소를 기준으로 백분율 값을 지정|
+
+
+<hr>
+
+<h1>Javasciprt</h1>
 
 특정 문자를 다른 문자로 바꾸기
 ```Javascript
@@ -200,7 +206,9 @@ $("#img-cat").attr("src", imgurl);
 ```
 
 
+<hr>
 <h1>Python</h1>
+
 VSCode에서 대화형 인터프리터 열기 : Shift + Enter
 
 ```python
