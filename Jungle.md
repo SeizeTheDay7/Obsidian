@@ -319,5 +319,30 @@ soup.select('상위태그명 > 하위태그명 > 하위태그명')
 soup.select('상위태그명.클래스명 > 하위태그명.클래스명')
 soup.select('.클래스명:nth-child(자식의순서)')
 soup.select('태그명[속성="값"]')
-
 ```
+
+출력 예시
+```python
+movies = soup.select('.RankingList_ranking_list__N4QsH > li')
+
+for movie in movies:
+  title = movie.select_one('.Title_title__s9o0D')
+  RentOrBuy = movie.select_one('.Price_text__pRk_f')
+  print(f"{title.text} {RentOrBuy.text}")
+```
+
+
+<hr>
+<h1> MongoDB </h1>
+
+Database의 종류
+1. RDBMS(SQL)
+    - 행/열의 생김새가 정해져 있다.
+    - 열 중간에 데이터를 삽입하는 것은 어렵다.
+    - 정형화되어 있어 데이터가 일관적이고 분석에 용이하다.
+2. NoSQL(NotOnlySQL)
+	- 딕셔너리 형태로 데이터를 저장한다.
+	- 데이터 하나하나마다 같은 필드 값을 가질 필요가 없다.
+	- 자유로운 형태의 데이터 적재에 유리하다.
+	- 일관성이 부족하다.
+
