@@ -266,11 +266,11 @@ powershell에서 디렉토리를 변경할 때 경로에 공백이 포함되어 
 
 파이썬 가상환경
 ```
-python -m venv .venv //cmd에서 cd로 루트 디렉토리로 설정하고 새 가상환경 만들기
+vscode에서 terminal 종류를 cmd로 바꿀 것
 
-.venv\Scripts\activate //Powershell에서 가상환경 활성화
+python -m venv (가상환경이름) //cd로 루트 디렉토리로 설정하고 새 가상환경 만들기
 
-
+(가상환경이름)\Scripts\activate //가상환경 활성화
 
 ```
 
