@@ -271,7 +271,6 @@ vscode에서 terminal 종류를 cmd로 바꿀 것
 python -m venv (가상환경이름) //cd로 루트 디렉토리로 설정하고 새 가상환경 만들기
 
 (가상환경이름)\Scripts\activate //가상환경 활성화
-
 ```
 
 >[!bug] Bug1
@@ -282,4 +281,6 @@ python -m venv (가상환경이름) //cd로 루트 디렉토리로 설정하고 
 >PowerShell에서는 activate 대신 .\activate 라고 해야 가상환경 실행됨
 
 >[!Success]
+>Ctrl+Shift+P → Python: Select Interpreter
+>하면 Ctrl+F5로 바로 가상환경에서 실행 가능
 
