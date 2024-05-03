@@ -294,4 +294,5 @@ headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/
 # User-Agent 헤더는 요청을 보내는 클라이언트의 유형을 식별하는데 사용한다
 
 data = requests.get('https://serieson.naver.com/v3/movie/ranking/realtime', headers=headers)
+# 타겟 URL을 읽어서 HTML을 받아온다
 ```
