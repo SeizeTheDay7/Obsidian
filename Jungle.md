@@ -287,7 +287,7 @@ python -m venv (가상환경이름) //cd로 루트 디렉토리로 설정하고 
 
 <hr>
 <h1> Python: BeautifulSoup </h1>
-
+데이터 불러오기
 ```python
 headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'}
 # HTTP 요청 헤더를 딕셔너리 형태로 추가한다. 웹 서버는 이 헤더 정보를 사용하여 사용자에게 응답한다.
@@ -300,4 +300,11 @@ soup = BeautifulSoup(data.text, 'html.parser')
 print(soup)
 # 받아온 HTML을 BeautifulSoup라는 라이브러리로 검색하기 용이한 상태로 만듦
 # soup라는 변수에 "파싱 용이해진 html"이 담긴 상태가 됨
+```
+
+데이터 검색
+```python
+#select를 이용해서, li들을 불러오기
+movies = soup.select('.RankingList_ranking_list__N4QsH > li')
+
 ```
