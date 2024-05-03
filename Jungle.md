@@ -278,4 +278,5 @@ python -m venv (가상환경이름) //cd로 루트 디렉토리로 설정하고 
 >보안 문제로 활성화가 실패하면 PowerShell에서 다음 명령어 실행
 >Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
-
+>[!bug]
+>PowerShell에서는 activate 대신 .\activate 라고 해야 가상환경 실행됨
