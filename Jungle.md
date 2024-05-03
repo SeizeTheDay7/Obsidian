@@ -265,7 +265,7 @@ powershell에서 디렉토리를 변경할 때 경로에 공백이 포함되어 
 'cd 'C:\Users\bioma\OneDrive\바탕 화면\Jungle' 이렇게 따옴표로 감싸야 한다
 
 파이썬 가상환경
-```cmd
+```
 python -m venv .venv //cmd에서 cd로 루트 디렉토리로 설정하고 새 가상환경 만들기
 
 .venv\Scripts\activate //Powershell에서 가상환경 활성화
