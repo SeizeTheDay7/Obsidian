@@ -205,14 +205,44 @@ VSCode에서 대화형 인터프리터 열기 : Shift + Enter
 
 ```python
 sentence = 'He said, "Hello!"'
-// 문자열에 따옴표가 포함될 경우, 다른 종류의 따옴표를 써서 문자열 정의
+# 문자열에 따옴표가 포함될 경우, 다른 종류의 따옴표를 써서 문자열 정의
 
 a = "3" b = "5" 
-a + 5 // 파이썬에서는 문자열과 숫자형은 더할 수 없다 
-a * 5 // 33333 a*5는 a+a+a+a+a과 같으므로 "3"이 5번 반복되는 문자열이 반환된다.
+a + 5 # 파이썬에서는 문자열과 숫자형은 더할 수 없다 
+a * 5 # 33333 a*5는 a+a+a+a+a과 같으므로 "3"이 5번 반복되는 문자열이 반환된다.
 
-result = myemail.split('@') // 특정 문자열 기준 나누기
-result = txt.replace('-', '>') // 특정 문자를 다른 문자로 나누기
+result = myemail.split('@') # 특정 문자열 기준 나누기
+result = txt.replace('-', '>') # 특정 문자를 다른 문자로 나누기
 ```
 
+```python
+x = True # 참 
+y = False # 거짓
+# 소문자로 쓰면 자료형으로 인식하지 않고 변수명이라 생각해 에러가 난다. 
+z = true # name 'true' is not defined
+```
+
+```python
+a_list = [] 
+a_list.append(1) # 리스트에 값을 넣는다 
+a_list.append([2,3]) # 리스트에 [2,3]이라는 리스트를 다시 넣는다
+
+len(a_list) # 2 리스트의 길이
+```
+
+```python
+a_dict = {}
+a_dict = {'name':'bob','age':21}
+a_dict['height'] = 178
+# a_dict의 값은? {'name':'bob','age':21, 'height':178}
+
+people = [{'name':'bob','age':20},{'name':'carry','age':38}]
+# people[0]['name']의 값은? 'bob'
+```
+
+```python
+# 파이썬에서 함수 선언 방법
+def f(x):
+    return 2*x+3   # 중괄호 대신에 들여쓰기로 각 블록의 범위를 표시한다.
+```
 
