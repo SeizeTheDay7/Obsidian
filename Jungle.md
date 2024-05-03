@@ -89,6 +89,12 @@ let names = txt.split('-'); // ['서울시','마포구','망원동']
 let result = names.join('>'); // '서울시>마포구>망원동'
 ```
 
+for문
+```javascript
+for i in range(len(fruits))
+	fruit = fruits[i]
+	print(fruit)
+```
 
 리스트와 딕셔너리 선언
 ```Javascript
