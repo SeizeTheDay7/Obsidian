@@ -284,3 +284,14 @@ python -m venv (가상환경이름) //cd로 루트 디렉토리로 설정하고 
 >Ctrl+Shift+P → Python: Select Interpreter
 >하면 Ctrl+F5로 바로 가상환경에서 실행 가능
 
+
+<hr>
+<h1> Python: BeautifulSoup </h1>
+
+```python
+headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'}
+# HTTP 요청 헤더를 딕셔너리 형태로 추가한다. 웹 서버는 이 헤더 정보를 사용하여 사용자에게 응답한다.
+# User-Agent 헤더는 요청을 보내는 클라이언트의 유형을 식별하는데 사용한다
+
+data = requests.get('https://serieson.naver.com/v3/movie/ranking/realtime', headers=headers)
+```
