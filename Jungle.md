@@ -287,7 +287,7 @@ python -m venv (가상환경이름) //cd로 루트 디렉토리로 설정하고 
 
 <hr>
 <h1> Python: BeautifulSoup </h1>
-데이터 불러오기
+데이터 가져오기
 ```python
 headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'}
 # HTTP 요청 헤더를 딕셔너리 형태로 추가한다. 웹 서버는 이 헤더 정보를 사용하여 사용자에게 응답한다.
@@ -302,9 +302,22 @@ print(soup)
 # soup라는 변수에 "파싱 용이해진 html"이 담긴 상태가 됨
 ```
 
-데이터 검색
+**Select**
 ```python
 #select를 이용해서, li들을 불러오기
+# select()는 조건을 만족하는 모든 요소를 리스트에 담아 반환
+# select_one()은 첫번째로 나오는 요소를 반환
 movies = soup.select('.RankingList_ranking_list__N4QsH > li')
+title = movie.select_one('.Title_title__s9o0D')
+
+
+# 선택자를 사용하는 방법 (copy selector)
+soup.select('태그명')
+soup.select('.클래스명')
+soup.select('#아이디명')
+soup.select('상위태그명 > 하위태그명 > 하위태그명')
+soup.select('상위태그명.클래스명 > 하위태그명.클래스명')
+soup.select('.클래스명:nth-child(자식의순서)')
+soup.select('태그명[속성="값"]')
 
 ```
