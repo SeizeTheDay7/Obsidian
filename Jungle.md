@@ -202,3 +202,9 @@ $("#img-cat").attr("src", imgurl);
 
 <h1>Python</h1>
 VSCode에서 대화형 인터프리터 열기 : Shift + Enter
+
+```python
+sentence = 'He said, "Hello!"'
+// 문자열에 따옴표가 포함될 경우, 다른 종류의 따옴표를 써서 문자열 정의
+```
+
