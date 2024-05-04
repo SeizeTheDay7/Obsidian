@@ -295,6 +295,8 @@ numbers = [2*x for x in range(10)]
 # year, month, day 변수에 삽입한다.
 ```
 
+if __name__ == “__main__”의 의미
+: 해당 모듈이 임포트된 경우가 아니라 인터프리터에서 직접 실행한 경우에만 실행해라.
 
 <hr>
 <h1> Python: BeautifulSoup </h1>
