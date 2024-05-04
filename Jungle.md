@@ -416,4 +416,9 @@ db.users.delete_one({'name':'bobby'})
 ```python
 movies = list(db.movies.find({'open_month':target_month}))
 
+# pymongo의 find 메서드는 Cursor 객체를 반환한다.
+# Cursor는 데이터베이스에서 실제로 데이터를 가져오기 전까지는 데이터가 없다.
+
+# list 함수를 사용하여 Cursor를 리스트로 변환하면, 데이터가 메모리로 로드된다.
+# 이렇게 하면 데이터베이스로의 추가적인 요청 없이도 데이터를 사용할 수 있다.
 ```
