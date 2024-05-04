@@ -448,3 +448,13 @@ flask에서 불러올 때
 <img src="{{ url_for('static', filename='rome.jpg') }}"/>
 ```
 
+
+
+> GET
+> - 보통 데이터 조회(Read)를 요청할 때 사용
+> - 데이터 전달 : URL 뒤에 물음표를 붙여 key=vaule로 전달
+
+> POST
+> - 보통 데이터 생성(Create), 변경(Update), 삭제(Delete) 요청할 때 사용
+> - 데이터 전달 : 바로 보이지 않는 HTML body에 key:value 형태로 전달
+
