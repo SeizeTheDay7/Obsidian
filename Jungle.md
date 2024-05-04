@@ -431,4 +431,15 @@ flask 서버 만들 때 기본적으로 만들 것
 3. app.py : 통상적으로 flask 서버를 돌리는 파일은 app.py로 이름짓는다.
 
 
+일반 HTML에서 img를 불러올 때 
+```html
+<img src="../static/rome.jpg"/>
+
+// ..는 해당 html 파일이 있는 폴더의 상위 폴더를 의미함
+```
+
+flask에서 불러올 때 
+```HTML
+<img src="{{ url_for('static', filename='rome.jpg') }}"/>
+```
 
