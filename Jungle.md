@@ -422,3 +422,7 @@ movies = list(db.movies.find({'open_month':target_month}))
 # list 함수를 사용하여 Cursor를 리스트로 변환하면, 데이터가 메모리로 로드된다.
 # 이렇게 하면 데이터베이스로의 추가적인 요청 없이도 데이터를 사용할 수 있다.
 ```
+
+
+
+<h1>Flask</h1>
