@@ -369,7 +369,9 @@ Database의 종류
 	- 일관성이 부족하다.
 
 
+<hr>
 <h1>pymongo</h1>
+
 **1. Setting up**
 ```python
 from pymongo import MongoClient
@@ -417,7 +419,10 @@ movies = list(db.movies.find({'open_month':target_month}))
 ```
 
 
+
+<hr>
 <h1>Flask</h1>
+
 >[!note] 라우팅이란?
 >
 >쉬운 말 : `/about` 페이지를 요청하면 "About" 페이지에 대한 정보를, 
