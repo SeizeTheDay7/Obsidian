@@ -426,3 +426,10 @@ movies = list(db.movies.find({'open_month':target_month}))
 
 
 <h1>Flask</h1>
+>[!note] 라우팅이란?
+>
+>쉬운 말 : `/about` 페이지를 요청하면 "About" 페이지에 대한 정보를, 
+>`/contact` 페이지를 요청하면 "Contact" 페이지에 대한 정보를 제공하게 하는 것. 
+>
+>어려운 말 : 서버가 올바른 요청 핸들러나 컨트롤러에 HTTP 요청을 전달하는 과정
+
