@@ -366,5 +366,11 @@ all_users = list(db.users.find({})) # 데이터 모두 보기
 
 same_ages = list(db.users.find({'age':21})) # 특정 조건 데이터 보기
 
+user = db.users.find_one({'name':'bobby'},{'_id':False})
+# 특정 결과 값 뽑아 보기 (그 중 id는 빼고 보기)
+```
 
+**4. 데이터 조회
+```python
+d
 ```
