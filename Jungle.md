@@ -284,6 +284,17 @@ python -m venv (가상환경이름) //cd로 루트 디렉토리로 설정하고 
 >Ctrl+Shift+P → Python: Select Interpreter
 >하면 Ctrl+F5로 바로 가상환경에서 실행 가능
 
+리스트 컴프리헨션
+```python
+numbers = [2*x for x in range(10)]
+# 1부터 10까지의 숫자를 2배 한 숫자의 리스트를 생성한다.
+
+(year, month, day) = [int(element) for element in date.split('.')]
+
+# date.split()으로 쪼개진 년, 월, 일을 리스트 컴프리헨션으로 리스트화하고
+# year, month, day 변수에 삽입한다.
+```
+
 
 <hr>
 <h1> Python: BeautifulSoup </h1>
