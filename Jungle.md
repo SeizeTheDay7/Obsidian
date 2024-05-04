@@ -379,5 +379,6 @@ db.people.update_many(찾을조건,{ '$set': 어떻게바꿀지 })
 db.users.update_one({'name':'bobby'},{'$set':{'age':19}})
 # users 컬렉션에서 name 필드가 bobby인 문서를 찾아서 age 필드를 19로 설정한다
 
-
+db.users.delete_one({'name':'bobby'})
+# 삭제하기
 ```
