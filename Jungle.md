@@ -370,7 +370,8 @@ user = db.users.find_one({'name':'bobby'},{'_id':False})
 # 특정 결과 값 뽑아 보기 (그 중 id는 빼고 보기)
 ```
 
-**4. 데이터 조회
+**4. 데이터 수정
 ```python
-d
+db.people.update_many(찾을조건,{ '$set': 어떻게바꿀지 })
+# people이라는 collection에서 특정 조건에 해당하는 모든 
 ```
