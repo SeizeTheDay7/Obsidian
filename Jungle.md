@@ -373,5 +373,11 @@ user = db.users.find_one({'name':'bobby'},{'_id':False})
 **4. 데이터 수정
 ```python
 db.people.update_many(찾을조건,{ '$set': 어떻게바꿀지 })
-# people이라는 collection에서 특정 조건에 해당하는 모든 
+# people이라는 collection에서 특정 조건에 해당하는 모든 문서들의 데이터를 수정
+# '$set'은 MongoDB의 업데이트 연산자로, 지정된 필드의 값을 새로운 값으로 변경한다.
+
+db.users.update_one({'name':'bobby'},{'$set':{'age':19}})
+# users 컬렉션에서 name 필드가 bobby인 문서를 찾아서 age 필드를 19로 설정한다
+
+
 ```
