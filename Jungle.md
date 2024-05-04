@@ -346,3 +346,25 @@ Database의 종류
 	- 자유로운 형태의 데이터 적재에 유리하다.
 	- 일관성이 부족하다.
 
+
+<h1>pymongo</h1>
+**1. Setting up**
+```python
+from pymongo import MongoClient
+client = MongoClient('localhost', 27017) # mongoDB는 27017 포트를 사용한다
+db = client.jungle # 'jungle'이라는 이름의 db를 만든다.
+```
+
+**2. Inserting data
+```python
+# 'users'라는 collection에 {'name':'bobby','age':21}를 넣는다. db.users.insert_one({'name':'bobby','age':21})
+```
+
+**3. 데이터 조회
+```python
+all_users = list(db.users.find({})) # 데이터 모두 보기 
+
+same_ages = list(db.users.find({'age':21})) # 특정 조건 데이터 보기
+
+
+```
