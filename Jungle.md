@@ -425,3 +425,8 @@ movies = list(db.movies.find({'open_month':target_month}))
 >
 >어려운 말 : 서버가 올바른 요청 핸들러나 컨트롤러에 HTTP 요청을 전달하는 과정
 
+flask 서버 만들 때 기본적으로 만들 것
+1. static 폴더
+2. templates 폴더
+3. app.py : 통상적으로 flask 서버를 돌리는 파일은 app.py로 이름짓는다.
+
