@@ -294,7 +294,8 @@ numbers = [2*x for x in range(10)]
 # year, month, day 변수에 삽입한다.
 
 viewers = int(''.join([c for c in viewers if c.isdigit()]))
-# viewers에서 숫자 데이터만 
+# viewers에서 숫자 데이터만 가져온다
+# ''.join은 리스트의 요소 사이에 아무런 문자도 추가하지 않고 그대로 연결한다는 뜻
 ```
 
 if __name__ == “__main__”의 의미
