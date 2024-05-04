@@ -349,6 +349,7 @@ for movie in movies:
 
 findChild 메서드
 ```python
+tag_element = movie.select_one('.txt_info > .info_txt:nth-child(2)')
 viewers = tag_element.findChild(string=True, recursive=False)
 
 # findChild : BeautifulSoup의 메서드이다. 주어진 요소의 자식들 중에서 특정 조건에 맞는 첫번째 요소를 찾는다.
