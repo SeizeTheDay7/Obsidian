@@ -1,24 +1,17 @@
 <h1> HTML, CSS </h1>
+>head : 페이지의 속성 정보
+>body : 페이지의 내용
 
-탐색한 태그
-```html
-<b></b> 볼드체 텍스트
-```
+>상위 요소(부모)의 속성을 바꾸면 하위 요소(자식)의 속성도 바뀐다
 
-
-head : 페이지의 속성 정보
-body : 페이지의 내용
-
-상위 요소(부모)의 속성을 바꾸면 하위 요소(자식)의 속성도 바뀐다
-
-html 문서 안에서 css 사용법
+**html 문서 안에서 css 사용법**
 ```html
 <head> ~ </html> <style> ~ </style>을 만들어 작성
 // red-font라는 클래스 만들 때 .red-font{...}라고 써줘야 함
 ```
 
 
-태그 > 클래스 > 아이디
+>태그 > 클래스 > 아이디
 
 ```CSS
 /* 모든 태그에 적용하고 싶을 때 */
@@ -61,9 +54,9 @@ html 문서 안에서 css 사용법
 ```
 
 
-div 전체 정렬하는 법 : 요소 전체를 감싸는 div를 만들어 width를 주고, margin: auto를 사용하면 된다.
+>div 전체 정렬하는 법 : 요소 전체를 감싸는 div를 만들어 width를 주고, margin: auto를 사용하면 된다.
 
-css에 background-image만 넣으면 안되고 width랑 height도 지정해줘야 한다
+>css에 background-image만 넣으면 안되고 width랑 height도 지정해줘야 한다
 
 <h4>background size 속성</h4>
 ![](Pasted%20image%2020240427184239.png)
@@ -107,11 +100,11 @@ names = [{'name':'bob','age':20},{'name':'carry','age':38}]
 // 딕셔너리들을 요소로 갖는 리스트도 만들 수 있음
 ```
 
-CSS에서 선택자로 class를 주로 사용한다면,
-jQuery에서는 고유한 하나의 요소를 가리키는 id를 주로 사용한다.
+>CSS에서 선택자로 class를 주로 사용한다면,
+>jQuery에서는 고유한 하나의 요소를 가리키는 id를 주로 사용한다.
 
 
-jQuery 값 인출, 입력, 삭제
+**jQuery 값 인출, 입력, 삭제**
 ```javascript
 let url = $('#post-url').val(); 
 // id post-url인 곳을 가리키고, val()로 값을 가져온다
@@ -125,13 +118,13 @@ $('#post-url').val("새 글입니다");
 $('...').empty(); // 삭제
 ```
 
-jQuery div 숨기기, 보이기
+**jQuery div 숨기기, 보이기**
 ```javascript
 $('#post-box').hide();
 $('#post-box').show();
 ```
 
-백틱 = 템플릿 리터럴(Template Literals)이란?
+**백틱 = 템플릿 리터럴(Template Literals)이란?**
 ```javascript
 // 일반 문자열을 쓸 때 // 백슬래시(\)로 문자열이 다음줄에 이어짐을 알려줘야한다. // 줄바꿈 이스케이프코드인 \n로 실제로 줄바꿈을 해주어야한다. 
 let a_str = "abcdefg\n\ 
@@ -147,7 +140,7 @@ let b_str = `abcdefg
 // 탬플릿 문자열에서는 따옴표 없이 직접 HTML 태그, Javascript 변수를 작성할 수 있다.
 ```
 
-페이지 로딩이 완료되면 실행하기
+**페이지 로딩이 완료되면 실행하기**
 ```javascript
 <script>
 
@@ -158,7 +151,7 @@ let b_str = `abcdefg
 </script>
 ```
 
-API 기초
+**API 기초**
 ```
 ? : 여기서부터 전달할 데이터가 작성된다는 의미
 & : 전달할 데이터가 더 있다는 뜻
@@ -166,7 +159,7 @@ API 기초
 예시) google.com/search?q=아이폰&sourceid=chrome&ie=UTF-8
 ```
 
-Ajax 기본 골격
+**Ajax 기본 골격**
 ```javascript
 $.ajax({
   type: "GET", // GET 방식으로 요청한다.
@@ -178,7 +171,7 @@ $.ajax({
 })
 ```
 
-개발자 도구 콘솔에 도봉구 미세먼지 값 찍어보기
+**개발자 도구 콘솔에 도봉구 미세먼지 값 찍어보기**
 ``` javascript
 // $.ajax 메서드를 사용하여 AJAX 요청을 설정합니다.
 $.ajax({
@@ -215,7 +208,7 @@ $("#img-cat").attr("src", imgurl);
 <hr>
 <h1>Python</h1>
 
-VSCode에서 대화형 인터프리터 열기 : Shift + Enter
+>VSCode에서 대화형 인터프리터 열기 : Shift + Enter
 
 ```python
 sentence = 'He said, "Hello!"'
@@ -264,7 +257,7 @@ def f(x):
 powershell에서 디렉토리를 변경할 때 경로에 공백이 포함되어 있으면 오류가 발생함
 'cd 'C:\Users\bioma\OneDrive\바탕 화면\Jungle' 이렇게 따옴표로 감싸야 한다
 
-파이썬 가상환경
+**파이썬 가상환경**
 ```
 vscode에서 terminal 종류를 cmd로 바꿀 것
 
@@ -284,7 +277,7 @@ python -m venv (가상환경이름) //cd로 루트 디렉토리로 설정하고 
 >Ctrl+Shift+P → Python: Select Interpreter
 >하면 Ctrl+F5로 바로 가상환경에서 실행 가능
 
-리스트 컴프리헨션
+**리스트 컴프리헨션**
 ```python
 numbers = [2*x for x in range(10)]
 # 1부터 10까지의 숫자를 2배 한 숫자의 리스트를 생성한다.
@@ -298,8 +291,8 @@ viewers = int(''.join([c for c in viewers if c.isdigit()]))
 # ''.join은 리스트의 요소 사이에 아무런 문자도 추가하지 않고 그대로 연결한다는 뜻
 ```
 
-if __name__ == “__main__”의 의미
-: 해당 모듈이 임포트된 경우가 아니라 인터프리터에서 직접 실행한 경우에만 실행해라.
+>if __name__ == “__main__”의 의미
+>: 해당 모듈이 임포트된 경우가 아니라 인터프리터에서 직접 실행한 경우에만 실행해라.
 
 <hr>
 <h1> Python: BeautifulSoup </h1>
@@ -422,7 +415,6 @@ movies = list(db.movies.find({'open_month':target_month}))
 # list 함수를 사용하여 Cursor를 리스트로 변환하면, 데이터가 메모리로 로드된다.
 # 이렇게 하면 데이터베이스로의 추가적인 요청 없이도 데이터를 사용할 수 있다.
 ```
-
 
 
 <h1>Flask</h1>
