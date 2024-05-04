@@ -411,3 +411,9 @@ db.users.update_one({'name':'bobby'},{'$set':{'age':19}})
 db.users.delete_one({'name':'bobby'})
 # 삭제하기
 ``` 
+
+**5. list 붙이는 이유
+```python
+movies = list(db.movies.find({'open_month':target_month}))
+
+```
