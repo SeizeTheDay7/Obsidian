@@ -347,6 +347,18 @@ for movie in movies:
   print(f"{title.text} {RentOrBuy.text}")
 ```
 
+findChild 메서드
+```python
+viewers = tag_element.findChild(string=True, recursive=False)
+
+# findChild : BeautifulSoup의 메서드이다. 주어진 요소의 자식들 중에서 특정 조건에 맞는 첫번째 요소를 찾는다.
+
+# string=True : 찾고자 하는 자식이 문자열 노드(즉, 태그 사이의 텍스트)일 때 사용
+# HTML 태그가 아닌, 순수한 텍스트 내용을 찾는다.
+
+# recursive=False : 검색을 현재 요소의 바로 아래 직계 자식에만 한정짓는다.
+# True로 설정하면(기본값), 요소의 모든 하위 자식들을 재귀적으로 검색한다.
+```
 
 <hr>
 <h1> MongoDB </h1>
