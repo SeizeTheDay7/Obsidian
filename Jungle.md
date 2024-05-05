@@ -478,3 +478,19 @@ flask에서 불러올 때
 > - 보통 데이터 생성(Create), 변경(Update), 삭제(Delete) 요청할 때 사용
 > - 데이터 전달 : 바로 보이지 않는 HTML body에 key:value 형태로 전달
 
+
+**request.form** : 클라이언트가 POST 요청으로 전송한 폼 데이터에 접근할 수 있는 딕셔너리 객체
+
+예를 들어, 클라이언트 측 HTML 폼이 다음과 같다면,
+```HTML 
+<form action="/memo" method="post">
+    <input type="text" name="url_give" value="https://example.com">
+    <button type="submit">Submit</button>
+</form>
+```
+
+이 폼을 사용자가 서버에 제출하면, 입력한 URL이 '/memo' 경로의 POST 메서드로 전송된다. 그것을
+```Python
+url_receive = request.form['url_give']  # 클라이언트로부터 url을 받는 부분
+```
+로 선언하여 클라이언트가 'url_give'라는 이름으로 보낸 데이터를 추출할 수 있다.
