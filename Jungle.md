@@ -4,15 +4,15 @@
 
 >상위 요소(부모)의 속성을 바꾸면 하위 요소(자식)의 속성도 바뀐다
 
+>태그 > 클래스 > 아이디
+
 **html 문서 안에서 css 사용법**
 ```html
 <head> ~ </html> <style> ~ </style>을 만들어 작성
 // red-font라는 클래스 만들 때 .red-font{...}라고 써줘야 함
 ```
 
-
->태그 > 클래스 > 아이디
-
+**선택자 지정법**
 ```CSS
 /* 모든 태그에 적용하고 싶을 때 */
 * {
@@ -69,6 +69,16 @@
 |**cover**|지정한 요소를 다 덮도록 배경이미지를 확대/축소|
 |**크기 값**|너비 값과 높이 값을 지정|
 |**백분율**|지정한 요소를 기준으로 백분율 값을 지정|
+
+**반응형 웹 디자인**
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+```
+
+`width=device-width` : 웹 페이지의 너비를 장치 화면의 너비에 맞추도록 지정
+`initial-scale=1` : 웹 페이지의 초기 줌 레벨을 100%로 설정
+`shrink-to-fit=no` : iOS 9 이상에서 웹 페이지가 화면에 맞추어 렌더링되는 것을 방지
+
 
 
 <hr>
