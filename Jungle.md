@@ -429,7 +429,7 @@ db.users.delete_one({'name':'bobby'})
 # 삭제하기
 ``` 
 
-**5. list 붙이는 이유
+**list 붙이는 이유**
 ```python
 movies = list(db.movies.find({'open_month':target_month}))
 
@@ -439,6 +439,13 @@ movies = list(db.movies.find({'open_month':target_month}))
 # list 함수를 사용하여 Cursor를 리스트로 변환하면, 데이터가 메모리로 로드된다.
 # 이렇게 하면 데이터베이스로의 추가적인 요청 없이도 데이터를 사용할 수 있다.
 ```
+
+**제외할 필드 설정**
+```python
+result = list(db.articles.find({}, {'_id': 0}))
+```
+MongoDB에서는 조회하는 동안 특정 필드를 포함/제외 할 수 있다. 이를 프로젝션이라 한다.
+프로젝션은 쿼리의 2번째 인자로 전달되며, 포함할 필드는 '1', 제외할 필드는 '0'을 지정한다.
 
 
 
