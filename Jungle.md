@@ -218,10 +218,18 @@ $.ajax({
 
 ```
 
+**객체의 속성 바꾸기**
 ```javascript
 $("#img-cat").attr("src", imgurl);
 // id가 img-cat인 개체의 src 속성을 imgurl로 바꾼다
 ```
+
+창 새로고침 시키기
+```javascript
+window.location.reload();
+```
+window : 브라우저 창이나 탭 자체를 의미.  팝업 열기, 창 크기 조절, URL 변경 등 가능.
+
 
 
 <hr>
