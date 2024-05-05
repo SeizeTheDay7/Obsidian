@@ -292,6 +292,9 @@ python -m venv (가상환경이름) //cd로 루트 디렉토리로 설정하고 
 >[!bug] Bug2
 >PowerShell에서는 activate 대신 .\activate 라고 해야 가상환경 실행됨
 
+>[!bug] Bug3
+>cmd에서는 .venv만 하지 말고 전체 경로를 복붙해야됨
+
 >[!Success]
 >Ctrl+Shift+P → Python: Select Interpreter
 >하면 Ctrl+F5로 바로 가상환경에서 실행 가능
