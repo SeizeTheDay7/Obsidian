@@ -1,4 +1,9 @@
 <h1> HTML, CSS </h1>
+태그 정리
+```html
+<textarea rows="4" cols="50"></textarea> : 여러 줄의 텍스트 입력을 받음
+```
+
 >head : 페이지의 속성 정보
 >body : 페이지의 내용
 
