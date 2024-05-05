@@ -79,6 +79,10 @@
 `initial-scale=1` : 웹 페이지의 초기 줌 레벨을 100%로 설정
 `shrink-to-fit=no` : iOS 9 이상에서 웹 페이지가 화면에 맞추어 렌더링되는 것을 방지
 
+**입력 예시**
+```html
+<input placeholder="비밀번호 입력">
+```
 
 
 <hr>
