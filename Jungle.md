@@ -173,7 +173,7 @@ let b_str = `abcdefg
 ```javascript
 $.ajax({
   type: "GET", // GET 방식으로 요청한다.
-  url: "여기에 URL 입력",
+  url: "여기에 URL 입력", // 서버 상의 특정 엔드포인트('memo') 가리킴
   data: {}, // 요청하면서 함께 줄 데이터 (GET 요청시엔 비운다)
   success: function(response){ // 서버에서 준 결과를 response라는 변수에 담음
     console.log(response) // 서버에서 준 결과를 이용해서 나머지 코드를 작성
