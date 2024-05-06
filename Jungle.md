@@ -386,7 +386,7 @@ title = movie.select_one('.Title_title__s9o0D')
 soup.select('태그명')
 soup.select('.클래스명')
 soup.select('#아이디명')
-soup.select('상위태그명 > 하위태그명 > 하위태그명')
+soup.select('상위태그명 > 하위태그명 > 하위태그명') # 바로 아래에 있는 직계 자손만 검색
 soup.select('상위태그명.클래스명 > 하위태그명.클래스명')
 soup.select('.클래스명:nth-child(자식의순서)')
 soup.select('태그명[속성="값"]')
