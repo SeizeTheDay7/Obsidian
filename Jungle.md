@@ -332,6 +332,9 @@ python -m venv (가상환경이름) //cd로 루트 디렉토리로 설정하고 
 >[!bug] Bug3
 >cmd에서는 .venv만 하지 말고 전체 경로를 복붙해야됨
 
+>[!bug] Bug4
+>가상환경 설정해놨던거 중간에 마음대로 이름 변경하거나 경로 바꾸면 에러 파티남
+
 >[!Success]
 >Ctrl+Shift+P → Python: Select Interpreter
 >하면 Ctrl+F5로 바로 가상환경에서 실행 가능
