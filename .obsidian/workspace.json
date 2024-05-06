@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Jungle.md",
+                "file": "Code Snippet.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Jungle.md",
+                "file": "Code Snippet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Jungle.md",
+                "file": "Code Snippet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Jungle.md"
+                "file": "Code Snippet.md"
               }
             }
           },
@@ -176,11 +176,12 @@
   },
   "active": "9574ee2f4da3bfa4",
   "lastOpenFiles": [
+    "Jungle.md",
+    "Code Snippet.md",
+    "Blender Note.md",
     "C# Note.md",
     "Unity Note.md",
-    "Blender Note.md",
     "ClipStudio Note.md",
-    "Jungle.md",
     "README.md",
     "CodingApple/Html.md",
     "Pic/Pasted image 20240427184239.png",
