@@ -368,6 +368,9 @@ soup = BeautifulSoup(data.text, 'html.parser')
 print(soup)
 # 받아온 HTML을 BeautifulSoup라는 라이브러리로 검색하기 용이한 상태로 만듦
 # soup라는 변수에 "파싱 용이해진 html"이 담긴 상태가 됨
+
+print(soup.prettify())
+# prettify()를 붙여서 출력하면 보기 좋게 정리돼서 출력됨
 ```
 
 **Select**
@@ -412,6 +415,8 @@ viewers = tag_element.findChild(string=True, recursive=False)
 # recursive=False : 검색을 현재 요소의 바로 아래 직계 자식에만 한정짓는다.
 # True로 설정하면(기본값), 요소의 모든 하위 자식들을 재귀적으로 검색한다.
 ```
+
+
 
 <hr>
 <h1> MongoDB </h1>
