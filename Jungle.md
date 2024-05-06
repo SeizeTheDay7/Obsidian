@@ -356,6 +356,11 @@ viewers = int(''.join([c for c in viewers if c.isdigit()]))
 >if __name__ == “__main__”의 의미
 >: 해당 모듈이 임포트된 경우가 아니라 인터프리터에서 직접 실행한 경우에만 실행해라.
 
+**문자열의 비표시 문자도 포함하여 출력**
+```python
+print(repr(talent_name))
+```
+
 <hr>
 <h1> Python: BeautifulSoup </h1>
 데이터 가져오기

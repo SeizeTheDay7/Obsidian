@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code Snippet.md",
+                "file": "Jungle.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code Snippet.md",
+                "file": "Jungle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code Snippet.md",
+                "file": "Jungle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code Snippet.md"
+                "file": "Jungle.md"
               }
             }
           },
@@ -176,8 +176,8 @@
   },
   "active": "9574ee2f4da3bfa4",
   "lastOpenFiles": [
-    "Jungle.md",
     "Code Snippet.md",
+    "Jungle.md",
     "Blender Note.md",
     "C# Note.md",
     "Unity Note.md",
