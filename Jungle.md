@@ -614,3 +614,14 @@ url_receive = request.form['url_give']  # 클라이언트로부터 url을 받는
 ```
 로 선언하여 클라이언트가 'url_give'라는 이름으로 보낸 데이터를 추출할 수 있다.
 
+
+<h5>Javascript와 Python 간 boolean 전달</h5>
+Javascript에서는 boolean이 true / false
+Python에서는 boolean이 True / False 이다.
+URL로 정보를 전달하면 true, false가 문자열로만 인식되므로,
+아래와 같은 코드를 app.py에 추가해주어야 한다.
+
+```python
+  trash = request.args.get('trash', default='false') # 문자열로 받음
+  trashMode = trash.lower() == 'true' # 'true' 문자열이면 True, 그 외에는 False
+```
