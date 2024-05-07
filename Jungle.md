@@ -98,6 +98,10 @@ align-items: center;
 flex-direction: column;
 ```
 
+**납치 안 당하고 얌전히 클릭만 하는 `<a>`태그**
+```javascript
+<a href="#" onclick="return false;">test</a>
+```
 
 
 <hr>
@@ -361,10 +365,6 @@ viewers = int(''.join([c for c in viewers if c.isdigit()]))
 print(repr(talent_name))
 ```
 
-납치 안 당하고 얌전히 클릭만 하는 `<a>`태그
-```python
-<a href="#" onclick="return false;">test</a>
-```
 
 <hr>
 <h1> Python: BeautifulSoup </h1>

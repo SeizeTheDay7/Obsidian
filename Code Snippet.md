@@ -18,7 +18,7 @@ height = get_first_valid(info, height_keys, '')
 unit = info.get('Unit', '')
 ```
 
-문자열 날짜 변환
+**문자열 날짜 변환**
 ```python
 date = "August 12, 2020"
 
