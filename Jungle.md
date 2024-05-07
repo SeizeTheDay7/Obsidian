@@ -243,6 +243,22 @@ $("#img-cat").attr("src", imgurl);
 window.location.reload();
 ```
 
+
+<h5>함수 자체를 할당하는 방법</h5>
+```javascript
+link.onclick = function() { link.onclick = seeTrash(); }
+```
+
+`link.onclick = seeTrash();`와 같은 구문은 
+`seeTrash`나 `returnToList` 함수를 즉시 호출하고, 
+그 결과를 `onclick` 이벤트 핸들러로 할당하려고 합니다. 
+
+이 경우, `seeTrash`와 `returnToList` 함수가 아무런 값을 반환하지 않기 때문에, 
+이벤트 핸들러는 `undefined`로 설정되어 더 이상 클릭 이벤트가 동작하지 않게 됩니다.
+
+`link.onclick = seeTrash;`는 함수를 할당하는 올바른 방법입니다. 
+이렇게 하면 함수가 즉시 호출되지 않고 사용자가 링크를 클릭했을 때 호출됩니다.
+
 <h5>JavaScript DOM API와 jQuery 차이점</h5>
 **JavaScript Only**
 ```javascript
@@ -252,7 +268,7 @@ link.onclick = returnToList;
 showArticles('like', true);
 ```
 
-jQuery
+**jQuery**
 ```javascript
 $('#trashbin').text('📺 리스트 돌아가기')  // 텍스트 변경
              .off('click')               // 기존 클릭 이벤트 핸들러 제거
