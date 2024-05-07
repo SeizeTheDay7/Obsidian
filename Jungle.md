@@ -242,9 +242,26 @@ $("#img-cat").attr("src", imgurl);
 ```javascript
 window.location.reload();
 ```
-window : 브라우저 창이나 탭 자체를 의미.  팝업 열기, 창 크기 조절, URL 변경 등 가능.
+
+<h5>JavaScript DOM API와 jQuery 차이점</h5>
+**JavaScript Only**
+```javascript
+let link = document.getElementById('trashbin');
+link.textContent = '📺 리스트 돌아가기';
+link.onclick = returnToList;
+showArticles('like', true);
+```
+
+jQuery
+```javascript
+$('#trashbin').text('📺 리스트 돌아가기')  // 텍스트 변경
+             .off('click')               // 기존 클릭 이벤트 핸들러 제거
+             .on('click', returnToList); // 새 클릭 이벤트 핸들러 할당
+showArticles('like', true);
+```
 
 <h3>window.location</h3>
+window : 브라우저 창이나 탭 자체를 의미.  팝업 열기, 창 크기 조절, URL 변경 등 가능.
 
 | 속성       | 설명                                                  |
 |------------|-------------------------------------------------------|
