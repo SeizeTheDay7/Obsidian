@@ -275,7 +275,7 @@ $('#trashbin').text('📺 리스트 돌아가기')  // 텍스트 변경
              .on('click', returnToList); // 새 클릭 이벤트 핸들러 할당
 showArticles('like', true);
 ```
-
+이거 이론상 되야 하는건데 왜 안되는건지 몰겠;
 <h3>window.location</h3>
 window : 브라우저 창이나 탭 자체를 의미.  팝업 열기, 창 크기 조절, URL 변경 등 가능.
 
