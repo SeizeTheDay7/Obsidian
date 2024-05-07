@@ -17,3 +17,16 @@ debut = get_first_valid(info, debut_keys, '')
 height = get_first_valid(info, height_keys, '')
 unit = info.get('Unit', '')
 ```
+
+문자열 날짜 변환
+```python
+date = "August 12, 2020"
+
+try:
+    debut_date = datetime.strptime(debut, "%B %d, %Y").strftime("%Y.%m.%d")
+except ValueError:
+    debut_date = '미상'
+
+print(debut_date) # 2020.08.12
+```
+
