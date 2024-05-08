@@ -665,7 +665,6 @@ URL로 정보를 전달하면 true, false가 문자열로만 인식되므로,
 <h1>Amazon EC2</h1>
 접속하는 법 : git bash 열고 `ssh -i /e/Hutosuto.pem ubuntu@13.일이오.64.40`
 
-```
 
 **리눅스 명령어**
 ```
