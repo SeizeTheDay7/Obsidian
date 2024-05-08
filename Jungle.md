@@ -664,7 +664,7 @@ URL로 정보를 전달하면 true, false가 문자열로만 인식되므로,
 <hr>
 <h1>Amazon EC2</h1>
 접속하는 법 : git bash 열고 `ssh -i /e/Hutosuto.pem ubuntu@13.일이오.64.40`
-
+git bash에 명령어 복붙 : 마우스 우클릭
 
 **리눅스 명령어**
 ```
@@ -702,5 +702,7 @@ sudo update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1
 >source .venv/bin/activate # 가상환경 켜고
 >pip install flask
 
-인바운드 규칙 : 클라이언트가 자신의 서버 데이터에 들어올 수 있는 규칙
-아웃바운드 규칙 : 서버에서 외부로 나가는 규칙
+>[!memo] EC2 인스턴스 보안 규칙
+>인바운드 규칙 : 클라이언트가 자신의 서버 데이터에 들어올 수 있는 규칙
+>아웃바운드 규칙 : 서버에서 외부로 나가는 규칙
+
