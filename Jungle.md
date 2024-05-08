@@ -710,3 +710,12 @@ sudo update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1
 >인바운드 규칙 : 클라이언트가 자신의 서버 데이터에 들어올 수 있는 규칙
 >아웃바운드 규칙 : 서버에서 외부로 나가는 규칙
 
+
+>[!bug] mongoDB start 안됨
+우분투 24.04 버전으로 했더니 다 깔고 `sudo service mongod start`했는데 에러남.
+```
+wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+```
+libssl1.1이라는게 없어서 그랬음. 강제로 설치해주고 다시 mongodb 설치하니까 해결됨.
+
