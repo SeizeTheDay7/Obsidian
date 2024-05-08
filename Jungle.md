@@ -719,3 +719,4 @@ sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
 ```
 libssl1.1이라는게 없어서 그랬음. 강제로 설치해주고 다시 mongodb 설치하니까 해결됨.
 
+포트 포워딩 등록 방법 : ```sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 3000
