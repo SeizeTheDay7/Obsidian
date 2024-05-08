@@ -659,3 +659,27 @@ URL로 정보를 전달하면 true, false가 문자열로만 인식되므로,
   trash = request.args.get('trash', default='false') # 문자열로 받음
   trashMode = trash.lower() == 'true' # 'true' 문자열이면 True, 그 외에는 False
 ```
+
+
+<hr>
+<h1>Amazon EC2</h1>
+
+**리눅스 명령어**
+```linux
+ls: 내 위치의 모든 파일을 보여준다.
+
+pwd: 내 위치(폴더의 경로)를 알려준다.
+
+mkdir: 내 위치 아래에 폴더를 하나 만든다.
+
+cd [갈 곳]: 나를 [갈 곳] 폴더로 이동시킨다.
+
+cd .. : 나를 상위 폴더로 이동시킨다.
+
+cp -r [복사할 것] [붙여넣기 할 것]: 복사 붙여넣기
+
+rm -rf [지울 것]: 지우기
+
+sudo [실행 할 명령어]: 명령어를 관리자 권한으로 실행한다.
+sudo su: 관리가 권한으로 들어간다. (나올때는 exit으로 나옴)
+```
