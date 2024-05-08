@@ -663,6 +663,8 @@ URL로 정보를 전달하면 true, false가 문자열로만 인식되므로,
 
 <hr>
 <h1>Amazon EC2</h1>
+명령어 gpt 설명 모음
+
 접속하는 법 : git bash 열고 `ssh -i /e/Hutosuto.pem ubuntu@13.일이오.64.40`
 git bash에 명령어 복붙 : 마우스 우클릭
 
