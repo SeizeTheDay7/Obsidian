@@ -663,9 +663,11 @@ URL로 정보를 전달하면 true, false가 문자열로만 인식되므로,
 
 <hr>
 <h1>Amazon EC2</h1>
-명령어 gpt 설명 모음
+**GPT 질문 정리**
+[EC2 명령어 질문](EC2%20명령어%20질문.md)
 
 접속하는 법 : git bash 열고 `ssh -i /e/Hutosuto.pem ubuntu@13.일이오.64.40`
+
 git bash에 명령어 복붙 : 마우스 우클릭
 
 **리눅스 명령어**

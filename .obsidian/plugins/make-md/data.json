@@ -42,7 +42,9 @@
     "//개발일지",
     "//Jungle",
     "//Jungle",
-    "//Jungle"
+    "//Jungle",
+    "//Spaces",
+    "//GPT"
   ],
   "expandFolderOnClick": true,
   "menuTriggerChar": "/",
@@ -69,7 +71,8 @@
   ],
   "rootSpaces": [
     "Pic",
-    "Jungle"
+    "Jungle",
+    "Spaces/GPT"
   ],
   "spacesUseAlias": false,
   "fmKeyAlias": "aliases",
