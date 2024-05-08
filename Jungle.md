@@ -685,3 +685,20 @@ rm -rf [지울 것]: 지우기
 sudo [실행 할 명령어]: 명령어를 관리자 권한으로 실행한다.
 sudo su: 관리가 권한으로 들어간다. (나올때는 exit으로 나옴)
 ```
+
+**python, pip 등록**
+```shell
+# python 이라는 명령어로 3 버전 이상을 실행하도록 하는 명령어입니다. 
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
+
+# 아래 명령어를 입력하면 pip 라고 쳐도 pip3를 작동시킬 수 있습니다. 
+sudo update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1
+```
+
+>[!bug] pip install 안됨
+>##서버 내에서 pip 못 사용하게 막아서 가상환경을 만들어야 함.
+>sudo apt install python3.12-venv  # venv 먼저 깔고
+>python -m venv .venv  # 가상환경 만들고
+>source .venv/bin/activate # 가상환경 켜고
+>pip install flask
+
