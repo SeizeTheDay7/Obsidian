@@ -402,7 +402,7 @@ print(repr(talent_name))
 
 <hr>
 <h1> Python: BeautifulSoup </h1>
-데이터 가져오기
+**데이터 가져오기**
 ```python
 headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'}
 # HTTP 요청 헤더를 딕셔너리 형태로 추가한다. 웹 서버는 이 헤더 정보를 사용하여 사용자에게 응답한다.
