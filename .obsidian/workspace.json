@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Life Hacking.md",
+                "file": "Code Snippet.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Life Hacking.md",
+                "file": "Code Snippet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Life Hacking.md",
+                "file": "Code Snippet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Life Hacking.md"
+                "file": "Code Snippet.md"
               }
             }
           },
@@ -176,21 +176,21 @@
   },
   "active": "9574ee2f4da3bfa4",
   "lastOpenFiles": [
+    "span style=letter-spacing -0.43248px;🎮&nbsp;spanGame Dev/🎨 ClipStudio Note.md",
+    "span style=letter-spacing -0.43248px;🎮&nbsp;spanGame Dev/Unity Note.md",
+    "Coding Theory.md",
+    "Life Hacking.md",
+    "Code Snippet.md",
     "Jungle.md",
     "프로그래밍 언어/프로그래밍 언어.md",
     "프로그래밍 언어",
     "Spaces/Home/템플릿.md",
-    "Game Dev/Game Dev.md",
-    "Game Dev",
+    "span style=letter-spacing -0.43248px;🎮&nbsp;spanGame Dev/span style=letter-spacing -0.43248px;🎮&nbsp;spanGame Dev.md",
+    "span style=letter-spacing -0.43248px;🎮&nbsp;spanGame Dev",
     "프로그래밍 언어/C# Note.md",
     "Untitled.md",
-    "Game Dev/♟ Blender Note.md",
-    "Game Dev/🎮 Unity Note.md",
-    "Game Dev/🎨 ClipStudio Note.md",
-    "Coding Theory.md",
-    "Life Hacking.md",
+    "span style=letter-spacing -0.43248px;🎮&nbsp;spanGame Dev/♟ Blender Note.md",
     "GPT 질문 답변/EC2 명령어 질문.md",
-    "Code Snippet.md",
     "test.md",
     "test2.md",
     "conflict-files-obsidian-git.md",
