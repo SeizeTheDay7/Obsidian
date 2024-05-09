@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": " ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,8 +85,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -186,22 +185,23 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "14892e318100b672",
+  "active": "093ea1f925f87d6e",
   "lastOpenFiles": [
-    "🌏 Web Dev/💻 JavaScript.md",
+    "🕹 Game Dev/🕹 Game Dev.md",
     "🌏 Web Dev/🎨 CSS.md",
+    "Spaces/Spaces.md",
+    "🌏 Web Dev/💻 JavaScript.md",
     "🌏 Web Dev/🧱 HTML.md",
     "🌏 Web Dev/🌏 Web Dev.md",
     "🌏 Web Dev",
     "Untitled.md",
     "🎄 Jungle.md",
-    "🕹 Game Dev/🕹 Game Dev.md",
     "🕹 Game Dev",
     "🕹 Game Dev/💻 C#.md",
     "🍎 CodingApple/Html.md",
     "🛠 Life Hacking.md",
     "✒ Coding Theory.md",
-    "♟ Blender.md",
+    "🕹 Game Dev/♟ Blender.md",
     "🕹 Game Dev/🎨 ClipStudio.md",
     "📋 Code Snippet.md",
     "🕹 Game Dev/🎮 Unity.md",
@@ -212,7 +212,6 @@
     "test.md",
     "test2.md",
     "conflict-files-obsidian-git.md",
-    "Spaces/Spaces.md",
     "🦝 GPT 질문 답변/🦝 GPT 질문 답변.md",
     "🦝 GPT 질문 답변",
     "README.md",

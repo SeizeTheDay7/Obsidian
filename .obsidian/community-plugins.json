@@ -3,5 +3,6 @@
   "periodic-notes",
   "make-md",
   "table-editor-obsidian",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-plugin-toc"
 ]
