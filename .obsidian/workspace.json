@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📋 Code Snippet.md",
+                "file": "🛠 Life Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📋 Code Snippet.md",
+                "file": "🛠 Life Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📋 Code Snippet.md",
+                "file": "🛠 Life Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📋 Code Snippet.md"
+                "file": "🛠 Life Hacking.md"
               }
             }
           },
@@ -176,12 +176,12 @@
   },
   "active": "093ea1f925f87d6e",
   "lastOpenFiles": [
+    "📋 Code Snippet.md",
     "💻 C#.md",
     "🎨 ClipStudio.md",
     "♟ Blender.md",
     "🎮 Unity.md",
     "🎄 Jungle.md",
-    "📋 Code Snippet.md",
     "🦝 GPT 질문 답변/EC2 명령어 질문.md",
     "🛠 Life Hacking.md",
     "✒ Coding Theory.md",
