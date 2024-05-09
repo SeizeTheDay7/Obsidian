@@ -22,3 +22,5 @@ font-weight : 600;
 
 style은 클래스로 선언하고,
 id는 javascript를 위해 사용한다.
+
+스타일 겹칠 때 우선순위 : 태그에 style > id > class > tag
