@@ -45,5 +45,8 @@ float : none; clear: both;  // float 다음에 오는 요소에 주면 float로 
 display: inline-block; 스타일에 주고
 
 <div class="a"></div><div class="b"></div> 줄바꿈 없이 태그 작성하면 잘 정렬됨
+
+<div class="a"></div><!--
+--><div class="b"></div> 중간에 주석 넣고 엔터키 쳐도 되긴 함
 ```
 **display: inline-block** : 내 크기만큼 차지하게 해주셈
