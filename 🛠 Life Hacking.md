@@ -1,6 +1,3 @@
----
-sticker: ""
----
 
 <h1>vscode 단축키 정리  </h1>
 함수 이름 클릭하고 F12 : 해당 함수로 이동  
@@ -16,5 +13,7 @@ Alt + Shift + 아래 방향키 : 행 복사
 Ctrl + 방향키 : 건너 뛰면서 커서 이동  
 다른 파일 열기 : Ctrl + P 누르고 이름 검색  
 Ctrl + ` : 터미널 열기
+
+Ctrl + 클릭 : 해당 클래스가 적힌 css 코드로 감 (CSS Peak Extension 기능)
 
 

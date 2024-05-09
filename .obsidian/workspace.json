@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2421c14250bc6f40",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🛠 Life Hacking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🍎 CodingApple/Html.md",
+                "file": "🛠 Life Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🍎 CodingApple/Html.md",
+                "file": "🛠 Life Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🍎 CodingApple/Html.md"
+                "file": "🛠 Life Hacking.md"
               }
             }
           },
@@ -174,8 +187,9 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "093ea1f925f87d6e",
+  "active": "2421c14250bc6f40",
   "lastOpenFiles": [
+    "🍎 CodingApple/Html.md",
     "🛠 Life Hacking.md",
     "✒ Coding Theory.md",
     "💻 C#.md",
@@ -198,7 +212,6 @@
     "🦝 GPT 질문 답변/🦝 GPT 질문 답변.md",
     "🦝 GPT 질문 답변",
     "README.md",
-    "🍎 CodingApple/Html.md",
     "Pic/Pasted image 20240427184239.png",
     "Jungle/Jungle.md",
     "Jungle",
