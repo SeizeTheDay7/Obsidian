@@ -32,3 +32,4 @@ id는 javascript를 위해 사용한다.
 > class="container"인 박스 하나로 감싸고 시작하자. 
 > 이를 wrapper 박스, container 박스라고 한다.
 
+width: 100%; : 부모 태그 width의 100%를 의미
