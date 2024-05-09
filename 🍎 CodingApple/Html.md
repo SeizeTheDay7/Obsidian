@@ -26,3 +26,5 @@ id는 javascript를 위해 사용한다.
 **스타일 겹칠 때 우선순위** : 태그에 style > id > class > tag
 
 **display: block** : 가로 행을 전부 차지해주셈
+
+레이아웃 전체를 감싸는 박스를 만들어두면 유용하다 (class="container") (wrapper 박스, container 박스라고 한다)
