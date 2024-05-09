@@ -42,8 +42,7 @@
     "//개발일지",
     "//Jungle",
     "//Jungle",
-    "//Jungle",
-    "//Spaces"
+    "//Jungle"
   ],
   "expandFolderOnClick": true,
   "menuTriggerChar": "/",
@@ -64,14 +63,16 @@
   "dataviewInlineContext": false,
   "inlineContextNameLayout": "vertical",
   "waypoints": [
+    "spaces://$tags",
     "Spaces/Home",
-    "/",
-    "spaces://$tags"
+    "/"
   ],
   "rootSpaces": [
     "Pic",
     "Jungle",
-    "Spaces/GPT"
+    "Spaces/GPT",
+    "Game Dev",
+    "Language"
   ],
   "spacesUseAlias": false,
   "fmKeyAlias": "aliases",

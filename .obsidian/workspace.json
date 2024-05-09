@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GPT/EC2 명령어 질문.md",
+                "file": "Life Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GPT/EC2 명령어 질문.md",
+                "file": "Life Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GPT/EC2 명령어 질문.md",
+                "file": "Life Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GPT/EC2 명령어 질문.md"
+                "file": "Life Hacking.md"
               }
             }
           },
@@ -177,18 +177,26 @@
   "active": "9574ee2f4da3bfa4",
   "lastOpenFiles": [
     "Jungle.md",
-    "Unity Note.md",
-    "C# Note.md",
+    "프로그래밍 언어/프로그래밍 언어.md",
+    "프로그래밍 언어",
+    "Spaces/Home/템플릿.md",
+    "Game Dev/Game Dev.md",
+    "Game Dev",
+    "프로그래밍 언어/C# Note.md",
+    "Untitled.md",
+    "Game Dev/♟ Blender Note.md",
+    "Game Dev/🎮 Unity Note.md",
+    "Game Dev/🎨 ClipStudio Note.md",
+    "Coding Theory.md",
+    "Life Hacking.md",
+    "GPT 질문 답변/EC2 명령어 질문.md",
     "Code Snippet.md",
     "test.md",
     "test2.md",
     "conflict-files-obsidian-git.md",
-    "GPT/EC2 명령어 질문.md",
     "Spaces/Spaces.md",
-    "GPT/GPT.md",
-    "GPT",
-    "Blender Note.md",
-    "ClipStudio Note.md",
+    "GPT 질문 답변/GPT 질문 답변.md",
+    "GPT 질문 답변",
     "README.md",
     "CodingApple/Html.md",
     "Pic/Pasted image 20240427184239.png",
@@ -209,13 +217,7 @@
     "Pic/Pasted image 20240128153034.png",
     "Pic/3D 기능 소개 1.png",
     "개발일지/Untitled.md",
-    "Spaces/Home/템플릿.md",
-    "Pic/Pic.md",
     "Pic",
-    "개발일지/개발일지.md",
-    "Obsidian Vault.md",
-    "개발일지/2023-12-05.md",
-    "개발일지/231203.md",
     "Spaces/Home",
     "Spaces",
     "개발일지"
