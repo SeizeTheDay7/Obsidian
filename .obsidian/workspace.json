@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Unity Note.md",
+                "file": "GPT/EC2 명령어 질문.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unity Note.md",
+                "file": "GPT/EC2 명령어 질문.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Unity Note.md",
+                "file": "GPT/EC2 명령어 질문.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unity Note.md"
+                "file": "GPT/EC2 명령어 질문.md"
               }
             }
           },
@@ -176,8 +176,9 @@
   },
   "active": "9574ee2f4da3bfa4",
   "lastOpenFiles": [
-    "C# Note.md",
     "Jungle.md",
+    "Unity Note.md",
+    "C# Note.md",
     "Code Snippet.md",
     "test.md",
     "test2.md",
@@ -187,7 +188,6 @@
     "GPT/GPT.md",
     "GPT",
     "Blender Note.md",
-    "Unity Note.md",
     "ClipStudio Note.md",
     "README.md",
     "CodingApple/Html.md",
