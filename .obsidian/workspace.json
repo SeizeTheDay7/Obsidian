@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GPT/EC2 명령어 질문.md",
+                "file": "test.md",
                 "mode": "source",
                 "source": false
               }
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GPT/EC2 명령어 질문.md",
+                "file": "test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GPT/EC2 명령어 질문.md",
+                "file": "test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GPT/EC2 명령어 질문.md"
+                "file": "test.md"
               }
             }
           },
@@ -189,8 +189,9 @@
   },
   "active": "0b3ebb596595f8fa",
   "lastOpenFiles": [
-    "Jungle.md",
     "GPT/EC2 명령어 질문.md",
+    "test.md",
+    "Jungle.md",
     "C# Note.md",
     "Spaces/Spaces.md",
     "GPT/GPT.md",
@@ -228,7 +229,6 @@
     "개발일지/2023-12-05.md",
     "개발일지/231203.md",
     "무제 파일 1.md",
-    "무제 파일.md",
     "Spaces/Home",
     "Spaces",
     "개발일지"
