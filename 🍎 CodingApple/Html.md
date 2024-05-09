@@ -25,7 +25,7 @@ id는 javascript를 위해 사용한다.
 
 **스타일 겹칠 때 우선순위** : 태그에 style > id > class > tag
 
-**display: block** : 가로 행을 전부 차지해주셈
+**display: block** : 가로 행을 전부 차지하게 해주셈
 
 > [!NOTE]
 > 레이아웃 전체를 감싸는 박스를 만들어두면 유용하다. 
@@ -34,5 +34,16 @@ id는 javascript를 위해 사용한다.
 
 **width: 100%;** : 부모 태그 width의 100%를 의미
 
-**float: left;** : 왼쪽으로 정렬해주셈. 기본 레이아웃 흐름에서 벗어나 요소의 모서리가 페이지의 왼쪽이나 오른쪽으로 이동함.
-**float : none;** **clear: both;**  : float 다음에 오는 요소에 주면 float로 발생하는 이상한 현상 해결 가능
+**div 가로로 정렬하는 방법**
+``` css
+float: left; // 왼쪽으로 정렬해주셈. 
+// 기본 레이아웃 흐름에서 벗어나 요소의 모서리가 페이지의 왼쪽이나 오른쪽으로 이동함.
+float : none; clear: both;  // float 다음에 오는 요소에 주면 float로 발생하는 버그 해결
+```
+
+```html
+display: inline-block; 스타일에 주고
+
+<div class="a"></div><div class="b"></div> 줄바꿈 없이 태그 작성하면 잘 정렬됨
+```
+**display: inline-block** : 내 크기만큼 차지하게 해주셈
