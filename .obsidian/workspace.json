@@ -11,11 +11,9 @@
             "id": "093ea1f925f87d6e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "mk-space",
               "state": {
-                "file": "🍎 CodingApple/Html.md",
-                "mode": "source",
-                "source": false
+                "path": "🕹 Game Dev"
               }
             }
           },
@@ -106,7 +104,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🍎 CodingApple/Html.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +120,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🍎 CodingApple/Html.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,9 +141,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "🍎 CodingApple/Html.md"
-              }
+              "state": {}
             }
           },
           {
@@ -186,24 +180,24 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "093ea1f925f87d6e",
+  "active": "65d7321f3ee43a19",
   "lastOpenFiles": [
-    "🛠 Life Hacking.md",
-    "🍎 CodingApple/Html.md",
-    "✒ Coding Theory.md",
-    "💻 C#.md",
-    "♟ Blender.md",
-    "🎨 ClipStudio.md",
     "🎄 Jungle.md",
+    "🕹 Game Dev/🕹 Game Dev.md",
+    "🕹 Game Dev",
+    "Untitled.md",
+    "🕹 Game Dev/💻 C#.md",
+    "🍎 CodingApple/Html.md",
+    "🛠 Life Hacking.md",
+    "✒ Coding Theory.md",
+    "♟ Blender.md",
+    "🕹 Game Dev/🎨 ClipStudio.md",
     "📋 Code Snippet.md",
-    "🎮 Unity.md",
+    "🕹 Game Dev/🎮 Unity.md",
     "🦝 GPT 질문 답변/EC2 명령어 질문.md",
     "프로그래밍 언어/프로그래밍 언어.md",
     "프로그래밍 언어",
     "Spaces/Home/템플릿.md",
-    "Game Dev/Game Dev.md",
-    "Game Dev",
-    "Untitled.md",
     "test.md",
     "test2.md",
     "conflict-files-obsidian-git.md",
@@ -228,7 +222,6 @@
     "Pic/Pasted image 20240128153139.png",
     "Pic/Pasted image 20240128153034.png",
     "Pic/3D 기능 소개 1.png",
-    "개발일지/Untitled.md",
     "Pic",
     "Spaces/Home",
     "Spaces",
