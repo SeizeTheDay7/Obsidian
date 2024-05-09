@@ -18,7 +18,7 @@ text-align : center;
 font-weight : 600;
 ```
 
-<span> : 글자를 감쌀 수 있는 별 뜻 없는 태그
+`<span>` : 글자를 감쌀 수 있는 별 뜻 없는 태그
 
 style은 클래스로 선언하고,
 id는 javascript를 위해 사용한다.
@@ -27,4 +27,8 @@ id는 javascript를 위해 사용한다.
 
 **display: block** : 가로 행을 전부 차지해주셈
 
-레이아웃 전체를 감싸는 박스를 만들어두면 유용하다 (class="container") (wrapper 박스, container 박스라고 한다)
+> [!NOTE]
+> 레이아웃 전체를 감싸는 박스를 만들어두면 유용하다. 
+> class="container"인 박스 하나로 감싸고 시작하자. 
+> 이를 wrapper 박스, container 박스라고 한다.
+
