@@ -48,5 +48,7 @@ display: inline-block; 스타일에 주고
 
 <div class="a"></div><!--
 --><div class="b"></div> 중간에 주석 넣고 엔터키 쳐도 되긴 함
+
+안에 글씨 쓰면 이상해짐. vertical-align: top; 넣으면 해결되긴 함.
 ```
 **display: inline-block** : 내 크기만큼 차지하게 해주셈
