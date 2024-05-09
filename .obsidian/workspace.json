@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🍎 CodingApple/Html.md",
+                "file": "🛠 Life Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🍎 CodingApple/Html.md",
+                "file": "🛠 Life Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🍎 CodingApple/Html.md"
+                "file": "🛠 Life Hacking.md"
               }
             }
           },
@@ -186,10 +187,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "093ea1f925f87d6e",
+  "active": "2421c14250bc6f40",
   "lastOpenFiles": [
-    "🛠 Life Hacking.md",
     "🍎 CodingApple/Html.md",
+    "🛠 Life Hacking.md",
     "✒ Coding Theory.md",
     "💻 C#.md",
     "♟ Blender.md",

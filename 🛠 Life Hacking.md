@@ -16,5 +16,6 @@ Ctrl + 방향키 : 건너 뛰면서 커서 이동
 Ctrl + ` : 터미널 열기
 
 Ctrl + 클릭 : 해당 클래스가 적힌 css 코드로 감 (CSS Peak Extension 기능)
+Alt + F12 : 해당 클래스가 적힌 css 코드 불러옴 (CSS Peak Extension 기능)
 
 
