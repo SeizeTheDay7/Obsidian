@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GPT/EC2 명령어 질문.md",
+                "file": "Jungle.md",
                 "mode": "source",
                 "source": false
               }
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GPT/EC2 명령어 질문.md",
+                "file": "Jungle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GPT/EC2 명령어 질문.md",
+                "file": "Jungle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GPT/EC2 명령어 질문.md"
+                "file": "Jungle.md"
               }
             }
           },
@@ -189,8 +189,8 @@
   },
   "active": "0b3ebb596595f8fa",
   "lastOpenFiles": [
-    "Jungle.md",
     "GPT/EC2 명령어 질문.md",
+    "Jungle.md",
     "C# Note.md",
     "Spaces/Spaces.md",
     "GPT/GPT.md",
