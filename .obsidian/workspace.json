@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Jungle.md",
+                "file": "Unity Note.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Jungle.md",
+                "file": "Unity Note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Jungle.md",
+                "file": "Unity Note.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Jungle.md"
+                "file": "Unity Note.md"
               }
             }
           },
@@ -176,15 +176,16 @@
   },
   "active": "9574ee2f4da3bfa4",
   "lastOpenFiles": [
-    "test2.md",
-    "test.md",
-    "GPT/EC2 명령어 질문.md",
-    "Jungle.md",
     "C# Note.md",
+    "Jungle.md",
+    "Code Snippet.md",
+    "test.md",
+    "test2.md",
+    "conflict-files-obsidian-git.md",
+    "GPT/EC2 명령어 질문.md",
     "Spaces/Spaces.md",
     "GPT/GPT.md",
     "GPT",
-    "Code Snippet.md",
     "Blender Note.md",
     "Unity Note.md",
     "ClipStudio Note.md",
