@@ -1,3 +1,4 @@
+
 <h1>vscode 단축키 정리  </h1>
 함수 이름 클릭하고 F12 : 해당 함수로 이동  
 Alt + F12 : 해당 함수 코드 보여줌 (CSS Peak, HTML CSS Support 설치하면 HTML에서도 됨)  

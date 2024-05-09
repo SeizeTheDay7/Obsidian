@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code Snippet.md",
+                "file": "C# Note.md",
                 "mode": "source",
                 "source": false
               }
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code Snippet.md",
+                "file": "C# Note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code Snippet.md",
+                "file": "C# Note.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code Snippet.md"
+                "file": "C# Note.md"
               }
             }
           },
@@ -189,20 +189,20 @@
   },
   "active": "093ea1f925f87d6e",
   "lastOpenFiles": [
-    "Jungle.md",
+    "C# Note.md",
+    "🎄 Jungle.md",
+    "🛠 Life Hacking.md",
+    "✒ Coding Theory.md",
+    "📋 Code Snippet.md",
     "GPT 질문 답변/EC2 명령어 질문.md",
     "🎮 Unity Note.md",
     "🎨 ClipStudio Note.md",
     "♟ Blender Note.md",
-    "Code Snippet.md",
-    "Coding Theory.md",
-    "Life Hacking.md",
     "프로그래밍 언어/프로그래밍 언어.md",
     "프로그래밍 언어",
     "Spaces/Home/템플릿.md",
     "Game Dev/Game Dev.md",
     "Game Dev",
-    "프로그래밍 언어/C# Note.md",
     "Untitled.md",
     "test.md",
     "test2.md",
