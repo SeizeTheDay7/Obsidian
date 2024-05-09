@@ -1,4 +1,11 @@
 
+<h1> 옵시디언 명령어 정리 </h1>
+옵시디언 깃허브 업데이트 방법 : Ctrl+p → git push
+목차 만들기 : ## 뒤에 제목 적고 Ctrl+p → tables of content : create ~
+
+
+
+<hr>
 <h1>vscode 단축키 정리  </h1>
 ! 누르고 Tab : HTML5 기본 템플릿
 Alt + Click : 여러 개의 커서를 동시에 찍을 수 있음  

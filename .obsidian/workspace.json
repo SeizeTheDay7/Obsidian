@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌏 Web Dev/🧱 HTML.md",
+                "file": "🛠 Life Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌏 Web Dev/🧱 HTML.md",
+                "file": "🛠 Life Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌏 Web Dev/🧱 HTML.md",
+                "file": "🛠 Life Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌏 Web Dev/🧱 HTML.md"
+                "file": "🛠 Life Hacking.md"
               }
             }
           },
@@ -188,6 +188,7 @@
   },
   "active": "093ea1f925f87d6e",
   "lastOpenFiles": [
+    "🌏 Web Dev/🧱 HTML.md",
     "🌏 Web Dev/🎨 CSS.md",
     "📋 Code Snippet.md",
     "✒ Coding Theory.md",
@@ -196,7 +197,6 @@
     "🕹 Game Dev/🕹 Game Dev.md",
     "Spaces/Spaces.md",
     "🌏 Web Dev/💻 JavaScript.md",
-    "🌏 Web Dev/🧱 HTML.md",
     "🌏 Web Dev/🌏 Web Dev.md",
     "🌏 Web Dev",
     "Untitled.md",
