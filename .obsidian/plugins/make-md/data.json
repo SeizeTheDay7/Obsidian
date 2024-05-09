@@ -57,7 +57,8 @@
     "//Game Dev",
     "//프로그래밍 언어",
     "//CodingApple",
-    "//GPT 질문 답변"
+    "//GPT 질문 답변",
+    "//🌏 Web Dev"
   ],
   "expandFolderOnClick": true,
   "menuTriggerChar": "/",
@@ -88,7 +89,8 @@
     "Spaces/GPT",
     "Game Dev",
     "Language",
-    "Game Dev"
+    "Game Dev",
+    "🌏 Web Dev"
   ],
   "spacesUseAlias": false,
   "fmKeyAlias": "aliases",
