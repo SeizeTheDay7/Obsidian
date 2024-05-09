@@ -1,8 +1,8 @@
 이미지 가운데 정렬하는 방법
 ```html
-display:block; // div는 block 속성을 이미 갖고 있어서 생략 가능
+display:block; // div,p, h 등은 block 속성을 이미 갖고 있어서 생략 가능
 margin-left: auto; 
-margin-right: auto
+margin-right: auto;
 ```
 
 vw : 현재 창 크기에 비례한 크기
