@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Jungle.md",
+                "file": "GPT/EC2 명령어 질문.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Jungle.md",
+                "file": "GPT/EC2 명령어 질문.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Jungle.md"
+                "file": "GPT/EC2 명령어 질문.md"
               }
             }
           },
@@ -186,10 +187,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "9574ee2f4da3bfa4",
+  "active": "0b3ebb596595f8fa",
   "lastOpenFiles": [
-    "GPT/EC2 명령어 질문.md",
     "Jungle.md",
+    "GPT/EC2 명령어 질문.md",
     "C# Note.md",
     "Spaces/Spaces.md",
     "GPT/GPT.md",
