@@ -1,5 +1,6 @@
 
 <h1>vscode 단축키 정리  </h1>
+! 누르고 Tab : HTML5 기본 템플릿
 함수 이름 클릭하고 F12 : 해당 함수로 이동  
 Alt + F12 : 해당 함수 코드 보여줌 (CSS Peak, HTML CSS Support 설치하면 HTML에서도 됨)  
 Ctrl+Shift+R : 함수로 감싸기, 상수로 빼기, 다른 파일로 보내는 등 자동 리팩터링 기능  
