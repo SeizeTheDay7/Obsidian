@@ -1,8 +1,8 @@
 이미지 가운데 정렬하는 방법
 ```html
-style="display:block;
+display:block; // div는 block 속성을 이미 갖고 있어서 생략 가능
 margin-left: auto; 
-margin-right: auto"
+margin-right: auto
 ```
 
 vw : 현재 창 크기에 비례한 크기
@@ -23,4 +23,6 @@ font-weight : 600;
 style은 클래스로 선언하고,
 id는 javascript를 위해 사용한다.
 
-스타일 겹칠 때 우선순위 : 태그에 style > id > class > tag
+**스타일 겹칠 때 우선순위** : 태그에 style > id > class > tag
+
+**display: block** : 가로 행을 전부 차지해주셈
