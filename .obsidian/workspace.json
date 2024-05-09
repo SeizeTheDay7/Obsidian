@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8804c16dee7162fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -107,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Jungle.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Jungle.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Jungle.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -187,10 +199,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "0b3ebb596595f8fa",
+  "active": "8804c16dee7162fd",
   "lastOpenFiles": [
-    "GPT/EC2 명령어 질문.md",
     "Jungle.md",
+    "conflict-files-obsidian-git.md",
+    "test.md",
+    "GPT/EC2 명령어 질문.md",
     "C# Note.md",
     "Spaces/Spaces.md",
     "GPT/GPT.md",
@@ -204,7 +218,6 @@
     "Pic/Pasted image 20240427184239.png",
     "Jungle/Jungle.md",
     "Jungle",
-    "test.md",
     "CodingApple",
     "개발일지/2023-12-04.md",
     "개발일지/2023-12-03.md",
@@ -228,7 +241,6 @@
     "개발일지/2023-12-05.md",
     "개발일지/231203.md",
     "무제 파일 1.md",
-    "무제 파일.md",
     "Spaces/Home",
     "Spaces",
     "개발일지"
