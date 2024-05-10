@@ -157,17 +157,9 @@
               "type": "calendar",
               "state": {}
             }
-          },
-          {
-            "id": "65d1c4cf97866270",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
