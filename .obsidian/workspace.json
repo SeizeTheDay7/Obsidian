@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🛠 Life Hacking.md",
+                "file": "✏ Memo.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🛠 Life Hacking.md",
+                "file": "✏ Memo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🛠 Life Hacking.md",
+                "file": "✏ Memo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🛠 Life Hacking.md"
+                "file": "✏ Memo.md"
               }
             }
           },
@@ -168,13 +168,14 @@
   },
   "active": "2421c14250bc6f40",
   "lastOpenFiles": [
+    "🛠 Life Hacking.md",
+    "✏ Memo.md",
     "🎄 Jungle.md",
     "📋 Code Snippet.md",
     "✒ Coding Theory.md",
     "🌏 Web Dev/🎨 CSS.md",
     "무제 파일.md",
     "🍎 CodingApple/Html.md",
-    "🛠 Life Hacking.md",
     "🌏 Web Dev/🧱 HTML.md",
     "Spaces/Home/템플릿.md",
     "Obsidian Vault.md",
@@ -183,7 +184,6 @@
     "🌏 Web Dev/💻 JavaScript.md",
     "🌏 Web Dev/🌏 Web Dev.md",
     "🌏 Web Dev",
-    "Untitled.md",
     "🕹 Game Dev",
     "🕹 Game Dev/💻 C#.md",
     "🕹 Game Dev/♟ Blender.md",
