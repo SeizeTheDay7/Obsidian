@@ -23,7 +23,7 @@
 }
 
 div {
-	color: var(--main-font-color);   /* CSS 변수 사용 */
+	left: calc(var(--left) * 1%);   /* CSS 변수 사용 */
 }
 ```
 변수 맨 앞에 `--`를 붙이면 변수 선언 된다. 변수 호출할 땐 var(변수명) 으로 사용한다.
