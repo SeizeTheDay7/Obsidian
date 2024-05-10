@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "🛠 Life Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "🛠 Life Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "🛠 Life Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md"
+                "file": "🛠 Life Hacking.md"
               }
             }
           }
@@ -160,12 +160,12 @@
   },
   "active": "2421c14250bc6f40",
   "lastOpenFiles": [
-    "무제 파일.md",
-    "🌏 Web Dev/🎨 CSS.md",
+    "🎄 Jungle.md",
     "📋 Code Snippet.md",
     "✒ Coding Theory.md",
+    "🌏 Web Dev/🎨 CSS.md",
+    "무제 파일.md",
     "🍎 CodingApple/Html.md",
-    "🎄 Jungle.md",
     "🛠 Life Hacking.md",
     "🌏 Web Dev/🧱 HTML.md",
     "Spaces/Home/템플릿.md",
