@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "✒ Coding Theory.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,13 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🛠 Life Hacking.md",
+                "file": "🌏 Web Dev/🎨 CSS.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,13 +171,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "422649cf9fc307a8",
+  "active": "2421c14250bc6f40",
   "lastOpenFiles": [
-    "🛠 Life Hacking.md",
-    "🌏 Web Dev/🧱 HTML.md",
-    "🌏 Web Dev/🎨 CSS.md",
     "📋 Code Snippet.md",
+    "🛠 Life Hacking.md",
     "✒ Coding Theory.md",
+    "🌏 Web Dev/🎨 CSS.md",
+    "🌏 Web Dev/🧱 HTML.md",
     "Spaces/Home/템플릿.md",
     "Obsidian Vault.md",
     "🕹 Game Dev/🕹 Game Dev.md",

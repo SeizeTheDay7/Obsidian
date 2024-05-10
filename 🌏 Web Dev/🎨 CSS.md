@@ -1,16 +1,24 @@
 - [[#General|General]]
+- [[#Code Snippet|Code Snippet]]
 - [[#::before와 ::after|::before와 ::after]]
 - [[#Flexbox|Flexbox]]
+
 
 ## General
 <hr>
 
+
+
+
+## Code Snippet
+<hr>
+
 ``` css
 * {
-	box-sizing:border-box;
+	box-sizing:border-box; // 테두리 포함한 크기 지정
+	user-select: none; // 텍스트 선택 방지
 }
 ```
-이걸 선언해놓으면 테두리를 포함한 크기를 지정할 수 있어 크기를 예측하기 더 쉽다.
 
 
 ## ::before와 ::after
