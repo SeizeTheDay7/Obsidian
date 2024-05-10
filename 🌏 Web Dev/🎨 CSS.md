@@ -1,6 +1,16 @@
+- [[#General|General]]
+- [[#::before와 ::after|::before와 ::after]]
 - [[#Flexbox|Flexbox]]
 
-## box-sizing
+## General
+<hr>
+
+``` css
+* {
+	box-sizing:border-box;
+}
+```
+이걸 선언해놓으면 테두리를 포함한 크기를 지정할 수 있어 크기를 예측하기 더 쉽다.
 
 
 ## ::before와 ::after
