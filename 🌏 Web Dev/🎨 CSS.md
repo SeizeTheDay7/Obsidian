@@ -15,7 +15,7 @@
 
 화면 꽉 채우는 방법 : `min-height: 100vh`
 
-### 
+
 
 
 ## Code Snippet
@@ -32,10 +32,22 @@
 ## Position
 <hr>
 
+[정리글](https://creamilk88.tistory.com/197)
+
+```css
+.world {
+	position : absolute; 
+	// 문서 흐름에서 제거하여 가장 가까운 위치에 있는 조상 요소를 기준으로 배치
+}
 ```
 
-```
-
+|데이터 유형|설명|
+|---|---|
+|static|기준 없음 (배치 불가능 / 기본값)|
+|relative|요소 자기 자신을 기준으로 배치|
+|absolute|부모(조상) 요소를 기준으로 배치|
+|fixed|뷰포트 기준으로 배치|
+|sticky|스크롤 영역 기준으로 배치|
 
 ## ::before와 ::after
 <hr>
