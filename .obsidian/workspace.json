@@ -149,21 +149,14 @@
                 "file": "🌏 Web Dev/🎨 CSS.md"
               }
             }
-          },
-          {
-            "id": "8f3e711280a3cdbe",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,7 +170,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "093ea1f925f87d6e",
+  "active": "422649cf9fc307a8",
   "lastOpenFiles": [
     "🛠 Life Hacking.md",
     "🌏 Web Dev/🧱 HTML.md",
