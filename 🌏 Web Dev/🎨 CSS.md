@@ -8,12 +8,14 @@
 ## General
 <hr>
 
-### vh, vw : 화면 전체 상대 길이
+화면 꽉 채우는 방법 : `min-height: 100vh`
+
+### vh, vw, vmin : 화면 전체 상대 길이
 `vh` : viewport height (100이 최대)
-`vw` : viewport width (100이 최대)
+`vw` : viewport width
+`vmin` : viewport minimum, 뷰포트의 높이와 너비 중 더 작은 길이
 (%는 부모 요소의 길이에 연관됨)
 
-화면 꽉 채우는 방법 : `min-height: 100vh`
 
 
 
