@@ -46,3 +46,12 @@
 | space-between | 여러 줄들 사이에 동일한 간격    |
 | space-around  | 여러 줄들 주위에 동일한 간격    |
 | stretch       | 여러 줄들을 컨테이너에 맞도록 늘림 |
+
+
+## ::before와 ::after
+<hr>
+
+::before : 실제 내용 바로 앞에서 생성되는 자식요소  
+::after : 실제 내용 바로 뒤에서 생성되는 자식요소​
+
+::before와 ::after을 쓸 땐 content라는 속성이 필요함
