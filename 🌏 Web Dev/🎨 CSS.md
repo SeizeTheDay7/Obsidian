@@ -7,8 +7,10 @@
 ## General
 <hr>
 
-
-
+**열려있는 화면 전체의 상대 길이 지정**
+`vh` : viewport height (100이 최대)
+`vw` : viewport width (100이 최대)
+(%는 부모 요소의 길이에 연관됨)
 
 ## Code Snippet
 <hr>
