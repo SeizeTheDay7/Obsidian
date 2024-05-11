@@ -1,7 +1,8 @@
 
 <h1>ChatGPT 북마크</h1>
 💡
-[아무거나 물어보기 - 4](https://chatgpt.com/c/ab2e5a12-1130-4540-b21f-6201ef9e16c6)
+[아무거나 물어보기 __ 4](https://chatgpt.com/c/ab2e5a12-1130-4540-b21f-6201ef9e16c6)
+[옵시디언 표 만들기 _ 3](https://chatgpt.com/c/27d63e38-10fb-4e46-aa96-4e6cd99cc28f)
 
 🌏
 [Python _ 4](https://chatgpt.com/c/b2788141-45f3-4493-9523-7b279ecba95a)
