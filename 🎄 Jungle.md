@@ -667,7 +667,7 @@ URL로 정보를 전달하면 true, false가 문자열로만 인식되므로,
 **GPT 질문 정리**
 [EC2 명령어 질문](EC2%20명령어%20질문.md)
 
-접속하는 법 : git bash 열고 `ssh -i /e/Hutosuto.pem ubuntu@13.125.64.40`
+접속하는 법 : git bash 열고 `ssh -i /e/Hutosuto.pem ubuntu@52.79.239.52`
 
 http://13.125.64.40/
 http://13.125.64.40:5000/#
