@@ -20,10 +20,16 @@
  
  '직무 이름' roadmap github 이라고 검색한 뒤 이미지 참고하면 도움이 된다
 
-<h1> Github Copilot 단축키 정리 </h1>
+<h1> Github Copilot 정리 </h1>
+**단축키**
 `Ctrl + I` : 명령 내리기
 `Alt + [, ]` : 코드 추천 고르기
 `Ctrl + Enter` : 한 번에 제안 확인
+
+명령어
+`@workspace /explain` : 이 코드가 어떻게 작동하는지 설명
+`@workspace /new` : 새로운 프로젝트를 위해 폴더, 파일 생성
+
 
 <h1> 옵시디언 명령어 정리 </h1>
 옵시디언 깃허브 업데이트 방법 : Ctrl+p → git push
