@@ -1,3 +1,5 @@
+
+<h1>ChatGPT 북마크</h1>
 💡
 [아무거나 물어보기 - 4](https://chatgpt.com/c/ab2e5a12-1130-4540-b21f-6201ef9e16c6)
 
@@ -17,9 +19,8 @@
 [Unity _ 3](https://chatgpt.com/c/c3ce81a2-c406-44db-a987-1a69e9a72580)
 
 
- 
- '직무 이름' roadmap github 이라고 검색한 뒤 이미지 참고하면 도움이 된다
 
+<hr>
 <h1> Github Copilot 정리 </h1>
 **단축키**
 `Ctrl + I` : 명령 내리기
@@ -33,6 +34,9 @@
 `/doc` : 설명문 주석으로 달아줌
 `/fix` : 버그 해결책 제안해줌
 
+
+
+<hr>
 <h1> 옵시디언 명령어 정리 </h1>
 옵시디언 깃허브 업데이트 방법 : Ctrl+p → git push
 목차 만들기 : ## 뒤에 제목 적고 Ctrl+p → tables of content : create ~
