@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🎄 Jungle.md",
+                "file": "🛠 Life Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🎄 Jungle.md",
+                "file": "🛠 Life Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🎄 Jungle.md",
+                "file": "🛠 Life Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🎄 Jungle.md"
+                "file": "🛠 Life Hacking.md"
               }
             }
           },
@@ -169,8 +169,8 @@
   "active": "2421c14250bc6f40",
   "lastOpenFiles": [
     "✏ Memo.md",
-    "🛠 Life Hacking.md",
     "🎄 Jungle.md",
+    "🛠 Life Hacking.md",
     "📋 Code Snippet.md",
     "✒ Coding Theory.md",
     "🌏 Web Dev/🎨 CSS.md",
