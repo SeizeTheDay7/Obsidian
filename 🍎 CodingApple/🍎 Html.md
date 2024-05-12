@@ -58,3 +58,5 @@ display: inline-block; 스타일에 주고
 
 PC 레이아웃을 만들 때 항상 전체를 감싸는 container 또는 wrap 박스를 만들어 놓는게 좋다.
 그리고 그 박스엔 항상 width를 지정해놓는게 좋다. 그래야 나중에 브라우저 화면이 축소돼도 내부 div 박스들이 찌그러지지 않는다.
+
+li에 display: inline-block 주면 가로로 정렬 가능
