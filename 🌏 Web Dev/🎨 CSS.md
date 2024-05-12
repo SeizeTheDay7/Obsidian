@@ -147,6 +147,8 @@ margin: auto;
 ## Flexbox
 <hr>
 
+[정리글](https://studiomeal.com/archives/197)
+
 | justify-content | 요소를 가로선 상에서 정렬 |
 | --------------- | -------------- |
 | flex-start      | 왼쪽 정렬          |
