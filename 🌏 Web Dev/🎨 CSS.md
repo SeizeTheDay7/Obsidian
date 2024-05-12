@@ -219,6 +219,9 @@ margin-left: 100px;
 | space-around  | 여러 줄들 주위에 동일한 간격    |
 | stretch       | 여러 줄들을 컨테이너에 맞도록 늘림 |
 
+>[!bug]
+>부모 요소가 `display: flex`라면 `<button>`의 높이가 부모 요소와 같아지는 현상 발생.
+>`<button>`에 `align-self: center` 적용시켜주면 정상화.
 
 ## Code Snippet
 <hr>
