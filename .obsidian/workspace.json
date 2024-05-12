@@ -54,8 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2e2c01f08965317b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🦝 GPT 질문 답변/H, C, J 질문.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -130,7 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "🦝 GPT 질문 답변/H, C, J 질문.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "🦝 GPT 질문 답변/H, C, J 질문.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md"
+                "file": "🦝 GPT 질문 답변/H, C, J 질문.md"
               }
             }
           },
@@ -202,11 +215,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "2421c14250bc6f40",
+  "active": "2e2c01f08965317b",
   "lastOpenFiles": [
-    "✏ Memo.md",
-    "🌏 Web Dev/🎨 CSS.md",
+    "🦝 GPT 질문 답변/H, C, J 질문.md",
+    "🦝 GPT 질문 답변/EC2 명령어 질문.md",
     "🍎 CodingApple/🍎 Html.md",
+    "🌏 Web Dev/🎨 CSS.md",
+    "✏ Memo.md",
     "🛠 Life Hacking.md",
     "🌏 Web Dev/🧱 HTML.md",
     "🎄 Jungle.md",
@@ -225,7 +240,6 @@
     "🕹 Game Dev/♟ Blender.md",
     "🕹 Game Dev/🎨 ClipStudio.md",
     "🕹 Game Dev/🎮 Unity.md",
-    "🦝 GPT 질문 답변/EC2 명령어 질문.md",
     "프로그래밍 언어/프로그래밍 언어.md",
     "프로그래밍 언어",
     "test.md",
@@ -233,7 +247,6 @@
     "conflict-files-obsidian-git.md",
     "🦝 GPT 질문 답변/🦝 GPT 질문 답변.md",
     "🦝 GPT 질문 답변",
-    "README.md",
     "Pic/Pasted image 20240427184239.png",
     "Jungle",
     "🍎 CodingApple",
