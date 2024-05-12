@@ -7,8 +7,8 @@
 
 [정리글](https://juheeexx.tistory.com/13)
 
-`<ul>` : 순서가 중요하지 않은 목록; unordered list
-`<ol>` : 순서가 중요한 목록;
-`<li>` : (위 2개의) 목록 안의 항목
+`<ul>` : 순서가 중요하지 않은 목록; *unordered list*
+`<ol>` : 순서가 중요한 목록; *ordered list*
+`<li>` : (위 2개의) 목록 안의 항목; *list item*
 
 `<dt>` : 정의 혹은 설명 목록의 
