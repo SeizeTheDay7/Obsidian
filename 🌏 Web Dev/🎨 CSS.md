@@ -34,6 +34,18 @@ div {
 변수 맨 앞에 `--`를 붙이면 변수 선언 된다. 변수 호출할 땐 var(변수명) 으로 사용한다.
 
 
+### 배경 관련 속성
+```css
+background-image: url(../img/shoes.jpg);
+background-size: cover;  /* 이미지 크기에 맞게 조절 */
+background-repeat: no-repeat; /* 이미지 반복 없음 */
+background-position: center; /* 이미지 중앙에 위치 */
+background-attachment: fixed; /* 스크롤 시 이미지 고정 */
+filter: brightness(70%); /* 이미지 어둡게 */
+```
+`background-size: cover` 빈 공간 없이 배경으로 꽉 채워라
+`background-size: contain` 배경 짤리면 안된다
+
 ### CSS 상대 단위
 <hr>
 
