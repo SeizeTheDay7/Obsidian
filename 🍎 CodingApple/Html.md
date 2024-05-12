@@ -54,3 +54,5 @@ display: inline-block; 스타일에 주고
 **display: inline-block** : 내 크기만큼 차지하게 해주셈
 
 **display: flex;** 는 하위 요소에 상속이 안된다.
+
+PC 레이아웃을 만들 때 항상 
