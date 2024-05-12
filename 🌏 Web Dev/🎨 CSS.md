@@ -1,13 +1,16 @@
 - [[#General|General]]
 	- [[#General#화면 꽉 채우는 방법|화면 꽉 채우는 방법]]
 	- [[#General#css 변수 선언|css 변수 선언]]
-	- [[#General#vh, vw, vmin : 화면 전체 상대 길이|vh, vw, vmin : 화면 전체 상대 길이]]
+	- [[#General#CSS 상대 단위|CSS 상대 단위]]
+		- [[#CSS 상대 단위#vh, vw, vmin : 화면 전체 상대 길이|vh, vw, vmin : 화면 전체 상대 길이]]
+		- [[#CSS 상대 단위#em, rem : font-size 기준 크기|em, rem : font-size 기준 크기]]
 - [[#중앙 정렬하는 방법|중앙 정렬하는 방법]]
+- [[#margin|margin]]
 - [[#Position|Position]]
 - [[#::before와 ::after|::before와 ::after]]
 - [[#Flexbox|Flexbox]]
 - [[#Code Snippet|Code Snippet]]
-	- [[#Code Snippet#|]]
+
 
 
 ## General
@@ -18,7 +21,7 @@
 ### 화면 꽉 채우는 방법 
 : `min-height: 100vh`
 
-### css 변수 선언
+### CSS 변수 선언
 ```css
 :root {
 	--main-font-color: #000f22;  /* CSS 전역 변수 선언 */
@@ -30,11 +33,25 @@ div {
 ```
 변수 맨 앞에 `--`를 붙이면 변수 선언 된다. 변수 호출할 땐 var(변수명) 으로 사용한다.
 
-### vh, vw, vmin : 화면 전체 상대 길이
+
+### CSS 상대 단위
+<hr>
+
+#### vh, vw, vmin : 화면 전체 상대 길이
 `vh` : viewport height (100이 최대)
 `vw` : viewport width
 `vmin` : viewport minimum, 뷰포트의 높이와 너비 중 더 작은 길이
 (%는 부모 요소의 길이에 연관됨)
+
+#### em, rem : font-size 기준 크기
+[정리글](https://www.daleseo.com/css-em-rem/)
+
+**계산 방식**
+1em = 16 px x 1 = 16px
+2em = 16 px x 2 = 32px
+
+`em` : 해당 단위가 사용되고 있는 요소의 font-size 값 기준 (font-size는 부모에게 상속받을 수 있음)
+`rem` : 루트 요소 `<html>` 의 font-size 기준
 
 
 ## 중앙 정렬하는 방법
@@ -177,7 +194,7 @@ margin: auto;
 ## Code Snippet
 <hr>
 
-###
+
 ``` css
 * {
 	box-sizing:border-box; // 테두리 포함한 크기 지정
