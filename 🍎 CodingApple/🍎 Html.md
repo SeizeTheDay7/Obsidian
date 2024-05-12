@@ -65,3 +65,5 @@ li에 display: inline-block 주면 가로로 정렬 가능
 > `<link href="/css/main.css" rel="stylesheet">` 이러면 오류 생긴다
 > `<link href="css/main.css" rel="stylesheet">` 슬래시 빼줘야 함
 
+**background-size: cover** 빈 공간 없이 배경으로 꽉 채워라
+background-size: contain 배경 짤리면 안된다
