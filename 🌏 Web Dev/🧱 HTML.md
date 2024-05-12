@@ -9,6 +9,7 @@
 
 `<ul>` : 순서가 중요하지 않은 목록; *unordered list*
 `<ol>` : 순서가 중요한 목록; *ordered list*
-`<li>` : (위 2개의) 목록 안의 항목; *list item*
+	`<li>` : (위 2개의) 목록 안의 항목; *list item*
 
-`<dt>` : 정의 혹은 설명 목록의 
+`<dl>` : 용어 목록; *description list*
+	`<dt>` : 용어 태그
