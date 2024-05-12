@@ -40,6 +40,7 @@ float: left; // 왼쪽으로 정렬해주셈.
 // 기본 레이아웃 흐름에서 벗어나 요소의 모서리가 페이지의 왼쪽이나 오른쪽으로 이동함.
 float : none; 또는 clear: both;  // float 다음 요소에 주면 float로 발생하는 버그 해결
 ```
+간격 조절하고 싶으면 `<div>`하나 넣고 거기에 `clear: both` 넣어주면 된다.
 
 ```html
 display: inline-block; 스타일에 주고
@@ -55,4 +56,5 @@ display: inline-block; 스타일에 주고
 
 **display: flex;** 는 하위 요소에 상속이 안된다.
 
-PC 레이아웃을 만들 때 항상 
+PC 레이아웃을 만들 때 항상 전체를 감싸는 container 또는 wrap 박스를 만들어 놓는게 좋다.
+그리고 그 박스엔 항상 width를 지정해놓는게 좋다. 그래야 나중에 브라우저 화면이 축소돼도 내부 div 박스들이 찌그러지지 않는다.
