@@ -56,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -131,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md",
+                "file": "🛠 Life Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md",
+                "file": "🛠 Life Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md"
+                "file": "🛠 Life Hacking.md"
               }
             }
           },
@@ -203,10 +203,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "a4594a3b9c8e4582",
+  "active": "28d1d7e4908e6117",
   "lastOpenFiles": [
-    "🍎 CodingApple/🍎 Html.md",
     "🌏 Web Dev/🧱 HTML.md",
+    "🍎 CodingApple/🍎 Html.md",
     "🌏 Web Dev/🎨 CSS.md",
     "🛠 Life Hacking.md",
     "✏ Memo.md",
