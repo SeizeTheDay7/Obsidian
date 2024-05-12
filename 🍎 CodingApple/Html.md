@@ -38,7 +38,7 @@ id는 javascript를 위해 사용한다.
 ``` css
 float: left; // 왼쪽으로 정렬해주셈. 
 // 기본 레이아웃 흐름에서 벗어나 요소의 모서리가 페이지의 왼쪽이나 오른쪽으로 이동함.
-float : none; clear: both;  // float 다음에 오는 요소에 주면 float로 발생하는 버그 해결
+float : none; 또는 clear: both;  // float 다음 요소에 주면 float로 발생하는 버그 해결
 ```
 
 ```html
