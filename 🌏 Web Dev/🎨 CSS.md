@@ -126,6 +126,12 @@ margin: auto;
 /* 수평 중앙정렬 */
 ```
 
+```CSS
+margin-top: -25px;
+margin-right: 10px;
+margin-bottom: 30px;
+margin-left: 100px;
+```
 
 ## Position
 <hr>

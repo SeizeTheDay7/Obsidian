@@ -55,8 +55,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -131,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md",
+                "file": "🌏 Web Dev/🎨 CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md",
+                "file": "🌏 Web Dev/🎨 CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md"
+                "file": "🌏 Web Dev/🎨 CSS.md"
               }
             }
           },
@@ -203,13 +202,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "a4594a3b9c8e4582",
+  "active": "2421c14250bc6f40",
   "lastOpenFiles": [
+    "✏ Memo.md",
     "🌏 Web Dev/🎨 CSS.md",
     "🍎 CodingApple/🍎 Html.md",
     "🛠 Life Hacking.md",
     "🌏 Web Dev/🧱 HTML.md",
-    "✏ Memo.md",
     "🎄 Jungle.md",
     "📋 Code Snippet.md",
     "✒ Coding Theory.md",
