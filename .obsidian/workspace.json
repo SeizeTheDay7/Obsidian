@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "✏ Memo.md",
+                "file": "🌏 Web Dev/🎨 CSS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "28d1d7e4908e6117",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🛠 Life Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "✏ Memo.md",
+                "file": "🌏 Web Dev/🎨 CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "✏ Memo.md",
+                "file": "🌏 Web Dev/🎨 CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "✏ Memo.md"
+                "file": "🌏 Web Dev/🎨 CSS.md"
               }
             }
           },
@@ -169,11 +181,11 @@
   "active": "2421c14250bc6f40",
   "lastOpenFiles": [
     "🛠 Life Hacking.md",
+    "🌏 Web Dev/🎨 CSS.md",
     "✏ Memo.md",
     "🎄 Jungle.md",
     "📋 Code Snippet.md",
     "✒ Coding Theory.md",
-    "🌏 Web Dev/🎨 CSS.md",
     "무제 파일.md",
     "🍎 CodingApple/Html.md",
     "🌏 Web Dev/🧱 HTML.md",
