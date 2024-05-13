@@ -44,10 +44,16 @@
 `<dfn>` : 현재 정의하고 있는 용어; *definition*
 
 
-### 목록 태그
+### input 태그
 <hr>
 
 `<form>` 태그로 서버에 데이터를 보낼 때 `<input>` 태그로 입력 영역을 만들 수 있다.
+
+```html
+<input type="text" value="test value"> // 미리 입력되어 있는 값
+<input type="text" placeholder="test value"> // 예시로 보여주는 값
+<input type="text" name="age"> // 인풋 이름 입력
+```
 
 | type 속성  |                                                 |
 | -------- | ----------------------------------------------- |
