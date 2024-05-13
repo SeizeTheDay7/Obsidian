@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -119,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md",
+                "file": "🌏 Web Dev/🎨 CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md",
+                "file": "🌏 Web Dev/🎨 CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md"
+                "file": "🌏 Web Dev/🎨 CSS.md"
               }
             }
           },
@@ -199,10 +198,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "9574ee2f4da3bfa4",
+  "active": "bfe96c59608c4f43",
   "lastOpenFiles": [
-    "🌏 Web Dev/🎨 CSS.md",
     "🍎 CodingApple/🍎 Html.md",
+    "🌏 Web Dev/🎨 CSS.md",
     "🛠 Life Hacking.md",
     "Jungle.md",
     "🦝 GPT 질문 답변/🦝 GPT 질문 답변.md",

@@ -1,22 +1,11 @@
-- [[#General|General]]
-	- [[#General#화면 꽉 채우는 방법|화면 꽉 채우는 방법]]
-	- [[#General#css 변수 선언|css 변수 선언]]
-	- [[#General#CSS 상대 단위|CSS 상대 단위]]
-		- [[#CSS 상대 단위#vh, vw, vmin : 화면 전체 상대 길이|vh, vw, vmin : 화면 전체 상대 길이]]
-		- [[#CSS 상대 단위#em, rem : font-size 기준 크기|em, rem : font-size 기준 크기]]
-- [[#중앙 정렬하는 방법|중앙 정렬하는 방법]]
-- [[#margin|margin]]
-- [[#Position|Position]]
-- [[#::before와 ::after|::before와 ::after]]
-- [[#Flexbox|Flexbox]]
-- [[#Code Snippet|Code Snippet]]
-
 
 
 ## General
 <hr>
 
 ○ img 태그는 style 생략하고 `width="100%"` 이런 식으로 넣어도 된다
+
+
 
 ### 화면 꽉 채우는 방법 
 : `min-height: 100vh`
@@ -247,3 +236,13 @@ margin-left: 100px;
 	user-select: none; // 텍스트 선택 방지
 }
 ```
+
+
+## Bugs
+<hr>
+
+### margin collapse 현상
+>[!bug]
+>박스 2개 위쪽 테두리가 겹쳐지면 margin도 합쳐져서 설정 하나만 바꿔도 다른거 따라감.
+>해결책 : 부모 박스에 padding 조금 주면 된다
+
