@@ -67,8 +67,7 @@
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -143,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🦝 GPT 질문 답변/H, C, J 질문.md",
+                "file": "🌏 Web Dev/🎨 CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🦝 GPT 질문 답변/H, C, J 질문.md",
+                "file": "🌏 Web Dev/🎨 CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🦝 GPT 질문 답변/H, C, J 질문.md"
+                "file": "🌏 Web Dev/🎨 CSS.md"
               }
             }
           },
@@ -215,7 +214,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "2e2c01f08965317b",
+  "active": "2421c14250bc6f40",
   "lastOpenFiles": [
     "🦝 GPT 질문 답변/H, C, J 질문.md",
     "🦝 GPT 질문 답변/EC2 명령어 질문.md",
