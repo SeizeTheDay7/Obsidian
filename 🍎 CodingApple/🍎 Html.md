@@ -18,8 +18,6 @@ text-align : center;
 font-weight : 600;
 ```
 
-`<span>` : 글자를 감쌀 수 있는 별 뜻 없는 태그
-
 style은 클래스로 선언하고,
 id는 javascript를 위해 사용한다.
 
