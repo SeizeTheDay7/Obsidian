@@ -88,3 +88,5 @@
 
 #### `<select>` 태그
 
+선택 목록을 만드는 태그.
+<select> <option value="js">JavaScript</option> <option value="ts">TypeScript</option> <option value="html">HTML</option> </select>
