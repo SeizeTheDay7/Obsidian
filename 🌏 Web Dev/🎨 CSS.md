@@ -87,6 +87,14 @@ margin-left: auto;
 margin-right: auto;
 ```
 
+3.
+```css
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+```
 
 ## margin
 <hr>

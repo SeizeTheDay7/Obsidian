@@ -67,8 +67,7 @@
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -150,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🎄 Jungle.md",
+                "file": "🌏 Web Dev/🎨 CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🎄 Jungle.md",
+                "file": "🌏 Web Dev/🎨 CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🎄 Jungle.md"
+                "file": "🌏 Web Dev/🎨 CSS.md"
               }
             }
           },
@@ -230,12 +229,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "f804053a5be3d551",
+  "active": "6fa50716d38019f6",
   "lastOpenFiles": [
+    "🎄 Jungle.md",
     "🌏 Web Dev/🎨 CSS.md",
     "🌏 Web Dev/🧱 HTML.md",
-    "🛠 Life Hacking.md",
     "🍎 CodingApple/🍎 Html.md",
+    "🛠 Life Hacking.md",
     "Jungle.md",
     "🦝 GPT 질문 답변/🦝 GPT 질문 답변.md",
     "🦝 GPT 질문 답변/H, C, J 질문.md",
@@ -247,7 +247,6 @@
     "🕹 Game Dev/♟ Blender.md",
     "🕹 Game Dev",
     "📋 Code Snippet.md",
-    "🎄 Jungle.md",
     "🍎 CodingApple",
     "🌏 Web Dev/💻 JavaScript.md",
     "🌏 Web Dev/🌏 Web Dev.md",
