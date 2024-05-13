@@ -78,3 +78,11 @@ position: relative;
 top: 100px;
 ```
 
+position: absolute 붙은 요소 가운데 정렬
+```css
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+```
