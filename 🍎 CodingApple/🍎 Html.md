@@ -89,3 +89,5 @@ position: absolute 붙은 요소 가운데 정렬
 >position 속성 안 붙어있으면 같은 stacking context가 아니라서 z-index 효과 없음
 >
 
+**max-width의 쓰임새**
+반응형 웹페이지 만들 때 단위에 % 넣곤 하는데, 이때 PC 화면에서는 너무 커보이니까 max-width를 설정한다
