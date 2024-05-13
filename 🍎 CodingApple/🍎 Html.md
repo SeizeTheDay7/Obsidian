@@ -90,4 +90,4 @@ position: absolute 붙은 요소 가운데 정렬
 >
 
 **max-width의 쓰임새**
-반응형 웹페이지 만들 때 단위에 % 넣곤 하는데, 이때 PC 화면에서는 너무 커보이니까 max-width를 설정한다
+반응형 웹페이지 만들 때 단위에 % 넣곤 하는데, 이때 PC 화면에서는 너무 커보이니까 max-width를 설정한다. min/max - width/height 다 가능하다. max 설정해놨어도 padding 넣으면 더 커질 수 있다. width는 content의 크기를 의미하므로 border, padding 같은 것과는 관계가 없기 때문이다.
