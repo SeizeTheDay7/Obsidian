@@ -20,6 +20,16 @@
             }
           },
           {
+            "id": "eb38368bbe6b9a8f",
+            "type": "leaf",
+            "state": {
+              "type": "mk-uri-view",
+              "state": {
+                "path": "https://www.make.md/static/latest.md"
+              }
+            }
+          },
+          {
             "id": "9574ee2f4da3bfa4",
             "type": "leaf",
             "state": {
@@ -43,7 +53,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -90,15 +101,23 @@
             }
           },
           {
-            "id": "65d7321f3ee43a19",
+            "id": "b01f0b5afc0eddab",
             "type": "leaf",
             "state": {
               "type": "mk-file-view",
               "state": {}
             }
+          },
+          {
+            "id": "606b5ef7a8f03241",
+            "type": "leaf",
+            "state": {
+              "type": "mk-path-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -118,7 +137,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +153,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,9 +174,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md"
-              }
+              "state": {}
             }
           },
           {
@@ -198,10 +213,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "bfe96c59608c4f43",
+  "active": "eb38368bbe6b9a8f",
   "lastOpenFiles": [
-    "🍎 CodingApple/🍎 Html.md",
     "🌏 Web Dev/🎨 CSS.md",
+    "🍎 CodingApple/🍎 Html.md",
     "🛠 Life Hacking.md",
     "Jungle.md",
     "🦝 GPT 질문 답변/🦝 GPT 질문 답변.md",

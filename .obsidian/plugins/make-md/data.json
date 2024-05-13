@@ -1,6 +1,7 @@
 {
   "newNotePlaceholder": "Untitled",
   "defaultInitialization": false,
+  "navigatorEnabled": true,
   "filePreviewOnHover": false,
   "flowMenuEnabled": true,
   "markSans": false,
@@ -9,6 +10,7 @@
   "mobileMakeBar": true,
   "inlineStyler": true,
   "makerMode": true,
+  "imageThumbnails": false,
   "spacesMDBInHidden": true,
   "inlineStylerColors": false,
   "editorFlow": true,
@@ -24,6 +26,7 @@
   "defaultDateFormat": "MMM dd yyyy",
   "spacesEnabled": true,
   "spacesPerformance": false,
+  "currentWaypoint": 0,
   "enableFolderNote": true,
   "folderIndentationLines": true,
   "revealActiveFile": false,
@@ -57,7 +60,9 @@
   "spacesFolder": "Spaces",
   "hiddenFiles": [],
   "hiddenExtensions": [
-    ".mdb"
+    ".mdb",
+    "_assets",
+    "_blocks"
   ],
   "inlineBacklinks": false,
   "inlineContext": true,
@@ -70,11 +75,6 @@
     "Spaces/Home",
     "/",
     "spaces://$tags"
-  ],
-  "rootSpaces": [
-    "Pic",
-    "Jungle",
-    "Spaces/GPT"
   ],
   "spacesUseAlias": false,
   "fmKeyAlias": "aliases",
@@ -91,11 +91,20 @@
   "readableLineWidth": true,
   "autoAddContextsToSubtags": true,
   "autoMigration08": false,
-  "releaseNotesPrompt": 0.804,
+  "releaseNotesPrompt": 0.9,
   "enableDefaultSpaces": true,
-  "enableTagSpaces": true,
-  "enableHomeSpace": true,
   "showSpacePinIcon": true,
   "minimalFix": false,
-  "experimental": false
+  "experimental": false,
+  "systemName": "Obsidian Vault",
+  "defaultSpaceTemplate": "",
+  "selectedKit": "default",
+  "actionMaxSteps": 100,
+  "rootSpaces": [
+    "Pic",
+    "Jungle",
+    "Spaces/GPT"
+  ],
+  "enableTagSpaces": true,
+  "enableHomeSpace": true
 }
