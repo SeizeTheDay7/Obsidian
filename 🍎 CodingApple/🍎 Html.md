@@ -72,3 +72,9 @@ li에 display: inline-block 주면 가로로 정렬 가능
 >박스 2개가 위쪽 테두리가 겹쳐지면 margin도 합쳐져서 설정 하나만 바꿔도 다른거 따라감.
 >해결책 : 부모 박스에 padding 조금 주면 된다
 
+position 움직이기
+```CSS
+position: relative;
+top: 100px;
+```
+

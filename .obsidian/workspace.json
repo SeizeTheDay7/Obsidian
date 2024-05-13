@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2421c14250bc6f40",
+            "id": "bfe96c59608c4f43",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,19 +20,7 @@
             }
           },
           {
-            "id": "af090adb7daff5e0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌏 Web Dev/🧱 HTML.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a4594a3b9c8e4582",
+            "id": "9574ee2f4da3bfa4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -44,7 +32,7 @@
             }
           },
           {
-            "id": "28d1d7e4908e6117",
+            "id": "30c37acf797ad58e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -54,21 +42,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "2e2c01f08965317b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🦝 GPT 질문 답변/H, C, J 질문.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -143,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🦝 GPT 질문 답변/H, C, J 질문.md",
+                "file": "🌏 Web Dev/🎨 CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🦝 GPT 질문 답변/H, C, J 질문.md",
+                "file": "🌏 Web Dev/🎨 CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,20 +158,28 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🦝 GPT 질문 답변/H, C, J 질문.md"
+                "file": "🌏 Web Dev/🎨 CSS.md"
               }
             }
           },
           {
-            "id": "620bc928e10cfa2f",
+            "id": "8f3e711280a3cdbe",
             "type": "leaf",
             "state": {
               "type": "calendar",
               "state": {}
             }
+          },
+          {
+            "id": "65d1c4cf97866270",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -215,41 +198,42 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "2e2c01f08965317b",
+  "active": "bfe96c59608c4f43",
   "lastOpenFiles": [
+    "🍎 CodingApple/🍎 Html.md",
+    "🛠 Life Hacking.md",
+    "🌏 Web Dev/🎨 CSS.md",
+    "Jungle.md",
+    "🦝 GPT 질문 답변/🦝 GPT 질문 답변.md",
     "🦝 GPT 질문 답변/H, C, J 질문.md",
     "🦝 GPT 질문 답변/EC2 명령어 질문.md",
-    "🍎 CodingApple/🍎 Html.md",
-    "🌏 Web Dev/🎨 CSS.md",
-    "✏ Memo.md",
-    "🛠 Life Hacking.md",
-    "🌏 Web Dev/🧱 HTML.md",
-    "🎄 Jungle.md",
+    "🦝 GPT 질문 답변",
+    "🕹 Game Dev/💻 C#.md",
+    "🕹 Game Dev/🎮 Unity.md",
+    "🕹 Game Dev/🎨 ClipStudio.md",
+    "🕹 Game Dev/♟ Blender.md",
+    "🕹 Game Dev",
     "📋 Code Snippet.md",
-    "✒ Coding Theory.md",
-    "무제 파일.md",
-    "Spaces/Home/템플릿.md",
-    "Obsidian Vault.md",
-    "🕹 Game Dev/🕹 Game Dev.md",
-    "Spaces/Spaces.md",
+    "🎄 Jungle.md",
+    "🍎 CodingApple",
+    "🌏 Web Dev/🧱 HTML.md",
     "🌏 Web Dev/💻 JavaScript.md",
     "🌏 Web Dev/🌏 Web Dev.md",
     "🌏 Web Dev",
-    "🕹 Game Dev",
-    "🕹 Game Dev/💻 C#.md",
-    "🕹 Game Dev/♟ Blender.md",
-    "🕹 Game Dev/🎨 ClipStudio.md",
-    "🕹 Game Dev/🎮 Unity.md",
-    "프로그래밍 언어/프로그래밍 언어.md",
-    "프로그래밍 언어",
-    "test.md",
+    "✒ Coding Theory.md",
+    "✏ Memo.md",
     "test2.md",
-    "conflict-files-obsidian-git.md",
-    "🦝 GPT 질문 답변/🦝 GPT 질문 답변.md",
-    "🦝 GPT 질문 답변",
+    "test.md",
+    "GPT/EC2 명령어 질문.md",
+    "C# Note.md",
+    "Spaces/Spaces.md",
+    "GPT/GPT.md",
+    "GPT",
+    "Code Snippet.md",
+    "Blender Note.md",
     "Pic/Pasted image 20240427184239.png",
     "Jungle",
-    "🍎 CodingApple",
+    "CodingApple",
     "Pasted image 20240303030809.png",
     "Pic/Pasted image 20231204234041.png",
     "Pic/Pasted image 20240114175411.png",
@@ -261,7 +245,6 @@
     "Pic/3D 기능 소개 1.png",
     "Pic",
     "Spaces/Home",
-    "Spaces",
-    "개발일지"
+    "Spaces"
   ]
 }

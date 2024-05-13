@@ -145,6 +145,13 @@ margin-left: 100px;
 }
 ```
 
+```css
+.button {
+  position: relative;
+  top: 100px;
+}
+```
+
 |데이터 유형|설명|
 |---|---|
 |static|기준 없음 (배치 불가능 / 기본값)|
@@ -152,6 +159,13 @@ margin-left: 100px;
 |absolute|부모(조상) 요소를 기준으로 배치|
 |fixed|뷰포트 기준으로 배치|
 |sticky|스크롤 영역 기준으로 배치|
+
+| CSS 속성 | 설명                                    |
+| ------ | ------------------------------------- |
+| top    | 요소의 position 기준에 맞는 위쪽에서의 거리(위치)를 설정  |
+| bottom | 요소의 position 기준에 맞는 아래쪽에서의 거리(위치)를 설정 |
+| left   | 요소의 position 기준에 맞는 왼쪽에서의 거리(위치)를 설정  |
+| right  | 요소의 position 기준에 맞는 오른쪽에서의 거리(위치)를 설정 |
 
 ## ::before와 ::after
 <hr>
