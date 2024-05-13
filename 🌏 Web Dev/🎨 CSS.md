@@ -1,3 +1,18 @@
+- [[#General|General]]
+	- [[#General#화면 꽉 채우는 방법|화면 꽉 채우는 방법]]
+	- [[#General#CSS 변수 선언|CSS 변수 선언]]
+	- [[#General#배경 관련 속성|배경 관련 속성]]
+	- [[#General#CSS 상대 단위|CSS 상대 단위]]
+		- [[#CSS 상대 단위#vh, vw, vmin : 화면 전체 상대 길이|vh, vw, vmin : 화면 전체 상대 길이]]
+		- [[#CSS 상대 단위#em, rem : font-size 기준 크기|em, rem : font-size 기준 크기]]
+- [[#중앙 정렬하는 방법|중앙 정렬하는 방법]]
+- [[#margin|margin]]
+- [[#Position|Position]]
+- [[#::before와 ::after|::before와 ::after]]
+- [[#Flexbox|Flexbox]]
+- [[#Code Snippet|Code Snippet]]
+- [[#Bugs|Bugs]]
+	- [[#Bugs#margin collapse 현상|margin collapse 현상]]
 
 
 ## General
@@ -241,8 +256,16 @@ margin-left: 100px;
 ## Bugs
 <hr>
 
+### css stylesheet 추가할 때 슬래시
+>[!bug]
+> `<link href="/css/main.css" rel="stylesheet">` 이러면 오류 생긴다
+> `<link href="css/main.css" rel="stylesheet">` 슬래시 빼줘야 함
 ### margin collapse 현상
 >[!bug]
 >박스 2개 위쪽 테두리가 겹쳐지면 margin도 합쳐져서 설정 하나만 바꿔도 다른거 따라감.
 >해결책 : 부모 박스에 padding 조금 주면 된다
+
+### z-index 붙여도 가려짐
+>[!bug] 
+>position 속성 안 붙어있으면 같은 stacking context가 아니라서 z-index 효과 없음
 
