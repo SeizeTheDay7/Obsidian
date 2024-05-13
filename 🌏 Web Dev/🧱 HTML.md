@@ -47,6 +47,13 @@
 ### `<form>` 태그
 <hr>
 
+```html
+<form action="http://naver.com"> // 데이터를 네이버로 보낸다
+</form>
+```
+
+태그 안에 감싸져 있는 `<input>`, `<select>`, `<textarea>` 안의 데이터를 서버로 보낸다.
+
 #### `<input>` 태그
 
 `<form>` 태그로 서버에 데이터를 보낼 때 `<input>` 태그로 입력 영역을 만들 수 있다.
@@ -55,6 +62,7 @@
 <input type="text" value="test value"> // 미리 입력되어 있는 값
 <input type="text" placeholder="test value"> // 예시로 보여주는 값
 <input type="text" name="age"> // 인풋 이름 입력
+<input type="submit"> // 서버에 데이터 보낸다
 ```
 
 | type 속성  |                                                 |
@@ -88,6 +96,18 @@
 
 #### `<select>` 태그
 
-선택 목록을 만드는 태그. `<form>` 태그로 감싸주면 
+[정리글](https://thrillfighter.tistory.com/572)
+[정리글2](https://batcave.tistory.com/69)
+
+선택 목록을 만드는 태그. `<form>` 태그로 감싸주면 선택한 값을 전달할 수 있다.
+`<option>` 태그로 선택지를 설정한다.
+
+```html
+<select name="web">
+  <option value="js">JavaScript</option>
+  <option value="ts">TypeScript</option>
+  <option value="html">HTML</option>
+</select>
+```
 
 
