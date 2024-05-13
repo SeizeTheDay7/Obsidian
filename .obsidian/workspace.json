@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f804053a5be3d551",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🎄 Jungle.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -138,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌏 Web Dev/🧱 HTML.md",
+                "file": "🎄 Jungle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +167,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌏 Web Dev/🧱 HTML.md",
+                "file": "🎄 Jungle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌏 Web Dev/🧱 HTML.md"
+                "file": "🎄 Jungle.md"
               }
             }
           },
@@ -218,11 +230,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "01e139feaf720a18",
+  "active": "f804053a5be3d551",
   "lastOpenFiles": [
-    "🛠 Life Hacking.md",
-    "🌏 Web Dev/🧱 HTML.md",
     "🌏 Web Dev/🎨 CSS.md",
+    "🌏 Web Dev/🧱 HTML.md",
+    "🛠 Life Hacking.md",
     "🍎 CodingApple/🍎 Html.md",
     "Jungle.md",
     "🦝 GPT 질문 답변/🦝 GPT 질문 답변.md",
