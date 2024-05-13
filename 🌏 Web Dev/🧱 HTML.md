@@ -64,6 +64,7 @@
 <input type="text" name="age"> // 인풋 이름 입력
 <input type="submit"> // 서버에 데이터 보낸다
 ```
+`<input type="submit">`은 `<button type="submit">전송</button>`으로 대체 가능
 
 | type 속성  |                                                 |
 | -------- | ----------------------------------------------- |
