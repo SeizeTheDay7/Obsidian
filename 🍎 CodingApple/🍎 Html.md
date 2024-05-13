@@ -97,6 +97,9 @@ max 설정해놨어도 padding 넣으면 더 커질 수 있다. width는 content
 이럴 땐 box-sizing: border-box로 설정하면 된다. box-sizing: content-box 설정하면 원래대로 content 최대 크기만 설정 가능.
 
 >[!note] 시작할 때 선언해놓으면 좋은 것들
->div에 box-sizing: border-box;
->body에 margin: 0px;
+>div { box-sizing : border-box; } 
+>body { margin : 0; } 
+>html { line-height : 1.15; }
 
+호환성 이슈 해결책부터 첨부하기도 함. 검색 키워드 : normalize.css
+css 파일에 복붙하거나 다운 받아서 link 태그로 첨부하기.
