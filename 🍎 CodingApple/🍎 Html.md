@@ -84,3 +84,8 @@ position: absolute 붙은 요소 가운데 정렬
   margin: auto;
   width: 200px;
 ```
+
+>[!bug] z-index 붙여도 가려짐
+>position 속성 안 붙어있으면 같은 stacking context가 아니라서 z-index 효과 없음
+>
+
