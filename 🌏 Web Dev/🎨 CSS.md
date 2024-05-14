@@ -1,6 +1,7 @@
 - [[#General|General]]
 	- [[#General#화면 꽉 채우는 방법|화면 꽉 채우는 방법]]
-	- [[#General#css 변수 선언|css 변수 선언]]
+	- [[#General#CSS 변수 선언|CSS 변수 선언]]
+	- [[#General#배경 관련 속성|배경 관련 속성]]
 	- [[#General#CSS 상대 단위|CSS 상대 단위]]
 		- [[#CSS 상대 단위#vh, vw, vmin : 화면 전체 상대 길이|vh, vw, vmin : 화면 전체 상대 길이]]
 		- [[#CSS 상대 단위#em, rem : font-size 기준 크기|em, rem : font-size 기준 크기]]
@@ -10,13 +11,16 @@
 - [[#::before와 ::after|::before와 ::after]]
 - [[#Flexbox|Flexbox]]
 - [[#Code Snippet|Code Snippet]]
-
+- [[#Bugs|Bugs]]
+	- [[#Bugs#margin collapse 현상|margin collapse 현상]]
 
 
 ## General
 <hr>
 
 ○ img 태그는 style 생략하고 `width="100%"` 이런 식으로 넣어도 된다
+
+
 
 ### 화면 꽉 채우는 방법 
 : `min-height: 100vh`
@@ -83,6 +87,14 @@ margin-left: auto;
 margin-right: auto;
 ```
 
+3.
+```css
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+```
 
 ## margin
 <hr>
@@ -145,13 +157,27 @@ margin-left: 100px;
 }
 ```
 
-|데이터 유형|설명|
-|---|---|
-|static|기준 없음 (배치 불가능 / 기본값)|
-|relative|요소 자기 자신을 기준으로 배치|
-|absolute|부모(조상) 요소를 기준으로 배치|
-|fixed|뷰포트 기준으로 배치|
-|sticky|스크롤 영역 기준으로 배치|
+```css
+.button {
+  position: relative;
+  top: 100px;
+}
+```
+
+| 데이터 유형   | 설명                                           |
+| -------- | -------------------------------------------- |
+| static   | 기준 없음 (배치 불가능 / 기본값)                         |
+| relative | 요소 자기 자신을 기준으로 배치                            |
+| absolute | position: relative를 가진<br>부모(조상) 요소를 기준으로 배치 |
+| fixed    | 뷰포트 기준으로 배치                                  |
+| sticky   | 스크롤 영역 기준으로 배치                               |
+
+| CSS 속성 | 설명                                    |
+| ------ | ------------------------------------- |
+| top    | 요소의 position 기준에 맞는 위쪽에서의 거리(위치)를 설정  |
+| bottom | 요소의 position 기준에 맞는 아래쪽에서의 거리(위치)를 설정 |
+| left   | 요소의 position 기준에 맞는 왼쪽에서의 거리(위치)를 설정  |
+| right  | 요소의 position 기준에 맞는 오른쪽에서의 거리(위치)를 설정 |
 
 ## ::before와 ::after
 <hr>
@@ -233,3 +259,21 @@ margin-left: 100px;
 	user-select: none; // 텍스트 선택 방지
 }
 ```
+
+
+## Bugs
+<hr>
+
+### css stylesheet 추가할 때 슬래시
+>[!bug]
+> `<link href="/css/main.css" rel="stylesheet">` 이러면 오류 생긴다
+> `<link href="css/main.css" rel="stylesheet">` 슬래시 빼줘야 함
+### margin collapse 현상
+>[!bug]
+>박스 2개 위쪽 테두리가 겹쳐지면 margin도 합쳐져서 설정 하나만 바꿔도 다른거 따라감.
+>해결책 : 부모 박스에 padding 조금 주면 된다
+
+### z-index 붙여도 가려짐
+>[!bug] 
+>position 속성 안 붙어있으면 같은 stacking context가 아니라서 z-index 효과 없음
+

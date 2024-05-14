@@ -18,8 +18,6 @@ text-align : center;
 font-weight : 600;
 ```
 
-`<span>` : 글자를 감쌀 수 있는 별 뜻 없는 태그
-
 style은 클래스로 선언하고,
 id는 javascript를 위해 사용한다.
 
@@ -72,3 +70,36 @@ li에 display: inline-block 주면 가로로 정렬 가능
 >박스 2개가 위쪽 테두리가 겹쳐지면 margin도 합쳐져서 설정 하나만 바꿔도 다른거 따라감.
 >해결책 : 부모 박스에 padding 조금 주면 된다
 
+position 움직이기
+```CSS
+position: relative;
+top: 100px;
+```
+
+position: absolute 붙은 요소 가운데 정렬
+```css
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+```
+
+>[!bug] z-index 붙여도 가려짐
+>position 속성 안 붙어있으면 같은 stacking context가 아니라서 z-index 효과 없음
+>
+
+**max-width의 쓰임새**
+반응형 웹페이지 만들 때 단위에 % 넣곤 하는데, 이때 PC 화면에서는 너무 커보이니까 max-width를 설정한다. min/max - width/height 다 가능하다. 
+
+max 설정해놨어도 padding 넣으면 더 커질 수 있다. width는 content의 크기를 의미하므로 border, padding 같은 것과는 관계가 없기 때문이다.
+
+이럴 땐 box-sizing: border-box로 설정하면 된다. box-sizing: content-box 설정하면 원래대로 content 최대 크기만 설정 가능.
+
+>[!note] 시작할 때 선언해놓으면 좋은 것들
+>div { box-sizing : border-box; } 
+>body { margin : 0; } 
+>html { line-height : 1.15; }
+
+호환성 이슈 해결책부터 첨부하기도 함. 검색 키워드 : normalize.css
+css 파일에 복붙하거나 다운 받아서 link 태그로 첨부하기.

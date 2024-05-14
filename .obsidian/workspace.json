@@ -49,7 +49,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🛠 Life Hacking.md",
+                "file": "🕹 Game Dev/💻 C#.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "972f42eff1bbf3f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,14 +73,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🦝 GPT 질문 답변/H, C, J 질문.md",
+                "file": "✒ Coding Theory.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -143,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🛠 Life Hacking.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +172,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🛠 Life Hacking.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +195,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🛠 Life Hacking.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -215,28 +227,29 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "28d1d7e4908e6117",
+  "active": "972f42eff1bbf3f9",
   "lastOpenFiles": [
-    "🌏 Web Dev/🎨 CSS.md",
-    "🦝 GPT 질문 답변/H, C, J 질문.md",
-    "🦝 GPT 질문 답변/EC2 명령어 질문.md",
-    "🍎 CodingApple/🍎 Html.md",
+    "🕹 Game Dev/💻 C#.md",
+    "conflict-files-obsidian-git.md",
+    "🌏 Web Dev/💻 JavaScript.md",
     "✏ Memo.md",
     "🛠 Life Hacking.md",
-    "🌏 Web Dev/🧱 HTML.md",
-    "🎄 Jungle.md",
-    "📋 Code Snippet.md",
     "✒ Coding Theory.md",
+    "📋 Code Snippet.md",
+    "🌏 Web Dev/🎨 CSS.md",
+    "🦝 GPT 질문 답변/H, C, J 질문.md",
+    "🎄 Jungle.md",
+    "🌏 Web Dev/🧱 HTML.md",
+    "🦝 GPT 질문 답변/EC2 명령어 질문.md",
+    "🍎 CodingApple/🍎 Html.md",
     "무제 파일.md",
     "Spaces/Home/템플릿.md",
     "Obsidian Vault.md",
     "🕹 Game Dev/🕹 Game Dev.md",
     "Spaces/Spaces.md",
-    "🌏 Web Dev/💻 JavaScript.md",
     "🌏 Web Dev/🌏 Web Dev.md",
     "🌏 Web Dev",
     "🕹 Game Dev",
-    "🕹 Game Dev/💻 C#.md",
     "🕹 Game Dev/♟ Blender.md",
     "🕹 Game Dev/🎨 ClipStudio.md",
     "🕹 Game Dev/🎮 Unity.md",
@@ -244,7 +257,6 @@
     "프로그래밍 언어",
     "test.md",
     "test2.md",
-    "conflict-files-obsidian-git.md",
     "🦝 GPT 질문 답변/🦝 GPT 질문 답변.md",
     "🦝 GPT 질문 답변",
     "Pic/Pasted image 20240427184239.png",
