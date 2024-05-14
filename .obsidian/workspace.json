@@ -67,7 +67,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -142,7 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "🛠 Life Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "🛠 Life Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md"
+                "file": "🛠 Life Hacking.md"
               }
             }
           },
@@ -214,12 +215,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "2421c14250bc6f40",
+  "active": "28d1d7e4908e6117",
   "lastOpenFiles": [
+    "🌏 Web Dev/🎨 CSS.md",
     "🦝 GPT 질문 답변/H, C, J 질문.md",
     "🦝 GPT 질문 답변/EC2 명령어 질문.md",
     "🍎 CodingApple/🍎 Html.md",
-    "🌏 Web Dev/🎨 CSS.md",
     "✏ Memo.md",
     "🛠 Life Hacking.md",
     "🌏 Web Dev/🧱 HTML.md",
