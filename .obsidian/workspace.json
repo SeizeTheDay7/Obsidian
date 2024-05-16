@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "4e304d0076183d66",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "a4594a3b9c8e4582",
             "type": "leaf",
             "state": {
@@ -66,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -149,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌏 Web Dev/🧱 HTML.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌏 Web Dev/🧱 HTML.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌏 Web Dev/🧱 HTML.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -221,12 +233,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "af090adb7daff5e0",
+  "active": "4e304d0076183d66",
   "lastOpenFiles": [
-    "🍎 CodingApple/🍎 Html.md",
-    "🕹 Game Dev/💻 C#.md",
     "🌏 Web Dev/🧱 HTML.md",
     "conflict-files-obsidian-git.md",
+    "💾 SQL.md",
+    "🍎 CodingApple/🍎 Html.md",
+    "🕹 Game Dev/💻 C#.md",
     "🌏 Web Dev/💻 JavaScript.md",
     "✏ Memo.md",
     "🛠 Life Hacking.md",
@@ -251,7 +264,6 @@
     "프로그래밍 언어",
     "test.md",
     "test2.md",
-    "🦝 GPT 질문 답변/🦝 GPT 질문 답변.md",
     "🦝 GPT 질문 답변",
     "Pic/Pasted image 20240427184239.png",
     "Jungle",
