@@ -32,12 +32,12 @@
             }
           },
           {
-            "id": "4e304d0076183d66",
+            "id": "c10ae6b59f3c82f2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "무제 파일.md",
                 "mode": "source",
                 "source": false
               }
@@ -140,8 +140,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -161,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "무제 파일.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "무제 파일.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +200,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "무제 파일.md"
               }
             }
           },
@@ -233,10 +232,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4e304d0076183d66",
+  "active": "c10ae6b59f3c82f2",
   "lastOpenFiles": [
-    "🌏 Web Dev/🧱 HTML.md",
     "conflict-files-obsidian-git.md",
+    "무제 파일.md",
+    "🌏 Web Dev/🧱 HTML.md",
     "💾 SQL.md",
     "🍎 CodingApple/🍎 Html.md",
     "🕹 Game Dev/💻 C#.md",
@@ -249,7 +249,6 @@
     "🦝 GPT 질문 답변/H, C, J 질문.md",
     "🎄 Jungle.md",
     "🦝 GPT 질문 답변/EC2 명령어 질문.md",
-    "무제 파일.md",
     "Spaces/Home/템플릿.md",
     "Obsidian Vault.md",
     "🕹 Game Dev/🕹 Game Dev.md",
