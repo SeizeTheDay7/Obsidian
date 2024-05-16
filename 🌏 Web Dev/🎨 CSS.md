@@ -22,13 +22,19 @@
 <hr>
 
 ○ img 태그는 style 생략하고 `width="100%"` 이런 식으로 넣어도 된다
+○ 화면 꽉 채우는 방법 : `min-height: 100vh`
 
 
+## 맨 처음 선언할만한 스타일들
+```css
+table {
+  border-collapse: collapse;
+}
 
-### 화면 꽉 채우는 방법 
-: `min-height: 100vh`
+```
 
-### CSS 변수 선언
+
+## CSS 변수 선언
 ```css
 :root {
 	--main-font-color: #000f22;  /* CSS 전역 변수 선언 */
@@ -41,7 +47,7 @@ div {
 변수 맨 앞에 `--`를 붙이면 변수 선언 된다. 변수 호출할 땐 var(변수명) 으로 사용한다.
 
 
-### 배경 관련 속성
+## 배경 관련 속성
 ```css
 background-image: url(../img/shoes.jpg);
 background-size: cover;  /* 이미지 크기에 맞게 조절 */
@@ -53,16 +59,16 @@ filter: brightness(70%); /* 이미지 어둡게 */
 `background-size: cover` 빈 공간 없이 배경으로 꽉 채워라
 `background-size: contain` 배경 짤리면 안된다
 
-### CSS 상대 단위
+## CSS 상대 단위
 <hr>
 
-#### vh, vw, vmin : 화면 전체 상대 길이
+### vh, vw, vmin : 화면 전체 상대 길이
 `vh` : viewport height (100이 최대)
 `vw` : viewport width
 `vmin` : viewport minimum, 뷰포트의 높이와 너비 중 더 작은 길이
 (%는 부모 요소의 길이에 연관됨)
 
-#### em, rem : font-size 기준 크기
+### em, rem : font-size 기준 크기
 [정리글](https://www.daleseo.com/css-em-rem/)
 
 **계산 방식**

@@ -27,6 +27,7 @@
 ```
 
 `<table>` : 표 만들 때 사용 
+  `border-collapse: collapse;` : 셀 간의 간격 없애기 
 
 `<thead>` : 최상단 제목 행 (기능상 차이는 없다)
 `<tbody>` : 일반 행 (기능상 차이는 없다)

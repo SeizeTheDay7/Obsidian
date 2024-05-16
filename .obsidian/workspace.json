@@ -55,8 +55,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -138,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌏 Web Dev/🧱 HTML.md",
+                "file": "🌏 Web Dev/🎨 CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌏 Web Dev/🧱 HTML.md",
+                "file": "🌏 Web Dev/🎨 CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌏 Web Dev/🧱 HTML.md"
+                "file": "🌏 Web Dev/🎨 CSS.md"
               }
             }
           },
@@ -210,18 +209,18 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "322eee286b326dfa",
+  "active": "2421c14250bc6f40",
   "lastOpenFiles": [
-    "🌏 Web Dev/💻 JavaScript.md",
-    "🌏 Web Dev/🎨 CSS.md",
-    "🌏 Web Dev/🌏 Web Dev.md",
+    "✒ Coding Theory.md",
     "🍎 CodingApple/🍎 Html.md",
+    "🌏 Web Dev/🎨 CSS.md",
+    "🌏 Web Dev/🧱 HTML.md",
+    "🌏 Web Dev/💻 JavaScript.md",
+    "🌏 Web Dev/🌏 Web Dev.md",
     "🎄 Jungle.md",
     "💾 SQL.md",
-    "✒ Coding Theory.md",
     "Pic/다운로드.png",
     "✏ Memo.md",
-    "🌏 Web Dev/🧱 HTML.md",
     "Game Design/무제 파일.md",
     "Game Design.md",
     "Game Design",
