@@ -55,8 +55,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -138,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "🌏 Web Dev/🧱 HTML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "🌏 Web Dev/🧱 HTML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md"
+                "file": "🌏 Web Dev/🧱 HTML.md"
               }
             }
           },
@@ -210,10 +209,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "2421c14250bc6f40",
+  "active": "322eee286b326dfa",
   "lastOpenFiles": [
-    "🛠 Life Hacking.md",
     "🌏 Web Dev/🎨 CSS.md",
+    "🛠 Life Hacking.md",
     "🌏 Web Dev/🧱 HTML.md",
     "🍎 CodingApple/🍎 Html.md",
     "Pic/Pasted image 20240516213933.png",
