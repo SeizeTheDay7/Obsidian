@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "Spaces/Home/템플릿.md",
                 "mode": "source",
                 "source": false
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "Spaces/Home/템플릿.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "Spaces/Home/템플릿.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md"
+                "file": "Spaces/Home/템플릿.md"
               }
             }
           },
@@ -231,11 +231,13 @@
   },
   "active": "6fa50716d38019f6",
   "lastOpenFiles": [
-    "🎄 Jungle.md",
+    ".md",
+    "🛠 Life Hacking.md",
+    "Obsidian Vault.md",
     "🌏 Web Dev/🎨 CSS.md",
+    "🎄 Jungle.md",
     "🌏 Web Dev/🧱 HTML.md",
     "🍎 CodingApple/🍎 Html.md",
-    "🛠 Life Hacking.md",
     "Jungle.md",
     "🦝 GPT 질문 답변/🦝 GPT 질문 답변.md",
     "🦝 GPT 질문 답변/H, C, J 질문.md",
@@ -260,8 +262,6 @@
     "Spaces/Spaces.md",
     "GPT/GPT.md",
     "GPT",
-    "Code Snippet.md",
-    "Blender Note.md",
     "Pic/Pasted image 20240427184239.png",
     "Jungle",
     "CodingApple",
