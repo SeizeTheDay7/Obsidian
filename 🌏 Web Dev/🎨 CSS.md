@@ -84,7 +84,7 @@ position: absolute와 함께 사용하면 부모 컨테이너 내 중앙에 정�
 2.
 ``` CSS
 margin-left: auto; 
-margin-right: auto;
+margin-right: auto; 
 ```
 
 3.
