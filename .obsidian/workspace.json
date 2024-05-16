@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Game Design/무제 파일.md",
+                "file": "💾 SQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Game Design/무제 파일.md",
+                "file": "💾 SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Game Design/무제 파일.md",
+                "file": "💾 SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Game Design/무제 파일.md"
+                "file": "💾 SQL.md"
               }
             }
           },
@@ -222,16 +222,16 @@
   },
   "active": "af090adb7daff5e0",
   "lastOpenFiles": [
-    "Game Design.md",
+    "✏ Memo.md",
+    "🌏 Web Dev/🧱 HTML.md",
     "Game Design/무제 파일.md",
+    "Game Design.md",
     "Game Design",
     "conflict-files-obsidian-git.md",
-    "🌏 Web Dev/🧱 HTML.md",
     "💾 SQL.md",
     "🍎 CodingApple/🍎 Html.md",
     "🕹 Game Dev/💻 C#.md",
     "🌏 Web Dev/💻 JavaScript.md",
-    "✏ Memo.md",
     "🛠 Life Hacking.md",
     "✒ Coding Theory.md",
     "📋 Code Snippet.md",
