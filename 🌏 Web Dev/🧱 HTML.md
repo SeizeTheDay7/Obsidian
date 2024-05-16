@@ -28,6 +28,7 @@
 
 `<table>` : 표 만들 때 사용 
 `<tr>` : 가로 행 (table row)
+`<th>` : 제목용 세로 열 (table header)
 `<td>` : 세로 열 (table data)
 
 
