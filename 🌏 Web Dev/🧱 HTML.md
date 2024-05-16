@@ -1,6 +1,8 @@
 - [[#`<div>`류 태그들|`<div>`류 태그들]]
 - [[#목록 태그|목록 태그]]
-
+- [[#`<form>` 태그|`<form>` 태그]]
+	- [[#`<form>` 태그#`<input>` 태그|`<input>` 태그]]
+	- [[#`<form>` 태그#`<select>` 태그|`<select>` 태그]]
 
 
 
@@ -11,6 +13,22 @@
 `<section>` : 테마나 목적이 같은 컨텐츠 그룹화
 `<footer>` : 페이지 맨 마지막
 `<article>` : 독립적으로 의미가 완전한 컨텐츠
+
+
+## `<table>` 태그
+<hr>
+
+```html
+<table>
+  <tr>
+    <td></td>
+  <tr>
+</table>
+```
+
+`<table>` : 표 만들 때 사용 
+`<tr>` : 가로 행 (table row)
+`<td>` : 세로 열 (table data)
 
 
 ## 목록 태그
@@ -44,7 +62,7 @@
 `<dfn>` : 현재 정의하고 있는 용어; *definition*
 
 
-### `<form>` 태그
+## `<form>` 태그
 <hr>
 
 ```html
@@ -54,7 +72,7 @@
 
 태그 안에 감싸져 있는 `<input>`, `<select>`, `<textarea>` 안의 데이터를 서버로 보낸다.
 
-#### `<input>` 태그
+### `<input>` 태그
 
 `<form>` 태그로 서버에 데이터를 보낼 때 `<input>` 태그로 입력 영역을 만들 수 있다.
 
@@ -95,7 +113,7 @@
 | url            | 인터넷 주소 입력창을 만듭니다.                                            |
 | week           | 표준시간이 아닌 년, 주 입력 창을 만듭니다.                                    |
 
-#### `<select>` 태그
+### `<select>` 태그
 
 [정리글](https://thrillfighter.tistory.com/572)
 [정리글2](https://batcave.tistory.com/69)

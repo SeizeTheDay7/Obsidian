@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "322eee286b326dfa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🌏 Web Dev/🧱 HTML.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -126,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md",
+                "file": "🌏 Web Dev/🧱 HTML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md",
+                "file": "🌏 Web Dev/🧱 HTML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md"
+                "file": "🌏 Web Dev/🧱 HTML.md"
               }
             }
           },
@@ -198,11 +210,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "a4594a3b9c8e4582",
+  "active": "322eee286b326dfa",
   "lastOpenFiles": [
-    "🎄 Jungle.md",
-    "🍎 CodingApple/🍎 Html.md",
+    "🌏 Web Dev/💻 JavaScript.md",
     "🌏 Web Dev/🎨 CSS.md",
+    "🌏 Web Dev/🌏 Web Dev.md",
+    "🍎 CodingApple/🍎 Html.md",
+    "🎄 Jungle.md",
     "💾 SQL.md",
     "✒ Coding Theory.md",
     "Pic/다운로드.png",
@@ -213,7 +227,6 @@
     "Game Design",
     "conflict-files-obsidian-git.md",
     "🕹 Game Dev/💻 C#.md",
-    "🌏 Web Dev/💻 JavaScript.md",
     "🛠 Life Hacking.md",
     "📋 Code Snippet.md",
     "🦝 GPT 질문 답변/H, C, J 질문.md",
@@ -222,7 +235,6 @@
     "Obsidian Vault.md",
     "🕹 Game Dev/🕹 Game Dev.md",
     "Spaces/Spaces.md",
-    "🌏 Web Dev/🌏 Web Dev.md",
     "🌏 Web Dev",
     "🕹 Game Dev",
     "🕹 Game Dev/♟ Blender.md",
