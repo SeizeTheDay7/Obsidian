@@ -111,3 +111,5 @@ class 재활용해서 css 중복 안되게 하면 고수
 <label for="sub"> Subscribe</label>
 ```
 이렇게 하면 "Subscribe" 누르면 체크박스도 같이 체크됨
+
+input에 box-sizing: border-box 줘야 
