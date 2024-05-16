@@ -112,4 +112,5 @@ class 재활용해서 css 중복 안되게 하면 고수
 ```
 이렇게 하면 "Subscribe" 누르면 체크박스도 같이 체크됨
 
-input에 box-sizing: border-box 줘야 
+input에 box-sizing: border-box 줘야 폭이 padding을 포함해서 조금 커질 수 있다.
+콤마 찍어서 div, textarea, input 등 태그에 box-sizing 주자.
