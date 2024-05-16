@@ -105,3 +105,9 @@ max 설정해놨어도 padding 넣으면 더 커질 수 있다. width는 content
 css 파일에 복붙하거나 다운 받아서 link 태그로 첨부하기.
 
 class 재활용해서 css 중복 안되게 하면 고수
+
+```html
+<input id="sub" type="checkbox">
+<label for="sub"> Subscribe</label>
+```
+이렇게 하면 "Subscribe" 누르면 체크박스도 같이 체크됨
