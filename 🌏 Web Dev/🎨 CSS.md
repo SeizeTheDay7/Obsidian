@@ -1,6 +1,5 @@
 - [[#General|General]]
-- [[#맨 처음 선언할만한 스타일들|맨 처음 선언할만한 스타일들]]
-	- [[#맨 처음 선언할만한 스타일들#vertical-align|vertical-align]]
+- [[#맨 처음 선언할만한 스타일|맨 처음 선언할만한 스타일]]
 - [[#CSS 변수 선언|CSS 변수 선언]]
 - [[#배경 관련 속성|배경 관련 속성]]
 - [[#CSS 상대 단위|CSS 상대 단위]]
@@ -8,11 +7,13 @@
 	- [[#CSS 상대 단위#em, rem : font-size 기준 크기|em, rem : font-size 기준 크기]]
 - [[#중앙 정렬하는 방법|중앙 정렬하는 방법]]
 	- [[#중앙 정렬하는 방법#버튼 안에 있는 텍스트 수직 정렬|버튼 안에 있는 텍스트 수직 정렬]]
-- [[#margin|margin]]
-- [[#Position|Position]]
-- [[#::before와 ::after|::before와 ::after]]
-- [[#Flexbox|Flexbox]]
-- [[#CSS 선택자|CSS 선택자]]
+- [[#속성|속성]]
+	- [[#속성#vertical-align|vertical-align]]
+	- [[#속성#margin|margin]]
+	- [[#속성#Position|Position]]
+	- [[#속성#::before와 ::after|::before와 ::after]]
+	- [[#속성#Flexbox|Flexbox]]
+	- [[#속성#CSS 선택자|CSS 선택자]]
 - [[#Bugs|Bugs]]
 	- [[#Bugs#css stylesheet 추가할 때 슬래시|css stylesheet 추가할 때 슬래시]]
 	- [[#Bugs#margin collapse 현상|margin collapse 현상]]
@@ -37,17 +38,6 @@ table {
 
 ```
 
-
-### vertical-align
-<hr>
-
-vertical-align: top/middle/bottom : 상중하 정렬 
-vertical-align: super/sub : 위첨자 아래첨자
-
-![](Pasted%20image%2020240516213933.png)
-1. inline/inline-block 요소 간의 세로 정렬할 때 사용 
-
-2. `<table>` 태그의 `<th>`,`<td>`,`<tr>` 텍스트 정렬 (top, middle, bottom만 됨)
 
 ## CSS 변수 선언
 <hr>
@@ -135,7 +125,21 @@ flex-direction: column;
 ```
 
 
-## margin
+## 속성
+
+### vertical-align
+<hr>
+
+vertical-align: top/middle/bottom : 상중하 정렬 
+vertical-align: super/sub : 위첨자 아래첨자
+
+![](Pasted%20image%2020240516213933.png)
+1. inline/inline-block 요소 간의 세로 정렬할 때 사용 
+
+2. `<table>` 태그의 `<th>`,`<td>`,`<tr>` 텍스트 정렬 (top, middle, bottom만 됨)
+
+
+### margin
 <hr>
 
 [정리글](https://developer.mozilla.org/ko/docs/Web/CSS/margin)
@@ -185,7 +189,7 @@ margin-left: 100px;
 ```
 
 
-## Position
+### Position
 <hr>
 
 [정리글](https://creamilk88.tistory.com/197)
@@ -220,7 +224,7 @@ margin-left: 100px;
 | right  | 요소의 position 기준에 맞는 오른쪽에서의 거리(위치)를 설정 |
 
 
-## ::before와 ::after
+### ::before와 ::after
 <hr>
 
 ::before : 실제 내용 바로 앞에서 생성되는 자식요소  
@@ -238,7 +242,7 @@ margin-left: 100px;
 | attr    | 해당속성의 속성값 표시                  |
 
 
-## Flexbox
+### Flexbox
 <hr>
 
 [정리글](https://studiomeal.com/archives/197)
@@ -291,7 +295,7 @@ margin-left: 100px;
 >`<button>`에 `align-self: center` 적용시켜주면 정상화.
 
 
-## CSS 선택자
+### CSS 선택자
 
 ```CSS
 /* 모든 태그에 적용하고 싶을 때 */

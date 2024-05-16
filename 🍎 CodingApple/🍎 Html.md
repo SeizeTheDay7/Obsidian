@@ -116,3 +116,9 @@ input에 box-sizing: border-box 줘야 폭이 padding을 포함해서 조금 커
 콤마 찍어서 div, textarea, input 등 태그에 box-sizing 주자.
 
 글씨간의 세로정렬할 때 vertical-align 사용한다.
+
+display: inline : 항상 옆으로 채워지는 **폭과 너비가 없는 요소** (옆에 쓰는대로 옆으로 채워짐)
+
+div에 style="display: table"을 넣으면 table이랑 비슷하게 동작
+display: table-row 넣으면 tr 됨
+display: table-cell 넣으면 td 됨
