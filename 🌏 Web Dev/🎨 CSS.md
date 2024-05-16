@@ -1,21 +1,23 @@
 - [[#General|General]]
-	- [[#General#화면 꽉 채우는 방법|화면 꽉 채우는 방법]]
-	- [[#General#CSS 변수 선언|CSS 변수 선언]]
-	- [[#General#배경 관련 속성|배경 관련 속성]]
-	- [[#General#CSS 상대 단위|CSS 상대 단위]]
-		- [[#CSS 상대 단위#vh, vw, vmin : 화면 전체 상대 길이|vh, vw, vmin : 화면 전체 상대 길이]]
-		- [[#CSS 상대 단위#em, rem : font-size 기준 크기|em, rem : font-size 기준 크기]]
+- [[#맨 처음 선언할만한 스타일들|맨 처음 선언할만한 스타일들]]
+	- [[#맨 처음 선언할만한 스타일들#vertical-align|vertical-align]]
+- [[#CSS 변수 선언|CSS 변수 선언]]
+- [[#배경 관련 속성|배경 관련 속성]]
+- [[#CSS 상대 단위|CSS 상대 단위]]
+	- [[#CSS 상대 단위#vh, vw, vmin : 화면 전체 상대 길이|vh, vw, vmin : 화면 전체 상대 길이]]
+	- [[#CSS 상대 단위#em, rem : font-size 기준 크기|em, rem : font-size 기준 크기]]
 - [[#중앙 정렬하는 방법|중앙 정렬하는 방법]]
+	- [[#중앙 정렬하는 방법#버튼 안에 있는 텍스트 수직 정렬|버튼 안에 있는 텍스트 수직 정렬]]
 - [[#margin|margin]]
 - [[#Position|Position]]
 - [[#::before와 ::after|::before와 ::after]]
 - [[#Flexbox|Flexbox]]
 - [[#CSS 선택자|CSS 선택자]]
-- [[#Code Snippet|Code Snippet]]
 - [[#Bugs|Bugs]]
 	- [[#Bugs#css stylesheet 추가할 때 슬래시|css stylesheet 추가할 때 슬래시]]
 	- [[#Bugs#margin collapse 현상|margin collapse 현상]]
 	- [[#Bugs#z-index 붙여도 가려짐|z-index 붙여도 가려짐]]
+
 
 
 ## General
@@ -25,7 +27,7 @@
 ○ 화면 꽉 채우는 방법 : `min-height: 100vh`
 
 
-## 맨 처음 선언할만한 스타일들
+## 맨 처음 선언할만한 스타일
 <hr>
 
 ```css
@@ -39,7 +41,10 @@ table {
 ### vertical-align
 <hr>
 
-![](Pasted%20image%2020240516213501.png)
+vertical-align: top/middle/bottom : 상중하 정렬 
+vertical-align: super/sub : 위첨자 아래첨자
+
+![](Pasted%20image%2020240516213933.png)
 1. inline/inline-block 요소 간의 세로 정렬할 때 사용 
 
 
