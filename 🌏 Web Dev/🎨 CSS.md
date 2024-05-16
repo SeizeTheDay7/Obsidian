@@ -41,6 +41,8 @@ table {
 ## 테이블 테두리 둥글게 만들기
 <hr>
 
+**방법 1.** separate 방식
+
 ```css
 border-collapse: separate;
 border-spacing: 0; /* 셀 간의 간격 없애기 */
@@ -48,6 +50,30 @@ border-radius: 15px;
 ```
 
 셀 간의 공간을 없애는 `border-collapse: collapse;`을 적용하면 border-radius와 충돌하여 둥근 테두리가 적용되지 않는다. 
+
+**방법 2.** collapse 방식
+
+```css
+table {
+  border-collapse : collapse;
+  border-spacing : 0;
+}
+
+(왼쪽위에있는 td) {
+  border-top-left-radius : 5px;
+}
+```
+
+**방법 3.** box-shadow로 가짜 테두리 만들기
+
+```css
+table {
+  border-collapse : collapse;
+  border-radius : 7px;
+  border-style : hidden;
+  box-shadow : 0 0 0 1px #666;
+}
+```
 
 
 ## CSS 변수 선언
