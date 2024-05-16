@@ -29,7 +29,7 @@
   
 NULL 값에 숫자 더해도 NULL, 비교하면 FALSE 또는 unknown, 집계 함수 계산에선 아예 빠짐
 
-
+![](다운로드.png)
 
 트랜잭션 : 데이터베이스 read, write 연산 수행하는 단위
 트랜잭션의 ACID 원리

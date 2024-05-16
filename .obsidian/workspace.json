@@ -44,16 +44,6 @@
             }
           },
           {
-            "id": "a538cf524d0ae259",
-            "type": "leaf",
-            "state": {
-              "type": "mk-uri-view",
-              "state": {
-                "path": "https://www.make.md/static/latest.md"
-              }
-            }
-          },
-          {
             "id": "2e2c01f08965317b",
             "type": "leaf",
             "state": {
@@ -66,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -148,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "💾 SQL.md",
+                "file": "🍎 CodingApple/🍎 Html.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "💾 SQL.md",
+                "file": "🍎 CodingApple/🍎 Html.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "💾 SQL.md"
+                "file": "🍎 CodingApple/🍎 Html.md"
               }
             }
           },
@@ -220,15 +210,16 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "af090adb7daff5e0",
+  "active": "a4594a3b9c8e4582",
   "lastOpenFiles": [
+    "💾 SQL.md",
+    "Pic/다운로드.png",
     "✏ Memo.md",
     "🌏 Web Dev/🧱 HTML.md",
     "Game Design/무제 파일.md",
     "Game Design.md",
     "Game Design",
     "conflict-files-obsidian-git.md",
-    "💾 SQL.md",
     "🍎 CodingApple/🍎 Html.md",
     "🕹 Game Dev/💻 C#.md",
     "🌏 Web Dev/💻 JavaScript.md",
@@ -251,7 +242,6 @@
     "🕹 Game Dev/🎮 Unity.md",
     "프로그래밍 언어/프로그래밍 언어.md",
     "프로그래밍 언어",
-    "test.md",
     "🦝 GPT 질문 답변",
     "Pic/Pasted image 20240427184239.png",
     "Jungle",
@@ -264,7 +254,6 @@
     "Pic/Pasted image 20240117232616.png",
     "Pic/Pasted image 20240128153139.png",
     "Pic/Pasted image 20240128153034.png",
-    "Pic/3D 기능 소개 1.png",
     "Pic",
     "Spaces/Home",
     "Spaces"
