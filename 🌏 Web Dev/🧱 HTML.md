@@ -29,7 +29,7 @@
 테이블은 td 하나의 크기만 바꿔도 해당하는 열의 크기가 다 바뀐다.
 
 `<table>` : 표 만들 때 사용 
-  border-collapse: collapse : 셀 간의 간격 없애기 
+- border-collapse: collapse : 셀 간의 간격 없애기 
 
 `<thead>` : 최상단 제목 행 (기능상 차이는 없다)
 `<tbody>` : 일반 행 (기능상 차이는 없다)
@@ -37,8 +37,8 @@
 `<tr>` : 가로 행 (table row)
 `<th>` : 제목용 세로 열 (table header)
 `<td>` : 세로 열 (table data)
-  vertical-align: top/middle/bottom : 셀 안의 요소 상하정렬
-
+- vertical-align: top/middle/bottom : 셀 안의 요소 상하정렬
+- colspan, rowspan : 셀 몇칸을 차지할지 설정
 
 ## 목록 태그
 <hr>
