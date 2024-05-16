@@ -28,7 +28,7 @@
 ## 맨 처음 선언할만한 스타일들
 ```css
 table {
-  border-collapse: collapse;
+  border-collapse: collapse; /* 테이블 틈 없애기 */
 }
 
 ```
