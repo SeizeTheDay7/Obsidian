@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "✒ Coding Theory.md",
+                "file": "🛠 Life Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -55,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -137,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "🛠 Life Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "🛠 Life Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md"
+                "file": "🛠 Life Hacking.md"
               }
             }
           },
@@ -209,11 +210,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "2421c14250bc6f40",
+  "active": "2e2c01f08965317b",
   "lastOpenFiles": [
     "✒ Coding Theory.md",
-    "🍎 CodingApple/🍎 Html.md",
     "🌏 Web Dev/🎨 CSS.md",
+    "🍎 CodingApple/🍎 Html.md",
     "🌏 Web Dev/🧱 HTML.md",
     "🌏 Web Dev/💻 JavaScript.md",
     "🌏 Web Dev/🌏 Web Dev.md",
