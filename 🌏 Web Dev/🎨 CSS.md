@@ -35,8 +35,13 @@
 table {
   border-collapse: collapse; /* 테이블 틈 없애기 */
 }
-
 ```
+
+
+## 테이블 테두리 둥글게 만들기
+<hr>
+
+셀 간의 공간을 없애는 `border-collapse: collapse;`을 적용하면 border-radius와 충돌하여 둥근 테두리가 적용되지 않는다.
 
 
 ## CSS 변수 선언
