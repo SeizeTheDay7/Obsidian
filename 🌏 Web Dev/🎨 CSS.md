@@ -26,6 +26,8 @@
 
 
 ## 맨 처음 선언할만한 스타일들
+<hr>
+
 ```css
 table {
   border-collapse: collapse; /* 테이블 틈 없애기 */
@@ -34,7 +36,17 @@ table {
 ```
 
 
+### vertical-align
+<hr>
+
+![](Pasted%20image%2020240516213501.png)
+1. inline/inline-block 요소 간의 세로 정렬할 때 사용 
+
+
+
 ## CSS 변수 선언
+<hr>
+
 ```css
 :root {
 	--main-font-color: #000f22;  /* CSS 전역 변수 선언 */
@@ -48,6 +60,8 @@ div {
 
 
 ## 배경 관련 속성
+<hr>
+
 ```css
 background-image: url(../img/shoes.jpg);
 background-size: cover;  /* 이미지 크기에 맞게 조절 */
@@ -58,6 +72,7 @@ filter: brightness(70%); /* 이미지 어둡게 */
 ```
 `background-size: cover` 빈 공간 없이 배경으로 꽉 채워라
 `background-size: contain` 배경 짤리면 안된다
+
 
 ## CSS 상대 단위
 <hr>
@@ -114,6 +129,7 @@ flex-direction: column;
 }
 ```
 
+
 ## margin
 <hr>
 
@@ -163,6 +179,7 @@ margin-bottom: 30px;
 margin-left: 100px;
 ```
 
+
 ## Position
 <hr>
 
@@ -196,6 +213,7 @@ margin-left: 100px;
 | bottom | 요소의 position 기준에 맞는 아래쪽에서의 거리(위치)를 설정 |
 | left   | 요소의 position 기준에 맞는 왼쪽에서의 거리(위치)를 설정  |
 | right  | 요소의 position 기준에 맞는 오른쪽에서의 거리(위치)를 설정 |
+
 
 ## ::before와 ::after
 <hr>
@@ -317,18 +335,6 @@ margin-left: 100px;
 /* 여러 태그에 함께 적용 */
 태그1, 태그2, .클래스 {
 	속성: 선택지;
-}
-```
-
-
-## Code Snippet
-<hr>
-
-
-``` css
-* {
-	box-sizing:border-box; // 테두리 포함한 크기 지정
-	user-select: none; // 텍스트 선택 방지
 }
 ```
 
