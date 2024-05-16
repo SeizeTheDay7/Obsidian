@@ -55,8 +55,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -138,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md",
+                "file": "🌏 Web Dev/🎨 CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md",
+                "file": "🌏 Web Dev/🎨 CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md"
+                "file": "🌏 Web Dev/🎨 CSS.md"
               }
             }
           },
@@ -210,13 +209,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "a4594a3b9c8e4582",
+  "active": "2421c14250bc6f40",
   "lastOpenFiles": [
+    "🍎 CodingApple/🍎 Html.md",
     "🌏 Web Dev/🎨 CSS.md",
     "🎄 Jungle.md",
     "💾 SQL.md",
     "✒ Coding Theory.md",
-    "🍎 CodingApple/🍎 Html.md",
     "Pic/다운로드.png",
     "✏ Memo.md",
     "🌏 Web Dev/🧱 HTML.md",

@@ -99,6 +99,15 @@ align-items: center;
 flex-direction: column;
 ```
 
+### 버튼 안에 있는 텍스트 수직 정렬
+
+```css
+.orange-button{
+	display: flex;
+	align-items: center;
+}
+```
+
 ## margin
 <hr>
 
