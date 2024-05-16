@@ -27,6 +27,10 @@
 ```
 
 `<table>` : 표 만들 때 사용 
+
+`<thead>` : 최상단 제목 행 (기능상 차이는 없다)
+`<tbody>` : 일반 행 (기능상 차이는 없다)
+
 `<tr>` : 가로 행 (table row)
 `<th>` : 제목용 세로 열 (table header)
 `<td>` : 세로 열 (table data)
