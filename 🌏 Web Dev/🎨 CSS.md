@@ -47,7 +47,7 @@ vertical-align: super/sub : 위첨자 아래첨자
 ![](Pasted%20image%2020240516213933.png)
 1. inline/inline-block 요소 간의 세로 정렬할 때 사용 
 
-
+2. `<table>` 태그의 `<th>`,`<td>`,`<tr>` 텍스트 정렬
 
 ## CSS 변수 선언
 <hr>
