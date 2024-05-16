@@ -56,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md",
+                "file": "💾 SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md",
+                "file": "💾 SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md"
+                "file": "💾 SQL.md"
               }
             }
           },
@@ -210,9 +210,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "a4594a3b9c8e4582",
+  "active": "af090adb7daff5e0",
   "lastOpenFiles": [
+    "✒ Coding Theory.md",
+    "🌏 Web Dev/🎨 CSS.md",
     "💾 SQL.md",
+    "🍎 CodingApple/🍎 Html.md",
     "Pic/다운로드.png",
     "✏ Memo.md",
     "🌏 Web Dev/🧱 HTML.md",
@@ -220,13 +223,10 @@
     "Game Design.md",
     "Game Design",
     "conflict-files-obsidian-git.md",
-    "🍎 CodingApple/🍎 Html.md",
     "🕹 Game Dev/💻 C#.md",
     "🌏 Web Dev/💻 JavaScript.md",
     "🛠 Life Hacking.md",
-    "✒ Coding Theory.md",
     "📋 Code Snippet.md",
-    "🌏 Web Dev/🎨 CSS.md",
     "🦝 GPT 질문 답변/H, C, J 질문.md",
     "🎄 Jungle.md",
     "🦝 GPT 질문 답변/EC2 명령어 질문.md",
