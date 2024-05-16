@@ -103,3 +103,5 @@ max 설정해놨어도 padding 넣으면 더 커질 수 있다. width는 content
 
 호환성 이슈 해결책부터 첨부하기도 함. 검색 키워드 : normalize.css
 css 파일에 복붙하거나 다운 받아서 link 태그로 첨부하기.
+
+class 재활용해서 css 중복 안되게 하면 고수
