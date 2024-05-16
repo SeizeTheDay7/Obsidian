@@ -25,19 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌏 Web Dev/🧱 HTML.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c10ae6b59f3c82f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "무제 파일.md",
+                "file": "Game Design/무제 파일.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,7 +66,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -160,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "무제 파일.md",
+                "file": "Game Design/무제 파일.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "무제 파일.md",
+                "file": "Game Design/무제 파일.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "무제 파일.md"
+                "file": "Game Design/무제 파일.md"
               }
             }
           },
@@ -232,10 +220,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "c10ae6b59f3c82f2",
+  "active": "af090adb7daff5e0",
   "lastOpenFiles": [
+    "Game Design.md",
+    "Game Design/무제 파일.md",
+    "Game Design",
     "conflict-files-obsidian-git.md",
-    "무제 파일.md",
     "🌏 Web Dev/🧱 HTML.md",
     "💾 SQL.md",
     "🍎 CodingApple/🍎 Html.md",
@@ -262,7 +252,6 @@
     "프로그래밍 언어/프로그래밍 언어.md",
     "프로그래밍 언어",
     "test.md",
-    "test2.md",
     "🦝 GPT 질문 답변",
     "Pic/Pasted image 20240427184239.png",
     "Jungle",
@@ -278,7 +267,6 @@
     "Pic/3D 기능 소개 1.png",
     "Pic",
     "Spaces/Home",
-    "Spaces",
-    "개발일지"
+    "Spaces"
   ]
 }
