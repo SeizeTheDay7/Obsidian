@@ -1,3 +1,14 @@
+- [[#명령어 북마크|명령어 북마크]]
+- [[#기본 명령어|기본 명령어]]
+	- [[#기본 명령어#디렉토리 설정|디렉토리 설정]]
+	- [[#기본 명령어#로그 출력|로그 출력]]
+	- [[#기본 명령어#브랜치|브랜치]]
+	- [[#기본 명령어#병합|병합]]
+		- [[#병합#일반 merge (3-way 브랜치)|일반 merge (3-way 브랜치)]]
+		- [[#병합#rebase & merge|rebase & merge]]
+- [[#필요없는 명령어|필요없는 명령어]]
+
+
 git bash에서 cd 'C:\Users\Hutosuto\Documents\Obsidian Vault' 하면 저장소 선택돼서 명령 가능
 
 vscode에서 바로 git 사용할 수도 있다
@@ -6,14 +17,23 @@ rebase merge 하는 이유 : 간단하고 짧은 브랜치들은 이거 쓰면 �
 
 HEAD : 내 현재 위치
 
+## 명령어 북마크
+<hr>
+
 `git reset --hard origin/main`
 : 이 명령어는 로컬 브랜치를 원격 브랜치와 동일하게 만듭니다. 
 즉, 로컬 변경 사항을 모두 무시하고 원격 브랜치의 상태로 덮어씁니다.
 
+
 ## 기본 명령어
+<hr>
+
+### 디렉토리 설정
 
 `cd 'C:\Users\Hutosuto\Desktop\'` : 바탕화면 디렉토리 설정
 `cd 'C:\Users\Hutosuto\Documents\Obsidian Vault'` : 옵시디언 디렉토리 설정
+
+### 로그 출력
 
 `git status` : 현재 작업 디렉토리와 스테이징된 파일의 상태를 보여줌. 파일의 변경, 추가, 삭제 내역을 확인할 수 있음.
 - **Untracked files**: Git이 추적하지 않는 파일들.
@@ -26,25 +46,33 @@ HEAD : 내 현재 위치
 - **날짜 (Date)**: 커밋이 만들어진 날짜와 시간.
 - **커밋 메시지 (Commit message)**: 커밋에 대한 설명.
 
+### 브랜치
+
 `git branch 브랜치명` : 브랜치 생성
 `git switch 브랜치명` : 브랜치로 이동
 
-`git merge 브랜치명` : 브랜치 병합 (같은 파일 바꿨으면 conflict 일어남. 원하는 코드만 남기고 git add, git commit 하면 merge 완료됨)
+`git branch -d 브랜치명` : merge 완료된 브랜치 삭제
+`git branch -D 브랜치명` : merge 안한 브랜치 삭제
 
-일반 merge (3-way 브랜치)
+### 병합
+
+`git merge 브랜치명` : 브랜치 병합 (같은 파일 바꿨으면 conflict 일어남. 원하는 코드만 남기고 git add, git commit 하면 merge 완료됨)
+`git merge --squash 새브랜치` : sqaush & merge
+
+#### 일반 merge (3-way 브랜치)
 1. 중심 브랜치로 이동해서
 2. git merge 새로운브랜치명
 
-rebase & merge
+#### rebase & merge
 1. 새로운브랜치로 이동
 2. git rebase 중심브랜치명
 3. 중심브랜치로 이동
 4. git merge 새로운브랜치명
 
-`git branch -d 브랜치명` : merge 완료된 브랜치 삭제
-`git branch -D 브랜치명` : merge 안한 브랜치 삭제
+
 
 ## 필요없는 명령어
+<hr>
 
 ![](Pasted%20image%2020240517164734.png)
 
