@@ -74,7 +74,7 @@ vim 에디터 : i로 입력하고 esc 누르고 :wq로 저장 후 닫기
 4. git merge 새로운브랜치명
 
 
-### 파일/커밋 복구
+### 파일/커밋 되돌리기
 
 `git resotre 파일명` : 가장 최근 커밋된 버전 기준으로 파일을 되돌림 
 `git restore --source 커밋아이디 파일명` : 특정 commit 시점으로 파일 복구
@@ -86,6 +86,8 @@ vim 에디터 : i로 입력하고 esc 누르고 :wq로 저장 후 닫기
 `git revert HEAD` : 최근 commit 취소
 
 `git reset --hard 커밋아이디` : 과거로 모든걸 되돌리기 (협업시엔 사용금지)
+`git reset --soft 커밋아이디` : 리셋인데 변동사항 지우지 말고 스테이징 해놓기
+`git reset --mixed 커밋아이디` : 리셋인데 변동사항 지우지 말고 unstage 해놓기
 
 
 
