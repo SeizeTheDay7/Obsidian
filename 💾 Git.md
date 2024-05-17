@@ -2,7 +2,7 @@ git bash에서 cd 'C:\Users\Hutosuto\Documents\Obsidian Vault' 하면 저장소 
 
 vscode에서 바로 git 사용할 수도 있다
 
-
+HEAD : 내 현재 위치
 
 `git reset --hard origin/main`
 : 이 명령어는 로컬 브랜치를 원격 브랜치와 동일하게 만듭니다. 
@@ -38,6 +38,8 @@ vscode에서 바로 git 사용할 수도 있다
 `git add 파일명` 
 `git commit -m '아무메세지'`
 파일의 현재 상태를 기록할 수 있다.
+
+`git log --graph --oneline --all` : 브랜치마다 commit 내역을 그래프로 보고 싶다.
 
 `git difftool` : vim 에디터에서 최근에 commit한 파일과 현재 파일의 차이점 보여줌
 `qa` 입력하면 종료 가능
