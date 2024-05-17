@@ -17,7 +17,7 @@ rebase merge 하는 이유 : 간단하고 짧은 브랜치들은 이거 쓰면 �
 
 HEAD : 내 현재 위치
 
-vim 에디터 : i로 입력하고 :wq로 저장 후 닫기
+vim 에디터 : i로 입력하고 esc 누르고 :wq로 저장 후 닫기
 
 ## 명령어 북마크
 <hr>
@@ -78,8 +78,14 @@ vim 에디터 : i로 입력하고 :wq로 저장 후 닫기
 
 `git resotre 파일명` : 가장 최근 커밋된 버전 기준으로 파일을 되돌림 
 `git restore --source 커밋아이디 파일명` : 특정 commit 시점으로 파일 복구
+
 `git restore --staged 파일명` : staging 취소
+
 `git revert 커밋아이디` : commit 취소 (해당 커밋에서 바꿨던거 되돌리는 커밋)
+`git revert 커밋아이디1 커밋아이디2` : commit 여러 개 취소
+`git revert HEAD` : 최근 commit 취소
+
+`git reset --hard 커밋아이디` : 과거로 모든걸 되돌리기 (협업시엔 사용금지)
 
 
 
