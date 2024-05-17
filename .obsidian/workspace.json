@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🛢 SQL.md",
+                "file": "💾 Git.md",
                 "mode": "source",
                 "source": false
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🛢 SQL.md",
+                "file": "💾 Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,7 +167,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🛢 SQL.md",
+                "file": "💾 Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🛢 SQL.md"
+                "file": "💾 Git.md"
               }
             }
           },
@@ -222,10 +222,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "170bc86352e12229",
+  "active": "0752f07fa25c707b",
   "lastOpenFiles": [
-    "🛠 Life Hacking.md",
+    "✒ Coding Theory.md",
+    "💾 Git.md",
     "🛢 SQL.md",
+    "🛠 Life Hacking.md",
     "🌏 Web Dev/🧱 HTML.md",
     "🌏 Web Dev/🎨 CSS.md",
     "🍎 CodingApple/🍎 Html.md",
@@ -234,7 +236,6 @@
     "Pic/Pasted image 20240516213904.png",
     "Pic/Pasted image 20240516213829.png",
     "Pic/Pasted image 20240516213501.png",
-    "✒ Coding Theory.md",
     "🌏 Web Dev/💻 JavaScript.md",
     "🌏 Web Dev/🌏 Web Dev.md",
     "🎄 Jungle.md",
