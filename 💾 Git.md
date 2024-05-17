@@ -28,7 +28,18 @@ HEAD : 내 현재 위치
 
 `git branch 브랜치명` : 브랜치 생성
 `git switch 브랜치명` : 브랜치로 이동
+
 `git merge 브랜치명` : 브랜치 병합 (같은 파일 바꿨으면 conflict 일어남. 원하는 코드만 남기고 git add, git commit 하면 merge 완료됨)
+
+일반 merge (3-way 브랜치)
+1. 중심 브랜치로 이동해서
+2. git merge 새로운브랜치명
+
+rebase & merge
+1. 새로운브랜치로 이동
+2. git rebase 중심브랜치명
+3. 중심브랜치로 이동
+4. git merge 새로운브랜치명
 
 `git branch -d 브랜치명` : merge 완료된 브랜치 삭제
 `git branch -D 브랜치명` : merge 안한 브랜치 삭제
