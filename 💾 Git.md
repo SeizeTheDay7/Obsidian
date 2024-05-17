@@ -28,6 +28,9 @@ HEAD : 내 현재 위치
 `git switch 브랜치명` : 브랜치로 이동
 `git merge 브랜치명` : 브랜치 병합 (같은 파일 바꿨으면 conflict 일어남. 원하는 코드만 남기고 git add, git commit 하면 merge 완료됨)
 
+`git branch -d 브랜치명` : merge 완료된 브랜치 삭제
+`git branch -D 브랜치명` : merge 안한 브랜치 삭제
+
 ## 필요없는 명령어
 
 ![](Pasted%20image%2020240517164734.png)
