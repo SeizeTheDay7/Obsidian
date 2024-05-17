@@ -2,6 +2,8 @@ git bash에서 cd 'C:\Users\Hutosuto\Documents\Obsidian Vault' 하면 저장소 
 
 vscode에서 바로 git 사용할 수도 있다
 
+rebase merge 하는 이유 : 간단하고 짧은 브랜치들은 이거 쓰면 깔끔해보임
+
 HEAD : 내 현재 위치
 
 `git reset --hard origin/main`
