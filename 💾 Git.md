@@ -72,6 +72,12 @@ HEAD : 내 현재 위치
 4. git merge 새로운브랜치명
 
 
+### 파일 복구
+
+`git resotre 파일명` : 가장 최근 커밋된 버전 기준으로 파일을 되돌림 
+`git restore --source 커밋아이디 파일명` : 특정 commit 시점으로 파일 복구
+
+
 
 ## 필요없는 명령어
 <hr>
