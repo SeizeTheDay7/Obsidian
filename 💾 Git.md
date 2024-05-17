@@ -21,6 +21,10 @@ vim 에디터 : i로 입력하고 esc 누르고 :wq로 저장 후 닫기
 
 저장소에 올리지 않는 파일들은 .gitignore 파일을 만들어서 명시하면 된다.
 
+git pull은 git fetch + git merge임
+git fetch : 원격 저장소 신규 commit 가져오셈
+git merge : 내 브랜치에 merge
+
 ## 명령어 북마크
 <hr>
 
