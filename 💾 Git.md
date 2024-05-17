@@ -10,7 +10,8 @@ vscode에서 바로 git 사용할 수도 있다
 
 ## 기본 명령어
 
-
+`cd 'C:\Users\Hutosuto\Desktop\'` : 바탕화면 디렉토리 설정
+`cd 'C:\Users\Hutosuto\Documents\Obsidian Vault'` : 옵시디언 디렉토리 설정
 
 ## 필요없는 명령어
 
