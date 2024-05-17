@@ -26,6 +26,7 @@ vscode에서 바로 git 사용할 수도 있다
 
 `git branch 브랜치명` : 브랜치 생성
 `git switch 브랜치명` : 브랜치로 이동
+`git merge 브랜치명` : 브랜치 병합
 
 ## 필요없는 명령어
 
