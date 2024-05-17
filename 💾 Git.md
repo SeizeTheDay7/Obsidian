@@ -20,6 +20,6 @@ vscode에서 바로 git 사용할 수도 있다
 `git difftool 커밋아이디` : 현재파일 vs 특정커밋 비교 가능
 `git difftool 커밋아이디1 커밋아이디2` : 특정커밋 vs 특정커밋 비교 가능
 
-
+vs code에서 extension 깔면 훨씬 편하게 볼 수 있어서 거의 안 쓴다.
 
 
