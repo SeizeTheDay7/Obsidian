@@ -19,6 +19,8 @@ HEAD : 내 현재 위치
 
 vim 에디터 : i로 입력하고 esc 누르고 :wq로 저장 후 닫기
 
+저장소에 올리지 않는 파일들은 .gitignore 파일을 만들어서 명시하면 된다.
+
 ## 명령어 북마크
 <hr>
 
@@ -88,6 +90,18 @@ vim 에디터 : i로 입력하고 esc 누르고 :wq로 저장 후 닫기
 `git reset --hard 커밋아이디` : 과거로 모든걸 되돌리기 (협업시엔 사용금지)
 `git reset --soft 커밋아이디` : 리셋인데 변동사항 지우지 말고 스테이징 해놓기
 `git reset --mixed 커밋아이디` : 리셋인데 변동사항 지우지 말고 unstage 해놓기
+
+### github 관련
+
+`git branch -M main` : 브랜치 이름 변경하는 방법. github.com은 기본 브랜치 이름을 main으로 사용하라고 강요함.
+`git push -u 원격저장소주소 main` : -u 붙이면 방금 입력한 주소 기억하라는 뜻. 이후엔 git push만 입력해도 된다.
+
+`git remote add origin 원격저장소주소` : 주소가 필요할 때마다 origin이라는 변수 쓰면 됨
+`git remote -v` : 변수 목록 확인
+
+`git clone https://원격저장소주소` : 원격저장소에 있던거 그대로 내려받기
+
+
 
 
 
