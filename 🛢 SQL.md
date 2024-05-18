@@ -41,6 +41,8 @@ CREATE INDEX 인덱스이름 ON 데이터베이스이름.테이블이름(칼럼�
 CREATE VIEW 뷰이름 # 뷰(유저에게 보여줄 쿼리의 변수명) 만들기
 AS
 	SELECT * FROM 테이블이름;
+
+SELECT * FROM 뷰이름; # 뷰 불러오기
 ```
 
 ## SQLD 이론
