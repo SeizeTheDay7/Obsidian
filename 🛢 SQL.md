@@ -1,12 +1,27 @@
+- [[#MySQL|MySQL]]
+	- [[#MySQL#단축키|단축키]]
+	- [[#MySQL#명령어|명령어]]
+		- [[#명령어#테이블 만들기|테이블 만들기]]
+		- [[#명령어#SELECT 절의 형식|SELECT 절의 형식]]
+		- [[#명령어#인덱스|인덱스]]
+		- [[#명령어#뷰|뷰]]
+		- [[#명령어#스토어드 프로시저|스토어드 프로시저]]
+- [[#SQLD 이론|SQLD 이론]]
+
+
 ## MySQL
 <hr>
-
-
 
 ### 단축키
 
 `Ctrl+Enter` : 커서가 있는 1개의 SQL문 실행 (세미콜론 끝날때까지)
 `Ctrl+Shift+Enter` : 모든 SQL문 실행 (드래그하면 그 부분만 실행)
+
+### MySQL에서 주석 작성 방법
+
+1. `#` 으로 작성
+2. `--` : 마이너스 기호 2번 작성
+3. `/* ~ */` : 여러 개의 줄을 한번에 주석 처리 
 
 ### 명령어
 
@@ -19,15 +34,20 @@ CREATE SCHEMA '데이터베이스이름'; # 데이터베이스 만듦
 ```
 
 ```mysql
+USE 데이터베이스이름; # 앞으로 모든 SQL 문이 해당 데이터베이스에서 수행됨
+# 아니면 MySQL에서 데이터베이스 더블클릭해도 됨.
+```
+#### 테이블 만들기
+```mysql
 CREATE TABLE `shop_db`.`member` ( # 'shop_db'에 'member'테이블을 만든다.
   `member_id` CHAR(8) NOT NULL,
   `member_name` CHAR(5) NOT NULL, # 그 안에 칼럼 3개를 만든다.
   `member_addr` VARCHAR(45) NULL, # NOT NULL은 NULL값 허용 안한다는 뜻
   PRIMARY KEY (`member_id`)); # PK는 'member_id'이다.
 ```
-
+#### SELECT
 ```mysql
-SELECT 칼럼이름 # SELECT 절의 형식
+SELECT 칼럼이름 # 순서가 맞지 않으면 오류 발생
 	FROM 테이블이름
 	WHERE 조건식
 	GROUP BY 칼럼이름
@@ -50,12 +70,17 @@ SELECT * FROM 테이블이름 WHERE 칼럼이름 IN('값1', '값2', '값3'); # �
 SELECT * FROM 테이블이름 WHERE 칼럼이름 LIKE '우%'; # 우설, 우산꽂이 등 조회
 SELECT * FROM 테이블이름 WHERE 칼럼이름 LIKE '__핑크'; # 무적핑크, 블랙핑크 등 조회
 ```
-
+#### ORDER BY
+```mysql
+SELECT * FROM 테이블이름 ORDER BY 칼럼이름; # 특정 칼럼 기준으로 정렬
+SELECT * FROM 테이블이름 ORDER BY 칼럼이름 DESC; # 내림차순 정렬 
+```
+#### INDEX
 ```mysql
 CREATE INDEX 인덱스이름 ON 데이터베이스이름.테이블이름(칼럼이름); 
 # 인덱스를 만들어서 더 빠르게 조회
 ```
-
+#### VIEW
 ```mysql
 CREATE VIEW 뷰이름 # 뷰(유저에게 보여줄 쿼리의 변수명) 만들기
 AS
@@ -63,7 +88,7 @@ AS
 
 SELECT * FROM 뷰이름; # 뷰 불러오기
 ```
-
+#### Stored Procedure
 ```mysql
 DELIMITER //  # 스토어드 프로시저를 묶어주는 양식
 CREATE PROCEDURE 프로시저이름()
@@ -75,10 +100,7 @@ DELIMITER ;
 CALL 프로시저이름(); # 프로시저 호출
 ```
 
-```mysql
-USE 데이터베이스이름; # 앞으로 모든 SQL 문이 해당 데이터베이스에서 수행됨
-```
-아니면  MySQL에서 데이터베이스 더블클릭해도 됨.
+
 ## SQLD 이론
 <hr>
 
