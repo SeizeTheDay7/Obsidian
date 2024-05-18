@@ -75,6 +75,7 @@ SELECT * FROM 테이블이름 WHERE 칼럼이름 LIKE '__핑크'; # 무적핑크
 #### GROUP BY
 ```mysql
 SELECT 집계함수(칼럼이름) FROM 테이블이름 GROUP BY 칼럼이름; # 속성 값 별로 묶여서 계산됨
+# group by를 쓸 땐 where을 쓰면 안된다. having을 써야 한다. (where과 having은 비슷함)
 ```
 ##### 집계함수
 | 함수명             | 설명                            |
