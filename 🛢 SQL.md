@@ -5,7 +5,7 @@
 
 ### 단축키
 
-`Ctrl+Enter` : 커서가 있는 1개의 SQL문 실행
+`Ctrl+Enter` : 커서가 있는 1개의 SQL문 실행 (세미콜론 끝날때까지)
 `Ctrl+Shift+Enter` : 모든 SQL문 실행 (드래그하면 그 부분만 실행)
 
 ### 명령어
