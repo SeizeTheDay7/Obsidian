@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💾 Git.md",
+                "file": "🛢 SQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "💾 Git.md",
+                "file": "🛢 SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +179,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "💾 Git.md",
+                "file": "🛢 SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -202,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "💾 Git.md"
+                "file": "🛢 SQL.md"
               }
             }
           },
@@ -236,8 +236,8 @@
   },
   "active": "4a97b2497c77df38",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "💾 Git.md",
+    "conflict-files-obsidian-git.md",
     "🛠 Life Hacking.md",
     "🛢 SQL.md",
     " - 복사본.md",
