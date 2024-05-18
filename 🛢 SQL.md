@@ -27,6 +27,16 @@ CREATE TABLE `shop_db`.`member` ( # 'shop_db'에 'member'테이블을 만든다.
 ```
 
 ```mysql
+SELECT 칼럼이름 # SELECT 절의 형식
+	FROM 테이블이름
+	WHERE 조건식
+	GROUP BY 칼럼이름
+	HAVING 조건식
+	ORDER BY 칼럼이름
+	LIMIT 숫자
+```
+
+```mysql
 SELECT * FROM 데이터베이스이름.테이블이름; # 모든 데이터 가져옴
 
 SELECT 칼럼이름1, 칼럼이름2 FROM 테이블이름; # 특정 속성만 가져옴
