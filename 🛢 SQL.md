@@ -37,7 +37,8 @@ SELECT * FROM 테이블이름 WHERE 칼럼이름>=값 AND 칼럼이름2<값 ; # 
 	# 조건 : AND, OR, BETWEEN 값1 AND 값2
 
 SELECT * FROM 테이블이름 WHERE 칼럼이름 IN('값1', '값2', '값3'); # 조건에 포함되는거 조회
-SELECT * FROM 테이블이름 WHERE LIKE '우%'; # 우설, 우산꽂이 등 조회
+SELECT * FROM 테이블이름 WHERE 칼럼이름 LIKE '우%'; # 우설, 우산꽂이 등 조회
+SELECT * FROM 테이블이름 WHERE 칼럼이름 LIKE '__핑크'; # 무적핑크, 블랙핑크 등 조회
 ```
 
 ```mysql
