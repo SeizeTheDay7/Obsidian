@@ -10,12 +10,17 @@
 ### 명령어
 
 ```mysql
-SHOW DATABASES
+SHOW DATABASES;
 ```
 데이터베이스 보여줌
 
 ```mysql
-CREATE INDEX 인덱스 이름 ON 테이블 이름(칼럼 이름)
+CREATE SCHEMA '데이터베이스 이름';
+```
+데이터베이스 만듦
+
+```mysql
+CREATE INDEX 인덱스 이름 ON 테이블 이름(칼럼 이름);
 ```
 
 
