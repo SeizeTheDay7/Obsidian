@@ -76,10 +76,14 @@ SELECT * FROM 테이블이름 ORDER BY 칼럼이름; # 특정 칼럼 기준으�
 SELECT * FROM 테이블이름 ORDER BY 칼럼이름 DESC; # 내림차순 정렬 
 SELECT * FROM 테이블이름 ORDER BY 칼럼이름1 DESC, 칼럼이름2 ASC; # 동률일 경우 처리
 ```
-### LIMIT
+#### LIMIT
 ```mysql
 SELECT * FROM 테이블이름 LIMIT 3; # 3개 행만 보여줌
 SELECT * FROM 테이블이름 LIMIT 3,2; # 3번째부터 2개 행 보여줌
+```
+#### DISTINCT
+```mysql
+SELECT DISTINCT 칼럼이름 FROM 테이블이름; # 중복 없이 속성 값 보여줌
 ```
 #### INDEX
 ```mysql
