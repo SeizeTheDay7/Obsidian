@@ -55,13 +55,15 @@ SELECT 칼럼이름 # 순서가 맞지 않으면 오류 발생
 	ORDER BY 칼럼이름
 	LIMIT 숫자
 ```
-
+#### FROM
 ```mysql
 SELECT * FROM 데이터베이스이름.테이블이름; # 모든 데이터 가져옴
 
 SELECT 칼럼이름1, 칼럼이름2 FROM 테이블이름; # 특정 속성만 가져옴
 SELECT 칼럼이름1 별칭1, 칼럼이름2 '별칭 2' FROM 테이블이름; # 칼럼 이름을 별칭으로 표시
-
+```
+#### WHERE
+```mysql
 SELECT * FROM 테이블이름 WHERE 칼럼이름='특정값'; # 특정 속성값만 가져옴 
 SELECT * FROM 테이블이름 WHERE 칼럼이름>=값 AND 칼럼이름2<값 ; # 조건 2개 만족하는거 조회
 	# 조건 : AND, OR, BETWEEN 값1 AND 값2
@@ -69,6 +71,10 @@ SELECT * FROM 테이블이름 WHERE 칼럼이름>=값 AND 칼럼이름2<값 ; # 
 SELECT * FROM 테이블이름 WHERE 칼럼이름 IN('값1', '값2', '값3'); # 조건에 포함되는거 조회
 SELECT * FROM 테이블이름 WHERE 칼럼이름 LIKE '우%'; # 우설, 우산꽂이 등 조회
 SELECT * FROM 테이블이름 WHERE 칼럼이름 LIKE '__핑크'; # 무적핑크, 블랙핑크 등 조회
+```
+#### GROUP BY
+```mysql
+SELECT * FROM 테이블이름 GROUP BY 칼럼이름; # 속성 값 별로 묶여서 출력됨
 ```
 #### ORDER BY
 ```mysql
