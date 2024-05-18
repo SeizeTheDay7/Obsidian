@@ -74,8 +74,11 @@ SELECT * FROM 테이블이름 WHERE 칼럼이름 LIKE '__핑크'; # 무적핑크
 ```
 #### GROUP BY
 ```mysql
-SELECT * FROM 테이블이름 GROUP BY 칼럼이름; # 속성 값 별로 묶여서 출력됨
+SELECT 집계함수이름 FROM 테이블이름 GROUP BY 칼럼이름; # 속성 값 별로 묶여서 출력됨
 ```
+##### 집계함수
+
+
 #### ORDER BY
 ```mysql
 SELECT * FROM 테이블이름 ORDER BY 칼럼이름; # 특정 칼럼 기준으로 정렬
