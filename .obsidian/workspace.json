@@ -111,14 +111,15 @@
             }
           },
           {
-            "id": "8f03aa0b7a29af3b",
+            "id": "bf106a31cebe0d04",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
