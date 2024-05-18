@@ -37,6 +37,11 @@ CREATE INDEX 인덱스이름 ON 데이터베이스이름.테이블이름(칼럼�
 # 인덱스를 만들어서 더 빠르게 조회
 ```
 
+```mysql
+CREATE VIEW 뷰이름 # 뷰(유저에게 보여줄 쿼리의 변수명) 만들기
+AS
+	SELECT * FROM 테이블이름;
+```
 
 ## SQLD 이론
 <hr>
