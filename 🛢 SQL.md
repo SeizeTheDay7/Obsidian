@@ -74,10 +74,18 @@ SELECT * FROM 테이블이름 WHERE 칼럼이름 LIKE '__핑크'; # 무적핑크
 ```
 #### GROUP BY
 ```mysql
-SELECT 집계함수이름 FROM 테이블이름 GROUP BY 칼럼이름; # 속성 값 별로 묶여서 출력됨
+SELECT 집계함수(칼럼이름) FROM 테이블이름 GROUP BY 칼럼이름; # 속성 값 별로 묶여서 출력됨
 ```
 ##### 집계함수
-
+|함수명|설명|
+|---|---|
+|AVG()|평균을 구함|
+|MIN()|최소값을 구함|
+|MAX()|최대값을 구함|
+|COUNT()|행의 개수를 세어 반환|
+|COUNT(DISTINCT)|행의 개수를 세어 반환. 중복되는 값은 1개만 인정됨|
+|STDEV()|표준편차를 계산|
+|VAR_SAMP()|표본 분산을 계산|
 
 #### ORDER BY
 ```mysql
