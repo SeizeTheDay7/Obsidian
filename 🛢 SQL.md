@@ -20,6 +20,18 @@ CREATE SCHEMA '데이터베이스 이름';
 데이터베이스 만듦
 
 ```mysql
+CREATE TABLE `shop_db`.`member` (
+  `member_id` CHAR(8) NOT NULL,
+  `member_name` CHAR(5) NOT NULL,
+  `member_addr` VARCHAR(45) NULL,
+  PRIMARY KEY (`member_id`));
+```
+'shop_db'에 'member'테이블을 만든다.
+그 안에 칼럼 3개를 만든다 (NOT NULL은 NULL값 허용 안한다는 뜻)
+PK는 'member_id'이다.
+
+
+```mysql
 CREATE INDEX 인덱스 이름 ON 테이블 이름(칼럼 이름);
 ```
 
