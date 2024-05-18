@@ -10,33 +10,33 @@
 ### 명령어
 
 ```mysql
-SHOW DATABASES;
+SHOW DATABASES; # 데이터베이스 전부 보여줌
 ```
-데이터베이스 보여줌
 
 ```mysql
-CREATE SCHEMA '데이터베이스 이름';
+CREATE SCHEMA '데이터베이스이름'; # 데이터베이스 만듦
 ```
-데이터베이스 만듦
 
 ```mysql
-CREATE TABLE `shop_db`.`member` (
+CREATE TABLE `shop_db`.`member` ( # 'shop_db'에 'member'테이블을 만든다.
   `member_id` CHAR(8) NOT NULL,
-  `member_name` CHAR(5) NOT NULL,
-  `member_addr` VARCHAR(45) NULL,
-  PRIMARY KEY (`member_id`));
+  `member_name` CHAR(5) NOT NULL, # 그 안에 칼럼 3개를 만든다.
+  `member_addr` VARCHAR(45) NULL, # NOT NULL은 NULL값 허용 안한다는 뜻
+  PRIMARY KEY (`member_id`)); # PK는 'member_id'이다.
 ```
-'shop_db'에 'member'테이블을 만든다.
-그 안에 칼럼 3개를 만든다 (NOT NULL은 NULL값 허용 안한다는 뜻)
-PK는 'member_id'이다.
-
 
 ```mysql
-CREATE INDEX 인덱스 이름 ON 테이블 이름(칼럼 이름);
+SELECT * FROM 데이터베이스이름.테이블이름; # 모든 데이터 가져옴
+SELECT 칼럼이름1, 칼럼이름2 FROM 테이블이름; # 특정 속성만 가져옴
+SELECT * FROM 테이블이름 WHERE 칼럼이름='특정값'; # 특정 속성값만 가져옴 
+```
+
+```mysql
+CREATE INDEX 인덱스이름 ON 테이블이름(칼럼이름); # 인덱스를 만들어서 더 빠르게 조회
 ```
 
 
-## 개념
+## SQLD 이론
 
 개별적 관점의 외부 스키마를 모아서  
 통합적 관점의 개념 스키마를 만들고, 그로부터  
