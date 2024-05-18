@@ -74,6 +74,7 @@ SELECT * FROM 테이블이름 WHERE 칼럼이름 LIKE '__핑크'; # 무적핑크
 ```mysql
 SELECT * FROM 테이블이름 ORDER BY 칼럼이름; # 특정 칼럼 기준으로 정렬
 SELECT * FROM 테이블이름 ORDER BY 칼럼이름 DESC; # 내림차순 정렬 
+SELECT * FROM 테이블이름 ORDER BY 칼럼이름1 DESC, 칼럼이름2 ASC; # 동률일 경우 처리
 ```
 #### INDEX
 ```mysql
