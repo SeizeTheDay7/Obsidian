@@ -8,6 +8,18 @@
         "type": "tabs",
         "children": [
           {
+            "id": "4a97b2497c77df38",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🛢 SQL.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "322eee286b326dfa",
             "type": "leaf",
             "state": {
@@ -54,33 +66,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "5d6593e1de54ccea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🛢 SQL.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4a97b2497c77df38",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🛢 SQL.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
