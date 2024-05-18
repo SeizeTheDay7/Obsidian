@@ -76,6 +76,10 @@ SELECT * FROM 테이블이름 ORDER BY 칼럼이름; # 특정 칼럼 기준으�
 SELECT * FROM 테이블이름 ORDER BY 칼럼이름 DESC; # 내림차순 정렬 
 SELECT * FROM 테이블이름 ORDER BY 칼럼이름1 DESC, 칼럼이름2 ASC; # 동률일 경우 처리
 ```
+### LIMIT
+```mysql
+SELECT * FROM 테이블이름 LIMIT 3; # 3개 행만 보여줌
+```
 #### INDEX
 ```mysql
 CREATE INDEX 인덱스이름 ON 데이터베이스이름.테이블이름(칼럼이름); 
