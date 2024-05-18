@@ -79,6 +79,7 @@ SELECT * FROM 테이블이름 ORDER BY 칼럼이름1 DESC, 칼럼이름2 ASC; # 
 ### LIMIT
 ```mysql
 SELECT * FROM 테이블이름 LIMIT 3; # 3개 행만 보여줌
+SELECT * FROM 테이블이름 LIMIT 3,2; # 3번째부터 2개 행 보여줌
 ```
 #### INDEX
 ```mysql
