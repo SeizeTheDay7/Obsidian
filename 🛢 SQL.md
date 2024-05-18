@@ -30,6 +30,7 @@ CREATE TABLE `shop_db`.`member` ( # 'shop_db'에 'member'테이블을 만든다.
 SELECT * FROM 데이터베이스이름.테이블이름; # 모든 데이터 가져옴
 SELECT 칼럼이름1, 칼럼이름2 FROM 테이블이름; # 특정 속성만 가져옴
 SELECT * FROM 테이블이름 WHERE 칼럼이름='특정값'; # 특정 속성값만 가져옴 
+
 ```
 
 ```mysql
