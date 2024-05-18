@@ -45,6 +45,15 @@ AS
 SELECT * FROM 뷰이름; # 뷰 불러오기
 ```
 
+```mysql
+DELIMITER //  # stored procedure를 묶어주는 양식
+CREATE PROCEDURE 프로시저이름()
+BEGIN
+	실행하고자하는쿼리들;
+END //
+DELIMITER ;
+```
+
 ## SQLD 이론
 <hr>
 
