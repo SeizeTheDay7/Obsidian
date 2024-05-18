@@ -54,9 +54,45 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5d6593e1de54ccea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🛢 SQL.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4a97b2497c77df38",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "💾 Git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ea1421673ed7d65d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -118,8 +154,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -139,7 +174,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "💾 Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +191,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "💾 Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +214,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md"
+                "file": "💾 Git.md"
               }
             }
           },
@@ -211,11 +246,16 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "2421c14250bc6f40",
+  "active": "4a97b2497c77df38",
   "lastOpenFiles": [
-    "🌏 Web Dev/🧱 HTML.md",
-    "🌏 Web Dev/🎨 CSS.md",
+    "conflict-files-obsidian-git.md",
+    "💾 Git.md",
     "🛠 Life Hacking.md",
+    "🛢 SQL.md",
+    " - 복사본.md",
+    "🌏 Web Dev/🎨 CSS.md",
+    "Pic/Pasted image 20240517164734.png",
+    "🌏 Web Dev/🧱 HTML.md",
     "🍎 CodingApple/🍎 Html.md",
     "Pic/Pasted image 20240516213933.png",
     "Pic/Pasted image 20240516213912.png",
@@ -232,7 +272,6 @@
     "Game Design/무제 파일.md",
     "Game Design.md",
     "Game Design",
-    "conflict-files-obsidian-git.md",
     "🕹 Game Dev/💻 C#.md",
     "📋 Code Snippet.md",
     "🦝 GPT 질문 답변/H, C, J 질문.md",
@@ -245,8 +284,6 @@
     "🕹 Game Dev",
     "🕹 Game Dev/♟ Blender.md",
     "🕹 Game Dev/🎨 ClipStudio.md",
-    "🕹 Game Dev/🎮 Unity.md",
-    "프로그래밍 언어/프로그래밍 언어.md",
     "프로그래밍 언어",
     "🦝 GPT 질문 답변",
     "Pic/Pasted image 20240427184239.png",
@@ -254,7 +291,6 @@
     "🍎 CodingApple",
     "Pasted image 20240303030809.png",
     "Pic/Pasted image 20231204234041.png",
-    "Pic/Pasted image 20240114175411.png",
     "Pic",
     "Spaces/Home",
     "Spaces"
