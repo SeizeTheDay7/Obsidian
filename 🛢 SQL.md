@@ -192,6 +192,10 @@ select * # 전부 고른다
 	where buy.mem_id = 'GRL'; # 'GRL'인 것만
 ```
 
+>[!bug] 두 곳에 모두 있는 칼럼명을 select로 골랐을 때
+>select mem_id, ... ← 오류 발생함
+>select buy.mem_id, ... ← 테이블 지정해서 해결
+
 ## SQLD 이론
 <hr>
 
