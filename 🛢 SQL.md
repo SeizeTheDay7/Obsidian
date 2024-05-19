@@ -165,7 +165,7 @@ insert into 테이블이름 (열이름1, 열이름2)
 ```mysql
 update 테이블이름 # 기존에 입력된 값을 수정함
 	set 열1=값1, 열2=값2, ...
-	where 조건;
+	where 조건; # where 안 붙이면 테이블 전체 수정해버림
 ```
 
 >[!bug] update 안됨
