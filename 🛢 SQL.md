@@ -262,6 +262,22 @@ if <조건식> then
 end if;
 ```
 
+두 문장 이상이 처리될 땐 `BEGIN~END`로 묶어줘야 한다.
+
+```mysql
+drop procedure if exists ifProc1;
+delimiter $$
+create procedure ifProc1()
+begin 
+	if 100 = 100 then
+		select '100은 100과 같습니다.';
+		select '당연한 이야기입니다.';
+	end if;
+end $$
+delimiter ;
+
+call ifProc1();
+```
 
 
 ## SQLD 이론
