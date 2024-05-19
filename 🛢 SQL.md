@@ -254,4 +254,5 @@ Durability : 완료(commit)된 뒤에, 데이터가 유실되지 않아야 함
 | 데이터 정의어<br>(DDL : Data <br>Definition Language)   | 데이터와 데이터간의 <br>관계 정의를 위한 언어.<br>데이터 구조 또는 객체를<br>생성, 변경, 삭제하는데 사용 |        CREATE<br>ALTER<br>DROP<br>RENAME        |
 | 데이터 조작어<br>(DML : Data <br>Manipulation Language) | 데이터베이스 사용자 또는<br>응용 프로그램의 데이터<br>검색, 등록, 삭제, 갱신에 쓰임               | SELECT, FROM<br>WHERE, INSERT<br>UPDATE, DELETE |
 | 데이터 제어어<br>(DCL : Data <br>Control Language)      | 데이터에 대한 액세스를 제어<br>하기 위한 언어.<br>데이터 보안, 무결성, 병행수행<br>제어에 사용됨.     |      GRANT<br>REVOKE<br>COMMIT<br>ROLLBACK      |
-
+엑셀에서 테이블 만들었다고 했을 때, 기본적인 틀을 안 건드리면 DML
+기본적인 틀을 건드리면 DDL
