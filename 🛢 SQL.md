@@ -319,6 +319,23 @@ end $$
 delimiter ;
 call ifProc3();
 ```
+#### CASE
+```mysql
+delimiter $$
+begin
+	case
+		when 조건1 then
+			SQL문장들;
+		when 조건2 then
+			SQL문장들;
+		when 조건3 then
+			SQL문장들;
+		else
+			SQL문장들;
+	end case;
+end $$
+delimiter ;
+```
 
 ## SQLD 이론
 <hr>
