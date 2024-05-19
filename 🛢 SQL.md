@@ -175,7 +175,18 @@ update 테이블이름 # 기존에 입력된 값을 수정함
 delete from 테이블이름 # 데이터 삭제
 	where 조건;
 ```
+#### JOIN
+```mysql
+select <열 목록>
+from <첫 번째 테이블>
+	inner join <두 번째 테이블> # 그냥 join이라고 해도 기본은 inner join
+	on <조인될 조건>
+[where 검색 조건] # 생략 가능
+```
 
+```
+
+```
 
 ## SQLD 이론
 <hr>
