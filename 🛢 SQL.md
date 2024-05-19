@@ -266,15 +266,15 @@ end if;
 
 ```mysql
 drop procedure if exists ifProc1;
-delimiter $$
+delimiter $$ # 종료 문자를 $$로 바꾼다
 create procedure ifProc1()
 begin 
 	if 100 = 100 then
 		select '100은 100과 같습니다.';
 		select '당연한 이야기입니다.';
 	end if;
-end $$
-delimiter ;
+end $$ # $$로 프로시저 끝낸다
+delimiter ; # 종료 문자를 ;으로 되돌린다.
 
 call ifProc1();
 ```
