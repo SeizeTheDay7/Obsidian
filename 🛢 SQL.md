@@ -354,7 +354,7 @@ select B.mem_id, M.mem_name, sum(price*amount) "총구매액",
 #### WHILE
 ```mysql
 while <조건식> do
-	sql문장들
+	SQL문장들
 end while;
 ```
 
