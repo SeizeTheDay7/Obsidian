@@ -49,6 +49,31 @@
 2. `--` : 마이너스 기호 2번 작성
 3. `/* ~ */` : 여러 개의 줄을 한번에 주석 처리 
 
+### 강의에 나왔던거 일단 정리
+#### ALTER
+```mysql
+alter table 테이블이름 rename column 칼럼이름 to 칼럼이름2;
+alter table 테이블이름 modify 칼럼이름 char(5) not null;
+alter table 테이블이름 drop primary key;
+alter table 테이블이름 add constraint 어쩌구저쩌구
+```
+ - 테이블이나 칼럼의 구조를 변경하는 명령
+ - 제약조건을 추가하거나 삭제하는 명령
+#### DROP
+```mysql
+drop table 테이블명 (cascade constraint);
+```
+- 테이블이나 특정 객체를 삭제하는 명령
+- 테이블 내 데이터와 구조를 삭제
+- cascade constraint 옵션은 종속된 제약 조건도 모두 삭제
+#### TRUNCATE
+```mysql
+truncate table 테이블명;
+```
+- 테이블 구조는 남겨두고 내부의 데이터, 행만 삭제하는 명령어.
+- 테이블이 차지하던 저장공간을 반납한다.
+
+
 ### 명령어
 
 ```mysql
@@ -63,7 +88,7 @@ CREATE SCHEMA '데이터베이스이름'; # 데이터베이스 만듦
 USE 데이터베이스이름; # 앞으로 모든 SQL 문이 해당 데이터베이스에서 수행됨
 # 아니면 MySQL에서 데이터베이스 더블클릭해도 됨.
 ```
-#### 테이블 만들기
+#### CREATE TABLE
 ```mysql
 CREATE TABLE `shop_db`.`member` ( # 'shop_db'에 'member'테이블을 만든다.
   `member_id` CHAR(8) NOT NULL,
