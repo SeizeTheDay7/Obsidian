@@ -3,6 +3,7 @@
 	- [[#MySQL#MySQL에서 주석 작성 방법|MySQL에서 주석 작성 방법]]
 	- [[#MySQL#명령어|명령어]]
 		- [[#명령어#테이블 만들기|테이블 만들기]]
+			- [[#테이블 만들기#AUTO_INCREMENT|AUTO_INCREMENT]]
 		- [[#명령어#SELECT|SELECT]]
 		- [[#명령어#FROM|FROM]]
 		- [[#명령어#WHERE|WHERE]]
@@ -13,7 +14,23 @@
 		- [[#명령어#DISTINCT|DISTINCT]]
 		- [[#명령어#INDEX|INDEX]]
 		- [[#명령어#VIEW|VIEW]]
+		- [[#명령어#INSERT|INSERT]]
+		- [[#명령어#UPDATE|UPDATE]]
+		- [[#명령어#DELETE|DELETE]]
+		- [[#명령어#INNER JOIN|INNER JOIN]]
+		- [[#명령어#OUTER JOIN|OUTER JOIN]]
+		- [[#명령어#CROSS JOIN|CROSS JOIN]]
+		- [[#명령어#SELF JOIN|SELF JOIN]]
 		- [[#명령어#Stored Procedure|Stored Procedure]]
+			- [[#Stored Procedure#IF|IF]]
+			- [[#Stored Procedure#IF~ELSE|IF~ELSE]]
+				- [[#IF~ELSE#IF문 예시|IF문 예시]]
+			- [[#Stored Procedure#CASE|CASE]]
+				- [[#CASE#case문 예시|case문 예시]]
+			- [[#Stored Procedure#WHILE|WHILE]]
+				- [[#WHILE#while문 예시|while문 예시]]
+			- [[#Stored Procedure#ITERATE, LEAVE|ITERATE, LEAVE]]
+		- [[#명령어#동적 SQL (PREPARE, EXCUTE)|동적 SQL (PREPARE, EXCUTE)]]
 - [[#SQLD 이론|SQLD 이론]]
 
 
@@ -137,7 +154,7 @@ AS
 
 SELECT * FROM 뷰이름; # 뷰 불러오기
 ```
-#### Insert
+#### INSERT
 ```mysql
 insert into 테이블이름 values (1, '우디', 25); # 새로 데이터를 추가함
 
@@ -150,7 +167,7 @@ insert into 테이블이름(toy_name, age, toy_id) values ('제시', 20, 3); # �
 insert into 테이블이름 (열이름1, 열이름2)
 	select 문; # select한 데이터 가져와서 테이블에 넣어라
 ```
-#### Update
+#### UPDATE
 ```mysql
 update 테이블이름 # 기존에 입력된 값을 수정함
 	set 열1=값1, 열2=값2, ...
@@ -257,7 +274,7 @@ CALL 프로시저이름(); # 프로시저 호출
 
 스토어드 프로시저는 MySQL에서 프로그래밍 기능이 필요할 때 사용하는 데이터베이스 개체.
 
-#### IF
+##### IF
 ```mysql
 if <조건식> then
 	실행하고자하는쿼리들
@@ -279,7 +296,7 @@ delimiter ; # 종료 문자를 ;으로 되돌린다.
 
 call ifProc1();
 ```
-#### IF~ELSE
+##### IF~ELSE
 ```mysql
 delimiter $$
 create procedure ifPRoc2()
@@ -294,7 +311,7 @@ begin
 end $$
 delimiter ;
 ```
-##### IF문 예시
+###### IF문 예시
 ```mysql
 drop procedure if exists ifProc3;
 delimiter $$
@@ -319,7 +336,7 @@ end $$
 delimiter ;
 call ifProc3();
 ```
-#### CASE
+##### CASE
 ```mysql
 delimiter $$
 begin
@@ -336,7 +353,7 @@ begin
 end $$
 delimiter ;
 ```
-##### case문 예시
+###### case문 예시
 ```mysql
 select B.mem_id, M.mem_name, sum(price*amount) "총구매액",
 	case
@@ -351,13 +368,13 @@ select B.mem_id, M.mem_name, sum(price*amount) "총구매액",
 	group by M.mem_id
     order by sum(price*amount) desc;
 ```
-#### WHILE
+##### WHILE
 ```mysql
 while <조건식> do
 	SQL문장들
 end while;
 ```
-##### while문 예시
+###### while문 예시
 ```mysql
 drop procedure if exists whileProc;
 delimiter $$
@@ -378,7 +395,7 @@ end $$
 delimiter ;
 call whileProc();
 ```
-#### ITERATE, LEAVE
+##### ITERATE, LEAVE
 ![](Pasted%20image%2020240519163843.png)
 #### 동적 SQL (PREPARE, EXCUTE)
 ```mysql
