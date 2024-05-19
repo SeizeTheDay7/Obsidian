@@ -54,6 +54,15 @@ CREATE TABLE `shop_db`.`member` ( # 'shop_db'에 'member'테이블을 만든다.
   `member_addr` VARCHAR(45) NULL, # NOT NULL은 NULL값 허용 안한다는 뜻
   PRIMARY KEY (`member_id`)); # PK는 'member_id'이다.
 ```
+##### AUTO_INCREMENT
+```mysql
+create table hongong2 (
+	toy_id int auto_increment primary key, # 자동으로 1씩 증가시키며 값 설정 (pk여야함)
+    toy_name char(4),
+    age int);
+
+insert into hongong2 values (null, '바보', 22); # 이후엔 null로 설정해도 값 자동 부여됨
+```
 #### SELECT
 ```mysql
 SELECT 칼럼이름 # 순서가 맞지 않으면 오류 발생
@@ -135,7 +144,6 @@ DELIMITER ;
 
 CALL 프로시저이름(); # 프로시저 호출
 ```
-
 #### Insert
 ```mysql
 insert into hongong1 values (1, '우디', 25); # 기본형
