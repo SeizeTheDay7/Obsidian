@@ -212,12 +212,24 @@ from <첫번째 테이블(left 테이블)>
 **OUTER JOIN은 한쪽에만 데이터가 있어도 결과가 나온다.**
 
 ```mysql
+select 테이블별칭1.칼럼이름
+	from 테이블이름1 테이블별칭1
+		inner join 테이블이름2 테이블별칭2
+		on 테이블별칭1.칼럼이름 = 테이블별칭2.칼럼이름
+```
+
+테이블 별칭을 통해 쿼리문을 짧게 줄일 수 있다.
+
+```mysql
 select M.mem_id, M.mem_name, B.prod_name, M.addr
-	from member M
-		left outer join buy B
+	from member M # left 테이블인 member 테이블을 기준으로
+		left outer join buy B # 외부 조인 한다
 		on M.mem_id = B.mem_id
 	order by M.mem_id;
 ```
+
+
+
 
 ## SQLD 이론
 <hr>
