@@ -1,12 +1,21 @@
 - [[#MySQL|MySQL]]
 	- [[#MySQL#단축키|단축키]]
+	- [[#MySQL#MySQL에서 주석 작성 방법|MySQL에서 주석 작성 방법]]
 	- [[#MySQL#명령어|명령어]]
 		- [[#명령어#테이블 만들기|테이블 만들기]]
-		- [[#명령어#SELECT 절의 형식|SELECT 절의 형식]]
-		- [[#명령어#인덱스|인덱스]]
-		- [[#명령어#뷰|뷰]]
-		- [[#명령어#스토어드 프로시저|스토어드 프로시저]]
+		- [[#명령어#SELECT|SELECT]]
+		- [[#명령어#FROM|FROM]]
+		- [[#명령어#WHERE|WHERE]]
+		- [[#명령어#GROUP BY|GROUP BY]]
+			- [[#GROUP BY#집계함수|집계함수]]
+		- [[#명령어#ORDER BY|ORDER BY]]
+		- [[#명령어#LIMIT|LIMIT]]
+		- [[#명령어#DISTINCT|DISTINCT]]
+		- [[#명령어#INDEX|INDEX]]
+		- [[#명령어#VIEW|VIEW]]
+		- [[#명령어#Stored Procedure|Stored Procedure]]
 - [[#SQLD 이론|SQLD 이론]]
+
 
 
 ## MySQL
@@ -126,6 +135,7 @@ DELIMITER ;
 
 CALL 프로시저이름(); # 프로시저 호출
 ```
+
 
 
 ## SQLD 이론
