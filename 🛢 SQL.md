@@ -379,6 +379,9 @@ delimiter ;
 call whileProc();
 ```
 
+#### ITERATE, LEAVE
+![](Pasted%20image%2020240519163843.png)
+
 ## SQLD 이론
 <hr>
 
