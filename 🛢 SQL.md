@@ -294,6 +294,31 @@ begin
 end $$
 delimiter ;
 ```
+##### IF문 예시
+```mysql
+drop procedure if exists ifProc3;
+delimiter $$
+begin
+	declare debutDate date;
+	declare curDate date;
+	declare days int;
+
+	select debut_date into debutDate # debut_date 결과를 debutDate에 대입
+		from marker_db.member
+		where mem_id = 'APN';
+
+	set curDate = current_date(); # 현재 날짜
+	set days = datediff(curDate, debutDate); # 날짜의 차이, 일 단위
+
+	if (days/365) >= 5 then # 5년이 지났다면
+		select concat('데뷔한지',days,'일이 지났습니다');
+	else
+		select '데뷔한지'+days+'일밖에 안됐습니다.';
+	end if;
+end $$
+delimiter ;
+call ifProc3();
+```
 
 ## SQLD 이론
 <hr>
