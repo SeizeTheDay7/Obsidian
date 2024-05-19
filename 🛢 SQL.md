@@ -170,6 +170,13 @@ update 테이블이름 # 기존에 입력된 값을 수정함
 
 >[!bug] update 안됨
 >Edit - Preferences - SQL Editor - (맨 밑) - Safe Updates 체크 해제 - workbench 끄고 재실행
+#### DELETE
+``` mysql
+delete from 테이블이름 # 데이터 삭제
+	where 조건;
+```
+
+
 ## SQLD 이론
 <hr>
 
