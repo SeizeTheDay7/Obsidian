@@ -137,17 +137,6 @@ AS
 
 SELECT * FROM 뷰이름; # 뷰 불러오기
 ```
-#### Stored Procedure
-```mysql
-DELIMITER //  # 스토어드 프로시저를 묶어주는 양식
-CREATE PROCEDURE 프로시저이름()
-BEGIN
-	실행하고자하는쿼리들;
-END //
-DELIMITER ;
-
-CALL 프로시저이름(); # 프로시저 호출
-```
 #### Insert
 ```mysql
 insert into 테이블이름 values (1, '우디', 25); # 새로 데이터를 추가함
@@ -252,6 +241,27 @@ from <같은 테이블> 별칭A
 (실무에서 별로 안 쓰인다)
 같은 테이블에서 또 데이터를 찾을 때 쓰인다.
 똑같은 테이블을 하나 복사 한 후에 JOIN한다고 생각해도 된다.
+#### Stored Procedure
+```mysql
+DELIMITER //  # 스토어드 프로시저를 묶어주는 양식
+CREATE PROCEDURE 프로시저이름()
+BEGIN
+	실행하고자하는쿼리들;
+END // # 스토어드 프로시저 종료
+DELIMITER ; # 종료 문자를 다시 세미콜론으로 변경
+
+CALL 프로시저이름(); # 프로시저 호출
+```
+
+스토어드 프로시저는 MySQL에서 프로그래밍 기능이 필요할 때 사용하는 데이터베이스 개체.
+
+#### IF
+```mysql
+if <조건식> then
+	실행하고자하는쿼리들
+end if;
+```
+
 
 
 ## SQLD 이론
