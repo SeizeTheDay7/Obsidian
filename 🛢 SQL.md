@@ -243,6 +243,8 @@ from <같은 테이블> 별칭A
 똑같은 테이블을 하나 복사 한 후에 JOIN한다고 생각해도 된다.
 #### Stored Procedure
 ```mysql
+drop procedure if exists 프로시저이름; # 기존에 만든 적이 있다면 삭제
+
 DELIMITER //  # 스토어드 프로시저를 묶어주는 양식
 CREATE PROCEDURE 프로시저이름()
 BEGIN
@@ -265,11 +267,10 @@ end if;
 두 문장 이상이 처리될 땐 `BEGIN~END`로 묶어줘야 한다.
 
 ```mysql
-drop procedure if exists ifProc1;
 delimiter $$ # 종료 문자를 $$로 바꾼다
 create procedure ifProc1()
 begin 
-	if 100 = 100 then
+	if 100 = 100 then # mysql에서 비교문은 그냥 =
 		select '100은 100과 같습니다.';
 		select '당연한 이야기입니다.';
 	end if;
@@ -278,7 +279,21 @@ delimiter ; # 종료 문자를 ;으로 되돌린다.
 
 call ifProc1();
 ```
-
+#### IF~ELSE
+```mysql
+delimiter $$
+create procedure ifPRoc2()
+begin
+	declare myNum int; # 변수 선언
+	set myNum = 200; # 변수에 값 대입
+	if myNum = 100 then
+		select '100입니다.';
+	else
+		select '100이 아닙니다.';
+	end if;
+end $$
+delimiter ;
+```
 
 ## SQLD 이론
 <hr>
