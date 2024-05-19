@@ -56,13 +56,17 @@ CREATE TABLE `shop_db`.`member` ( # 'shop_db'에 'member'테이블을 만든다.
 ```
 ##### AUTO_INCREMENT
 ```mysql
-create table hongong2 (
+create table 테이블이름 (
 	toy_id int auto_increment primary key, # 자동으로 1씩 증가시키며 값 설정 (pk여야함)
     toy_name char(4),
     age int);
 
-insert into hongong2 values (null, '바보', 22); # 이후엔 null로 설정해도 값 자동 부여됨
+insert into 테이블이름 values (null, '바보', 22); # 이후엔 null로 설정해도 값 자동 부여됨
+
+alter table 테이블이름 auto_increment=100; # 시작 값 초기화
+set @@auto_increment_increment=3; # 3씩 증가하게 변경
 ```
+[정리글](https://velog.io/@ejayjeon/MYSQL-autoincrement-%EC%83%9D%EC%84%B1-%EC%B6%94%EA%B0%80-%EC%82%AC%EC%9A%A9-%EB%93%B1-%EC%A0%95%EB%A6%AC)
 #### SELECT
 ```mysql
 SELECT 칼럼이름 # 순서가 맞지 않으면 오류 발생
@@ -146,13 +150,17 @@ CALL 프로시저이름(); # 프로시저 호출
 ```
 #### Insert
 ```mysql
-insert into hongong1 values (1, '우디', 25); # 기본형
+insert into 테이블이름 values (1, '우디', 25); # 기본형
 
-insert into hongong1(toy_id, toy_name) values (2, '버즈'); # 특정 열에만 데이터 넣기
+insert into 테이블이름(toy_id, toy_name) values (2, '버즈'); # 특정 열에만 데이터 넣기
 
-insert into hongong1(toy_name, age, toy_id) values ('제시', 20, 3); # 순서 바꿔도 됨
+insert into 테이블이름(toy_name, age, toy_id) values ('제시', 20, 3); # 순서 바꿔도 됨
 ```
 
+```mysql
+insert into 테이블이름 (열이름1, 열이름2)
+	select 문; # select한 데이터 가져와서 테이블에 넣어라
+```
 ## SQLD 이론
 <hr>
 
