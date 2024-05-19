@@ -175,7 +175,7 @@ update 테이블이름 # 기존에 입력된 값을 수정함
 delete from 테이블이름 # 데이터 삭제
 	where 조건;
 ```
-#### JOIN
+#### INNER JOIN
 ```mysql
 select <열 목록>
 from <첫 번째 테이블>
@@ -183,6 +183,8 @@ from <첫 번째 테이블>
 	on <조인될 조건>
 [where 검색 조건] # 생략 가능
 ```
+
+**INNER JOIN은 교집합이다. 두 테이블에 모두 데이터가 있어야만 결과가 나온다.**
 
 ```mysql
 select * # 전부 고른다
@@ -195,6 +197,14 @@ select * # 전부 고른다
 >[!bug] 두 곳에 모두 있는 칼럼명을 select로 골랐을 때
 >select mem_id, ... ← 오류 발생함
 >select buy.mem_id, ... ← 테이블 지정해서 해결
+#### OUTER JOIN
+```mysql
+select <열 목록>
+from <첫번째 테이블(left 테이블)>
+	<left | right | full> outer join <두 번째 테이블(right 테이블)>
+	on <조인될 조건>
+[where 검색 조건];
+```
 
 ## SQLD 이론
 <hr>
