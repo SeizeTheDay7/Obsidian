@@ -336,6 +336,28 @@ begin
 end $$
 delimiter ;
 ```
+##### case문 예시
+```mysql
+select B.mem_id, M.mem_name, sum(price*amount) "총구매액",
+	case
+		when (sum(price*amount) >=1500) then '최우수고객'
+        when (sum(price*amount) >=1000) then '우수고객'
+        when (sum(price*amount) >=1) then '일반고객'
+        else '유령고객'
+	end "회원등급" # 별칭
+	from buy B
+		right outer join member M
+        on B.mem_id = M.mem_id
+	group by M.mem_id
+    order by sum(price*amount) desc;
+```
+#### WHILE
+```mysql
+while <조건식> do
+	sql문장들
+end while;
+```
+
 
 ## SQLD 이론
 <hr>
