@@ -184,8 +184,12 @@ from <첫 번째 테이블>
 [where 검색 조건] # 생략 가능
 ```
 
-```
-
+```mysql
+select *
+	from buy
+		inner join member
+        on buy.mem_id = member.mem_id
+	where buy.mem_id = 'GRL';
 ```
 
 ## SQLD 이론
