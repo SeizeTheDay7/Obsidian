@@ -185,11 +185,11 @@ from <첫 번째 테이블>
 ```
 
 ```mysql
-select *
-	from buy
-		inner join member
-        on buy.mem_id = member.mem_id
-	where buy.mem_id = 'GRL';
+select * # 전부 고른다
+	from buy # buy 테이블에서
+		inner join member # member 테이블을 합친 걸
+        on buy.mem_id = member.mem_id # mem_id 기준으로
+	where buy.mem_id = 'GRL'; # 'GRL'인 것만
 ```
 
 ## SQLD 이론
