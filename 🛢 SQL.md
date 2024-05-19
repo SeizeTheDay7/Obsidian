@@ -227,9 +227,17 @@ select M.mem_id, M.mem_name, B.prod_name, M.addr
 		on M.mem_id = B.mem_id
 	order by M.mem_id;
 ```
+#### CROSS JOIN
+```mysql
+select *
+	from 테이블이름1
+		cross join 테이블이름2;
+```
 
-
-
+상호 조인은 한쪽 테이블의 모든 행과 다른 쪽 테이블의 모든 행을 조인시킨다.
+상호 조인 결과의 전체 행 개수는 두 테이블의 각 행의 개수를 곱한 수가 된다.
+간단하게 말해서 무지성으로 다 곱하는 조인이다.
+테스트하기 위해 대용량의 데이터를 생성할 때 쓰인다.
 
 ## SQLD 이론
 <hr>
