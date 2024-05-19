@@ -202,8 +202,21 @@ select * # 전부 고른다
 select <열 목록>
 from <첫번째 테이블(left 테이블)>
 	<left | right | full> outer join <두 번째 테이블(right 테이블)>
+	# left : left 테이블에 있는 건 전부 포함시키겠다.
+	# right : right 테이블에 있는 건 전부 포함시키겠다
+	# full : left, rigth 테이블에 있는 거 전부 포함시키겠다.
 	on <조인될 조건>
 [where 검색 조건];
+```
+
+**OUTER JOIN은 한쪽에만 데이터가 있어도 결과가 나온다.**
+
+```mysql
+select M.mem_id, M.mem_name, B.prod_name, M.addr
+	from member M
+		left outer join buy B
+		on M.mem_id = B.mem_id
+	order by M.mem_id;
 ```
 
 ## SQLD 이론
