@@ -378,9 +378,17 @@ end $$
 delimiter ;
 call whileProc();
 ```
-
 #### ITERATE, LEAVE
 ![](Pasted%20image%2020240519163843.png)
+#### 동적 SQL (PREPARE, EXCUTE)
+```mysql
+prepare myQuery from 'select * from member'; # sql 준비
+excure myQuery; # 준비한 sql문 실행
+deallocate prepare myQuery; # 준비한 문장 해제
+```
+
+prepare 문에서는 ?로 나중에 입력될 값을 비워 놓고,
+execute 문에서는 using으로 ?에 값을 전달할 수 있다.
 
 ## SQLD 이론
 <hr>
