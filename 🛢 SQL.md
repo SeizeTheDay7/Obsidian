@@ -161,13 +161,15 @@ insert into 테이블이름(toy_name, age, toy_id) values ('제시', 20, 3); # �
 insert into 테이블이름 (열이름1, 열이름2)
 	select 문; # select한 데이터 가져와서 테이블에 넣어라
 ```
-####Update
+#### Update
 ```mysql
 update 테이블이름 # 기존에 입력된 값을 수정함
 	set 열1=값1, 열2=값2, ...
 	where 조건;
 ```
 
+>[!bug] update 안됨
+>Edit - Preferences - SQL Editor - (맨 밑) - Safe Updates 체크 해제 - workbench 끄고 재실행
 ## SQLD 이론
 <hr>
 
