@@ -136,7 +136,14 @@ DELIMITER ;
 CALL 프로시저이름(); # 프로시저 호출
 ```
 
+#### Insert
+```mysql
+insert into hongong1 values (1, '우디', 25); # 기본형
 
+insert into hongong1(toy_id, toy_name) values (2, '버즈'); # 특정 열에만 데이터 넣기
+
+insert into hongong1(toy_name, age, toy_id) values ('제시', 20, 3); # 순서 바꿔도 됨
+```
 
 ## SQLD 이론
 <hr>

@@ -129,8 +129,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -224,8 +223,8 @@
   },
   "active": "4a97b2497c77df38",
   "lastOpenFiles": [
-    "🛠 Life Hacking.md",
     "🛢 SQL.md",
+    "🛠 Life Hacking.md",
     "💾 Git.md",
     "conflict-files-obsidian-git.md",
     " - 복사본.md",
