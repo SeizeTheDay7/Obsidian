@@ -156,3 +156,16 @@ MINUS : 교집합 뺀다
 TRUNCATE vs DROP : TRUNCATE는 구조 남음(입주민 퇴거), DROP은 전부 지움(건물 철거)
 
 TRUNCATE vs DELETE : TRUNCATE는 DDL이고, DELETE는 DML이다.
+
+## 17. 제약 조건
+
+- PK = UNIQUE + NOT NULL
+- UNIQUE
+- NOT NULL
+
+## 18. DCL
+
+- GRANT : 특정 데이터베이스 사용자에게 특정 작업에 대한 수행 권한을 부여
+- REVOKE : 수행 권한 박탈
+- COMMIT
+- ROLLBACK
