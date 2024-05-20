@@ -522,9 +522,21 @@ NULL 값에 숫자 더해도 NULL, 비교하면 FALSE 또는 unknown, 집계 함
 1. 스칼라 서브쿼리
 	- SELECT에 사용하는 서브쿼리
 	- 서브쿼리 결과를 하나의 칼럼처럼 사용하기 위해 주로 사용
+
+
 2. 인라인 뷰
 	- FROM 절에 사용하는 서브쿼리
 	- 서브쿼리 결과를 테이블처럼 사용하기 위해 주로 사용
+
+```mysql
+select e.empno, e.ename, e.sal, i.avg_sal
+from emp e, (select deptno, avg(sal) as avg_sal
+			from emp
+			group by deptno)
+where e.deptno = i.deptno
+and e.sal > i.avg_sal;
+```
+
 3. WHERE절 서브쿼리 (명칭 없음)
 	- 가장 일반적인 서브쿼리
 	- 비교 상수 자리에 값을 전달하기 위한 목적으로 주로 사용(상수항의 대체)
