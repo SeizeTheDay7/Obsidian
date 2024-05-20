@@ -92,3 +92,11 @@ ELSE가 없을 때 조건식1, 조건식2 만족하지 않으면 NULL 출력됨
 `COUNT(A)` = 1
 `COUNT(*)` = 3
 `SUM(A+B+C)` = 7
+
+## 12. JOIN
+
+NATURAL JOIN과 USING은 중복된 컬럼을 하나로만 출력한다. 제일 앞에 등장한다.
+**USING은 별칭 사용 불가능하다.**
+
+A LEFT OUTER JOIN B는
+A.COL1 = B.COL1 (+)와 의미가 같다.
