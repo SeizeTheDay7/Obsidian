@@ -567,4 +567,13 @@ where (deptno, sal) in (select deptno, max(sal)
 	- 메인쿼리와 서브쿼리의 비교를 수행하는 형태
 	- 비교할 집단이나 조건은 서브쿼리에 명시
 
-부서별로 해당 부성
+부서별로 해당 부서의 평균보다 많이 받는 수령자 확인
+```mysql
+select empno, ename, sal, deptno
+from emp e1
+where sal > (select avg(sal)
+			from emp e2
+			where e1.deptno = e2.deptno
+			group by deptno);
+```
+
