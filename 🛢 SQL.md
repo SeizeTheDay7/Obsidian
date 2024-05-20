@@ -548,3 +548,17 @@ WHERE 절 서브쿼리 종륲
 | < ANY | 최대값을 반환함 |
 | < ALL | 최소값을 반환함 |
 | > ALL | 최대값을 반환함 |
+
+3. 다중컬럼 서브쿼리
+	- 서브쿼리 결과가 여러 칼럼이 리턴되는 형태
+	- 메인쿼리와의 비교 칼럼이 2개 이상
+	- 대소 비교 전달 불가
+
+부서별 최대 봉급 수령자 확인
+```mysql
+select empno, ename, sal, deptno
+	from emp
+where (deptno, sal) in (select deptno, max(sal)
+					   from emp
+					   group by deptno);
+```
