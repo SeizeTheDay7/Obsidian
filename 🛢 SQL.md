@@ -562,3 +562,7 @@ where (deptno, sal) in (select deptno, max(sal)
 					   from emp
 					   group by deptno);
 ```
+
+4. 상호연관 서브쿼리
+	- 메인쿼리와 서브쿼리의 비교를 수행하는 형태
+	- 비교할 집단이나 조건은 서브쿼리에 명시
