@@ -179,26 +179,9 @@ TRUNCATE vs DELETE : TRUNCATE는 DDL이고, DELETE는 DML이다.
 
 ## 20. 그룹 함수
 
-**GROUP BY**
-```MYSQL
-SELECT 상품ID, 월, SUM(매출액) AS 매출액 FROM 월별매출 GROUP BY 상품ID, 월;
-```
+빵꾸 뚫고 ROLLUP인지 CUBE인지 뭔지 찾는 문제
 
-![](Pasted%20image%2020240521000339.png)
-
-**ROLLUP**
-[정리글](https://for-my-wealthy-life.tistory.com/44)
-소그룹 간의 합계를 계산. GROUP BY로 묶은 각각의 소그룹 합계와 전쳬 합계 모두 구할 수 있음.
-```MYSQL
-SELECT 상품ID, 월, SUM(매출액) AS 매출액 FROM 월별매출 GROUP BY ROLLUP(상품ID, 월);
-```
-
-![](Pasted%20image%2020240521000458.png)
-
-**CUBE**
-항목들 간의 다차원적인 소계 계산.
-
-GROUPING SETS
-
-
-GROUPING
+ROLLUP : GROUP BY에 소계 추가. ROLLUP(A, B)와 ROLLUP(B, A)는 결과가 다름.
+CUBE : 명시되지 않은 소계 추가. CUBE(A, B)와 CUBE(B, A)는 결과가 같다.
+GROUPING SETS : 특정 항목에 대한 소계.
+GROUPING : 집계되면 1, 아니면 0

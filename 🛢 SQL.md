@@ -624,3 +624,57 @@ connect by prior 자식 = 부모 # 부모에서 자식 방향 데이터 전개
 [ order siblings by 칼럼명1, 칼럼명2 ... ];
 ```
 
+## 집계 함수
+
+**GROUP BY**
+```MYSQL
+SELECT 상품ID, 월, SUM(매출액) AS 매출액
+FROM 월별매출
+GROUP BY 상품ID, 월;
+```
+
+![](Pasted%20image%2020240521000339.png)
+
+**ROLLUP**
+[정리글](https://for-my-wealthy-life.tistory.com/44)
+소그룹 간의 합계를 계산. GROUP BY로 묶은 각각의 소그룹 합계와 전쳬 합계 모두 구할 수 있음.
+```MYSQL
+SELECT 상품ID, 월, SUM(매출액) AS 매출액
+FROM 월별매출
+GROUP BY ROLLUP(상품ID, 월);
+```
+
+![](Pasted%20image%2020240521000458.png)
+
+**CUBE**
+항목들 간의 다차원적인 소계 계산. 명시한 모든 칼럼에 대해 소그룹 계산
+```MYSQL
+SELECT 상품ID, 월, SUM(매출액) AS 매출액
+FROM 월별매출
+GROUP BY CUBE(상품ID, 월);
+```
+
+![](Pasted%20image%2020240521000650.png)
+
+**GROUPING SETS**
+특정 항목에 대한 소계 계산
+```MYSQL
+SELECT 상품ID, 월, SUM(매출액) AS 매출액
+FROM 월별매출
+GROUP BY GROUPING SETS(상품ID, 월);
+```
+
+![](Pasted%20image%2020240521000758.png)
+
+**GROUPING**
+집계함수를 지원하는 함수. 집계가 계산된 결과는 1, 아니면 0
+```MYSQL
+SELECT 
+    CASE GROUPING(상품ID) WHEN 1 THEN '모든 상품ID' ELSE 상품ID END AS 상품ID,
+    CASE GROUPING(월) WHEN 1 THEN '모든 월' ELSE 월 END AS 월, 
+    SUM(매출액) AS 매출액
+FROM 월별매출
+GROUP BY ROLLUP(상품ID, 월);
+```
+
+![](Pasted%20image%2020240521001026.png)
