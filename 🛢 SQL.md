@@ -601,6 +601,10 @@ where sal > (select avg(sal)
 
 
 윈도우 함수
+: 행과 행 간의 관계를 쉽게 정의하기 위해 만든 함수
+
+![](Pasted%20image%2020240520220934.png)
+
 ```mysql
 select 윈도우함수([대상]) over([partition by 칼럼])
 							[order by 칼럼 asc|desc]
