@@ -34,3 +34,4 @@ SQL server 에서는 +, ORACLE에서는 = 사용
 
 NAO로 두문자 암기
 
+## 7. ROWNUM, TOP
