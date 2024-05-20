@@ -100,3 +100,5 @@ NATURAL JOIN과 USING은 중복된 컬럼을 하나로만 출력한다. 제일 �
 
 A LEFT OUTER JOIN B는
 A.COL1 = B.COL1 (+)와 의미가 같다.
+
+FROM A, B, C 로 JOIN을 한다면 A,B를 JOIN한 결과를 C와 또다시 JOIN
