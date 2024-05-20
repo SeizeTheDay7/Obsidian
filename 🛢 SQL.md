@@ -599,3 +599,10 @@ where sal > (select avg(sal)
 			group by deptno);
 ```
 
+
+윈도우 함수
+```mysql
+select 윈도우함수([대상]) over([partition by 칼럼])
+							[order by 칼럼 asc|desc]
+							[rows|range between a and b]);
+```
