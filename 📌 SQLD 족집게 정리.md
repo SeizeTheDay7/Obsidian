@@ -114,4 +114,45 @@ FROM A, B, C 로 JOIN을 한다면 A,B를 JOIN한 결과를 C와 또다시 JOIN
 | HAVING   | 거의 모든 서브쿼리 | 중첩 서브 쿼리 가능     |
 | ORDER BY | 스칼라 서브쿼리   |                 |
 
-## 14. 
+## 14. 조건 연산자
+
+IN : 서브쿼리나 목록에 있는 값들과 일치하는지 확인
+```MYSQL
+SELECT employee_id, first_name
+FROM employees
+WHERE department_id IN (10, 20, 30);
+```
+
+ANY/SOME : 서브쿼리에서 반환된 값 하나라도 조건을 만족하는지
+```MYSQL
+SELECT employee_id, first_name
+FROM employees
+WHERE salary > ANY (SELECT salary FROM employees WHERE department_id = 30);
+```
+
+ALL : 서브쿼리에서 반환된 모든 값이 조건을 만족하는지
+```MYSQL
+SELECT employee_id, first_name
+FROM employees
+WHERE salary > ALL (SELECT salary FROM employees WHERE department_id = 30);
+```
+
+EXISTS : 서브쿼리가 한 개 이상의 행을 반환하면 TRUE
+```MYSQL
+SELECT employee_id, first_name
+FROM employees e
+WHERE EXISTS (SELECT 1 FROM departments d WHERE e.department_id = d.department_id AND d.location_id = 1700);
+```
+
+## 15. 집합 연산자
+
+UNION :  중복 허용 안한다. 정렬 작업을 해야해서 느리다.
+UNION ALL : 중복 허용 한다. 정렬 작업 안해서 빠르다.
+INTERSECT : 교집합
+MINUS : 교집합 뺀다
+
+## 16. DDL
+
+TRUNCATE vs DROP : TRUNCATE는 구조 남음(입주민 퇴거), DROP은 전부 지움(건물 철거)
+
+TRUNCATE vs DELETE : TRUNCATE는 DDL이고, DELETE는 DML이다.
