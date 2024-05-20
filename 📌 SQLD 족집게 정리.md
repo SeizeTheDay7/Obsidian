@@ -169,3 +169,17 @@ TRUNCATE vs DELETE : TRUNCATE는 DDL이고, DELETE는 DML이다.
 - REVOKE : 수행 권한 박탈
 - COMMIT
 - ROLLBACK
+
+## 19. VIEW
+
+독편보
+- 독립성
+- 편리성
+- 보안성
+
+## 20. 그룹 함수
+
+ROLL UP
+CUBE
+GROUPINGSETS
+GROUPING
