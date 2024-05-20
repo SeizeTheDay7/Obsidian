@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "afc623c0427745b0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📌 SQLD 족집게 정리.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "322eee286b326dfa",
             "type": "leaf",
             "state": {
@@ -67,7 +79,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -129,8 +142,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -150,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🛢 SQL.md",
+                "file": "📌 SQLD 족집게 정리.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,7 +179,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🛢 SQL.md",
+                "file": "📌 SQLD 족집게 정리.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🛢 SQL.md"
+                "file": "📌 SQLD 족집게 정리.md"
               }
             }
           },
@@ -222,11 +234,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4a97b2497c77df38",
+  "active": "afc623c0427745b0",
   "lastOpenFiles": [
+    "🛢 SQL.md",
+    "📌 SQLD 족집게 정리.md",
     "Pic/Pasted image 20240520220934.png",
     "🛠 Life Hacking.md",
-    "🛢 SQL.md",
     "Pic/Pasted image 20240519163843.png",
     "Pic/Pasted image 20240519163810.png",
     "Pic/Pasted image 20240519154706.png",
@@ -247,7 +260,6 @@
     "🌏 Web Dev/🌏 Web Dev.md",
     "🎄 Jungle.md",
     "💾 SQL.md",
-    "Pic/다운로드.png",
     "✏ Memo.md",
     "Game Design/무제 파일.md",
     "Game Design.md",

@@ -1,0 +1,20 @@
+## 1. 연산 순서 정리
+
+FROM - WHERE - GROUP BY - HAVING - SELECT - ORDER BY
+
+## 2. 명령어 분류
+
+DML : SELECT, INSERT, DELETE, UPDATE
+DDL : ALTER, CREATE, MODIFY, DROP
+TCL : ROLLBACK, COMMIT
+DCL : GRANT, REVOKE
+
+## 3. DISTINT의 기능
+
+중복되는 값을 묶는다
+DISTINCT DEPTNO, MGR 이라면 DEPTNO, MGR에 괄호 묶여 있다고 생각
+= GROUP BY (DEPTNO, MGR) 비슷하다
+
+## 4. AS에 관하여
+
+SELECT에선 AS 생략 가능하다. 칼럼 명에 띄어쓰기 하면 된다
