@@ -35,3 +35,17 @@ SQL server 에서는 +, ORACLE에서는 = 사용
 NAO로 두문자 암기
 
 ## 7. ROWNUM, TOP
+
+ROWNUM : ORACLE에서 사용됨.  SELECT해온 데이터에 일련번호를 붙임
+```MYSQL
+SELECT * FROM EMP WHERE ROWNUM <= 10;
+```
+WHERE 옆에 사용되고, 1부터 시작됨.
+
+TOP : SQL server에서 사용됨. 상위 n개 보여줌.
+```MYSQL
+SELECT TOP [조회할 레코드 수] [컬럼명]
+FROM [테이블명]
+WHERE [조건절]
+ORDER BY [컬럼명]
+```
