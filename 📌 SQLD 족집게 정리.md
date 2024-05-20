@@ -67,3 +67,6 @@ ORDER BY는 가장 마지막에 실행되기 때문에 일단 상위 N개 뽑고
 - 출력되는 컬럼의 수보다 큰 값 불가능
 - SAL DESC, ENAME ASC : SAL이 같으면 ENAME 오름차순 정렬
 - 출력되지 않은(SELECT하지 않은) 컬럼으로 정렬 가능
+
+## 10. CASE WHEN
+
