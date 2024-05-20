@@ -522,6 +522,16 @@ NULL 값에 숫자 더해도 NULL, 비교하면 FALSE 또는 unknown, 집계 함
 1. 스칼라 서브쿼리
 	- SELECT에 사용하는 서브쿼리
 	- 서브쿼리 결과를 하나의 칼럼처럼 사용하기 위해 주로 사용
+	- 조인의 대체연산 (성능이 안 좋아서 잘 사용하진 않음)
+
+```mysql
+select empno, ename,
+		(select dname
+		from dept d
+		where d.deptno = e.deptno) as dname
+from emp e
+where deptno = 10;
+```
 
 
 2. 인라인 뷰
