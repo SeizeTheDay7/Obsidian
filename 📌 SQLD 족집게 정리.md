@@ -81,3 +81,14 @@ CASE 칼럼이름 WHEN 조건식1 THEN 값1
 ```
 
 ELSE가 없을 때 조건식1, 조건식2 만족하지 않으면 NULL 출력됨
+
+## 11. NULL 문제 예시
+
+| A    | B    | C   | A+B+C |
+| ---- | ---- | --- | ----- |
+| NULL | NULL | 1   | NULL  |
+| 3    | 2    | 2   | 7     |
+| NULL | 2    | 3   | NULL  |
+`COUNT(A)` = 1
+`COUNT(*)` = 3
+`SUM(A+B+C)` = 7
