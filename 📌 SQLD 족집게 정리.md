@@ -70,3 +70,14 @@ ORDER BY는 가장 마지막에 실행되기 때문에 일단 상위 N개 뽑고
 
 ## 10. CASE WHEN
 
+```MYSQL
+CASE WHEN 칼럼이름 = 조건식1 THEN 값1
+		WHEN 칼럼이름 = 조건식2 THEN 값2
+```
+
+```MYSQL
+CASE 칼럼이름 WHEN 조건식1 THEN 값1
+			WHEN 조건식2 THEN 값2
+```
+
+ELSE가 없을 때 조건식1, 조건식2 만족하지 않으면 NULL 출력됨
