@@ -77,8 +77,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -161,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📌 SQLD 족집게 정리.md",
+                "file": "🛢 SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📌 SQLD 족집게 정리.md",
+                "file": "🛢 SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +200,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📌 SQLD 족집게 정리.md"
+                "file": "🛢 SQL.md"
               }
             }
           },
@@ -233,10 +232,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "afc623c0427745b0",
+  "active": "4a97b2497c77df38",
   "lastOpenFiles": [
-    "🛢 SQL.md",
     "📌 SQLD 족집게 정리.md",
+    "🛢 SQL.md",
     "Pic/Pasted image 20240521105205.png",
     "🌏 Web Dev/🧱 HTML.md",
     "Pic/3D 기능 소개 1.png",
