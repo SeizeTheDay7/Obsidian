@@ -201,3 +201,11 @@ WHERE EXISTS (SELECT 1 FROM departments d WHERE e.department_id = d.department_i
 - EXCEPTION은 생략 가능
 - Procedure, Trigger, Function 차이점 : function은 값 하나를 반환.
 
+## 24. 엔터티
+
+- 엔터티의 특징 : 인스턴스 2개 이상, 관계는 1개 이상
+- 엔터티의 분류
+	- 유무형 : 유형, 개념, 사건
+	- 발생시점 : 기본, 중심, 행위
+
+## 

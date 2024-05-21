@@ -420,6 +420,17 @@ delimiter ;
 call ifProc3();
 ```
 ##### CASE
+
+```MYSQL
+CASE WHEN 칼럼이름 = 조건식1 THEN 값1
+		WHEN 칼럼이름 = 조건식2 THEN 값2
+```
+
+```MYSQL
+CASE 칼럼이름 WHEN 조건식1 THEN 값1
+			WHEN 조건식2 THEN 값2
+```
+
 ```mysql
 delimiter $$
 begin
@@ -577,6 +588,9 @@ NULL 값에 숫자 더해도 NULL, 비교하면 FALSE 또는 unknown, 집계 함
 대체키 : 기본키 아닌 후보키
 후보키 : 최소성, 유일성 만족한 키
 기본키 : 후보키 중 하나만 고른 키
+
+엔터티
+[정리글](https://dataonair.or.kr/db-tech-reference/d-guide/sql/?mod=document&uid=326)
 
 엔터티의 요건
 1. 업무에서 필요하고 관리하고자 하는 정보
