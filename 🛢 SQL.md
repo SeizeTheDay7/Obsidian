@@ -455,10 +455,14 @@ execute 문에서는 using으로 ?에 값을 전달할 수 있다.
 ![](Pasted%20image%2020240520220934.png)
 
 ```mysql
-select 윈도우함수([대상]) over([partition by 칼럼])
-							[order by 칼럼 asc|desc]
-							[rows|range between a and b]);
+select 윈도우함수([대상]) over([partition by 칼럼]) # 파티션 정의 (행 나누기)
+							[order by 칼럼 asc|desc] # 순서 정의
+							[rows|range between a and b]); # 프레임 정의 (파티션 하위)
 ```
+
+ROWS와 RANGE는 윈도우 함수에서 WHERE절 역할을 한다.
+**ROWS** : 행을 기준으로 선택
+**RANGE** : 칼럼값 기준으로 범위를 선택
 
 ##### ROWS와 RANGE 차이점
 
