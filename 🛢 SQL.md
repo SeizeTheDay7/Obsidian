@@ -460,6 +460,13 @@ select 윈도우함수([대상]) over([partition by 칼럼])
 							[rows|range between a and b]);
 ```
 
+##### ROWS와 RANGE 차이점
+
+![](Pasted%20image%2020240521102235.png)
+
+**ROWS** :  조회된 데이터를 물리적 위치(ROWNUM)로 구분하여 모든 행이 1개의 행으로 인식한다.
+**RANGE**:  ORDER BY 절에 명시된 칼럼으로 논리적인 행 집합을 구성하며, 집합으로 묶인 그룹이 1개의 행으로 인식한다. 
+
 
 ## SQLD 이론
 <hr>
