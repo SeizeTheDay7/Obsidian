@@ -526,15 +526,6 @@ ROWS와 RANGE는 윈도우 함수에서 WHERE절 역할을 한다.
 **RANGE** : 칼럼값 기준으로 범위를 선택 (범위마다 연산)
 
 
-#### trigger, function, procedure
-
-|                     | triggers | functions      | stored procedures |
-| ------------------- | -------- | -------------- | ----------------- |
-| change data         | yes      | no             | yes               |
-| return value        | never    | always         | sometimes         |
-| how they are called | reaction | in a statement | exec              |
-
-
 ## SQLD 이론
 <hr>
 
@@ -710,3 +701,56 @@ start with 조건 # 데이터 전개가 시작될 데이터를 지정
 connect by prior 자식을가리키는데이터 = 부모를가리키는데이터 # 부모에서 자식 방향 데이터 전개
 [ order siblings by 칼럼명1, 칼럼명2 ... ];
 ```
+
+
+#### trigger, function, procedure
+
+트리거 : 데이터베이스에서 특정 이벤트가 발생할 때 자동으로 실행
+```mysql
+CREATE TRIGGER trg_after_insert
+AFTER INSERT ON employees
+FOR EACH ROW
+BEGIN
+    INSERT INTO employee_log (employee_id, action, action_time)
+    VALUES (:NEW.employee_id, 'INSERT', SYSDATE);
+END;
+```
+테이블에 데이터가 삽입된 후 자동으로 실행되어 로그를 기록하는 트리거
+
+프로시저 : 미리 컴파일된 SQL문과 제어 흐름을 포함. 입력 파라미터를 받아들임.
+```mysql
+CREATE PROCEDURE update_salary (p_employee_id INT, p_salary NUMBER)
+AS
+BEGIN
+    UPDATE employees
+    SET salary = p_salary
+    WHERE employee_id = p_employee_id;
+END;
+```
+특정 직원의 급여를 업데이트하는 작업을 수행함
+
+함수 : 특정 작업을 수행하고 하나의 값을 반환. 입력 파라미터를 받아들임.
+```mysql
+CREATE FUNCTION get_employee_salary (p_employee_id INT)
+RETURN NUMBER
+AS
+    v_salary NUMBER;
+BEGIN
+    SELECT salary INTO v_salary
+    FROM employees
+    WHERE employee_id = p_employee_id;
+    
+    RETURN v_salary;
+END;
+```
+특정 직원의 급여를 반환
+
+|특징|트리거 (Trigger)|프로시저 (Procedure)|함수 (Function)|
+|---|---|---|---|
+|실행 시점|특정 이벤트 발생 시 자동 실행|명시적으로 호출해야 함|명시적으로 호출해야 함|
+|반환 값|없음|없음 또는 OUT 파라미터 사용|하나의 값 반환|
+|호출 방법|자동 실행 (이벤트 기반)|`CALL` 또는 `EXECUTE` 문으로 호출|SQL 문에서 호출 (`SELECT`, `FROM` 절 등)|
+|사용 목적|데이터 무결성 유지, 로그 기록, 데이터 유효성 검사|복잡한 비즈니스 로직 구현, 데이터베이스 작업 자동화|계산 작업 수행, 데이터 변환, 복잡한 논리 구현|
+|포함 가능 작업|`INSERT`, `UPDATE`, `DELETE`와 같은 데이터 조작 이벤트 처리|여러 SQL 문, 제어 흐름, 트랜잭션 처리 등|단일 값 반환을 위한 SQL 문, 제어 흐름|
+|내부 트랜잭션|트리거 내에서 트랜잭션을 제어할 수 없음|프로시저 내에서 트랜잭션 제어 가능|함수 내에서 트랜잭션 제어할 수 없음|
+|재사용성|이벤트 기반으로 특정 테이블에서만 사용|여러 작업에 대해 재사용 가능|여러 작업에 대해 재사용 가능|
