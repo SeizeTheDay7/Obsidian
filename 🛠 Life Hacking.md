@@ -1,12 +1,12 @@
 
 <h1>ChatGPT 북마크</h1>
 💡
-[아무거나 물어보기](https://chatgpt.com/c/f806b00d-ccf7-496e-8b29-02986adf3400)
-[옵시디언 표 만들기](https://chatgpt.com/c/50385aaa-aee4-44bc-a7c8-bee7c6d8bc54)
-[SQL 물어보기](https://chatgpt.com/c/a8b16bd9-8651-4ef5-a25a-3a8dcd4350e0)
+[아무거나](https://chatgpt.com/c/f806b00d-ccf7-496e-8b29-02986adf3400)
+[옵시디언 표](https://chatgpt.com/c/50385aaa-aee4-44bc-a7c8-bee7c6d8bc54)
+[SQL](https://chatgpt.com/c/a8b16bd9-8651-4ef5-a25a-3a8dcd4350e0)
 
 🌏
-[Python _ 4](https://chatgpt.com/c/b2788141-45f3-4493-9523-7b279ecba95a)
+[Python](https://chatgpt.com/c/72e963c7-1192-4da2-a681-94c9a4d11d2a)
 [H, C, J](https://chatgpt.com/c/4e88d652-67d2-468e-8754-62ff474add36)
 [WebStack _ 4](https://chatgpt.com/c/96ff78de-1c0d-4c1a-b9c0-1306723190bf)
 [Git ](https://chatgpt.com/c/dde617aa-7238-43fa-bc5b-7c1ec8416a0a)
