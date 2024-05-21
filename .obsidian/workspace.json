@@ -71,13 +71,16 @@
             "id": "2e2c01f08965317b",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pic/3D 기능 소개 1.png"
+                "file": "🛠 Life Hacking.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -139,8 +142,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -160,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🛢 SQL.md",
+                "file": "🛠 Life Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +179,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🛢 SQL.md",
+                "file": "🛠 Life Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🛢 SQL.md"
+                "file": "🛠 Life Hacking.md"
               }
             }
           },
@@ -232,14 +234,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4a97b2497c77df38",
+  "active": "2e2c01f08965317b",
   "lastOpenFiles": [
-    "📌 SQLD 족집게 정리.md",
+    "Pic/3D 기능 소개 1.png",
     "🛢 SQL.md",
+    "📌 SQLD 족집게 정리.md",
     "🌏 Web Dev/🧱 HTML.md",
     "Pic/Pasted image 20240521134920.png",
     "Pic/Pasted image 20240521105205.png",
-    "Pic/3D 기능 소개 1.png",
     "Pic/다운로드.png",
     "Pic/Pasted image 20240114180128.png",
     "Pic/Pasted image 20240114183153.png",
