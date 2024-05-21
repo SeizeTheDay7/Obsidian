@@ -199,5 +199,5 @@ WHERE EXISTS (SELECT 1 FROM departments d WHERE e.department_id = d.department_i
 ## 23. 절차형 PL/SQL
 
 - EXCEPTION은 생략 가능
-- Procedure, Trigger, User defined Function 차이점
+- Procedure, Trigger, Function 차이점 : function은 값 하나를 반환.
 
