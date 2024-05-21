@@ -597,6 +597,11 @@ ROWS와 RANGE는 윈도우 함수에서 WHERE절 역할을 한다.
   
 식별 관계 : 부모 테이블의 기본키를 자식의 기본키로 사용  
 비식별 관계 : 부모 테이블의 기본키를 자식에서 외래키로 사용  
+
+관계 표기법
+- 관계명(Membership)
+- 관계차수(Cardinality)
+- 관계선택사양(Optionality)
   
 NULL 값에 숫자 더해도 NULL, 비교하면 FALSE 또는 unknown, 집계 함수 계산에선 아예 빠짐
 
