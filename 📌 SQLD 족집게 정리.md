@@ -193,5 +193,5 @@ WHERE EXISTS (SELECT 1 FROM departments d WHERE e.department_id = d.department_i
 
 ## 22. 계층형 질의
 
-- PRIOR 자식데이터 = 부모데이터 (부모에서 자식으로 가는 질의)
+- PRIOR 자식을가리키는데이터 = 부모를가리키는데이터 (부모에서 자식으로 가는 질의)
 - 부모에서 자식으로 가면 순방향
