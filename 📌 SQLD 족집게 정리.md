@@ -205,3 +205,10 @@ FROM A, B, C 로 JOIN을 한다면 A,B를 JOIN한 결과를 C와 또다시 JOIN
 - NL Join : 랜덤 액세스, 대용량 sort 작업 시 유리
 - Sort Merge Join : 조인키 기준 정렬, 등가/비등가 조인 가능
 - Hash Join : 등가 조인만 가능, 선행 table 작다, 별도 저장 공간 필요
+
+## 30. 인덱스
+
+인덱스 언제 사용하면 안되는지 : 부정형, LIKE, 묵시적 형변환
+인덱스 사용시 성능 감소 : INSERT, UPDATE, DELETE 등 DML 성능 저하
+
+
