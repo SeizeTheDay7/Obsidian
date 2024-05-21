@@ -646,9 +646,9 @@ NULL 값에 숫자 더해도 NULL, 비교하면 FALSE 또는 unknown, 집계 함
 
 ![](Pasted%20image%2020240521134920.png)
 
-1. 1:1 타입(One to One Type) : 
-2. 슈퍼 + 서브타입(Plus Type)
-3. All in One타입(Single Type)
+1. 1:1 타입(One to One Type) : 슈퍼타입과 서브타입을 별도 테이블로 유지
+2. 슈퍼 + 서브타입(Plus Type) : 서브타입 테이블에 슈퍼타입 속성을 포함
+3. All in One타입(Single Type) : 하나의 테이블에 모든 속성 포함
 
 ### DDL, DML, DCL
 
