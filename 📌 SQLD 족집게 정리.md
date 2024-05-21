@@ -36,19 +36,9 @@ NAO로 두문자 암기
 
 ## 7. ROWNUM, TOP
 
-ROWNUM : ORACLE에서 사용됨.  SELECT해온 데이터에 일련번호를 붙임
-```MYSQL
-SELECT * FROM EMP WHERE ROWNUM <= 10;
-```
-WHERE 옆에 사용되고, 1부터 시작됨.
+ROWNUM : ORACLE에서 사용됨.  SELECT해온 데이터에 일련번호를 붙임. WHERE 옆에 사용되고, 1부터 시작됨.
 
 TOP : SQL server에서 사용됨. 상위 n개 보여줌.
-```MYSQL
-SELECT TOP [조회할 레코드 수] [컬럼명]
-FROM [테이블명]
-WHERE [조건절]
-ORDER BY [컬럼명]
-```
 
 ORDER BY는 가장 마지막에 실행되기 때문에 일단 상위 N개 뽑고 난 후에 정렬됨.
 
@@ -185,4 +175,8 @@ FROM A, B, C 로 JOIN을 한다면 A,B를 JOIN한 결과를 C와 또다시 JOIN
 	- 유무형 : 유형, 개념, 사건
 	- 발생시점 : 기본, 중심, 행위
 
-## 
+## 25. 속성
+
+- 기본 속성 : 원래속성  
+- 설계 속성 : 1:1치환 (부서번호)
+- 파생 속성 : 계산값  
