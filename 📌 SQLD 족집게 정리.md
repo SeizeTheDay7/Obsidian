@@ -188,4 +188,5 @@ GROUPING : 집계되면 1, 아니면 0
 
 ## 21. 윈도우 함수
 
-ROWS, RANGE 차이점
+ROWS, RANGE 차이점 : RANGE에는 중복된 값 존재
+RANK, DENSE_RANK 차이점 : RANK는 등수 건너 뛰고 DENSE_RANK는 안 건너뛴다.
