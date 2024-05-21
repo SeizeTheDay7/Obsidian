@@ -202,3 +202,6 @@ FROM A, B, C 로 JOIN을 한다면 A,B를 JOIN한 결과를 C와 또다시 JOIN
 
 ## 29. 조인 수행 원리
 
+- NL Join : 랜덤 액세스, 대용량 sort 작업 시 유리
+- Sort Merge Join : 조인키 기준 정렬, 등가/비등가 조인 가능
+- Hash Join : 등가 조인만 가능, 선행 table 작다, 별도 저장 공간 필요
