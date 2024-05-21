@@ -436,6 +436,31 @@ deallocate prepare myQuery; # 준비한 문장 해제
 prepare 문에서는 ?로 나중에 입력될 값을 비워 놓고,
 execute 문에서는 using으로 ?에 값을 전달할 수 있다.
 
+#### 윈도우 함수
+
+[정리글1](https://schatz37.tistory.com/12) [정리글2](https://mizykk.tistory.com/121)
+
+: 행과 행 간의 관계를 쉽게 정의하기 위해 만든 함수. GROUP BY는 집계된 결과만 보여주는 반면, 왼도우 함수는 기존 데이터에 집계된 값을 추가하여 나타낸다.
+
+**(GROUP BY를 사용했을 경우)**
+집계된 값만 나타난다.
+
+![](Pasted%20image%2020240521101830.png)
+
+**(윈도우 함수를 사용했을 경우)**
+기존 데이터에 집계된 값이 추가되어 나타난다.
+
+![](Pasted%20image%2020240521101908.png)
+
+![](Pasted%20image%2020240520220934.png)
+
+```mysql
+select 윈도우함수([대상]) over([partition by 칼럼])
+							[order by 칼럼 asc|desc]
+							[rows|range between a and b]);
+```
+
+
 ## SQLD 이론
 <hr>
 
@@ -600,16 +625,7 @@ where sal > (select avg(sal)
 ```
 
 
-윈도우 함수
-: 행과 행 간의 관계를 쉽게 정의하기 위해 만든 함수
 
-![](Pasted%20image%2020240520220934.png)
-
-```mysql
-select 윈도우함수([대상]) over([partition by 칼럼])
-							[order by 칼럼 asc|desc]
-							[rows|range between a and b]);
-```
 
 
 계층형 질의
