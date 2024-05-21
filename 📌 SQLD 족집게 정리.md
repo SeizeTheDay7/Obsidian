@@ -210,5 +210,3 @@ FROM A, B, C 로 JOIN을 한다면 A,B를 JOIN한 결과를 C와 또다시 JOIN
 
 인덱스 언제 사용하면 안되는지 : 부정형, LIKE, 묵시적 형변환
 인덱스 사용시 성능 감소 : INSERT, UPDATE, DELETE 등 DML 성능 저하
-
-
