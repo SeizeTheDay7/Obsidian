@@ -797,3 +797,19 @@ END;
 |포함 가능 작업|`INSERT`, `UPDATE`, `DELETE`와 같은 데이터 조작 이벤트 처리|여러 SQL 문, 제어 흐름, 트랜잭션 처리 등|단일 값 반환을 위한 SQL 문, 제어 흐름|
 |내부 트랜잭션|트리거 내에서 트랜잭션을 제어할 수 없음|프로시저 내에서 트랜잭션 제어 가능|함수 내에서 트랜잭션 제어할 수 없음|
 |재사용성|이벤트 기반으로 특정 테이블에서만 사용|여러 작업에 대해 재사용 가능|여러 작업에 대해 재사용 가능|
+
+### ROWNUM, TOP
+
+ROWNUM : ORACLE에서 사용됨.  SELECT해온 데이터에 일련번호를 붙임
+```MYSQL
+SELECT * FROM EMP WHERE ROWNUM <= 10;
+```
+WHERE 옆에 사용되고, 1부터 시작됨.
+
+TOP : SQL server에서 사용됨. 상위 n개 보여줌.
+```MYSQL
+SELECT TOP [조회할 레코드 수] [컬럼명]
+FROM [테이블명]
+WHERE [조건절]
+ORDER BY [컬럼명]
+```
