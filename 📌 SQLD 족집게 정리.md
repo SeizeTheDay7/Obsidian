@@ -200,3 +200,4 @@ WHERE EXISTS (SELECT 1 FROM departments d WHERE e.department_id = d.department_i
 
 - EXCEPTION은 생략 가능
 - Procedure, Trigger, User defined Function 차이점
+

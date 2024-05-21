@@ -526,6 +526,15 @@ ROWS와 RANGE는 윈도우 함수에서 WHERE절 역할을 한다.
 **RANGE** : 칼럼값 기준으로 범위를 선택 (범위마다 연산)
 
 
+#### trigger, function, procedure
+
+|                     | triggers | functions      | stored procedures |
+| ------------------- | -------- | -------------- | ----------------- |
+| change data         | yes      | no             | yes               |
+| return value        | never    | always         | sometimes         |
+| how they are called | reaction | in a statement | exec              |
+
+
 ## SQLD 이론
 <hr>
 
