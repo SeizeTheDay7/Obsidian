@@ -140,6 +140,35 @@ SELECT * FROM 테이블이름 WHERE 칼럼이름 IN('값1', '값2', '값3'); # �
 SELECT * FROM 테이블이름 WHERE 칼럼이름 LIKE '우%'; # 우설, 우산꽂이 등 조회
 SELECT * FROM 테이블이름 WHERE 칼럼이름 LIKE '__핑크'; # 무적핑크, 블랙핑크 등 조회
 ```
+##### 조건 연산자
+IN : 서브쿼리나 목록에 있는 값들과 일치하는지 확인
+```MYSQL
+SELECT employee_id, first_name
+FROM employees
+WHERE department_id IN (10, 20, 30);
+```
+
+ANY/SOME : 서브쿼리에서 반환된 값 하나라도 조건을 만족하는지
+```MYSQL
+SELECT employee_id, first_name
+FROM employees
+WHERE salary > ANY (SELECT salary FROM employees WHERE department_id = 30);
+```
+
+ALL : 서브쿼리에서 반환된 모든 값이 조건을 만족하는지
+```MYSQL
+SELECT employee_id, first_name
+FROM employees
+WHERE salary > ALL (SELECT salary FROM employees WHERE department_id = 30);
+```
+
+EXISTS : 서브쿼리가 한 개 이상의 행을 반환하면 TRUE
+```MYSQL
+SELECT employee_id, first_name
+FROM employees e
+WHERE EXISTS (SELECT 1 FROM departments d WHERE e.department_id = d.department_id AND d.location_id = 1700);
+
+```
 #### GROUP BY
 ```mysql
 SELECT 집계함수(칼럼이름) FROM 테이블이름 GROUP BY 칼럼이름; # 속성 값 별로 묶여서 계산됨
