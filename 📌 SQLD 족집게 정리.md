@@ -195,3 +195,8 @@ WHERE EXISTS (SELECT 1 FROM departments d WHERE e.department_id = d.department_i
 
 - PRIOR 자식을가리키는데이터 = 부모를가리키는데이터 (부모에서 자식으로 가는 질의)
 - 부모에서 자식으로 가면 순방향
+
+## 23. 절차형 PL/SQL
+
+- EXCEPTION은 생략 가능
+- PROCEDURE, TRIGGER, USER DEFINED FUNCTION 차이점

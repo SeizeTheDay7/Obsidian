@@ -165,8 +165,8 @@ GROUP BY 상품ID, 월;
 
 ![](Pasted%20image%2020240521000339.png)
 
-##### ROLLUP
 [정리글](https://for-my-wealthy-life.tistory.com/44)
+##### ROLLUP
 소그룹 간의 합계를 계산. GROUP BY로 묶은 각각의 소그룹 합계와 전쳬 합계 모두 구할 수 있음.
 ```MYSQL
 SELECT 상품ID, 월, SUM(매출액) AS 매출액
@@ -698,6 +698,6 @@ select ...
 from ...
 where 조건
 start with 조건 # 데이터 전개가 시작될 데이터를 지정
-connect by prior 자식 = 부모 # 부모에서 자식 방향 데이터 전개
+connect by prior 자식을가리키는데이터 = 부모를가리키는데이터 # 부모에서 자식 방향 데이터 전개
 [ order siblings by 칼럼명1, 칼럼명2 ... ];
 ```
