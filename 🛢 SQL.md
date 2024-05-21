@@ -623,6 +623,9 @@ NULL 값에 숫자 더해도 NULL, 비교하면 FALSE 또는 unknown, 집계 함
 후보키 : 최소성, 유일성 만족한 키
 기본키 : 후보키 중 하나만 고른 키
 
+열이 길다 : Row Chaining이 발생, 디스크 I/O양 늘어남
+행이 길다 : 스키마 구조와 동일하게 파티션 분할해야함
+
 ### 엔터티
 [정리글](https://dataonair.or.kr/db-tech-reference/d-guide/sql/?mod=document&uid=326)
 
