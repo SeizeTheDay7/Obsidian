@@ -146,16 +146,16 @@ WHERE EXISTS (SELECT 1 FROM departments d WHERE e.department_id = d.department_i
 
 ## 15. 집합 연산자
 
-UNION :  중복 허용 안한다. 정렬 작업을 해야해서 느리다.
-UNION ALL : 중복 허용 한다. 정렬 작업 안해서 빠르다.
-INTERSECT : 교집합
-MINUS : 교집합 뺀다
+- UNION :  중복 허용 안한다. 정렬 작업을 해야해서 느리다.
+- UNION ALL : 중복 허용 한다. 정렬 작업 안해서 빠르다.
+- INTERSECT : 교집합
+- MINUS : 교집합 뺀다
 
 ## 16. DDL
 
-TRUNCATE vs DROP : TRUNCATE는 구조 남음(입주민 퇴거), DROP은 전부 지움(건물 철거)
+- TRUNCATE vs DROP : TRUNCATE는 구조 남음(입주민 퇴거), DROP은 전부 지움(건물 철거)
 
-TRUNCATE vs DELETE : TRUNCATE는 DDL이고, DELETE는 DML이다.
+ - TRUNCATE vs DELETE : TRUNCATE는 DDL이고, DELETE는 DML이다.
 
 ## 17. 제약 조건
 
@@ -181,12 +181,17 @@ TRUNCATE vs DELETE : TRUNCATE는 DDL이고, DELETE는 DML이다.
 
 빵꾸 뚫고 ROLLUP인지 CUBE인지 뭔지 찾는 문제
 
-ROLLUP : GROUP BY에 소계 추가. ROLLUP(A, B)와 ROLLUP(B, A)는 결과가 다름.
-CUBE : 명시되지 않은 소계 추가. CUBE(A, B)와 CUBE(B, A)는 결과가 같다.
-GROUPING SETS : 특정 항목에 대한 소계.
-GROUPING : 집계되면 1, 아니면 0
+- ROLLUP : GROUP BY에 소계 추가. ROLLUP(A, B)와 ROLLUP(B, A)는 결과가 다름.
+- CUBE : 명시되지 않은 소계 추가. CUBE(A, B)와 CUBE(B, A)는 결과가 같다.
+- GROUPING SETS : 특정 항목에 대한 소계.
+- GROUPING : 집계되면 1, 아니면 0
 
 ## 21. 윈도우 함수
 
-ROWS, RANGE 차이점 : RANGE에는 중복된 값 존재
-RANK, DENSE_RANK 차이점 : RANK는 등수 건너 뛰고 DENSE_RANK는 안 건너뛴다.
+- ROWS, RANGE 차이점 : RANGE에는 중복된 값 존재
+- RANK, DENSE_RANK 차이점 : RANK는 등수 건너 뛰고 DENSE_RANK는 안 건너뛴다.
+
+## 22. 계층형 질의
+
+- PRIOR 자식데이터 = 부모데이터 (부모에서 자식으로 가는 질의)
+- 부모에서 자식으로 가면 순방향
