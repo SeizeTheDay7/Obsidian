@@ -646,7 +646,7 @@ NULL 값에 숫자 더해도 NULL, 비교하면 FALSE 또는 unknown, 집계 함
 
 ![](Pasted%20image%2020240521134920.png)
 
-1. 1:1 타입(One to One Type)
+1. 1:1 타입(One to One Type) : 
 2. 슈퍼 + 서브타입(Plus Type)
 3. All in One타입(Single Type)
 
