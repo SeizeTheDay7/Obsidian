@@ -590,7 +590,7 @@ ROWS와 RANGE는 윈도우 함수에서 WHERE절 역할을 한다.
 [정리글](https://dataonair.or.kr/db-tech-reference/d-guide/sql/?mod=document&uid=326)
 #### 엔터티 종류
 - 유무형 : 유형, 개념, 사건
-- 발생시점 : 기본, 중심, 행위
+- 발생시점 : 기본, 중심, 행위 (기중행 하나 외우면 유무형도 끝)
 - 다대다 관계 해소 : 교차 엔터티
 
 #### 엔터티의 요건
