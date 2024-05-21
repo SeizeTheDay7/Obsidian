@@ -185,3 +185,7 @@ ROLLUP : GROUP BY에 소계 추가. ROLLUP(A, B)와 ROLLUP(B, A)는 결과가 �
 CUBE : 명시되지 않은 소계 추가. CUBE(A, B)와 CUBE(B, A)는 결과가 같다.
 GROUPING SETS : 특정 항목에 대한 소계.
 GROUPING : 집계되면 1, 아니면 0
+
+## 21. 윈도우 함수
+
+ROWS, RANGE 차이점
