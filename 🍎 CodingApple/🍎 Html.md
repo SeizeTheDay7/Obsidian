@@ -137,3 +137,5 @@ display: table-cell 넣으면 td 됨
 
 a 태그에 text-decoration: none; 적용하면 링크 아래에 있는 밑줄제거
 방문 전 링크 스타일링은 :link
+방문 후 링크 스타일링은 :visited
+어차피 외워도 다 까먹으니까 필요할 때 찾아쓰자
