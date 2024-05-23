@@ -134,3 +134,6 @@ display: table-cell 넣으면 td 됨
 ```
 
 스타일 설정할 때 :hover → :focus → :active 순서대로 적어야 한다
+
+a 태그에 text-decoration: none; 적용하면 링크 아래에 있는 밑줄제거
+방문 전 링크 스타일링은 :link

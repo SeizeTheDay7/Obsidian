@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -175,7 +175,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md",
+                "file": "🛠 Life Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -192,7 +192,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md",
+                "file": "🛠 Life Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,7 +215,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md"
+                "file": "🛠 Life Hacking.md"
               }
             }
           },
@@ -247,11 +247,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "a4594a3b9c8e4582",
+  "active": "2e2c01f08965317b",
   "lastOpenFiles": [
+    "🍎 CodingApple/🍎 Html.md",
     "🌏 Web Dev/🎨 CSS.md",
     "🛢 SQL.md",
-    "🍎 CodingApple/🍎 Html.md",
     "🎄 Jungle.md",
     "🛠 Life Hacking.md",
     "Pic/3D 기능 소개 1.png",
