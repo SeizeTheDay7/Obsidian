@@ -132,3 +132,5 @@ display: table-cell 넣으면 td 됨
 	background-color: chocolate;
 }
 ```
+
+스타일 설정할 때 :hover → :focus → :active 순서대로 적어야 한다
