@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -175,7 +175,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "🎄 Jungle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -192,7 +192,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "🎄 Jungle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,7 +215,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md"
+                "file": "🎄 Jungle.md"
               }
             }
           },
@@ -247,9 +247,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "2421c14250bc6f40",
+  "active": "e6be2d02d33f2924",
   "lastOpenFiles": [
     "🛠 Life Hacking.md",
+    "🌏 Web Dev/🎨 CSS.md",
     "🎄 Jungle.md",
     "Pic/3D 기능 소개 1.png",
     "🛢 SQL.md",
@@ -268,7 +269,6 @@
     "💾 Git.md",
     "conflict-files-obsidian-git.md",
     " - 복사본.md",
-    "🌏 Web Dev/🎨 CSS.md",
     "🍎 CodingApple/🍎 Html.md",
     "✒ Coding Theory.md",
     "🌏 Web Dev/💻 JavaScript.md",
