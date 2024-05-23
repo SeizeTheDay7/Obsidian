@@ -24,8 +24,8 @@
 ## General
 <hr>
 
-○ img 태그는 style 생략하고 `width="100%"` 이런 식으로 넣어도 된다
-○ 화면 꽉 채우는 방법 : `min-height: 100vh`
+-  img 태그는 style 생략하고 `width="100%"` 이런 식으로 넣어도 된다
+-  화면 꽉 채우는 방법 : `min-height: 100vh`
 
 
 ## 맨 처음 선언할만한 스타일

@@ -122,3 +122,13 @@ display: inline : 항상 옆으로 채워지는 **폭과 너비가 없는 요소
 div에 style="display: table"을 넣으면 table이랑 비슷하게 동작
 display: table-row 넣으면 tr 됨
 display: table-cell 넣으면 td 됨
+
+`<button>`에 cursor: pointer; css 주면 마우스 갖다대면 커서 바뀜
+마우스 올릴 때 스타일은 :hover (이를 pseudo-class라 부름)
+클릭 중 스타일은 :active
+커서 찍혀있을 때 스타일은 :focus
+```css
+.btn:hover{
+	background-color: chocolate;
+}
+```

@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -175,7 +175,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🎄 Jungle.md",
+                "file": "🍎 CodingApple/🍎 Html.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -192,7 +192,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🎄 Jungle.md",
+                "file": "🍎 CodingApple/🍎 Html.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,7 +215,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🎄 Jungle.md"
+                "file": "🍎 CodingApple/🍎 Html.md"
               }
             }
           },
@@ -247,13 +247,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "e6be2d02d33f2924",
+  "active": "a4594a3b9c8e4582",
   "lastOpenFiles": [
-    "🛠 Life Hacking.md",
     "🌏 Web Dev/🎨 CSS.md",
-    "🎄 Jungle.md",
-    "Pic/3D 기능 소개 1.png",
     "🛢 SQL.md",
+    "🍎 CodingApple/🍎 Html.md",
+    "🎄 Jungle.md",
+    "🛠 Life Hacking.md",
+    "Pic/3D 기능 소개 1.png",
     "📌 SQLD 족집게 정리.md",
     "🌏 Web Dev/🧱 HTML.md",
     "Pic/Pasted image 20240521134920.png",
@@ -269,7 +270,6 @@
     "💾 Git.md",
     "conflict-files-obsidian-git.md",
     " - 복사본.md",
-    "🍎 CodingApple/🍎 Html.md",
     "✒ Coding Theory.md",
     "🌏 Web Dev/💻 JavaScript.md",
     "🌏 Web Dev/🌏 Web Dev.md",
