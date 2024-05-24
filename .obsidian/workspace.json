@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -175,7 +175,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md",
+                "file": "📌 SQLD 족집게 정리.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -192,7 +192,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md",
+                "file": "📌 SQLD 족집게 정리.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,7 +215,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md"
+                "file": "📌 SQLD 족집게 정리.md"
               }
             }
           },
@@ -247,11 +247,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "a4594a3b9c8e4582",
+  "active": "afc623c0427745b0",
   "lastOpenFiles": [
+    "🍎 CodingApple/🍎 Html.md",
     "🛠 Life Hacking.md",
     "🎄 Jungle.md",
-    "🍎 CodingApple/🍎 Html.md",
     "🌏 Web Dev/🎨 CSS.md",
     "🛢 SQL.md",
     "Pic/3D 기능 소개 1.png",

@@ -1,6 +1,7 @@
 ## 1. 연산 순서 정리
 
 FROM - WHERE - GROUP BY - HAVING - SELECT - ORDER BY
+FWGHSO
 
 ## 2. 명령어 분류
 
