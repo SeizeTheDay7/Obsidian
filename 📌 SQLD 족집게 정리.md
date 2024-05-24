@@ -1,7 +1,7 @@
 ## 1. 연산 순서 정리
 
 FROM - WHERE - GROUP BY - HAVING - SELECT - ORDER BY
-FWGHSO
+FWGHSO (공격수는 공격성이 매우 강하다)
 
 ## 2. 명령어 분류
 
