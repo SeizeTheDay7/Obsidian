@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4a97b2497c77df38",
+            "id": "322eee286b326dfa",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,24 +20,12 @@
             }
           },
           {
-            "id": "afc623c0427745b0",
+            "id": "ecb4328440d14757",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📌 SQLD 족집게 정리.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "322eee286b326dfa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌏 Web Dev/🧱 HTML.md",
+                "file": "💻 Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -91,7 +79,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -153,8 +142,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -174,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🛢 SQL.md",
+                "file": "💻 Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -191,7 +179,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🛢 SQL.md",
+                "file": "💻 Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -214,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🛢 SQL.md"
+                "file": "💻 Python.md"
               }
             }
           },
@@ -246,16 +234,18 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4a97b2497c77df38",
+  "active": "ecb4328440d14757",
   "lastOpenFiles": [
-    "📌 SQLD 족집게 정리.md",
+    "🌏 Web Dev/💻 JavaScript.md",
+    "💻 Python.md",
     "🛢 SQL.md",
+    "🌏 Web Dev/🧱 HTML.md",
+    "📌 SQLD 족집게 정리.md",
     "🍎 CodingApple/🍎 Html.md",
     "🛠 Life Hacking.md",
     "🎄 Jungle.md",
     "🌏 Web Dev/🎨 CSS.md",
     "Pic/3D 기능 소개 1.png",
-    "🌏 Web Dev/🧱 HTML.md",
     "Pic/Pasted image 20240521134920.png",
     "Pic/Pasted image 20240521105205.png",
     "Pic/다운로드.png",
@@ -270,7 +260,6 @@
     "conflict-files-obsidian-git.md",
     " - 복사본.md",
     "✒ Coding Theory.md",
-    "🌏 Web Dev/💻 JavaScript.md",
     "🌏 Web Dev/🌏 Web Dev.md",
     "💾 SQL.md",
     "✏ Memo.md",
