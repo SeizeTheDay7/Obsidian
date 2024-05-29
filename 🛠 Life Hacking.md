@@ -19,6 +19,10 @@
 [Unity _ 4](https://chatgpt.com/c/8bdb79c6-d1c2-484f-8dd2-9ec92663ef31)
 [Unity _ 3](https://chatgpt.com/c/c3ce81a2-c406-44db-a987-1a69e9a72580)
 
+<hr>
+<h1>윈도우 단축키 정리</h1>
+Ctrl+Shift+V : 서식 없이 붙여넣기
+
 
 
 <hr>

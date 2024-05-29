@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "ecb4328440d14757",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "💻 Python.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "2421c14250bc6f40",
             "type": "leaf",
             "state": {
@@ -79,7 +67,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -161,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌏 Web Dev/🧱 HTML.md",
+                "file": "🍎 CodingApple/🍎 Html.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +167,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌏 Web Dev/🧱 HTML.md",
+                "file": "🍎 CodingApple/🍎 Html.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌏 Web Dev/🧱 HTML.md"
+                "file": "🍎 CodingApple/🍎 Html.md"
               }
             }
           },
@@ -233,17 +222,17 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "322eee286b326dfa",
+  "active": "a4594a3b9c8e4582",
   "lastOpenFiles": [
-    "🌏 Web Dev/🎨 CSS.md",
-    "🌏 Web Dev/🧱 HTML.md",
-    "🛢 SQL.md",
     "🛠 Life Hacking.md",
+    "🍎 CodingApple/🍎 Html.md",
+    "🌏 Web Dev/🧱 HTML.md",
+    "🌏 Web Dev/🎨 CSS.md",
+    "💻 Python.md",
+    "🛢 SQL.md",
     "Pic/Pasted image 20240529145814.png",
     "Pic/Pasted image 20240529144214.png",
     "Pic/Pasted image 20240529144202.png",
-    "🍎 CodingApple/🍎 Html.md",
-    "💻 Python.md",
     "🌏 Web Dev/💻 JavaScript.md",
     "📌 SQLD 족집게 정리.md",
     "🎄 Jungle.md",

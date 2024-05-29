@@ -181,3 +181,50 @@ p, h3, h3, h2, h1, span {
 } 
 ```
 폰트 부드럽게 처리하려면 회전시켜보셈
+
+
+1. css/main.css
+2. /css/main.css
+1번은 현재 HTML파일과 같은 경로에 있는 css라는 폴더 내의 main.css 파일을 의미하고
+2번은 현재 사이트의 메인경로 (codingapple.com)부터 시작해서 codingapple.com/css/main.css 파일을 첨부해라 라는 뜻입니다.
+슬래쉬 기호가 첨부터 붙어있으면 사이트 메인경로부터 시작해라~ 라는 의미입니다.
+
+
+**header에 넣는 태그들**
+
+여러가지 meta 태그
+```html
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="html 잘하는 코딩애플입니다.">
+  <meta name="keywords" content="HTML,CSS,JavaScript,자바스크립트,코딩">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+```
+
+1. 사이트 인코딩 형식 지정 : charset="UTF-8"
+2. 사이트 검색 결과 화면에 뜨는 문구
+	- description : 구글 검색 시 파란 제목으로 뜨는 글귀
+	- keywords : 검색에 도움을 주는 키워드
+3. 사이트 초기  zoom 레벨이나 폭 지정 : name="viewport"
+	- width=device-width : 모바일 기기의 실제 폭으로 렌더링. 반응형 웹에 필요
+	- initial-scale : 접속 시의 화면 줌 레벨
+
+open graph
+```html
+<head>
+  <meta property="og:image" content="/이미지경로.jpg">
+  <meta property="og:description" content="사이트설명">
+  <meta property="og:title" content="사이트제목">
+</head>
+```
+링크 공유할 때 썸네일 설정
+
+favicon
+```
+<head> <link rel="icon" href="아이콘경로.ico" type="image/x-icon"> </head>
+```
+웹사이트 제목 옆에 뜨는 아이콘 커스터마이징
+- ico 대신 png 파일 가능. ico가 호환성은 가장 좋다. 
+- 32 x 32 사이즈로 제작하면 됨
+- 바탕화면 바로가기 아이콘 수정 : rel="apple-touch-icon-precomposed" 등 OS 별로 요구하는 속성이 다른데 favicon generator 검색해보면 OS별로 알아서 만들어줌
