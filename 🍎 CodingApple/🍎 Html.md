@@ -175,3 +175,9 @@ css 파일 최상단에 @font-face 라는 명령어를 넣고, url() 안에 적�
 
 용량 줄이려면 .woff 쓰셈
 
+```css
+p, h3, h3, h2, h1, span {
+	transform : rotate(0.03deg);
+} 
+```
+폰트 부드럽게 처리하려면 회전시켜보셈
