@@ -387,6 +387,8 @@ margin-left: 100px;
 > 
 > 예를 들어, `flex-flow: row wrap` 사용 가능
 
+![](Pasted%20image%2020240529145814.png)
+
 | align-content | 여러 줄 사이의 간격 지정      |
 | ------------- | ------------------- |
 | flex-start    | 꼭대기에 정렬             |
