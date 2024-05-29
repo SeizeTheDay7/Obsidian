@@ -80,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -142,7 +142,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -162,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "💻 Python.md",
+                "file": "🍎 CodingApple/🍎 Html.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +180,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "💻 Python.md",
+                "file": "🍎 CodingApple/🍎 Html.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -202,7 +203,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "💻 Python.md"
+                "file": "🍎 CodingApple/🍎 Html.md"
               }
             }
           },
@@ -234,15 +235,15 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "ecb4328440d14757",
+  "active": "a4594a3b9c8e4582",
   "lastOpenFiles": [
-    "🌏 Web Dev/💻 JavaScript.md",
+    "🛠 Life Hacking.md",
     "💻 Python.md",
+    "🌏 Web Dev/💻 JavaScript.md",
     "🛢 SQL.md",
     "🌏 Web Dev/🧱 HTML.md",
     "📌 SQLD 족집게 정리.md",
     "🍎 CodingApple/🍎 Html.md",
-    "🛠 Life Hacking.md",
     "🎄 Jungle.md",
     "🌏 Web Dev/🎨 CSS.md",
     "Pic/3D 기능 소개 1.png",
