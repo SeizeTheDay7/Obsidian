@@ -80,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -162,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md",
+                "file": "🌏 Web Dev/🎨 CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +179,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md",
+                "file": "🌏 Web Dev/🎨 CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -202,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md"
+                "file": "🌏 Web Dev/🎨 CSS.md"
               }
             }
           },
@@ -234,10 +234,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "a4594a3b9c8e4582",
+  "active": "2421c14250bc6f40",
   "lastOpenFiles": [
-    "🌏 Web Dev/🎨 CSS.md",
+    "Pic/Pasted image 20240529144214.png",
+    "Pic/Pasted image 20240529144202.png",
     "🍎 CodingApple/🍎 Html.md",
+    "🌏 Web Dev/🎨 CSS.md",
     "🛠 Life Hacking.md",
     "💻 Python.md",
     "🌏 Web Dev/💻 JavaScript.md",
@@ -254,7 +256,6 @@
     "Pic/Pasted image 20240517164734.png",
     "Pic/Pasted image 20240521000339.png",
     "Pic/Pasted image 20240521000458.png",
-    "Pic/Pasted image 20240521001026.png",
     "Pic/Pic.md",
     "💾 Git.md",
     "conflict-files-obsidian-git.md",
@@ -272,7 +273,6 @@
     "🦝 GPT 질문 답변/EC2 명령어 질문.md",
     "Spaces/Home/템플릿.md",
     "Obsidian Vault.md",
-    "🕹 Game Dev/🕹 Game Dev.md",
     "🌏 Web Dev",
     "🕹 Game Dev",
     "프로그래밍 언어",

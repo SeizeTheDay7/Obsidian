@@ -400,6 +400,14 @@ margin-left: 100px;
 >부모 요소가 `display: flex`라면 `<button>`의 높이가 부모 요소와 같아지는 현상 발생.
 >`<button>`에 `align-self: center` 적용시켜주면 정상화.
 
+**flex-grow**
+![](Pasted%20image%2020240529144202.png)
+
+**flex-shrink**
+![](Pasted%20image%2020240529144214.png)
+
+[정리글](https://apost.dev/863/)
+
 
 ## Bugs
 <hr>
