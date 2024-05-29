@@ -66,3 +66,23 @@ Ctrl + 클릭 : 해당 클래스가 적힌 css 코드로 감 (CSS Peak Extension
 Alt + F12 : 해당 클래스가 적힌 css 코드 불러옴 (CSS Peak Extension 기능)
 
 
+<h1>vscode 기능 정리</h1>
+드래그 + 우클릭 + Format Document : 코드 예쁘게 정렬
+
+**Emmet 기능**
+```html
+div#header>p.title*3
+```
+이렇게 쓰고 탭키 누르면
+```html
+<div id="header">
+  <p class="title"></p>
+  <p class="title"></p>
+  <p class="title"></p>
+</div>
+```
+
+```
+m10
+```
+이렇게 쓰고 탭키 누르면

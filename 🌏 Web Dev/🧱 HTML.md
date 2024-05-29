@@ -5,6 +5,42 @@
 	- [[#`<form>` 태그#`<select>` 태그|`<select>` 태그]]
 
 
+## Emmet 기능
+<hr>
+
+1. ! + tab : 표준 문서 양식
+2. 하위 요소 생성 : ">" 사용
+```html
+header>ul>li
+```
+3. 동급 요소 생성 : "+"사용
+```html
+section>article>h2+p
+```
+4. 반복 태그 생성 : "`*`" 사용
+```html
+ul>li*5
+```
+5. CSS class와 id 설정 : "."와 "#" 사용
+```html
+ul#menu>li.item*3
+```
+6. 그룹으로 묶기 : "()" 사용
+```html
+.container>(header>nav>ul>li*5>a)+(#content>section)+footer
+```
+7. 속성 있는 태그 : "[]" 사용
+```html
+td[title="name" colspan="5"]
+```
+8. 텍스트가 있는 태그 : {} 중괄호 안에 {텍스트} 입력
+```html
+a.button{Click Me}
+```
+9. 순서대로 숫자 입력 : "$" 사용
+```html
+ul.list>li.item$*5>{$}
+```
 
 ## `<div>`류 태그들
 <hr>

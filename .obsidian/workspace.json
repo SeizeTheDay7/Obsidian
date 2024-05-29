@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🛢 SQL.md",
+                "file": "🌏 Web Dev/🧱 HTML.md",
                 "mode": "source",
                 "source": false
               }
@@ -79,8 +79,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -162,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "🌏 Web Dev/🧱 HTML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "🌏 Web Dev/🧱 HTML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -202,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md"
+                "file": "🌏 Web Dev/🧱 HTML.md"
               }
             }
           },
@@ -234,18 +233,18 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "2421c14250bc6f40",
+  "active": "322eee286b326dfa",
   "lastOpenFiles": [
+    "🌏 Web Dev/🎨 CSS.md",
+    "🌏 Web Dev/🧱 HTML.md",
+    "🛢 SQL.md",
+    "🛠 Life Hacking.md",
     "Pic/Pasted image 20240529145814.png",
     "Pic/Pasted image 20240529144214.png",
     "Pic/Pasted image 20240529144202.png",
     "🍎 CodingApple/🍎 Html.md",
-    "🌏 Web Dev/🎨 CSS.md",
-    "🛠 Life Hacking.md",
     "💻 Python.md",
     "🌏 Web Dev/💻 JavaScript.md",
-    "🛢 SQL.md",
-    "🌏 Web Dev/🧱 HTML.md",
     "📌 SQLD 족집게 정리.md",
     "🎄 Jungle.md",
     "Pic/3D 기능 소개 1.png",
@@ -255,7 +254,6 @@
     "Pic/Pasted image 20240114180128.png",
     "Pic/Pasted image 20240114183153.png",
     "Pic/Pasted image 20240517164734.png",
-    "Pic/Pasted image 20240521000339.png",
     "Pic/Pic.md",
     "💾 Git.md",
     "conflict-files-obsidian-git.md",
