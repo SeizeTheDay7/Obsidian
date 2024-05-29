@@ -161,7 +161,7 @@ class="덩어리이름__역할--세부특징"
 ```css
 @font-face {
   font-family : '이쁜폰트';
-  src : url(nanumsquare.ttf)
+  src : url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css)
 }
 ```
 css 파일 최상단에 @font-face 라는 명령어를 넣고, url() 안에 적용할 폰트의 경로와 이름 적기.
