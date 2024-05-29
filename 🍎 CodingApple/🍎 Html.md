@@ -140,4 +140,5 @@ a 태그에 text-decoration: none; 적용하면 링크 아래에 있는 밑줄�
 방문 후 링크 스타일링은 :visited
 어차피 외워도 다 까먹으니까 필요할 때 찾아쓰자
 
-
+뼈대 클래스와 살점 클래스(background-color 등)로 나눠서 묶기
+font-size같은거 utility class로 선언해두기
