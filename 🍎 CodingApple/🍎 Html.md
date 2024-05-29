@@ -228,3 +228,4 @@ favicon
 - ico 대신 png 파일 가능. ico가 호환성은 가장 좋다. 
 - 32 x 32 사이즈로 제작하면 됨
 - 바탕화면 바로가기 아이콘 수정 : rel="apple-touch-icon-precomposed" 등 OS 별로 요구하는 속성이 다른데 favicon generator 검색해보면 OS별로 알아서 만들어줌
+
