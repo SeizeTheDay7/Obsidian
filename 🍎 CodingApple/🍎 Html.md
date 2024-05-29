@@ -142,3 +142,15 @@ a 태그에 text-decoration: none; 적용하면 링크 아래에 있는 밑줄�
 
 뼈대 클래스와 살점 클래스(background-color 등)로 나눠서 묶기
 font-size같은거 utility class로 선언해두기
+
+class 작명할 때 BEM(Block__Element__Modifier) 룰 따라보기
+```html
+<div class="profile">
+  <img class="profile__img">
+  <h4 class="profile__h4">이름</h4>
+  <p class="profile__content">소개글</p>
+  <button class="profile__button--red">빨간버튼</button>
+  <button class="profile__button--blue">파란버튼</button>
+</div>
+```
+리액트나 vue같은 거에선 필요 없음. 알아두기만 하자.
