@@ -281,3 +281,17 @@ one-way 애니메이션 만드는 step
 2. 최종스타일 만들기
 3. 언제 최종스타일로 변하는지
 4. transition으로 애니메이션
+
+overflow : hidden은 넘치는 부분을 잘라 없애주고
+overflow : visible은 넘치는 부분을 그대로 보여주고
+overflow : scroll은 넘치는 요소를 보기 위한 스크롤바 생김
+
+transition 세부 속성
+```css
+.box {
+  transition-delay: 1s; /* 시작 전 딜레이 */
+  transition-duration: 0.5s; /* transition 작동 속도 */
+  transition-property: opacity; /* 어떤 속성에 transition 입힐건지 */
+  transition-timing-function: ease-in; /* 동작 속도 그래프조정 */
+}
+```
