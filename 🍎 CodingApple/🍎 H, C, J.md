@@ -295,3 +295,5 @@ transition 세부 속성
   transition-timing-function: ease-in; /* 동작 속도 그래프조정 */
 }
 ```
+
+크롬 F12 점 세개 More tools - animation 누르면 다른 사이트에서 보이는 애니메이션을 분석할 수 있다
