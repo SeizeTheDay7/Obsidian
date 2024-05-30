@@ -266,3 +266,6 @@ awesomefont라는 라이브러리 쓰면 아이콘 쓸 수 있음
 }
 ```
 이렇게 스타일 주면 원형 배경에 색깔도 줄 수 있는데, 가운데로 안 들어가면 부모 요소의 text-align 속성 center로 주면 됨.
+
+호버 시 까매지는 애니메이션
+img 위에 div 하나 추가하고 부모 요소에는 style="position: relative" 추가, 까매질 div에는 position: absolute 추가
