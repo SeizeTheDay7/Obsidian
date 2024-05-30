@@ -247,3 +247,22 @@ media query 문법 (css 파일 맨 아래에 적어주자)
 
 인터넷 익스플로러 호환성 확인하려면 인터넷 익스플로러에서 F12 - 에뮬레이션
 IE 호환성 잡으려면 css 파일 따로 또 적용시켜줄 수 있음
+
+awesomefont라는 라이브러리 쓰면 아이콘 쓸 수 있음
+```html
+<i class="fa-solid fa-star fa-3x"></i>
+```
+이런 거 복붙하면 됨
+
+```css
+.flex-test i {
+  background-color: burlywood;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  padding-top: 25px;
+  box-sizing: border-box;
+  color: white;
+}
+```
+이렇게 스타일 주면 원형 배경에 색깔도 줄 수 있는데, 가운데로 안 들어가면 부모 요소의 text-align 속성 center로 주면 됨.

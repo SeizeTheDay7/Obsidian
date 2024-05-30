@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🛠 Life Hacking.md",
+                "file": "🍎 CodingApple/🍎 H, C, J.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "💾 Git.md",
+                "file": "🍎 CodingApple/🍎 H, C, J.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "💾 Git.md",
+                "file": "🍎 CodingApple/🍎 H, C, J.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "💾 Git.md"
+                "file": "🍎 CodingApple/🍎 H, C, J.md"
               }
             }
           },
@@ -210,13 +210,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "0752f07fa25c707b",
+  "active": "2e2c01f08965317b",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "💾 Git.md",
+    "🍎 CodingApple/🍎 H, C, J.md",
+    "🛠 Life Hacking.md",
+    "conflict-files-obsidian-git.md",
     "📌 SQLD 족집게 정리.md",
     "💻 Python.md",
-    "🍎 CodingApple/🍎 H, C, J.md",
     "Pic/Pasted image 20240529145814.png",
     "Pic/Pasted image 20240529144214.png",
     "Pic/Pasted image 20240529144202.png",
@@ -227,7 +228,6 @@
     "Pic/Pasted image 20240521101830.png",
     "Pic/Pasted image 20240521001026.png",
     "Pic/Pasted image 20240521000758.png",
-    "🛠 Life Hacking.md",
     "✒ Coding Theory.md",
     "🛢 SQL.md",
     "🌏 Web Dev/🧱 HTML.md",
