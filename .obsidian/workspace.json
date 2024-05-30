@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🍎 CodingApple/🍎 Html.md",
+                "file": "🍎 CodingApple/🍎 H, C, J.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -130,7 +130,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -150,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "🍎 CodingApple/🍎 H, C, J.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md",
+                "file": "🍎 CodingApple/🍎 H, C, J.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌏 Web Dev/🎨 CSS.md"
+                "file": "🍎 CodingApple/🍎 H, C, J.md"
               }
             }
           },
@@ -222,12 +223,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "2421c14250bc6f40",
+  "active": "a4594a3b9c8e4582",
   "lastOpenFiles": [
-    "🍎 CodingApple/🍎 Html.md",
+    "🌏 Web Dev/🎨 CSS.md",
+    "🍎 CodingApple/🍎 H, C, J.md",
     "🌏 Web Dev/🧱 HTML.md",
     "🛠 Life Hacking.md",
-    "🌏 Web Dev/🎨 CSS.md",
     "💻 Python.md",
     "🛢 SQL.md",
     "Pic/Pasted image 20240529145814.png",

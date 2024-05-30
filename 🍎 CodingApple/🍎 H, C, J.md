@@ -229,3 +229,12 @@ favicon
 - 32 x 32 사이즈로 제작하면 됨
 - 바탕화면 바로가기 아이콘 수정 : rel="apple-touch-icon-precomposed" 등 OS 별로 요구하는 속성이 다른데 favicon generator 검색해보면 OS별로 알아서 만들어줌
 
+media query 문법 (css 파일 맨 아래에 적어주자)
+```css
+@media screen and (max-width: 1200px){
+  .main-title {
+    font-size: 20px;
+  }
+}
+```
+1200 이하로 작아지면 글씨 크기 작아지게 하는 방법
