@@ -273,4 +273,11 @@ img 위에 div 하나 추가하고 부모 요소에는 style="position: relative
 원래 img랑 크기 살짝 차이나는데 이건 img에 display: block; 주면 된다. 
 이제 idv에 opacity: 0.5 추가하거나 rgba(0,0,0,0.5) 추가(이렇게 하면 opacity는 0부터 1까지로)
 div클래스명:hover에 opacity: 1 추가하면 마우스 올릴 때 까매짐
-아직까진 애니메이션이 아니니까 transition: all 1s; 추가하면 "뭐 변하면 1초에 걸쳐 변경"
+아직까진 애니메이션이 아니니까 div에 transition: all 1s; 추가하면 "뭐 변하면 1초에 걸쳐 변경"
+div에 transition-timing-function 추가하면 바뀌는 속도 조절할 수 있음 
+
+one-way 애니메이션 만드는 step
+1. 시작 스타일 만들기
+2. 최종스타일 만들기
+3. 언제 최종스타일로 변하는지
+4. transition으로 애니메이션
