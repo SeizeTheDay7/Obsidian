@@ -267,5 +267,10 @@ awesomefont라는 라이브러리 쓰면 아이콘 쓸 수 있음
 ```
 이렇게 스타일 주면 원형 배경에 색깔도 줄 수 있는데, 가운데로 안 들어가면 부모 요소의 text-align 속성 center로 주면 됨.
 
-호버 시 까매지는 애니메이션
-img 위에 div 하나 추가하고 부모 요소에는 style="position: relative" 추가, 까매질 div에는 position: absolute 추가
+**호버 시 까매지는 애니메이션**
+img 위에 div 하나 추가하고 부모 요소에는 style="position: relative" 추가, 
+까매질 div에는 position: absolute 추가. 이렇게 하면 일단 덮긴 한다. 
+원래 img랑 크기 살짝 차이나는데 이건 img에 display: block; 주면 된다. 
+이제 idv에 opacity: 0.5 추가하거나 rgba(0,0,0,0.5) 추가(이렇게 하면 opacity는 0부터 1까지로)
+div클래스명:hover에 opacity: 1 추가하면 마우스 올릴 때 까매짐
+아직까진 애니메이션이 아니니까 transition: all 1s; 추가하면 "뭐 변하면 1초에 걸쳐 변경"
