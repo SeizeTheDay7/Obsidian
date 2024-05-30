@@ -32,18 +32,6 @@
             }
           },
           {
-            "id": "a4594a3b9c8e4582",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🍎 CodingApple/🍎 H, C, J.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "2e2c01f08965317b",
             "type": "leaf",
             "state": {
@@ -56,19 +44,19 @@
             }
           },
           {
-            "id": "e6be2d02d33f2924",
+            "id": "0752f07fa25c707b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🎄 Jungle.md",
+                "file": "💾 Git.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -123,15 +111,14 @@
             }
           },
           {
-            "id": "bf106a31cebe0d04",
+            "id": "8f03aa0b7a29af3b",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -151,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🍎 CodingApple/🍎 H, C, J.md",
+                "file": "💾 Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🍎 CodingApple/🍎 H, C, J.md",
+                "file": "💾 Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🍎 CodingApple/🍎 H, C, J.md"
+                "file": "💾 Git.md"
               }
             }
           },
@@ -223,34 +210,32 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "a4594a3b9c8e4582",
+  "active": "0752f07fa25c707b",
   "lastOpenFiles": [
-    "🌏 Web Dev/🎨 CSS.md",
-    "🍎 CodingApple/🍎 H, C, J.md",
-    "🌏 Web Dev/🧱 HTML.md",
-    "🛠 Life Hacking.md",
+    "conflict-files-obsidian-git.md",
+    "💾 Git.md",
+    "📌 SQLD 족집게 정리.md",
     "💻 Python.md",
-    "🛢 SQL.md",
+    "🍎 CodingApple/🍎 H, C, J.md",
     "Pic/Pasted image 20240529145814.png",
     "Pic/Pasted image 20240529144214.png",
     "Pic/Pasted image 20240529144202.png",
-    "🌏 Web Dev/💻 JavaScript.md",
-    "📌 SQLD 족집게 정리.md",
-    "🎄 Jungle.md",
-    "Pic/3D 기능 소개 1.png",
     "Pic/Pasted image 20240521134920.png",
     "Pic/Pasted image 20240521105205.png",
-    "Pic/다운로드.png",
-    "Pic/Pasted image 20240114180128.png",
-    "Pic/Pasted image 20240114183153.png",
-    "Pic/Pasted image 20240517164734.png",
-    "Pic/Pic.md",
-    "💾 Git.md",
-    "conflict-files-obsidian-git.md",
-    " - 복사본.md",
+    "Pic/Pasted image 20240521102235.png",
+    "Pic/Pasted image 20240521101908.png",
+    "Pic/Pasted image 20240521101830.png",
+    "Pic/Pasted image 20240521001026.png",
+    "Pic/Pasted image 20240521000758.png",
+    "🛠 Life Hacking.md",
     "✒ Coding Theory.md",
+    "🛢 SQL.md",
+    "🌏 Web Dev/🧱 HTML.md",
+    "🌏 Web Dev/🎨 CSS.md",
+    "🍎 CodingApple/🍎 Html.md",
+    "🌏 Web Dev/💻 JavaScript.md",
     "🌏 Web Dev/🌏 Web Dev.md",
-    "💾 SQL.md",
+    "🎄 Jungle.md",
     "✏ Memo.md",
     "Game Design/무제 파일.md",
     "Game Design.md",
@@ -261,8 +246,11 @@
     "🦝 GPT 질문 답변/EC2 명령어 질문.md",
     "Spaces/Home/템플릿.md",
     "Obsidian Vault.md",
+    "🕹 Game Dev/🕹 Game Dev.md",
+    "Spaces/Spaces.md",
     "🌏 Web Dev",
     "🕹 Game Dev",
+    "🕹 Game Dev/♟ Blender.md",
     "프로그래밍 언어",
     "🦝 GPT 질문 답변",
     "Jungle",
