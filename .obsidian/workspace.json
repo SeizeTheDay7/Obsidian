@@ -32,7 +32,7 @@
             }
           },
           {
-            "id": "2e2c01f08965317b",
+            "id": "a4594a3b9c8e4582",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -44,7 +44,19 @@
             }
           },
           {
-            "id": "0752f07fa25c707b",
+            "id": "2e2c01f08965317b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🛠 Life Hacking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e6be2d02d33f2924",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -111,7 +123,7 @@
             }
           },
           {
-            "id": "8f03aa0b7a29af3b",
+            "id": "bf106a31cebe0d04",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -210,32 +222,35 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "2e2c01f08965317b",
+  "active": "a4594a3b9c8e4582",
   "lastOpenFiles": [
-    "🌏 Web Dev/🎨 CSS.md",
+    "conflict-files-obsidian-git.md",
     "🍎 CodingApple/🍎 H, C, J.md",
+    "🌏 Web Dev/🎨 CSS.md",
     "💾 Git.md",
     "🛠 Life Hacking.md",
-    "conflict-files-obsidian-git.md",
-    "📌 SQLD 족집게 정리.md",
+    "새 텍스트 문서.txt",
+    "🎄 Jungle.md",
+    "🌏 Web Dev/🧱 HTML.md",
     "💻 Python.md",
+    "🛢 SQL.md",
     "Pic/Pasted image 20240529145814.png",
     "Pic/Pasted image 20240529144214.png",
     "Pic/Pasted image 20240529144202.png",
+    "🌏 Web Dev/💻 JavaScript.md",
+    "📌 SQLD 족집게 정리.md",
+    "Pic/3D 기능 소개 1.png",
     "Pic/Pasted image 20240521134920.png",
     "Pic/Pasted image 20240521105205.png",
-    "Pic/Pasted image 20240521102235.png",
-    "Pic/Pasted image 20240521101908.png",
-    "Pic/Pasted image 20240521101830.png",
-    "Pic/Pasted image 20240521001026.png",
-    "Pic/Pasted image 20240521000758.png",
+    "Pic/다운로드.png",
+    "Pic/Pasted image 20240114180128.png",
+    "Pic/Pasted image 20240114183153.png",
+    "Pic/Pasted image 20240517164734.png",
+    "Pic/Pic.md",
+    " - 복사본.md",
     "✒ Coding Theory.md",
-    "🛢 SQL.md",
-    "🌏 Web Dev/🧱 HTML.md",
-    "🍎 CodingApple/🍎 Html.md",
-    "🌏 Web Dev/💻 JavaScript.md",
     "🌏 Web Dev/🌏 Web Dev.md",
-    "🎄 Jungle.md",
+    "💾 SQL.md",
     "✏ Memo.md",
     "Game Design/무제 파일.md",
     "Game Design.md",
@@ -246,17 +261,13 @@
     "🦝 GPT 질문 답변/EC2 명령어 질문.md",
     "Spaces/Home/템플릿.md",
     "Obsidian Vault.md",
-    "🕹 Game Dev/🕹 Game Dev.md",
-    "Spaces/Spaces.md",
     "🌏 Web Dev",
     "🕹 Game Dev",
-    "🕹 Game Dev/♟ Blender.md",
     "프로그래밍 언어",
     "🦝 GPT 질문 답변",
     "Jungle",
     "🍎 CodingApple",
     "Pic",
-    "Spaces/Home",
-    "Spaces"
+    "Spaces/Home"
   ]
 }
