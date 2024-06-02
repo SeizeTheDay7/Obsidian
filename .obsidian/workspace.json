@@ -56,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -118,7 +118,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -138,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🛠 Life Hacking.md",
+                "file": "🍎 CodingApple/🍎 H, C, J.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🛠 Life Hacking.md",
+                "file": "🍎 CodingApple/🍎 H, C, J.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🛠 Life Hacking.md"
+                "file": "🍎 CodingApple/🍎 H, C, J.md"
               }
             }
           },
@@ -210,14 +211,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "2e2c01f08965317b",
+  "active": "a4594a3b9c8e4582",
   "lastOpenFiles": [
+    "🛠 Life Hacking.md",
     "🛢 SQL.md",
     "💾 Git.md",
     "🍎 CodingApple/🍎 H, C, J.md",
     "conflict-files-obsidian-git.md",
     "🌏 Web Dev/🎨 CSS.md",
-    "🛠 Life Hacking.md",
     "새 텍스트 문서.txt",
     "🎄 Jungle.md",
     "🌏 Web Dev/🧱 HTML.md",
