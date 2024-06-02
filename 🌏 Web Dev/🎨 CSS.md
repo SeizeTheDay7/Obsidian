@@ -418,6 +418,100 @@ margin-left: 100px;
 [정리글](https://apost.dev/863/)
 
 
+## 부트스트랩
+<hr>
+
+### 색상 (Colors)
+
+- **배경색**: `.bg-primary`, `.bg-secondary`, `.bg-success`, `.bg-danger`, `.bg-warning`, `.bg-info`, `.bg-light`, `.bg-dark`, `.bg-white`, `.bg-transparent`
+- **텍스트 색상**: `.text-primary`, `.text-secondary`, `.text-success`, `.text-danger`, `.text-warning`, `.text-info`, `.text-light`, `.text-dark`, `.text-white`, `.text-muted`, `.text-black-50`, `.text-white-50`
+
+### 여백과 패딩 (Spacing)
+
+- **마진 (Margin)**:
+    
+    - `.m-0`, `.m-1`, `.m-2`, `.m-3`, `.m-4`, `.m-5`: 모든 방향에 여백
+    - `.mt-0`, `.mt-1`, `.mt-2`, `.mt-3`, `.mt-4`, `.mt-5`: 상단 여백
+    - `.mb-0`, `.mb-1`, `.mb-2`, `.mb-3`, `.mb-4`, `.mb-5`: 하단 여백
+    - `.ml-0`, `.ml-1`, `.ml-2`, `.ml-3`, `.ml-4`, `.ml-5`: 왼쪽 여백
+    - `.mr-0`, `.mr-1`, `.mr-2`, `.mr-3`, `.mr-4`, `.mr-5`: 오른쪽 여백
+    - `.mx-0`, `.mx-1`, `.mx-2`, `.mx-3`, `.mx-4`, `.mx-5`: 좌우 여백
+    - `.my-0`, `.my-1`, `.my-2`, `.my-3`, `.my-4`, `.my-5`: 상하 여백
+- **패딩 (Padding)**:
+    
+    - `.p-0`, `.p-1`, `.p-2`, `.p-3`, `.p-4`, `.p-5`: 모든 방향에 패딩
+    - `.pt-0`, `.pt-1`, `.pt-2`, `.pt-3`, `.pt-4`, `.pt-5`: 상단 패딩
+    - `.pb-0`, `.pb-1`, `.pb-2`, `.pb-3`, `.pb-4`, `.pb-5`: 하단 패딩
+    - `.pl-0`, `.pl-1`, `.pl-2`, `.pl-3`, `.pl-4`, `.pl-5`: 왼쪽 패딩
+    - `.pr-0`, `.pr-1`, `.pr-2`, `.pr-3`, `.pr-4`, `.pr-5`: 오른쪽 패딩
+    - `.px-0`, `.px-1`, `.px-2`, `.px-3`, `.px-4`, `.px-5`: 좌우 패딩
+    - `.py-0`, `.py-1`, `.py-2`, `.py-3`, `.py-4`, `.py-5`: 상하 패딩
+
+### 디스플레이 (Display)
+
+- `.d-none`, `.d-inline`, `.d-inline-block`, `.d-block`, `.d-table`, `.d-table-row`, `.d-table-cell`, `.d-flex`, `.d-inline-flex`
+
+### Flexbox
+
+- **정렬**:
+    
+    - `.align-items-start`, `.align-items-end`, `.align-items-center`, `.align-items-baseline`, `.align-items-stretch`
+    - `.align-content-start`, `.align-content-end`, `.align-content-center`, `.align-content-between`, `.align-content-around`, `.align-content-stretch`
+    - `.align-self-auto`, `.align-self-start`, `.align-self-end`, `.align-self-center`, `.align-self-baseline`, `.align-self-stretch`
+- **정렬**:
+    
+    - `.justify-content-start`, `.justify-content-end`, `.justify-content-center`, `.justify-content-between`, `.justify-content-around`, `.justify-content-evenly`
+- **Flex 방향**:
+    
+    - `.flex-row`, `.flex-row-reverse`, `.flex-column`, `.flex-column-reverse`
+- **Flex 래핑**:
+    
+    - `.flex-wrap`, `.flex-nowrap`, `.flex-wrap-reverse`
+- **Flex 크기**:
+    
+    - `.flex-fill`, `.flex-grow-0`, `.flex-grow-1`, `.flex-shrink-0`, `.flex-shrink-1`
+- **순서**:
+    
+    - `.order-0`, `.order-1`, `.order-2`, `.order-3`, `.order-4`, `.order-5`, `.order-first`, `.order-last`
+
+### 텍스트 (Text)
+
+- `.text-left`, `.text-center`, `.text-right`, `.text-justify`, `.text-nowrap`
+- `.text-lowercase`, `.text-uppercase`, `.text-capitalize`
+- `.font-weight-light`, `.font-weight-normal`, `.font-weight-bold`, `.font-italic`
+- `.text-decoration-none`, `.text-decoration-underline`, `.text-decoration-line-through`
+
+### 배경 (Background)
+
+- `.bg-primary`, `.bg-secondary`, `.bg-success`, `.bg-danger`, `.bg-warning`, `.bg-info`, `.bg-light`, `.bg-dark`, `.bg-white`, `.bg-transparent`
+
+### 테두리 (Borders)
+
+- `.border`, `.border-top`, `.border-right`, `.border-bottom`, `.border-left`, `.border-0`, `.border-top-0`, `.border-right-0`, `.border-bottom-0`, `.border-left-0`
+- `.border-primary`, `.border-secondary`, `.border-success`, `.border-danger`, `.border-warning`, `.border-info`, `.border-light`, `.border-dark`, `.border-white`
+- `.rounded`, `.rounded-top`, `.rounded-right`, `.rounded-bottom`, `.rounded-left`, `.rounded-circle`, `.rounded-pill`, `.rounded-0`
+- `.border-radius-0`, `.border-radius-1`, `.border-radius-2`, `.border-radius-3`
+
+### 크기 (Sizing)
+
+- `.w-25`, `.w-50`, `.w-75`, `.w-100`, `.w-auto`
+- `.h-25`, `.h-50`, `.h-75`, `.h-100`, `.h-auto`
+
+### 섀도우 (Shadows)
+
+- `.shadow-none`, `.shadow-sm`, `.shadow`, `.shadow-lg`
+
+### 가시성 (Visibility)
+
+- `.visible`, `.invisible`
+
+### 포지션 (Position)
+
+- `.position-static`, `.position-relative`, `.position-absolute`, `.position-fixed`, `.position-sticky`
+- `.top-0`, `.top-50`, `.top-100`, `.bottom-0`, `.bottom-50`, `.bottom-100`, `.start-0`, `.start-50`, `.start-100`, `.end-0`, `.end-50`, `.end-100`
+- `.translate-middle`, `.translate-middle-x`, `.translate-middle-y`
+
+
 ## Bugs
 <hr>
 
