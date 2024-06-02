@@ -434,3 +434,6 @@ margin-left: 100px;
 >[!bug] 
 >position 속성 안 붙어있으면 같은 stacking context가 아니라서 z-index 효과 없음
 
+### border로 이미지 가리는 애니메이션 줄 때 테두리 어색함
+>[!bug] 
+>:hover 이전 원래 속성에 border: 0px; 넣어놓기
