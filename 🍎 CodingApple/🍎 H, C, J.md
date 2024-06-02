@@ -269,7 +269,7 @@ awesomefont라는 라이브러리 쓰면 아이콘 쓸 수 있음
 
 **호버 시 까매지는 애니메이션**
 img 위에 div 하나 추가하고 부모 요소에는 style="position: relative" 추가, 
-까매질 div에는 position: absolute 추가. 이렇게 하면 일단 덮긴 한다. 
+까매질 div(width: 100%)에는 position: absolute 추가. 이렇게 하면 일단 덮긴 한다. 
 원래 img랑 크기 살짝 차이나는데 이건 img에 display: block; 주면 된다. 
 이제 idv에 opacity: 0.5 추가하거나 rgba(0,0,0,0.5) 추가(이렇게 하면 opacity는 0부터 1까지로)
 div클래스명:hover에 opacity: 1 추가하면 마우스 올릴 때 까매짐
