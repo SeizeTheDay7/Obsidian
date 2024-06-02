@@ -203,6 +203,7 @@ filter: brightness(70%); /* 이미지 어둡게 */
 display:block; // div,p, h 등은 block 속성을 이미 갖고 있어서 생략 가능
 translate(-50%, -50%)는 요소를 그의 X축과 Y축 위치에서 각각 50% 만큼 이동시킴.
 position: absolute와 함께 사용하면 부모 컨테이너 내 중앙에 정확히 위치시킬 수 있음.
+해당 개체 크기의 절반을 의미하는 것이기 때문. translateX(50%)를 사용하면 x축 위치만 변경.
 ```
 
 
