@@ -35,6 +35,12 @@
 table {
   border-collapse: collapse; /* 테이블 틈 없애기 */
 }
+body {
+  margin: 0;
+}
+div {
+  box-sizing: border-box;
+}
 ```
 
 
