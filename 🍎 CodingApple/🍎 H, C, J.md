@@ -313,4 +313,8 @@ order-first 부착해서 div 순서 재배치도 가능
 css 덮어쓰기 하려면
 1. 그냥 같은 클래스명 하단에 쓰기
 2. 우선순위 높이기 (class는 10점, id는 100점, 인라인 style=""은 1000점, !important 붙은건 무조건 10000점) (비추)
-3. specificity 높이기 (.class1 .class1-1는 20점, div.class1 class1-1은 21점)
+3. specificity 높이기 (.class1 .class1-1는 20점, div.class1 class1-1은 21점) (셀렉터 길게 특정하면 미래에 덮어쓰기 힘드니 짧게 쓰면 좋은듯)
+
+좋은 코드의 원칙
+1. 나중에 수정/관리가 쉬움
+2. 확장성이 좋으면 좋음
