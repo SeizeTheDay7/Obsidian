@@ -547,3 +547,5 @@ margin-left: 100px;
 ### border로 이미지 가리는 애니메이션 줄 때 테두리 어색함
 >[!bug] 
 >:hover 이전 원래 속성에 border: 0px; 넣어놓기
+
+### 부트스트랩 col
