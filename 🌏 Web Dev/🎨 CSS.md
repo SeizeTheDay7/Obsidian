@@ -548,4 +548,37 @@ margin-left: 100px;
 >[!bug] 
 >:hover 이전 원래 속성에 border: 0px; 넣어놓기
 
-### 부트스트랩 col
+### 부트스트랩 col 사이에 gap이 안 주어짐
+```html
+<div class="row">
+  <div class="works col-4 bg-primary">
+	<h1>WORKS</h1>
+  </div>
+
+  <div class="about col-8 bg-primary">
+	<h1>about</h1>
+  </div>
+</div>
+```
+
+![](Pasted%20image%2020240603125259.png)
+
+이유는 모르겠는데 이렇게 하면 gap이 안 생김
+
+```html
+<div class="row">
+	<div class="col-md-3">
+	  <div class="blue-box">왼쪽박스</div>
+	</div>
+	<div class="col-md-6">
+	  <div class="blue-box">가운데박스</div>
+	</div>
+	<div class="col-md-3">
+	  <div class="blue-box">오른쪽박스</div>
+	</div>
+</div>
+```
+
+![](Pasted%20image%2020240603125433.png)
+
+div 안에 또 div를 넣은 후에 글씨를 써야 함
