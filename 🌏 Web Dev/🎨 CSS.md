@@ -502,7 +502,7 @@ margin-left: 100px;
 
 ### 테두리 (Borders)
 
-- `.border`, `.border-top`, `.border-right`, `.border-bottom`, `.border-left`, `.border-0`, `.border-top-0`, `.border-right-0`, `.border-bottom-0`, `.border-left-0`
+- `.border`, `.border-top`, `.border-end`, `.border-bottom`, `.border-start`, `.border-0`, `.border-top-0`, `.border-end-0`, `.border-bottom-0`, `.border-start-0`
 - `.border-primary`, `.border-secondary`, `.border-success`, `.border-danger`, `.border-warning`, `.border-info`, `.border-light`, `.border-dark`, `.border-white`
 - `.rounded`, `.rounded-top`, `.rounded-right`, `.rounded-bottom`, `.rounded-left`, `.rounded-circle`, `.rounded-pill`, `.rounded-0`
 - `.border-radius-0`, `.border-radius-1`, `.border-radius-2`, `.border-radius-3`
