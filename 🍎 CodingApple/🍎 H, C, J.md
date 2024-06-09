@@ -367,4 +367,4 @@ input[type="file"]::-webkit-file-upload-button {
 ```
 input은 display:none; 해놓고 label에 스타일 주기도 함
 
-input type="range"같은건 개발자 도구로 검사해봐도 뭐 안 나오는데 그럴 땐 아래에 있는 user agent stylesheet(브라우저 기본 css) 찾아보면 나온다.
+input type="range"같은건 개발자 도구로 검사해봐도 뭐 안 나오는데 그럴 땐 아래에 있는 user agent stylesheet(브라우저 기본 css) 찾아보면 나온다. 따로 스타일 적용하고 싶으면 apperance: none; 전부 다 줘야됨
