@@ -325,3 +325,10 @@ css 덮어쓰기 하려면
 }
 ```
 pseudo-class는 특정 요소가 다른 상태일 때 스타일 줄 수 있게 도와줌
+
+```
+.pseudo::first-letter {
+	color: red;
+}
+```
+pseudo-element는 내부의 일부분만 스타일 줄 때
