@@ -360,3 +360,9 @@ input[type="file"]::-webkit-file-upload-button {
 }
 ```
 이렇게 스타일을 주면 된다. 참고로 -webkit-은 크롬에서만 적용되는 스타일이라는 뜻.
+
+```
+<label for="fileInput">안녕</label>
+<input type="file" id="fileInput" class="input-file">
+```
+input은 display:none; 해놓고 label에 스타일 주기도 함
