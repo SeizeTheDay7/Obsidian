@@ -350,3 +350,13 @@ input같은 일부 요소 스타일링할 때 pseudo-element 사용 가능
 <input type="file" class="input-file">
 ```
 pseudo-element는 약간 쓸모 없다
+
+
+크롬 설정에서 'Show user agent shadow DOM' 체크하고 html 확인하면 숨겨져있던게 보인다.
+거기 붙어있는 속성 중에 pseudo="-webkit-file-upload-button" 이런거 있는데 
+```
+input[type="file"]::-webkit-file-upload-button {
+  display: none;
+}
+```
+이렇게 스타일을 주면 된다. 참고로 -webkit-은 크롬에서만 적용되는 스타일이라는 뜻.
