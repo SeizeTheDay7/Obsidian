@@ -339,3 +339,14 @@ pseudo-class는 특정 요소가 다른 상태일 때 스타일 줄 수 있게 �
 }
 ```
 pseudo-element는 내부의 일부분만 스타일 줄 때 (::before, ::after 내부 맨 뒤, 앞에 뭔가 추가할 때 사용)
+
+input같은 일부 요소 스타일링할 때 pseudo-element 사용 가능
+
+```
+.input-file::file-selector-button {
+  background-color: aquamarine;
+}
+
+<input type="file" class="input-file">
+```
+
