@@ -366,3 +366,5 @@ input[type="file"]::-webkit-file-upload-button {
 <input type="file" id="fileInput" class="input-file">
 ```
 input은 display:none; 해놓고 label에 스타일 주기도 함
+
+input type="range"같은건 개발자 도구로 검사해봐도 뭐 안 나오는데 
