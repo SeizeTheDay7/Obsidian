@@ -349,4 +349,4 @@ input같은 일부 요소 스타일링할 때 pseudo-element 사용 가능
 
 <input type="file" class="input-file">
 ```
-
+pseudo-element는 약간 쓸모 없다
