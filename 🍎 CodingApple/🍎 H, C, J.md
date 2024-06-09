@@ -331,4 +331,11 @@ pseudo-class는 특정 요소가 다른 상태일 때 스타일 줄 수 있게 �
 	color: red;
 }
 ```
-pseudo-element는 내부의 일부분만 스타일 줄 때
+```
+.pseudo::after {
+	content: '안녕';
+	color: red;
+	font-size: 30px;
+}
+```
+pseudo-element는 내부의 일부분만 스타일 줄 때 (::before, ::after 내부 맨 뒤, 앞에 뭔가 추가할 때 사용)
