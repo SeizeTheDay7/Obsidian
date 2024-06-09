@@ -1,5 +1,8 @@
 - [[#General|General]]
 - [[#맨 처음 선언할만한 스타일|맨 처음 선언할만한 스타일]]
+- [[#CSS 선택자|CSS 선택자]]
+- [[#경로 표기법|경로 표기법]]
+- [[#테이블 테두리 둥글게 만들기|테이블 테두리 둥글게 만들기]]
 - [[#CSS 변수 선언|CSS 변수 선언]]
 - [[#배경 관련 속성|배경 관련 속성]]
 - [[#CSS 상대 단위|CSS 상대 단위]]
@@ -13,11 +16,23 @@
 	- [[#속성#Position|Position]]
 	- [[#속성#::before와 ::after|::before와 ::after]]
 	- [[#속성#Flexbox|Flexbox]]
-	- [[#속성#CSS 선택자|CSS 선택자]]
+- [[#부트스트랩|부트스트랩]]
+	- [[#부트스트랩#색상 (Colors)|색상 (Colors)]]
+	- [[#부트스트랩#여백과 패딩 (Spacing)|여백과 패딩 (Spacing)]]
+	- [[#부트스트랩#디스플레이 (Display)|디스플레이 (Display)]]
+	- [[#부트스트랩#Flexbox|Flexbox]]
+	- [[#부트스트랩#텍스트 (Text)|텍스트 (Text)]]
+	- [[#부트스트랩#배경 (Background)|배경 (Background)]]
+	- [[#부트스트랩#테두리 (Borders)|테두리 (Borders)]]
+	- [[#부트스트랩#크기 (Sizing)|크기 (Sizing)]]
+	- [[#부트스트랩#섀도우 (Shadows)|섀도우 (Shadows)]]
+	- [[#부트스트랩#가시성 (Visibility)|가시성 (Visibility)]]
+	- [[#부트스트랩#포지션 (Position)|포지션 (Position)]]
 - [[#Bugs|Bugs]]
 	- [[#Bugs#css stylesheet 추가할 때 슬래시|css stylesheet 추가할 때 슬래시]]
 	- [[#Bugs#margin collapse 현상|margin collapse 현상]]
 	- [[#Bugs#z-index 붙여도 가려짐|z-index 붙여도 가려짐]]
+	- [[#Bugs#border로 이미지 가리는 애니메이션 줄 때 테두리 어색함|border로 이미지 가리는 애니메이션 줄 때 테두리 어색함]]
 
 
 
@@ -428,24 +443,25 @@ margin-left: 100px;
 
 ### 여백과 패딩 (Spacing)
 
-- **마진 (Margin)**:
-    
-    - `.m-0`, `.m-1`, `.m-2`, `.m-3`, `.m-4`, `.m-5`: 모든 방향에 여백
-    - `.mt-0`, `.mt-1`, `.mt-2`, `.mt-3`, `.mt-4`, `.mt-5`: 상단 여백
-    - `.mb-0`, `.mb-1`, `.mb-2`, `.mb-3`, `.mb-4`, `.mb-5`: 하단 여백
-    - `.ml-0`, `.ml-1`, `.ml-2`, `.ml-3`, `.ml-4`, `.ml-5`: 왼쪽 여백
-    - `.mr-0`, `.mr-1`, `.mr-2`, `.mr-3`, `.mr-4`, `.mr-5`: 오른쪽 여백
-    - `.mx-0`, `.mx-1`, `.mx-2`, `.mx-3`, `.mx-4`, `.mx-5`: 좌우 여백
-    - `.my-0`, `.my-1`, `.my-2`, `.my-3`, `.my-4`, `.my-5`: 상하 여백
-- **패딩 (Padding)**:
-    
-    - `.p-0`, `.p-1`, `.p-2`, `.p-3`, `.p-4`, `.p-5`: 모든 방향에 패딩
-    - `.pt-0`, `.pt-1`, `.pt-2`, `.pt-3`, `.pt-4`, `.pt-5`: 상단 패딩
-    - `.pb-0`, `.pb-1`, `.pb-2`, `.pb-3`, `.pb-4`, `.pb-5`: 하단 패딩
-    - `.pl-0`, `.pl-1`, `.pl-2`, `.pl-3`, `.pl-4`, `.pl-5`: 왼쪽 패딩
-    - `.pr-0`, `.pr-1`, `.pr-2`, `.pr-3`, `.pr-4`, `.pr-5`: 오른쪽 패딩
-    - `.px-0`, `.px-1`, `.px-2`, `.px-3`, `.px-4`, `.px-5`: 좌우 패딩
-    - `.py-0`, `.py-1`, `.py-2`, `.py-3`, `.py-4`, `.py-5`: 상하 패딩
+### 여백 (Margin)
+
+- `.m-0`, `.m-1`, `.m-2`, `.m-3`, `.m-4`, `.m-5`: 모든 방향에 여백
+- `.mt-0`, `.mt-1`, `.mt-2`, `.mt-3`, `.mt-4`, `.mt-5`: 상단 여백
+- `.mb-0`, `.mb-1`, `.mb-2`, `.mb-3`, `.mb-4`, `.mb-5`: 하단 여백
+- `.ms-0`, `.ms-1`, `.ms-2`, `.ms-3`, `.ms-4`, `.ms-5`: 왼쪽 여백
+- `.me-0`, `.me-1`, `.me-2`, `.me-3`, `.me-4`, `.me-5`: 오른쪽 여백
+- `.mx-0`, `.mx-1`, `.mx-2`, `.mx-3`, `.mx-4`, `.mx-5`: 좌우 여백
+- `.my-0`, `.my-1`, `.my-2`, `.my-3`, `.my-4`, `.my-5`: 상하 여백
+
+### 패딩 (Padding)
+
+- `.p-0`, `.p-1`, `.p-2`, `.p-3`, `.p-4`, `.p-5`: 모든 방향에 패딩
+- `.pt-0`, `.pt-1`, `.pt-2`, `.pt-3`, `.pt-4`, `.pt-5`: 상단 패딩
+- `.pb-0`, `.pb-1`, `.pb-2`, `.pb-3`, `.pb-4`, `.pb-5`: 하단 패딩
+- `.ps-0`, `.ps-1`, `.ps-2`, `.ps-3`, `.ps-4`, `.ps-5`: 왼쪽 패딩
+- `.pe-0`, `.pe-1`, `.pe-2`, `.pe-3`, `.pe-4`, `.pe-5`: 오른쪽 패딩
+- `.px-0`, `.px-1`, `.px-2`, `.px-3`, `.px-4`, `.px-5`: 좌우 패딩
+- `.py-0`, `.py-1`, `.py-2`, `.py-3`, `.py-4`, `.py-5`: 상하 패딩
 
 ### 디스플레이 (Display)
 
@@ -487,7 +503,7 @@ margin-left: 100px;
 
 ### 테두리 (Borders)
 
-- `.border`, `.border-top`, `.border-right`, `.border-bottom`, `.border-left`, `.border-0`, `.border-top-0`, `.border-right-0`, `.border-bottom-0`, `.border-left-0`
+- `.border`, `.border-top`, `.border-end`, `.border-bottom`, `.border-start`, `.border-0`, `.border-top-0`, `.border-end-0`, `.border-bottom-0`, `.border-start-0`
 - `.border-primary`, `.border-secondary`, `.border-success`, `.border-danger`, `.border-warning`, `.border-info`, `.border-light`, `.border-dark`, `.border-white`
 - `.rounded`, `.rounded-top`, `.rounded-right`, `.rounded-bottom`, `.rounded-left`, `.rounded-circle`, `.rounded-pill`, `.rounded-0`
 - `.border-radius-0`, `.border-radius-1`, `.border-radius-2`, `.border-radius-3`
@@ -531,3 +547,38 @@ margin-left: 100px;
 ### border로 이미지 가리는 애니메이션 줄 때 테두리 어색함
 >[!bug] 
 >:hover 이전 원래 속성에 border: 0px; 넣어놓기
+
+### 부트스트랩 col 사이에 gap이 안 주어짐
+```html
+<div class="row">
+  <div class="works col-4 bg-primary">
+	<h1>WORKS</h1>
+  </div>
+
+  <div class="about col-8 bg-primary">
+	<h1>about</h1>
+  </div>
+</div>
+```
+
+![](Pasted%20image%2020240603125259.png)
+
+이유는 모르겠는데 이렇게 하면 gap이 안 생김
+
+```html
+<div class="row">
+	<div class="col-md-3">
+	  <div class="blue-box">왼쪽박스</div>
+	</div>
+	<div class="col-md-6">
+	  <div class="blue-box">가운데박스</div>
+	</div>
+	<div class="col-md-3">
+	  <div class="blue-box">오른쪽박스</div>
+	</div>
+</div>
+```
+
+![](Pasted%20image%2020240603125433.png)
+
+div 안에 또 div를 넣은 후에 글씨를 써야 함
