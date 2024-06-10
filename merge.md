@@ -29,7 +29,7 @@ preload : video와 동일
 
 
 애니메이션 관련 속성들
-```html
+```css
 .ani-text {
 	transform: rotate(10deg);
 	transform: translateX(100px);
@@ -46,3 +46,17 @@ translateX : x축 좌표 이동 (애니메이션 줄 때 margin보다 부드럽�
   transform-origin: center;
 } 
 
+```css
+@keyframes 왔다갔다 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+```
+@keyframe으로 복잡한 애니메이션 정의 가능
