@@ -124,8 +124,9 @@ GPU를 이용해서 .box가 가진 transform 속성들을 연산할 수 있습�
 ```css
 .grid-container {
   display: grid;
-  grid-template-columns: 100px 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px 100px;
+  grid-gap: 10px;
 }
 .grid-container div {
   border: 1px solid black;
@@ -141,3 +142,5 @@ GPU를 이용해서 .box가 가진 transform 속성들을 연산할 수 있습�
 </div>
 ```
 그리드 만들기 예제
+- fr 써서 프레임 단위로 폭 지정 가능하다 (rows는 height가 있어야 fr으로 지정 가능)
+- grid-gap으로 격자 사이 간격 지정 
