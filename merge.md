@@ -144,3 +144,20 @@ GPU를 이용해서 .box가 가진 transform 속성들을 연산할 수 있습�
 그리드 만들기 예제
 - fr 써서 프레임 단위로 폭 지정 가능하다 (rows는 height가 있어야 fr으로 지정 가능)
 - grid-gap으로 격자 사이 간격 지정 
+
+```css
+.grid-nav {
+  grid-column: 1/5;
+}
+
+<div class="grid-container">
+	<div class="grid-nav"></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</div>
+```
+grid-column : 세로선 1 ~ 4 만큼 차지해주세요
+gird-row : 가로선을 차지해주세요
