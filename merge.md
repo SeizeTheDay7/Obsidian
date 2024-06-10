@@ -36,7 +36,7 @@ preload : video와 동일
 }
 ```
 rotate : 요소 회전
-translateX : x축 좌표 이동 (애니메이션 줄 때 margin보다 부드럽게 이동)
+translateX : x축 좌표 이동 (애니메이션 줄 때 margin보다 부드럽고 성능좋게 이동)
 
 #### transform: scale 주면 텍스트가 도망감
 >[!bug]
