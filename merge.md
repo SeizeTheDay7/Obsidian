@@ -18,3 +18,11 @@ preload="none" 미리다운X
 preload="auto" 미리다운O
 preload="metadata" 미리다운 적당히
 
+
+오디오 넣는 방법
+```html
+<audio src="bass.mp3" controls></audio>
+```
+muted : 음소거 상태로 시작
+autoplay : 자동재생인데 javascript 만져야 가능 
+preload : video와 동일
