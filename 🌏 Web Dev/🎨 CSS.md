@@ -606,3 +606,11 @@ margin-left: 100px;
 ![](Pasted%20image%2020240603125433.png)
 
 div 안에 또 div를 넣은 후에 글씨를 써야 함
+
+### transform: scale 주면 텍스트가 도망감
+>[!bug]
+>.ani-text {
+  display: inline-block;
+  transform: scale(2);
+  transform-origin: center;
+} 
