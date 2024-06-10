@@ -159,5 +159,7 @@ GPU를 이용해서 .box가 가진 transform 속성들을 연산할 수 있습�
 	<div></div>
 </div>
 ```
+레이아웃 만드는 법 1. 내부 박스에 gird-column/row 옵션 주기
 grid-column : 세로선 1 ~ 4 만큼 차지해주세요
 gird-row : 가로선을 차지해주세요
+
