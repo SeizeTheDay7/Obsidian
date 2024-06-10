@@ -368,3 +368,72 @@ input[type="file"]::-webkit-file-upload-button {
 input은 display:none; 해놓고 label에 스타일 주기도 함
 
 input type="range"같은건 개발자 도구로 검사해봐도 뭐 안 나오는데 그럴 땐 아래에 있는 user agent stylesheet(브라우저 기본 css) 찾아보면 나온다. 따로 스타일 적용하고 싶으면 apperance: none; 전부 다 줘야됨
+
+
+Sass 활용법
+```scss
+$메인칼라 : #2a4cb2;
+$서브칼라 : #eeeeee;
+$기본사이즈 : 16px;
+
+.background {
+  background-color: $메인칼라;
+  font-size: ($기본사이즈 - 2px);
+}
+```
+1. 변수문법 : 어려운 단어, 숫자 기억
+
+css에서도 var 쓰면 변수문법 가능하고 calc 쓰면 사칙연산 가능하긴 함. (css에선 scss와 다르게 %랑 +- 섞어 써도 알아서 잘 해줌)
+
+.scss와 .sass 파일의 차이 : .sass는 괄호 없어도 Indent 넣으면 됨
+
+```scss
+.main-bg h4 {
+
+}
+
+.main-bg {
+  h4 {
+
+  }
+  button {
+    
+  }
+}
+```
+2. nesting 문법 : 관련있는 class들 묶을 때 사용  (두 개 이상 중첩 굳이 ㄴㄴ)
+
+```scss
+%btn {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+.btn-green {
+  @extend %btn;
+  color: green;
+}
+```
+3. @extend 문법 : 중복된 스타일들을 묶어서 %임시클래스명 만듬  (% 빼도 되긴 한데 임시 클래스는 extend 안되면 단독으로 컴파일되지 않음
+
+```scss
+@mixin 작명($구멍, $구멍2, $구멍3) {
+	font-size: $구멍;
+	letter-spacing: $구멍2;
+	#{ $구멍3 }: -1px;
+}
+
+h2 {
+	@include 폰트스타일(40px, 1px, width)
+}
+```
+4. @mixin 문법 : 긴 코드를 짧은 단어로 축약할 때 씀
+4. @mixin 문법의 $파라미터 : 긴 코드를 가변적으로 만들 때 씀
+4. 글자 중간에 $변수나 $파라미터 넣을 땐 #{ $변수명 }
+
+```scss
+@use 'reset'; /* reset.scss에 있는 코드들 적용 */
+```
+5. @use '파일경로' : 다른 파일에 있는 내용 가져오고 싶을 때 (종속된 scss 파일은 파일명에 언더바 `_` 붙여야 컴파일 안함.)
+5. 다른 파일의 @mixin 쓰려면 @include 파일명.mixin이름 (혹은 변수명)

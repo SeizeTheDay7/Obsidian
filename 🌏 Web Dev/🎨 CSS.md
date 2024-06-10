@@ -41,7 +41,13 @@
 
 -  img 태그는 style 생략하고 `width="100%"` 이런 식으로 넣어도 된다
 -  화면 꽉 채우는 방법 : `min-height: 100vh`
-
+- ul 스타일
+```css
+ul {
+  list-style-type: none; /* 리스트 스타일 없애기 */
+  padding-left: 0; /* 기본 패딩 제거 */
+}
+```
 
 ## 맨 처음 선언할만한 스타일
 <hr>
@@ -254,6 +260,24 @@ flex-direction: column;
 
 
 ## 속성
+
+### inline, block, inline-block의 차이
+<hr>
+
+#### display: inline
+- 다른 요소와 나란히 배치
+- width, height 무시
+- `<span>`, `<a>`,`<em>` 
+
+#### display: block
+- 혼자서 한 줄 차지
+- width, height, margin 등 모두 반영됨
+- `<div>`, `<p>`, `<h1>`
+
+#### display: inline-block
+- 다른 요소와 나란히 배치
+- width, height, margin 등 모두 반영됨
+- `<button>`, `<input>`, `<select>`
 
 ### vertical-align
 <hr>
