@@ -32,7 +32,7 @@ preload : video와 동일
 ```html
 .ani-text {
 	transform: rotate(10deg);
-	transform: translateX
+	transform: translateX(100px);
 }
 ```
 rotate : 요소 회전
