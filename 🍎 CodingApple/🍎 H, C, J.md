@@ -637,3 +637,4 @@ gird-row : 가로선을 차지해주세요
 
 position : sticky는 조건부로 poisition : fixed가 됨.
 스크롤하다가 만났을 때 부모 요소 끝날때까지 고정됨.
+
