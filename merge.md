@@ -26,3 +26,14 @@ preload="metadata" 미리다운 적당히
 muted : 음소거 상태로 시작
 autoplay : 자동재생인데 javascript 만져야 가능 
 preload : video와 동일
+
+
+애니메이션 관련 속성들
+```html
+.ani-text {
+	transform: rotate(10deg);
+	transform: translateX
+}
+```
+rotate : 요소 회전
+translateX : x축 좌표 이동 (애니메이션 줄 때 margin보다 부드럽게 이동)
