@@ -118,3 +118,26 @@ transform : translate3d를 쓰면 3D 이동도 가능한데
 뒤에 필요한 transform을 더 적용한다면 
 GPU를 이용해서 .box가 가진 transform 속성들을 연산할 수 있습니다. 
 꼭 써야하는건 아니고 뭔가 느리게 동작한다면 써볼 수 있는 것들입니다.
+
+
+
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px;
+}
+.grid-container div {
+  border: 1px solid black;
+}
+
+<div class="grid-container">
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</div>
+```
+그리드 만들기 예제
