@@ -9,9 +9,12 @@
   <source src="birdge-m.webm" type="video/mp4">
 </video>
 ```
- controls 넣어야 재생됨 
- autoplay muted 넣으면 자동 재생됨
+ controls : 재생됨 
+ autoplay muted : 자동 재생
+ poster="경로" : 썸네일 이미지
+ loop : 무한반복
 
 preload="none" 미리다운X
 preload="auto" 미리다운O
 preload="metadata" 미리다운 적당히
+
