@@ -67,3 +67,16 @@ translateX : x축 좌표 이동 (애니메이션 줄 때 margin보다 부드럽�
 
 infinite : 애니메이션 계속 반복
 forwards : 애니메이션 결과 유지
+
+```
+.box:hover {
+  animation-name : 움찔움찔;
+  animation-duration : 1s;
+  animation-timing-function : linear; /*베지어 주기*/
+  animation-delay : 1s; /*시작 전 딜레이*/
+  animation-iteration-count : 3; /*몇회 반복할것인가*/
+  animation-play-state : paused;  /*애니메이션을 멈추고 싶은 경우 자바스크립트로 이거 조정*/
+  animation-fill-mode: forwards;  /*애니메이션 끝난 후에 원상복구 하지말고 정지*/
+}
+```
+애니메이션 세부 속성
