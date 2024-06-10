@@ -58,5 +58,9 @@ translateX : x축 좌표 이동 (애니메이션 줄 때 margin보다 부드럽�
     transform: translateX(0);
   }
 }
+
+.ani-text:hover {
+  animation: 왔다갔다 1s infinite;
+}
 ```
 @keyframe으로 복잡한 애니메이션 정의 가능
