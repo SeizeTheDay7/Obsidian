@@ -64,3 +64,6 @@ translateX : x축 좌표 이동 (애니메이션 줄 때 margin보다 부드럽�
 }
 ```
 @keyframe으로 복잡한 애니메이션 정의 가능
+
+infinite : 애니메이션 계속 반복
+forwards : 애니메이션 결과 유지
