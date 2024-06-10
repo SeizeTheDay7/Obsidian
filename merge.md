@@ -192,3 +192,12 @@ gird-row : 가로선을 차지해주세요
 	<div></div>
 </div>
 ```
+
+그리드 안에 들어가있는거 안 빠져나오게 하려면
+```css
+.grid-container2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+```
