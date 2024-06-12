@@ -137,3 +137,47 @@ $('.slide-1').click(function() {
 })
 ```
 on('click',function (){}) 대신 click(function(){})으로 바로 가능한듯
+
+
+window.scrollY : 현재 스크롤 얼마나 내렸는지
+window.scrollTo(x,y) : 강제로 스크롤하기
+window.scrollTop() : 현재 스크롤바 위치 출력 (숫자 넣으면 이동도 함)
+window.scrollHeight : 요소 스크롤 높이
+
+jquery 버전
+$(window).scrollTop()
+
+**jQuery**
+```js
+var 스크롤양 = $('.lorem').scrollTop(); // 가져오기
+$('.lorem').scrollTop(100); // 설정하기
+```
+**순수 JavaScript**:
+```js
+var loremElement = document.querySelector('.lorem');
+var 스크롤양 = loremElement.scrollTop; // 가져오기
+loremElement.scrollTop = 100; // 설정하기
+```
+두 방법 모두 수직 스크롤 위치를 가져오거나 설정하는 데 사용되지만, jQuery에서는 메서드 체이닝을 통해 더 간단하게 사용할 수 있고, 순수 JavaScript에서는 속성에 직접 접근해야 합니다.
+
+>[!bug]
+>Bootstrap 쓰면 scrollTo가 smooth하게 움직이는데 
+```css
+:root {
+  scroll-behavior: auto;
+}
+```
+css에 이거 추가해주면 됨
+
+
+```js
+var 실제높이 = $('.lorem').prop('scrollHeight');
+var 스크롤양 = $('.lorem').scrollTop();
+var 높이 = $('.lorem').height();
+```
+실제높이랑 스크롤양 찍어보면 다름.
+스크롤양은 박스가 보이는 높이는 포함 안하기때문.
+그래서 실제높이에서 박스높이 빼줘야 전체 스크롤양 됨.
+- 스크롤 다 봤는지 조건문 걸때 여유 오차 좀 줘야 함
+- body 태그 끝나기 전에 측정해야 정확하게 나옴
+
