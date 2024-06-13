@@ -4,6 +4,7 @@
 💡
 [아무거나](https://chatgpt.com/c/f806b00d-ccf7-496e-8b29-02986adf3400)
 [옵시디언 표](https://chatgpt.com/c/50385aaa-aee4-44bc-a7c8-bee7c6d8bc54)
+[Linux](https://chatgpt.com/c/5b7a4cda-ba81-4382-af5f-d9fa17078255)
 [SQL](https://chatgpt.com/c/a8b16bd9-8651-4ef5-a25a-3a8dcd4350e0)
 
 🌏
