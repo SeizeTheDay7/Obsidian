@@ -197,3 +197,13 @@ $('.tab-button').click(function() {
 클릭한 요소가 형제 요소들 중 몇 번째인지 가져온 뒤 
 바꾸고 싶은 다른 요소도 같은 순서에서 클래스 변화
 
+```js
+$('.tab-button').click(function() {
+  var index = $(this).index();
+  $('.tab-button').removeClass('orange');
+  $(this).addClass('orange');
+  $('.tab-content').removeClass('show');
+  $('.tab-content').eq(index).addClass('show')
+});
+```
+이해하기는 이게 더 쉬울수도
