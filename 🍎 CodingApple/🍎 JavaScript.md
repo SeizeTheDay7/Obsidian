@@ -211,3 +211,9 @@ $('.tab-button').click(function() {
 
 모든 브라우저는 이벤트 버블링이 일어남
 (이벤트가 상위 html로 퍼지는 현상)
+
+function(e) 안에 쓰는 이벤트 관련 함수들
+e.target;
+e.currentTarget;
+e.preventDefault();
+e.stopPropagation();
