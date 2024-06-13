@@ -20,3 +20,48 @@
 - 때로는 흩어진 코드를 모아서 하나의 더미로 만들면 작은 코드 조각들이 상호작용하는 것이 간명해진다  
 - 친절한 설명이나 오류에 대한 주석을 달자  
 - 코드만으로 알겠거나 코드 변경으로 틀리게 된 주석은 삭제하자
+
+### 가독성을 높이는 코딩 관습
+[출처](velog.io/@sangmin7648/코드-라인-길이와-가독성의-상관-관계)
+
+1. **중괄호 앞에 빈칸 띄우기**
+```java
+// Adherent
+if(hi) {
+    ...
+}
+
+// Violating
+if(hi){
+    ...
+}
+```
+
+2. **줄 길이를 80자로 제한**
+
+3. **코드 블럭은 깊이 3단계를 초과하지 않도록**
+
+4. **한줄에 ;는 하나씩만**
+```java
+// Adherent
+doSmth(); 
+doOther();
+
+// Violating
+doSmth(); doOther();
+```
+
+5. **캐노니컬 이름(= 클래스의 전체 패키지 경로를 포함한 이름)은 사용하지 않음**
+```java
+// Adherent
+@Service
+
+// Violating
+@org.springframework.stereotype.Service
+```
+
+6. **프로퍼티 호출 체이닝(객체의 속성이나 메서드를 연속적으로 호출) 하지 않기**
+```java
+String cityName = user.getAddress().getCity().getName();
+```
+
