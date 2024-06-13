@@ -181,3 +181,9 @@ var 높이 = $('.lorem').height();
 - 스크롤 다 봤는지 조건문 걸때 여유 오차 좀 줘야 함
 - body 태그 끝나기 전에 측정해야 정확하게 나옴
 
+
+```js
+$(this).addClass('orange').siblings().removeClass('orange');
+```
+이벤트 받은 요소에만 클래스 추가하고 나머지 형제 요소들에서는 클래스 제거
+
