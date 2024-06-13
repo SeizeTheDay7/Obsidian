@@ -220,3 +220,9 @@ $('.tab-button').click(function() {
 **e.currentTarget**은 이벤트 리스너가 달린 곳 알려줌 (참고로 this라고 써도 똑같음)
 **e.preventDefault()** 실행하면 이벤트 기본 동작을 막아줌
 **e.stopPropagation()** 실행하면 내 상위요소로의 이벤트 버블링을 중단해줌
+
+$('.black-bg')를 queryselector랑 비교하면 조금 다르니까
+```
+$(어쩌구).is($(어쩌구))
+```
+jquery는 이렇게 비교하는게 안전
