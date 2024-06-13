@@ -234,6 +234,7 @@ html 태그에 몰래 정보 숨기기 가능
 ```
 숨겼던 자료 출력은
 ```js
-$('button').dataset.자료이름
+e.target.dataset.자료이름 // 바닐라 js
+e.target.data('자료이름') // jqeury
 ```
-jqeury로는 dataset 접근 불가능
+
