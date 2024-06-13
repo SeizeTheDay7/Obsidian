@@ -11,14 +11,27 @@
 - [[#중앙 정렬하는 방법|중앙 정렬하는 방법]]
 	- [[#중앙 정렬하는 방법#버튼 안에 있는 텍스트 수직 정렬|버튼 안에 있는 텍스트 수직 정렬]]
 - [[#속성|속성]]
+	- [[#속성#inline, block, inline-block의 차이|inline, block, inline-block의 차이]]
+		- [[#inline, block, inline-block의 차이#display: inline|display: inline]]
+		- [[#inline, block, inline-block의 차이#display: block|display: block]]
+		- [[#inline, block, inline-block의 차이#display: inline-block|display: inline-block]]
 	- [[#속성#vertical-align|vertical-align]]
 	- [[#속성#margin|margin]]
 	- [[#속성#Position|Position]]
 	- [[#속성#::before와 ::after|::before와 ::after]]
 	- [[#속성#Flexbox|Flexbox]]
+		- [[#Flexbox#justify-content : 요소를 가로선 상에서 정렬|justify-content : 요소를 가로선 상에서 정렬]]
+		- [[#Flexbox#align-items : 요소를 세로선 상에서 정렬|align-items : 요소를 세로선 상에서 정렬]]
+		- [[#Flexbox#flex-direction : 정렬 방향 지정|flex-direction : 정렬 방향 지정]]
+		- [[#Flexbox#flex-wrap : 몇 줄에 걸쳐 정렬할지 지정|flex-wrap : 몇 줄에 걸쳐 정렬할지 지정]]
+		- [[#Flexbox#align-content : 여러 줄 사이의 간격 지정|align-content : 여러 줄 사이의 간격 지정]]
+		- [[#Flexbox#flex-grow : flexbox 내에서 차지하는 크기 지정|flex-grow : flexbox 내에서 차지하는 크기 지정]]
+		- [[#Flexbox#flex-shrink : flexbox 내에서 상대적으로 작아짐|flex-shrink : flexbox 내에서 상대적으로 작아짐]]
 - [[#부트스트랩|부트스트랩]]
 	- [[#부트스트랩#색상 (Colors)|색상 (Colors)]]
 	- [[#부트스트랩#여백과 패딩 (Spacing)|여백과 패딩 (Spacing)]]
+	- [[#부트스트랩#여백 (Margin)|여백 (Margin)]]
+	- [[#부트스트랩#패딩 (Padding)|패딩 (Padding)]]
 	- [[#부트스트랩#디스플레이 (Display)|디스플레이 (Display)]]
 	- [[#부트스트랩#Flexbox|Flexbox]]
 	- [[#부트스트랩#텍스트 (Text)|텍스트 (Text)]]
@@ -33,7 +46,8 @@
 	- [[#Bugs#margin collapse 현상|margin collapse 현상]]
 	- [[#Bugs#z-index 붙여도 가려짐|z-index 붙여도 가려짐]]
 	- [[#Bugs#border로 이미지 가리는 애니메이션 줄 때 테두리 어색함|border로 이미지 가리는 애니메이션 줄 때 테두리 어색함]]
-
+	- [[#Bugs#부트스트랩 col 사이에 gap이 안 주어짐|부트스트랩 col 사이에 gap이 안 주어짐]]
+	- [[#Bugs#transform: scale 주면 텍스트가 도망감|transform: scale 주면 텍스트가 도망감]]
 
 
 ## General
@@ -41,7 +55,13 @@
 
 -  img 태그는 style 생략하고 `width="100%"` 이런 식으로 넣어도 된다
 -  화면 꽉 채우는 방법 : `min-height: 100vh`
-
+- ul 스타일
+```css
+ul {
+  list-style-type: none; /* 리스트 스타일 없애기 */
+  padding-left: 0; /* 기본 패딩 제거 */
+}
+```
 
 ## 맨 처음 선언할만한 스타일
 <hr>
@@ -121,7 +141,7 @@ div {
 ```
 
 
-## 경로 표기법
+## 파일 경로 표기법
 <hr>
 
 **.** : 현재 웹페이지가 소속된 폴더
@@ -255,6 +275,24 @@ flex-direction: column;
 
 ## 속성
 
+### inline, block, inline-block의 차이
+<hr>
+
+#### display: inline
+- 다른 요소와 나란히 배치
+- width, height 무시
+- `<span>`, `<a>`,`<em>` 
+
+#### display: block
+- 혼자서 한 줄 차지
+- width, height, margin 등 모두 반영됨
+- `<div>`, `<p>`, `<h1>`
+
+#### display: inline-block
+- 다른 요소와 나란히 배치
+- width, height, margin 등 모두 반영됨
+- `<button>`, `<input>`, `<select>`
+
 ### vertical-align
 <hr>
 
@@ -375,30 +413,38 @@ margin-left: 100px;
 
 [정리글](https://studiomeal.com/archives/197)
 
-| justify-content | 요소를 가로선 상에서 정렬 |
-| --------------- | -------------- |
-| flex-start      | 왼쪽 정렬          |
-| flex-end        | 오른쪽 정렬         |
-| center          | 가운데로 정렬        |
-| space-between   | 요소 사이에 동일한 간격  |
-| space-around    | 요소 주위에 동일한 간격  |
+#### justify-content : 요소를 가로선 상에서 정렬
 
-| align-items | 요소를 세로선 상에서 정렬    |
-| ----------- | ----------------- |
-| flex-start  | 꼭대기로 정렬           |
-| flex-end    | 바닥으로 정렬           |
-| center      | 세로선 상의 가운데로 정렬    |
-| baseline    | 시작 위치에 정렬         |
-| stretch     | 요소들을 컨테이너에 맞도록 늘림 |
+| 속성            | 효과            |
+| ------------- | ------------- |
+| flex-start    | 왼쪽 정렬         |
+| flex-end      | 오른쪽 정렬        |
+| center        | 가운데로 정렬       |
+| space-between | 요소 사이에 동일한 간격 |
+| space-around  | 요소 주위에 동일한 간격 |
 
-| flex-direction | 정렬 방향 지정         |
+#### align-items : 요소를 세로선 상에서 정렬
+
+| 속성         | 효과                |
+| ---------- | ----------------- |
+| flex-start | 꼭대기로 정렬           |
+| flex-end   | 바닥으로 정렬           |
+| center     | 세로선 상의 가운데로 정렬    |
+| baseline   | 시작 위치에 정렬         |
+| stretch    | 요소들을 컨테이너에 맞도록 늘림 |
+
+#### flex-direction : 정렬 방향 지정
+
+| 속성             | 효과               |
 | -------------- | ---------------- |
 | row            | 텍스트의 방향과 동일하게 정렬 |
 | row-reverse    | 텍스트의 반대 방향으로 정렬  |
 | column         | 위에서 아래로 정렬       |
 | column-reverse | 아래에서 위로 정렬       |
 
-| flex-wrap    | 몇 줄에 걸쳐 정렬할지 지정      |
+#### flex-wrap : 몇 줄에 걸쳐 정렬할지 지정
+
+| 속성           | 효과                   |
 | ------------ | -------------------- |
 | nowrap       | 모든 요소들을 한 줄에 정렬      |
 | wrap         | 요소들을 여러 줄에 걸쳐 정렬     |
@@ -409,9 +455,13 @@ margin-left: 100px;
 > 
 > 예를 들어, `flex-flow: row wrap` 사용 가능
 
+
+
 ![](Pasted%20image%2020240529145814.png)
 
-| align-content | 여러 줄 사이의 간격 지정      |
+#### align-content : 여러 줄 사이의 간격 지정
+
+| 속성            | 효과                  |
 | ------------- | ------------------- |
 | flex-start    | 꼭대기에 정렬             |
 | flex-end      | 컨테이너의 바닥에 정렬        |
@@ -424,10 +474,10 @@ margin-left: 100px;
 >부모 요소가 `display: flex`라면 `<button>`의 높이가 부모 요소와 같아지는 현상 발생.
 >`<button>`에 `align-self: center` 적용시켜주면 정상화.
 
-**flex-grow**
+#### flex-grow : flexbox 내에서 차지하는 크기 지정
 ![](Pasted%20image%2020240529144202.png)
 
-**flex-shrink**
+#### flex-shrink : flexbox 내에서 상대적으로 작아짐
 ![](Pasted%20image%2020240529144214.png)
 
 [정리글](https://apost.dev/863/)
@@ -435,6 +485,18 @@ margin-left: 100px;
 
 ## 부트스트랩
 <hr>
+
+### `container` 클래스의 주요 기능과 효과
+
+1. **중앙 정렬**:
+    
+    - `container` 클래스는 페이지의 콘텐츠를 브라우저의 중앙에 정렬합니다.
+2. **패딩 적용**:
+    
+    - `container` 클래스는 좌우에 기본 패딩을 적용하여 콘텐츠가 화면 가장자리에 바로 닿지 않도록 합니다.
+3. **반응형 레이아웃**:
+    
+    - `container` 클래스는 미디어 쿼리를 사용하여 다양한 디바이스 크기에 맞게 너비가 자동으로 조정됩니다. 이를 통해 모바일, 태블릿, 데스크탑 등 다양한 화면 크기에서 적절한 레이아웃을 유지할 수 있습니다.
 
 ### 색상 (Colors)
 
@@ -582,3 +644,11 @@ margin-left: 100px;
 ![](Pasted%20image%2020240603125433.png)
 
 div 안에 또 div를 넣은 후에 글씨를 써야 함
+
+### transform: scale 주면 텍스트가 도망감
+>[!bug]
+>.ani-text {
+  display: inline-block;
+  transform: scale(2);
+  transform-origin: center;
+} 
