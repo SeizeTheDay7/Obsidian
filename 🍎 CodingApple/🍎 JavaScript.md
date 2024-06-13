@@ -187,3 +187,12 @@ $(this).addClass('orange').siblings().removeClass('orange');
 ```
 이벤트 받은 요소에만 클래스 추가하고 나머지 형제 요소들에서는 클래스 제거
 
+```js
+$('.tab-button').click(function() {
+  var index = $(this).index();
+  $(this).addClass('orange').siblings().removeClass('orange');
+  $('.tab-content').eq(index).addClass('show').siblings('.tab-content').removeClass('show');
+});
+```
+클릭한 요소가 형제 요소들 중 몇번째인지 가져온 뒤 바꾸고 싶은 다른 요소의 
+
