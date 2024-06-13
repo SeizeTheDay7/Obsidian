@@ -238,3 +238,7 @@ e.target.dataset.자료이름 // 바닐라 js
 e.target.data('자료이름') // jqeury
 ```
 
+array 자료형
+```js
+var car = ['소나타', 50000, 'white'];
+```
