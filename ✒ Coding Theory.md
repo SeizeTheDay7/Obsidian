@@ -39,9 +39,7 @@ if(hi){
 
 2. **줄 길이를 80자로 제한**
 
-3. **코드 블럭은 깊이 3단계를 초과하지 않도록**
-
-4. **한줄에 ;는 하나씩만**
+3. **한줄에 ;는 하나씩만**
 ```java
 // Adherent
 doSmth(); 
@@ -51,7 +49,7 @@ doOther();
 doSmth(); doOther();
 ```
 
-5. **캐노니컬 이름(= 클래스의 전체 패키지 경로를 포함한 이름)은 사용하지 않음**
+4. **캐노니컬 이름(= 클래스의 전체 패키지 경로를 포함한 이름)은 사용하지 않음**
 ```java
 // Adherent
 @Service
@@ -60,7 +58,7 @@ doSmth(); doOther();
 @org.springframework.stereotype.Service
 ```
 
-6. **프로퍼티 호출 체이닝(객체의 속성이나 메서드를 연속적으로 호출) 하지 않기**
+5. **프로퍼티 호출 체이닝(객체의 속성이나 메서드를 연속적으로 호출) 하지 않기**
 ```java
 String cityName = user.getAddress().getCity().getName();
 ```
