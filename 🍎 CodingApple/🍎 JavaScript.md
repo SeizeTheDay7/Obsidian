@@ -238,7 +238,9 @@ e.target.dataset.자료이름 // 바닐라 js
 e.target.data('자료이름') // jqeury
 ```
 
-array 자료형
+자료형
 ```js
-var car = ['소나타', 50000, 'white'];
+var car = ['소나타', 50000, 'white']; // array
+var car2 = {name : '소나타', price : 50000} // object
+car2['price'], car2.price // object 자료 호출법
 ```
