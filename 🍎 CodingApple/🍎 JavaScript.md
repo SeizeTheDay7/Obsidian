@@ -194,5 +194,6 @@ $('.tab-button').click(function() {
   $('.tab-content').eq(index).addClass('show').siblings('.tab-content').removeClass('show');
 });
 ```
-클릭한 요소가 형제 요소들 중 몇번째인지 가져온 뒤 바꾸고 싶은 다른 요소의 
+클릭한 요소가 형제 요소들 중 몇 번째인지 가져온 뒤 
+바꾸고 싶은 다른 요소도 같은 순서에서 클래스 변화
 
