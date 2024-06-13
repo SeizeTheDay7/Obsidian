@@ -242,5 +242,6 @@ e.target.data('자료이름') // jqeury
 ```js
 var car = ['소나타', 50000, 'white']; // array
 var car2 = {name : '소나타', price : 50000} // object
-car2['price'], car2.price // object 자료 호출법
+car2['price'] // object 자료 호출법 
+car2.price // 이렇게 하면 변수는 못 넣음
 ```
