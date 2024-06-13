@@ -226,3 +226,13 @@ $('.black-bg')를 queryselector랑 비교하면 조금 다르니까
 $(어쩌구).is($(어쩌구))
 ```
 jquery는 이렇게 비교하는게 안전
+
+
+html 태그에 몰래 정보 숨기기 가능 
+```html
+<button data-자료이름="값"></button>
+```
+숨겼던 자료 출력은
+```js
+$('button').dataset.자료이름
+```
