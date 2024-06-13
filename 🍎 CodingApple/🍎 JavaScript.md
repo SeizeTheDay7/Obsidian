@@ -236,3 +236,4 @@ html 태그에 몰래 정보 숨기기 가능
 ```js
 $('button').dataset.자료이름
 ```
+jqeury로는 dataset 접근 불가능
