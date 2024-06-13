@@ -181,3 +181,70 @@ var 높이 = $('.lorem').height();
 - 스크롤 다 봤는지 조건문 걸때 여유 오차 좀 줘야 함
 - body 태그 끝나기 전에 측정해야 정확하게 나옴
 
+
+```js
+$(this).addClass('orange').siblings().removeClass('orange');
+```
+이벤트 받은 요소에만 클래스 추가하고 나머지 형제 요소들에서는 클래스 제거
+
+```js
+$('.tab-button').click(function() {
+  var index = $(this).index();
+  $(this).addClass('orange').siblings().removeClass('orange');
+  $('.tab-content').eq(index).addClass('show').siblings('.tab-content').removeClass('show');
+});
+```
+클릭한 요소가 형제 요소들 중 몇 번째인지 가져온 뒤 
+바꾸고 싶은 다른 요소도 같은 순서에서 클래스 변화
+
+```js
+$('.tab-button').click(function() {
+  var index = $(this).index();
+  $('.tab-button').removeClass('orange');
+  $(this).addClass('orange');
+  $('.tab-content').removeClass('show');
+  $('.tab-content').eq(index).addClass('show')
+});
+```
+이해하기는 이게 더 쉬울수도
+
+
+모든 브라우저는 이벤트 버블링이 일어남
+(이벤트가 상위 html로 퍼지는 현상)
+
+이벤트리스너의 콜백함수에 파라미터 아무거나 추가하면 
+이벤트관련 유용한 함수들을 사용 가능. 
+파라미터 이름은 아무렇게나 작명. 보통 e라고 함.
+
+**e.target**은 실제 클릭한 요소 알려줌 (이벤트 발생한 곳)
+**e.currentTarget**은 이벤트 리스너가 달린 곳 알려줌 (참고로 this라고 써도 똑같음)
+**e.preventDefault()** 실행하면 이벤트 기본 동작을 막아줌
+**e.stopPropagation()** 실행하면 내 상위요소로의 이벤트 버블링을 중단해줌
+
+$('.black-bg')를 queryselector랑 비교하면 조금 다르니까
+```
+$(어쩌구).is($(어쩌구))
+```
+jquery는 이렇게 비교하는게 안전
+
+
+html 태그에 몰래 정보 숨기기 가능 
+```html
+<button data-자료이름="값"></button>
+```
+숨겼던 자료 출력은
+```js
+e.target.dataset.자료이름 // 바닐라 js
+e.target.data('자료이름') // jqeury
+```
+
+자료형
+```js
+var car = ['소나타', 50000, 'white']; // array
+var car2 = {name : '소나타', price : 50000} // object
+car2['price'] // object 자료 호출법 
+car2.price // 이렇게 하면 변수는 못 넣음
+```
+
+서버 사이드 렌더링 : 완성품 html을 서버가 줌 (서버가 힘듬)
+클라이언트 사이드 렌더링 : 빈 html이랑 데이터 주면 유저가 완성 (서버가 편함)
