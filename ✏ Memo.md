@@ -19,4 +19,5 @@ css : material
 - Animate On Scroll : 스크롤 내리면 요소가 서서히 등장하는 애니메이션 만들때
 - EmailJS : Gmail 서버 빌려서 이메일 전송
 - Lodash : array, object, 문자, 숫자 자료를 다루기 편해지는 기본 함수 제공
+- Fullpage.js : 웹페이지를 PPT처럼 만들어줌 (유행지나긴함)
 
