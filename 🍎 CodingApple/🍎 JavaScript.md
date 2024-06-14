@@ -248,3 +248,25 @@ car2.price // 이렇게 하면 변수는 못 넣음
 
 서버 사이드 렌더링 : 완성품 html을 서버가 줌 (서버가 힘듬)
 클라이언트 사이드 렌더링 : 빈 html이랑 데이터 주면 유저가 완성 (서버가 편함)
+
+
+문자 중간에 변수 넣는 법
+```js
+var a = '안녕';
+`문자${a}문자`
+```
+
+요소 만들고 내용 넣기
+```js
+var a = document.createElement('p');
+var b = $('<p></p>');
+a.innerHTML = '안녕';
+b.html('안녕');
+```
+
+foreach 반복문
+```js
+array.forEach(function() {
+  console.log(123);
+})
+```
