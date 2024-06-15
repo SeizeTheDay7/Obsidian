@@ -327,3 +327,19 @@ arr.sort((a, b) => a.localeCompare(b));
 깊은 복사 : 새롭게 메모리 차지하는 복사. 서로 영향 안 미침.
 
 스프레드 연산자 : 배열이나 객체 펼쳐서 개별 요소나 속성으로 나열. 얕은 복사임.
+```js
+let originalArray = [1, 2, 3];
+let copiedArray = [...originalArray];
+```
+
+filter
+```js
+var newArray = array.filter(a => a < 4);
+```
+sort는 원본을 변형시키는데 filter는 따로 담아야 됨.
+
+map
+```js
+var newArray = array.map(a => a * 2);
+```
+배열 안의 데이터를 일괄 변
