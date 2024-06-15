@@ -26,7 +26,7 @@
 
 Ctrl+Shift+V : 서식 없이 붙여넣기
 win+D : 바탕화면 바로가기
-
+win+방향키 : 화면 절반으로 정
 
 <hr>
 ## Github Copilot 정리

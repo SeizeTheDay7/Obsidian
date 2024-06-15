@@ -266,7 +266,64 @@ b.html('안녕');
 
 foreach 반복문
 ```js
-array.forEach(function() {
-  console.log(123);
+array.forEach(function(item,i) { //item만 써도 
+  console.log(123)
 })
 ```
+function 안의 파라미터
+- 1번째 : array 안의 데이터
+- 2번째 : 0부터 1씩 증가하는 정수
+
+object 자료 반복
+```js
+var obj = {name : 'kim', age : 20}
+
+for (var key in obj) {
+  console.log(key);
+}
+```
+
+get 요청 날리기 (jquery)
+```js
+$.get('url~~~')
+	.done(function(data) {
+		console.log(data); // 받아온 데이터 출력
+	})
+	.fail(function() {
+		// ajax 실패했을 때
+	})
+```
+jquery 안 쓸거면 fetch('url~') 이런 것도 있음 ($.get은 자동으로 json을 객체로 변환해주는데 fetch는 따로 변환해줘야됨)
+
+문자 정렬은 array.sort();
+숫자 정렬은
+```js
+array.sort((a,b) => a-b);
+```
+원리
+1. a, b는 array 안의 자료
+2. return이 양수면 a를 오른쪽으로
+3. return이 음수면 b를 오른쪽으로
+4. 그걸 전부 다 해봄
+
+문자 내림차순 정렬은
+```js
+arr.sort(function(a, b) {
+  if(a < b) return 1;
+  if(a > b) return -1;
+  if(a === b) return 0;
+});
+```
+간략하게는
+```js
+// 내림차순 정렬
+arr.sort((a, b) => b.localeCompare(a));
+// 오름차순 정렬
+arr.sort((a, b) => a.localeCompare(b));
+```
+
+
+얕은 복사 : 객체의 주소만 복사. 복사본 변경하면 원본도 변경됨. 역도 마찬가지.
+깊은 복사 : 새롭게 메모리 차지하는 복사. 서로 영향 안 미침.
+
+스프레드 연산자 : 배열이나 객체 펼쳐서 개별 요소나 속성으로 나열. 얕은 복사임.
