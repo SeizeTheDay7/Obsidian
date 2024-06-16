@@ -412,3 +412,4 @@ null 무시하는 문법
 var test = A || B;
 ```
 A가 falsy (거짓 같은 값, 즉, null, undefined, 0, '' 등) 이면 B 반환
+
