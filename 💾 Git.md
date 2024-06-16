@@ -37,7 +37,7 @@ vim 에디터 : i로 입력하고 esc 누르고 :wq로 저장 후 닫기
 ### 디렉토리 설정
 
 `cd 'C:\Users\Hutosuto\Desktop\'` : 바탕화면 디렉토리 설정 (노트북)
-`cd 'C:\Users\Hutosuto\Documents\Obsidian Vault'` : 옵시디언 디렉토리 설정 (노트북)
+`cd '/home/hutosuto/문서/Obsidian Vault'` : 옵시디언 디렉토리 설정 (노트북)
 
 `cd 'C:\Users\bioma\OneDrive\Documents\Obsidian Vault'`
 
