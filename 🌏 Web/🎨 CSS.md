@@ -1,33 +1,28 @@
 - [[#General|General]]
 - [[#맨 처음 선언할만한 스타일|맨 처음 선언할만한 스타일]]
 - [[#CSS 선택자|CSS 선택자]]
-- [[#경로 표기법|경로 표기법]]
 - [[#테이블 테두리 둥글게 만들기|테이블 테두리 둥글게 만들기]]
 - [[#CSS 변수 선언|CSS 변수 선언]]
 - [[#배경 관련 속성|배경 관련 속성]]
 - [[#CSS 상대 단위|CSS 상대 단위]]
-	- [[#CSS 상대 단위#vh, vw, vmin : 화면 전체 상대 길이|vh, vw, vmin : 화면 전체 상대 길이]]
-	- [[#CSS 상대 단위#em, rem : font-size 기준 크기|em, rem : font-size 기준 크기]]
 - [[#중앙 정렬하는 방법|중앙 정렬하는 방법]]
-	- [[#중앙 정렬하는 방법#버튼 안에 있는 텍스트 수직 정렬|버튼 안에 있는 텍스트 수직 정렬]]
 - [[#속성|속성]]
 	- [[#속성#inline, block, inline-block의 차이|inline, block, inline-block의 차이]]
-		- [[#inline, block, inline-block의 차이#display: inline|display: inline]]
-		- [[#inline, block, inline-block의 차이#display: block|display: block]]
-		- [[#inline, block, inline-block의 차이#display: inline-block|display: inline-block]]
 	- [[#속성#vertical-align|vertical-align]]
+	- [[#속성#background-size|background-size]]
 	- [[#속성#margin|margin]]
 	- [[#속성#Position|Position]]
 	- [[#속성#::before와 ::after|::before와 ::after]]
-	- [[#속성#Flexbox|Flexbox]]
-		- [[#Flexbox#justify-content : 요소를 가로선 상에서 정렬|justify-content : 요소를 가로선 상에서 정렬]]
-		- [[#Flexbox#align-items : 요소를 세로선 상에서 정렬|align-items : 요소를 세로선 상에서 정렬]]
-		- [[#Flexbox#flex-direction : 정렬 방향 지정|flex-direction : 정렬 방향 지정]]
-		- [[#Flexbox#flex-wrap : 몇 줄에 걸쳐 정렬할지 지정|flex-wrap : 몇 줄에 걸쳐 정렬할지 지정]]
-		- [[#Flexbox#align-content : 여러 줄 사이의 간격 지정|align-content : 여러 줄 사이의 간격 지정]]
-		- [[#Flexbox#flex-grow : flexbox 내에서 차지하는 크기 지정|flex-grow : flexbox 내에서 차지하는 크기 지정]]
-		- [[#Flexbox#flex-shrink : flexbox 내에서 상대적으로 작아짐|flex-shrink : flexbox 내에서 상대적으로 작아짐]]
+- [[#Flexbox|Flexbox]]
+	- [[#Flexbox#justify-content : 요소를 가로선 상에서 정렬|justify-content : 요소를 가로선 상에서 정렬]]
+	- [[#Flexbox#align-items : 요소를 세로선 상에서 정렬|align-items : 요소를 세로선 상에서 정렬]]
+	- [[#Flexbox#flex-direction : 정렬 방향 지정|flex-direction : 정렬 방향 지정]]
+	- [[#Flexbox#flex-wrap : 몇 줄에 걸쳐 정렬할지 지정|flex-wrap : 몇 줄에 걸쳐 정렬할지 지정]]
+	- [[#Flexbox#align-content : 여러 줄 사이의 간격 지정|align-content : 여러 줄 사이의 간격 지정]]
+	- [[#Flexbox#flex-grow : flexbox 내에서 차지하는 크기 지정|flex-grow : flexbox 내에서 차지하는 크기 지정]]
+	- [[#Flexbox#flex-shrink : flexbox 내에서 상대적으로 작아짐|flex-shrink : flexbox 내에서 상대적으로 작아짐]]
 - [[#부트스트랩|부트스트랩]]
+	- [[#부트스트랩#`container` 클래스의 주요 기능과 효과|`container` 클래스의 주요 기능과 효과]]
 	- [[#부트스트랩#색상 (Colors)|색상 (Colors)]]
 	- [[#부트스트랩#여백과 패딩 (Spacing)|여백과 패딩 (Spacing)]]
 	- [[#부트스트랩#여백 (Margin)|여백 (Margin)]]
@@ -78,6 +73,14 @@ div {
 }
 ```
 
+반응형 웹 디자인 관련
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+```
+
+`width=device-width` : 웹 페이지의 너비를 장치 화면의 너비에 맞추도록 지정
+`initial-scale=1` : 웹 페이지의 초기 줌 레벨을 100%로 설정
+`shrink-to-fit=no` : iOS 9 이상에서 웹 페이지가 화면에 맞추어 렌더링되는 것을 방지
 
 ## CSS 선택자
 <hr>
@@ -141,11 +144,7 @@ div {
 ```
 
 
-## 파일 경로 표기법
-<hr>
 
-**.** : 현재 웹페이지가 소속된 폴더
-**..** : 현재 웹페이지의 부모 폴더
 
 
 ## 테이블 테두리 둥글게 만들기
@@ -219,16 +218,16 @@ filter: brightness(70%); /* 이미지 어둡게 */
 ## CSS 상대 단위
 <hr>
 
-### vh, vw, vmin : 화면 전체 상대 길이
+<h4> vh, vw, vmin : 화면 전체 상대 길이</h4>
 `vh` : viewport height (100이 최대)
 `vw` : viewport width
 `vmin` : viewport minimum, 뷰포트의 높이와 너비 중 더 작은 길이
 (%는 부모 요소의 길이에 연관됨)
 
-### em, rem : font-size 기준 크기
+<h4>em, rem : font-size 기준 크기</h4>
 [정리글](https://www.daleseo.com/css-em-rem/)
 
-**계산 방식**
+<h4>계산 방식</h4>
 1em = 16 px x 1 = 16px
 2em = 16 px x 2 = 32px
 
@@ -263,8 +262,7 @@ align-items: center;
 flex-direction: column;
 ```
 
-### 버튼 안에 있는 텍스트 수직 정렬
-
+버튼 안에 있는 텍스트 수직 정렬
 ```css
 .orange-button{
 	display: flex;
@@ -278,17 +276,17 @@ flex-direction: column;
 ### inline, block, inline-block의 차이
 <hr>
 
-#### display: inline
+**display: inline**
 - 다른 요소와 나란히 배치
 - width, height 무시
 - `<span>`, `<a>`,`<em>` 
 
-#### display: block
+**display: block**
 - 혼자서 한 줄 차지
 - width, height, margin 등 모두 반영됨
 - `<div>`, `<p>`, `<h1>`
 
-#### display: inline-block
+**display: inline-block**
 - 다른 요소와 나란히 배치
 - width, height, margin 등 모두 반영됨
 - `<button>`, `<input>`, `<select>`
@@ -303,6 +301,19 @@ vertical-align: super/sub : 위첨자 아래첨자
 1. inline/inline-block 요소 간의 세로 정렬할 때 사용 
 
 2. `<table>` 태그의 `<th>`,`<td>`,`<tr>` 텍스트 정렬 (top, middle, bottom만 됨)
+
+
+### background-size
+<hr>
+![](Pasted%20image%2020240427184239.png)
+
+| **속성**      | **설명**                               |
+| ----------- | ------------------------------------ |
+| **auto**    | 원래 배경 이미지 크기만큼 표시(기본 값)              |
+| **contain** | 지정한 요소 안에 배경 이미지가 다 들어오도록 이미지를 확대/축소 |
+| **cover**   | 지정한 요소를 다 덮도록 배경이미지를 확대/축소           |
+| **크기 값**    | 너비 값과 높이 값을 지정                       |
+| **백분율**     | 지정한 요소를 기준으로 백분율 값을 지정               |
 
 
 ### margin
@@ -408,12 +419,12 @@ margin-left: 100px;
 | attr    | 해당속성의 속성값 표시                  |
 
 
-### Flexbox
+## Flexbox
 <hr>
 
 [정리글](https://studiomeal.com/archives/197)
 
-#### justify-content : 요소를 가로선 상에서 정렬
+### justify-content : 요소를 가로선 상에서 정렬
 
 | 속성            | 효과            |
 | ------------- | ------------- |
@@ -423,7 +434,7 @@ margin-left: 100px;
 | space-between | 요소 사이에 동일한 간격 |
 | space-around  | 요소 주위에 동일한 간격 |
 
-#### align-items : 요소를 세로선 상에서 정렬
+### align-items : 요소를 세로선 상에서 정렬
 
 | 속성         | 효과                |
 | ---------- | ----------------- |
@@ -433,7 +444,7 @@ margin-left: 100px;
 | baseline   | 시작 위치에 정렬         |
 | stretch    | 요소들을 컨테이너에 맞도록 늘림 |
 
-#### flex-direction : 정렬 방향 지정
+### flex-direction : 정렬 방향 지정
 
 | 속성             | 효과               |
 | -------------- | ---------------- |
@@ -442,7 +453,7 @@ margin-left: 100px;
 | column         | 위에서 아래로 정렬       |
 | column-reverse | 아래에서 위로 정렬       |
 
-#### flex-wrap : 몇 줄에 걸쳐 정렬할지 지정
+### flex-wrap : 몇 줄에 걸쳐 정렬할지 지정
 
 | 속성           | 효과                   |
 | ------------ | -------------------- |
@@ -459,7 +470,7 @@ margin-left: 100px;
 
 ![](Pasted%20image%2020240529145814.png)
 
-#### align-content : 여러 줄 사이의 간격 지정
+### align-content : 여러 줄 사이의 간격 지정
 
 | 속성            | 효과                  |
 | ------------- | ------------------- |
@@ -474,10 +485,10 @@ margin-left: 100px;
 >부모 요소가 `display: flex`라면 `<button>`의 높이가 부모 요소와 같아지는 현상 발생.
 >`<button>`에 `align-self: center` 적용시켜주면 정상화.
 
-#### flex-grow : flexbox 내에서 차지하는 크기 지정
+### flex-grow : flexbox 내에서 차지하는 크기 지정
 ![](Pasted%20image%2020240529144202.png)
 
-#### flex-shrink : flexbox 내에서 상대적으로 작아짐
+### flex-shrink : flexbox 내에서 상대적으로 작아짐
 ![](Pasted%20image%2020240529144214.png)
 
 [정리글](https://apost.dev/863/)

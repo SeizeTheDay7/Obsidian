@@ -1,3 +1,19 @@
+
+### Tip
+
+git bash에 명령어 복붙 : 마우스 우클릭
+
+
+### 접속하는 방법
+
+git bash 열고 `ssh -i /e/Hutosuto.pem ubuntu@52.79.239.52`
+
+http://52.79.239.52/
+http://13.125.64.40:5000/#
+
+
+
+
 명령어 `sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10`는 Linux 시스템에서 `python` 명령어가 기본적으로 `python3`을 가리키도록 설정하는 과정입니다. 각 부분에 대해 자세히 설명해드리겠습니다.
 
 1. **sudo**: `sudo` 명령어는 "superuser do"의 약자로, 일반 사용자가 관리자(슈퍼유저) 권한으로 명령을 실행할 수 있게 해줍니다. 이 명령어를 사용하면 시스템 설정을 변경할 수 있는 등의 권한을 가지게 됩니다.

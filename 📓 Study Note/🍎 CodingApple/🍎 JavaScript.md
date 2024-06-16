@@ -342,4 +342,73 @@ map
 ```js
 var newArray = array.map(a => a * 2);
 ```
-배열 안의 데이터를 일괄 변
+배열 안의 데이터를 일괄 변경
+
+```js
+$(document).ready(function(){ 실행할 코드 })
+document.addEventListener('DOMContentLoaded', function() { 실행할 코드 })
+```
+"이 코드는 HTML 전부 다 읽고 실행해주세요"라는 뜻. 둘 중 하나 쓰면 됨.
+(요즘은 자바스크립트를 `<body>`태그 끝나기 전에 전부 작성하긴 함)
+
+load 이벤트리스너
+```js
+셀렉터로찾은이미지.addEventListener('load', function(){
+  //이미지 로드되면 실행할 코드 
+})
+```
+DOM 생성뿐만 아니라 이미지, css, js 파일이 로드됐는지도 체크 가능
+(근데 외부 자바스크립트 파일에 적으면 그 js파일보다 이미지가 먼저 로드될수도 있음)
+
+```js
+$(window).on('load', function(){
+  //document 안의 이미지, js 파일 포함 전부 로드가 되었을 경우 실행할 코드 
+});
+
+window.addEventListener('load', function(){
+  //document 안의 이미지, js 파일 포함 전부 로드가 되었을 경우 실행할 코드
+})
+```
+윈도우에 붙일수도 있음. 모든 파일과 이미지의 로드를 체크함.
+(다 로딩되면 사이트 보여주세요~ 라고 코드 짜면 로딩 너무 느려짐)\
+
+>[!note] 브라우저 저장 공간
+Local Storage / Session Storage (key : value 형태로 문자, 숫자 데이터 저장가능)
+Indexed DB (크고 많은 구조화된 데이터를 DB처럼 저장가능, 문법더러움)
+Cookies (유저 로그인정보 저장공간)
+Cache Storage (html css js img 파일 저장해두는 공간)
+
+Local Storage : 브라우저 재접속해도 영구적으로 남아있음
+Session Storage : 브라우저 끄면 날아감
+
+Local Storage 사용법
+```js
+localStorage.setItem('이름', 'kim') //자료저장하는법
+localStorage.getItem('이름') //자료꺼내는법
+localStorage.removeItem('이름') //자료삭제하는법
+```
+
+Local Storage에 배열, 객체 저장
+```js
+localStorage.setItem('num',[1,2,3]); // '1,2,3'
+
+var arr = [1,2,3];
+var newArr = JSON.stringify(arr);
+localStorage.setItem('num',newArr); // '[1,2,3]'
+
+var getData = localStorage.getItem('num'); // '[1,2,3]'
+var reArr = JSON.parse(getData); // [1,2,3]
+```
+원래는 배열, 객체도 텍스트로 뭉개는데 
+JSON으로 바꾼 다음 넣고 뺄 때는 JSON.parse()로 풀어서 쓰면 배열, 객체 다시 됨.
+
+Local Storage에 넣었던거 수정하려면
+1. 자료 꺼냄
+2. 꺼낸거 수정
+3. 다시 넣음
+
+null 무시하는 문법
+```js
+var test = A || B;
+```
+A가 falsy (거짓 같은 값, 즉, null, undefined, 0, '' 등) 이면 B 반환
