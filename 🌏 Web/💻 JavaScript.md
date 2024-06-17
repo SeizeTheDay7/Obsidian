@@ -65,7 +65,7 @@ let result = names.join('>'); // '서울시>마포구>망원동'
 split : 쪼개기
 join : 쪼개져 있는거 붙이
 
-### Arrow function 문법
+### 화살표 함수
 ```js
 const add = (a,b) => {
     return a + b;
@@ -79,6 +79,20 @@ const square = x => x*x;
 const add = (a,b) => a+b;
 ```
 
+<h4> 화살표 함수 객체 반환 방법</h4>
+1\. 명시적 return 사용
+```js
+const getObject = () => {
+  return { value: 1 }; // 객체를 반환하기 위해 return을 사용
+};
+```
+
+2\. 소괄호 사용
+```js
+const getObject = () => ({ value: 1 }); // 소괄호로 객체를 감싸서 반환
+```
+
+소괄호 안 쓰고 객체 반환하면 함수로 잘못 해석됨.
 
 ## Web
 
