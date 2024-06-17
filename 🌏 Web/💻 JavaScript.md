@@ -167,38 +167,38 @@ false면 캐시에서 다시 로드함.
 
 ### 이벤트 메서드
 
+요소 클릭할 때 실행
 ```js
 $('#element').click(function() {});
 ```
-요소 클릭할 때 실행
 
+요소 포커스 받을 때 실행
 ```js
 $('#input').focus(function() {});
 ```
-요소 포커스 받을 때 실행
 
+요소 포커스 읽을 때 실행
 ```js
 $('#input').blur(function() {});
 ```
-요소 포커스 읽을 때 실행
 
+사용자가 스크롤할 때 실행
 ```js
 $('#input').scroll(function() {});
 ```
-사용자가 스크롤할 때 실행
 
+폼이 제출될 때 실행
 ```js
 $('form').submit(function(event) {
   event.preventDefault(); // 폼 제출을 막음
   // 폼 제출 시 실행할 코드
 });
 ```
-폼이 제출될 때 실행
 
+폼 요소가 변경될 때 실행
 ```js
 $('#input').change(function() {});
 ```
-폼 요소가 변경될 때 실행
 
 ### 값 인출, 입력, 삭제
 ```javascript

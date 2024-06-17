@@ -497,7 +497,7 @@ margin-left: 100px;
 ## 부트스트랩
 <hr>
 
-### `container` 클래스의 주요 기능과 효과
+### container 클래스의 주요 기능과 효과
 
 1. **중앙 정렬**:
     
@@ -508,6 +508,23 @@ margin-left: 100px;
 3. **반응형 레이아웃**:
     
     - `container` 클래스는 미디어 쿼리를 사용하여 다양한 디바이스 크기에 맞게 너비가 자동으로 조정됩니다. 이를 통해 모바일, 태블릿, 데스크탑 등 다양한 화면 크기에서 적절한 레이아웃을 유지할 수 있습니다.
+
+### 컨테이너 (Container)
+
+- `.container`: 고정 폭의 중앙 정렬된 컨테이너
+- `.container-fluid`: 100% 너비의 컨테이너
+- `.container-{breakpoint}`: 특정 뷰포트 너비에서 고정 폭 중앙 정렬된 컨테이너 (예: `.container-sm`, `.container-md` 등)
+
+### 행 (Row)
+
+- `.row`: 그리드 시스템의 기본 행 클래스
+
+### 열 (Column)
+
+- `.col`: 자동 크기 열
+- `.col-{number}`: 고정 크기 열 (예: `.col-1` ~ `.col-12`)
+- `.col-{breakpoint}-{number}`: 특정 뷰포트 크기에서 고정 크기 열 (예: `.col-sm-1` ~ `.col-sm-12`, `.col-md-1` ~ `.col-md-12` 등)
+- `.col-{breakpoint}-auto`: 특정 뷰포트 크기에서 자동 크기 열 (예: `.col-sm-auto`, `.col-md-auto` 등)
 
 ### 색상 (Colors)
 

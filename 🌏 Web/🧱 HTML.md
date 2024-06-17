@@ -1,11 +1,26 @@
-- [[#`<div>`류 태그들|`<div>`류 태그들]]
+- [[#외부 라이브러리 링크|외부 라이브러리 링크]]
+- [[#Semantic Tag|Semantic Tag]]
+- [[#div류 태그|div류 태그]]
+- [[#table|table]]
 - [[#목록 태그|목록 태그]]
-- [[#`<form>` 태그|`<form>` 태그]]
-	- [[#`<form>` 태그#`<input>` 태그|`<input>` 태그]]
-	- [[#`<form>` 태그#`<select>` 태그|`<select>` 태그]]
+- [[#form|form]]
+	- [[#form#input|input]]
+	- [[#form#select|select]]
+
+## 외부 라이브러리 링크
+
+Bootstrap
+```html
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+```
+
+jQuery
+```html
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+```
 
 
-## 대표적인 Semantic Tag
+## Semantic Tag
 ![[Pasted image 20240615192622.png]]
 [출처](https://pozafly.github.io/html/semantic-web/)
 
@@ -18,7 +33,7 @@
 - `<footer>` : 웹 페이지의 가장 하단에 있다. 웹 사이트 하단에 회사 정보나 약관 정보, 사이트 맵, 소셜 미디어 링크 등의 콘텐츠를 표시하는 것에 사용.
 
 
-## `<div>`류 태그들
+## div와 비슷한
 <hr>
 
 `<nav>` : 네비게이션 바
@@ -27,7 +42,7 @@
 `<article>` : 독립적으로 의미가 완전한 컨텐츠
 
 
-## `<table>` 태그
+## table
 <hr>
 
 ```html
@@ -83,7 +98,7 @@
 `<dfn>` : 현재 정의하고 있는 용어; *definition*
 
 
-## `<form>` 태그
+## form
 <hr>
 
 ```html
@@ -93,7 +108,7 @@
 
 태그 안에 감싸져 있는 `<input>`, `<select>`, `<textarea>` 안의 데이터를 서버로 보낸다.
 
-### `<input>` 태그
+### input
 
 `<form>` 태그로 서버에 데이터를 보낼 때 `<input>` 태그로 입력 영역을 만들 수 있다.
 
@@ -134,7 +149,7 @@
 | url            | 인터넷 주소 입력창을 만듭니다.                                            |
 | week           | 표준시간이 아닌 년, 주 입력 창을 만듭니다.                                    |
 
-### `<select>` 태그
+### select
 
 [정리글](https://thrillfighter.tistory.com/572)
 [정리글2](https://batcave.tistory.com/69)

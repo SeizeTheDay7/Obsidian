@@ -440,3 +440,173 @@ $('.slide-box').eq(0).on('mousemove', function(e) {
 })
 ```
 img에 draggable = "false" 줘야된다.
+
+json파일 불러오기
+```js
+$(document).ready(function() {
+  $.get('store.json')
+    .done(function(data) {
+      data.products.forEach((p)=> {
+        var title = p.title;
+        var price = p.price;
+      })    
+    })
+})
+```
+
+
+## 드래그 & 드랍 이벤트
+
+[참고](inpa.tistory.com/entry/드래그-앤-드롭-Drag-Drop-기능)
+
+jquery 쓰면 event 객체 쓸 때 originalEvent 붙여야 해서 오히려 불편하다.
+평범하게 adEventListener로 붙이는게 나은듯.
+
+| **이벤트 순서 ↓** | **설명**                                                                             |
+| ------------ | ---------------------------------------------------------------------------------- |
+| dragstart    | 1. 사용자가 객체(object)를 드래그하려고 시작할 때 발생함.                                              |
+| drag         | 2. 대상 객체를 드래그하면서 마우스를 움직일 때 발생함.                                                   |
+| dragenter    | 3. 마우스가 대상 객체의 위로 처음 진입할 때 발생함.                                                    |
+| dragover     | 4. 드래그하면서 마우스가 대상 객체의 영역 위에 자리 잡고 있을 때 발생함.                                        |
+| drop         | 5. 드래그가 끝나서 드래그하던 객체를 놓는 장소에 위치한 객체에서 발생함. <br>리스너는 드래그된 데이터를 가져와서 드롭 위치에 놓는 역할을 함 |
+| dragleave    | 6. 드래그가 끝나서 마우스가 대상 객체의 위에서 벗어날 때 발생함.                                             |
+| dragend      | 7. 대상 객체를 드래그하다가 마우스 버튼을 놓는 순간 발생함.                                                |
+
+dragstart : 드래그가 시작될 때
+```js
+const dragItem = document.getElementById('drag1');
+const dropZone = document.getElementById('dropzone');
+
+dragItem.addEventListener('dragstart', (e) => {
+  e.dataTransfer.setData('text/plain', e.target.id);
+  e.dataTransfer.effectAllowed = 'move';
+});
+```
+
+dragenter : 드래그 요소가 목표 영역에 들어왔을 때
+```js
+dropZone.addEventListener('dragenter', (e) => {
+  e.preventDefault();
+  dropZone.style.backgroundColor = 'lightgreen';
+});
+```
+
+dragleave : 드래그 요소가 목표 영역을 떠났을 때
+```js
+dropZone.addEventListener('dragleave', (e) => {
+  dropZone.style.backgroundColor = 'lightblue';
+});
+```
+
+dragover : 드래그 요소가 목표 영역 위에 있을 때
+```js
+dropZone.addEventListener('dragover', (e) => {
+  e.preventDefault();
+  e.dataTransfer.dropEffect = 'move';
+});
+```
+
+drop : 드래그 요소가 목표 영역에 놓였을 때
+```js
+dropZone.addEventListener('drop', (e) => {
+  e.preventDefault();
+  const id = e.dataTransfer.getData('text');
+  const draggedElement = document.getElementById(id);
+  dropZone.appendChild(draggedElement);
+  dropZone.style.backgroundColor = 'lightblue';
+});
+```
+
+>[!note] event.preventDefault 사용 이유
+>기본적으로 HTML 요소는 다른 요소의 위에 위치할 수 없다. 따라서 다른 요소 위에 위치할 수 있도록 만들기 위해서는 놓일 장소에 있는 요소의 기본 동작을 막아야만 한다. 이 작업을 event.preventDefault 메소드를 호출하는 것만으로 간단히 설정할 수 있다.
+
+### dataTransfer
+
+dataTransfer 객체는 드래그 앤 드롭 동작 동안 데이터를 전달하는 데 사용
+
+- **setData(format, data)**: 드래그하는 동안 전송할 데이터를 설정. `format`은 데이터 형식을 지정하고, `data`는 전송할 실제 데이터를 지정. 예를 들어, `e.dataTransfer.setData('text/plain', 'Hello, World!')`는 텍스트 형식의 데이터를 설정.
+- **getData(format)**: 드롭 시 전달된 데이터를 가져옴. `format`은 데이터를 설정할 때 사용된 형식을 지정. 예를 들어, `e.dataTransfer.getData('text/plain')`은 설정된 텍스트 데이터를 가져옴.
+
+**text/plain**: 텍스트 형식. 순수 텍스트 데이터를 전달할 때 사용합니다.
+```javascript
+e.dataTransfer.setData('text/plain', 'Hello World');
+```
+
+**text/html**: HTML 형식. HTML 문자열을 전달할 때 사용합니다.
+```js
+e.dataTransfer.setData('text/html', '<p>Hello World</p>');
+```
+
+**text/uri-list**: URI 목록 형식. URI 목록을 전달할 때 사용합니다.
+```js
+e.dataTransfer.setData('text/uri-list', 'http://example.com');
+```
+
+**application/json**: JSON 형식. JSON 데이터를 전달할 때 사용합니다.
+```js
+e.dataTransfer.setData('application/json', JSON.stringify({ key: 'value' }));
+```
+
+**application/xml**: XML 형식. XML 데이터를 전달할 때 사용합니다.
+```js
+e.dataTransfer.setData('application/xml', '<note><to>User</to><message>Hello</message></note>');
+```
+
+**Files**: 파일 형식. 파일을 드래그 앤 드롭할 때 사용합니다. 파일 형식은 `setData`로 설정하지 않지만, `dataTransfer` 객체의 `files` 속성을 통해 액세스할 수 있습니다.
+```js
+var files = e.dataTransfer.files;
+```
+
+**Custom Formats**: 사용자 지정 형식. 커스텀 데이터를 전달할 때 사용합니다.
+```js
+e.dataTransfer.setData('application/x-my-custom-format', 'Custom Data');
+```
+
+### dropEffect
+
+dropEffect 속성은 드래그 앤 드롭 동작 동안 드롭할 때 발생할 동작을 설정. 이 속성은 드래그되는 동안 커서의 모양을 변경하여 사용자가 드롭이 어떻게 처리될지 시각적으로 알 수 있도록 함.
+
+- **`none`**: 드롭이 허용되지 않습니다.
+- **`copy`**: 드롭하면 데이터가 복사됩니다.
+- **`move`**: 드롭하면 데이터가 이동됩니다.
+- **`link`**: 드롭하면 데이터에 대한 링크가 생성됩니다.
+
+
+jQuery의 `$(document).on('event', 'selector', handler)` 메서드는 이벤트 위임(event delegation)이라는 기법을 사용하여 동적으로 추가된 요소에도 이벤트를 바인딩할 수 있게 해줍니다. 이를 통해 페이지 로드 이후에 추가되거나 변경된 요소에도 동일한 이벤트를 적용할 수 있습니다.
+
+```js
+$(document).on('click', '.dynamic-button', function() {
+    alert('Button clicked!');
+});
+```
+
+위 코드에서는 `.dynamic-button` 클래스를 가진 버튼 요소에 클릭 이벤트를 바인딩하고 있습니다. 이 방식의 장점은 `.dynamic-button` 요소가 나중에 동적으로 추가되더라도 클릭 이벤트가 정상적으로 동작한다는 것입니다.
+
+
+
+include
+```js
+let str = "Hello, world!";
+if (str.includes("world")) {
+  // "world"가 str에 포함되어 있는 경우 실행할 코드
+}
+
+let arr = [1, 2, 3, 4, 5];
+if (arr.includes(3)) {
+  // 3이 arr에 포함되어 있는 경우 실행할 코드
+}
+```
+배열이나 문자열에 특정값이 포함되어 있는지를 확인
+
+contains(jquery)
+```js
+const titleSelector = `.card-title:contains("${data.title}")`;
+if ($(titleSelector).length > 0) {
+ // 특정 제목을 가진 카드가 존재한다면 실행할 코드
+}
+```
+특정 텍스트를 포함하는 요소를 선택할 때 사용함.
+텍스트가 요소 내 어디에 있든 관계없이 선택됨.
+
+
+jquery 요소 순회는 foreach가 아니라 each로 해줘야 함

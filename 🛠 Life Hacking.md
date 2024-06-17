@@ -61,6 +61,22 @@ win+방향키 : 화면 절반으로 정리
 - 목차 만들기 : ## 뒤에 제목 적고 Ctrl+p → tables of content : create ~
 
 
+<hr>
+## vscode copilot 단축키 정리
+
+| 명령어              | Keybinding   |
+| ---------------- | ------------ |
+| Copilot 활성화/비활성화 | Shift + Q    |
+| 설명 요청            | Shift + E    |
+| 고치기 요청           | Shift + F    |
+| 테스트 생성           | Shift + T    |
+| 코드 생성            | Shift + G    |
+| 다음 제안으로          | Shift + D    |
+| 이전 제안으로          | Shift + A    |
+| 제안 전체 보기         | Ctrl + Enter |
+| 인라인 제안 생성        | Shift + V    |
+
+
 
 <hr>
 ## vscode 단축키 정리
