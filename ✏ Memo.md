@@ -20,6 +20,11 @@ css : material
 - EmailJS : Gmail 서버 빌려서 이메일 전송
 - Lodash : array, object, 문자, 숫자 자료를 다루기 편해지는 기본 함수 제공
 - Fullpage.js : 웹페이지를 PPT처럼 만들어줌 (유행지나긴함)
+- Hammer.js
+	- touch랑 click 동시에 구현해줌
+	- 브라우저간 호환성 잡아줌
+	- 이벤트리스너 6개 말고 1개만 필요
+	- 스와이프, pinch, rotate 이벤트리스너도 제공
 
 >[!note] 직원 선발 기준과 직무 성과의 상관성
 

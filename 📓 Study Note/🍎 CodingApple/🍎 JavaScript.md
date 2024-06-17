@@ -413,3 +413,30 @@ var test = A || B;
 ```
 A가 falsy (거짓 같은 값, 즉, null, undefined, 0, '' 등) 이면 B 반환
 
+마우스 관련 이벤트 : onclick 또는 on에 넣는다
+mousedown (어떤 요소에 마우스버튼 눌렀을 때) 
+mouseup (어떤 요소에 마우스버튼 뗐을 때)
+mousemove (어떤 요소위에서 마우스 이동할 때)
+
+모바일에선 touch로 바꿔야 됨
+touchstart
+touchmove
+touchend
+
+이벤트 변수 달면 좌표도 알 수 잇다
+```js
+$('.slide-box').eq(0).on('mousemove', function(e) {
+  console.log(e.clientX);
+})
+```
+
+드래그 구현 방법
+```js
+$('.slide-box').eq(0).on('mousedown', function(e) {
+  시작좌표 = e.clientX;
+})
+$('.slide-box').eq(0).on('mousemove', function(e) {
+  console.log(e.clientX - 시작좌표);
+})
+```
+img에 draggable = "false" 줘야된다.
