@@ -382,7 +382,7 @@ float : none; 또는 clear: both;  // float 다음 요소에 주면 float로 발
 ```
 간격 조절하고 싶으면 `<div>`하나 넣고 거기에 `clear: both` 넣어주면 된다.
 
-### 그리드
+## 그리드
 <hr>
 
 <h4>예제 1 : template-columns</h4>
