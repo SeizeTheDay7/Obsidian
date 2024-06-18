@@ -87,6 +87,15 @@ A가 falsy (거짓 같은 값, 즉, null, undefined, 0, '' 등) 이면 B 반환
 | const | 불가능 | 불가능 | 블록 스코프 `{}`       |
 | var   | 가능  | 가능  | 함수 스코프 `function` |
 
+### this
+<hr>
+
+- **일반 함수**: 글로벌 객체에 바인딩
+- **메서드**: 메서드를 호출한 객체에 바인딩
+- **생성자 함수**: 생성할 인스턴스에 바인딩
+- **Apply, Call, Bind**: 첫 번째 인자로 전달한 객체에 바인딩
+- **이벤트 리스너**: currentTarget에 바인딩
+
 ### 배열 복사
 <hr>
 
@@ -483,6 +492,7 @@ e.dataTransfer.setData('application/x-my-custom-format', 'Custom Data'); // 기�
 
 HTTP 요청 보내는 Web API
 
+**GET**
 ```js
 fetch('url') // 기본적으론 GET 요청 수행
   .then(response => { // 응답 처리
@@ -501,7 +511,7 @@ fetch('url') // 기본적으론 GET 요청 수행
 fetch는 HTTP response 객체를 래핑한 Promise 객체를 반환.
 프로미스의 후속 처리 메서드인 then을 사용하여 resolve한 객체를 전달받을 수 있다.
 
-
+**POST**
 ```js
 fetch('https://api.example.com/data', {
   method: 'POST', // 요청 메서드
@@ -526,7 +536,33 @@ fetch('https://api.example.com/data', {
   console.error('파일을 로드하는 데 실패했습니다:', error);
 });
 ```
-fetch는 post도 할 수 있고 다재다능 ([참고](velog.io/@eunjin/JavaScript-fetch-함수-쓰는-법-fetch-함수로-HTTP-요청하는-법))
+
+**PUT**
+```js
+fetch("https://jsonplaceholder.typicode.com/posts", {
+  method: "PUT",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    title: "Test",
+    body: "I am testing!",
+    userId: 1,
+  }),
+})
+  .then((response) => response.json())
+  .then((data) => console.log(data))
+```
+
+**DELETE**
+```js
+fetch("https://jsonplaceholder.typicode.com/posts/1", {
+  method: "DELETE",
+})
+  .then((response) => response.json())
+  .then((data) => console.log(data))
+```
+
 
 ### window.location
 <hr>
