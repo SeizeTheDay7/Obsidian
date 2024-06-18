@@ -1,18 +1,39 @@
 - [[#General|General]]
-- [[#맨 처음 선언할만한 스타일|맨 처음 선언할만한 스타일]]
+- [[#시작할 때 선언해놓으면 좋은 것들|시작할 때 선언해놓으면 좋은 것들]]
 - [[#CSS 선택자|CSS 선택자]]
 - [[#CSS 변수 선언|CSS 변수 선언]]
-- [[#테이블 테두리 둥글게 만들기|테이블 테두리 둥글게 만들기]]
-- [[#배경 관련 속성|배경 관련 속성]]
 - [[#CSS 상대 단위|CSS 상대 단위]]
-- [[#중앙 정렬하는 방법|중앙 정렬하는 방법]]
+- [[#CSS 덮어쓰는 법|CSS 덮어쓰는 법]]
+- [[#외부 폰트 사용 방법|외부 폰트 사용 방법]]
+- [[#숨겨진 요소에 스타일 주기|숨겨진 요소에 스타일 주기]]
+- [[#테이블 테두리 둥글게 만들기|테이블 테두리 둥글게 만들기]]
+- [[#가운데 정렬하는 방법|가운데 정렬하는 방법]]
+- [[#div 가로로 정렬 (float)|div 가로로 정렬 (float)]]
+	- [[#div 가로로 정렬 (float)#그리드|그리드]]
+- [[#pseudo-class|pseudo-class]]
+- [[#media query|media query]]
 - [[#속성|속성]]
 	- [[#속성#inline, block, inline-block의 차이|inline, block, inline-block의 차이]]
 	- [[#속성#vertical-align|vertical-align]]
+	- [[#속성#배경 관련 속성|배경 관련 속성]]
 	- [[#속성#background-size|background-size]]
+	- [[#속성#overflow|overflow]]
 	- [[#속성#margin|margin]]
 	- [[#속성#Position|Position]]
 	- [[#속성#::before와 ::after|::before와 ::after]]
+- [[#애니메이션|애니메이션]]
+	- [[#애니메이션#one-way 애니메이션|one-way 애니메이션]]
+- [[#transition 세부 속성|transition 세부 속성]]
+	- [[#transition 세부 속성#@keyframe|@keyframe]]
+	- [[#transition 세부 속성#animation 세부 속성|animation 세부 속성]]
+	- [[#transition 세부 속성#호버 애니메이션 : 올리면 어두워짐|호버 애니메이션 : 올리면 어두워짐]]
+	- [[#transition 세부 속성#애니메이션 성능 개선|애니메이션 성능 개선]]
+- [[#Sass|Sass]]
+	- [[#Sass#변수 문법 : 어려운 단어, 숫자 기억|변수 문법 : 어려운 단어, 숫자 기억]]
+	- [[#Sass#nesting 문법 : 관련있는 class들 묶기|nesting 문법 : 관련있는 class들 묶기]]
+	- [[#Sass#@extend : 중복된 스타일 묶기|@extend : 중복된 스타일 묶기]]
+	- [[#Sass#@mixin : 긴 코드를 짧은 단어로 축약|@mixin : 긴 코드를 짧은 단어로 축약]]
+	- [[#Sass#@use : 다른 파일에 있는 내용 가져옴|@use : 다른 파일에 있는 내용 가져옴]]
 - [[#Flexbox|Flexbox]]
 	- [[#Flexbox#justify-content : 요소를 가로선 상에서 정렬|justify-content : 요소를 가로선 상에서 정렬]]
 	- [[#Flexbox#align-items : 요소를 세로선 상에서 정렬|align-items : 요소를 세로선 상에서 정렬]]
@@ -46,6 +67,7 @@
 	- [[#Bugs#border로 이미지 가리는 애니메이션 줄 때 테두리 어색함|border로 이미지 가리는 애니메이션 줄 때 테두리 어색함]]
 	- [[#Bugs#부트스트랩 col 사이에 gap이 안 주어짐|부트스트랩 col 사이에 gap이 안 주어짐]]
 	- [[#Bugs#transform: scale 주면 텍스트가 도망감|transform: scale 주면 텍스트가 도망감]]
+	- [[#Bugs#폰트가 깨짐|폰트가 깨짐]]
 
 
 
@@ -62,7 +84,13 @@
 
 - 애니메이션 줄 땐 `display: none`보다는 `visibility: hidden` 쓰는게 좋다
 
+- 뼈대 클래스와 살점 클래스(background-color 등)로 나눠서 묶기
+- font-size같은거 utility class로 선언해두기
+
 - `<button>`에 cursor: pointer; css 주면 마우스 갖다대면 커서 바뀜
+
+- a 태그에 text-decoration: none; 적용하면 링크 아래에 있는 밑줄제거
+
 
 <h4>ul 스타일</h4>
 ```css
@@ -193,6 +221,68 @@ div {
 ```
 변수 맨 앞에 `--`를 붙이면 변수 선언 된다. 변수 호출할 땐 var(변수명) 으로 사용한다.
 
+## CSS 상대 단위
+<hr>
+
+<h4> vh, vw, vmin : 화면 전체 상대 길이</h4>
+`vh` : viewport height (100이 최대)
+`vw` : viewport width
+`vmin` : viewport minimum, 뷰포트의 높이와 너비 중 더 작은 길이
+(%는 부모 요소의 길이에 연관됨)
+
+<h4>em, rem : font-size 기준 크기</h4>
+[정리글](https://www.daleseo.com/css-em-rem/)
+
+<h4>계산 방식</h4>
+1em = 16 px x 1 = 16px
+2em = 16 px x 2 = 32px
+
+`em` : 해당 단위가 사용되고 있는 요소의 font-size 값 기준 (font-size는 부모에게 상속받을 수 있음)
+`rem` : 루트 요소 `<html>` 의 font-size 기준
+
+## CSS 덮어쓰는 법
+<hr>
+
+css 덮어쓰기 하려면
+1. 그냥 같은 클래스명 하단에 쓰기
+2. 우선순위 높이기 (class는 10점, id는 100점, 인라인 style=""은 1000점, !important 붙은건 무조건 10000점) (비추)
+3. specificity 높이기 (.class1 .class1-1는 20점, div.class1 class1-1은 21점) (셀렉터 길게 특정하면 미래에 덮어쓰기 힘드니 짧게 쓰면 좋은듯)
+
+
+## 외부 폰트 사용 방법
+<hr>
+
+```css
+@font-face {
+  font-family : '이쁜폰트';
+  src : url(./font/NanumSquareR.woff);
+}
+@font-face {
+  font-family : '이쁜폰트';
+  font-weight : 800;
+  src : url(./font/NanumSquareB.woff);
+}
+```
+css 파일 최상단에 @font-face 라는 명령어를 넣고, url() 안에 적용할 폰트의 경로와 이름 적기.
+클래스에서 font-family: '이쁜폰트' 사용하면 해당 폰트 적용해줌.
+'이쁜폰트' 쓸 때 font-weight 800 주면 굵은 폰트 따로 적용됨.
+
+용량 줄이려면 .woff 쓰셈
+
+
+## 숨겨진 요소에 스타일 주기
+
+크롬 설정에서 'Show user agent shadow DOM' 체크하고 html 확인하면 숨겨져있던게 보인다.
+거기 붙어있는 속성 중에 pseudo="-webkit-file-upload-button" 이런거 있는데 
+```
+input[type="file"]::-webkit-file-upload-button {
+  display: none;
+}
+```
+이렇게 스타일을 주면 된다. 참고로 -webkit-은 크롬에서만 적용되는 스타일이라는 뜻.
+
+input type="range"같은건 개발자 도구로 검사해봐도 뭐 안 나오는데 그럴 땐 아래에 있는 user agent stylesheet(브라우저 기본 css) 찾아보면 나온다. 따로 스타일 적용하고 싶으면 apperance: none; 전부 다 줘야됨
+
 
 ## 테이블 테두리 둥글게 만들기
 <hr>
@@ -230,39 +320,6 @@ table {
   box-shadow : 0 0 0 1px #666;
 }
 ```
-
-
-## 배경 관련 속성
-<hr>
-
-```css
-background-image: url(../img/shoes.jpg);
-background-size: cover;  /* 이미지 크기에 맞게 조절 */
-background-repeat: no-repeat; /* 이미지 반복 없음 */
-background-position: center; /* 이미지 중앙에 위치 */
-background-attachment: fixed; /* 스크롤 시 이미지 고정 */
-filter: brightness(70%); /* 이미지 어둡게 */
-```
-
-
-## CSS 상대 단위
-<hr>
-
-<h4> vh, vw, vmin : 화면 전체 상대 길이</h4>
-`vh` : viewport height (100이 최대)
-`vw` : viewport width
-`vmin` : viewport minimum, 뷰포트의 높이와 너비 중 더 작은 길이
-(%는 부모 요소의 길이에 연관됨)
-
-<h4>em, rem : font-size 기준 크기</h4>
-[정리글](https://www.daleseo.com/css-em-rem/)
-
-<h4>계산 방식</h4>
-1em = 16 px x 1 = 16px
-2em = 16 px x 2 = 32px
-
-`em` : 해당 단위가 사용되고 있는 요소의 font-size 값 기준 (font-size는 부모에게 상속받을 수 있음)
-`rem` : 루트 요소 `<html>` 의 font-size 기준
 
 
 ## 가운데 정렬하는 방법
@@ -315,7 +372,9 @@ position: absolute 붙은 요소 가운데 정렬
   width: 200px;
 ```
 
-### div 가로로 정렬하는 법 (float)
+## div 가로로 정렬 (float)
+<hr>
+
 ``` css
 float: left; // 왼쪽으로 정렬해주셈. 
 // 기본 레이아웃 흐름에서 벗어나 요소의 모서리가 페이지의 왼쪽이나 오른쪽으로 이동함.
@@ -323,11 +382,94 @@ float : none; 또는 clear: both;  // float 다음 요소에 주면 float로 발
 ```
 간격 조절하고 싶으면 `<div>`하나 넣고 거기에 `clear: both` 넣어주면 된다.
 
+### 그리드
+<hr>
 
-### 마우스 관련 pseudo-class
+<h4>예제 1 : template-columns</h4>
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  grid-gap: 10px;
+}
+.grid-container div {
+  border: 1px solid black;
+}
 
-`<button>`에 cursor: pointer; css 주면 마우스 갖다대면 커서 바뀜
+<div class="grid-container">
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</div>
+```
 
+- fr 써서 프레임 단위로 폭 지정 가능하다 (rows는 height가 있어야 fr으로 지정 가능)
+- grid-gap으로 격자 사이 간격 지정 
+
+<h4>예제 2 : column</h4>
+```css
+.grid-nav {
+  grid-column: 1/5;
+}
+
+<div class="grid-container">
+	<div class="grid-nav"></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</div>
+```
+
+grid-column : 세로선 1 ~ 4 만큼 차지해주세요
+gird-row : 가로선을 차지해주세요
+
+<h4>예제 3 : area</h4>
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-areas :
+	"헤더 헤더 헤더 헤더"
+	"사이드 . . . "
+	"사이드 . . . "
+}
+.grid-nav {
+  grid-area: 헤더;
+}
+.grid-sidebar {
+  grid-area: 사이드;
+}
+
+<div class="grid-container">
+	<div class="grid-nav"></div>
+	<div class="grid-sidebar"></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</div>
+```
+
+<h4>그리드 안에 있는거 안 빠져나오게 하는법</h4>
+```css
+.grid-container2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+```
+
+## pseudo-class
+<hr>
 
 ```css
 .btn:hover{
@@ -337,6 +479,29 @@ float : none; 또는 clear: both;  // float 다음 요소에 주면 float로 발
 :hover : 마우스 올릴 때 스타일
 :active : 클릭 중 스타일은
 :focus : 커서 찍혀있을 때 스타일은 :focus
+
+:link : 방문 전 링크 스타일
+:visited : 방문 후 링크 스타일
+
+## media query
+<hr>
+
+```css
+@media screen and (max-width: 1200px){
+  .main-title {
+    font-size: 20px;
+  }
+}
+```
+css 파일 맨 아래에 적어주자
+
+1200 이하로 작아지면 글씨 크기 작아지게 하는 방법
+여러개 쓰면 크기 구간 별 설정 가능
+
+(참고) breakpoint 기준 px값은 다른사람 따라하는 걸 권장
+1200px / 992px / 768px / 576px 단위들을 많이 사용함
+1200px 이하는 태블릿, 768px 이하는 모바일
+
 
 
 ## 속성
@@ -371,8 +536,21 @@ vertical-align: super/sub : 위첨자 아래첨자
 2. `<table>` 태그의 `<th>`,`<td>`,`<tr>` 텍스트 정렬 (top, middle, bottom만 됨)
 
 
+### 배경 관련 속성
+<hr>
+
+```css
+background-image: url(../img/shoes.jpg);
+background-size: cover;  /* 이미지 크기에 맞게 조절 */
+background-repeat: no-repeat; /* 이미지 반복 없음 */
+background-position: center; /* 이미지 중앙에 위치 */
+background-attachment: fixed; /* 스크롤 시 이미지 고정 */
+filter: brightness(70%); /* 이미지 어둡게 */
+```
+
 ### background-size
 <hr>
+
 ![](Pasted%20image%2020240427184239.png)
 
 | **속성**      | **설명**                               |
@@ -386,6 +564,13 @@ vertical-align: super/sub : 위첨자 아래첨자
 `background-size: cover` 빈 공간 없이 배경으로 꽉 채워라
 `background-size: contain` 배경 짤리면 안된다
 
+
+### overflow
+<hr>
+
+overflow : hidden은 넘치는 부분을 잘라 없애주고
+overflow : visible은 넘치는 부분을 그대로 보여주고
+overflow : scroll은 넘치는 요소를 보기 위한 스크롤바 생김
 
 ### margin
 <hr>
@@ -463,6 +648,8 @@ margin-left: 100px;
 | absolute | position: relative를 가진<br>부모(조상) 요소를 기준으로 배치 |
 | fixed    | 뷰포트 기준으로 배치                                  |
 | sticky   | 스크롤 영역 기준으로 배치                               |
+position : sticky는 조건부로 poisition : fixed가 됨.
+스크롤하다가 만났을 때 부모 요소 끝날때까지 고정됨.
 
 | CSS 속성 | 설명                                    |
 | ------ | ------------------------------------- |
@@ -490,12 +677,212 @@ margin-left: 100px;
 | attr    | 해당속성의 속성값 표시                  |
 
 
+## 애니메이션
+
+### one-way 애니메이션
+<hr>
+
+1. 시작 스타일 만들기
+2. 최종스타일 만들기
+3. 언제 최종스타일로 변하는지 지정
+4. transition으로 애니메이션
+
+## transition 세부 속성
+<hr>
+
+```css
+.box {
+  transition-delay: 1s; /* 시작 전 딜레이 */
+  transition-duration: 0.5s; /* transition 작동 속도 */
+  transition-property: opacity; /* 어떤 속성에 transition 입힐건지 */
+  transition-timing-function: ease-in; /* 동작 속도 그래프조정 */
+}
+```
+
+### @keyframe
+<hr>
+
+```css
+@keyframes 왔다갔다 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.ani-text:hover {
+  animation: 왔다갔다 1s infinite;
+}
+```
+@keyframe으로 복잡한 애니메이션 정의 가능
+
+infinite : 애니메이션 계속 반복
+forwards : 애니메이션 결과 유지
+
+### animation 세부 속성
+<hr>
+
+```css
+.box:hover {
+  animation-name : 움찔움찔;
+  animation-duration : 1s;
+  animation-timing-function : linear; /*베지어 주기*/
+  animation-delay : 1s; /*시작 전 딜레이*/
+  animation-iteration-count : 3; /*몇회 반복할것인가*/
+  animation-play-state : paused;  /*애니메이션을 멈추고 싶은 경우 자바스크립트로 이거 조정*/
+  animation-fill-mode: forwards;  /*애니메이션 끝난 후에 원상복구 하지말고 정지*/
+}
+```
+
+
+### 호버 애니메이션 : 올리면 어두워짐
+<hr>
+
+img 위에 div 하나 추가하고 부모 요소에는 style="position: relative" 추가, 
+까매질 div(width: 100%)에는 position: absolute 추가. 이렇게 하면 일단 덮긴 한다. 
+원래 img랑 크기 살짝 차이나는데 이건 img에 display: block; 주면 된다. 
+이제 div에 opacity: 0.5 추가하거나 rgba(0,0,0,0.5) 추가(이렇게 하면 opacity는 0부터 1까지로)
+div클래스명:hover에 opacity: 1 추가하면 마우스 올릴 때 까매짐
+아직까진 애니메이션이 아니니까 div에 transition: all 1s; 추가하면 "뭐 변하면 1초에 걸쳐 변경"
+div에 transition-timing-function 추가하면 바뀌는 속도 조절할 수 있음 
+
+
+### 애니메이션 성능 개선
+<hr>
+
+<h4>will-change</h4>
+```
+.box {
+  will-change: transform;
+} 
+```
+
+애니메이션을 주는 .box가 약간 느리게 동작한다면 
+
+will-change : 애니메이션줄속성;
+
+이걸 써놓으면 성능개선이 가능합니다. 바뀔 내용을 미리 렌더링해주는 속성이라 그렇습니다.
+뭔가 이상하게 버벅일 때만 쓰시고 애니메이션이 스무스하게 잘 된다면 쓸 이유는 없습니다.
+이상하게 많이 쓰면 브라우저 자체가 더 느려질 수 있습니다.
+
+[https://dev.opera.com/articles/ko/css-will-change-property/](https://dev.opera.com/articles/ko/css-will-change-property/)
+
+<h4>하드웨어 가속</h4>
+애니메이션이 너무 많아 CPU만으로 전부 연산이 불가능하다면
+GPU의 도움을 받을 수도 있습니다.
+
+```
+.box {
+  transform: translate3d(0, 0, 0);
+}
+```
+
+transform : translate3d를 쓰면 3D 이동도 가능한데
+이 속성의 경우 GPU를 사용해서 연산하게 됩니다.
+그래서 translate3d(0, 0, 0) 이런 식으로 아무데도 움직이지 않는 3D 이동명령을 주고
+뒤에 필요한 transform을 더 적용한다면 
+GPU를 이용해서 .box가 가진 transform 속성들을 연산할 수 있습니다. 
+꼭 써야하는건 아니고 뭔가 느리게 동작한다면 써볼 수 있는 것들입니다.
+
+
+## Sass
+
+.scss와 .sass 파일의 차이 : .sass는 괄호 없어도 Indent 넣으면 됨
+
+### 변수 문법 : 어려운 단어, 숫자 기억
+<hr>
+
+```scss
+$메인칼라 : #2a4cb2;
+$서브칼라 : #eeeeee;
+$기본사이즈 : 16px;
+
+.background {
+  background-color: $메인칼라;
+  font-size: ($기본사이즈 - 2px);
+}
+```
+
+### nesting 문법 : 관련있는 class들 묶기
+<hr>
+
+```scss
+.main-bg h4 {
+
+}
+
+.main-bg {
+  h4 {
+
+  }
+  button {
+    
+  }
+}
+```
+2개 이상 중첩 굳이 ㄴㄴ
+
+### @extend : 중복된 스타일 묶기
+<hr>
+
+```scss
+%btn {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+.btn-green {
+  @extend %btn;
+  color: green;
+}
+```
+중복된 스타일들을 묶어서 %임시클래스명 만듬  (% 빼도 되긴 한데 임시 클래스는 extend 안되면 단독으로 컴파일되지 않음)
+
+### @mixin : 긴 코드를 짧은 단어로 축약
+<hr>
+
+```scss
+@mixin 작명($구멍, $구멍2, $구멍3) {
+	font-size: $구멍;
+	letter-spacing: $구멍2;
+	#{ $구멍3 }: -1px;
+}
+
+h2 {
+	@include 폰트스타일(40px, 1px, width)
+}
+```
+
+$파라미터 : 긴 코드를 가변적으로 만들 때 씀
+글자 중간에 $변수나 $파라미터 넣을 땐 #{ $변수명 }
+
+### @use : 다른 파일에 있는 내용 가져옴
+<hr>
+
+```scss
+@use 'reset'; /* reset.scss에 있는 코드들 적용 */
+```
+
+@use '파일경로' : 다른 파일에 있는 내용 가져오고 싶을 때 씀
+
+종속된 scss 파일은 파일명에 언더바 `_` 붙여야 컴파일 안함.
+
+다른 파일의 @mixin 쓰려면 @include 파일명.mixin이름 (혹은 변수명)
+
+
 ## Flexbox
 <hr>
 
 [정리글](https://studiomeal.com/archives/197)
 
 ### justify-content : 요소를 가로선 상에서 정렬
+<hr>
 
 | 속성            | 효과            |
 | ------------- | ------------- |
@@ -506,6 +893,7 @@ margin-left: 100px;
 | space-around  | 요소 주위에 동일한 간격 |
 
 ### align-items : 요소를 세로선 상에서 정렬
+<hr>
 
 | 속성         | 효과                |
 | ---------- | ----------------- |
@@ -516,6 +904,7 @@ margin-left: 100px;
 | stretch    | 요소들을 컨테이너에 맞도록 늘림 |
 
 ### flex-direction : 정렬 방향 지정
+<hr>
 
 | 속성             | 효과               |
 | -------------- | ---------------- |
@@ -525,6 +914,7 @@ margin-left: 100px;
 | column-reverse | 아래에서 위로 정렬       |
 
 ### flex-wrap : 몇 줄에 걸쳐 정렬할지 지정
+<hr>
 
 | 속성           | 효과                   |
 | ------------ | -------------------- |
@@ -696,6 +1086,13 @@ margin-left: 100px;
 >[!bug]
 > `<link href="/css/main.css" rel="stylesheet">` 이러면 오류 생긴다
 > `<link href="css/main.css" rel="stylesheet">` 슬래시 빼줘야 함
+
+1. css/main.css
+2. /css/main.css
+
+1번은 현재 HTML파일과 같은 경로에 있는 css라는 폴더 내의 main.css 파일을 의미
+2번은 현재 사이트의 메인경로(test.com)부터 시작해서 test.com/css/main.css 파일을 첨부하라는 뜻
+
 ### margin collapse 현상
 >[!bug]
 >박스 2개 위쪽 테두리가 겹쳐지면 margin도 합쳐져서 설정 하나만 바꿔도 다른거 따라감.
@@ -751,3 +1148,11 @@ div 안에 또 div를 넣은 후에 글씨를 써야 함
   transform: scale(2);
   transform-origin: center;
 } 
+
+### 폰트가 깨짐
+```css
+p, h3, h3, h2, h1, span {
+	transform : rotate(0.03deg);
+} 
+```
+폰트 부드럽게 처리하려면 회전시켜보셈

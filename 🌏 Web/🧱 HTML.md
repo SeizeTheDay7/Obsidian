@@ -1,11 +1,21 @@
 - [[#외부 라이브러리 링크|외부 라이브러리 링크]]
+- [[#header에 넣는 태그들|header에 넣는 태그들]]
+	- [[#header에 넣는 태그들#meta 태그|meta 태그]]
+	- [[#header에 넣는 태그들#open graph|open graph]]
+	- [[#header에 넣는 태그들#favicon|favicon]]
+- [[#Awesomefont 아이콘|Awesomefont 아이콘]]
 - [[#Semantic Tag|Semantic Tag]]
-- [[#div류 태그|div류 태그]]
+- [[#div와 비슷한 태그들|div와 비슷한 태그들]]
 - [[#table|table]]
 - [[#목록 태그|목록 태그]]
 - [[#form|form]]
 	- [[#form#input|input]]
 	- [[#form#select|select]]
+- [[#태그에 데이터 숨기기|태그에 데이터 숨기기]]
+- [[#비디오 넣기|비디오 넣기]]
+- [[#오디오 넣기|오디오 넣기]]
+
+
 
 ## 외부 라이브러리 링크
 
@@ -20,6 +30,67 @@ jQuery
 ```
 
 
+## header에 넣는 태그들
+
+### meta 태그
+```html
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="html 잘하는 코딩애플입니다.">
+  <meta name="keywords" content="HTML,CSS,JavaScript,자바스크립트,코딩">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+```
+
+1. 사이트 인코딩 형식 지정 : charset="UTF-8"
+2. 사이트 검색 결과 화면에 뜨는 문구
+	- description : 구글 검색 시 파란 제목으로 뜨는 글귀
+	- keywords : 검색에 도움을 주는 키워드
+3. 사이트 초기  zoom 레벨이나 폭 지정 : name="viewport"
+	- width=device-width : 모바일 기기의 실제 폭으로 렌더링. 반응형 웹에 필요
+	- initial-scale : 접속 시의 화면 줌 레벨
+
+### open graph
+```html
+<head>
+  <meta property="og:image" content="/이미지경로.jpg">
+  <meta property="og:description" content="사이트설명">
+  <meta property="og:title" content="사이트제목">
+</head>
+```
+링크 공유할 때 썸네일 설정
+
+### favicon
+```
+<head> <link rel="icon" href="아이콘경로.ico" type="image/x-icon"> </head>
+```
+웹사이트 제목 옆에 뜨는 아이콘 커스터마이징
+- ico 대신 png 파일 가능. ico가 호환성은 가장 좋다. 
+- 32 x 32 사이즈로 제작하면 됨
+- 바탕화면 바로가기 아이콘 수정 : rel="apple-touch-icon-precomposed" 등 OS 별로 요구하는 속성이 다른데 favicon generator 검색해보면 OS별로 알아서 만들어줌
+
+
+## Awesomefont 아이콘
+
+awesomefont라는 라이브러리 쓰면 아이콘 쓸 수 있음
+```html
+<i class="fa-solid fa-star fa-3x"></i>
+```
+이런 거 복붙하면 됨
+
+```css
+.flex-test i {
+  background-color: burlywood;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  padding-top: 25px;
+  box-sizing: border-box;
+  color: white;
+}
+```
+이렇게 스타일 주면 원형 배경에 색깔도 줄 수 있는데, 가운데로 안 들어가면 부모 요소의 text-align 속성 center로 주면 됨. (그냥 flex로 가운데 맞춰버리기)
+
 ## Semantic Tag
 ![[Pasted image 20240615192622.png]]
 [출처](https://pozafly.github.io/html/semantic-web/)
@@ -33,7 +104,7 @@ jQuery
 - `<footer>` : 웹 페이지의 가장 하단에 있다. 웹 사이트 하단에 회사 정보나 약관 정보, 사이트 맵, 소셜 미디어 링크 등의 콘텐츠를 표시하는 것에 사용.
 
 
-## div와 비슷한
+## div와 비슷한 태그들
 <hr>
 
 `<nav>` : 네비게이션 바
@@ -171,8 +242,7 @@ jQuery
 </select>
 ```
 
-
-### 태그에 데이터 숨기기
+## 태그에 데이터 숨기기
 
 ```html
 <button data-자료이름="값"></button>
@@ -182,3 +252,36 @@ jQuery
 e.target.dataset.자료이름 // 바닐라 js로 추출
 e.target.data('자료이름') // jqeury로 추출
 ```
+
+
+## 비디오 넣기
+
+```html
+<video src="bridge.mp4" controls></video>
+
+/* 호환성 챙길 수 있음 (첫번째거 재생 안되면 두번째거 재생) */
+<video controls autoplay muted preload="none">
+  <source src="bridge.mp4" type="video/mp4">
+  <source src="birdge-m.webm" type="video/mp4">
+</video>
+```
+ 
+ controls : 재생됨 
+ autoplay muted : 자동 재생
+ poster="경로" : 썸네일 이미지
+ loop : 무한반복
+
+preload="none" 미리다운X
+preload="auto" 미리다운O
+preload="metadata" 미리다운 적당히
+
+
+## 오디오 넣기
+
+```html
+<audio src="bass.mp3" controls></audio>
+```
+
+muted : 음소거 상태로 시작
+autoplay : 자동재생인데 javascript 만져야 가능 
+preload : video와 동일
