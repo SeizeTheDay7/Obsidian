@@ -57,7 +57,8 @@ ul {
   padding-left: 0; /* 기본 패딩 제거 */
 }
 ```
-
+- UI에 애니메이션 추가할 때 JS 쓰면 성능 느려지니 가급적 CSS만으로 처리하는게 좋음
+- 애니메이션 줄 땐 `display: none`보다는 `visibility: hidden` 쓰는게 좋다
 ## 맨 처음 선언할만한 스타일
 <hr>
 

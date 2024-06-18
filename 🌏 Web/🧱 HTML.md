@@ -166,3 +166,13 @@ jQuery
 ```
 
 
+### 태그에 데이터 숨기기
+
+```html
+<button data-자료이름="값"></button>
+```
+
+```js
+e.target.dataset.자료이름 // 바닐라 js로 추출
+e.target.data('자료이름') // jqeury로 추출
+```
