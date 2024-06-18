@@ -1,8 +1,8 @@
 - [[#General|General]]
 - [[#맨 처음 선언할만한 스타일|맨 처음 선언할만한 스타일]]
 - [[#CSS 선택자|CSS 선택자]]
-- [[#테이블 테두리 둥글게 만들기|테이블 테두리 둥글게 만들기]]
 - [[#CSS 변수 선언|CSS 변수 선언]]
+- [[#테이블 테두리 둥글게 만들기|테이블 테두리 둥글게 만들기]]
 - [[#배경 관련 속성|배경 관련 속성]]
 - [[#CSS 상대 단위|CSS 상대 단위]]
 - [[#중앙 정렬하는 방법|중앙 정렬하는 방법]]
@@ -22,7 +22,10 @@
 	- [[#Flexbox#flex-grow : flexbox 내에서 차지하는 크기 지정|flex-grow : flexbox 내에서 차지하는 크기 지정]]
 	- [[#Flexbox#flex-shrink : flexbox 내에서 상대적으로 작아짐|flex-shrink : flexbox 내에서 상대적으로 작아짐]]
 - [[#부트스트랩|부트스트랩]]
-	- [[#부트스트랩#`container` 클래스의 주요 기능과 효과|`container` 클래스의 주요 기능과 효과]]
+	- [[#부트스트랩#container 클래스의 주요 기능과 효과|container 클래스의 주요 기능과 효과]]
+	- [[#부트스트랩#컨테이너 (Container)|컨테이너 (Container)]]
+	- [[#부트스트랩#행 (Row)|행 (Row)]]
+	- [[#부트스트랩#열 (Column)|열 (Column)]]
 	- [[#부트스트랩#색상 (Colors)|색상 (Colors)]]
 	- [[#부트스트랩#여백과 패딩 (Spacing)|여백과 패딩 (Spacing)]]
 	- [[#부트스트랩#여백 (Margin)|여백 (Margin)]]
@@ -45,32 +48,54 @@
 	- [[#Bugs#transform: scale 주면 텍스트가 도망감|transform: scale 주면 텍스트가 도망감]]
 
 
+
 ## General
 <hr>
 
 -  img 태그는 style 생략하고 `width="100%"` 이런 식으로 넣어도 된다
+
 -  화면 꽉 채우는 방법 : `min-height: 100vh`
-- ul 스타일
+
+- li에 display: inline-block 주면 가로로 정렬 가능
+
+- UI에 애니메이션 추가할 때 JS 쓰면 성능 느려지니 가급적 CSS만으로 처리하는게 좋음
+
+- 애니메이션 줄 땐 `display: none`보다는 `visibility: hidden` 쓰는게 좋다
+
+- `<button>`에 cursor: pointer; css 주면 마우스 갖다대면 커서 바뀜
+
+<h4>ul 스타일</h4>
 ```css
 ul {
   list-style-type: none; /* 리스트 스타일 없애기 */
   padding-left: 0; /* 기본 패딩 제거 */
 }
 ```
-- UI에 애니메이션 추가할 때 JS 쓰면 성능 느려지니 가급적 CSS만으로 처리하는게 좋음
-- 애니메이션 줄 땐 `display: none`보다는 `visibility: hidden` 쓰는게 좋다
-## 맨 처음 선언할만한 스타일
+
+
+> [!NOTE]
+> 레이아웃 전체를 감싸는 박스를 만들어두면 유용하다. 
+> class="container"인 박스 하나로 감싸고 시작하자. 
+> 이를 wrapper 박스, container 박스라고 한다.
+> 여기에 width를 지정해놓으면 브라우저 화면이 축소돼도
+> 내부 div 박스들이 찌그러지지 않는다.
+
+
+## 시작할 때 선언해놓으면 좋은 것들
 <hr>
 
 ```css
-table {
-  border-collapse: collapse; /* 테이블 틈 없애기 */
+html { 
+	line-height : 1.15; 
 }
 body {
   margin: 0;
 }
 div {
   box-sizing: border-box;
+}
+table {
+  border-collapse: collapse; /* 테이블 틈 없애기 */
 }
 ```
 
@@ -82,6 +107,16 @@ div {
 `width=device-width` : 웹 페이지의 너비를 장치 화면의 너비에 맞추도록 지정
 `initial-scale=1` : 웹 페이지의 초기 줌 레벨을 100%로 설정
 `shrink-to-fit=no` : iOS 9 이상에서 웹 페이지가 화면에 맞추어 렌더링되는 것을 방지
+
+자주 사용하는 글자 스타일들
+```css
+font-size : 20px; 
+font-family : 'gulim'; 
+color : black; 
+letter-spacing : -1px; 
+text-align : center; 
+font-weight : 600;
+```
 
 ## CSS 선택자
 <hr>
@@ -144,8 +179,19 @@ div {
 
 ```
 
+## CSS 변수 선언
+<hr>
 
+```css
+:root {
+	--main-font-color: #000f22;  /* CSS 전역 변수 선언 */
+}
 
+div {
+	left: calc(var(--left) * 1%);   /* CSS 변수 사용 */
+}
+```
+변수 맨 앞에 `--`를 붙이면 변수 선언 된다. 변수 호출할 땐 var(변수명) 으로 사용한다.
 
 
 ## 테이블 테두리 둥글게 만들기
@@ -186,21 +232,6 @@ table {
 ```
 
 
-## CSS 변수 선언
-<hr>
-
-```css
-:root {
-	--main-font-color: #000f22;  /* CSS 전역 변수 선언 */
-}
-
-div {
-	left: calc(var(--left) * 1%);   /* CSS 변수 사용 */
-}
-```
-변수 맨 앞에 `--`를 붙이면 변수 선언 된다. 변수 호출할 땐 var(변수명) 으로 사용한다.
-
-
 ## 배경 관련 속성
 <hr>
 
@@ -212,8 +243,6 @@ background-position: center; /* 이미지 중앙에 위치 */
 background-attachment: fixed; /* 스크롤 시 이미지 고정 */
 filter: brightness(70%); /* 이미지 어둡게 */
 ```
-`background-size: cover` 빈 공간 없이 배경으로 꽉 채워라
-`background-size: contain` 배경 짤리면 안된다
 
 
 ## CSS 상대 단위
@@ -236,7 +265,7 @@ filter: brightness(70%); /* 이미지 어둡게 */
 `rem` : 루트 요소 `<html>` 의 font-size 기준
 
 
-## 중앙 정렬하는 방법
+## 가운데 정렬하는 방법
 <hr>
 
 1.
@@ -246,7 +275,6 @@ translate(-50%, -50%)는 요소를 그의 X축과 Y축 위치에서 각각 50% �
 position: absolute와 함께 사용하면 부모 컨테이너 내 중앙에 정확히 위치시킬 수 있음.
 해당 개체 크기의 절반을 의미하는 것이기 때문. translateX(50%)를 사용하면 x축 위치만 변경.
 ```
-
 
 2.
 ``` CSS
@@ -270,6 +298,45 @@ flex-direction: column;
 	align-items: center;
 }
 ```
+
+이미지 가운데 정렬하는 방법
+```css
+display:block; // div,p, h 등은 block 속성을 이미 갖고 있어서 생략 가능
+margin-left: auto; 
+margin-right: auto;
+```
+
+position: absolute 붙은 요소 가운데 정렬
+```css
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+```
+
+### div 가로로 정렬하는 법 (float)
+``` css
+float: left; // 왼쪽으로 정렬해주셈. 
+// 기본 레이아웃 흐름에서 벗어나 요소의 모서리가 페이지의 왼쪽이나 오른쪽으로 이동함.
+float : none; 또는 clear: both;  // float 다음 요소에 주면 float로 발생하는 버그 해결
+```
+간격 조절하고 싶으면 `<div>`하나 넣고 거기에 `clear: both` 넣어주면 된다.
+
+
+### 마우스 관련 pseudo-class
+
+`<button>`에 cursor: pointer; css 주면 마우스 갖다대면 커서 바뀜
+
+
+```css
+.btn:hover{
+	background-color: chocolate;
+}
+```
+:hover : 마우스 올릴 때 스타일
+:active : 클릭 중 스타일은
+:focus : 커서 찍혀있을 때 스타일은 :focus
 
 
 ## 속성
@@ -315,6 +382,9 @@ vertical-align: super/sub : 위첨자 아래첨자
 | **cover**   | 지정한 요소를 다 덮도록 배경이미지를 확대/축소           |
 | **크기 값**    | 너비 값과 높이 값을 지정                       |
 | **백분율**     | 지정한 요소를 기준으로 백분율 값을 지정               |
+
+`background-size: cover` 빈 공간 없이 배경으로 꽉 채워라
+`background-size: contain` 배경 짤리면 안된다
 
 
 ### margin

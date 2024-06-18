@@ -120,6 +120,12 @@ jQuery
 ```
 `<input type="submit">`은 `<button type="submit">전송</button>`으로 대체 가능
 
+```html
+<input id="sub" type="checkbox">
+<label for="sub"> Subscribe</label>
+```
+이렇게 하면 "Subscribe" 누르면 체크박스도 같이 체크됨
+
 | type 속성  |                                                 |
 | -------- | ----------------------------------------------- |
 | text     | 기본값으로 한 줄의 텍스트 입력 칸을 만듭니다. (기본 너비 문자는 20입니다.)   |

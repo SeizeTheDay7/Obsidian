@@ -1,5 +1,5 @@
 이미지 가운데 정렬하는 방법
-```html
+```css
 display:block; // div,p, h 등은 block 속성을 이미 갖고 있어서 생략 가능
 margin-left: auto; 
 margin-right: auto;
@@ -9,7 +9,7 @@ margin-right: auto;
 **%** : 부모 사이즈에 비례한 크기
 
 자주 사용하는 글자 스타일들
-```html
+```css
 font-size : 20px; 
 font-family : 'gulim'; 
 color : black; 
@@ -17,9 +17,6 @@ letter-spacing : -1px;
 text-align : center; 
 font-weight : 600;
 ```
-
-style은 클래스로 선언하고,
-id는 javascript를 위해 사용한다.
 
 **스타일 겹칠 때 우선순위** : 태그에 style > id > class > tag
 

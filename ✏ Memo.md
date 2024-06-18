@@ -16,6 +16,7 @@ css : material
 >[!note] CSS 라이브러리
 
 - MaterializeCSS
+- normalize.css : 호환성 이슈 해결
 
 
 >[!note] JS 라이브러리
