@@ -619,9 +619,6 @@ URL로 정보를 전달하면 true, false가 문자열로만 인식되므로,
 
 <hr>
 <h1>Amazon EC2</h1>
-**GPT 질문 정리**
-[EC2 명령어 질문](EC2%20명령어%20질문.md)
-
 접속하는 법 : git bash 열고 `ssh -i /e/Hutosuto.pem ubuntu@52.79.239.52`
 
 http://52.79.239.52/
@@ -677,5 +674,7 @@ wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubun
 sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
 ```
 libssl1.1이라는게 없어서 그랬음. 강제로 설치해주고 다시 mongodb 설치하니까 해결됨.
+
+linux mongo shell 들어가기 : mongosh
 
 포트 포워딩 등록 방법 : ```sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 3000
