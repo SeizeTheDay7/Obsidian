@@ -41,7 +41,7 @@
 ### 입력받을 때
 ```python
 import sys  
-a = list(map(int, sys.stdin.readline().strip())
+a = list(map(int, sys.stdin.readline().strip()))
 # a = [1, 2, 3, 4, 5]
 ```
 
