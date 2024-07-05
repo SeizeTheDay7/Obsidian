@@ -1,5 +1,15 @@
-
+- [[#자료형|자료형]]
+	- [[#자료형#기본 자료형|기본 자료형]]
+	- [[#자료형#컬렉션 자료형|컬렉션 자료형]]
+		- [[#컬렉션 자료형#요소 조작|요소 조작]]
+	- [[#자료형#컬렉션 모듈|컬렉션 모듈]]
 - [[#문법|문법]]
+	- [[#문법#함수|함수]]
+	- [[#문법#반복문|반복문]]
+	- [[#문법#변수 출력|변수 출력]]
+	- [[#문법#입력 받기|입력 받기]]
+	- [[#문법#문자열을 리스트로 바꾸기|문자열을 리스트로 바꾸기]]
+	- [[#문법#아스키 코드 변환|아스키 코드 변환]]
 	- [[#문법#리스트 컴프리헨션|리스트 컴프리헨션]]
 - [[#키에 대한 예외 처리|키에 대한 예외 처리]]
 - [[#문자열 날짜로 변환|문자열 날짜로 변환]]
@@ -18,9 +28,244 @@
 >[!note] if name == "main" 의미
 해당 모듈이 임포트된 경우가 아니라 인터프리터에서 직접 실행한 경우에만 실행해라.
 
-## 문법
-### 리스트 컴프리헨션
+## 자료형
+<hr>
 
+### 기본 자료형
+
+| 자료형      | 설명      |
+| -------- | ------- |
+| int      | 정수형     |
+| float    | 실수형     |
+| str      | 문자열     |
+| bool     | 불리언     |
+| NoneType | None 객체 |
+
+### 컬렉션 자료형
+
+**list**: 순서가 있는 가변 시퀀스
+```python
+my_list = [1, 2, 3, 4, 5]
+```
+
+**tuple**: 순서가 있는 불변 시퀀스
+```python
+my_tuple = (1, 2, 3, 4, 5)
+```
+
+**set**: 순서가 없는 유일한 값들의 모음
+```python
+my_set = {1, 2, 3, 4, 5}
+```
+
+**dict**: 키-값 쌍의 모음
+```python
+my_dict = {"one": 1, "two": 2, "three": 3}
+```
+
+**frozenset**: 불변 세트
+```python
+my_frozenset = frozenset([1, 2, 3, 4, 5])
+```
+
+#### 요소 조작
+**append**: 요소 추가하기
+```python
+>>> a.append([5, 6])
+>>> a
+[1, 2, 3, 4, [5, 6]]
+```
+
+**sort**: 요소 순서대로 정렬
+```python
+>>> a = [1, 4, 3, 2]
+>>> a.sort()
+>>> a
+[1, 2, 3, 4]
+```
+
+**reverse**: 요소 뒤집기
+```python
+>>> a = ['a', 'c', 'b']
+>>> a.reverse()
+>>> a
+['b', 'c', 'a']
+```
+
+**index**: 인덱스 반환
+``` python
+>>> a = [1, 2, 3]
+>>> a.index(3)
+2
+>>> a.index(1)
+0
+```
+
+**insert**: 요소 삽입
+```python
+>>> a = [1, 2, 3]
+>>> a.insert(0, 4)
+>>> a
+[4, 1, 2, 3]
+```
+insert(a,b)는 리스트의 a번째 위치에 b를 삽입하는 함수
+
+**remove**: 요소 제거
+```python
+>>> a = [1, 2, 3, 1, 2, 3]
+>>> a.remove(3)
+>>> a
+[1, 2, 1, 2, 3]
+```
+첫 번째로 나오는 x 제거
+
+**pop**: 요소 꺼내기
+```python
+>>> a = [1, 2, 3]
+>>> a.pop()
+3
+>>> a
+[1, 2]
+```
+맨 마지막 요소를 리턴하고 그 요소 삭제
+
+**count**: 요소 개수 세기
+```python
+>>> a = [1, 2, 3, 1]
+>>> a.count(1)
+2
+```
+안에 x가 몇 개 있는지 개수 리턴
+
+**extend**: 리스트 확장
+```python
+>>> a = [1, 2, 3]
+>>> a.extend([4, 5])
+>>> a
+[1, 2, 3, 4, 5]
+>>> b = [6, 7]
+>>> a.extend(b)
+>>> a
+[1, 2, 3, 4, 5, 6, 7]
+```
+원래의 a 리스트에 x 리스트를 더한다
+
+### 컬렉션 모듈
+
+`collections` 모듈에는 추가적인 고급 자료형이 포함되어있음
+
+**namedtuple**: 이름 붙은 필드가 있는 튜플
+```python
+from collections import namedtuple
+Point = namedtuple('Point', ['x', 'y'])
+p = Point(11, y=22)
+```
+
+**deque**: 양쪽 끝에서 빠르게 추가/삭제할 수 있는 자료형
+```python
+my_deque = deque([1, 2, 3, 4, 5])
+```
+
+**Counter**: 해시 가능한 객체의 개수를 세는 딕셔너리 서브 클래스
+```python
+my_counter = Counter('gallahad')
+```
+
+**OrderedDict**: 순서를 유지하는 딕셔너리
+```python
+my_ordered_dict = OrderedDict([('one', 1), ('two', 2), ('three', 3)])
+```
+
+**defaultdict**: 기본 값을 제공하는 딕셔너리
+```python
+my_defaultdict = defaultdict(int) my_defaultdict['missing'] += 1 # missing 키가 없으면 기본 값 0으로 초기화
+```
+
+
+## 문법
+<hr>
+
+### 함수
+```python
+def 함수이름(매개변수1, 매개변수2, ...):
+    실행할 코드
+    return 반환값
+```
+
+### 반복문
+
+**for 루프**
+```python
+for 변수 in 시퀀스:
+    실행할 코드
+```
+
+```python
+for _ in range(9):
+    print("Hello, World!")
+```
+여기서 변수 이름으로 `_`를 사용한 이유는, 반복 변수의 값을 사용하지 않음을 나타내기 위해서임
+
+**while 루프**
+```python
+while 조건:
+    실행할 코드
+```
+
+**break문**
+```python
+for i in range(10):
+    if i == 5:
+        break
+    print(i)
+```
+반복문을 즉시 종료
+
+**continue문**
+```python
+for i in range(10):
+    if i % 2 == 0:
+        continue
+    print(i)
+```
+
+### 변수 출력
+```python
+name = "Alice"
+age = 30
+print(f"Name: {name}, Age: {age}")
+```
+f 쓰고 중괄호 안에 변수 이름 넣으면 됨
+
+print(i, N-i) 이렇게 하면 인자들 사이에 자동으로 공백 넣어줌
+
+### 입력 받기
+```python
+user_input = input("Enter something: ")
+```
+input 함수는 항상 문자열을 반환하므로 숫자 쓰려면 int() 붙여줘야 함
+
+### 문자열을 리스트로 바꾸기
+```python
+string = 'I became a zombie'
+list(string) # 공백을 포함 한 문자씩 모두 나눔
+```
+
+### 아스키 코드 변환
+```python
+# 문자 'A'의 아스키 코드 값을 구하기
+ascii_code = ord('A')
+print(ascii_code)  # 65 출력
+```
+
+```python
+# 아스키 코드 값이 65인 문자 'A'를 구하기
+ascii_code = 65
+character = chr(ascii_code)
+```
+
+
+### 리스트 컴프리헨션
 ```python
 new_list = [expression for item in iterable]
 ```
@@ -36,6 +281,7 @@ print(squares)  # [1, 4, 9, 16, 25]
 - **iterable**: 반복 가능한 객체(예: 리스트, 튜플, 문자열 등)
 
 ## 키에 대한 예외 처리
+<hr>
 
 ```python
 def get_first_valid(info, keys, default=''):
@@ -57,6 +303,8 @@ unit = info.get('Unit', '')
 ```
 
 ## 문자열 날짜로 변환
+<hr>
+
 ```python
 date = "August 12, 2020"
 
@@ -69,6 +317,7 @@ print(debut_date) # 2020.08.12
 ```
 
 ## pymongo
+<hr>
 
 ### 세팅
 ```python
