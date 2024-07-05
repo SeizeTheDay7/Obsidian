@@ -68,7 +68,7 @@ my_dict = {"one": 1, "two": 2, "three": 3}
 my_frozenset = frozenset([1, 2, 3, 4, 5])
 ```
 
-#### 요소 조작
+#### list 조작
 **append**: 요소 추가하기
 ```python
 >>> a.append([5, 6])
