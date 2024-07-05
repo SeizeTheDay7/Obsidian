@@ -1,7 +1,10 @@
+- [[#백준 관련|백준 관련]]
+	- [[#백준 관련#입력받을 때|입력받을 때]]
+- [[#최대 재귀 깊이 설정|최대 재귀 깊이 설정]]
 - [[#자료형|자료형]]
 	- [[#자료형#기본 자료형|기본 자료형]]
 	- [[#자료형#컬렉션 자료형|컬렉션 자료형]]
-		- [[#컬렉션 자료형#요소 조작|요소 조작]]
+		- [[#컬렉션 자료형#list 조작|list 조작]]
 	- [[#자료형#컬렉션 모듈|컬렉션 모듈]]
 - [[#문법|문법]]
 	- [[#문법#함수|함수]]
@@ -28,6 +31,40 @@
 >[!note] if name == "main" 의미
 해당 모듈이 임포트된 경우가 아니라 인터프리터에서 직접 실행한 경우에만 실행해라.
 
+
+## 백준 관련
+<hr>
+
+### 입력받을 때
+```python
+import sys  
+a = list(map(int, sys.stdin.readline().strip())
+# a = [1, 2, 3, 4, 5]
+```
+
+**여러 라인 입력 받을 때**
+```python
+import sys  
+n = input()  
+a = [sys.stdin.readline().strip().split() for _ in range(n)]  
+# a = ["1 2 3", "4 5 6"]
+```
+성능이 향상된다.
+
+```python
+S = [list(map(int, sys.stdin.readline().strip().split())) for _ in range(N)]
+for line in S:
+    print(line)
+# [1, 2, 3] [4, 5, 6] [7, 8, 9]
+```
+
+## 최대 재귀 깊이 설정
+```python
+import sys  
+sys.setrecursionlimit(10**8) # 10^8 까지 늘림.
+```
+DFS, BFS 문제의 경우 재귀 허용 깊이를 수동으로 늘려주는 코드를,코드 상단에 적어줘야 한다. (PyPy에서는 안됨)
+
 ## 자료형
 <hr>
 
@@ -47,6 +84,12 @@
 ```python
 my_list = [1, 2, 3, 4, 5]
 ```
+
+```python
+N = 3
+matrix = [[0] * N for _ in range(N)]
+```
+'N x N ' 크기의 행렬 생성
 
 **tuple**: 순서가 있는 불변 시퀀스
 ```python
@@ -90,6 +133,15 @@ my_frozenset = frozenset([1, 2, 3, 4, 5])
 >>> a.reverse()
 >>> a
 ['b', 'c', 'a']
+```
+
+**in**: 특정 값 존재 확인
+```python
+my_list = [1, 2, 3, 4, 5]
+
+# 특정 값이 리스트에 있는지 확인
+value = 3
+if value in my_list:
 ```
 
 **index**: 인덱스 반환
@@ -178,9 +230,21 @@ my_ordered_dict = OrderedDict([('one', 1), ('two', 2), ('three', 3)])
 
 **defaultdict**: 기본 값을 제공하는 딕셔너리
 ```python
-my_defaultdict = defaultdict(int) my_defaultdict['missing'] += 1 # missing 키가 없으면 기본 값 0으로 초기화
+my_defaultdict = defaultdict(int) my_defaultdict['missing'] += 1 
+# missing 키가 없으면 기본 값 0으로 초기화
 ```
 
+```python
+D = defaultdict(list)
+# 새로운 키가 추가될 때 자동으로 빈 리스트가 생성됨
+```
+
+### 타입 힌트
+```python
+def test(x: int) -> None:
+```
+콜론으로 함수의 매개변수에 자료형 지정 가능
+화살표로 함수의 반환 타입을 지정 가능
 
 ## 문법
 <hr>
@@ -229,6 +293,28 @@ for i in range(10):
     print(i)
 ```
 
+### range
+```python
+range(start, stop, step)
+```
+- `start`: 시작 숫자 (포함)
+- `stop`: 끝 숫자 (포함되지 않음)
+- `step`: 증가 또는 감소 간격
+
+### enumerate
+```python
+enumerate(iterable, start=0)
+```
+- `iterable`: 리스트, 튜플, 문자열 등 반복 가능한 객체를 의미합니다.
+- `start`: 인덱스의 시작 값을 지정합니다. 기본값은 0입니다.
+
+```python
+fruits = ['apple', 'banana', 'cherry']
+
+for index, value in enumerate(fruits):
+    print(f"Index: {index}, Value: {value}")
+```
+
 ### 변수 출력
 ```python
 name = "Alice"
@@ -274,6 +360,11 @@ new_list = [expression for item in iterable]
 numbers = [1, 2, 3, 4, 5]
 squares = [number ** 2 for number in numbers]
 print(squares)  # [1, 4, 9, 16, 25]
+```
+
+```python
+# N x N 행렬 생성
+matrix = [[0] * N for _ in range(N)]
 ```
 
 - **expression**: 새 리스트에 넣을 표현식
