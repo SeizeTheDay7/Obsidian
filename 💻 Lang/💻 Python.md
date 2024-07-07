@@ -418,8 +418,10 @@ range(start, stop, step)
 ```python
 enumerate(iterable, start=0)
 ```
-- `iterable`: 리스트, 튜플, 문자열 등 반복 가능한 객체를 의미합니다.
-- `start`: 인덱스의 시작 값을 지정합니다. 기본값은 0입니다.
+인덱스와 원소를 짝지어 튜플로 꺼낸다
+
+- `iterable`: 리스트, 튜플, 문자열 등 반복 가능한 객체
+- `start`: 인덱스의 시작 값 지정. 기본값은 0.
 
 ```python
 fruits = ['apple', 'banana', 'cherry']
