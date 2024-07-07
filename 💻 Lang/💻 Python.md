@@ -379,6 +379,15 @@ for i in range(10):
     print(i)
 ```
 
+### 조건 연산자
+```python
+value_if_true if condition else value_if_false
+```
+
+```python
+status = "성인" if age >= 18 else "미성년자"
+```
+
 ### range
 ```python
 range(start, stop, step)
@@ -401,15 +410,31 @@ for index, value in enumerate(fruits):
     print(f"Index: {index}, Value: {value}")
 ```
 
-### 변수 출력
+### print
+
 ```python
 name = "Alice"
 age = 30
 print(f"Name: {name}, Age: {age}")
 ```
-f 쓰고 중괄호 안에 변수 이름 넣으면 됨
+f 쓰고 중괄호 안에 변수 이름 넣으면 변수가 출력됨
 
 print(i, N-i) 이렇게 하면 인자들 사이에 자동으로 공백 넣어줌
+
+**end 매개변수**
+```python
+print("Hello", end='') 
+print("World")
+# HelloWorld
+```
+- 기본값: `\n` (newline, 개행 문자)\
+- 사용법: `print` 함수의 출력이 끝난 후에 추가할 문자열을 지정
+
+### 두 변수 값 교환
+```python
+a, b = b, a
+```
+두 값을 압축한 튜플이 생성된 후에 각각 a, b에 대입됨
 
 ### 입력 받기
 ```python
@@ -457,6 +482,19 @@ string = 'I became a zombie'
 list(string) # 공백을 포함 한 문자씩 모두 나눔
 ```
 
+### 접두사, 접미사 확인
+```python
+string = "hello world"
+prefix = "hello"
+suffix = "world"
+
+# 접두사 확인
+if string.startswith(prefix):
+    print("접두사가 일치합니다.")
+if string.endswith(suffix):
+    print("접미사가 일치합니다.")
+```
+
 ### 아스키 코드 변환
 ```python
 # 문자 'A'의 아스키 코드 값을 구하기
@@ -469,7 +507,6 @@ print(ascii_code)  # 65 출력
 ascii_code = 65
 character = chr(ascii_code)
 ```
-
 
 ### 리스트 컴프리헨션
 ```python
