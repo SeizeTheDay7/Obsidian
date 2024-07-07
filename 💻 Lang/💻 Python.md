@@ -1,33 +1,45 @@
 - [[#백준 관련|백준 관련]]
 	- [[#백준 관련#입력받을 때|입력받을 때]]
-- [[#최대 재귀 깊이 설정|최대 재귀 깊이 설정]]
+	- [[#백준 관련#최대 재귀 깊이 설정|최대 재귀 깊이 설정]]
+- [[#개념|개념]]
+	- [[#개념#싱글톤 패턴|싱글톤 패턴]]
 - [[#자료형|자료형]]
 	- [[#자료형#기본 자료형|기본 자료형]]
 	- [[#자료형#컬렉션 자료형|컬렉션 자료형]]
 		- [[#컬렉션 자료형#list 조작|list 조작]]
 	- [[#자료형#컬렉션 모듈|컬렉션 모듈]]
+	- [[#자료형#자료형 변환|자료형 변환]]
 	- [[#자료형#타입 힌트|타입 힌트]]
 - [[#문법|문법]]
+	- [[#문법#조건문|조건문]]
 	- [[#문법#함수|함수]]
 	- [[#문법#반복문|반복문]]
 	- [[#문법#range|range]]
 	- [[#문법#enumerate|enumerate]]
 	- [[#문법#변수 출력|변수 출력]]
 	- [[#문법#입력 받기|입력 받기]]
+		- [[#입력 받기#.readline() : 한 줄 읽음. 끝에 개행 문자 포함됨.|.readline() : 한 줄 읽음. 끝에 개행 문자 포함됨.]]
+		- [[#입력 받기#.strip(): 문자열의 양쪽 끝 공백 문자 제거|.strip(): 문자열의 양쪽 끝 공백 문자 제거]]
+		- [[#입력 받기#map(function, iterable)|map(function, iterable)]]
 	- [[#문법#문자열을 리스트로 바꾸기|문자열을 리스트로 바꾸기]]
 	- [[#문법#아스키 코드 변환|아스키 코드 변환]]
 	- [[#문법#리스트 컴프리헨션|리스트 컴프리헨션]]
+	- [[#문법#False로 취급되는 값들|False로 취급되는 값들]]
+- [[#PEP 20|PEP 20]]
+- [[#PEP 8|PEP 8]]
+	- [[#PEP 8#이름 짓기 관습|이름 짓기 관습]]
+	- [[#PEP 8#줄바꿈은 이진 연산자의 앞|줄바꿈은 이진 연산자의 앞]]
+	- [[#PEP 8#연산자 공백|연산자 공백]]
+	- [[#PEP 8#주석|주석]]
+	- [[#PEP 8#프로그래밍 권장 사항|프로그래밍 권장 사항]]
 - [[#키에 대한 예외 처리|키에 대한 예외 처리]]
 - [[#문자열 날짜로 변환|문자열 날짜로 변환]]
 - [[#pymongo|pymongo]]
 	- [[#pymongo#세팅|세팅]]
-	- [[#pymongo#데이터 삽입|데이터 삽입]]
-	- [[#pymongo#데이터 조회|데이터 조회]]
-	- [[#pymongo#데이터 수정|데이터 수정]]
+	- [[#pymongo#데이터 관리|데이터 관리]]
 	- [[#pymongo#list 붙이는 이유|list 붙이는 이유]]
 	- [[#pymongo#제외할 필드 설정|제외할 필드 설정]]
 	- [[#pymongo#업데이트 연산자|업데이트 연산자]]
-
 
 
 
@@ -39,10 +51,23 @@
 <hr>
 
 ### 입력받을 때
+
+**메서드 이름 줄이기**
+```python
+input = sys.stdin.readline
+input().strip().split()
+```
+
+**공백으로 구분된 자료 받기**
 ```python
 import sys  
 a = list(map(int, sys.stdin.readline().strip()))
 # a = [1, 2, 3, 4, 5]
+```
+
+**공백으로 구분된 자료를 변수에 바로 할당**
+```python
+m, n, l = map(int, input().split())
 ```
 
 **여러 라인 입력 받을 때**
@@ -66,12 +91,41 @@ for line in S:
 S_find = set(input().split())
 ```
 
-## 최대 재귀 깊이 설정
+### 최대 재귀 깊이 설정
 ```python
 import sys  
 sys.setrecursionlimit(10**8) # 10^8 까지 늘림.
 ```
 DFS, BFS 문제의 경우 재귀 허용 깊이를 수동으로 늘려주는 코드를,코드 상단에 적어줘야 한다. (PyPy에서는 안됨)
+
+## 개념
+<hr>
+
+### 싱글톤 패턴
+
+객체 지향 프로그래밍에서 특정 클래스의 인스턴스가 오직 하나만 존재하도록 보장하기 위해 사용되는 디자인 패턴
+
+**사용하는 이유**
+
+1. **리소스 절약**:    
+    - 특정 리소스의 인스턴스를 하나만 유지하여 메모리 사용을 최소화합니다.
+    - 예를 들어, 데이터베이스 연결 객체를 싱글톤으로 만들어 하나의 연결을 재사용하면 리소스를 절약할 수 있습니다.
+
+2. **상호 배제**:    
+    - 특정 작업이 동시에 여러 번 실행되는 것을 방지하기 위해 사용됩니다.
+    - 예를 들어, 파일에 로그를 기록하는 로거 객체를 싱글톤으로 만들어, 여러 스레드에서 동시에 접근해도 하나의 로거 인스턴스를 사용하게 할 수 있습니다.
+
+3. **글로벌 접근**:    
+    - 애플리케이션 전역에서 동일한 객체에 접근해야 할 때 사용됩니다.
+    - 예를 들어, 애플리케이션 설정을 싱글톤 객체로 관리하면 어디서나 설정 값에 접근하고 수정할 수 있습니다.
+
+**구현 예시**
+
+1. `__new__` 메서드를 사용
+2.  데코레이터를 사용
+3. None, True, False와 같은 내장 객체
+
+
 
 ## 자료형
 <hr>
@@ -179,6 +233,12 @@ insert(a,b)는 리스트의 a번째 위치에 b를 삽입하는 함수
 ```
 첫 번째로 나오는 x 제거
 
+**del**: 특정 범위 요소 제거
+```python
+del my_list[2:5]
+```
+인덱스 2부터 4까지의 요소 제거 
+
 **pop**: 요소 꺼내기
 ```python
 >>> a = [1, 2, 3]
@@ -247,6 +307,17 @@ D = defaultdict(list)
 # 새로운 키가 추가될 때 자동으로 빈 리스트가 생성됨
 ```
 
+### 자료형 변환
+**int(문자열, 진수)**: n진수를 나타내는 문자열을 각각 정수로 변환
+```python
+>>> int('17') # 10진수 문자열을 10진수 정수형으로 변환(기본)
+17
+>>> int('0b110', 2) # 2진수 문자열을 10진수 정수형으로 변환
+6
+>>> int('0o75', 8) # 8진수 문자열을 10진수 정수형으로 변환
+61
+```
+
 ### 타입 힌트
 ```python
 def test(x: int) -> None:
@@ -256,6 +327,13 @@ def test(x: int) -> None:
 
 ## 문법
 <hr>
+
+### 조건문
+```python
+if a < b: min2 = a
+if a < b: min2 = a; max2 = b;
+```
+단순문이 2개 이상이면 각각의 단순문을 세미콜론으로 구분할 수 있다.
 
 ### 함수
 ```python
@@ -339,6 +417,40 @@ user_input = input("Enter something: ")
 ```
 input 함수는 항상 문자열을 반환하므로 숫자 쓰려면 int() 붙여줘야 함
 
+```python
+list(map(int, sys.stdin.readline().strip()))
+```
+공백으로 구분된 여러 문자를 list에 넣기
+
+#### .readline() : 한 줄 읽음. 끝에 개행 문자 포함됨.
+```pyhon
+line = sys.stdin.readline()
+```
+sys.stdin : 사용자 입력을 받을 때 쓰는 객체
+
+#### .strip(): 문자열의 양쪽 끝 공백 문자 제거
+```python
+line = "  123 456  \n"
+stripped_line = line.strip() # "123 456"
+```
+공백 문자 : 개행 문자`\n`, 공백, 탭`\t`
+
+#### map(function, iterable)
+```python
+mapped = map(int, numbers_list)  # [123, 456]
+```
+두 번째 인수로 받은 iterable(반복 가능한 객체)의 모든 요소에 
+첫 번째 인수로 받은 함수(function)를 적용하여 결과를 반환하는 map 객체를 생성
+map 객체는 게으른 평가를 함.
+
+>[!memo] map 객체란?
+> **순회 가능**한 객체의 **각 원소**에 **지정한 함수**를 각각 **적용**하는 객체
+
+>[!memo] 게으른 평가란?
+>결과를 즉시 생성하지 않고, 필요할 때 값을 생성
+>메모리 사용량이 적고, 당장 계산 결과를 기다리지 않아도 됨
+
+
 ### 문자열을 리스트로 바꾸기
 ```python
 string = 'I became a zombie'
@@ -378,6 +490,220 @@ matrix = [[0] * N for _ in range(N)]
 - **expression**: 새 리스트에 넣을 표현식
 - **item**: 현재 반복 중인 개체의 개별 항목
 - **iterable**: 반복 가능한 객체(예: 리스트, 튜플, 문자열 등)
+
+### False로 취급되는 값들
+```python
+None is False
+0 is False
+[] is False
+() is False
+ is False
+{} is False
+set() is False
+False is False
+```
+
+
+## PEP 20
+<hr>
+
+[출처](https://icedhotchoco.tistory.com/entry/PEP-20)
+
+**Beautiful is better than ugly (아름다운 것이 못생긴 것보다 낫다)**  
+- 작성된 코드를 읽을 때 예쁘다고 느끼게 작성하자
+
+**Explicit is better than implicit (명시적인 것이 암시적인 것보다 낫다)**
+- 표현을 명확히하지 않으면 쉽게 이해하지 못할 수 있다
+
+**Simple is better than complex (간단한 것이 복합적인 것보다 낫다)**
+- 간단하게 작성해야 테스트와 수정이 쉽다
+
+**Flat is better than nested (수평적인 것이 중첩된 것보다 낫다)**
+- loop 중첩이 늘어날수록 코드를 알아보기 어렵다
+
+**Sparse is better than dense (풀어놓는 것이 밀집된 것보다 낫다)**
+- 짧게 쓰는 것을 목적으로 한 줄에 많은 동작을 하게끔 무리한 코딩은 좋지 않다
+
+**Special cases aren't special enough to break the rules (특별한 경우도 규칙을 어겨야 할 정도로 특별하지는 않다)**
+- 규칙은 지키도록 노력하고, 지키자. 규칙을 지키지 않는다는 것은 좋은 관행을 포기하는 것이다
+
+**Although practicality beats purity (하지만 실용성은 순수성보다 우선이다)**
+- 이것은 위의 것과 상충된다. 규칙을 지키지 않지만 더 좋은 선택지가 있다면, 그 좋은 것을 선택하자
+
+**Errors should never pass silently (오류는 절대 조용히 넘어가선 안 된다)**
+- 특히 예외처리를 하는 try - except 구문에서, 에러를 꼭 짚고 넘어가자
+
+**Unless Explicitly silenced (명시적으로 침묵하지 않는 한)**
+- 오류가 발생해도 프로그램이 중단되지 않도록 원하는 경우에는 명시적으로 예외를 작성하자
+- 실용성은 순수성보다 우선임을 기억하자
+
+**There should be one-- and preferably only one --obvious way to do it. (그것을 할 수 있는 분명한 하나의 -- 유일하면 더 좋고 -- 방법이 존재할 것이다)**
+- 해결책은 반드시 존재한다. 멈추지 않고 나아가자.
+
+**Although that way may not be obvious at first unless you're Dutch (비록 당신이 네덜란드인이 아니라면 처음에는 그 방법이 분명하지 않을 수도 있다)**  
+- 명백한 해결법이 바로 떠오르지 않을 수 있지만 더 많이 생각하고 노력하자  
+- 네덜란드인을 왜 언급했나 찾아보니 파이썬 창시자 귀도 반 로섬이 네덜란드인이라 그렇다고 한다..
+
+**Now is better than never (지금 하는 것이 아예 하지 않는 것보다 낫다)**  
+- 본인을 스스로 늦추지 말자. 시작하고 차근차근 발전해보자.
+
+**Although never is often better than *right* now (아예 하지 않는 것이 지금 *바로* 보다 더 나은 경우도 종종 있지만)**  
+- 계획은 구현만큼 중요하다. 너무 급하지는 말자.
+
+**If the implementation is hard to explain, it's a bad idea (구현 결과를 설명하기 어렵다면, 그 생각은 별로다)**  
+- 이해가 부족하거나 최적화되지 않은 구현일 것이다.
+
+**If the implementation is easy to explain, it may be a good idea (구현 결과를 설명하기 쉽다면, 그 생각은 좋을지도 모른다)**  
+- 심플한 조각들로 구성된 최적화된 구현이며 이해를 잘 하고 있다는 뜻이다.
+
+**Namespaces are one honking great idea -- let's do more of those! (네임스페이스는 완전 좋은 생각이다 -- 더 활용하라!)**  
+- 네임스페이스는 파이썬의 핵심 포인트이다.
+
+
+## PEP 8
+<hr>
+
+**최대 줄 길이** : 모든 줄은 최대 79자로 제한
+
+### 이름 짓기 관습
+
+- b (single lowercase letter) : 단일 소문자  
+- B (single uppercase letter) : 단일 대문자  
+- lowercase : 소문자  
+- lower_case_with_underscores : 밑줄을 포함하는 소문자 (snake case)  
+- UPPERCASE : 대문자  
+- UPPER_CASE_WITH_UNDERSCORES : 밑줄을 포함하는 대문자  
+- CapitalizedWords : 각 단어의 첫 글자는 대문자 (CapWords)  
+- camelCase : 첫 글자는 소문자, 그 뒤 각 단어 첫 글자는 대문자  
+- Capitalized_Words_With_Underscores : 이렇게는 쓰지 말자 (**ugly**)  
+  
+'l' (소문자 엘), 'O' (대문자 오), 'I' (대문자 아이)는 단일 문자 변수 이름으로 절대 쓰지 않아야한다.  
+  
+**클래스** 이름은 CapWord 표기법을 사용한다  
+**함수, 메소드, 변수** 이름은 snake_case를 사용한다  
+**상수**는 보통 모듈 수준에서 정의되며 밑줄을 포함하는 대문자를 사용한다
+
+### 줄바꿈은 이진 연산자의 앞
+```python
+# Wrong
+# 연산자와 피연산자가 멀리 떨어져있다
+income = (gross_wages +
+          taxable_interest +
+          (dividends - qualified_dividends) -
+          ira_deduction -
+          student_loan_interest)
+ 
+# Correct:
+# 연산자와 피연산자를 매치시키기 쉽다
+income = (gross_wages
+          + taxable_interest
+          + (dividends - qualified_dividends)
+          - ira_deduction
+          - student_loan_interest)
+```
+
+### 연산자 공백
+다음 연산자들은 항상 단일 공백으로 둘러싸야한다
+1. 대입이나 복합대입연산자 (=, +=, -= 등)
+2. 비교 연산자 (`==`, <, <=, >, >=, is, in 등)
+3. 논리 연산자 (and, or, not)
+
+우선 순위가 다른 연산자들을 사용하는 경우 
+**우선 순위가 낮은 연산자 주위에 공백**을 사용해야한다.
+**연산자의 양쪽에는 같은 개수의 공백**을 사용해야한다.
+
+```python
+# Wrong
+i=i+1
+total +=1
+x = x * 2 - 1
+result = x * x + y * y
+c = (a + b) * (a - b)
+ 
+# Correct
+i = i + 1
+total += 1
+x = x*2 - 1
+result = x*x + y*y
+c = (a+b) * (a-b)
+```
+
+**키워드 인자** 혹은 **디폴트 파라미터** 값을 나타낼 때는 = 앞뒤로 공백을 사용하지 않아야한다.
+```python
+# Wrong
+def complex(real, imag = 0.0):
+    return magic(r = real, i = imag)
+ 
+# Correct
+def complex(real, imag=0.0):
+    return magic(r=real, i=imag)
+```
+
+### 주석
+- 인라인 코멘트(코드와 같은 줄에 있는 코멘트)는 드물게 사용해야한다. 사용한다면 2개 이상 공백으로 코드와 분리되며 **#과 하나의 공백으로 시작**해야한다.  
+- 명확한 코드에 대한 인라인 주석은 산만하게 만든다.
+```python
+# Wrong
+x = x + 1   # Increment x
+ 
+# Useful
+# 어떤 목적인지에 대한 주석
+x = x + 1   # Compensate for border
+```
+
+### 프로그래밍 권장 사항
+
+None과 같은 singletons에 대한 비교는 `==`를 사용하지 않고 **is, is not**
+```python
+print(foo == None) # True
+print(foo is None) # False
+```
+
+**not ... is 보다 is not 연산자를 사용**해야한다.
+```python
+# Wrong
+if not foo is None:
+ 
+# Correct
+if foo is not None:
+```
+
+식별자에 직접 람다 표현을 대입하는 대신 **항상 def 구문을 사용**해야한다.
+```python
+# Wrong
+f = lambda x: x * 2
+ 
+# Correct
+def f(x):
+  return x * 2
+```
+
+예외처리를 할 때 **가능하다면 특정 예외를 언급**
+
+try / except 구문의 **try 는 필요한 최소의 코드로 제한**
+
+함수 안에서 return 문은 반환할 값이 없는 경우 **명시적으로 return None을 사용**
+
+접두사와 접미사를 확인하기 위해 문자열 슬라이싱보단 **.startswith() 와 .endswith()를 사용**해야한다.
+```python
+# Wrong
+if foo[:3] == 'abc':
+ 
+# Correct
+if foo.startswith('abc'):
+```
+
+불리언 값의 비교는 == 연산자를 이용해 True나 False와 비교하지 않아야한다.
+```python
+# No
+if greeting == True:
+ 
+# No
+if greeting is True:
+ 
+# Yes
+if greeting:
+```
 
 ## 키에 대한 예외 처리
 <hr>
@@ -424,11 +750,14 @@ from pymongo import MongoClient
 client = MongoClient('localhost', 27017) # mongoDB는 27017 포트를 사용한다
 db = client.jungle # 'jungle'이라는 이름의 db를 만든다.
 ```
-### 데이터 삽입
+### 데이터 관리
+
+**데이터 삽입**
 ```python
 # 'users'라는 collection에 {'name':'bobby','age':21}를 넣는다. db.users.insert_one({'name':'bobby','age':21})
 ```
-### 데이터 조회
+
+**데이터 조회**
 ```python
 all_users = list(db.users.find({})) # 데이터 모두 보기 
 
@@ -437,7 +766,8 @@ same_ages = list(db.users.find({'age':21})) # 특정 조건 데이터 보기
 user = db.users.find_one({'name':'bobby'},{'_id':False})
 # 특정 결과 값 뽑아 보기 (그 중 id는 빼고 보기)
 ```
-### 데이터 수정
+
+**데이터 수정**
 ```python
 db.people.update_many(찾을조건,{ '$set': 어떻게바꿀지 })
 # people이라는 collection에서 특정 조건에 해당하는 모든 문서들의 데이터를 수정

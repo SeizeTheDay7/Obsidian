@@ -11,6 +11,15 @@
 
 Ctrl + H : 탐색기에서 숨김 파일 보기
 
+```bash
+cd /home/hutosuto/다운로드
+```
+
+데비안 패키지 설치 방법
+```bash
+sudo dpkg -i gitkraken-amd64.deb
+```
+
 ### 파일, 디렉토리
 
 | **명령어**                    |                             |

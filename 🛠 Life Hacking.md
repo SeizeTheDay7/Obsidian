@@ -1,4 +1,20 @@
+- [[#ChatGPT 북마크|ChatGPT 북마크]]
+- [[#윈도우 단축키|윈도우 단축키]]
+- [[#파일 경로 표기법|파일 경로 표기법]]
+- [[#Github Copilot|Github Copilot]]
+- [[#옵시디언|옵시디언]]
+- [[#copilot 단축키 정리|copilot 단축키 정리]]
+- [[#vscode|vscode]]
+	- [[#vscode#단축키 정리|단축키 정리]]
+		- [[#단축키 정리#커서 및 이동|커서 및 이동]]
+		- [[#단축키 정리#코드 편집 및 리팩터링|코드 편집 및 리팩터링]]
+		- [[#단축키 정리#자동 완성 및 파일 관리|자동 완성 및 파일 관리]]
+	- [[#vscode#기능 정리|기능 정리]]
+		- [[#기능 정리#Emmet 기능|Emmet 기능]]
+
+
 ## ChatGPT 북마크
+<hr>
 
 💡
 [아무거나](https://chatgpt.com/c/f806b00d-ccf7-496e-8b29-02986adf3400)
@@ -19,8 +35,8 @@
 [Unity Code _ 4](https://chatgpt.com/c/9008cbfb-0f5d-447b-8f68-100c608fb30d)
 [Unity _ 4](https://chatgpt.com/c/8bdb79c6-d1c2-484f-8dd2-9ec92663ef31)
 
+## 윈도우 단축키
 <hr>
-## 윈도우 단축키 정리
 
 Ctrl+Shift+V : 서식 없이 붙여넣기
 win+D : 바탕화면 바로가기
@@ -28,40 +44,24 @@ win+방향키 : 화면 절반으로 정리
 
 
 
-<hr>
 ## 파일 경로 표기법
+<hr>
 
 **.** : 현재 웹페이지가 소속된 폴더
 **..** : 현재 웹페이지의 부모 폴더
 
 
+## Github Copilot
 <hr>
-## Github Copilot 정리
 
-**단축키**
+**리눅스에서 커스텀한 단축키**
+Shift + C + ArrowDown : 아랫줄에 커서 추가
+
+### 단축키
 - `Ctrl + I` : 명령 내리기
 - `Ctrl + 우측 방향키` : 단어 단위 선택
 - `Alt + [, ]` : 코드 추천 고르기
 - `Ctrl + Enter` : 한 번에 제안 확인
-
-명령어
-- `@workspace /explain` : 이 코드가 어떻게 작동하는지 설명
-- 그냥 코드 긁고 `/explain` : 해당 코드 설명
-- `@workspace /new` : 새로운 프로젝트를 위해 폴더, 파일 생성
-- `/doc` : 설명문 주석으로 달아줌
-- `/fix` : 버그 해결책 제안해줌
-
-
-
-<hr>
-## 옵시디언 명령어 정리
-
-- 옵시디언 깃허브 업데이트 방법 : Ctrl+p → git push
-- 목차 만들기 : ## 뒤에 제목 적고 Ctrl+p → tables of content : create ~
-
-
-<hr>
-## vscode copilot 단축키 정리
 
 | 명령어              | Keybinding   |
 | ---------------- | ------------ |
@@ -75,10 +75,30 @@ win+방향키 : 화면 절반으로 정리
 | 제안 전체 보기         | Ctrl + Enter |
 | 인라인 제안 생성        | Shift + V    |
 
+### 명령어
+- `@workspace /explain` : 이 코드가 어떻게 작동하는지 설명
+- 그냥 코드 긁고 `/explain` : 해당 코드 설명
+- `@workspace /new` : 새로운 프로젝트를 위해 폴더, 파일 생성
+- `/doc` : 설명문 주석으로 달아줌
+- `/fix` : 버그 해결책 제안해줌
 
 
+
+## 옵시디언
 <hr>
-## vscode 단축키 정리
+
+- 옵시디언 깃허브 업데이트 방법 : Ctrl+p → git push
+- 목차 만들기 : ## 뒤에 제목 적고 Ctrl+p → tables of content : create ~
+- 확대, 축소 : Ctrl + `+`, `-`
+
+**문법**
+`==` : 하이라이트
+
+
+## vscode
+<hr>
+
+### 단축키 정리
 
 #### 커서 및 이동
 | 단축키                      | 설명                    |
@@ -108,17 +128,15 @@ win+방향키 : 화면 절반으로 정리
 | Ctrl + `                                 | 터미널 열기             |
 | Ctrl + Space                             | 입력 가능 속성 펼쳐보기      |
 
-
-
 - Ctrl + 클릭 : 해당 클래스가 적힌 css 코드로 감 (CSS Peak Extension 기능)
 - Alt + F12 : 해당 클래스가 적힌 css 코드 불러옴 (CSS Peak Extension 기능)
 
 
-## vscode 기능 정리
+### 기능 정리
 
 - 드래그 + 우클릭 + Format Document : 코드 예쁘게 정렬
 
-### Emmet 기능
+#### Emmet 기능
 
  - ! + tab : 표준 문서 양식
 
