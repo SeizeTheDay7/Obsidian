@@ -129,17 +129,16 @@ Shift + C + ArrowDown : 아랫줄에 커서 추가
 | Ctrl + Space                             | 입력 가능 속성 펼쳐보기      |
 
 #### 파일 탐색 및 파일 간 이동
-
-|단축키|설명|
-|---|---|
-|Ctrl + Tab|현재 열린 파일 간 이동|
-|Ctrl + Shift + Tab|이전 파일로 이동|
-|Ctrl + Page Down|다음 열린 파일로 이동 (또는 Ctrl + Tab의 대체 키)|
-|Ctrl + Page Up|이전 열린 파일로 이동 (또는 Ctrl + Shift + Tab의 대체 키)|
-|Ctrl + P|빠른 파일 열기 (파일 이름을 입력하여 빠르게 열기)|
-|Ctrl + B|사이드바 탐색기 열기/닫기|
-|Ctrl + Shift + E|열린 편집기 목록 표시|
-|Ctrl + 1, Ctrl + 2, Ctrl + 3|편집기 간 이동 (여러 개의 편집기가 열려 있을 때 특정 편집기로 이동)|
+| 단축키                          | 설명                                         |
+| ---------------------------- | ------------------------------------------ |
+| Ctrl + Tab                   | 현재 열린 파일 간 이동                              |
+| Ctrl + Shift + Tab           | 이전 파일로 이동                                  |
+| Ctrl + Page Down             | 다음 열린 파일로 이동 (또는 Ctrl + Tab의 대체 키)         |
+| Ctrl + Page Up               | 이전 열린 파일로 이동 (또는 Ctrl + Shift + Tab의 대체 키) |
+| Ctrl + P                     | 빠른 파일 열기 (파일 이름을 입력하여 빠르게 열기)              |
+| Ctrl + B                     | 사이드바 탐색기 열기/닫기                             |
+| Ctrl + Shift + E             | 열린 편집기 목록 표시                               |
+| Ctrl + 1, Ctrl + 2, Ctrl + 3 | 편집기 간 이동 (여러 개의 편집기가 열려 있을 때 특정 편집기로 이동)   |
 
 - Ctrl + 클릭 : 해당 클래스가 적힌 css 코드로 감 (CSS Peak Extension 기능)
 - Alt + F12 : 해당 클래스가 적힌 css 코드 불러옴 (CSS Peak Extension 기능)
