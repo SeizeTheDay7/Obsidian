@@ -8,6 +8,7 @@
 	- [[#개념#변수|변수]]
 	- [[#개념#모듈|모듈]]
 	- [[#개념#self의 의미|self의 의미]]
+	- [[#개념#특수 메서드|특수 메서드]]
 - [[#자료형|자료형]]
 	- [[#자료형#기본 자료형|기본 자료형]]
 	- [[#자료형#컬렉션 자료형|컬렉션 자료형]]
@@ -57,6 +58,7 @@
 - [[#버그|버그]]
 	- [[#버그#리스트 컴프리헨션 안 쓰고 list()|리스트 컴프리헨션 안 쓰고 list()]]
 	- [[#버그#.sort()는 NoneType 반환|.sort()는 NoneType 반환]]
+
 
 
 ## 백준 관련
@@ -114,6 +116,7 @@ DFS, BFS 문제의 경우 재귀 허용 깊이를 수동으로 늘려주는 코�
 <hr>
 
 ### GPT 답변 모음
+가급적 사용 지양. 썼더라도 재정리 고려.
 
 [[from __future__ import annotations]]
 [[from typing import Any, Type]]
@@ -198,6 +201,91 @@ print(human.nutrition)
 ```
 
 이 코드는 `nutrition` 변수가 정의되지 않았다는 오류가 발생합니다. `self.nutrition`을 사용해야 인스턴스 변수를 참조할 수 있습니다.
+
+### 특수 메서드
+
+**역할**
+1. 객체 초기화 및 소멸: 객체가 생성, 소멸될 때 자동 호출
+2. 객체 표현: 객체의 문자열 표현을 정의
+3. 컨테이너 타입 동작: 객체를 리스트, 딕셔너리, 집합 등과 같은 컨테이너 타입처럼 동작하게 함
+4. 연산자 오버로딩: 연산자를 사용자 정의 객체에 대해 사용할 수 있도록 정의
+5. 속성 접근 및 관리: 객체의 속성 접근 방식을 제어
+
+**1, 객체 초기화 및 소멸**
+- `__init__(self, ...)`: 객체가 생성될 때 호출
+```python
+class MyClass:
+    def __init__(self, value):
+        self.value = value
+
+obj = MyClass(10)  # MyClass의 인스턴스가 생성될 때 __init__ 메서드가 자동으로 호출됩니다.
+print(obj.value)  # 출력: 10
+```
+- `__del__(self)`: 객체가 소멸될 때 호출
+
+
+**2, 객체 표현**
+- `__str__(self)`: str() 함수나 print() 함수가 호출될 때 실행. 객체의 비공식적인 문자열 표현을 반환.
+- `__repr__(self)`: `repr()` 함수나 대화형 인터프리터에서 객체를 출력할 때 실행. 객체의 공식적인 문자열 표현을 반환.
+
+**3, 컨테이너 타입 동작**
+- `__len__(self)`: len() 함수가 호출될 때 실행
+- `__getitem__(self, key)`: 객체의 특정 요소에 접근할 때 호출
+- `__setitem__(self, key, value)`: 객체의 특정 요소에 값 설정할 때 호출
+- `__delitem__(self, key)`: 객체의 특정 요소를 삭제할 때 호출
+- `__iter__(self)`: 객체를 반복(iteration)할 때 호출
+```python
+class MyIterable:
+    def __iter__(self):
+        self.current = 0
+        return self
+
+    def __next__(self):
+        if self.current < 5:
+            self.current += 1
+            return self.current
+        else:
+            raise StopIteration
+
+it = MyIterable()
+for value in it:  # for 루프가 시작될 때 __iter__ 메서드가 자동으로 호출됩니다.
+    print(value)  # 출력: 1, 2, 3, 4, 5
+```
+- `__next__(self)`: 이터레이터의 다음 요소를 반환할 때 호출
+```python
+class MyIterable:
+    def __iter__(self):
+        self.current = 0
+        return self
+
+    def __next__(self):
+        if self.current < 5:
+            self.current += 1
+            return self.current
+        else:
+            raise StopIteration
+
+it = iter(MyIterable())  # __iter__ 메서드가 호출됩니다.
+print(next(it))  # __next__ 메서드가 호출되어 1을 반환합니다.
+print(next(it))  # __next__ 메서드가 호출되어 2을 반환합니다.
+```
+
+**4, 연산자 오버로딩**
+- `__add__(self, other)`: + 가 호출될 때 실행
+- `__sub__(self, other)`: - 가 호출될 때 실행
+- `__mul__(self, other)`: * 가 호출될 때 실행
+- `__truediv__(self, other)`: / 가 호출될 때 실행
+- `__floordiv__(self, other)`: // 가 호출될 때 실행
+- `__mod__(self, other)`: % 가 호출될 때 실행
+- `__pow__(self, other)`: ** 가 호출될 때 실행
+- `__eq__(self, other)`: == 가 호출될 때 실행
+- `__lt__(self, other)`: < 가 호출될 때 실행
+
+**5, 속성 접근 및 관리**
+- `__getattr__(self, name)`: 객체에 없는 속성에 접근하려 할 때 호출
+- `__setattr__(self, name, value)`: 객체의 속성에 값을 설정할 때 호출
+- `__delattr__(self, name)`: 객체의 속성을 삭제할 때 호출.
+- `__getattribute__(self, name)`: 객체의 속성에 접근할 때 항상 호출
 
 
 ## 자료형
@@ -570,6 +658,12 @@ print("World")
 - 기본값: `\n` (newline, 개행 문자)\
 - 사용법: `print` 함수의 출력이 끝난 후에 추가할 문자열을 지정
 
+### join
+```python
+separator.join(iterable)
+```
+문자열로 결합할 시퀀스(리스트, 튜플 등)의 각 요소 사이에 seperator를 삽입해 반환
+
 ### 두 변수 값 교환
 ```python
 a, b = b, a
@@ -608,8 +702,8 @@ stripped_line = line.strip() # "123 456"
 ```python
 mapped = map(int, numbers_list)  # [123, 456]
 ```
-두 번째 인수로 받은 iterable(반복 가능한 객체)의 모든 요소에 
-첫 번째 인수로 받은 함수(function)를 적용하여 결과를 반환하는 map 객체를 생성
+첫 번째 인수로 주어진 함수를
+두 번째 인수로 주어진 이터러블(반복 가능한 객체)의 모든 요소에 적용하여 결과 반환.
 map 객체는 게으른 평가를 함.
 
 >[!memo] map 객체란?
@@ -630,7 +724,7 @@ list(string) # 공백을 포함 한 문자씩 모두 나눔
 
 - reversed(x) : x의 원소를 역순으로 정렬하는 이터러블 객체. '역순으로 꺼낼 거에요~'라는 명령들일 뿐임. 이렇게는 역순으로 정렬 안됨.
 - list(reversed(x)) : 이렇게 해야 역순으로 정렬된 리스트 얻음
-- x.reversed() : 이렇게 하면 리스트가 역순으로 정렬됨
+- x.reverse() : 이렇게 하면 리스트가 역순으로 정렬됨
 
 ### 접두사, 접미사 확인
 ```python
