@@ -329,6 +329,11 @@ my_set = {1, 2, 3, 4, 5}
 my_dict = {"one": 1, "two": 2, "three": 3}
 ```
 
+```python
+tree[root] = left, right
+```
+이렇게 입력하면 tree 딕셔너리에서 root 키는 튜플 (left, right)
+
 **frozenset**: 불변 세트
 ```python
 my_frozenset = frozenset([1, 2, 3, 4, 5])
