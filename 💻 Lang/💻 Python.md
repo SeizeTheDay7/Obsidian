@@ -610,6 +610,75 @@ for i in range(10):
     print(i)
 ```
 
+### try-except
+```python
+try:
+    # 실행할 코드
+    pass
+except:
+    # 예외가 발생했을 때 실행할 코드
+    pass
+```
+코드 실행 중에 에러 발생하면 except 아래를 실행한다
+
+**예시**
+```python
+arr = []  # 정수를 저장할 리스트
+
+while True:
+    try:
+        x = int(input())  # 사용자로부터 입력을 받아 정수로 변환
+        arr.append(x)     # 변환된 정수를 리스트에 추가
+    except:
+        break  # 예외가 발생하면 루프를 종료
+```
+
+**구체적인 예외 처리**
+```python
+try:
+    # 실행할 코드
+    pass
+except ValueError:
+    # ValueError가 발생했을 때 실행할 코드
+    pass
+except TypeError:
+    # TypeError가 발생했을 때 실행할 코드
+    pass
+except Exception as e:
+    # 그 외의 모든 예외를 처리할 때 실행할 코드
+    # 예외 객체를 e로 받아서 사용할 수 있음
+    pass
+```
+
+**else 블럭**
+```python
+try:
+    # 실행할 코드
+    pass
+except:
+    # 예외가 발생했을 때 실행할 코드
+    pass
+else:
+    # 예외가 발생하지 않았을 때 실행할 코드
+    pass
+```
+
+**finally 블럭**
+```python
+try:
+    # 실행할 코드
+    pass
+except:
+    # 예외가 발생했을 때 실행할 코드
+    pass
+else:
+    # 예외가 발생하지 않았을 때 실행할 코드
+    pass
+finally:
+    # 항상 실행되는 코드
+    pass
+```
+
 ### 조건 연산자
 ```python
 value_if_true if condition else value_if_false
