@@ -108,9 +108,80 @@ S_find = set(input().split())
 ### 최대 재귀 깊이 설정
 ```python
 import sys  
-sys.setrecursionlimit(10**8) # 10^8 까지 늘림.
+sys.setrecursionlimit(10**5) # 10^5 까지 늘림.
 ```
 DFS, BFS 문제의 경우 재귀 허용 깊이를 수동으로 늘려주는 코드를,코드 상단에 적어줘야 한다. (PyPy에서는 안됨)
+
+## 라이브러리
+<hr>
+
+###  annotations
+
+> type hinting을 도와주는 라이브러리. 부정확해도 실행상 어떤 오류도 발생시키지 않는다.
+> 
+
+**Any**: 모든 타입
+```python
+from typing import Any
+
+def func(x: Any) -> Any:
+    return x
+```
+
+**Union**: 여러 타입 중 하나
+```python
+def func(x: Union[int, str]) -> str:
+```
+
+**Optional**: 특정 값이 주어지거나 'None'
+```python
+def func(x: Optional[int] = None) -> Optional[int]:
+```
+
+**List**: 리스트 타입 명시
+**Dict**: 딕셔너리 타입 명시
+**Tuple**: 튜플 타입 명시
+```python
+def func(xs: List[int]) -> List[int]:
+def func(d: Dict[str, int]) -> Dict[str, int]:
+def func(t: Tuple[int, str]) -> Tuple[int, str]:
+```
+
+**TypeVar**: 제네릭 타입 정의 가능해짐
+```python
+from typing import TypeVar, List
+
+T = TypeVar('T')
+
+def func(x: T) -> List[T]:
+    return [x]
+```
+
+**Generic**: 클래스와 함께 사용할 수 있는 제네릭 타입 정의 가능해짐
+```python
+from typing import TypeVar, Generic
+
+T = TypeVar('T')
+
+class Box(Generic[T]):
+    def __init__(self, content: T):
+        self.content = content
+
+    def get_content(self) -> T:
+        return self.content
+
+box = Box(123)
+print(box.get_content())  # 출력: 123
+```
+
+## 자신의 클래스로 초기화
+```python
+from __future__ import annotations
+
+class Node:
+def __init__(self, key: Node = None)
+```
+이 import 문은 무조건 파일 맨 위에 선언되어야 함
 
 ## 개념
 <hr>
@@ -120,6 +191,16 @@ DFS, BFS 문제의 경우 재귀 허용 깊이를 수동으로 늘려주는 코�
 
 [[from __future__ import annotations]]
 [[from typing import Any, Type]]
+
+
+## 제네릭 프로그래밍
+
+하나의 자료형에만 의존하지 않고 공통 속성을 갖는 여러 자료형에 대해 동일하게 작동하는 알고리즘을 작성하는 기법 일반을 의미. 파이썬은 애초에 동적 타이핑 언어이기 때문에 제네릭을 따로 구현할 필요가 없다.
+
+
+### 동적 프로그래밍
+
+복잡한 문제를 더 작은 하위 문제로 나누어 해결하는 알고리즘 설계 기법
 
 
 ### `__name__` 
@@ -355,6 +436,14 @@ my_frozenset = frozenset([1, 2, 3, 4, 5])
 [1, 2, 3, 4]
 ```
 
+```python
+def third_val(e):
+	return(e[2])  
+
+Edges.sort(key = third_val)
+```
+이중 리스트를 세번째 요소에 대해 정렬하는 법
+
 **reverse**: 요소 뒤집기
 ```python
 >>> a = ['a', 'c', 'b']
@@ -485,6 +574,13 @@ D = defaultdict(list)
 # 새로운 키가 추가될 때 자동으로 빈 리스트가 생성됨
 ```
 
+#### 큐 연산
+
+- append(): 오른쪽에서 데이터를 삽입
+- appendleft(): 왼쪽에서 데이터를 삽입
+- pop(): 오른쪽에서 데이터 삭제
+- popleft(): 왼쪽에서 데이터 삭제
+
 ### 스택
 1. 리스트 : 스택을 구현하는 가장 기본적인 방법
 ```python
@@ -572,6 +668,11 @@ def 함수이름(매개변수1, 매개변수2, ...):
     실행할 코드
     return 반환값
 ```
+
+```python
+def __init__(self, value: int = 1, next: Node = None):
+```
+함수 값 초기화 값 지정 (값 안 넣으면 이걸로 자동 초기화)
 
 ### 반복문
 
@@ -1238,7 +1339,14 @@ gun.sort()
 
 로 해야 오류가 안 난다.
 
+### Dict에 없는 key에 값을 넣으면 오류
 
+```python
+if A not in Dict: Dict[A] = []
+Dict[A].append([ B,C ])
+```
 
+원래는 키 없어도 되는데 리스트는 미리 선언을 해놓던가
+넣을 때마다 위 코드처럼 초기화시켜주면 됨
 
 
