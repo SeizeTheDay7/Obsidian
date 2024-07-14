@@ -1,0 +1,249 @@
+{
+  "main": {
+    "id": "9ec79e54dd36d0f9",
+    "type": "split",
+    "children": [
+      {
+        "id": "6d85c074cfbc5cf9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c916f965d589fa86",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🌏 Web/💻 JavaScript.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a87aded8de80ceea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📓 Study Note/🍎 CodingApple/🍎 React.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "06d9f7154847b9bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🔨 Tools/💾 Git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "04cddb896f5de14f",
+    "type": "split",
+    "children": [
+      {
+        "id": "9a2ebbee816bee26",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "170bc86352e12229",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "14892e318100b672",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "25de75910cc108de",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "65d7321f3ee43a19",
+            "type": "leaf",
+            "state": {
+              "type": "mk-file-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "e90de46d0021d971",
+            "type": "leaf",
+            "state": {
+              "type": "mk-path-view",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 236.5
+  },
+  "right": {
+    "id": "f9ff6239eab50c7f",
+    "type": "split",
+    "children": [
+      {
+        "id": "64f5d47efea61e49",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3b2e7df7d08c63f3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "🔨 Tools/💾 Git.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cc8cac10bc75d313",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "🔨 Tools/💾 Git.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "27ed6c622f493e33",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "422649cf9fc307a8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "🔨 Tools/💾 Git.md"
+              }
+            }
+          },
+          {
+            "id": "620bc928e10cfa2f",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "06d9f7154847b9bf",
+  "lastOpenFiles": [
+    "🛠 Life Hack.md",
+    "conflict-files-obsidian-git.md",
+    "📓 Study Note/🍎 CodingApple/🍎 React.md",
+    "🛠 Life Hacking.md",
+    "🤖 GPT/from __future__ import annotations.md",
+    "🤖 GPT/from typing import Any, Type.md",
+    "🤖 GPT",
+    "🔨 Tools/📝 Obsidian.md",
+    "🔨 Tools/📘 VS Code.md",
+    "🔨 Tools/💾 Git.md",
+    "🔨 Tools/⚙️ Linux.md",
+    "🔨 Tools",
+    "📓 Study Note/🍎 CodingApple/🍎 JavaScript ✅.md",
+    "📓 Study Note/🍎 CodingApple/🍎 HTML, CSS ✅ .md",
+    "💻 Lang/💻 C.md",
+    "🎮 Game/💻 C#.md",
+    "🎮 Game/🎮 Unity.md",
+    "🎮 Game/🎨 ClipStudio.md",
+    "🎮 Game/♟ Blender.md",
+    "🎮 Game",
+    "✒ Coding Memo.md",
+    "Pic/Pasted image 20240701173114.png",
+    "⚙️ Linux.md",
+    "🌏 Web/💻 JavaScript.md",
+    "📓 Study Note/🍎 CodingApple/🍎 JavaScript.md",
+    "velog.io/@eunjin/JavaScript-fetch-함수-쓰는-법-fetch-함수로-HTTP-요청하는-법.md",
+    "velog.io/@eunjin",
+    "velog.io",
+    "🌏 Web/🧱 HTML.md",
+    "🌏 Web/🎨 CSS.md",
+    "✏ Memo.md",
+    "📓 Study Note/🍎 CodingApple/🍎 HTML, CSS.md",
+    "📓 Study Note",
+    "🌏 Web/🛜 Server",
+    "💻 Lang",
+    "📊 Data",
+    "Pic/Pasted image 20240615192622.png",
+    "Pasted image 20240615192622.png",
+    "Pic/Pasted image 20240603125433.png",
+    "Pic/Pasted image 20240603125259.png",
+    "새 텍스트 문서.txt",
+    "Pic/Pasted image 20240529145814.png",
+    "Pic/Pasted image 20240529144214.png",
+    "Pic/Pasted image 20240529144202.png",
+    "Pic/3D 기능 소개 1.png",
+    "Pic/Pasted image 20240521134920.png"
+  ]
+}

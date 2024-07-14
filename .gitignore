@@ -1,2 +1,3 @@
-/.makemd
-/.obsidian
+.makemd/fileCache.mdc
+.makemd/superstate.mdc
+.obsidian/plugins/make-md/Spaces.mdb

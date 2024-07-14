@@ -34,6 +34,17 @@ conflict 해결
 충돌을 해결하기 위해서 `<<<<<<<<`와 `=========`와 `>>>>>>>>>`을 모두 제거한 후 선택해야 되는 변경사항을 반영해 깨끗하게 만들면 됨
 
 
+## make.md 오류 해결
+---
+
+```
+.makemd/fileCache.mdc
+.makemd/superstate.mdc
+.obsidian/plugins/make-md/Spaces.mdb
+```
+
+이거 .gitignore에 추가
+
 
 ## 명령어 북마크
 ---
