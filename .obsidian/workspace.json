@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌏 Web/💻 JavaScript.md",
+                "file": "💻 Lang/💻 Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -114,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🔨 Tools/📝 Obsidian.md",
+                "file": "💻 Lang/💻 Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🔨 Tools/📝 Obsidian.md",
+                "file": "💻 Lang/💻 Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🔨 Tools/📝 Obsidian.md"
+                "file": "💻 Lang/💻 Python.md"
               }
             }
           },
@@ -185,9 +184,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a87aded8de80ceea",
+  "active": "c916f965d589fa86",
   "lastOpenFiles": [
     "🌏 Web/💻 JavaScript.md",
+    "🔨 Tools/📝 Obsidian.md",
     "✒ Coding Memo.md",
     "🔨 Tools/💾 Git.md",
     "🛠 Life Hack.md",
@@ -197,7 +197,6 @@
     "🤖 GPT/from __future__ import annotations.md",
     "🤖 GPT/from typing import Any, Type.md",
     "🤖 GPT",
-    "🔨 Tools/📝 Obsidian.md",
     "🔨 Tools/📘 VS Code.md",
     "🔨 Tools/⚙️ Linux.md",
     "🔨 Tools",

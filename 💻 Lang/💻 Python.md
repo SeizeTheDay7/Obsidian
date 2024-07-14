@@ -833,6 +833,13 @@ print("World")
 - 기본값: `\n` (newline, 개행 문자)\
 - 사용법: `print` 함수의 출력이 끝난 후에 추가할 문자열을 지정
 
+### round
+```python
+round(number, ndigits)
+```
+number: 반올림할 숫자
+ndigits: 소수점 이하 자릿수
+
 ### join
 ```python
 separator.join(iterable)
