@@ -5,6 +5,8 @@ chatgpt 답변 아래에 있는 복사 버튼 누르면 마크다운 문법으�
 
 뉴스레터 자동화 서비스 : stibee
 
+펜 선 따주는 그림 프로그램 : copainter
+
 (궁금한 직무) roadmap github : 뭘 해야할 지 알 수 있다
 
 >[!Tip] 파인만 학습법

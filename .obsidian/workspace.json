@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻 Lang/💻 Python.md",
+                "file": "✏ Memo.md",
                 "mode": "source",
                 "source": false
               }
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "💻 Lang/💻 Python.md",
+                "file": "✏ Memo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "💻 Lang/💻 Python.md",
+                "file": "✏ Memo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "💻 Lang/💻 Python.md"
+                "file": "✏ Memo.md"
               }
             }
           },
@@ -186,6 +186,7 @@
   },
   "active": "c916f965d589fa86",
   "lastOpenFiles": [
+    "💻 Lang/💻 Python.md",
     "🌏 Web/💻 JavaScript.md",
     "🔨 Tools/📝 Obsidian.md",
     "✒ Coding Memo.md",
@@ -217,7 +218,6 @@
     "🌏 Web/🧱 HTML.md",
     "🌏 Web/🎨 CSS.md",
     "✏ Memo.md",
-    "📓 Study Note/🍎 CodingApple/🍎 HTML, CSS.md",
     "📓 Study Note",
     "🌏 Web/🛜 Server",
     "💻 Lang",
