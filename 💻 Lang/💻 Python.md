@@ -79,10 +79,16 @@ a = list(map(int, sys.stdin.readline().strip()))
 # a = [1, 2, 3, 4, 5]
 ```
 
+
 **공백으로 구분된 자료를 변수에 바로 할당**
 ```python
 m, n, l = map(int, input().split())
 ```
+
+```python
+a, b = input().split()
+```
+문자열로 받고 싶으면 간단하게 이렇게도 된다
 
 **여러 라인 입력 받을 때**
 ```python
@@ -415,6 +421,11 @@ tree[root] = left, right
 ```
 이렇게 입력하면 tree 딕셔너리에서 root 키는 튜플 (left, right)
 
+```python
+dic = {i: [] for i in range(1,10)}
+```
+딕셔너리 내포(dict comprehension)으로 키 1에서 9까지 빈 리스트로 초기화
+
 **frozenset**: 불변 세트
 ```python
 my_frozenset = frozenset([1, 2, 3, 4, 5])
@@ -535,7 +546,7 @@ del my_list[2:5]
 | s[-n:]  | 리스트 s의 원소 중 -n부터 맨 끝까지 출력합니다.     | s[-3:]  | [55, 66, 77]                 |
 | s[:k]   | 리스트 s의 원소 중 맨 앞부터 k개씩 건너뛰며 출력합니다. | s[::2]  | [11, 33, 55, 77]             |
 | s[::-1] | 리스트 s의 원소 중 맨 끝부터 전부 출력합니다.       | s[::-1] | [77, 66, 55, 44, 33, 22, 11] |
-
+슬라이싱 구문은 start:stop:step 형식으로 구성된다.
 
 ### 컬렉션 모듈
 
@@ -846,6 +857,18 @@ separator.join(iterable)
 ```
 문자열로 결합할 시퀀스(리스트, 튜플 등)의 각 요소 사이에 seperator를 삽입해 반환
 
+### 타입 확인하기
+```python
+type(x)
+```
+그냥 타입 확인
+
+```python
+x = 10
+print(isinstance(x, int)) # True
+```
+객체가 특정 타입인지 여부 확인
+
 ### 두 변수 값 교환
 ```python
 a, b = b, a
@@ -854,14 +877,9 @@ a, b = b, a
 
 ### 입력 받기
 ```python
-user_input = input("Enter something: ")
+num1, num2 = input().split()
 ```
-input 함수는 항상 문자열을 반환하므로 숫자 쓰려면 int() 붙여줘야 함
-
-```python
-list(map(int, sys.stdin.readline().strip()))
-```
-공백으로 구분된 여러 문자를 list에 넣기
+공백으로 구분된 여러 문자를 변수에 넣기
 
 #### .readline()
 ```pyhon
@@ -870,6 +888,11 @@ line = sys.stdin.readline()
 한 줄 읽음. 끝에 개행 문자 포함됨.
 
 sys.stdin : 사용자 입력을 받을 때 쓰는 객체
+
+```python
+list(map(int, sys.stdin.readline().strip()))
+```
+공백으로 구분된 여러 문자를 list에 넣기
 
 #### .strip()
 ```python
