@@ -1,31 +1,31 @@
 {
   "main": {
-    "id": "9ec79e54dd36d0f9",
+    "id": "124d1cf240e87204",
     "type": "split",
     "children": [
       {
-        "id": "6d85c074cfbc5cf9",
+        "id": "2fe6f6b72fb199c2",
         "type": "tabs",
         "children": [
           {
-            "id": "c916f965d589fa86",
+            "id": "d01676cbf9bf4575",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "✏ Memo.md",
+                "file": "💻 Lang/💻 Python.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a87aded8de80ceea",
+            "id": "87dd9c3c4844eca2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🔨 Tools/📝 Obsidian.md",
+                "file": "🛠 Life Hack.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,15 +37,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "04cddb896f5de14f",
+    "id": "17bef1c05351b818",
     "type": "split",
     "children": [
       {
-        "id": "9a2ebbee816bee26",
+        "id": "3761a6c42aeff32f",
         "type": "tabs",
         "children": [
           {
-            "id": "170bc86352e12229",
+            "id": "d2f354bec3a29ea8",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -55,7 +55,7 @@
             }
           },
           {
-            "id": "14892e318100b672",
+            "id": "d76d15cfaef0f006",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -70,7 +70,7 @@
             }
           },
           {
-            "id": "25de75910cc108de",
+            "id": "1385248cb3b31ea4",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,15 +78,7 @@
             }
           },
           {
-            "id": "65d7321f3ee43a19",
-            "type": "leaf",
-            "state": {
-              "type": "mk-file-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "e90de46d0021d971",
+            "id": "5d07eb8be9b25f95",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -94,27 +86,27 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 236.5
+    "width": 300
   },
   "right": {
-    "id": "f9ff6239eab50c7f",
+    "id": "d923f252341fef9a",
     "type": "split",
     "children": [
       {
-        "id": "64f5d47efea61e49",
+        "id": "034f3b303d89308d",
         "type": "tabs",
         "children": [
           {
-            "id": "3b2e7df7d08c63f3",
+            "id": "cc58a59c8e27e957",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "✏ Memo.md",
+                "file": "💻 Lang/💻 Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,19 +118,19 @@
             }
           },
           {
-            "id": "cc8cac10bc75d313",
+            "id": "10c70e34573c0e56",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "✏ Memo.md",
+                "file": "💻 Lang/💻 Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "27ed6c622f493e33",
+            "id": "b2989dc1d900d4bd",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -149,25 +141,16 @@
             }
           },
           {
-            "id": "422649cf9fc307a8",
+            "id": "43a240ff80bbd18f",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "✏ Memo.md"
+                "file": "💻 Lang/💻 Python.md"
               }
             }
-          },
-          {
-            "id": "620bc928e10cfa2f",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -176,62 +159,62 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:퀵 스위처 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
       "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "c916f965d589fa86",
+  "active": "d01676cbf9bf4575",
   "lastOpenFiles": [
+    "🛠 Life Hack.md",
     "💻 Lang/💻 Python.md",
-    "🌏 Web/💻 JavaScript.md",
+    "🔨 Tools/💾 Git.md",
     "🔨 Tools/📝 Obsidian.md",
     "✒ Coding Memo.md",
-    "🔨 Tools/💾 Git.md",
-    "🛠 Life Hack.md",
-    "conflict-files-obsidian-git.md",
-    "📓 Study Note/🍎 CodingApple/🍎 React.md",
-    "🛠 Life Hacking.md",
-    "🤖 GPT/from __future__ import annotations.md",
-    "🤖 GPT/from typing import Any, Type.md",
-    "🤖 GPT",
-    "🔨 Tools/📘 VS Code.md",
+    "✏ Memo.md",
     "🔨 Tools/⚙️ Linux.md",
+    "🔨 Tools/📘 VS Code.md",
+    "🤖 GPT/from typing import Any, Type.md",
+    "🤖 GPT/from __future__ import annotations.md",
+    "🤖 GPT",
+    "🌏 Web/💻 JavaScript.md",
+    "🌏 Web/🎨 CSS.md",
+    "💻 Lang/💻 C.md",
     "🔨 Tools",
     "📓 Study Note/🍎 CodingApple/🍎 JavaScript ✅.md",
+    "📋 Code Memo.md",
     "📓 Study Note/🍎 CodingApple/🍎 HTML, CSS ✅ .md",
-    "💻 Lang/💻 C.md",
+    "Tags",
+    "📓 Study Note/🎄 Jungle.md",
+    "📓 Study Note/🎄 Jungle/0701.md",
+    "Pic/Pasted image 20240701173114.png",
+    "📓 Study Note/🎄 Jungle",
+    "Linux.md",
+    "🎮 Game/♟ Blender.md",
     "🎮 Game/💻 C#.md",
     "🎮 Game/🎮 Unity.md",
     "🎮 Game/🎨 ClipStudio.md",
-    "🎮 Game/♟ Blender.md",
     "🎮 Game",
-    "Pic/Pasted image 20240701173114.png",
-    "⚙️ Linux.md",
-    "📓 Study Note/🍎 CodingApple/🍎 JavaScript.md",
-    "velog.io/@eunjin/JavaScript-fetch-함수-쓰는-법-fetch-함수로-HTTP-요청하는-법.md",
-    "velog.io/@eunjin",
-    "velog.io",
-    "🌏 Web/🧱 HTML.md",
-    "🌏 Web/🎨 CSS.md",
-    "✏ Memo.md",
+    "📓 Study Note/🍎 CodingApple/🍎 React.md",
+    "📓 Study Note/🍎 CodingApple",
     "📓 Study Note",
-    "🌏 Web/🛜 Server",
-    "💻 Lang",
+    "📊 Data/🛢 SQL.md",
+    "📊 Data/📌 SQLD 족집게 정리.md",
     "📊 Data",
+    "💻 Lang",
+    "🌏 Web/🛜 Server",
     "Pic/Pasted image 20240615192622.png",
-    "Pasted image 20240615192622.png",
+    "Pic/다운로드.png",
     "Pic/Pasted image 20240603125433.png",
     "Pic/Pasted image 20240603125259.png",
-    "새 텍스트 문서.txt",
     "Pic/Pasted image 20240529145814.png",
     "Pic/Pasted image 20240529144214.png",
     "Pic/Pasted image 20240529144202.png",
-    "Pic/3D 기능 소개 1.png",
-    "Pic/Pasted image 20240521134920.png"
+    "Pic/Pasted image 20240521134920.png",
+    "Pic/Pasted image 20240521105205.png"
   ]
 }
