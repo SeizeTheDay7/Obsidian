@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻 Lang/💻 Python.md",
+                "file": "🔨 Tools/📘 VS Code.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,8 +85,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -106,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "💻 Lang/💻 Python.md",
+                "file": "🔨 Tools/📘 VS Code.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "💻 Lang/💻 Python.md",
+                "file": "🔨 Tools/📘 VS Code.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "💻 Lang/💻 Python.md"
+                "file": "🔨 Tools/📘 VS Code.md"
               }
             }
           }
@@ -170,12 +169,12 @@
   },
   "active": "d01676cbf9bf4575",
   "lastOpenFiles": [
-    "🛠 Life Hack.md",
+    "✏ Memo.md",
     "💻 Lang/💻 Python.md",
+    "🛠 Life Hack.md",
     "🔨 Tools/💾 Git.md",
     "🔨 Tools/📝 Obsidian.md",
     "✒ Coding Memo.md",
-    "✏ Memo.md",
     "🔨 Tools/⚙️ Linux.md",
     "🔨 Tools/📘 VS Code.md",
     "🤖 GPT/from typing import Any, Type.md",

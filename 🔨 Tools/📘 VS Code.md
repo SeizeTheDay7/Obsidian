@@ -7,6 +7,11 @@
 - [[#기능 정리|기능 정리]]
 	- [[#기능 정리#Emmet 기능|Emmet 기능]]
 
+### VScode 메뉴 하얀색 바 해결방법
+
+1) 컨트롤 + , (<- 콤마)로 세팅 진입 
+2) windows: title bar 검색
+3) native를 custom으로 변경 하고 VScode 재시작
 
 ## 단축키 정리
 
