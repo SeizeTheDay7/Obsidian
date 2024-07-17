@@ -422,6 +422,11 @@ my_dict = {"one": 1, "two": 2, "three": 3}
 ```
 
 ```python
+test = {}
+```
+딕셔너리 선언할 때 `test = dict()` 보다 `{}`가 더 빠르다고 함.
+
+```python
 tree[root] = left, right
 ```
 이렇게 입력하면 tree 딕셔너리에서 root 키는 튜플 (left, right)
@@ -982,8 +987,14 @@ matrix = [[0] * N for _ in range(N)]
 - **item**: 현재 반복 중인 개체의 개별 항목
 - **iterable**: 반복 가능한 객체(예: 리스트, 튜플, 문자열 등)
 
+```python
+distances = [float('inf')] * (N)
+```
+전부 같은 값으로 초기화할 땐 리스트 컴프리헨션이 성능이 약간 더 낫다
+
 ### return
 - 그냥 return만 쓰면 return None 과 같다
+- return은 모든 경우의 수에 대응되지 않으면 오류가 난다
 
 ### False로 취급되는 값들
 ```python
@@ -996,6 +1007,9 @@ None is False
 set() is False
 False is False
 ```
+
+### float('inf)
+`float('inf')`는 파이썬에서 무한대를 나타내는 값
 
 
 ## 구현
