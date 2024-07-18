@@ -1,8 +1,13 @@
 - [[#백준 관련|백준 관련]]
 	- [[#백준 관련#입력받을 때|입력받을 때]]
 	- [[#백준 관련#최대 재귀 깊이 설정|최대 재귀 깊이 설정]]
+- [[#라이브러리|라이브러리]]
+	- [[#라이브러리#annotations|annotations]]
+- [[#자신의 클래스로 초기화|자신의 클래스로 초기화]]
 - [[#개념|개념]]
 	- [[#개념#GPT 답변 모음|GPT 답변 모음]]
+	- [[#개념#제네릭 프로그래밍|제네릭 프로그래밍]]
+	- [[#개념#동적 프로그래밍|동적 프로그래밍]]
 	- [[#개념#`__name__`|`__name__`]]
 	- [[#개념#싱글톤 패턴|싱글톤 패턴]]
 	- [[#개념#변수|변수]]
@@ -23,10 +28,14 @@
 	- [[#문법#조건문|조건문]]
 	- [[#문법#함수|함수]]
 	- [[#문법#반복문|반복문]]
+	- [[#문법#try-except : 에러 보호 구문|try-except : 에러 보호 구문]]
 	- [[#문법#조건 연산자|조건 연산자]]
 	- [[#문법#range|range]]
-	- [[#문법#enumerate|enumerate]]
+	- [[#문법#enumerate : 짝지어 튜플로 꺼내기|enumerate : 짝지어 튜플로 꺼내기]]
 	- [[#문법#print|print]]
+	- [[#문법#round : 반올림|round : 반올림]]
+	- [[#문법#join : 사이사이에 글자 넣고 문자열 만들기|join : 사이사이에 글자 넣고 문자열 만들기]]
+	- [[#문법#타입 확인하기|타입 확인하기]]
 	- [[#문법#두 변수 값 교환|두 변수 값 교환]]
 	- [[#문법#입력 받기|입력 받기]]
 		- [[#입력 받기#.readline()|.readline()]]
@@ -39,7 +48,9 @@
 	- [[#문법#리스트 컴프리헨션|리스트 컴프리헨션]]
 	- [[#문법#return|return]]
 	- [[#문법#False로 취급되는 값들|False로 취급되는 값들]]
+	- [[#문법#float('inf')|float('inf')]]
 - [[#구현|구현]]
+	- [[#구현#음수 올바르게 나누기|음수 올바르게 나누기]]
 	- [[#구현#키에 대한 예외 처리|키에 대한 예외 처리]]
 	- [[#구현#문자열 날짜로 변환|문자열 날짜로 변환]]
 - [[#PEP 20|PEP 20]]
@@ -58,6 +69,9 @@
 - [[#버그|버그]]
 	- [[#버그#리스트 컴프리헨션 안 쓰고 list()|리스트 컴프리헨션 안 쓰고 list()]]
 	- [[#버그#.sort()는 NoneType 반환|.sort()는 NoneType 반환]]
+	- [[#버그#Dict에 없는 key에 값을 넣으면 오류|Dict에 없는 key에 값을 넣으면 오류]]
+
+
 
 
 
@@ -123,8 +137,17 @@ DFS, BFS 문제의 경우 재귀 허용 깊이를 수동으로 늘려주는 코�
 
 ###  annotations
 
-> type hinting을 도와주는 라이브러리. 부정확해도 실행상 어떤 오류도 발생시키지 않는다.
-> 
+> type hinting을 도와주는 라이브러리. 
+> 부정확해도 실행상 어떤 오류도 발생시키지 않는다.
+
+**자신의 클래스로 초기화할 때**
+```python
+from __future__ import annotations
+
+class Node:
+def __init__(self, key: Node = None)
+```
+이 import 문은 무조건 파일 맨 위에 선언되어야 함
 
 **Any**: 모든 타입
 ```python
@@ -180,14 +203,6 @@ box = Box(123)
 print(box.get_content())  # 출력: 123
 ```
 
-## 자신의 클래스로 초기화
-```python
-from __future__ import annotations
-
-class Node:
-def __init__(self, key: Node = None)
-```
-이 import 문은 무조건 파일 맨 위에 선언되어야 함
 
 ## 개념
 <hr>
@@ -199,7 +214,7 @@ def __init__(self, key: Node = None)
 [[from typing import Any, Type]]
 
 
-## 제네릭 프로그래밍
+### 제네릭 프로그래밍
 
 하나의 자료형에만 의존하지 않고 공통 속성을 갖는 여러 자료형에 대해 동일하게 작동하는 알고리즘을 작성하는 기법 일반을 의미. 파이썬은 애초에 동적 타이핑 언어이기 때문에 제네릭을 따로 구현할 필요가 없다.
 
@@ -562,6 +577,12 @@ del my_list[2:5]
 
 `collections` 모듈에는 추가적인 고급 자료형이 포함되어있음
 
+**조작 함수**
+- append(): 오른쪽에서 데이터를 삽입
+- appendleft(): 왼쪽에서 데이터를 삽입
+- pop(): 오른쪽에서 데이터 삭제
+- popleft(): 왼쪽에서 데이터 삭제
+
 **namedtuple**: 이름 붙은 필드가 있는 튜플
 ```python
 from collections import namedtuple
@@ -595,12 +616,6 @@ D = defaultdict(list)
 # 새로운 키가 추가될 때 자동으로 빈 리스트가 생성됨
 ```
 
-#### 큐 연산
-
-- append(): 오른쪽에서 데이터를 삽입
-- appendleft(): 왼쪽에서 데이터를 삽입
-- pop(): 오른쪽에서 데이터 삭제
-- popleft(): 왼쪽에서 데이터 삭제
 
 ### 스택
 1. 리스트 : 스택을 구현하는 가장 기본적인 방법
@@ -673,6 +688,7 @@ def test(x: int) -> None:
 콜론 : 함수의 매개변수에 자료형 지정
 화살표 : 함수의 반환 타입을 지정
 
+
 ## 문법
 <hr>
 
@@ -732,7 +748,7 @@ for i in range(10):
     print(i)
 ```
 
-### try-except
+### try-except : 에러 보호 구문
 ```python
 try:
     # 실행할 코드
@@ -772,20 +788,7 @@ except Exception as e:
     pass
 ```
 
-**else 블럭**
-```python
-try:
-    # 실행할 코드
-    pass
-except:
-    # 예외가 발생했을 때 실행할 코드
-    pass
-else:
-    # 예외가 발생하지 않았을 때 실행할 코드
-    pass
-```
-
-**finally 블럭**
+**finally, else 블럭**
 ```python
 try:
     # 실행할 코드
@@ -818,7 +821,7 @@ range(start, stop, step)
 - `stop`: 끝 숫자 (포함되지 않음)
 - `step`: 증가 또는 감소 간격
 
-### enumerate
+### enumerate : 짝지어 튜플로 꺼내기
 ```python
 enumerate(iterable, start=0)
 ```
@@ -835,7 +838,6 @@ for index, value in enumerate(fruits):
 ```
 
 ### print
-
 ```python
 name = "Alice"
 age = 30
@@ -854,14 +856,14 @@ print("World")
 - 기본값: `\n` (newline, 개행 문자)\
 - 사용법: `print` 함수의 출력이 끝난 후에 추가할 문자열을 지정
 
-### round
+### round : 반올림
 ```python
 round(number, ndigits)
 ```
 number: 반올림할 숫자
 ndigits: 소수점 이하 자릿수
 
-### join
+### join : 사이사이에 글자 넣고 문자열 만들기
 ```python
 separator.join(iterable)
 ```
@@ -913,7 +915,7 @@ stripped_line = line.strip() # "123 456"
 
 공백 문자 : 개행 문자`\n`, 공백, 탭`\t`
 
-#### map(function, iterable)
+#### map(function, iterable) : 반복 적용하여 결과 반환
 ```python
 mapped = map(int, numbers_list)  # [123, 456]
 ```
@@ -928,20 +930,7 @@ map 객체는 게으른 평가를 함.
 >결과를 즉시 생성하지 않고, 필요할 때 값을 생성
 >메모리 사용량이 적고, 당장 계산 결과를 기다리지 않아도 됨
 
-
-### 문자열을 리스트로 바꾸기
-```python
-string = 'I became a zombie'
-list(string) # 공백을 포함 한 문자씩 모두 나눔
-```
-
-### 역순으로 정렬한 리스트 생성
-
-- reversed(x) : x의 원소를 역순으로 정렬하는 이터러블 객체. '역순으로 꺼낼 거에요~'라는 명령들일 뿐임. 이렇게는 역순으로 정렬 안됨.
-- list(reversed(x)) : 이렇게 해야 역순으로 정렬된 리스트 얻음
-- x.reverse() : 이렇게 하면 리스트가 역순으로 정렬됨
-
-### 접두사, 접미사 확인
+### startswith, endswith : 접두사, 접미사 확인
 ```python
 string = "hello world"
 prefix = "hello"
@@ -954,7 +943,7 @@ if string.endswith(suffix):
     print("접미사가 일치합니다.")
 ```
 
-### 아스키 코드 변환
+### ord : 아스키 코드 변환
 ```python
 # 문자 'A'의 아스키 코드 값을 구하기
 ascii_code = ord('A')
@@ -1008,12 +997,24 @@ set() is False
 False is False
 ```
 
-### float('inf)
+### float('inf')
 `float('inf')`는 파이썬에서 무한대를 나타내는 값
 
 
 ## 구현
 <hr>
+
+### 문자열을 리스트로 바꾸기
+```python
+string = 'I became a zombie'
+list(string) # 공백을 포함 한 문자씩 모두 나눔
+```
+
+### 역순으로 정렬한 리스트 생성
+
+- reversed(x) : x의 원소를 역순으로 정렬하는 이터러블 객체. '역순으로 꺼낼 거에요~'라는 명령들일 뿐임. 이렇게는 역순으로 정렬 안됨.
+- list(reversed(x)) : 이렇게 해야 역순으로 정렬된 리스트 얻음
+- x.reverse() : 이렇게 하면 리스트가 역순으로 정렬됨
 
 ### 음수 올바르게 나누기
 ```python
