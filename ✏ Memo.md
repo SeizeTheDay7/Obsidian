@@ -1,6 +1,8 @@
 
 ☑️ ✅ 🦊
 
+chatgpt한테 자세하게 말해달라고 계속 가스라이팅 구체적으로 하면 설명충돼서 유용하다.
+
 chatgpt 답변 아래에 있는 복사 버튼 누르면 마크다운 문법으로 복사 가능
 
 뉴스레터 자동화 서비스 : stibee
@@ -12,6 +14,10 @@ chatgpt 답변 아래에 있는 복사 버튼 누르면 마크다운 문법으�
 예쁜 브라우저 : arc browser
 
 개인 블로그 깃허브 댓글 컴포넌트 : https://utteranc.es/
+
+정적 사이트 호스팅 : netlify, vercel, github pages
+
+파이썬 서버 : django, flask
 
 >[!Tip] 파인만 학습법
 
