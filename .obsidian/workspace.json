@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🔨 Tools/⚙️ Linux.md",
+                "file": "🔨 Tools/📝 Obsidian.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🔨 Tools/⚙️ Linux.md",
+                "file": "🔨 Tools/📝 Obsidian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🔨 Tools/⚙️ Linux.md",
+                "file": "🔨 Tools/📝 Obsidian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🔨 Tools/⚙️ Linux.md"
+                "file": "🔨 Tools/📝 Obsidian.md"
               }
             }
           }
@@ -157,9 +157,9 @@
   },
   "active": "f0fe19285b6b054d",
   "lastOpenFiles": [
+    "🔨 Tools/⚙️ Linux.md",
     "✒ Coding Memo.md",
     "✏ Memo.md",
-    "🔨 Tools/⚙️ Linux.md",
     "🛠 Life Hack.md",
     "💻 Lang/💻 Python.md",
     "🔨 Tools/💾 Git.md",
