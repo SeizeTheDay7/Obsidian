@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d01676cbf9bf4575",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "✏ Memo.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "f0fe19285b6b054d",
             "type": "leaf",
             "state": {
@@ -105,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "✏ Memo.md",
+                "file": "🔨 Tools/⚙️ Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "✏ Memo.md",
+                "file": "🔨 Tools/⚙️ Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "✏ Memo.md"
+                "file": "🔨 Tools/⚙️ Linux.md"
               }
             }
           }
@@ -167,16 +155,16 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "d01676cbf9bf4575",
+  "active": "f0fe19285b6b054d",
   "lastOpenFiles": [
-    "🛠 Life Hack.md",
+    "✒ Coding Memo.md",
     "✏ Memo.md",
+    "🔨 Tools/⚙️ Linux.md",
+    "🛠 Life Hack.md",
     "💻 Lang/💻 Python.md",
     "🔨 Tools/💾 Git.md",
     "🔨 Tools/📝 Obsidian.md",
-    "🔨 Tools/⚙️ Linux.md",
     "🔨 Tools/📘 VS Code.md",
-    "✒ Coding Memo.md",
     "🤖 GPT/from typing import Any, Type.md",
     "🤖 GPT/from __future__ import annotations.md",
     "🤖 GPT",
