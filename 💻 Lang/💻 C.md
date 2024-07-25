@@ -170,12 +170,146 @@ tui 실행
 | <wctype.h>   | 확장 문자 처리                                                                              |
 
 ---
-# 개념
+## 개념
+
+
+---
+## 자료형
+
+### 포인터
+```c
+int a = 10;
+int* ptr = &a;
+printf("Value of a: %d\n", *ptr);
+printf("Address of a: %p\n", ptr);
+```
+
+### 배열
+```c
+int arr[5] = {1, 2, 3, 4, 5};
+for (int i = 0; i < 5; i++) {
+    printf("%d ", arr[i]);
+}
+```
+
+### 구조체 : struct
+```c
+struct Point {
+    int x;
+    int y;
+};
+```
+
+하나 이상의 변수 묶기
+
+### union
+```c
+union Data {
+    int i;
+    float f;
+    char str[20];
+};
+```
+
+구조체랑 비슷한데, 모든 멤버가 같은 메모리 공간을 공유
+
+### 열거형 : enum
+```c
+#include <stdio.h>
+
+enum Color { RED, GREEN, BLUE };
+
+int main() {
+    enum Color myColor = GREEN;
+    if (myColor == GREEN) {
+        printf("The color is green.\n");
+    }
+    return 0;
+}
+```
+
+관련된 상수들 묶기
+
+### 타입 이름 바꾸기 : typedef
+```c
+#include <stdio.h>
+
+typedef unsigned long ulong;
+
+int main() {
+    ulong largeNumber = 1234567890;
+    printf("Large number: %lu\n", largeNumber);
+    return 0;
+}
+```
+
+기존 타입에 새로운 이름을 부여할 수 있다.
 
 
 
 ---
 ## 문법
+
+### main 함수
+```c
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+```
+
+프로그램의 시작점
+
+### 함수 선언
+```c
+int add(int x, int y) {
+    return x + y;
+}
+
+int main() {
+    int result = add(3, 4);
+    printf("Result: %d\n", result);
+    return 0;
+}
+```
+
+### if, else
+```c
+int a = 5;
+if (a > 5) {
+    printf("a는 5보다 큽니다.\n");
+} else if (a == 5) {
+    printf("a는 5와 같습니다.\n");
+} else {
+    printf("a는 5보다 작습니다.\n");
+}
+```
+
+### for
+```c
+for (int i = 0; i < 5; i++) {
+    printf("%d ", i);
+}
+```
+
+### while
+```c
+int i = 0;
+while (i < 5) {
+    printf("%d ", i);
+    i++;
+}
+```
+
+### 비트 연산자
+
+- **AND**: `&`
+- **OR**: `|`
+- **XOR**: `^`
+- **NOT**: `~`
+- **비트 이동**: `<<`, `>>`
 
 ### 논리 연산자
 ```c
@@ -183,4 +317,76 @@ if (height >= 180 && weight >= 90) {
 }
 ```
 `&`나 `|`는 비트연산자다. 정확한 값을 연산해서 준다.
-하지만 `&&`나 `||`를 사용하면 
+하지만 `&&`나 `||`를 사용하면 하나만 조건에 위배되도 바로 결과 값 줌.
+연산 줄일 수 있음.
+
+### 전처리 지시문
+```c
+#include <stdio.h>
+#define PI 3.14
+#define CIRCLE_AREA(r) (PI * (r) * (r))
+
+int main() {
+    int radius = 5;
+    printf("Area of circle: %f\n", CIRCLE_AREA(radius));
+    return 0;
+}
+```
+
+**`#define`**: 상수나 매크로를 정의
+
+### 메모리 동적 할당
+```c
+    int* ptr;
+    int n = 5;
+
+    ptr = (int*)malloc(n * sizeof(int)); // 동적 메모리 할당
+    free(ptr); // 메모리 해제
+```
+
+- **`malloc`**: 메모리를 동적으로 할당 (쓰레기 값 들어있음)
+- **`free`**: 동적으로 할당된 메모리를 해제
+- **`calloc`**: 0으로 초기화된 메모리를 할당
+- **`realloc`**: 할당된 메모리 크기를 조정
+
+### 가변 인자 함수
+```c
+#include <stdio.h>
+#include <stdarg.h>
+
+void printNumbers(int count, ...) {
+    va_list args;
+    va_start(args, count);
+
+    for (int i = 0; i < count; i++) {
+        int num = va_arg(args, int);
+        printf("%d ", num);
+    }
+
+    va_end(args);
+    printf("\n");
+}
+
+int main() {
+    printNumbers(3, 1, 2, 3);
+    printNumbers(5, 10, 20, 30, 40, 50);
+    return 0;
+}
+```
+
+### 구조체 포인터로 멤버 접근 연산자 : ->
+```c
+struct Node* head = NULL;
+head = (struct Node*)malloc(sizeof(struct Node));
+head->data = 1;
+(*head).data = 1; // 둘은 동일하다
+*head.data = 1; // 이건 head.data가 포인터일 때 그 주소 안에 있는 값
+```
+
+헤드 노드로 가는 포인터가 할당되었다고 해보자.
+1. 해당 포인터가 가리키는 노드로 가서
+2. 그 노드 안에 있는 멤버를 가리키고 싶다.
+그때 사용되는게 `->` 연산자다.
+
+`.` 연산자는 구조체 변수의 멤버에 접근할 수 있다.
+`*` 을 앞에 붙이면 해당 주소에 있는 값에 접근할 수 있다.
