@@ -454,6 +454,13 @@ dic = {i: [] for i in range(1,10)}
 ```
 딕셔너리 내포(dict comprehension)으로 키 1에서 9까지 빈 리스트로 초기화
 
+```python
+order = {}
+if 'A' not in order:
+	order['A'] = 1
+```
+키 없을 때 키 추가하는 방법 (defaultdict도 고려해보기)
+
 **frozenset**: 불변 세트
 ```python
 my_frozenset = frozenset([1, 2, 3, 4, 5])
