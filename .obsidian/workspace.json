@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4c8a7d9da0469927",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "💻 Lang/💻 C.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e0321e1b6c1a8bf0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻 Lang/💻 Python.md",
+                "file": "💻 Lang/💻 C.md",
                 "mode": "source",
                 "source": false
               }
@@ -160,8 +148,17 @@
                 "file": "💻 Lang/💻 C.md"
               }
             }
+          },
+          {
+            "id": "6a1188cca97e5a3e",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -179,10 +176,17 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "4c8a7d9da0469927",
+  "active": "e0321e1b6c1a8bf0",
   "lastOpenFiles": [
-    "💻 Lang/💻 Python.md",
+    "🎮 Game/💻 C#.md",
     "💻 Lang/💻 C.md",
+    "💻 Lang/💻 Python.md",
+    "Pic/memory pack.png",
+    "제목없음 1.png",
+    "2024-07-26.md",
+    "무제 파일.canvas",
+    "Pic/Pasted image 20240701173114.png",
+    "제목없음.png",
     "🔨 Tools/📝 Obsidian.md",
     "Cache Replacement Policies.md",
     "🔨 Tools/⚙️ Linux.md",
@@ -206,12 +210,9 @@
     "Tags",
     "📓 Study Note/🎄 Jungle.md",
     "📓 Study Note/🎄 Jungle/0701.md",
-    "Pic/Pasted image 20240701173114.png",
     "📓 Study Note/🎄 Jungle",
     "Linux.md",
     "🎮 Game/♟ Blender.md",
-    "🎮 Game/💻 C#.md",
-    "🎮 Game/🎮 Unity.md",
     "🎮 Game",
     "📓 Study Note/🍎 CodingApple",
     "📓 Study Note",
@@ -223,9 +224,6 @@
     "Pic/Pasted image 20240603125433.png",
     "Pic/Pasted image 20240603125259.png",
     "Pic/Pasted image 20240529145814.png",
-    "Pic/Pasted image 20240529144214.png",
-    "Pic/Pasted image 20240529144202.png",
-    "Pic/Pasted image 20240521134920.png",
-    "Pic/Pasted image 20240521105205.png"
+    "Pic/Pasted image 20240529144214.png"
   ]
 }
