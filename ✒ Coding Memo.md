@@ -3,7 +3,7 @@
 오버라이딩 vs 전략 패턴 : 하위 클래스의 분기 종류가 많으면 오버라이딩 여러 번 하는 것보다 전략 패턴이 낫다  
 
 
-### tidy first? 
+## tidy first? 
 - 비정상 조건일 경우 함수를 종료하는 보호 구문을 사용해라  
 - 안 쓰는 코드 지워라. 형상 관리 있으니까 쫄지 마라.  
 - 함수 작성하는 패턴 정도는 일관되게 맞춰주자  
@@ -21,7 +21,7 @@
 - 친절한 설명이나 오류에 대한 주석을 달자  
 - 코드만으로 알겠거나 코드 변경으로 틀리게 된 주석은 삭제하자
 
-### 가독성을 높이는 코딩 관습
+## 가독성을 높이는 코딩 관습
 [출처](velog.io/@sangmin7648/코드-라인-길이와-가독성의-상관-관계)
 
 1. 중괄호 앞에 빈칸 띄우기
@@ -62,4 +62,25 @@ doSmth(); doOther();
 ```java
 String cityName = user.getAddress().getCity().getName();
 ```
+
+
+## 틀렸던 이유들
+
+### 리턴값 자료형 틀림 - C
+
+>[!bug]
+>dequeue의 리턴값이 정수값이라는 사실을 모르고(까먹고?)
+saved를 `ListNode *saved` 로 선언했다가 왜 saved에 deque한게 안 들어가지? 이러고 있었다. int로 바꿨더니 정상 동작.
+
+```c
+void recursiveReverse(Queue *q)
+{
+	int saved = dequeue(q);
+	if (!(isEmptyQueue(q))){
+		recursiveReverse(q);
+	}
+	enqueue(q, saved);
+}
+
+
 
