@@ -593,10 +593,10 @@ L.extend(map(int, input().split()))
 `collections` 모듈에는 추가적인 고급 자료형이 포함되어있음
 
 **조작 함수**
-- append(): 오른쪽에서 데이터를 삽입
-- appendleft(): 왼쪽에서 데이터를 삽입
-- pop(): 오른쪽에서 데이터 삭제
-- popleft(): 왼쪽에서 데이터 삭제
+- E.append(): 오른쪽에서 데이터를 삽입
+- E.appendleft(): 왼쪽에서 데이터를 삽입
+- E.pop(): 오른쪽에서 데이터 삭제
+- E.popleft(): 왼쪽에서 데이터 삭제
 
 **namedtuple**: 이름 붙은 필드가 있는 튜플
 ```python
@@ -609,6 +609,9 @@ p = Point(11, y=22)
 ```python
 my_deque = deque([1, 2, 3, 4, 5])
 ```
+
+peek는 D[0], D[-1]
+
 
 **Counter**: 해시 가능한 객체의 개수를 세는 딕셔너리 서브 클래스
 ```python

@@ -1,3 +1,6 @@
+
+
+
 **C# 특징**
 - 대소문자를 구분
 - 공백이나 줄 바꿈은 무시
@@ -128,7 +131,7 @@ Console.Read() 메서드를 사용하면 콘솔에서 문자를 하나만 입력
 	: 암시적 형 변환은 특수한 구문 없이 바로 변환. 예를 들어 숫자 형식 중 int 형식은 그보다 더 큰 long 형식 변수에 그대로 담을 수 있다. 
 - 명시적(explicit) 형 변환
 	: 반대로 long 형식의 변수를 int 형식의 변수에 저장하려면 명시적으로 (int)를 붙여 long을 int로 변경해야 한다. 명시적 형 변환은 캐스팅(casting)이라고도 한다.
-	```c#
+/home/hutosuto/문서/Obsidian Vault/💻 Lang	```c#
 	long number1 = 1234;
 	int number2 = (int)number1;
 	```
