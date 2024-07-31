@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻 Lang/💻 C.md",
+                "file": "⛏️ Life Hack.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "💻 Lang/💻 C.md",
+                "file": "⛏️ Life Hack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "💻 Lang/💻 C.md",
+                "file": "⛏️ Life Hack.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "💻 Lang/💻 C.md"
+                "file": "⛏️ Life Hack.md"
               }
             }
           },
@@ -166,31 +166,31 @@
   },
   "active": "fb94f94a41aadc0a",
   "lastOpenFiles": [
+    "🔌 Coding Memo.md",
+    "✏️ Memo.md",
+    "🔨 Tools/💾 Git.md",
     "Cache Replacement Policies.md",
-    "💻 Lang/💻 Python.md",
     "💻 Lang/💻 C.md",
+    "💻 Lang/💻 Python.md",
     "🔨 Tools/📝 Obsidian.md",
     "💻 Lang/💻 C#.md",
     "💻 Lang/💻 C++.md",
     "🤖 GPT/from typing import Any, Type.md",
     "🤖 GPT/from __future__ import annotations.md",
-    "🔨 Tools/💾 Git.md",
     "🔨 Tools/⚙️ Linux.md",
     "🎮 Game/♟ Blender.md",
     "🎮 Game/🎨 ClipStudio.md",
     "🎮 Game/🎮 Unity.md",
     "리스트 값 확인 방법.md",
     "Algorithm",
-    "✒ Coding Memo.md",
     "Pic/memory pack.png",
     "제목없음 1.png",
     "2024-07-26.md",
     "무제 파일.canvas",
     "Pic/Pasted image 20240701173114.png",
     "제목없음.png",
-    "🛠 Life Hack.md",
+    "⛏️ Life Hack.md",
     "플로이드 와샬.md",
-    "✏ Memo.md",
     "Spaces/Home/Home.md",
     "🔨 Tools/📘 VS Code.md",
     "🤖 GPT",
