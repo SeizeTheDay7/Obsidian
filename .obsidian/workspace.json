@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "⚒️ Life Hack.md",
+                "file": "✏️ Memo.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "19cc9c44bfdeb46b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "💻 Lang/💻 C.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "78cc9e062f45e7be",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🔨 Tools/💾 Git.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -73,7 +98,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -93,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "⚒️ Life Hack.md",
+                "file": "💻 Lang/💻 C.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "⚒️ Life Hack.md",
+                "file": "💻 Lang/💻 C.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "⚒️ Life Hack.md"
+                "file": "💻 Lang/💻 C.md"
               }
             }
           },
@@ -164,13 +190,14 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "fb94f94a41aadc0a",
+  "active": "19cc9c44bfdeb46b",
   "lastOpenFiles": [
-    "🔌 Coding Memo.md",
-    "✏️ Memo.md",
     "🔨 Tools/💾 Git.md",
-    "Cache Replacement Policies.md",
     "💻 Lang/💻 C.md",
+    "✏️ Memo.md",
+    "🔌 Coding Memo.md",
+    "⚒️ Life Hack.md",
+    "Cache Replacement Policies.md",
     "💻 Lang/💻 Python.md",
     "🔨 Tools/📝 Obsidian.md",
     "💻 Lang/💻 C#.md",
@@ -189,7 +216,6 @@
     "무제 파일.canvas",
     "Pic/Pasted image 20240701173114.png",
     "제목없음.png",
-    "⚒️ Life Hack.md",
     "플로이드 와샬.md",
     "Spaces/Home/Home.md",
     "🔨 Tools/📘 VS Code.md",

@@ -1,3 +1,4 @@
+- [[#make.md 오류 해결|make.md 오류 해결]]
 - [[#명령어 북마크|명령어 북마크]]
 - [[#디렉토리 설정|디렉토리 설정]]
 - [[#로그 출력|로그 출력]]
@@ -278,6 +279,21 @@ git remote add origin https://github.com/닉네임/리포지터리이름.git
 git remote set-url origin https://<토큰>@github.com/닉네임/리포지터리이름.git
 ```
 
+
+## Git duplicate
+---
+
+```bash
+$ git clone --bare https://github.com/krafton-jungle/rbtree-lab.git
+$ cd ${project_name}.git
+# 아래 교육생 repository는 GitHub미리 만들어 놓아야 함
+$ git push --mirror https://github.com/${교육생ID}/rbtree-lab.git
+$ cd ..
+$ rm -rf ${project_name}.git
+$ git clone https://github.com/${교육생ID}/rbtree-lab.git
+```
+
+>아래와 같이 git 명령을 사용하여 GitHub에 있는 [과제](https://jungle-compass.krafton.com/mod/page/view.php?id=3933 "과제")를 다운로드 하고 자신의 git repository로 옮깁니다. 원본 repository에 있는 코드를 개선하기 위해 clone 혹은 fork하는 것이 아니고 자신의 repository로 복제(duplicate) 하는 것임을 명심하십시오
 
 ## 필요없는 명령어
 ---
