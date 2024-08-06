@@ -619,11 +619,6 @@ URL로 정보를 전달하면 true, false가 문자열로만 인식되므로,
 
 <hr>
 <h1>Amazon EC2</h1>
-접속하는 법 : git bash 열고 `ssh -i /e/Hutosuto.pem ubuntu@52.79.239.52`
-
-http://52.79.239.52/
-http://13.125.64.40:5000/#
-
 git bash에 명령어 복붙 : 마우스 우클릭
 
 **리눅스 명령어**

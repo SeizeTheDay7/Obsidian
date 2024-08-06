@@ -4,47 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "d16e378f692768ca",
+        "id": "ef40cfb9a764294b",
         "type": "tabs",
         "children": [
           {
-            "id": "fb94f94a41aadc0a",
+            "id": "8fe9373977a38088",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "✏️ Memo.md",
+                "file": "💻 Lang/💻 C++.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "19cc9c44bfdeb46b",
+            "id": "ad84c74a3bbe0ed9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻 Lang/💻 C.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "78cc9e062f45e7be",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🔨 Tools/💾 Git.md",
+                "file": "🔨 Tools/📘 VS Code.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,8 +85,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -119,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "💻 Lang/💻 C.md",
+                "file": "💻 Lang/💻 C++.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "💻 Lang/💻 C.md",
+                "file": "💻 Lang/💻 C++.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "💻 Lang/💻 C.md"
+                "file": "💻 Lang/💻 C++.md"
               }
             }
           },
@@ -190,42 +176,43 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "19cc9c44bfdeb46b",
+  "active": "8fe9373977a38088",
   "lastOpenFiles": [
-    "🔨 Tools/💾 Git.md",
     "💻 Lang/💻 C.md",
-    "✏️ Memo.md",
+    "📓 Study Note/🎄 Jungle.md",
+    "📓 Study Note/🍎 CodingApple/🍎 HTML, CSS ✅ .md",
+    "🌏 Web/🛜 Server/🌨️ Amazon EC2.md",
     "🔌 Coding Memo.md",
-    "⚒️ Life Hack.md",
     "Cache Replacement Policies.md",
-    "💻 Lang/💻 Python.md",
+    "✏️ Memo.md",
+    "⚒️ Life Hack.md",
+    "🤖 GPT/from __future__ import annotations.md",
     "🔨 Tools/📝 Obsidian.md",
+    "🔨 Tools/📘 VS Code.md",
+    "🔨 Tools/💾 Git.md",
+    "🔨 Tools/⚙️ Linux.md",
+    "📊 Data/🛢 SQL.md",
+    "📊 Data/📌 SQLD 족집게 정리.md",
+    "💻 Lang/💻 Python.md",
     "💻 Lang/💻 C#.md",
     "💻 Lang/💻 C++.md",
-    "🤖 GPT/from typing import Any, Type.md",
-    "🤖 GPT/from __future__ import annotations.md",
-    "🔨 Tools/⚙️ Linux.md",
-    "🎮 Game/♟ Blender.md",
-    "🎮 Game/🎨 ClipStudio.md",
     "🎮 Game/🎮 Unity.md",
-    "리스트 값 확인 방법.md",
+    "🎮 Game/🎨 ClipStudio.md",
+    "🎮 Game/♟ Blender.md",
+    "🌏 Web/🧱 HTML.md",
+    "🌏 Web/💻 JavaScript.md",
+    "🌏 Web/🎨 CSS.md",
+    "Pic/Pasted image 20240806155005.png",
+    "무제 파일.md",
+    "🤖 GPT/from typing import Any, Type.md",
     "Algorithm",
     "Pic/memory pack.png",
     "제목없음 1.png",
-    "2024-07-26.md",
     "무제 파일.canvas",
     "Pic/Pasted image 20240701173114.png",
     "제목없음.png",
-    "플로이드 와샬.md",
-    "Spaces/Home/Home.md",
-    "🔨 Tools/📘 VS Code.md",
     "🤖 GPT",
-    "🌏 Web/💻 JavaScript.md",
-    "🌏 Web/🎨 CSS.md",
     "🔨 Tools",
-    "📓 Study Note/🍎 CodingApple/🍎 JavaScript ✅.md",
-    "📋 Code Memo.md",
-    "📓 Study Note/🍎 CodingApple/🍎 HTML, CSS ✅ .md",
     "Tags",
     "📓 Study Note/🎄 Jungle",
     "🎮 Game",
@@ -237,7 +224,6 @@
     "Pic/다운로드.png",
     "Pic/Pasted image 20240603125433.png",
     "Pic/Pasted image 20240603125259.png",
-    "Pic/Pasted image 20240529145814.png",
-    "Pic/Pasted image 20240529144214.png"
+    "Pic/Pasted image 20240529145814.png"
   ]
 }

@@ -6,12 +6,7 @@ git bash에 명령어 복붙 : 마우스 우클릭
 
 ### 접속하는 방법
 
-git bash 열고 `ssh -i /e/Hutosuto.pem ubuntu@52.79.239.52`
-
-http://52.79.239.52/
-http://13.125.64.40:5000/#
-
-
+git bash 열고 `ssh -i /e/키파일이름.pem ubuntu@아이피`
 
 
 명령어 `sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10`는 Linux 시스템에서 `python` 명령어가 기본적으로 `python3`을 가리키도록 설정하는 과정입니다. 각 부분에 대해 자세히 설명해드리겠습니다.
