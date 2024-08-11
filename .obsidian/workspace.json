@@ -20,30 +20,6 @@
             }
           },
           {
-            "id": "ad84c74a3bbe0ed9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "💻 Lang/💻 Python.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5999fb7c1232c76c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🔨 Tools/💾 Git.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "02d578a07f58b763",
             "type": "leaf",
             "state": {
@@ -56,7 +32,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -130,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🔨 Tools/💾 Git.md",
+                "file": "💻 Lang/💻 C.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🔨 Tools/💾 Git.md",
+                "file": "💻 Lang/💻 C.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🔨 Tools/💾 Git.md"
+                "file": "💻 Lang/💻 C.md"
               }
             }
           },
@@ -201,8 +177,14 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "5999fb7c1232c76c",
+  "active": "02d578a07f58b763",
   "lastOpenFiles": [
+    "🎤 Interview/프로세스와 쓰레드의 차이.md",
+    "🎤 Interview/Jargon",
+    "🔨 Tools/⚙️ Linux.md",
+    "🎤 Interview/멀티프로세스와 멀티쓰레드의 차이.md",
+    "🔨 Tools/💾 Git.md",
+    "🎤 Interview",
     "💻 Lang/💻 Python.md",
     "⚒️ Life Hack.md",
     "💻 Lang/💻 C.md",
@@ -216,8 +198,6 @@
     "🔌 Coding Memo.md",
     "Cache Replacement Policies.md",
     "🤖 GPT/from __future__ import annotations.md",
-    "🔨 Tools/💾 Git.md",
-    "🔨 Tools/⚙️ Linux.md",
     "📊 Data/🛢 SQL.md",
     "📊 Data/📌 SQLD 족집게 정리.md",
     "💻 Lang/💻 C#.md",
@@ -226,10 +206,7 @@
     "🎮 Game/♟ Blender.md",
     "🌏 Web/🧱 HTML.md",
     "🌏 Web/💻 JavaScript.md",
-    "🌏 Web/🎨 CSS.md",
     "Pic/Pasted image 20240806155005.png",
-    "무제 파일.md",
-    "🤖 GPT/from typing import Any, Type.md",
     "Algorithm",
     "Pic/memory pack.png",
     "제목없음 1.png",
@@ -243,8 +220,6 @@
     "🎮 Game",
     "📓 Study Note/🍎 CodingApple",
     "📓 Study Note",
-    "📊 Data",
-    "💻 Lang",
     "Pic/Pasted image 20240615192622.png",
     "Pic/다운로드.png",
     "Pic/Pasted image 20240603125433.png",
