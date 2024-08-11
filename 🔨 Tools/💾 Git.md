@@ -280,6 +280,26 @@ git remote set-url origin https://<토큰>@github.com/닉네임/리포지터리�
 ```
 
 
+## GitHub 토큰 관리를 위한 gh 설치
+---
+
+Ubuntu에서 git을 쓸 때 GitHub login 때문에 복잡해 지지 않도록 GitHub CLI를 설치합니다.  
+설치 후 **gh auth login** 명령으로 access token을 생성 혹은 설치합니다.  
+
+```
+$ curl -fsSL [https://cli.github.com/packages/githubcli-archive-keyring.gpg](https://cli.github.com/packages/githubcli-archive-keyring.gpg) | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg  
+```
+
+```
+$ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] [https://cli.github.com/packages](https://cli.github.com/packages) stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null  
+```
+  
+```
+$ sudo apt update  
+$ sudo apt install gh
+```
+  
+
 ## Git duplicate
 ---
 
