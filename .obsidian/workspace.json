@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻 Lang/💻 C.md",
+                "file": "test.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "💻 Lang/💻 C.md",
+                "file": "test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "💻 Lang/💻 C.md",
+                "file": "test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "💻 Lang/💻 C.md"
+                "file": "test.md"
               }
             }
           },
@@ -203,9 +203,9 @@
   },
   "active": "02d578a07f58b763",
   "lastOpenFiles": [
+    "💻 Lang/💻 C.md",
     "💻 Lang/💻 C++.md",
     "test.md",
-    "💻 Lang/💻 C.md",
     "💻 Lang/💻 Python.md",
     "Cache Replacement Policies.md",
     "🔌 Coding Memo.md",
