@@ -41,6 +41,8 @@ Chatgpt
 
 파이썬 서버 : django, flask
 
+SQL 툴 : heidisql
+
 >[!Tip] 파인만 학습법
 
 1. 배우고 싶은 주제나 개념을 조사한다

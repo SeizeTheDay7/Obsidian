@@ -63,24 +63,3 @@ doSmth(); doOther();
 String cityName = user.getAddress().getCity().getName();
 ```
 
-
-## 틀렸던 이유들
-
-### 리턴값 자료형 틀림 - C
-
->[!bug]
->dequeue의 리턴값이 정수값이라는 사실을 모르고(까먹고?)
-saved를 `ListNode *saved` 로 선언했다가 왜 saved에 deque한게 안 들어가지? 이러고 있었다. int로 바꿨더니 정상 동작.
-
-```c
-void recursiveReverse(Queue *q)
-{
-	int saved = dequeue(q);
-	if (!(isEmptyQueue(q))){
-		recursiveReverse(q);
-	}
-	enqueue(q, saved);
-}
-
-
-
