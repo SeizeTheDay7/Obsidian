@@ -686,6 +686,29 @@ queue.put(2)
 print(queue.get()) # 출력: 1
 ```
 
+### heapq
+
+```python
+import heapq
+
+heap = []
+heapq.heappush(heap, 10)
+heapq.heappush(heap, 1)
+heapq.heappush(heap, 5)
+print(heap)  # 출력: [1, 10, 5]
+```
+
+파이썬은 기본적으로 최소값이 루트 (arr[0]) 에 오는 최소 힙을 제공한다.
+최대 힙 구현하려면 넣고 뺄 때 (-) 붙여주면 됨.
+
+`heapq.heappush(heap, item)` : 새로운 요소를 힙에 추가
+`heapq.heappop(heap)` : 힙에서 최소값 제거하고 반환
+`heapq.heappushpop(heap, item)` : 요소를 추가 후, 최소값을 제거하고 반환
+`heapq.heapreplace(heap, item)` : 루트를 제거하고 새로운 요소 추가
+`heapq.heapify(iterable)` : 리스트를 힙으로 변환
+`heapq.nlargest(n, iterable, key=None)` : 제일 큰 요소 n개 반환
+`heapq.nsmallest(n, iterable, key=None)` : 제일 작은 요소 n개 반환
+
 
 ### 자료형 변환
 

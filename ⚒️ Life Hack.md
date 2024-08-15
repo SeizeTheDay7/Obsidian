@@ -7,27 +7,7 @@
 - [[#옵시디언|옵시디언]]
 
 
-## ChatGPT 북마크
-<hr>
-
-💡
-[아무거나](https://chatgpt.com/c/f806b00d-ccf7-496e-8b29-02986adf3400)
-[옵시디언 표](https://chatgpt.com/c/50385aaa-aee4-44bc-a7c8-bee7c6d8bc54)
-[Linux](https://chatgpt.com/c/5b7a4cda-ba81-4382-af5f-d9fa17078255)
-[SQL](https://chatgpt.com/c/a8b16bd9-8651-4ef5-a25a-3a8dcd4350e0)
-
-🌏
-[Python](https://chatgpt.com/c/72e963c7-1192-4da2-a681-94c9a4d11d2a)
-[H, C, J](https://chatgpt.com/c/4e88d652-67d2-468e-8754-62ff474add36)
-[WebStack _ 4](https://chatgpt.com/c/96ff78de-1c0d-4c1a-b9c0-1306723190bf)
-[Git ](https://chatgpt.com/c/dde617aa-7238-43fa-bc5b-7c1ec8416a0a)
-[EC2 _ 4](https://chatgpt.com/c/c1113635-bb4c-4436-b8ee-b8bfc021d74a)
-
-🕹
-[C# _ 3](https://chatgpt.com/c/a191662e-07bf-4491-9150-159de1465d90)
-[C# _ 4](https://chatgpt.com/c/afb862d1-33e5-4d5a-99bf-4d6967f4dd31)
-[Unity Code _ 4](https://chatgpt.com/c/9008cbfb-0f5d-447b-8f68-100c608fb30d)
-[Unity _ 4](https://chatgpt.com/c/8bdb79c6-d1c2-484f-8dd2-9ec92663ef31)
+Ctrl+D : 한 줄 전부 삭제
 
 ## 윈도우 단축키
 <hr>
@@ -74,12 +54,4 @@ Shift+Ins : 붙여넣기
 - `/fix` : 버그 해결책 제안해줌
 
 
-## 옵시디언
-<hr>
 
-- 옵시디언 깃허브 업데이트 방법 : Ctrl+p → git push
-- 목차 만들기 : ## 뒤에 제목 적고 Ctrl+p → tables of content : create ~
-- 확대, 축소 : Ctrl + `+`, `-`
-
-**문법**
-`==` : 하이라이트

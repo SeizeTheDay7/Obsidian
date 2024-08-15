@@ -61,6 +61,7 @@ Ctrl + Alt + T : 터미널 열기
 ## 명령어
 
 Ctrl + H : 탐색기에서 숨김 파일 보기
+`$ ls -a` : 터미널에서 숨김 파일/폴더 보기
 
 ```bash
 cd /home/hutosuto/다운로드
