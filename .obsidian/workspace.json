@@ -56,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,8 +110,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -131,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🔨 Tools/📝 Obsidian.md",
+                "file": "⚒️ Life Hack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🔨 Tools/📝 Obsidian.md",
+                "file": "⚒️ Life Hack.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🔨 Tools/📝 Obsidian.md"
+                "file": "⚒️ Life Hack.md"
               }
             }
           },
@@ -202,11 +201,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "76886804b23ca623",
+  "active": "8b611f4aa138cab4",
   "lastOpenFiles": [
+    "🔨 Tools/📝 Obsidian.md",
     "💻 Lang/💻 C.md",
     "🔨 Tools/💾 Git.md",
-    "🔨 Tools/📝 Obsidian.md",
     "⚒️ Life Hack.md",
     "✏️ Memo.md",
     "💻 Lang/💻 Python.md",

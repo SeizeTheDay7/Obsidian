@@ -54,4 +54,19 @@ Shift+Ins : 붙여넣기
 - `/fix` : 버그 해결책 제안해줌
 
 
+### 도커 살리기
+
+#### 도커 깨우기
+
+```sh
+sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+systemctl --user restart docker-desktop
+```
+
+
+#### 컨테이너 살리기
+
+```sh
+docker run --restart always --name ubuntu_18.04 -dt ubuntu:18.04 // ubuntu 설치
+```
 
