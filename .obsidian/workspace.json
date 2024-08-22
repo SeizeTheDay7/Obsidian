@@ -54,9 +54,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7fe00c8e79ddd333",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🔨 Tools/⚙️ Linux.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "77f0ca903a8cef98",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🔨 Tools/💾 Git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -130,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "⚒️ Life Hack.md",
+                "file": "🔨 Tools/⚙️ Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "⚒️ Life Hack.md",
+                "file": "🔨 Tools/⚙️ Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "⚒️ Life Hack.md"
+                "file": "🔨 Tools/⚙️ Linux.md"
               }
             }
           },
@@ -201,12 +225,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "8b611f4aa138cab4",
+  "active": "7fe00c8e79ddd333",
   "lastOpenFiles": [
+    "⚒️ Life Hack.md",
+    "🔨 Tools/💾 Git.md",
     "🔨 Tools/📝 Obsidian.md",
     "💻 Lang/💻 C.md",
-    "🔨 Tools/💾 Git.md",
-    "⚒️ Life Hack.md",
     "✏️ Memo.md",
     "💻 Lang/💻 Python.md",
     "🔨 Tools/⚙️ Linux.md",
