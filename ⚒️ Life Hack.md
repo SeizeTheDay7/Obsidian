@@ -9,6 +9,17 @@
 
 Ctrl+D : 한 줄 전부 삭제
 
+
+
+## GPT 프롬프트
+---
+
+1.
+에 대해 영어권에서 최대한 자세히 찾은 다음 너의 지식을 총동원해서 한글로 최대한 자세히 설명해줘. 내용이 아무리 길어져도 괜찮아.
+
+
+
+
 ## 윈도우 단축키
 <hr>
 
@@ -54,18 +65,5 @@ Shift+Ins : 붙여넣기
 - `/fix` : 버그 해결책 제안해줌
 
 
-### 도커 살리기
 
-#### 도커 깨우기
-
-```sh
-sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
-systemctl --user restart docker-desktop
-```
-
-#### 컨테이너 살리기
-
-```sh
-docker run --restart always --name ubuntu_18.04 -dt ubuntu:18.04 // ubuntu 설치
-```
 

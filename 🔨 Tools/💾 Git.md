@@ -159,10 +159,19 @@ sqaush & merge
 ## 파일/커밋 되돌리기
 ---
 
-```bash
-git push -f origin master
+```c
+git log
+git reset --hard (git log 해쉬키)
+git push --force
 ```
-git 버전 되돌리고 강제 반영
+
+git 되돌리기
+
+
+```bash
+git push -f origin "branch name"
+```
+git 버전 되돌리고 깃허브에도 반영
 
 ```bash
 git restore 파일명

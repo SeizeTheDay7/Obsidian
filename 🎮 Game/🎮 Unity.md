@@ -9,9 +9,6 @@
 **'Vector2' is an ambiguous reference between 'UnityEngine.Vector2' and 'System.Numerics.Vector2'**
 using System.Numerics; 삭제하기
 
-**VS Code로 유니티 디버깅**
-Ctrl+Shift+P - Attach Unity
-
 **탑뷰 오브젝트 순서 정렬**
 ```C#
 public class Ysort : MonoBehaviour
@@ -57,3 +54,17 @@ movement.y = Input.GetAxisRaw("Vertical");
 
 **부모 함수에 대한 상대 좌표**
 transform.localPosition
+
+
+## 설정
+---
+
+Edit → Project Settings → Editor → Enter Play Mode Options
+
+
+
+## ㅇㅇ
+
+
+
+## ㅇㅇ
