@@ -37,19 +37,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🔨 Tools/⚙️ Linux.md",
+                "file": "Cache Replacement Policies.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a0aea800ea02b70d",
+            "id": "d1fc7217cfe6ce56",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🔨 Tools/💾 Git.md",
+                "file": "Algorithm.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🔨 Tools/💾 Git.md",
+                "file": "Algorithm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🔨 Tools/💾 Git.md",
+                "file": "Algorithm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🔨 Tools/💾 Git.md"
+                "file": "Algorithm.md"
               }
             }
           },
@@ -201,9 +201,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "a0aea800ea02b70d",
+  "active": "d1fc7217cfe6ce56",
   "lastOpenFiles": [
+    "Cache Replacement Policies.md",
+    "Algorithm.md",
     "🔨 Tools/⚙️ Linux.md",
+    "🔨 Tools/💾 Git.md",
     "🔨 Tools/📝 Obsidian.md",
     "💻 Lang/💻 Python.md",
     "🔨 Tools/📘 VS Code.md",
@@ -211,10 +214,8 @@
     "💻 Lang/💻 C.md",
     "🎮 Game/🎮 Unity.md",
     "⚒️ Life Hack.md",
-    "🔨 Tools/💾 Git.md",
     "✏️ Memo.md",
     "test.md",
-    "Cache Replacement Policies.md",
     "🔌 Coding Memo.md",
     "Pic/Pasted image 20240521001026.png",
     "Pic/Pasted image 20240521134920.png",
@@ -240,7 +241,6 @@
     "📊 Data/🛢 SQL.md",
     "💻 Lang/💻 C#.md",
     "🎮 Game/🎨 ClipStudio.md",
-    "🎮 Game/♟ Blender.md",
     "Algorithm",
     "무제 파일.canvas",
     "🤖 GPT",
