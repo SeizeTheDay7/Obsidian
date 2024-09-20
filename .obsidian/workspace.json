@@ -98,7 +98,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -191,12 +192,12 @@
   },
   "active": "d1fc7217cfe6ce56",
   "lastOpenFiles": [
+    "🔨 Tools/📝 Obsidian.md",
+    "🥚 Algorithm.md",
     "Pic/Pasted image 20240920203431.png",
     "Cache Replacement Policies.md",
-    "🥚 Algorithm.md",
     "🔨 Tools/⚙️ Linux.md",
     "🔨 Tools/💾 Git.md",
-    "🔨 Tools/📝 Obsidian.md",
     "💻 Lang/💻 Python.md",
     "🔨 Tools/📘 VS Code.md",
     "💻 Lang/💻 C++.md",
@@ -215,7 +216,6 @@
     "Pic/Pasted image 20240521000339.png",
     "Pic/Pasted image 20240114183153.png",
     "Pic/Pasted image 20240114182240.png",
-    "Pic/Pasted image 20240114180128.png",
     "📊 Data/📌 SQLD 족집게 정리.md",
     "📓 Study Note/🎄 Jungle.md",
     "📓 Study Note/🍎 CodingApple/🍎 React.md",
