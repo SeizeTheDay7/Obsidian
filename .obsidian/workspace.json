@@ -73,14 +73,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🥚 Algorithm.md",
+                "file": "🔨 Tools/📘 VS Code.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🎮 Game/🎮 Unity.md",
+                "file": "🔨 Tools/📘 VS Code.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🎮 Game/🎮 Unity.md",
+                "file": "🔨 Tools/📘 VS Code.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🎮 Game/🎮 Unity.md"
+                "file": "🔨 Tools/📘 VS Code.md"
               }
             }
           },
@@ -225,15 +225,17 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "61fd3bd23ab2c2f6",
+  "active": "d1fc7217cfe6ce56",
   "lastOpenFiles": [
-    "💻 Lang/💻 C.md",
+    "🎮 Game/♟ Blender.md",
+    "🥚 Algorithm.md",
     "🔨 Tools/⚙️ Linux.md",
     "🎮 Game/🎮 Unity.md",
+    "💻 Lang/💻 C.md",
+    "🎮 Game/🎨 ClipStudio.md",
     "💻 Lang/💻 C#.md",
     "🔨 Tools/📝 Obsidian.md",
     "💻 Lang/💻 Python.md",
-    "🥚 Algorithm.md",
     "Spaces/Spaces.md",
     "Pic/Pasted image 20240920203431.png",
     "Cache Replacement Policies.md",
@@ -263,8 +265,6 @@
     "🎤 Interview/멀티프로세스와 멀티쓰레드의 차이.md",
     "🎤 Interview",
     "🌏 Web/🛜 Server/🌨️ Amazon EC2.md",
-    "🤖 GPT/from __future__ import annotations.md",
-    "📊 Data/🛢 SQL.md",
     "Algorithm",
     "무제 파일.canvas",
     "🤖 GPT",
