@@ -56,6 +56,18 @@
             }
           },
           {
+            "id": "4f43ce9bf528a608",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🔨 Tools/💾 Git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "cd7bb39d58984143",
             "type": "leaf",
             "state": {
@@ -80,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -154,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🔨 Tools/📘 VS Code.md",
+                "file": "🔨 Tools/💾 Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🔨 Tools/📘 VS Code.md",
+                "file": "🔨 Tools/💾 Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🔨 Tools/📘 VS Code.md"
+                "file": "🔨 Tools/💾 Git.md"
               }
             }
           },
@@ -225,8 +237,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "d1fc7217cfe6ce56",
+  "active": "4f43ce9bf528a608",
   "lastOpenFiles": [
+    "💻 Lang/💻 Python.md",
+    "🔨 Tools/📘 VS Code.md",
     "🎮 Game/♟ Blender.md",
     "🥚 Algorithm.md",
     "🔨 Tools/⚙️ Linux.md",
@@ -235,12 +249,10 @@
     "🎮 Game/🎨 ClipStudio.md",
     "💻 Lang/💻 C#.md",
     "🔨 Tools/📝 Obsidian.md",
-    "💻 Lang/💻 Python.md",
     "Spaces/Spaces.md",
     "Pic/Pasted image 20240920203431.png",
     "Cache Replacement Policies.md",
     "🔨 Tools/💾 Git.md",
-    "🔨 Tools/📘 VS Code.md",
     "💻 Lang/💻 C++.md",
     "⚒️ Life Hack.md",
     "✏️ Memo.md",

@@ -1101,6 +1101,12 @@ False is False
 ## 구현
 <hr>
 
+### 리스트 깊은 복사
+```python
+arr = arr_old[:]
+```
+
+
 ### 문자열을 리스트로 바꾸기
 ```python
 string = 'I became a zombie'
