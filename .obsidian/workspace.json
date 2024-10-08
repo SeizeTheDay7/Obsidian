@@ -49,31 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻 Lang/💻 Python.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4f43ce9bf528a608",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "리액트.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e7185d21b50351db",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "리액트.md",
+                "file": "📚 Book/게임 기획의 정석.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -178,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "리액트.md",
+                "file": "📚 Book/게임 기획의 정석.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -195,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "리액트.md",
+                "file": "📚 Book/게임 기획의 정석.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "리액트.md"
+                "file": "📚 Book/게임 기획의 정석.md"
               }
             }
           },
@@ -249,21 +225,23 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "e7185d21b50351db",
+  "active": "c2fad67b841dc0bd",
   "lastOpenFiles": [
-    "페이저.md",
-    "리액트.md",
-    "🔨 Tools/💾 Git.md",
+    "🔨 Tools/📝 Obsidian.md",
+    "📚 Book/게임 기획의 정석.md",
     "💻 Lang/💻 Python.md",
+    "📚 Book",
+    "리액트.md",
+    "🎮 Game/🎮 Unity.md",
+    "페이저.md",
+    "🔨 Tools/💾 Git.md",
     "🔨 Tools/📘 VS Code.md",
     "🎮 Game/♟ Blender.md",
     "🥚 Algorithm.md",
     "🔨 Tools/⚙️ Linux.md",
-    "🎮 Game/🎮 Unity.md",
     "💻 Lang/💻 C.md",
     "🎮 Game/🎨 ClipStudio.md",
     "💻 Lang/💻 C#.md",
-    "🔨 Tools/📝 Obsidian.md",
     "Spaces/Spaces.md",
     "Pic/Pasted image 20240920203431.png",
     "💻 Lang/💻 C++.md",
@@ -287,7 +265,6 @@
     "📓 Study Note/🍎 CodingApple/🍎 HTML, CSS ✅ .md",
     "🎤 Interview/프로세스와 쓰레드의 차이.md",
     "🎤 Interview/Jargon",
-    "🎤 Interview/멀티프로세스와 멀티쓰레드의 차이.md",
     "🎤 Interview",
     "Algorithm",
     "무제 파일.canvas",
@@ -296,7 +273,6 @@
     "Tags",
     "📓 Study Note/🎄 Jungle",
     "🎮 Game",
-    "📓 Study Note/🍎 CodingApple",
-    "📓 Study Note"
+    "📓 Study Note/🍎 CodingApple"
   ]
 }
