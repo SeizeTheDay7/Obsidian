@@ -79,8 +79,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +133,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📚 Book/게임 기획의 정석.md",
+                "file": "🔨 Tools/📝 Obsidian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📚 Book/게임 기획의 정석.md",
+                "file": "🔨 Tools/📝 Obsidian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📚 Book/게임 기획의 정석.md"
+                "file": "🔨 Tools/📝 Obsidian.md"
               }
             }
           },
@@ -225,10 +225,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "c2fad67b841dc0bd",
+  "active": "d5a35ee99d160b77",
   "lastOpenFiles": [
-    "🔨 Tools/📝 Obsidian.md",
     "📚 Book/게임 기획의 정석.md",
+    "🔨 Tools/📝 Obsidian.md",
     "💻 Lang/💻 Python.md",
     "📚 Book",
     "리액트.md",
