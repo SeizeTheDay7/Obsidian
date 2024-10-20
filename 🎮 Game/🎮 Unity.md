@@ -25,7 +25,6 @@ Edit - Project Settings - Editor - Asset Serialization - Force Text로 바꾸기
 
 ## 💾 개념
 ---
-
 ### .meta 파일
 컴포넌트 간의 연결과 같은 메타 정보들을 담고 있다.
 유니티 에디터에서 파일 위치나 이름 바꾼거 아니면 이거 때문에 정보 소실.

@@ -11,7 +11,7 @@
 - [[#git 초기 세팅|git 초기 세팅]]
 - [[#필요없는 명령어|필요없는 명령어]]
 
-
+git add -p
 
 git bash에서 cd 'C:\Users\Hutosuto\Documents\Obsidian Vault' 하면 저장소 선택돼서 명령 가능
 
