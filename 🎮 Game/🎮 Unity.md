@@ -13,10 +13,15 @@
 ## ⚙️ 설정
 ---
 
-### 수정 후 빠르게 재생
+### 🏷️ 성능
+
+#### 수정 후 빠르게 재생
 Edit → Project Settings → Editor → Enter Play Mode Options
 
-### 애셋 직렬화 방식 통일
+
+### 🏷️ 디버그
+
+#### 애셋 직렬화 방식 통일
 Edit - Project Settings - Editor - Asset Serialization - Force Text로 바꾸기
 
 
@@ -38,6 +43,24 @@ Edit - Project Settings - Editor - Asset Serialization - Force Text로 바꾸기
 
 ## 📋 정보
 ---
+### 🏷️ Script
+
+#### public vs [SerializeField]
+둘 다 Inspector 창에서 수정이 가능하지만, 
+SerializeField는 외부 스크립트에서 수정할 수 없는 캡슐화가 이루어진다.
+
+#### private void vs void
+접근 제한자는 생략해도 되지만 가독성을 위해 명시적으로 추가하는게 좋다.
+
+### 🏷️ UI
+#### EventSystem
+UI 추가하면 Canvas와 함께 씬에 추가되는 요소.
+사용자 입력과 UI 요소를 이어주는 오브젝트이다.
+EventSystem을 사용하면 입력 설정을 변경할 수 있다.
+
+#### Rect Transform
+
+
 
 
 
