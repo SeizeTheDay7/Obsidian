@@ -50,20 +50,6 @@
             }
           },
           {
-            "id": "8a5fc69810eb4b4b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📊 Data/프로그래머스.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "프로그래머스"
-            }
-          },
-          {
             "id": "c2fad67b841dc0bd",
             "type": "leaf",
             "state": {
@@ -272,11 +258,11 @@
   },
   "active": "61fd3bd23ab2c2f6",
   "lastOpenFiles": [
+    "🔨 Tools/💾 Git.md",
     "📊 Data/프로그래머스.md",
+    "🎮 Game/🎮 Unity.md",
     "📊 Data/🛢 SQL.md",
     "💻 Lang/💻 C.md",
-    "🔨 Tools/💾 Git.md",
-    "🎮 Game/🎮 Unity.md",
     "🔨 Tools/📝 Obsidian.md",
     "📚 Book/게임 기획의 정석.md",
     "💻 Lang/💻 Python.md",
