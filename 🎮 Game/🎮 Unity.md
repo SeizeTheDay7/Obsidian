@@ -1,10 +1,25 @@
 - [[#⚙️ 설정|⚙️ 설정]]
-	- [[#⚙️ 설정#빠르게 재생|빠르게 재생]]
-	- [[#⚙️ 설정#애셋 직렬화 방식 통일|애셋 직렬화 방식 통일]]
+	- [[#⚙️ 설정#🏷️ 성능|🏷️ 성능]]
+		- [[#🏷️ 성능#수정 후 빠르게 재생|수정 후 빠르게 재생]]
+	- [[#⚙️ 설정#🏷️ 디버그|🏷️ 디버그]]
+		- [[#🏷️ 디버그#애셋 직렬화 방식 통일|애셋 직렬화 방식 통일]]
 - [[#💾 개념|💾 개념]]
+	- [[#💾 개념#.meta 파일|.meta 파일]]
 - [[#📋 정보|📋 정보]]
+	- [[#📋 정보#🏷️ Script|🏷️ Script]]
+		- [[#🏷️ Script#public vs [SerializeField]|public vs [SerializeField]]]
+		- [[#🏷️ Script#private void vs void|private void vs void]]
+	- [[#📋 정보#🏷️ UI|🏷️ UI]]
+		- [[#🏷️ UI#EventSystem|EventSystem]]
 - [[#🦫 디버깅|🦫 디버깅]]
-		- [[#애셋 직렬화 방식 통일#Cinemachine 따라가기 덜덜 떨림|Cinemachine 따라가기 덜덜 떨림]]
+	- [[#🦫 디버깅#🏷️ 게임 뷰|🏷️ 게임 뷰]]
+		- [[#🏷️ 게임 뷰#오브젝트들 전부 살짝 흐림|오브젝트들 전부 살짝 흐림]]
+	- [[#🦫 디버깅#🏷️ UI|🏷️ UI]]
+		- [[#🏷️ UI#9-slice 적용 안됨|9-slice 적용 안됨]]
+	- [[#🦫 디버깅#🏷️ 연출|🏷️ 연출]]
+		- [[#🏷️ 연출#Cinemachine 따라가기 덜덜 떨림|Cinemachine 따라가기 덜덜 떨림]]
+	- [[#🦫 디버깅#🏷️ 협업|🏷️ 협업]]
+		- [[#🏷️ 협업#깃 pull 할 때마다 메타파일 갱신|깃 pull 할 때마다 메타파일 갱신]]
 
 
 
@@ -58,7 +73,6 @@ UI 추가하면 Canvas와 함께 씬에 추가되는 요소.
 사용자 입력과 UI 요소를 이어주는 오브젝트이다.
 EventSystem을 사용하면 입력 설정을 변경할 수 있다.
 
-#### Rect Transform
 
 
 
@@ -68,13 +82,21 @@ EventSystem을 사용하면 입력 설정을 변경할 수 있다.
 
 ## 🦫 디버깅
 ---
+### 🏷️ 게임 뷰
+#### 오브젝트들 전부 살짝 흐림
+해상도를 Full HD로 바꾸고 1.5x로 돼있는 Scale을 1x로 바꾸기
 
-### Cinemachine 따라가기 덜덜 떨림
-플레이어 오브젝트에 있는 `Rigidbody2D` 컴포넌트에서 
-`Interpolation`을 `Interpolate`로 설정
+### 🏷️ UI
+#### 9-slice 적용 안됨
+UI element의 Image - Image Type을 sliced로 바꾼다
 
-### 깃 pull 할 때마다 메타파일 갱신
+### 🏷️ 연출
+#### Cinemachine 따라가기 덜덜 떨림
+플레이어 오브젝트에 있는 Rigidbody2D 컴포넌트에서 
+Interpolation을 Interpolate로 설정
 
+### 🏷️ 협업
+#### 깃 pull 할 때마다 메타파일 갱신
 1. 애셋 직렬화 방식 : Project Settings - Editor - Asset Serialization - Force Text 통일
 2. Project Settings - Editor - Version Control - Visible Meta Files 통일
 
