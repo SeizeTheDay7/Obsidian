@@ -39,7 +39,8 @@ Edit → Project Settings → Editor → Enter Play Mode Options
 #### 애셋 직렬화 방식 통일
 Edit - Project Settings - Editor - Asset Serialization - Force Text로 바꾸기
 
-
+#### 프로젝트 렌더링 파이프라인 확인
+Edit - Project Settings - Graphics - Scriptable Pipeline Settings
 
 
 
