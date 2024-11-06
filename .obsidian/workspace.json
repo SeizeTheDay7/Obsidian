@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📚 Book/게임 기획의 정석.md",
+                "file": "💻 Lang/💻 C++.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "게임 기획의 정석"
+              "title": "💻 C++"
             }
           },
           {
@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -145,7 +145,7 @@
             }
           },
           {
-            "id": "e5d884e69dc9836f",
+            "id": "bbdb54238817a674",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -154,8 +154,7 @@
               "title": "Spaces"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -256,28 +255,28 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "61fd3bd23ab2c2f6",
+  "active": "c2fad67b841dc0bd",
   "lastOpenFiles": [
+    "🔨 Tools/📝 Obsidian.md",
+    "💻 Lang/💻 C++.md",
+    "🔨 Tools/⚙️ Linux.md",
     "🔨 Tools/💾 Git.md",
-    "📊 Data/프로그래머스.md",
+    "💻 Lang/💻 Python.md",
     "🎮 Game/🎮 Unity.md",
+    "💻 Lang/💻 C#.md",
+    "🔨 Tools/📘 VS Code.md",
+    "📚 Book/게임 기획의 정석.md",
+    "📊 Data/프로그래머스.md",
     "📊 Data/🛢 SQL.md",
     "💻 Lang/💻 C.md",
-    "🔨 Tools/📝 Obsidian.md",
-    "📚 Book/게임 기획의 정석.md",
-    "💻 Lang/💻 Python.md",
     "📚 Book",
     "리액트.md",
     "페이저.md",
-    "🔨 Tools/📘 VS Code.md",
     "🎮 Game/♟ Blender.md",
     "🥚 Algorithm.md",
-    "🔨 Tools/⚙️ Linux.md",
     "🎮 Game/🎨 ClipStudio.md",
-    "💻 Lang/💻 C#.md",
     "Spaces/Spaces.md",
     "Pic/Pasted image 20240920203431.png",
-    "💻 Lang/💻 C++.md",
     "⚒️ Life Hack.md",
     "✏️ Memo.md",
     "test.md",
