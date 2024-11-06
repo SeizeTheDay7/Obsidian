@@ -40,7 +40,7 @@ Edit → Project Settings → Editor → Enter Play Mode Options
 Edit - Project Settings - Editor - Asset Serialization - Force Text로 바꾸기
 
 #### 프로젝트 렌더링 파이프라인 확인
-Edit - Project Settings - Graphics - Scriptable Pipeline Settings
+Edit - Project Settings - Graphics - Scriptable Pipeline Settings 확인
 
 
 
