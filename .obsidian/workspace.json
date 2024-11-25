@@ -1,126 +1,41 @@
 {
   "main": {
-    "id": "124d1cf240e87204",
+    "id": "49d456049909e000",
     "type": "split",
     "children": [
       {
-        "id": "ef40cfb9a764294b",
+        "id": "272b9761d1486e8a",
         "type": "tabs",
         "children": [
           {
-            "id": "d5a35ee99d160b77",
+            "id": "6dd3a394db9077b5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🔨 Tools/📝 Obsidian.md",
+                "file": "📓 Study Note/📚 Book/🌐 Web/생활코딩! 리액트 프로그래밍.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "📝 Obsidian"
-            }
-          },
-          {
-            "id": "61fd3bd23ab2c2f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🎮 Game/🎮 Unity.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "🎮 Unity"
-            }
-          },
-          {
-            "id": "0932ffd7379e567f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🔨 Tools/💾 Git.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "💾 Git"
-            }
-          },
-          {
-            "id": "c2fad67b841dc0bd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "💻 Lang/💻 C++.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "💻 C++"
-            }
-          },
-          {
-            "id": "8f9603f429abfea0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
-            }
-          },
-          {
-            "id": "cd7bb39d58984143",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🔨 Tools/⚙️ Linux.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "⚙️ Linux"
-            }
-          },
-          {
-            "id": "d1fc7217cfe6ce56",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🔨 Tools/📘 VS Code.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "📘 VS Code"
+              "title": "생활코딩! 리액트 프로그래밍"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "17bef1c05351b818",
+    "id": "bf9d58b4ad0570aa",
     "type": "split",
     "children": [
       {
-        "id": "3761a6c42aeff32f",
+        "id": "13d2d0e7ef31c054",
         "type": "tabs",
         "children": [
           {
-            "id": "d2f354bec3a29ea8",
+            "id": "0b70375427ba20ce",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -132,7 +47,7 @@
             }
           },
           {
-            "id": "d76d15cfaef0f006",
+            "id": "25aa704b43f3831f",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -149,7 +64,7 @@
             }
           },
           {
-            "id": "1385248cb3b31ea4",
+            "id": "16a663cc47f42727",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -159,7 +74,7 @@
             }
           },
           {
-            "id": "f94f92f1c06556c5",
+            "id": "3c9c51d2735e6458",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -172,23 +87,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "d923f252341fef9a",
+    "id": "af8103ab008bb165",
     "type": "split",
     "children": [
       {
-        "id": "034f3b303d89308d",
+        "id": "f4d25e927bfbe0f6",
         "type": "tabs",
         "children": [
           {
-            "id": "cc58a59c8e27e957",
+            "id": "71e35e9e3ab9b21d",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🔨 Tools/💾 Git.md",
+                "file": "💻 Lang/💻 C++.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,25 +113,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "💾 Git의 백링크"
+              "title": "💻 C++의 백링크"
             }
           },
           {
-            "id": "10c70e34573c0e56",
+            "id": "0eed4d37e6f95c8b",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🔨 Tools/💾 Git.md",
+                "file": "💻 Lang/💻 C++.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "💾 Git의 나가는 링크"
+              "title": "💻 C++의 나가는 링크"
             }
           },
           {
-            "id": "b2989dc1d900d4bd",
+            "id": "a6ca6c1ce8fd51ef",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -229,29 +144,18 @@
             }
           },
           {
-            "id": "43a240ff80bbd18f",
+            "id": "27e0148ebc734db0",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "🔨 Tools/💾 Git.md"
+                "file": "💻 Lang/💻 C++.md"
               },
               "icon": "lucide-list",
-              "title": "💾 Git 개요"
-            }
-          },
-          {
-            "id": "6a1188cca97e5a3e",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "title": "💻 C++ 개요"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -260,63 +164,33 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:퀵 스위처 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
       "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false
+      "command-palette:명령어 팔레트 열기": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c2fad67b841dc0bd",
+  "active": "0b70375427ba20ce",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "💻 Lang/💻 C++.md",
+    "📓 Study Note/🍎 CodingApple/🍎 JavaScript ✅.md",
     "📓 Study Note/📚 Book/🌐 Web/생활코딩! 리액트 프로그래밍.md",
-    "📓 Study Note/📚 Book/🌐 Web",
-    "📓 Study Note/📚 Book",
-    "📓 Study Note/🌳 Jungle/페이저.md",
+    "📚 Book/게임 기획의 정석.md",
+    "🔨 Tools/📝 Obsidian.md",
+    "🎮 Game/🎮 Unity.md",
+    "✏️ Memo.md",
+    "🥚 Algorithm.md",
+    "🔌 Coding Memo.md",
+    "🤖 GPT/from __future__ import annotations.md",
     "📓 Study Note/🌳 Jungle/입학시험.md",
     "📓 Study Note/🌳 Jungle",
-    "🔨 Tools/📝 Obsidian.md",
-    "🔨 Tools/⚙️ Linux.md",
-    "🔨 Tools/💾 Git.md",
-    "💻 Lang/💻 Python.md",
-    "🎮 Game/🎮 Unity.md",
-    "💻 Lang/💻 C#.md",
-    "🔨 Tools/📘 VS Code.md",
-    "📚 Book/게임 기획의 정석.md",
-    "📊 Data/프로그래머스.md",
-    "📊 Data/🛢 SQL.md",
-    "💻 Lang/💻 C.md",
-    "📚 Book",
     "리액트.md",
-    "페이저.md",
-    "🎮 Game/♟ Blender.md",
-    "🥚 Algorithm.md",
-    "🎮 Game/🎨 ClipStudio.md",
-    "Spaces/Spaces.md",
-    "Pic/Pasted image 20240920203431.png",
-    "⚒️ Life Hack.md",
-    "✏️ Memo.md",
-    "test.md",
-    "🔌 Coding Memo.md",
-    "Pic/Pasted image 20240521001026.png",
-    "Pic/Pasted image 20240521134920.png",
-    "Pic/Pasted image 20240521102235.png",
-    "Pic/Pasted image 20240521000758.png",
-    "Pic/Pasted image 20240516213933.png",
-    "Pic/Pasted image 20240519163843.png",
-    "Pic/Pasted image 20240521000339.png",
-    "Pic/Pasted image 20240114183153.png",
-    "Pic/Pasted image 20240114182240.png",
-    "🎤 Interview/Jargon",
-    "🎤 Interview",
-    "Algorithm",
-    "무제 파일.canvas",
-    "🤖 GPT",
-    "🔨 Tools",
-    "Tags"
+    "📓 Study Note/🌳 Jungle/페이저.md",
+    "📓 Study Note/📚 Book/🌐 Web",
+    "📓 Study Note/Book/React",
+    "📓 Study Note/📚 Book",
+    "💻 Lang/💻 C++.md"
   ]
 }
