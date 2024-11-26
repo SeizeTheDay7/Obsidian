@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻 Lang/💻 C#.md",
+                "file": "📓 Study Note/🎤 Tech Interview.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "💻 C#"
+              "title": "🎤 Tech Interview"
             }
           },
           {
@@ -102,7 +102,7 @@
             }
           },
           {
-            "id": "5ce096671abe0617",
+            "id": "82b71e46c786b7ac",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -201,26 +201,31 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "6dd3a394db9077b5",
+  "active": "0b70375427ba20ce",
   "lastOpenFiles": [
-    "💻 Lang/💻 C.md",
+    "🎤 Interview/멀티프로세스와 멀티쓰레드의 차이.md",
+    "📓 Study Note/🎤 Tech Interview.md",
+    "🎤 Interview/프로세스와 쓰레드의 차이.md",
+    "🎮 Game/♟ Blender.md",
+    "⚒️ Life Hack.md",
+    "✏️ Memo.md",
+    "🥚 Algorithm.md",
+    "리액트.md",
     "💻 Lang/💻 C#.md",
+    "💻 Lang/💻 C.md",
     "💻 Lang/💻 Python.md",
     "💻 Lang/💻 C++.md",
     "📓 Study Note/🍎 CodingApple/🍎 JavaScript ✅.md",
-    "📓 Study Note/📚 Book/🌐 Web/생활코딩! 리액트 프로그래밍.md",
+    "📚 Book/🌐 Web/생활코딩! 리액트 프로그래밍.md",
     "📚 Book/게임 기획의 정석.md",
     "🔨 Tools/📝 Obsidian.md",
     "🎮 Game/🎮 Unity.md",
-    "✏️ Memo.md",
-    "🥚 Algorithm.md",
     "🔌 Coding Memo.md",
     "🤖 GPT/from __future__ import annotations.md",
     "📓 Study Note/🌳 Jungle/입학시험.md",
     "📓 Study Note/🌳 Jungle",
-    "리액트.md",
     "📓 Study Note/🌳 Jungle/페이저.md",
-    "📓 Study Note/📚 Book/🌐 Web",
+    "📚 Book/🌐 Web",
     "📓 Study Note/Book/React",
     "📓 Study Note/📚 Book"
   ]
