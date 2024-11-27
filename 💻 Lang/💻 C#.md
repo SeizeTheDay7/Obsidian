@@ -27,6 +27,10 @@
 ## Tip
 ---
 
+**vscode에서 C# 컴파일**
+dotnet new console 하면 프로젝트 생성
+dotnet run 하면 실행
+
 **C# 특징**
 - 대소문자를 구분
 - 공백이나 줄 바꿈은 무시
