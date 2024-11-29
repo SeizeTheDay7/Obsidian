@@ -1,3 +1,19 @@
+
+
+## 단축키
+
+`키패드 5` : 시점 변경 (Perspective, Orthographic : 원근감, 공간감 없음)
+	
+
+
+
+
+
+
+
+
+
+
 [Beginner Blender 4.0 Tutorial Part 1](https://www.youtube.com/watch?v=B0J27sf9N1Y&list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z&index=2)
 
 시점 이동 방법

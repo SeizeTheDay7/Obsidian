@@ -62,6 +62,17 @@ string multiLines = @"
 ## 개념
 ---
 
+### 전역 변수와 지역 변수
+
+전역 변수, 필드 : 클래스와 같은 레벨에서 선언된 변수
+지역 변수 : 함수 레벨에서 선언된 변수
+
+동일한 이름으로 전역 변수와 지역 변수를 같이 선언할 수 있다.
+함수 내에서는 지역 변수를 쓰고, 지역 변수가 없으면 전역 변수를 쓴다.
+
+C#에서는 전역 변수가 아닌 필드라는 단어를 주로 사용하며,
+전역 변수는 언더스코어(`_`) 또는 `m_` 접두사를 붙이는 경향이 있다.
+
 
 
 
@@ -123,6 +134,44 @@ float 키워드로 실수 데이터를 직접 입력할 때는 대문자 F 또�
 var number = 1234;
 ```
 C# 컴파일러는 **var**로 선언된 변수에 저장되는 값을 자동으로 추론해서 적당한 형식으로 변환한다. 이를 형식 추론(type inference)이라고 한다.
+
+### 배열
+```cs
+int[] oneArray; // 1차원 배열 선언
+int[,] twoArray; // 2차원 배열 선언
+int[,,] threeArray; // 3차원 배열 선언
+```
+
+배열 선언
+
+```cs
+oneArray = new int[2] {1,2};
+twoArray = new int[2,2] {{1,2},{3,4}};
+```
+
+배열 초기화
+선언과 동시에 초기화하면 new 자료형 빼먹어도 된다
+#### Rank, Length, GetLength()
+```cs
+arr.Rank // 3차원 배열이면 3
+arr.Length // 배열 길이 반환
+arr.GetLength(1) // 행의 개수
+arr.GetLength(2) // 열의 개수
+```
+
+#### 가변 배열
+```cs
+// [2][] 형태로 두 번째를 비워 두면 동적으로 자료 n개로 초기화 가능
+int[][] zagArray = new int[2][];
+```
+
+### GetType() : 자료형 확인
+```cs
+> "ABC".GetType()
+[System.String]
+> "ABC[0].GetType()
+[System.Char]
+```
 
 ### 자료형 기본값으로 초기화
 ```C#
@@ -201,6 +250,59 @@ switch(표현식)
 표현식의 결괏값이 '값1'이면 '실행문1' 수행. 
 case 레이블에는 상수(값)가 들어오고, default 레이블은 생략 가능.
 
+### do while
+```cs
+do
+{
+	실행문;
+} while (조건식);
+```
+
+문장을 한 번 실행 후 조건을 따진다
+
+### foreach
+```cs
+foreach(데이터형식 항목 in 항목들)
+{
+	문장; //변수에 들어 있는 값을 사용하는 문장이 온다
+	
+}
+```
+
+컬렉션 형식에서 데이터를 하나씩 꺼내면서 반복
+
+### goto
+```cs
+if (chapter == 1)
+	goto Chapter1;
+else
+	goto Chapter2;
+
+Chapter1:
+Console.WriteLine("1장");
+Chapter2:
+Console.WriteLine("2장");
+```
+
+특정 레이블로 이동하는 기능
+
+### 화살표 함수 (람다식) : 메서드 코드 줄이기
+```cs
+class ArrowFunction
+{
+    static void Main()
+    {
+        Hi();
+        Multiply(3, 5);
+    }
+
+    static void Hi() => Console.WriteLine("안녕하세요.");
+    static void Multiply(int a, int b) => Console.WriteLine(a * b);
+}
+```
+
+화살표 연산자 (=>) 를 사용하여 메서드 코드를 줄일 수 있다.
+
 ### 문자열 입력
 
 - Console.ReadLine(): 콘솔에서 한 줄을 입력받는다.
@@ -249,7 +351,6 @@ string result = "홀수";
 Console.WriteLine($"{number}은 {result}입니다.");
 ```
 자리 표시자 대신 직접 특정 변수 값을 중괄호 기호로 표현할 수 있다. 이때 문자열 앞에는 $ 기호가 와야 한다.
-
 
 ### 변수?.멤버 : null 체크하며 멤버나 메서드 접근
 ```cs
