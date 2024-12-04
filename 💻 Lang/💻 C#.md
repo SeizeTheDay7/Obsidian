@@ -32,7 +32,6 @@
 
 
 
-
 ## Tip
 ---
 
@@ -174,6 +173,94 @@ arr.GetLength(2) // 열의 개수
 int[][] zagArray = new int[2][];
 ```
 
+#### 구조체
+```cs
+struct Point
+{
+    public int X;
+    public int Y;
+}
+```
+여러 자료형 변수를 하나로 묶을 수 있다
+
+```cs
+Point[] points = new Point[2];
+```
+구조체 배열도 만들 수 있다.
+
+**내장 구조체 예시**
+- DateTime 구조체: 시간/날짜 관련 모든 정보 제공
+- TimeSpan 구조체: 시간/날짜 간격에 대한 모든 정보 제공
+- Char 구조체: 문자 관련 모든 정보 제공
+- Guid 구조체: 절대로 중복되지 않는 유일한 문자열을 생성
+
+##### DateTime
+```cs
+> DateTime.Now.Year
+2019
+> DateTime now = DateTime.Now;
+> Console.WriteLine(now.Date);
+2019-09-23 오전 12:00:00
+```
+
+##### TimeSpan
+```cs
+class TimeSpanDemo
+{
+    static void Main()
+    {
+        // 시간 차 구하기
+        TimeSpan dday = Convert.ToDateTime("2024-12-25") - DateTime.Now;
+        Console.WriteLine((int)dday.TotalDays);
+    }
+}
+```
+
+#### Guid
+```cs
+string unique = Guid.NewGuid().ToString();
+```
+
+Guid는 GUID(Globally Unique Identifier)를 출력.
+GUID 값은 실행할 때마다 동일한 값을 만날 확률이 0.
+
+### 열거형
+```cs
+enum Animal { Mouse, Cow, Tiger }
+```
+
+상수로만 구분하면 어려우니까 이름을 붙여서 쓰는 느낌.
+각각 Mouse: 1, Cow: 2, Tiger: 3으로 되어있다.
+초기화 시키면 그 다음부터의 상수값도 바뀐다.
+
+```cs
+Animal animal = Animal.Dragon;
+int num = (int)animal;
+string str = animal.ToString();
+```
+
+이러면 num은 상수값, str은 Dragon이 된다.
+열거형 값은 변환하는대로 변환된다.
+
+```cs
+Animal animal = Animal.Dog;
+
+switch (animal)
+{
+	case Animal.Chicken:
+		break;
+	case Animal.Dog:
+		break;
+}
+```
+
+switch 문과 같이 사용하면 유용하다.
+
+### TryParse() : 변환 시도하고 안되면 기본값
+```cs
+public static bool TryParse(string s, out DateTime result)
+```
+
 ### GetType() : 자료형 확인
 ```cs
 > "ABC".GetType()
@@ -236,7 +323,6 @@ int j = i++; // 후위 연산자는 해당 라인에서 대입 연산자보다 �
 | 반복문 | for 문 : 구간 반복<br>do 문 : 선행 반복<br>while 문 : 조건 반복<br>foreach 문 : 배열 반복                                                                 |
 | 기타  | break 문 : 반복문 내에서 반복 중지<br>continue 문 : 반복문 내에서 그다음 반복문 이동<br>goto 문 : C#에서 자주 사용하진 않지만, <br>레이블(레이블 이름과 콜론(:)으로 만듦)로 지정된 곳으로 직접 이동시킴 |
 ### for문
-
 ```cs
 for(초기식; 조건식; 증감식)
 {
@@ -382,6 +468,7 @@ nullref 피할 수 있음.
 > Console.WriteLine(t.Item2);
 200
 ```
+
  var 키워드로 변수를 선언한 후 괄호에 콤마를 구분해서 숫자 데이터를 넣으면 자동으로 t.Item1, t.Item2의 형태로 값이 저장되어 그 값을 사용할 수 있다.
  
 ```C#
@@ -389,7 +476,17 @@ nullref 피할 수 있음.
 > Console.WriteLine($"{x}, {y}");
 300, 400
 ```
+
 자동 생성되는 형태를 사용하지 않고 변수 여러 개를 괄호 안에 선언하여 사용할 수 있다.
+
+### nameof() : 클래스, 메서드 이름을 문자열로 가져오기
+```cs
+> nameof(System)
+"System"
+> nameof(Console.WriteLine)
+"WriteLine"
+```
+
 
 
 ## 구현
