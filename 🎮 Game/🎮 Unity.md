@@ -93,6 +93,12 @@ Rigidbody > Interpolation > Interpolate로 변경
 #### 콜라이더 적용해도 벽뚫
 Rigidbody > Collision Detection > Continous로 변경
 
+#### 플레이어가 벽에 달라붙음
+Physics Material 2D > Friction 0 > 적용
+
+### 플레이어가 벽에 닿으면 계속 점프 가능함
+캡슐 콜라이더 아래에 점프 가능여부 확인하는 작은 네모 콜라이더 만들면 됨
+
 
 ### 🏷️ UI
 #### 9-slice 적용 안됨

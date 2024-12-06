@@ -173,6 +173,21 @@ arr.GetLength(2) // 열의 개수
 int[][] zagArray = new int[2][];
 ```
 
+#### 리스트
+```cs
+List<int> oddNumbers = new List<int>()
+```
+
+```cs
+List.Count // 요소 개수
+List.Contains(3) // 들어있는지 확인
+List.Add(3) // 요소 더하기
+List.Remove(3) // 요소 지우기
+List.RemoveAt(0) // 특정 인덱스에 있는 요소 지우기
+List.Clear() // 리스트 지우기
+```
+
+
 #### 구조체
 ```cs
 struct Point

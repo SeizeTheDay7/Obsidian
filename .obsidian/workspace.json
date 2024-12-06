@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🎮 Game/🎮 Unity.md",
+                "file": "💻 Lang/💻 C#.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "🎮 Unity"
+              "title": "💻 C#"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🔨 Tools/📘 VS Code.md",
+                "file": "🎮 Game/🎮 Unity.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "📘 VS Code"
+              "title": "🎮 Unity"
             }
           }
         ],
@@ -89,7 +89,7 @@
             }
           },
           {
-            "id": "eac13200946b71c8",
+            "id": "b2b8b14bd8ce5aa4",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -190,9 +190,9 @@
   },
   "active": "4cbfcf73b3930036",
   "lastOpenFiles": [
-    "🎮 Game/🎮 Unity.md",
     "🔨 Tools/📘 VS Code.md",
     "💻 Lang/💻 C#.md",
+    "🎮 Game/🎮 Unity.md",
     "🔨 Tools/📝 Obsidian.md",
     "💻 Lang/💻 C.md",
     "📚 Book/헤드 퍼스트 디자인 패턴.md",
