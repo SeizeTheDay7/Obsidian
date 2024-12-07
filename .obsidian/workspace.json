@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻 Lang/💻 C#.md",
+                "file": "📚 Book/🌐 Web/생활코딩! 리액트 프로그래밍.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "💻 C#"
+              "title": "생활코딩! 리액트 프로그래밍"
             }
           },
           {
@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🎮 Game/🎮 Unity.md",
+                "file": "🌏 Web/📥 React.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "🎮 Unity"
+              "title": "📥 React"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -89,7 +88,7 @@
             }
           },
           {
-            "id": "b2b8b14bd8ce5aa4",
+            "id": "b09b5c29f763f178",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -188,14 +187,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4cbfcf73b3930036",
+  "active": "6dd3a394db9077b5",
   "lastOpenFiles": [
-    "🔨 Tools/📘 VS Code.md",
     "💻 Lang/💻 C#.md",
+    "🌏 Web/📥 React.md",
+    "📚 Book/🌐 Web/생활코딩! 리액트 프로그래밍.md",
+    "📚 Book/헤드 퍼스트 디자인 패턴.md",
     "🎮 Game/🎮 Unity.md",
+    "🔨 Tools/📘 VS Code.md",
     "🔨 Tools/📝 Obsidian.md",
     "💻 Lang/💻 C.md",
-    "📚 Book/헤드 퍼스트 디자인 패턴.md",
     "📊 Data/🛢 SQL.md",
     "📊 Data/프로그래머스.md",
     "📊 Data/📌 SQLD 족집게 정리.md",
@@ -211,12 +212,10 @@
     "🔌 Coding Memo.md",
     "🥚 Algorithm.md",
     "💻 Lang/💻 Python.md",
-    "📚 Book/🌐 Web/생활코딩! 리액트 프로그래밍.md",
     "🎮 Game/♟ Blender.md",
     "🎤 Interview/멀티프로세스와 멀티쓰레드의 차이.md",
     "🎤 Interview/프로세스와 쓰레드의 차이.md",
     "⚒️ Life Hack.md",
-    "리액트.md",
     "📓 Study Note/🌳 Jungle",
     "📚 Book/🌐 Web",
     "📓 Study Note/Book/React",
