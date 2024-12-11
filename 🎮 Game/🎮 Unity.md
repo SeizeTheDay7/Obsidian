@@ -44,6 +44,20 @@ Edit - Project Settings - Graphics - Scriptable Pipeline Settings 확인
 
 
 
+## 🔍 Inspector
+---
+
+### Line Renderer
+Scene Tools : 점 세개 누르면 점 옮기기
+Positions : 정점 추가
+중앙 빨간 선 : 폭 조절
+Conrner Vertices : 모서리 둥글기
+End Cap Vertices : 끝점 둥글기
+
+
+
+
+
 ## 💾 개념
 ---
 ### .meta 파일

@@ -75,6 +75,13 @@ string multiLines = @"
 	";
 ```
 
+### Visual Studio
+
+#### 시작 개체 설정
+프로그램 하나에 클래스 이름이 다른 Main() 메서드 여러 개를 넣을 수 있다.
+원하는 Main() 메서드를 시작 개체로 설정: 우클릭 > 상황 > 속성 > 시작 개체 변경
+
+
 
 ## 개념
 ---
@@ -89,7 +96,6 @@ string multiLines = @"
 
 C#에서는 전역 변수가 아닌 필드라는 단어를 주로 사용하며,
 전역 변수는 언더스코어(`_`) 또는 `m_` 접두사를 붙이는 경향이 있다.
-
 
 
 
@@ -302,6 +308,68 @@ public static bool TryParse(string s, out DateTime result)
 ```
 변수를 선언하고 초기화할 때 C#에서 기본으로 제공하는 값으로 초기화하고 싶다면  default 키워드를 사용하면 된다.
 
+### 제네릭
+```cs
+// 어떤 요소 타입도 받아들 일 수 있는
+// 스택 클래스를 C# 제네릭을 이용하여 정의
+class MyStack<T>
+{
+    T[] _elements;
+    int pos = 0;
+
+    public MyStack()
+    {
+        _elements = new T[100];
+    }
+
+    public void Push(T element)
+    {
+        _elements[++pos] = element;
+    }
+
+    public T Pop()
+    {
+        return _elements[pos--];
+    }
+}
+```
+
+https://www.csharpstudy.com/csharp/CSharp-generics.aspx
+
+`<T>`의 T 자리에 들어간 자료형이 클래스 안에 있는 모든 T에 적용된다.
+
+#### 제네릭 타입 제약
+
+```cs
+// T는 Value 타입
+class MyClass<T> where T : struct 
+
+// T는 Reference 타입
+class MyClass<T> where T : class
+
+// T는 디폴트 생성자를 가져야 함
+class MyClass<T> where T : new() 
+
+// T는 MyBase의 파생클래스이어야 함
+class MyClass<T> where T : MyBase
+
+// T는 IComparable 인터페이스를 가져야 함
+class MyClass<T> where T : IComparable
+
+// 좀 더 복잡한 제약들
+class EmployeeList<T> where T : Employee,
+   IEmployee, IComparable<T>, new()
+{
+}
+
+// 복수 타입 파라미터 제약
+class MyClass<T, U> 
+    where T : class 
+    where U : struct
+{
+}
+```
+
 
 ## 문법
 ---
@@ -511,6 +579,56 @@ nullref 피할 수 있음.
 "WriteLine"
 ```
 
+###  throw : 예외 발생시키기
+
+```cs
+void Divide(int a, int b)
+{
+    if (b == 0)
+    {
+        throw new DivideByZeroException("0으로 나눌 수 없습니다.");
+    }
+    Console.WriteLine(a / b);
+}
+```
+`throw`를 사용하여 특정 조건에서 새로운 예외를 발생시킬 수 있습니다.
+
+```cs
+try
+{
+    int result = int.Parse("abc"); // 형식 오류 발생
+}
+catch (FormatException ex)
+{
+    Console.WriteLine("예외를 기록하고 다시 던짐.");
+    throw; // 원래 예외를 재발생
+}
+
+```
+`throw`를 사용하여 현재 발생한 예외를 다시 던질 수 있습니다. 
+이를 통해 예외 처리를 상위 호출 스택에 전달할 수 있습니다.
+
+#### throw와 throw ex의 차이
+```cs
+catch (Exception ex)
+{
+    throw; // 원래 예외를 유지하고 상위로 전달
+}
+```
+
+- 현재 예외의 원래 호출 스택 정보를 유지합니다.
+- 디버깅 시 예외가 발생한 정확한 위치를 추적할 수 있습니다.
+
+```cs
+catch (Exception ex)
+{
+    throw ex; // 호출 스택 정보가 덮어써짐
+}
+```
+
+- 예외 객체를 새로 던지면서 원래 호출 스택 정보를 덮어씁니다.
+- 디버깅 시 원래 예외가 발생한 위치를 알기 어렵게 만듭니다.
+
 ### 내장 클래스
 
 - String 클래스: 문자열 처리와 관련한 속성과 메서드 제공
@@ -521,6 +639,45 @@ nullref 피할 수 있음.
 - Random 클래스: 난수 발생. 사용하려면 인스턴스 생성해야함. (UnityEngine Random이 따로 있어서 이거 쓸 일은 없을듯)
 - Stopwatch 클래스: Start()와 Stop() 메서드를 이용해 프로그램 실행 시간 잴 수 있음. 출력은 timer 클래스의 TotalMilliseconds와 Seconds 같은 속성 사용하면 됨.
 - regex 클래스: 정규식
+
+### String 클래스 메서드 정리
+
+| **메서드**                       | **설명**                       |
+| ----------------------------- | ---------------------------- |
+| `Length`                      | 문자열 길이 값 반환                  |
+| `ToUpper()`                   | 문자열을 모두 대문자로 변환              |
+| `ToLower()`                   | 문자열을 모두 소문자로 변환              |
+| `Trim()`                      | 문자열 양쪽 공백을 잘라냄               |
+| `Replace(원본문자열, 대상문자열)`       | 원본 문자열을 대상 문자열로 변경           |
+| `Substring(문자열인덱스, 길이)`       | 지정된 문자열 인덱스부터 길이만큼 반환        |
+| `String.Concat()`             | 문자열 연결                       |
+| `ToCharArray()`               | 문자열을 문자 배열로 변환               |
+| `Split()`                     | 구분자를 사용하여 문자열 분리             |
+| `string.IsNullOrEmpty()`      | `null` 또는 빈 값인지 확인           |
+| `string.IsNullOrWhiteSpace()` | `null` 또는 빈 값 또는 공백인지 확인     |
+| `IndexOf()`                   | 문자열 앞부분부터 검색해서 특정 문자 첫 등장 위치 |
+| `LastIndexOf()`               | 문자열 뒷부분부터 검색해서 특정 문자 첫 등장 위치 |
+| `Insert()`                    | 문자열 삽입                       |
+| `Remove()`                    | 지정한 위치의 문자 또는 문자열 제거         |
+| `PadLeft()`                   | 특정 문자를 왼쪽에 채움                |
+| `PadRight()`                  | 특정 문자를 오른쪽에 채움               |
+| `StartsWith()`                | 특정 문자열로 시작하는지 여부             |
+| `EndsWith()`                  | 특정 문자열로 끝나는지 여부              |
+
+### StringBuilder 클래스
+
+StringBuilder 클래스를 사용하려면 다음과 같이
+```cs
+> StringBuilder builder = new StringBuilder();
+```
+새로운 이름의 개체(인스턴스)를 생성해야 함.
+출력하려면 `ToString()` 메서드로 문자열로 변환 후 사용 가능.
+
+| **메서드**        | **설명**                 |
+| -------------- | ---------------------- |
+| `Append()`     | 문자열 추가                 |
+| `AppendLine()` | 문자열 추가하는데 끝에 `\r\n` 있음 |
+
 
 
 ## 구현
