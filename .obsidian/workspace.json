@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -117,7 +117,7 @@
             }
           },
           {
-            "id": "a6ff47f233fd3cd4",
+            "id": "9d97f78d7ed2c1f2",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -216,23 +216,23 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e10ef992b41428b5",
+  "active": "800b4cead4ce6e87",
   "lastOpenFiles": [
-    "📚 Book/🌐 Web/생활코딩! 리액트 프로그래밍.md",
+    "✏️ Memo.md",
     "💻 Lang/💻 C#.md",
+    "🌏 Web/🧱 HTML.md",
+    "🌏 Web/💻 JavaScript.md",
+    "🎮 Game/🎮 Unity.md",
+    "📚 Book/🌐 Web/생활코딩! 리액트 프로그래밍.md",
     "🔨 Tools/📕 Visual Studio.md",
     "🌏 Web/📥 React.md",
     "📚 Book/헤드 퍼스트 디자인 패턴.md",
-    "🎮 Game/🎮 Unity.md",
     "🔨 Tools/📘 VS Code.md",
     "🔨 Tools/📝 Obsidian.md",
     "💻 Lang/💻 C.md",
     "📊 Data/🛢 SQL.md",
     "📊 Data/프로그래머스.md",
     "📊 Data/📌 SQLD 족집게 정리.md",
-    "✏️ Memo.md",
-    "🌏 Web/🧱 HTML.md",
-    "🌏 Web/💻 JavaScript.md",
     "💻 Lang/💻 C++.md",
     "📓 Study Note/🎤 Tech Interview.md",
     "🎮 Game/애셋 사용법.md",
