@@ -67,7 +67,9 @@ End Cap Vertices : 끝점 둥글기
 깃허브에 커밋할 때 .meta 빠뜨리면 안되고
 외부에 깃 말고 보낼 땐 .unitypackage로 만들어라.
 
-
+### 재정의(override) 가능한 메서드
+- 부모 클래스의 메서드가 `virtual`, `abstract`, 또는 `override`로 선언되지 않았다면, 자식 클래스에서 해당 메서드를 `override`로 재정의할 수 없습니다.
+- Unity의 `Awake`는 기본적으로 MonoBehaviour의 메서드로 `virtual`이 아니므로, 재정의하려면 부모 클래스에서 `Awake`를 `virtual`로 명시해야 합니다.
 
 
 
