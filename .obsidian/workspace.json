@@ -8,91 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6dd3a394db9077b5",
+            "id": "31f2300df6b17833",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📚 Book/🌐 Web/생활코딩! 리액트 프로그래밍.md",
+                "file": "🎮 Game/🎨 Aseprite.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "생활코딩! 리액트 프로그래밍"
-            }
-          },
-          {
-            "id": "4cbfcf73b3930036",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌏 Web/📥 React.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "📥 React"
-            }
-          },
-          {
-            "id": "800b4cead4ce6e87",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "💻 Lang/💻 C#.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "💻 C#"
-            }
-          },
-          {
-            "id": "8d00e630481d90b8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🎮 Game/🎮 Unity.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "🎮 Unity"
-            }
-          },
-          {
-            "id": "e955915890c3c48c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🔨 Tools/💾 Git.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "💾 Git"
-            }
-          },
-          {
-            "id": "e10ef992b41428b5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🎮 Game/🎮 Unity.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "🎮 Unity"
+              "title": "🎨 Aseprite"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -145,7 +74,7 @@
             }
           },
           {
-            "id": "68b9fcd560debe8a",
+            "id": "fcd81b2389865902",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -244,20 +173,22 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "800b4cead4ce6e87",
+  "active": "31f2300df6b17833",
   "lastOpenFiles": [
-    "🔨 Tools/💾 Git.md",
-    "💻 Lang/💻 C#.md",
+    "🎮 Game/🎨 ClipStudio.md",
+    "🎮 Game/🎨 Aseprite.md",
     "🎮 Game/🎮 Unity.md",
+    "📚 Book/🌐 Web/생활코딩! 리액트 프로그래밍.md",
+    "💻 Lang/💻 C#.md",
+    "🔨 Tools/📝 Obsidian.md",
+    "🔨 Tools/💾 Git.md",
+    "🌏 Web/📥 React.md",
     "✏️ Memo.md",
     "🌏 Web/🧱 HTML.md",
     "🌏 Web/💻 JavaScript.md",
-    "📚 Book/🌐 Web/생활코딩! 리액트 프로그래밍.md",
     "🔨 Tools/📕 Visual Studio.md",
-    "🌏 Web/📥 React.md",
     "📚 Book/헤드 퍼스트 디자인 패턴.md",
     "🔨 Tools/📘 VS Code.md",
-    "🔨 Tools/📝 Obsidian.md",
     "💻 Lang/💻 C.md",
     "📊 Data/🛢 SQL.md",
     "📊 Data/프로그래머스.md",
@@ -271,8 +202,6 @@
     "🥚 Algorithm.md",
     "💻 Lang/💻 Python.md",
     "🎮 Game/♟ Blender.md",
-    "🎤 Interview/멀티프로세스와 멀티쓰레드의 차이.md",
-    "🎤 Interview/프로세스와 쓰레드의 차이.md",
     "📓 Study Note/🌳 Jungle",
     "📚 Book/🌐 Web",
     "📓 Study Note/Book/React",
