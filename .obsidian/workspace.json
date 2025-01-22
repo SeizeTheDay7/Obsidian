@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🎮 Game/🎨 Aseprite.md",
+                "file": "🎮 Game/🎮 Unity.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "🎨 Aseprite"
+              "title": "🎮 Unity"
+            }
+          },
+          {
+            "id": "3c75e5c8a0ce9726",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🔨 Tools/🪄 GIMP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "🪄 GIMP"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -74,7 +89,7 @@
             }
           },
           {
-            "id": "fcd81b2389865902",
+            "id": "11eb17f826f8758b",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -173,11 +188,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "31f2300df6b17833",
+  "active": "3c75e5c8a0ce9726",
   "lastOpenFiles": [
-    "🎮 Game/🎨 ClipStudio.md",
-    "🎮 Game/🎨 Aseprite.md",
+    "💻 Lang/💻 Python.md",
+    "🔨 Tools/🪄 GIMP.md",
+    "🔨 Tools/.md",
     "🎮 Game/🎮 Unity.md",
+    "🎮 Game/🎨 ClipStudio.md",
+    "🌏 Web/🎨 CSS.md",
+    "🎮 Game/🎨 Aseprite.md",
     "📚 Book/🌐 Web/생활코딩! 리액트 프로그래밍.md",
     "💻 Lang/💻 C#.md",
     "🔨 Tools/📝 Obsidian.md",
@@ -198,10 +217,6 @@
     "🎮 Game/애셋 사용법.md",
     "🎮 Game/애셋 사용법",
     "📚 Book/게임 기획의 정석.md",
-    "🔌 Coding Memo.md",
-    "🥚 Algorithm.md",
-    "💻 Lang/💻 Python.md",
-    "🎮 Game/♟ Blender.md",
     "📓 Study Note/🌳 Jungle",
     "📚 Book/🌐 Web",
     "📓 Study Note/Book/React",
