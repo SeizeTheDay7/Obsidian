@@ -185,6 +185,12 @@ Analysis > Physics Debugger
 
 ## 🦫 디버깅
 ---
+
+### 🏷️ Editor
+
+#### Tile Pallete 타일 크기 작음
+Tile Pallete 만들 때 Cell Size 1x1로 설정
+
 ### 🏷️ 인게임
 #### 오브젝트들 전부 살짝 흐림
 해상도를 Full HD로 바꾸고 1.5x로 돼있는 Scale을 1x로 바꾸기

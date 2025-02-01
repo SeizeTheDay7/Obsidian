@@ -49,8 +49,7 @@
               "title": "📘 VS Code"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -104,7 +103,7 @@
             }
           },
           {
-            "id": "7baca880009b991b",
+            "id": "6e331bbf9d725c37",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -113,7 +112,8 @@
               "title": "Spaces"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -203,7 +203,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "18403b5b5f13b547",
+  "active": "31f2300df6b17833",
   "lastOpenFiles": [
     "💻 Lang/💻 C++.md",
     "🎮 Game/🎮 Unity.md",
