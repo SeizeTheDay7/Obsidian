@@ -1,6 +1,5 @@
 [
+  "obsidian-plugin-toc",
   "obsidian-git",
-  "make-md",
-  "table-editor-obsidian",
-  "obsidian-plugin-toc"
+  "table-editor-obsidian"
 ]
