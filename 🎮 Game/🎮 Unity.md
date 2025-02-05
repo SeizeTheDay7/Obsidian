@@ -221,6 +221,10 @@ Physics Material 2D > Friction 0 > 적용
 #### 플레이어 이동에 약간 딜레이
 Input.GetAxis 쓰면 딜레이 생긴다. Input.GetAxisRaw 쓰기.
 
+#### 스프라이트 마스크 어떻게 씀?
+Sprite Mask component may not be an issue. 
+check Mask Interaction component on parent.
+
 
 ### 🏷️ UI
 #### 9-slice 적용 안됨

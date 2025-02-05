@@ -1,22 +1,64 @@
+- [[#Tip|Tip]]
+- [[#Shortcut|Shortcut]]
 - [[#Preference|Preference]]
+- [[#Add|Add]]
 - [[#Object|Object]]
 - [[#Transform|Transform]]
+- [[#Edit|Edit]]
 - [[#View|View]]
+- [[#Camera|Camera]]
+- [[#Modifier|Modifier]]
+- [[#Troubleshooting|Troubleshooting]]
+	- [[#Troubleshooting#빛 추가했는데 반영이 안됨|빛 추가했는데 반영이 안됨]]
 
+
+### Tip
+
+- 커브 작업할 때 잘 안 보이면 : Properties > Object Data > Geometry > Bevel > Round > Depth
+
+
+### Shortcut
+
+- 이전 작업 반복 실행 : Shift + R
+- 오브젝트 가리기 : H
+- 가렸던 오브젝트 전부 보이게 하기 : Alt + H
+
+- 
+
+- 다른 이름으로 저장 : Shift+Ctrl+S
 
 ### Preference
 
-오브젝트 중심 회전 : Navigation > Orbit & Pan > Orbit Around Selection 체크
+Edit > Preference에 있는 설정들
+
+- 오브젝트 중심 회전 : Navigation > Orbit & Pan > Orbit Around Selection 체크
+
+### Add
+
+이미지 불러오기 : Object Mode > Header > Add > Image > Reference
+
+Curve
+- 모양 편집 : Edit 모드에서 점 선택하고 G로 옮기기
+- 자유 선 그리기 : Edit 모드 화면 왼쪽 Draw 도구
+- 포토샵 패스 선 그리기 : 화면 왼쪽 Curve Pen
+- 점 삭제 : 점 선택 > X > Vertices
+- 점 돌출 : E 또는 화면 왼쪽 Extrude
+- 점 5개 직선 패스선 생성 : Object Mode > Shift + A > Curve > Path
+
+
 
 ### Object
 
-오브젝트 추가 : Sfhit + A
-오브젝트 합치기 : Ctrl + J
+- 오브젝트 추가 : Sfhit + A
 
 - 3D Cursor : 십자 표시, 오브젝트를 생성하는 기준, 이동 : Shift + 우클
 - Origin : 주황 점, 크기 위치 회전 중심축
-  - Object 모드에선 같이 움직이고, Edit 모드에선 안 움직임
-  - 이동 : 우클 > Set Origin, 오브젝트 모드 이동 : Ctrl + `.` > G
+	- Object 모드에선 같이 움직이고, Edit 모드에선 안 움직임
+	- 이동 : 우클 > Set Origin, 오브젝트 모드 이동 : Ctrl + `.` > G
+- 부모 설정 : 부모로 만들 오브젝트 마지막에 선택 > Ctrl + P > Object
+- 링크 설정
+	- 오브젝트들 선택 > Ctrl + L > Link Object Data
+	- Object 모드에선 영향 안 받음, Edit Mode에선 서로 영향 받음
 
 ### Transform
 
@@ -36,8 +78,39 @@
 - Transform Orientation : 좌표계 설정, `,`, 상단 축 아이콘
 - Propositional Editing : 주변 오브젝트 영향 미칠건지, `O`, 상단 봉우리 아이콘
 
+### Edit
+
+Edit Mode에서만 작동하는 것들
+
+- 1,2,3 : Select Mode 변경
+
+- 오브젝트 합치기 : Ctrl + J
+- 다른 객체로 분리하기 : 면 선택 > P > Selection
+- 같은 객체인 상태로 분리 : Y
+
+- 점 여러개 잇기 : 우클 > Connect Vertex Path 위아래 있는 것들 or Header > Vertex > Connect Vertex Path
+
 ### View
 
 - Vieport Shading : Z
 
+- Camera View 활성화 : 숫자 키패드 0
+
 - 한 오브젝트만 보이게 : `/`
+- X-Ray : Alt+Z
+
+### Camera
+
+
+
+- 카메라 보이는 각도 조절 : 숫자 키패드 0 > N > View > Camera to View > 스크롤 눌러 시점 이동
+
+### Modifier
+
+- Subdivision Surface : Ctrl + 1~6
+
+
+### Troubleshooting
+
+#### 빛 추가했는데 반영이 안됨
+Power를 좀 더 올려보셈
