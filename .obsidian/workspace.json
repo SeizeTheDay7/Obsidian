@@ -49,7 +49,8 @@
               "title": "💻 C++"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -193,11 +194,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a092cb95283787bd",
+  "active": "429c8183d0312b75",
   "lastOpenFiles": [
+    "🎮 Game/♟️ Blender.md",
     "💻 Lang/💻 C++.md",
     "🎮 Game/🎮 Unity.md",
-    "🎮 Game/♟️ Blender.md",
     "📓 Study Note/🎤 Tech Interview.md",
     "🔌 Coding Memo.md",
     "💻 Lang/💻 C#.md",

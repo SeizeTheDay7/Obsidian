@@ -11,19 +11,34 @@
 - [[#🔍 Inspector|🔍 Inspector]]
 	- [[#🔍 Inspector#Line Renderer|Line Renderer]]
 - [[#💾 개념|💾 개념]]
-	- [[#💾 개념#.meta 파일|.meta 파일]]
-	- [[#💾 개념#재정의(override) 가능한 메서드|재정의(override) 가능한 메서드]]
-- [[#📋 정보|📋 정보]]
-	- [[#📋 정보#🏷️ Editor|🏷️ Editor]]
-	- [[#📋 정보#🏷️ Script|🏷️ Script]]
+	- [[#💾 개념#🏷️ General|🏷️ General]]
+		- [[#🏷️ General#.meta 파일|.meta 파일]]
+	- [[#💾 개념#🏷️ Script|🏷️ Script]]
+		- [[#🏷️ Script#재정의(override) 가능한 메서드|재정의(override) 가능한 메서드]]
+- [[#📄 Docs|📄 Docs]]
+	- [[#📄 Docs#🏷️ Component|🏷️ Component]]
+		- [[#🏷️ Component#Rigidbody|Rigidbody]]
+			- [[#Rigidbody#Body Type|Body Type]]
+		- [[#🏷️ Component#CharacterController|CharacterController]]
+		- [[#🏷️ Component#Mesh Renderer|Mesh Renderer]]
+		- [[#🏷️ Component#Cinemachine|Cinemachine]]
+			- [[#Cinemachine#Aim|Aim]]
+	- [[#📄 Docs#🏷️ Shader Graph|🏷️ Shader Graph]]
+		- [[#🏷️ Shader Graph#노드|노드]]
+- [[#📋 Detail|📋 Detail]]
+	- [[#📋 Detail#🏷️ Editor|🏷️ Editor]]
+	- [[#📋 Detail#🏷️ Script|🏷️ Script]]
 		- [[#🏷️ Script#GetKey 차이|GetKey 차이]]
+		- [[#🏷️ Script#GetAxis, GetAxisRaw 차이|GetAxis, GetAxisRaw 차이]]
 		- [[#🏷️ Script#private void vs void|private void vs void]]
 		- [[#🏷️ Script#변수를 꼭 밖으로 뺄 이유는 없다|변수를 꼭 밖으로 뺄 이유는 없다]]
 		- [[#🏷️ Script#레이캐스트 확인하는 방법|레이캐스트 확인하는 방법]]
-	- [[#📋 정보#🏷️ Graphic|🏷️ Graphic]]
-		- [[#🏷️ Graphic#Mesh Renderer|Mesh Renderer]]
+	- [[#📋 Detail#🏷️ Graphic|🏷️ Graphic]]
 		- [[#🏷️ Graphic#Image vs Raw Image|Image vs Raw Image]]
+	- [[#📋 Detail#🏷️ Component|🏷️ Component]]
 - [[#🦫 디버깅|🦫 디버깅]]
+	- [[#🦫 디버깅#🏷️ Editor|🏷️ Editor]]
+		- [[#🏷️ Editor#Tile Pallete 타일 크기 작음|Tile Pallete 타일 크기 작음]]
 	- [[#🦫 디버깅#🏷️ 인게임|🏷️ 인게임]]
 		- [[#🏷️ 인게임#오브젝트들 전부 살짝 흐림|오브젝트들 전부 살짝 흐림]]
 		- [[#🏷️ 인게임#Cinemachine 따라가기 덜덜 떨림|Cinemachine 따라가기 덜덜 떨림]]
@@ -32,10 +47,14 @@
 		- [[#🏷️ 인게임#플레이어가 벽에 닿으면 계속 점프 가능함|플레이어가 벽에 닿으면 계속 점프 가능함]]
 		- [[#🏷️ 인게임#Navmesh Bake 안 보임|Navmesh Bake 안 보임]]
 		- [[#🏷️ 인게임#Raycast 안됨|Raycast 안됨]]
+		- [[#🏷️ 인게임#머테리얼을 Transparent로 설정해도 살짝 불투명|머테리얼을 Transparent로 설정해도 살짝 불투명]]
+		- [[#🏷️ 인게임#플레이어 이동에 약간 딜레이|플레이어 이동에 약간 딜레이]]
+		- [[#🏷️ 인게임#스프라이트 마스크 어떻게 씀?|스프라이트 마스크 어떻게 씀?]]
 	- [[#🦫 디버깅#🏷️ UI|🏷️ UI]]
 		- [[#🏷️ UI#9-slice 적용 안됨|9-slice 적용 안됨]]
 	- [[#🦫 디버깅#🏷️ 협업|🏷️ 협업]]
 		- [[#🏷️ 협업#깃 pull 할 때마다 메타파일 갱신|깃 pull 할 때마다 메타파일 갱신]]
+
 
 ## 📌 팁
 ---
@@ -89,7 +108,7 @@ End Cap Vertices : 끝점 둥글기
 ## 💾 개념
 ---
 
-### 🏷️ 일반
+### 🏷️ General
 #### .meta 파일
 컴포넌트 간의 연결과 같은 메타 정보들을 담고 있다.
 유니티 에디터에서 파일 위치나 이름 바꾼거 아니면 이거 때문에 정보 소실.
@@ -97,11 +116,14 @@ End Cap Vertices : 끝점 둥글기
 깃허브에 커밋할 때 .meta 빠뜨리면 안되고
 외부에 깃 말고 보낼 땐 .unitypackage로 만들어라.
 
-
 ### 🏷️ Script
 #### 재정의(override) 가능한 메서드
 - 부모 클래스의 메서드가 `virtual`, `abstract`, 또는 `override`로 선언되지 않았다면, 자식 클래스에서 해당 메서드를 `override`로 재정의할 수 없습니다.
 - Unity의 `Awake`는 기본적으로 MonoBehaviour의 메서드로 `virtual`이 아니므로, 재정의하려면 부모 클래스에서 `Awake`를 `virtual`로 명시해야 합니다.
+
+
+## 📄 Docs
+---
 
 ### 🏷️ Component
 
@@ -135,7 +157,13 @@ End Cap Vertices : 끝점 둥글기
 5. POV : 1인칭 혹은 3인칭 조작 방식에서 사용되며, 플레이어 입력(마우스 또는 컨트롤러)을 기반으로 카메라가 회전합니다. FPS(1인칭 슈팅 게임) 또는 TPS(3인칭 액션 게임) 카메라에서 많이 사용됩니다.
 6. Same As Follow Target : 카메라가 설정된 대상의 회전을 그대로 따라갑니다.
 
-## 📋 정보
+### 🏷️ Shader Graph
+
+#### 노드
+- Scanline 효과: Checkerboard
+
+
+## 📋 Detail
 ---
 ### 🏷️ Editor
 
@@ -176,7 +204,7 @@ Analysis > Physics Debugger
 - Image는 UI 디자인 요소에 적합하며, 간단하고 효율적으로 사용 가능합니다.
 - Raw Image는 동적 콘텐츠나 렌더 텍스처를 처리하거나, 셰이더 효과를 적용할 때 적합합니다.
 
-### 🏷️ Cinemachine
+### 🏷️ Component
 
 
 
