@@ -10,6 +10,9 @@
 - [[#🔧 Modifier|🔧 Modifier]]
 - [[#🦫 Troubleshooting|🦫 Troubleshooting]]
 	- [[#🦫 Troubleshooting#빛 추가했는데 반영이 안됨|빛 추가했는데 반영이 안됨]]
+	- [[#🦫 Troubleshooting#Subdivision Surface 쭈글쭈글|Subdivision Surface 쭈글쭈글]]
+	- [[#🦫 Troubleshooting#Add-ons에 검색했는데 안 나오는데|Add-ons에 검색했는데 안 나오는데]]
+	- [[#🦫 Troubleshooting#복사하면 피직스 물리 엔진 반영 풀려|복사하면 피직스 물리 엔진 반영 풀려]]
 
 
 ### 📌 Tip
@@ -32,6 +35,10 @@
 Edit > Preference에 있는 설정들
 
 - 오브젝트 중심 회전 : Navigation > Orbit & Pan > Orbit Around Selection 체크
+
+애드온
+- `Mesh: LoopTools` : 루프와 관련된 작업을 쉽게 수행
+- `Node: Node Wrangler` : Shader Editor 패널에서 노드 작업 빠르고 효율적으로
 
 ### 🐵 Add
 
@@ -102,6 +109,10 @@ Edit Mode에서만 작동하는 것들
 - 면을 나누지 않고 돌출 : Alt + E
 - 선택한 요소의 Normal 방향으로 돌출 : Alt + E
 
+원 만들기
+- LoopTools > Circle
+- 점 하나 선택 > Shift+Ctrl+B (Bevel) > Segment 조절
+- 
 
 ### 🔭 View
 
@@ -128,5 +139,11 @@ Edit Mode에서만 작동하는 것들
 #### 빛 추가했는데 반영이 안됨
 Power를 좀 더 올려보셈
 
-### Subdivision Surface 쭈글쭈글
+#### Subdivision Surface 쭈글쭈글
 오류가 생기는 부분 살짝 위에 Ctrl+R로 선 하나 추가하셈
+
+#### Add-ons에 검색했는데 안 나오는데
+Get Extensions에서 검색해
+
+#### 복사하면 피직스 물리 엔진 반영 풀려
+Modifier Apply 후 복사
