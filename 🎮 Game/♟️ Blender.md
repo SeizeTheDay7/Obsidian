@@ -88,8 +88,20 @@ Edit Mode에서만 작동하는 것들
 - 오브젝트 합치기 : Ctrl + J
 - 다른 객체로 분리하기 : 면 선택 > P > Selection
 - 같은 객체인 상태로 분리 : Y
+- 선 생성 : K, 엔터 눌러서 확정
+- 각진 부분 부드럽게 : Ctrl + B
 
 - 점 여러개 잇기 : 우클 > Connect Vertex Path 위아래 있는 것들 or Header > Vertex > Connect Vertex Path
+- 구멍 메우거나 선 만들기 : F
+- 점, 선, 면 합치기 : M
+- 면 안에 새 면 만들기 : I
+	- I 또 누르면 개별적으로 면 만들지 따로 만들지
+- 표면에 선 나누기 : Ctrl + R, 마우스 휠 돌려서 개수 결정
+
+- 기본 돌출 : E
+- 면을 나누지 않고 돌출 : Alt + E
+- 선택한 요소의 Normal 방향으로 돌출 : Alt + E
+
 
 ### 🔭 View
 
@@ -115,3 +127,6 @@ Edit Mode에서만 작동하는 것들
 
 #### 빛 추가했는데 반영이 안됨
 Power를 좀 더 올려보셈
+
+### Subdivision Surface 쭈글쭈글
+오류가 생기는 부분 살짝 위에 Ctrl+R로 선 하나 추가하셈
