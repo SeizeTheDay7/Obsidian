@@ -18,6 +18,8 @@
 ### 📌 Tip
 
 - 커브 작업할 때 잘 안 보이면 : Properties > Object Data > Geometry > Bevel > Round > Depth
+- 수직 수평 루프 선택 방법 : 누른 면 위치에 따라 달라진다
+- Segments 조절하면 용량 많이 드니까 Subdivision Surface 사용
 
 
 ### 🚀 Shortcut
@@ -108,6 +110,12 @@ Edit Mode에서만 작동하는 것들
 - 기본 돌출 : E
 - 면을 나누지 않고 돌출 : Alt + E
 - 선택한 요소의 Normal 방향으로 돌출 : Alt + E
+- 두께 주기 : Header > Face > Solidify Faces
+
+- 선 루프 합치기 : (같은 오브젝트의) 루프  2개 선택 > Ctrl + E > Bridge Edge Loops
+- 면 대각선 2개로 나누기 : Header > Face > Poke Faces
+- 전체 면을 삼각형으로 변형 : Ctrl + T (루프 선택 어려워짐)
+- 일부 면을 사각형으로 변형 : Header > Face > Tris to Quads
 
 원 만들기
 - LoopTools > Circle
@@ -123,11 +131,12 @@ Edit Mode에서만 작동하는 것들
 - 한 오브젝트만 보이게 : `/`
 - X-Ray : Alt+Z
 
+- 앞면 뒷면 구분 : Viewport Overlays (우측 상단 원 2개 겹친 아이콘) > Face Orientation
+
 ### 🎥 Camera
 
-
-
 - 카메라 보이는 각도 조절 : 숫자 키패드 0 > N > View > Camera to View > 스크롤 눌러 시점 이동
+
 
 ### 🔧 Modifier
 

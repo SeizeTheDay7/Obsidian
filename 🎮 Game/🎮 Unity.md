@@ -121,6 +121,24 @@ End Cap Vertices : 끝점 둥글기
 - 부모 클래스의 메서드가 `virtual`, `abstract`, 또는 `override`로 선언되지 않았다면, 자식 클래스에서 해당 메서드를 `override`로 재정의할 수 없습니다.
 - Unity의 `Awake`는 기본적으로 MonoBehaviour의 메서드로 `virtual`이 아니므로, 재정의하려면 부모 클래스에서 `Awake`를 `virtual`로 명시해야 합니다.
 
+#### Unity : Coroutine
+
+**개념 및 원리**
+- 설정한 만큼 멈췄다가 다시 실행
+- 멈췄던 위치에서 다시 실행됨
+- 긴 비동기 작업할 때 쓰면 됨
+- 멀티쓰레딩은 아니다
+
+**문제 및 해결**
+- 디버깅 어렵다. 로그 넣어주자.
+- 다 쓰고 안 꺼주면 성능 문제.
+- 무거운 연산 쓰면 프레임 드랍. 프레임마다 쪼개서 실행하기.
+
+**끄는 법**
+- StopCoroutine(), StopAllCoroutines()
+- 코루틴 붙은 오브젝트 SetActive(false), Destroy()
+- Monobehaviour 스크립트는 enabled false로 해도 코루틴 안 꺼짐
+
 
 ## 📄 Docs
 ---
