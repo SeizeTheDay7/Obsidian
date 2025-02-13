@@ -39,8 +39,9 @@ Edit > Preference에 있는 설정들
 - 오브젝트 중심 회전 : Navigation > Orbit & Pan > Orbit Around Selection 체크
 
 애드온
-- `Mesh: LoopTools` : 루프와 관련된 작업을 쉽게 수행
-- `Node: Node Wrangler` : Shader Editor 패널에서 노드 작업 빠르고 효율적으로
+- `LoopTools` : 루프와 관련된 작업을 쉽게 수행
+- `Node Wrangler` : Shader Editor 패널에서 노드 작업 빠르고 효율적으로
+- `Extra Curve Objects`, `Extra Mesh Objects` : 추가 도형 제공
 
 ### 🐵 Add
 
@@ -112,6 +113,8 @@ Edit Mode에서만 작동하는 것들
 - 선택한 요소의 Normal 방향으로 돌출 : Alt + E
 - 두께 주기 : Header > Face > Solidify Faces
 
+- 법선 방향 기준 면 수축 또는 팽창 : Alt + S
+
 - 선 루프 합치기 : (같은 오브젝트의) 루프  2개 선택 > Ctrl + E > Bridge Edge Loops
 - 면 대각선 2개로 나누기 : Header > Face > Poke Faces
 - 전체 면을 삼각형으로 변형 : Ctrl + T (루프 선택 어려워짐)
@@ -124,6 +127,7 @@ Edit Mode에서만 작동하는 것들
 
 ### 🔭 View
 
+- 뷰포트 단축키 : `~`
 - Vieport Shading : Z
 
 - Camera View 활성화 : 숫자 키패드 0
@@ -140,7 +144,26 @@ Edit Mode에서만 작동하는 것들
 
 ### 🔧 Modifier
 
-- Subdivision Surface : Ctrl + 1~6
+- Subdivision Surface : Ctrl + 1~6, 메시를 부드럽게 만들어준다
+- Decimate : 메시를 단순하게 만들어준다
+- Bevel : 오브젝트에 추가 폴리곤을 넣어 부드럽게 만든다
+
+- Mirror : Origin을 중심으로 한쪽 편집할 때 반대편이 동일하게 수행
+	- Clipping : 중첩된 오브젝트가 통과되지 않고 서로 겹치지 않음
+	- Mirror Object : 대칭할 때 어떤 오브젝트를 대상으로 할지
+- Boolean
+	- Intersection : 두 부분이 겹치는 공통된 부분만 남는다
+	- Union : 두 오브젝트 합치기 (내부 면 삭제, 물리 시뮬 시 하나로 인식)
+
+- Array : 오브젝트를 여러 개 복제하여 배열 형태로 배치
+- Curve : 오브젝트의 형태를 곡선으로 변형함 (적용할 형태는 Curve여야 함)
+- Screw : 나선 모양의 입체 만듦
+- Shirinkwrap : 오브젝트를 다른 오브젝트의 표면에 달라붙게 함
+
+
+### 🪄 Optimization
+
+- A로 모든 점 선택 > M > By Distance : 겹치는 점 병합
 
 
 ### 🦫 Troubleshooting
@@ -156,3 +179,10 @@ Get Extensions에서 검색해
 
 #### 복사하면 피직스 물리 엔진 반영 풀려
 Modifier Apply 후 복사
+
+#### 가로 루프가 마음대로 선택 안돼
+원하는 방향 변에 대고 선택해야됨
+Alt + 클릭을 해당 면의 여러 곳에 시도
+
+#### Simple Deform 왜 원기둥 안됨
+Twist가 아니라 Bend로 돼있어야지
