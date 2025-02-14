@@ -20,9 +20,12 @@
 - 커브 작업할 때 잘 안 보이면 : Properties > Object Data > Geometry > Bevel > Round > Depth
 - 수직 수평 루프 선택 방법 : 누른 면 위치에 따라 달라진다
 - Segments 조절하면 용량 많이 드니까 Subdivision Surface 사용
+- 평면에서 Mirror로 입체감 주고 나면 안에 있는 **면**들 x-ray로 삭제해줘야 함
 
 
 ### 🚀 Shortcut
+
+- 모든 가능 작업 검색 : F3
 
 - 이전 작업 반복 실행 : Shift + R
 - 오브젝트 가리기 : H
@@ -38,10 +41,7 @@ Edit > Preference에 있는 설정들
 
 - 오브젝트 중심 회전 : Navigation > Orbit & Pan > Orbit Around Selection 체크
 
-애드온
-- `LoopTools` : 루프와 관련된 작업을 쉽게 수행
-- `Node Wrangler` : Shader Editor 패널에서 노드 작업 빠르고 효율적으로
-- `Extra Curve Objects`, `Extra Mesh Objects` : 추가 도형 제공
+
 
 ### 🐵 Add
 
@@ -94,6 +94,10 @@ Object Mode에서만 작동하는 것들
 Edit Mode에서만 작동하는 것들
 
 - 1,2,3 : Select Mode 변경
+- 지나오는 점 전부 선택 : Ctrl + 클릭
+- 한 칸 걸러 선택 해제 : 좌측 상단 Select > Checker Deselect
+
+- 중심점 기준 x,y,z 이동 : G > X,Y,Z > X,Y,Z
 
 - 오브젝트 합치기 : Ctrl + J
 - 다른 객체로 분리하기 : 면 선택 > P > Selection
@@ -145,6 +149,7 @@ Edit Mode에서만 작동하는 것들
 ### 🔧 Modifier
 
 - Subdivision Surface : Ctrl + 1~6, 메시를 부드럽게 만들어준다
+	- Mean Crease : 특정 엣지는 날카롭게 유지
 - Decimate : 메시를 단순하게 만들어준다
 - Bevel : 오브젝트에 추가 폴리곤을 넣어 부드럽게 만든다
 
@@ -160,6 +165,20 @@ Edit Mode에서만 작동하는 것들
 - Screw : 나선 모양의 입체 만듦
 - Shirinkwrap : 오브젝트를 다른 오브젝트의 표면에 달라붙게 함
 
+### 🔨 Physics
+
+- Cloth
+	- Self Collisions : 천이 자기 자신과 겹치는 현상 방지
+
+
+### Add-on
+
+- `LoopTools` : 루프와 관련된 작업을 쉽게 수행
+- `Node Wrangler` : Shader Editor 패널에서 노드 작업 빠르고 효율적으로
+- `Extra Curve Objects`, `Extra Mesh Objects` : 추가 도형 제공
+
+- `Bool Tools`
+	- Boolen 효과 : 뺄 거 선택 > Shift 누르고 빼질 거 선택 > Ctrl + Numpad `-`
 
 ### 🪄 Optimization
 
@@ -167,6 +186,9 @@ Edit Mode에서만 작동하는 것들
 
 
 ### 🦫 Troubleshooting
+
+#### Pan View가 안됨
+오브젝트 모드로 가서 Home 누르셈
 
 #### 빛 추가했는데 반영이 안됨
 Power를 좀 더 올려보셈
@@ -186,3 +208,15 @@ Alt + 클릭을 해당 면의 여러 곳에 시도
 
 #### Simple Deform 왜 원기둥 안됨
 Twist가 아니라 Bend로 돼있어야지
+
+#### 머테리얼 적용했는데 왜 안 보임
+뷰포트 바꾸기
+
+#### Physics 적용했는데 왜 위로 감
+애니메이션이 적용돼버려서 그럼. 0으로 옮겨보거나 중력을 끄셈.
+
+#### Physics 적용한거 옮겼더니 찌그러짐
+모디파이어에서 apply 하셈
+
+#### Cloth 적용했는데 왜 옷감처럼 안 구겨짐
+Subdivide 하셈, Pressure 푸셈
