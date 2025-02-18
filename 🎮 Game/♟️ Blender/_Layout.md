@@ -8,11 +8,27 @@
 - [[#🔭 View|🔭 View]]
 - [[#🎥 Camera|🎥 Camera]]
 - [[#🔧 Modifier|🔧 Modifier]]
+- [[#🔨 Physics|🔨 Physics]]
+- [[#➕ Add-on|➕ Add-on]]
+- [[#🪄 Optimization|🪄 Optimization]]
+- [[#📤 Export|📤 Export]]
 - [[#🦫 Troubleshooting|🦫 Troubleshooting]]
+	- [[#🦫 Troubleshooting#Pan View가 안됨|Pan View가 안됨]]
 	- [[#🦫 Troubleshooting#빛 추가했는데 반영이 안됨|빛 추가했는데 반영이 안됨]]
 	- [[#🦫 Troubleshooting#Subdivision Surface 쭈글쭈글|Subdivision Surface 쭈글쭈글]]
 	- [[#🦫 Troubleshooting#Add-ons에 검색했는데 안 나오는데|Add-ons에 검색했는데 안 나오는데]]
 	- [[#🦫 Troubleshooting#복사하면 피직스 물리 엔진 반영 풀려|복사하면 피직스 물리 엔진 반영 풀려]]
+	- [[#🦫 Troubleshooting#가로 루프가 마음대로 선택 안돼|가로 루프가 마음대로 선택 안돼]]
+	- [[#🦫 Troubleshooting#Simple Deform 왜 원기둥 안됨|Simple Deform 왜 원기둥 안됨]]
+	- [[#🦫 Troubleshooting#머테리얼 적용했는데 왜 안 보임|머테리얼 적용했는데 왜 안 보임]]
+	- [[#🦫 Troubleshooting#Physics 적용했는데 왜 위로 감|Physics 적용했는데 왜 위로 감]]
+	- [[#🦫 Troubleshooting#Physics 적용한거 옮겼더니 찌그러짐|Physics 적용한거 옮겼더니 찌그러짐]]
+	- [[#🦫 Troubleshooting#Cloth 적용했는데 왜 옷감처럼 안 구겨짐|Cloth 적용했는데 왜 옷감처럼 안 구겨짐]]
+	- [[#🦫 Troubleshooting#빛 추가했는데 안 보임|빛 추가했는데 안 보임]]
+	- [[#🦫 Troubleshooting#왜 오브젝트들 transform이 sync됨|왜 오브젝트들 transform이 sync됨]]
+	- [[#🦫 Troubleshooting#유니티로 export 했더니 안이 비쳐보임|유니티로 export 했더니 안이 비쳐보임]]
+
+
 
 
 ### 📌 Tip
@@ -21,7 +37,11 @@
 - 수직 수평 루프 선택 방법 : 누른 면 위치에 따라 달라진다
 - Segments 조절하면 용량 많이 드니까 Subdivision Surface 사용
 - 평면에서 Mirror로 입체감 주고 나면 안에 있는 **면**들 x-ray로 삭제해줘야 함
-
+- Ctrl + A > Scale로 크기 값 1로 초기화해야 하는 경우
+	- 리깅(Armature) 후 애니메이션 적용 시 → Bone이 이상하게 움직일 수 있음
+	- Modifiers 사용 시 (예: Bevel, Mirror, Boolean 등) → 이상한 크기로 적용될 수 있음
+	- Physics(물리 엔진, Cloth, Rigid Body 등) 적용 시 → 물리 시뮬레이션이 이상하게 작동할 수 있음
+	- Unity로 내보낼 때 (FBX Export) → 크기, 애니메이션이 꼬일 가능성이 높음
 
 ### 🚀 Shortcut
 
@@ -124,10 +144,24 @@ Edit Mode에서만 작동하는 것들
 - 전체 면을 삼각형으로 변형 : Ctrl + T (루프 선택 어려워짐)
 - 일부 면을 사각형으로 변형 : Header > Face > Tris to Quads
 
+
+
 원 만들기
 - LoopTools > Circle
 - 점 하나 선택 > Shift+Ctrl+B (Bevel) > Segment 조절
 - 
+
+### 🦴 Rigging
+
+- 리깅 거울 : Header > 나비 모양 아이콘 > X > 뼈 선택하고 Shift + E
+- 리깅 뒤집기 : 다 선택 > Alt + F
+- 부모 연결 : Ctrl + P
+- 부모 끊기 : Alt + P
+
+뼈 연결
+1. 연결할 오브젝트 선택
+2. Shift 누른 상태로 Armature 선택
+3. Ctrl + P > Armature Deform > With Automatic Weights
 
 ### 🔭 View
 
@@ -171,7 +205,7 @@ Edit Mode에서만 작동하는 것들
 	- Self Collisions : 천이 자기 자신과 겹치는 현상 방지
 
 
-### Add-on
+### ➕ Add-on
 
 - `LoopTools` : 루프와 관련된 작업을 쉽게 수행
 - `Node Wrangler` : Shader Editor 패널에서 노드 작업 빠르고 효율적으로
@@ -180,10 +214,20 @@ Edit Mode에서만 작동하는 것들
 - `Bool Tools`
 	- Boolen 효과 : 뺄 거 선택 > Shift 누르고 빼질 거 선택 > Ctrl + Numpad `-`
 
+- `BlenderKit` : blender kit 플랫폼 자료들을 블랜더에서 바로 다운 바로 사용
+
 ### 🪄 Optimization
 
 - A로 모든 점 선택 > M > By Distance : 겹치는 점 병합
 
+
+### 📤 Export
+
+Unity에서 머테리얼 인식시키기
+- 텍스쳐는 따로 넣어줘야 된다?? << 조사해볼 것
+- Unity는 FBX 모델의 "머티리얼 이름"과 "머티리얼 파일명"이 일치하면 자동으로 공유함
+- `Shading` 탭에서 모든 오브젝트에 같은 머티리얼 사용하기
+- Blender에서 같은 이름의 머티리얼을 사용하면 Unity의 특정 머테리얼도 사용 가능
 
 ### 🦫 Troubleshooting
 
@@ -210,7 +254,7 @@ Alt + 클릭을 해당 면의 여러 곳에 시도
 Twist가 아니라 Bend로 돼있어야지
 
 #### 머테리얼 적용했는데 왜 안 보임
-뷰포트 바꾸기
+뷰포트를 Material Preview로 바꾸셈
 
 #### Physics 적용했는데 왜 위로 감
 애니메이션이 적용돼버려서 그럼. 0으로 옮겨보거나 중력을 끄셈.
@@ -220,3 +264,18 @@ Twist가 아니라 Bend로 돼있어야지
 
 #### Cloth 적용했는데 왜 옷감처럼 안 구겨짐
 Subdivide 하셈, Pressure 푸셈
+
+#### 빛 추가했는데 안 보임
+뷰포트를 Rendered로 바꾸셈
+
+#### 왜 오브젝트들 transform이 sync됨
+Propositional Editing 끄셈
+
+#### 유니티로 export 했더니 안이 비쳐보임
+Overlays에서 Face Orientation 켠 다음 Shift + N으로 노말 뒤집으셈
+
+#### 리깅이 모델이 묻혀서 안 보임
+Armature 탭 (뼈다귀 아니라 포즈 아이콘) > Viewport Display > In Front, Axes 체크
+
+#### 왜 나는 리깅해도 안 구부러짐
+구부러질 수 있게 Ctrl+R로 루프 쪼개셈
