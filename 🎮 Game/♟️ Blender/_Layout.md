@@ -5,10 +5,12 @@
 - [[#🕹️ Transform|🕹️ Transform]]
 - [[#🧊 Object|🧊 Object]]
 - [[#✂️ Edit|✂️ Edit]]
+- [[#🦴 Rigging|🦴 Rigging]]
 - [[#🔭 View|🔭 View]]
-- [[#🎥 Camera|🎥 Camera]]
 - [[#🔧 Modifier|🔧 Modifier]]
 - [[#🔨 Physics|🔨 Physics]]
+- [[#🎥 Camera|🎥 Camera]]
+- [[#🎬 Animation|🎬 Animation]]
 - [[#➕ Add-on|➕ Add-on]]
 - [[#🪄 Optimization|🪄 Optimization]]
 - [[#📤 Export|📤 Export]]
@@ -27,7 +29,12 @@
 	- [[#🦫 Troubleshooting#빛 추가했는데 안 보임|빛 추가했는데 안 보임]]
 	- [[#🦫 Troubleshooting#왜 오브젝트들 transform이 sync됨|왜 오브젝트들 transform이 sync됨]]
 	- [[#🦫 Troubleshooting#유니티로 export 했더니 안이 비쳐보임|유니티로 export 했더니 안이 비쳐보임]]
-
+	- [[#🦫 Troubleshooting#리깅이 모델이 묻혀서 안 보임|리깅이 모델이 묻혀서 안 보임]]
+	- [[#🦫 Troubleshooting#왜 나는 리깅해도 안 구부러짐|왜 나는 리깅해도 안 구부러짐]]
+- [[#Insert Keyframe Menu 왜 안 뜸|Insert Keyframe Menu 왜 안 뜸]]
+- [[#외부 모델 Import 했더니 보라색|외부 모델 Import 했더니 보라색]]
+	- [[#외부 모델 Import 했더니 보라색#마우스 커서 위에 동그라미 생기고 pan 이동도 안됨|마우스 커서 위에 동그라미 생기고 pan 이동도 안됨]]
+	- [[#외부 모델 Import 했더니 보라색#유니티로 export 했더니 내부 면이 안 보임|유니티로 export 했더니 내부 면이 안 보임]]
 
 
 

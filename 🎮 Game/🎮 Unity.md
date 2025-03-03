@@ -1,6 +1,8 @@
 - [[#📌 팁|📌 팁]]
 	- [[#📌 팁#단축키|단축키]]
 	- [[#📌 팁#최적화|최적화]]
+		- [[#최적화#플랫폼별 적절한 Tris(폴리곤) 개수 가이드라인|플랫폼별 적절한 Tris(폴리곤) 개수 가이드라인]]
+		- [[#최적화#씬 내 폴리곤 최적화|씬 내 폴리곤 최적화]]
 	- [[#📌 팁#에디터|에디터]]
 - [[#⚙️ 설정|⚙️ 설정]]
 	- [[#⚙️ 설정#🏷️ 성능|🏷️ 성능]]
@@ -15,6 +17,7 @@
 		- [[#🏷️ General#.meta 파일|.meta 파일]]
 	- [[#💾 개념#🏷️ Script|🏷️ Script]]
 		- [[#🏷️ Script#재정의(override) 가능한 메서드|재정의(override) 가능한 메서드]]
+		- [[#🏷️ Script#Unity : Coroutine|Unity : Coroutine]]
 - [[#📄 Docs|📄 Docs]]
 	- [[#📄 Docs#🏷️ Component|🏷️ Component]]
 		- [[#🏷️ Component#Rigidbody|Rigidbody]]
@@ -27,18 +30,20 @@
 		- [[#🏷️ Shader Graph#노드|노드]]
 - [[#📋 Detail|📋 Detail]]
 	- [[#📋 Detail#🏷️ Editor|🏷️ Editor]]
+		- [[#🏷️ Editor#Import|Import]]
 	- [[#📋 Detail#🏷️ Script|🏷️ Script]]
 		- [[#🏷️ Script#GetKey 차이|GetKey 차이]]
 		- [[#🏷️ Script#GetAxis, GetAxisRaw 차이|GetAxis, GetAxisRaw 차이]]
 		- [[#🏷️ Script#private void vs void|private void vs void]]
 		- [[#🏷️ Script#변수를 꼭 밖으로 뺄 이유는 없다|변수를 꼭 밖으로 뺄 이유는 없다]]
-		- [[#🏷️ Script#레이캐스트 확인하는 방법|레이캐스트 확인하는 방법]]
 	- [[#📋 Detail#🏷️ Graphic|🏷️ Graphic]]
 		- [[#🏷️ Graphic#Image vs Raw Image|Image vs Raw Image]]
 	- [[#📋 Detail#🏷️ Component|🏷️ Component]]
 - [[#🦫 디버깅|🦫 디버깅]]
 	- [[#🦫 디버깅#🏷️ Editor|🏷️ Editor]]
 		- [[#🏷️ Editor#Tile Pallete 타일 크기 작음|Tile Pallete 타일 크기 작음]]
+		- [[#🏷️ Editor#라이트에 쿠키 넣고 텍스쳐 타입 바꿨더니 조명 꺼짐|라이트에 쿠키 넣고 텍스쳐 타입 바꿨더니 조명 꺼짐]]
+		- [[#🏷️ Editor#Render Texture 크기 변경 안됨|Render Texture 크기 변경 안됨]]
 	- [[#🦫 디버깅#🏷️ 인게임|🏷️ 인게임]]
 		- [[#🏷️ 인게임#오브젝트들 전부 살짝 흐림|오브젝트들 전부 살짝 흐림]]
 		- [[#🏷️ 인게임#Cinemachine 따라가기 덜덜 떨림|Cinemachine 따라가기 덜덜 떨림]]
@@ -50,6 +55,7 @@
 		- [[#🏷️ 인게임#머테리얼을 Transparent로 설정해도 살짝 불투명|머테리얼을 Transparent로 설정해도 살짝 불투명]]
 		- [[#🏷️ 인게임#플레이어 이동에 약간 딜레이|플레이어 이동에 약간 딜레이]]
 		- [[#🏷️ 인게임#스프라이트 마스크 어떻게 씀?|스프라이트 마스크 어떻게 씀?]]
+		- [[#🏷️ 인게임#Camera.main이 null임|Camera.main이 null임]]
 	- [[#🦫 디버깅#🏷️ UI|🏷️ UI]]
 		- [[#🏷️ UI#9-slice 적용 안됨|9-slice 적용 안됨]]
 	- [[#🦫 디버깅#🏷️ 협업|🏷️ 협업]]
@@ -60,6 +66,7 @@
 ---
 
 - 씬 뷰 좌측 상단 Global을 Local로 바꾸면 해당 오브젝트이 rotation한 대로 축이 변경됨
+- 추노마크 없애기 : Project Settings > Player > Splash Image > Show Splash Screen
 
 ### 단축키
 
@@ -282,6 +289,10 @@ Tile Pallete 만들 때 Cell Size 1x1로 설정
 
 #### 라이트에 쿠키 넣고 텍스쳐 타입 바꿨더니 조명 꺼짐
 넣었던 쿠키 삭제했다가 다시 넣으면 켜질거임
+
+#### Render Texture 크기 변경 안됨
+Enable Compatible Format 체크 해제하고 바꿔보셈
+
 
 ### 🏷️ 인게임
 #### 오브젝트들 전부 살짝 흐림
