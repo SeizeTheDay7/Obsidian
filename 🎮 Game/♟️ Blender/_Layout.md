@@ -50,6 +50,7 @@
 	- Physics(물리 엔진, Cloth, Rigid Body 등) 적용 시 → 물리 시뮬레이션이 이상하게 작동할 수 있음
 	- Unity로 내보낼 때 (FBX Export) → 크기, 애니메이션이 꼬일 가능성이 높음
 - N > View > 3D Cursor에서 커서의 Location을 설정할 수 있다
+- 노말 확인 : Blender 우측 상단 원 두개 겹친 아이콘 (Overlay) > Face Orientation 켜기
 
 ### 🚀 Shortcut
 
@@ -96,6 +97,7 @@ Curve
 - 스냅 기능 : Ctrl 누르고 이동
 - 스냅 기능 (스냅) : Shift + Tab
 - 스냅 이동 (3D Cursor, Grid, Object) : Shift + S
+- Snap Base : G > B > 붙일 점 클릭 > 이동
 - 단축키 도움말 : 하단
 
 - Transform Pivot Point : 축의 위치 설정, `.`, 상단 링크 아이콘
@@ -124,6 +126,7 @@ Edit Mode에서만 작동하는 것들
 - 1,2,3 : Select Mode 변경
 - 지나오는 점 전부 선택 : Ctrl + 클릭
 - 한 칸 걸러 선택 해제 : 좌측 상단 Select > Checker Deselect
+- 연결된 버텍스 선택 : L
 
 - 중심점 기준 x,y,z 이동 : G > X,Y,Z > X,Y,Z
 
@@ -152,12 +155,13 @@ Edit Mode에서만 작동하는 것들
 - 전체 면을 삼각형으로 변형 : Ctrl + T (루프 선택 어려워짐)
 - 일부 면을 사각형으로 변형 : Header > Face > Tris to Quads
 
-
-
 원 만들기
 - LoopTools > Circle
 - 점 하나 선택 > Shift+Ctrl+B (Bevel) > Segment 조절
-- 
+
+Tip
+- Bevel 했는데 기울어져서 나눠짐 : 오브젝트 모드 > Ctrl + A > Scale
+
 
 ### 🦴 Rigging
 
@@ -291,10 +295,10 @@ Armature 탭 (뼈다귀 아니라 포즈 아이콘) > Viewport Display > In Fron
 #### 왜 나는 리깅해도 안 구부러짐
 구부러질 수 있게 Ctrl+R로 루프 쪼개셈
 
-### Insert Keyframe Menu 왜 안 뜸
+#### Insert Keyframe Menu 왜 안 뜸
 오브젝트 누르고 K 눌러야 됨 (I도 키프레임 넣는거고 이것도 키프레임 넣는거)
 
-### 외부 모델 Import 했더니 보라색
+#### 외부 모델 Import 했더니 보라색
 File > External Data > Find Missing Files > 텍스처 폴더 들어가서 확인 
 
 #### 마우스 커서 위에 동그라미 생기고 pan 이동도 안됨
