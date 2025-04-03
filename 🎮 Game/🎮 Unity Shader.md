@@ -4,6 +4,13 @@
 ### 개념
 
 전체 흐름
+`struct appdata`는 World Space의 데이터를 들고 있다.
+vert 함수는  `struct appdata`를 조작하여 `struct v2f`로 보낸다.
+
+`struct v2f`는 Clipping Space의 데이터를 들고 있다.
+frag 함수는 `struct v2f`를 조작하여 최종적으로 렌더링한다.
+
+코드 흐름
 ```
 Shader
  └── Properties         ← 사용자 입력값 정의 (텍스처, 색 등)
@@ -54,7 +61,11 @@ Render Queues
 - Material Inspector에서 설정하거나, 
   Shader에서 `Tags { "Queue" = "Geometry+100" } 으로 설정 가능
 
-### 문법
+가로, 세로, 높이 순서
+world space에선 x,z,y 순이라면
+clipping space에서는 x,y,z 순이다.
+
+### 구조
 
 SubShader
 - 쉐이더의 구현이 들어가는 블록
@@ -79,7 +90,11 @@ surface
 Fallback
 - 해당 쉐이더가 지원되지 않을 때, 대신 쓸 기본 쉐이더
 
+### 함수
 
+내적 : dot()
+제곱 : pow()
+소수 부분만 : frac()
 
 ### 자료형
 
@@ -112,3 +127,20 @@ Packed Matrices
 - `out` : 쓰기 전용. 함수 내부에서 초기화해서 밖으로 전달.
 - `inout` : 읽기 + 쓰기. 받아온 값 수정해서 돌려보냄.
 
+appdata 구조체 (버텍스 셰이더 입력 데이터)
+
+- `float4 vertex : POSITION;`: 정점의 위치
+- `float3 normal : NORMAL;`: 정점의 법선 벡터
+- `float4 tangent : TANGENT;`: 정점의 탄젠트 벡터
+- `float2 uv : TEXCOORD0;`: 첫 번째 텍스처 좌표
+- `float2 uv1 : TEXCOORD1;`: 두 번째 텍스처 좌표
+- `float4 color : COLOR;`: 정점의 색상
+
+v2f 구조체 (버텍스 셰이더에서 프래그먼트 셰이더로 전달되는 데이터)
+
+- `float4 vertex : SV_POSITION;`: 클립 공간에서의 정점 위치
+- `float2 uv : TEXCOORD0;`: 보간된 텍스처 좌표
+- `float3 normal : NORMAL;`: 보간된 법선 벡터
+- `float4 color : COLOR;`: 보간된 색상
+- `UNITY_FOG_COORDS(1);`: 안개 효과를 위한 좌표
+- `float3 worldPos : TEXCOORD2;`: 월드 공간에서의 정점 위치

@@ -189,6 +189,12 @@ End Cap Vertices : 끝점 둥글기
 #### 노드
 - Scanline 효과: Checkerboard
 
+### 🏷️ Settings
+
+#### 오클루전 컬링 활성화하는 법
+- Occluder Static이나 Occludee Static 체크하고
+- Window > Rendering > Occlusion Culling > Bake
+- Scene View의 Visualisation 탭 활성화하여 미리 보기
 
 ## 📋 Detail
 ---
