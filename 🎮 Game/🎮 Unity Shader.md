@@ -61,9 +61,22 @@ Render Queues
 - Material Inspector에서 설정하거나, 
   Shader에서 `Tags { "Queue" = "Geometry+100" } 으로 설정 가능
 
+시스템 예약 시맨틱(System Semantic)
+: 각 셰이더 단계에서 "이 값이 어떤 용도로 쓰이는지" GPU에게 알려준다.
+
+| 시맨틱 | 의미 |
+|--------|------|
+| `SV_Position` | 정점 셰이더의 출력 위치 (클립 공간) |
+| `SV_Target`   | 픽셀 셰이더의 출력 색상 |
+| `SV_Depth`    | 픽셀 셰이더가 직접 깊이값을 쓸 때 |
+| `SV_VertexID` | 정점 인덱스 |
+| `SV_InstanceID` | 인스턴싱된 개체의 ID |
+
 가로, 세로, 높이 순서
 world space에선 x,z,y 순이라면
 clipping space에서는 x,y,z 순이다.
+
+View Space : 카메라를 원점(0, 0, 0)에 두고, 그 시점에서 본 좌표계
 
 ### 구조
 
@@ -95,6 +108,18 @@ Fallback
 내적 : dot()
 제곱 : pow()
 소수 부분만 : frac()
+
+#### tex2D와 tex2DProj의 차이
+
+| 항목 | `tex2D` | `tex2Dproj` |
+|------|---------|--------------|
+| 입력 타입 | `float2` (UV) | `float4` (투영 좌표) |
+| 내부 동작 | 그대로 사용 | `(x / w, y / w)`로 계산 |
+| 보간 방식 | 선형 보간 (float2 기준) | **투영 보간** (정점 간의 w 보정 포함) |
+| 사용 목적 | 일반적인 UV 샘플링 | GrabPass, Projector, ShadowMap 등 투영 필요 시 |
+| 필요 조건 | 일반 텍스처 좌표만 있으면 됨 | 클립 공간 또는 투영 좌표 필요 |
+| 예시 사용 | 일반 메시 텍스처, 라이트맵 등 | 화면 왜곡, 그림자 투사, 스크린 공간 이펙트 등 |
+
 
 ### 자료형
 
@@ -135,6 +160,8 @@ appdata 구조체 (버텍스 셰이더 입력 데이터)
 - `float2 uv : TEXCOORD0;`: 첫 번째 텍스처 좌표
 - `float2 uv1 : TEXCOORD1;`: 두 번째 텍스처 좌표
 - `float4 color : COLOR;`: 정점의 색상
+- appdata_full : 미리 정의된 버텍스 입력 구조체. 직접 필요한거 선언 안해도 됨.
+
 
 v2f 구조체 (버텍스 셰이더에서 프래그먼트 셰이더로 전달되는 데이터)
 

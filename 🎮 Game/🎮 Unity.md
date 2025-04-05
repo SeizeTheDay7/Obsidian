@@ -254,6 +254,18 @@ Smoothing Angle을 조절하면 폴리곤 단위에 가깝게 노말 계산
 ### 🏷️ Component
 
 
+## 📦 애셋 사용법
+---
+### Analytic Volumetric Light
+
+초기 설정 제대로 다 했는데도 제대로 안 보임 : Global Volume에 추가한 override에서 Air Density 다 켜지 말 것
+
+Base Light를 설정한 후에 원본 빛을 바꿨다면 Copy From Light Component
+
+
+
+
+
 ## 🦫 디버깅
 ---
 
