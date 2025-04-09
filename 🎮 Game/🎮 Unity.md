@@ -280,6 +280,9 @@ Tile Pallete 만들 때 Cell Size 1x1로 설정
 #### Render Texture 크기 변경 안됨
 Enable Compatible Format 체크 해제하고 바꿔보셈
 
+#### Package Export 종속성만 체크가 안됨
+Include all 체크 해제
+
 
 ### 🏷️ 인게임
 #### 오브젝트들 전부 살짝 흐림
@@ -320,6 +323,15 @@ check Mask Interaction component on parent.
 
 #### DontDestroyOnLoad() 해도 사라짐
 부모를 없애
+
+#### 콜라이더가 분명 하나인데 더 달려있음
+Character Controller에도 collider 달려있어서 그럼
+굳이 콜라이더 추가할 필요 없음
+
+#### Rigidbody 중력 작용 안 함
+Character Controller 붙어있으면 Rigidbody 적용 안됨
+`controller.Move(velocity * Time.deltaTime);` 이걸로 중력 구현하셈
+
 
 ### 🏷️ 스크립트
 
