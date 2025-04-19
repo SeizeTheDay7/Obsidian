@@ -20,3 +20,7 @@
 3. **편집기 스케일러가 ‘에픽’으로 설정되어 있음**
    - 고품질 뷰포트 설정일 경우 GPU 부하가 크다.
    - ▶ **해결 방법**: `씬 좌측 상단 Settings > Engine Scalability Settings > Low` 로 수동 설정
+
+4. **나나이트/루멘이 기본 활성화라면 부하 큼**
+   - 나나이트 : `Static Mesh 에디터 > 우측 세부 설정에서 Nanite Settings > Enable Nanite 체크 해제`
+   - 루멘 : `Edit > Project Settings > Dynamic Global Illumination Method, Reflection Method 변경`

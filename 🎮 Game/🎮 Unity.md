@@ -81,7 +81,30 @@
 ### 에디터
 - 프리팹 옆에 있는 화살표 누르면 프리팹 편집기로 바로 들어갈 수 있다.
 
+### 스니펫
 
+#### 싱글톤
+
+```cs
+using UnityEngine;
+
+public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
+{
+    public static T Instance { get; private set; }
+
+    protected virtual void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this as T;
+        }
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
+}
+```
 
 
 ## ⚙️ 설정
@@ -159,8 +182,6 @@ End Cap Vertices : 끝점 둥글기
 - Dynamic : 완전히 물리 연산
 - Kinematic : 물리 연산 없이 충돌 감지만 가능. 움직이려면 rb.MovePosition()
 - Static : 절대 안 움직임
-
-
 #### CharacterController
 - 정확한 충돌 감지 (벽 통과 방지)  
 - 중력, 계단 이동, 경사면 처리 가능  
@@ -183,6 +204,24 @@ End Cap Vertices : 끝점 둥글기
 4. Hard Look At : 카메라가 항상 목표 오브젝트를 정확하게 바라보도록 강제하는 방식입니다. 회전이 즉각적으로 적용되며 자연스러운 움직임 없이 즉시 방향을 맞춥니다.
 5. POV : 1인칭 혹은 3인칭 조작 방식에서 사용되며, 플레이어 입력(마우스 또는 컨트롤러)을 기반으로 카메라가 회전합니다. FPS(1인칭 슈팅 게임) 또는 TPS(3인칭 액션 게임) 카메라에서 많이 사용됩니다.
 6. Same As Follow Target : 카메라가 설정된 대상의 회전을 그대로 따라갑니다.
+
+### 🏷️ Script
+
+#### OnRenderImage()
+- 카메라 포스트 프로세싱에 사용되는 함수
+- Unity 카메라가 씬을 렌더링한 직후에 호출됨
+- 렌더링된 결과(`source`)를 받아서 필터/이펙트 처리 후 `destination`에 출력하는 구조
+- 이 함수가 호출되려면, 스크립트가 카메라에 붙어 있어야 하고, 
+  해당 카메라에 depthTextureMode 또는 PostProcess 관련 설정이 있어야 함.
+
+#### `[ImageEffectOpaque]`
+- 렌더 순서를 opaque 렌더링 이후(transparent 이전)로 설정
+
+#### Graphics.Blit()
+- Blit = Bit Block Transfer : 텍스처를 복사하거나 가공해서 다른 텍스쳐로 넘기는 함수
+- `Graphics.Blit(source, destination);` : source 이미지를 destination으로 그냥 복사
+- `Graphics.Blit(source, destination, _Material);` : _Material에 연결된 셰이더를 사용해서 source를 처리한 뒤 destination에 씀
+
 
 ### 🏷️ Shader Graph
 
@@ -285,6 +324,17 @@ Include all 체크 해제
 
 
 ### 🏷️ 인게임
+
+#### 📌 Collision 관련
+
+- OnTriggerEnter()는 Rigidbody를 Continous로 설정해도 고속 물체 감지 불가
+- 둘 중 하나라도 Is Trigger 체크돼있으면 OnCollisionEnter() 작동 안 함
+- OnCollisionEnter()에선 linearVelocity 대신 relativeVelocity 써야 함. 
+  linearVelocity는 충돌 때문에 0됨. 
+  relativeVelocity 쓸 땐 rb가 아니라 collision에서 가져와야 함.
+
+
+
 #### 오브젝트들 전부 살짝 흐림
 해상도를 Full HD로 바꾸고 1.5x로 돼있는 Scale을 1x로 바꾸기
 
@@ -340,6 +390,10 @@ using Unity.Cinemachine 쓰셈
 
 #### Trigger가 안됨
 rigidbody 붙이셈
+
+#### print()가 안됨
+그거 MonoBehaviour랑 ScriptableObject에서만 됨.
+대신 Debug.log() 쓰셈
 
 ### 🏷️ UI
 #### 9-slice 적용 안됨
@@ -446,5 +500,6 @@ UI
 5️⃣ Dynamic Objects 줄이기  
    - 애니메이션이 적용된 오브젝트가 많으면 CPU 부하 증가  
    - `Static Batching`을 적용하면 정적인 오브젝트를 최적화할 수 있음
-   - 
+
+
 
