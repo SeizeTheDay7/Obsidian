@@ -1,70 +1,3 @@
-- [[#📌 팁|📌 팁]]
-	- [[#📌 팁#단축키|단축키]]
-	- [[#📌 팁#에디터|에디터]]
-- [[#⚙️ 설정|⚙️ 설정]]
-	- [[#⚙️ 설정#🏷️ 성능|🏷️ 성능]]
-		- [[#🏷️ 성능#수정 후 빠르게 재생|수정 후 빠르게 재생]]
-	- [[#⚙️ 설정#🏷️ 디버그|🏷️ 디버그]]
-		- [[#🏷️ 디버그#애셋 직렬화 방식 통일|애셋 직렬화 방식 통일]]
-		- [[#🏷️ 디버그#프로젝트 렌더링 파이프라인 확인|프로젝트 렌더링 파이프라인 확인]]
-- [[#🔍 Inspector|🔍 Inspector]]
-	- [[#🔍 Inspector#Line Renderer|Line Renderer]]
-- [[#💾 개념|💾 개념]]
-	- [[#💾 개념#🏷️ General|🏷️ General]]
-		- [[#🏷️ General#.meta 파일|.meta 파일]]
-	- [[#💾 개념#🏷️ Script|🏷️ Script]]
-		- [[#🏷️ Script#재정의(override) 가능한 메서드|재정의(override) 가능한 메서드]]
-		- [[#🏷️ Script#Unity : Coroutine|Unity : Coroutine]]
-- [[#📄 Docs|📄 Docs]]
-	- [[#📄 Docs#🏷️ Component|🏷️ Component]]
-		- [[#🏷️ Component#Rigidbody|Rigidbody]]
-			- [[#Rigidbody#Body Type|Body Type]]
-		- [[#🏷️ Component#CharacterController|CharacterController]]
-		- [[#🏷️ Component#Mesh Renderer|Mesh Renderer]]
-		- [[#🏷️ Component#Cinemachine|Cinemachine]]
-			- [[#Cinemachine#Aim|Aim]]
-	- [[#📄 Docs#🏷️ Shader Graph|🏷️ Shader Graph]]
-		- [[#🏷️ Shader Graph#노드|노드]]
-- [[#📋 Detail|📋 Detail]]
-	- [[#📋 Detail#🏷️ Editor|🏷️ Editor]]
-		- [[#🏷️ Editor#Import|Import]]
-		- [[#🏷️ Editor#커서 어케 바꿈|커서 어케 바꿈]]
-	- [[#📋 Detail#🏷️ Script|🏷️ Script]]
-		- [[#🏷️ Script#GetKey 차이|GetKey 차이]]
-		- [[#🏷️ Script#GetAxis, GetAxisRaw 차이|GetAxis, GetAxisRaw 차이]]
-		- [[#🏷️ Script#private void vs void|private void vs void]]
-		- [[#🏷️ Script#변수를 꼭 밖으로 뺄 이유는 없다|변수를 꼭 밖으로 뺄 이유는 없다]]
-	- [[#📋 Detail#🏷️ Graphic|🏷️ Graphic]]
-		- [[#🏷️ Graphic#Image vs Raw Image|Image vs Raw Image]]
-	- [[#📋 Detail#🏷️ Component|🏷️ Component]]
-- [[#🦫 디버깅|🦫 디버깅]]
-	- [[#🦫 디버깅#🏷️ Editor|🏷️ Editor]]
-		- [[#🏷️ Editor#Tile Pallete 타일 크기 작음|Tile Pallete 타일 크기 작음]]
-		- [[#🏷️ Editor#라이트에 쿠키 넣고 텍스쳐 타입 바꿨더니 조명 꺼짐|라이트에 쿠키 넣고 텍스쳐 타입 바꿨더니 조명 꺼짐]]
-		- [[#🏷️ Editor#Render Texture 크기 변경 안됨|Render Texture 크기 변경 안됨]]
-	- [[#🦫 디버깅#🏷️ 인게임|🏷️ 인게임]]
-		- [[#🏷️ 인게임#오브젝트들 전부 살짝 흐림|오브젝트들 전부 살짝 흐림]]
-		- [[#🏷️ 인게임#Cinemachine 따라가기 덜덜 떨림|Cinemachine 따라가기 덜덜 떨림]]
-		- [[#🏷️ 인게임#콜라이더 적용해도 벽뚫|콜라이더 적용해도 벽뚫]]
-		- [[#🏷️ 인게임#플레이어가 벽에 달라붙음|플레이어가 벽에 달라붙음]]
-		- [[#🏷️ 인게임#플레이어가 벽에 닿으면 계속 점프 가능함|플레이어가 벽에 닿으면 계속 점프 가능함]]
-		- [[#🏷️ 인게임#Navmesh Bake 안 보임|Navmesh Bake 안 보임]]
-		- [[#🏷️ 인게임#Raycast 안됨|Raycast 안됨]]
-		- [[#🏷️ 인게임#머테리얼을 Transparent로 설정해도 살짝 불투명|머테리얼을 Transparent로 설정해도 살짝 불투명]]
-		- [[#🏷️ 인게임#플레이어 이동에 약간 딜레이|플레이어 이동에 약간 딜레이]]
-		- [[#🏷️ 인게임#스프라이트 마스크 어떻게 씀?|스프라이트 마스크 어떻게 씀?]]
-		- [[#🏷️ 인게임#Camera.main이 null임|Camera.main이 null임]]
-	- [[#🦫 디버깅#🏷️ 스크립트|🏷️ 스크립트]]
-		- [[#🏷️ 스크립트#using Cinemachine이 안 먹힘|using Cinemachine이 안 먹힘]]
-		- [[#🏷️ 스크립트#Trigger가 안됨|Trigger가 안됨]]
-	- [[#🦫 디버깅#🏷️ UI|🏷️ UI]]
-		- [[#🏷️ UI#9-slice 적용 안됨|9-slice 적용 안됨]]
-	- [[#🦫 디버깅#🏷️ 협업|🏷️ 협업]]
-		- [[#🏷️ 협업#깃 pull 할 때마다 메타파일 갱신|깃 pull 할 때마다 메타파일 갱신]]
-- [[#🚀 최적화|🚀 최적화]]
-	- [[#🚀 최적화#유나이트 서울 2020 - 최대 성능을 위한 최적화 팁|유나이트 서울 2020 - 최대 성능을 위한 최적화 팁]]
-		- [[#유나이트 서울 2020 - 최대 성능을 위한 최적화 팁#플랫폼별 적절한 Tris(폴리곤) 개수 가이드라인|플랫폼별 적절한 Tris(폴리곤) 개수 가이드라인]]
-		- [[#유나이트 서울 2020 - 최대 성능을 위한 최적화 팁#씬 내 폴리곤 최적화|씬 내 폴리곤 최적화]]
 
 
 ## 📌 팁
@@ -278,6 +211,19 @@ void Update()
 player를 update 문 바깥에서 전역 변수로 선언한다고 해서 메모리가 아껴지진 않는다. 
 어차피 update 문이 끝나면 스택 메모리가 자동으로 정리되기 때문이다.
 
+### 🏷️ Physics
+
+#### Collision
+- OnCollisionEnter는 Rigidbody가 있는 최상위 부모 오브젝트 기준으로 collision 가져옴
+- OnCollisionEnter에선 linearVelocity 0되므로 relativeVelocity 써야 함
+- 둘 중 하나라도 트리거 체크돼있으면 CollisionEnter 작동 안 함
+- `collision.collider`은 상대방 콜라이더를 의미한다
+
+#### Trigger
+- OnTriggerEnter는 정확히 닿은 오브젝트 기준으로 collider 가져옴
+- rigidbody continous 설정해도 고속 물체 감지 불가
+- TriggerEnter(Collider col)에서 굳이 col.gameObject.CompareTag()할 필요 없이 col.CompareTag()
+
 
 ### 🏷️ Graphic
 
@@ -381,6 +327,9 @@ Character Controller에도 collider 달려있어서 그럼
 #### Rigidbody 중력 작용 안 함
 Character Controller 붙어있으면 Rigidbody 적용 안됨
 `controller.Move(velocity * Time.deltaTime);` 이걸로 중력 구현하셈
+
+#### sorting layer 바꿨더니 검은색 됨
+global light 2d는 target sorting layer가 있어서 그걸 벗어나면 비춰주지 않는다
 
 
 ### 🏷️ 스크립트
