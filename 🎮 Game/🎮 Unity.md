@@ -17,21 +17,23 @@
 	- [[#💾 개념#🏷️ Script|🏷️ Script]]
 		- [[#🏷️ Script#재정의(override) 가능한 메서드|재정의(override) 가능한 메서드]]
 		- [[#🏷️ Script#Unity : Coroutine|Unity : Coroutine]]
-- [[#📄 Docs|📄 Docs]]
-	- [[#📄 Docs#🏷️ Component|🏷️ Component]]
+- [[#📄 Manual|📄 Manual]]
+	- [[#📄 Manual#🏷️ Component|🏷️ Component]]
 		- [[#🏷️ Component#Rigidbody|Rigidbody]]
 			- [[#Rigidbody#Body Type|Body Type]]
 		- [[#🏷️ Component#CharacterController|CharacterController]]
 		- [[#🏷️ Component#Mesh Renderer|Mesh Renderer]]
 		- [[#🏷️ Component#Cinemachine|Cinemachine]]
 			- [[#Cinemachine#Aim|Aim]]
-	- [[#📄 Docs#🏷️ Script|🏷️ Script]]
+	- [[#📄 Manual#🏷️ Script|🏷️ Script]]
 		- [[#🏷️ Script#OnRenderImage()|OnRenderImage()]]
 		- [[#🏷️ Script#`[ImageEffectOpaque]`|`[ImageEffectOpaque]`]]
 		- [[#🏷️ Script#Graphics.Blit()|Graphics.Blit()]]
-	- [[#📄 Docs#🏷️ Shader Graph|🏷️ Shader Graph]]
+	- [[#📄 Manual#🏷️ UI|🏷️ UI]]
+		- [[#🏷️ UI#Scroll View|Scroll View]]
+	- [[#📄 Manual#🏷️ Shader Graph|🏷️ Shader Graph]]
 		- [[#🏷️ Shader Graph#노드|노드]]
-	- [[#📄 Docs#🏷️ Settings|🏷️ Settings]]
+	- [[#📄 Manual#🏷️ Settings|🏷️ Settings]]
 		- [[#🏷️ Settings#오클루전 컬링 활성화하는 법|오클루전 컬링 활성화하는 법]]
 - [[#📋 Detail|📋 Detail]]
 	- [[#📋 Detail#🏷️ Editor|🏷️ Editor]]
@@ -88,11 +90,18 @@
 		- [[#유나이트 서울 2020 - 최대 성능을 위한 최적화 팁#씬 내 폴리곤 최적화|씬 내 폴리곤 최적화]]
 
 
+
+
 ## 📌 팁
 ---
 
 - 씬 뷰 좌측 상단 Global을 Local로 바꾸면 해당 오브젝트이 rotation한 대로 축이 변경됨
 - 추노마크 없애기 : Project Settings > Player > Splash Image > Show Splash Screen
+- [debug 쉽게 하기](https://github.com/JohnBaracuda/com.baracuda.runtime-monitoring?tab=readme-ov-file) 
+  - Asset Store에서 등록해놨으니 PackageManager에서 설치
+  - Tools에서 세팅하기 
+  - `using Baracuda.Monitoring;` 
+  - 인스턴스는 시작할 때 `this.StartMonitoring()`
 
 ### 단축키
 
@@ -193,7 +202,7 @@ End Cap Vertices : 끝점 둥글기
 - Monobehaviour 스크립트는 enabled false로 해도 코루틴 안 꺼짐
 
 
-## 📄 Docs
+## 📄 Manual
 ---
 
 ### 🏷️ Component
@@ -243,6 +252,14 @@ End Cap Vertices : 끝점 둥글기
 - `Graphics.Blit(source, destination);` : source 이미지를 destination으로 그냥 복사
 - `Graphics.Blit(source, destination, _Material);` : _Material에 연결된 셰이더를 사용해서 source를 처리한 뒤 destination에 씀
 
+
+### 🏷️ UI
+
+#### Scroll View
+- Content에 element들을 전부 넣는다
+- Content에 Vertical Layout Group 추가 > Child Alignment 조정
+- Content에 Content Size Fitter 추가 > Vertical Fit Preferred Size
+- 그래도 안되면 Viewport > Scroll Rect> Content > Content 할당
 
 ### 🏷️ Shader Graph
 

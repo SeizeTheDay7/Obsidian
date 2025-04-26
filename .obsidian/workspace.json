@@ -64,6 +64,48 @@
             }
           },
           {
+            "id": "e985296a488ab975",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🎮 Game/🎹 Cakewalk.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "🎹 Cakewalk"
+            }
+          },
+          {
+            "id": "cf34fd38052225ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🎮 Game/🎮 Unity.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "🎮 Unity"
+            }
+          },
+          {
+            "id": "10c5acc600643799",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🎮 Game/🎮 Unreal.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "🎮 Unreal"
+            }
+          },
+          {
             "id": "3312abc66960dc0c",
             "type": "leaf",
             "state": {
@@ -78,7 +120,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -222,14 +264,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "34fc771ed51aa52f",
+  "active": "cf34fd38052225ef",
   "lastOpenFiles": [
-    "🎮 Game/🎨 Affinity Designer.md",
+    "🎮 Game/🎹 Cakewalk.md",
+    "🎮 Game/🎮 Unreal.md",
     "🎮 Game/🎮 Unity.md",
+    "🎮 Game/🎨 Affinity Designer.md",
     "🎨 ClipStudio.md",
     "🎨 Drawing.md",
     "🔨 Tools/🎨 Inkscape.md",
-    "🎮 Game/🎮 Unreal.md",
     "💻 Lang/💻 C++.md",
     "✏️ Memo.md",
     "🎮 Game/♟️ Blender/_Layout.md",
@@ -260,7 +303,6 @@
     "🎮 Game/♟️ Blender",
     "📓 Study Note/🎤 Tech Interview.md",
     "🔌 Coding Memo.md",
-    "🔨 Tools/📘 VS Code.md",
     "🎮 Game/애셋 사용법",
     "📓 Study Note/🌳 Jungle",
     "📚 Book/🌐 Web",
