@@ -9,8 +9,6 @@
 	- [[#⚙️ 설정#🏷️ 디버그|🏷️ 디버그]]
 		- [[#🏷️ 디버그#애셋 직렬화 방식 통일|애셋 직렬화 방식 통일]]
 		- [[#🏷️ 디버그#프로젝트 렌더링 파이프라인 확인|프로젝트 렌더링 파이프라인 확인]]
-- [[#🔍 Inspector|🔍 Inspector]]
-	- [[#🔍 Inspector#Line Renderer|Line Renderer]]
 - [[#💾 개념|💾 개념]]
 	- [[#💾 개념#🏷️ General|🏷️ General]]
 		- [[#🏷️ General#.meta 파일|.meta 파일]]
@@ -25,6 +23,7 @@
 		- [[#🏷️ Component#Mesh Renderer|Mesh Renderer]]
 		- [[#🏷️ Component#Cinemachine|Cinemachine]]
 			- [[#Cinemachine#Aim|Aim]]
+		- [[#🏷️ Component#Line Renderer|Line Renderer]]
 	- [[#📄 Manual#🏷️ Script|🏷️ Script]]
 		- [[#🏷️ Script#OnRenderImage()|OnRenderImage()]]
 		- [[#🏷️ Script#`[ImageEffectOpaque]`|`[ImageEffectOpaque]`]]
@@ -155,17 +154,6 @@ Edit - Project Settings - Editor - Asset Serialization - Force Text로 바꾸기
 Edit - Project Settings - Graphics - Scriptable Pipeline Settings 확인
 
 
-## 🔍 Inspector
----
-### Line Renderer
-Scene Tools : 점 세개 누르면 점 옮기기
-Positions : 정점 추가
-중앙 빨간 선 : 폭 조절
-Conrner Vertices : 모서리 둥글기
-End Cap Vertices : 끝점 둥글기
-
-
-
 
 ## 💾 개념
 ---
@@ -234,6 +222,13 @@ End Cap Vertices : 끝점 둥글기
 4. Hard Look At : 카메라가 항상 목표 오브젝트를 정확하게 바라보도록 강제하는 방식입니다. 회전이 즉각적으로 적용되며 자연스러운 움직임 없이 즉시 방향을 맞춥니다.
 5. POV : 1인칭 혹은 3인칭 조작 방식에서 사용되며, 플레이어 입력(마우스 또는 컨트롤러)을 기반으로 카메라가 회전합니다. FPS(1인칭 슈팅 게임) 또는 TPS(3인칭 액션 게임) 카메라에서 많이 사용됩니다.
 6. Same As Follow Target : 카메라가 설정된 대상의 회전을 그대로 따라갑니다.
+
+#### Line Renderer
+Scene Tools : 점 세개 누르면 점 옮기기
+Positions : 정점 추가
+중앙 빨간 선 : 폭 조절
+Conrner Vertices : 모서리 둥글기
+End Cap Vertices : 끝점 둥글기
 
 ### 🏷️ Script
 

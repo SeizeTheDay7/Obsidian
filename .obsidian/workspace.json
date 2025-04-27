@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9f69cabbaa8eca14",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "✏️ Memo.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "✏️ Memo"
-            }
-          },
-          {
             "id": "62a3e6b1f9364b85",
             "type": "leaf",
             "state": {
@@ -33,48 +19,6 @@
               },
               "icon": "lucide-file",
               "title": "🎨 Drawing"
-            }
-          },
-          {
-            "id": "429c8183d0312b75",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🎮 Game/🎮 Unreal.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "🎮 Unreal"
-            }
-          },
-          {
-            "id": "34fc771ed51aa52f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🎮 Game/🎮 Unity.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "🎮 Unity"
-            }
-          },
-          {
-            "id": "e985296a488ab975",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🎮 Game/🎹 Cakewalk.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "🎹 Cakewalk"
             }
           },
           {
@@ -90,37 +34,8 @@
               "icon": "lucide-file",
               "title": "🎮 Unity"
             }
-          },
-          {
-            "id": "10c5acc600643799",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🎮 Game/🎮 Unreal.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "🎮 Unreal"
-            }
-          },
-          {
-            "id": "3312abc66960dc0c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🎮 Game/🎨 Affinity Designer.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "🎨 Affinity Designer"
-            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -264,17 +179,21 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "cf34fd38052225ef",
+  "active": "62a3e6b1f9364b85",
   "lastOpenFiles": [
-    "🎮 Game/🎹 Cakewalk.md",
+    "🥚 Algorithm.md",
+    "🔌 Coding Memo.md",
+    "🎵 Music.md",
     "🎮 Game/🎮 Unreal.md",
+    "리액트.md",
     "🎮 Game/🎮 Unity.md",
-    "🎮 Game/🎨 Affinity Designer.md",
-    "🎨 ClipStudio.md",
     "🎨 Drawing.md",
+    "✏️ Memo.md",
+    "🎮 Game/🎨 Affinity Designer.md",
+    "🎮 Game/🎹 Cakewalk.md",
+    "🎨 ClipStudio.md",
     "🔨 Tools/🎨 Inkscape.md",
     "💻 Lang/💻 C++.md",
-    "✏️ Memo.md",
     "🎮 Game/♟️ Blender/_Layout.md",
     "🎮 Game/♟️ Blender/학습 로드맵.md",
     "🎮 Game/♟️ Blender/🗺️ UV Editing.md",
@@ -297,12 +216,8 @@
     "📊 Data/🛢 SQL.md",
     "📊 Data/📌 SQLD 족집게 정리.md",
     "🎮 Game/♟️ Blender/🗿 Sculpting.md",
-    "🎮 Game/♟️ Blender/🎨 Shading.md",
     "Pic/Pasted image 20250215191609.png",
-    "🎮 Game/♟️ Blender/🎬 Animation.md",
     "🎮 Game/♟️ Blender",
-    "📓 Study Note/🎤 Tech Interview.md",
-    "🔌 Coding Memo.md",
     "🎮 Game/애셋 사용법",
     "📓 Study Note/🌳 Jungle",
     "📚 Book/🌐 Web",
