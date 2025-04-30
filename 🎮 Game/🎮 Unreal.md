@@ -12,10 +12,12 @@
 - Nanite 확인 : Viewmode > Nanaite Visualization > Mask
 - Nanite 활성화 : 해당 애셋 가서 우클릭 > Nanaite
 
-### 🏷️ World Settings
-#### Lightmass
-- Static Lighting Level Scale x Indirect Lighting Quality = 1 이 되도록 설정해라
+- 블루프린트 디버깅 보는 법 : 중앙 상단 드롭다운
 
+### 🏷️ World Settings
+
+- Static Lighting Level Scale x Indirect Lighting Quality = 1 이 되도록 설정해라
+- 시작 캐릭 지정 : GameMode > Gamemode Override
 
 ## 🖱️ 조작
 ---
@@ -25,7 +27,8 @@
 ### 🏷️ Selection Mode
 
 - 카메라 이동 속도 조절 : 우클 + 스크롤
-- 게임 화면 : G
+- 게임에서 보이는 화면 : G
+- 게임 플레이 안 끄고 빠져나오기 : Shift + F1
 
 - 해당 애셋 들어있는 폴더 : Ctrl + B
 - 해당 애셋 바로 열기 : Ctrl + E
