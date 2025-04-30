@@ -206,6 +206,30 @@ Edit - Project Settings - Graphics - Scriptable Pipeline Settings 확인
 - Rigidbody 없이도 이동 및 점프 구현 가능  
 - 플레이어 이동을 세밀하게 조정 가능  
 - 물리 연산이 불필요하여 성능 최적화 가능 
+
+#### Player Input
+
+```cs
+public class PlayerMove : MonoBehaviour
+{
+    [SerializeField] float moveSpeed;
+    [SerializeField] InputActionReference inputAction;
+    CharacterController cc;
+
+    void Start()
+    {
+        cc = GetComponent<CharacterController>();
+    }
+
+    void Update()
+    {
+        Vector2 moveInput = inputAction.action.ReadValue<Vector2>();
+        Vector3 moveDirection = new Vector3(moveInput.x, 0, moveInput.y).normalized;
+        cc.Move(moveDirection * moveSpeed * Time.deltaTime);
+    }
+}
+```
+
 #### Mesh Renderer
 - 기본 역할: 정적(Static) 또는 변형되지 않는 3D 메시에 대한 렌더링을 처리.
 - 사용 예시: 건물, 바위, 가구 등 변형되지 않는 오브젝트.
@@ -267,6 +291,7 @@ End Cap Vertices : 끝점 둥글기
 - Occluder Static이나 Occludee Static 체크하고
 - Window > Rendering > Occlusion Culling > Bake
 - Scene View의 Visualisation 탭 활성화하여 미리 보기
+
 
 ## 📋 Detail
 ---
@@ -368,6 +393,9 @@ Enable Compatible Format 체크 해제하고 바꿔보셈
 #### Package Export 종속성만 체크가 안됨
 Include all 체크 해제
 
+#### PSD import가 안됨
+Texture의 Inspector 상단에서 Importer를 PSD Importer로 바꾸셈
+
 
 ### 🏷️ 인게임
 
@@ -385,7 +413,8 @@ Include all 체크 해제
 해상도를 Full HD로 바꾸고 1.5x로 돼있는 Scale을 1x로 바꾸기
 
 #### Cinemachine 따라가기 덜덜 떨림
-Rigidbody > Interpolation > Interpolate로 변경
+- Rigidbody > Interpolation > Interpolate로 변경
+- Cinemachine Brain > Blend Update Method > Fixed Update
 
 #### 콜라이더 적용해도 벽뚫
 Rigidbody > Collision Detection > Continous로 변경
@@ -443,6 +472,12 @@ rigidbody 붙이셈
 #### print()가 안됨
 그거 MonoBehaviour랑 ScriptableObject에서만 됨.
 대신 Debug.log() 쓰셈
+
+### 🏷️ Shader Graph
+
+#### 2D Sprite Texture 연결했는데 전부 단색으로 나옴
+Alpha 값도 연결하셈
+
 
 ### 🏷️ UI
 #### 9-slice 적용 안됨
