@@ -12,7 +12,9 @@
 - Nanite 확인 : Viewmode > Nanaite Visualization > Mask
 - Nanite 활성화 : 해당 애셋 가서 우클릭 > Nanaite
 
-- 블루프린트 디버깅 보는 법 : 중앙 상단 드롭다운
+- 시작 맵 설정 : 우측 상단 Settings > Project Settings > Maps * Modes > Default Maps
+
+- 블루프린트 흐름 디버깅 보는 법 : 중앙 상단 드롭다운
 
 ### 🏷️ World Settings
 
@@ -23,10 +25,12 @@
 ---
 
 - Content Drawer 열기/닫기 : Ctrl + Space
+- 디버그 명령어 입력 : 백틱
 
 ### 🏷️ Selection Mode
 
 - 카메라 이동 속도 조절 : 우클 + 스크롤
+- 시점 위치 북마크 : Ctrl + 0,1,2, ... (숫자 누르면 해당 위치로 감)
 - 게임에서 보이는 화면 : G
 - 게임 플레이 안 끄고 빠져나오기 : Shift + F1
 
@@ -87,8 +91,32 @@
 - Landscape 새로 만들 때 크기 참고 : [링크](https://dev.epicgames.com/documentation/en-us/unreal-engine/landscape-technical-guide-in-unreal-engine)
 
 
+### 🏷️ Blueprint
+
+- 블루프린트 오브젝트 parameter 노출 : Details > Insatnce Editable, Exposure on Spawn 체크
+- 맵 에디터에서 오브젝트를 선택한 후 돌아와서 우클하면 해당 오브젝트와 관련된 노드 추가 가능
+
+
+### 🏷️ 디버그 명령어
+
+플레이 모드에서 백틱으로 열고 입력하는 명령어들
+
+- t.Maxfps : 최대 fps 설정. 0이면 기본 값으로 돌아감.
+
+
 ## 🧾 주제별
 ---
+
+### 기본 Lighting 세팅
+
+- Directional Light 추가
+- Visual Effect > Sky Atmosphere 추가
+- Sky Light 추가
+- Visual Effect > Volumetric Cloud 추가
+- Visual Effect > Exponential Height Fog 추가
+- PostProcess Volume 추가
+  - Lens > Exposure > Metering Mode : Manual , Exposure Compensation : 11
+  - Post Process Volume Settings > Infinite Extent (Unbound) 체크
 
 ### Static Light Bake
 
@@ -119,4 +147,4 @@
 ### 🏷️ Material Editor
 
 #### Static Switch 이름 변경이 안됨
-노드 이름이 Static Switch Parameter인 걸로 고르셈
+그거 말고 노드 이름이 Static Switch Parameter인 걸로 고르셈
