@@ -308,3 +308,6 @@ w 누르셈
 
 #### 유니티로 export 했더니 내부 면이 안 보임
 유니티 > 머테리얼 > Render Face > Both
+
+#### Curve Modifier 했더니 크기가 너무 커짐
+두 물체 origin을 가까이 하셈

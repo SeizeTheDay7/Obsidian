@@ -373,6 +373,20 @@ Smoothing Angle을 조절하면 폴리곤 단위에 가깝게 노말 계산
 Base Light를 설정한 후에 원본 빛을 바꿨다면 Copy From Light Component
 
 
+### VRoid
+
+vrm importer : https://github.com/vrm-c/UniVRM
+toon lit for vrm : https://github.com/simplestargame/SimpleURPToonLitOutlineExample
+  - UniVRM Shaders의 MaterialFactory.cs를 SimpleStarGame의 그것으로 바꾼다 (검색으로 위치 찾아내기)
+  - 라고는 하는데, 버전도 최신으로 업뎃 안돼있고, 적용했는데 변화도 잘 모르겠음
+
+믹사모 애니메이션 적용 방법
+- unity package manager > Unity Registry > fbx exporter 설치
+- 모델을 씬에 올린 뒤 export fbx (안되면 fbx exporter 재설치)
+- 믹사모에 fbx 파일 올린 뒤에 애니메이션 다운 받기
+- 믹사모 파일 가져온 뒤 Rig > Animation Type > Humanoid
+- 가져온 파일에서 애니메이션 클립만 따로 복사
+- 애니메이션 클립 루트 모션 관련 필요한대로 설정
 
 
 
@@ -459,6 +473,10 @@ Character Controller 붙어있으면 Rigidbody 적용 안됨
 
 #### sorting layer 바꿨더니 검은색 됨
 global light 2d는 target sorting layer가 있어서 그걸 벗어나면 비춰주지 않는다
+
+#### 위치 순간이동 로직 짰는데 순간이동 안 함
+Character Controller는 내부 상태 유지 때문에 순간이동 무시함
+순간이동 시킬 땐 enabled false 했다가 이동시키고 true하면 됨
 
 
 ### 🏷️ 스크립트
