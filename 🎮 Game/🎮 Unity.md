@@ -376,9 +376,7 @@ Base Light를 설정한 후에 원본 빛을 바꿨다면 Copy From Light Compon
 ### VRoid
 
 vrm importer : https://github.com/vrm-c/UniVRM
-toon lit for vrm : https://github.com/simplestargame/SimpleURPToonLitOutlineExample
-  - UniVRM Shaders의 MaterialFactory.cs를 SimpleStarGame의 그것으로 바꾼다 (검색으로 위치 찾아내기)
-  - 라고는 하는데, 버전도 최신으로 업뎃 안돼있고, 적용했는데 변화도 잘 모르겠음
+- v0.129.0은 오류 발생, v0.128.3으로 import함.
 
 믹사모 애니메이션 적용 방법
 - unity package manager > Unity Registry > fbx exporter 설치
@@ -478,6 +476,8 @@ global light 2d는 target sorting layer가 있어서 그걸 벗어나면 비춰�
 Character Controller는 내부 상태 유지 때문에 순간이동 무시함
 순간이동 시킬 땐 enabled false 했다가 이동시키고 true하면 됨
 
+### fbx export 했는데 blender에서 인식 안돼
+export format을 binary로 바꿔
 
 ### 🏷️ 스크립트
 

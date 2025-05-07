@@ -34,7 +34,12 @@
 ## 📌 팁
 ---
 
-
+### Build Workflow
+- 헤더 파일이나 생성자 건드린게 아니라면 Live Coding 이용
+- BP로 프로토타이핑 한 후에 C++ 작성
+- 에디터 켜지 말고 IDE에서 Game을 직접 실행해보기
+- "Preview Blueprint Header in C++" 기능으로 BP에서 C++ 전환 (없어졌다는 얘기가 있다?)
+- - 헤더 파일에서 불필요하게 다른 클래스를 `#include`하지 말고, 포인터나 참조만 쓸 거라면 `class Foo;` 같은 전방 선언으로 대체.
 
 
 ## ⚙️ 설정
@@ -48,10 +53,42 @@
 
 - 블루프린트 흐름 디버깅 보는 법 : 중앙 상단 드롭다운
 
+
 ### 🏷️ World Settings
 
 - Static Lighting Level Scale x Indirect Lighting Quality = 1 이 되도록 설정해라
 - 시작 캐릭 지정 : GameMode > Gamemode Override
+
+
+## 🧱 Build
+---
+
+- 
+
+### 빌드 관련 폴더
+
+프로젝트 루트 폴더에 있다
+
+`Binaries/`
+- 빌드된 실행 파일(`.exe`), DLL 파일, Hot Reload DLL, 로그 파일 등을 포함
+- 삭제 후에는 반드시 재빌드해야 실행 가능
+
+`Intermediate/`
+- 빌드 중간 결과물, PCH(Precompiled Header), UHT(UnrealHeaderTool) 결과, 프로젝트 캐시 저장
+- 삭제하면 빌드 시간이 늘어나지만, 깨끗한 재빌드가 가능
+
+### Visual Studio
+
+빌드 옵션
+- **DebugGame**: 엔진 코드는 최적화, 게임 모듈은 디버깅 포함 빌드. 게임만 디버깅할 때 사용.
+- **DebugGame Editor**: DebugGame과 동일한데, Unreal Editor를 실행할 수 있도록 설정돼있어 에디터에서 게임 코드 디버깅할 때 사용. (라고는 하는데, 해봤더니 런처로 열면 반영 안됨)
+- **Development**: 엔진, 게임 코드 대부분 최적화. 기본적인 디버깅 가능하지만 일부 최적화로 인해 디버깅 안 될수도 있다. 일반적인 개발 및 테스트에 적합.
+- **Development Editor**: Development와 동일하지만 Unreal Editor 실행 가능.
+- **Shipping**: 엔진, 게임 코드 모두 최대한의 최적화. 디버깅은 불가능하지만 최상의 성능.
+
+
+
+
 
 ## 🖱️ 조작
 ---
@@ -265,9 +302,9 @@ float i = calculator.Subtract<int>(3, 2);
 - 나나이트 끄기 : `Static Mesh 에디터 > 우측 세부 설정에서 Nanite Settings > Enable Nanite 체크 해제`
 - 루멘 끄기 : `Edit > Project Settings > Dynamic Global Illumination Method, Reflection Method 변경`
 
-#### 껏다 다시 켰더니 클래스 반영이 안됨
-Edit > Editor Preferences > Live coding 검색 후 끄기
-에디터 끄고 리빌드
+#### 끄고 빌드하고 다시 켜도 반영이 안됨
+Development Editor로 하셈
+DebugGame Editor로 하면 에디터에 반영 안됨
 
 
 ### 🏷️ Selection Mode
