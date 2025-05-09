@@ -20,6 +20,7 @@
 		- [[#🏷️ Component#Rigidbody|Rigidbody]]
 			- [[#Rigidbody#Body Type|Body Type]]
 		- [[#🏷️ Component#CharacterController|CharacterController]]
+		- [[#🏷️ Component#Player Input|Player Input]]
 		- [[#🏷️ Component#Mesh Renderer|Mesh Renderer]]
 		- [[#🏷️ Component#Cinemachine|Cinemachine]]
 			- [[#Cinemachine#Aim|Aim]]
@@ -50,14 +51,17 @@
 		- [[#🏷️ Graphic#Image vs Raw Image|Image vs Raw Image]]
 		- [[#🏷️ Graphic#모델 노말 계산 설정|모델 노말 계산 설정]]
 	- [[#📋 Detail#🏷️ Component|🏷️ Component]]
+		- [[#🏷️ Component#Animation Rigging|Animation Rigging]]
 - [[#📦 애셋 사용법|📦 애셋 사용법]]
 	- [[#📦 애셋 사용법#Analytic Volumetric Light|Analytic Volumetric Light]]
+	- [[#📦 애셋 사용법#VRoid|VRoid]]
 - [[#🦫 디버깅|🦫 디버깅]]
 	- [[#🦫 디버깅#🏷️ Editor|🏷️ Editor]]
 		- [[#🏷️ Editor#Tile Pallete 타일 크기 작음|Tile Pallete 타일 크기 작음]]
 		- [[#🏷️ Editor#라이트에 쿠키 넣고 텍스쳐 타입 바꿨더니 조명 꺼짐|라이트에 쿠키 넣고 텍스쳐 타입 바꿨더니 조명 꺼짐]]
 		- [[#🏷️ Editor#Render Texture 크기 변경 안됨|Render Texture 크기 변경 안됨]]
 		- [[#🏷️ Editor#Package Export 종속성만 체크가 안됨|Package Export 종속성만 체크가 안됨]]
+		- [[#🏷️ Editor#PSD import가 안됨|PSD import가 안됨]]
 	- [[#🦫 디버깅#🏷️ 인게임|🏷️ 인게임]]
 		- [[#🏷️ 인게임#📌 Collision 관련|📌 Collision 관련]]
 		- [[#🏷️ 인게임#오브젝트들 전부 살짝 흐림|오브젝트들 전부 살짝 흐림]]
@@ -75,10 +79,14 @@
 		- [[#🏷️ 인게임#콜라이더가 분명 하나인데 더 달려있음|콜라이더가 분명 하나인데 더 달려있음]]
 		- [[#🏷️ 인게임#Rigidbody 중력 작용 안 함|Rigidbody 중력 작용 안 함]]
 		- [[#🏷️ 인게임#sorting layer 바꿨더니 검은색 됨|sorting layer 바꿨더니 검은색 됨]]
+		- [[#🏷️ 인게임#위치 순간이동 로직 짰는데 순간이동 안 함|위치 순간이동 로직 짰는데 순간이동 안 함]]
+	- [[#🦫 디버깅#fbx export 했는데 blender에서 인식 안돼|fbx export 했는데 blender에서 인식 안돼]]
 	- [[#🦫 디버깅#🏷️ 스크립트|🏷️ 스크립트]]
 		- [[#🏷️ 스크립트#using Cinemachine이 안 먹힘|using Cinemachine이 안 먹힘]]
 		- [[#🏷️ 스크립트#Trigger가 안됨|Trigger가 안됨]]
 		- [[#🏷️ 스크립트#print()가 안됨|print()가 안됨]]
+	- [[#🦫 디버깅#🏷️ Shader Graph|🏷️ Shader Graph]]
+		- [[#🏷️ Shader Graph#2D Sprite Texture 연결했는데 전부 단색으로 나옴|2D Sprite Texture 연결했는데 전부 단색으로 나옴]]
 	- [[#🦫 디버깅#🏷️ UI|🏷️ UI]]
 		- [[#🏷️ UI#9-slice 적용 안됨|9-slice 적용 안됨]]
 	- [[#🦫 디버깅#🏷️ 협업|🏷️ 협업]]
@@ -87,7 +95,6 @@
 	- [[#🚀 최적화#유나이트 서울 2020 - 최대 성능을 위한 최적화 팁|유나이트 서울 2020 - 최대 성능을 위한 최적화 팁]]
 		- [[#유나이트 서울 2020 - 최대 성능을 위한 최적화 팁#플랫폼별 적절한 Tris(폴리곤) 개수 가이드라인|플랫폼별 적절한 Tris(폴리곤) 개수 가이드라인]]
 		- [[#유나이트 서울 2020 - 최대 성능을 위한 최적화 팁#씬 내 폴리곤 최적화|씬 내 폴리곤 최적화]]
-
 
 
 
@@ -367,6 +374,12 @@ Smoothing Angle을 조절하면 폴리곤 단위에 가깝게 노말 계산
 
 - 런타임에 굳이 Target 바꾸지 말고 Target의 Transform을 바꿔라.
 
+### 🏷️ Animation
+
+- 모델을 클릭해야 Animation Clip을 수정할 수 있다
+- Animator Controller에서 새 레이어로 BlendShape override 가능하다
+- Animator Clip에서 스크롤바 늘려놔서 한꺼번에 보이게 하기
+
 
 ## 📦 애셋 사용법
 ---
@@ -385,7 +398,7 @@ vrm importer : https://github.com/vrm-c/UniVRM
 눈 깜빡임 : [https://gist.github.com/AISebas/cc799c262ff71cd7d1e92f0dd7e5e5fb](https://gist.github.com/AISebas/cc799c262ff71cd7d1e92f0dd7e5e5fb)  
 눈 따라가기 : VRMInstance > select UI > LookAt
 
-믹사모 애니메이션 적용 방법
+**믹사모 애니메이션 적용 방법**
 - unity package manager > Unity Registry > fbx exporter 설치
 - 모델을 씬에 올린 뒤 export fbx (안되면 fbx exporter 재설치)
 - 믹사모에 fbx 파일 올린 뒤에 애니메이션 다운 받기
@@ -393,18 +406,55 @@ vrm importer : https://github.com/vrm-c/UniVRM
 - 가져온 파일에서 애니메이션 클립만 따로 복사
 - 애니메이션 클립 루트 모션 관련 필요한대로 설정
 
+**표정 제어**
+Fcl_All 계열은 VRM10Instance에서 덮어씌워버린다.
+그 이외 파라미터들은 애니메이터로 제어 가능하다.
+
+1. UniVRM의 기능을 이용하지 않을 거라면
+Update Type을 None으로 두고 Animator로만 제어한다.
+
+2. UniVRM 무시하고 계속 덮어씌우기
+애니메이션 클립에서 키프레임을 하나 더 생성해서 애니메이션이 계속 재생되게 만들면 UniVRM의 덮어씌우기가 무시된다.
+
+3. UniVRM의 Expression API 사용하기
+- import했던 VRM 모델로 간다
+- VRM 탭 > Extract Meta And Expressions
+```cs
+using UnityEngine;
+using UniVRM10;
+
+public class ChangeExpression : MonoBehaviour
+{
+    Vrm10Instance vrm;
+    public ExpressionKey smile;
+
+    void Start()
+    {
+        vrm = GetComponent<Vrm10Instance>();
+        smile = ExpressionKey.CreateFromPreset(ExpressionPreset.happy);
+    }
+
+    void Update()
+    {
+        vrm.Runtime.Expression.SetWeight(smile, 1);
+    }
+}
+```
+
+
+
 **워크플로 비교**
 
 | 항목                   | VRM → FBX 변환 후 사용                             | UniVRM 그대로 사용                                                                 |
 | -------------------- | --------------------------------------------- | ----------------------------------------------------------------------------- |
-| **리깅/애니메이션**         | Unity Humanoid 리깅 자동 감지 → Animator 사용. 문제 없음. | 동일. 다만 VRM 표정(BlendShape)·눈동자 시선 제어가 이미 세팅됨.                                  |
-| **표정 · BlendShape**  | 변환 시 클립 이름·순서가 흐트러질 수 있어 수동 재매핑 필요.           | `VRMBlendShapeProxy`가 웃음/슬픔/놀람 등 표준 슬롯을 유지. 바로 Playable API·Timeline에서 호출 가능. |
-| **헤어/치마 물리**         | Dynamic Bone·Unity Physics 등을 직접 붙여야 함.       | `VRMSpringBone`이 메타데이터 기반으로 즉시 동작.                                            |
-| **메타데이터 (작가, 라이선스)** | FBX에는 안 남음 → 별도 관리 필요.                        | `VRMMeta` 컴포넌트에 포함(저작자·라이선스·연령등급).                                            |
-| **런타임 아바타 교체**       | Addressables 혹은 애셋번들 직접 제작 필요.                | `VRMImporterContext.LoadAsync(byte[])` 하나로 외부 VRM 파일 로드 가능.                   |
-| **빌드 크기·성능**         | 컴포넌트 수가 적어 약간 가벼움.                            | 스크립트·컴포넌트 추가(≈ 20 ~ 50 KB, 무시 가능).                                            |
-| **유지보수**             | 표준 FBX 파이프라인 → 아티스트·툴 전환 쉬움.                  | UniVRM 업데이트(0.x → 1.x) 따라가야 함.                                                |
-| **VR/소셜 지원**         | 직접 구현.                                        | VCI / VRM 1.0 규격과 호환.                                                         |
+| 리깅/애니메이션         | Unity Humanoid 리깅 자동 감지 → Animator 사용. 문제 없음. | 동일. 다만 VRM 표정(BlendShape)·눈동자 시선 제어가 이미 세팅됨.                                  |
+| 표정 · BlendShape  | 변환 시 클립 이름·순서가 흐트러질 수 있어 수동 재매핑 필요.           | `VRMBlendShapeProxy`가 웃음/슬픔/놀람 등 표준 슬롯을 유지. 바로 Playable API·Timeline에서 호출 가능. |
+| 헤어/치마 물리         | Dynamic Bone·Unity Physics 등을 직접 붙여야 함.       | `VRMSpringBone`이 메타데이터 기반으로 즉시 동작.                                            |
+| 메타데이터 (작가, 라이선스) | FBX에는 안 남음 → 별도 관리 필요.                        | `VRMMeta` 컴포넌트에 포함(저작자·라이선스·연령등급).                                            |
+| 런타임 아바타 교체       | Addressables 혹은 애셋번들 직접 제작 필요.                | `VRMImporterContext.LoadAsync(byte[])` 하나로 외부 VRM 파일 로드 가능.                   |
+| 빌드 크기·성능         | 컴포넌트 수가 적어 약간 가벼움.                            | 스크립트·컴포넌트 추가(≈ 20 ~ 50 KB, 무시 가능).                                            |
+| 유지보수             | 표준 FBX 파이프라인 → 아티스트·툴 전환 쉬움.                  | UniVRM 업데이트(0.x → 1.x) 따라가야 함.                                                |
+| VR/소셜 지원         | 직접 구현.                                        | VCI / VRM 1.0 규격과 호환.                                                         |
 
 **UniVRM가 해주는 일**
 
@@ -416,6 +466,14 @@ vrm importer : https://github.com/vrm-c/UniVRM
 | `VRMLookAtHead`, `VRMLookAtBoneApplyer`       | 카메라·타깃을 향해 눈/목 회전                                    |
 | `VRMFirstPerson`                              | VR / 1인칭 렌더링 시 머리 숨김, 눈 깊이 클립 오프셋                    |
 | `VRMMeta`                                     | Title, Author, Contact, License(商用/改変/再配布) 등 json 추출 |
+
+| VRM 0.x                | VRM 1.0                                |
+| ---------------------- | -------------------------------------- |
+| **VRMBlendShapeProxy** | **`Vrm10Instance.Runtime.Expression`** |
+| VRMLookAt              | `Vrm10Instance.Runtime.LookAt`         |
+| VRMSpringBone          | `Vrm10Instance.Runtime.SpringBone`     |
+
+
 
 
 ## 🦫 디버깅

@@ -237,6 +237,11 @@ float i = calculator.Subtract<int>(3, 2);
 - 블루프린트 오브젝트 parameter 노출 : Details > Insatnce Editable, Exposure on Spawn 체크
 - 맵 에디터에서 오브젝트를 선택한 후 돌아와서 우클하면 해당 오브젝트와 관련된 노드 추가 가능
 
+### 🏷️ Animation Blueprint
+
+- State Machine에서 조건을 설정해놓으면 State Machine이 조건을 매 틱 보고 변화를 감지해줌
+
+
 
 ## 🧑‍💻 Editor
 ---
