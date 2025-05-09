@@ -363,6 +363,10 @@ Smoothing Angle을 조절하면 폴리곤 단위에 가깝게 노말 계산
 
 ### 🏷️ Component
 
+#### Animation Rigging
+
+- 런타임에 굳이 Target 바꾸지 말고 Target의 Transform을 바꿔라.
+
 
 ## 📦 애셋 사용법
 ---
@@ -376,7 +380,10 @@ Base Light를 설정한 후에 원본 빛을 바꿨다면 Copy From Light Compon
 ### VRoid
 
 vrm importer : https://github.com/vrm-c/UniVRM
-- v0.129.0은 오류 발생, v0.128.3으로 import함.
+- v0.129.0은 오류 발생, v0.128.3 사용.
+
+눈 깜빡임 : [https://gist.github.com/AISebas/cc799c262ff71cd7d1e92f0dd7e5e5fb](https://gist.github.com/AISebas/cc799c262ff71cd7d1e92f0dd7e5e5fb)  
+눈 따라가기 : VRMInstance > select UI > LookAt
 
 믹사모 애니메이션 적용 방법
 - unity package manager > Unity Registry > fbx exporter 설치
@@ -386,6 +393,29 @@ vrm importer : https://github.com/vrm-c/UniVRM
 - 가져온 파일에서 애니메이션 클립만 따로 복사
 - 애니메이션 클립 루트 모션 관련 필요한대로 설정
 
+**워크플로 비교**
+
+| 항목                   | VRM → FBX 변환 후 사용                             | UniVRM 그대로 사용                                                                 |
+| -------------------- | --------------------------------------------- | ----------------------------------------------------------------------------- |
+| **리깅/애니메이션**         | Unity Humanoid 리깅 자동 감지 → Animator 사용. 문제 없음. | 동일. 다만 VRM 표정(BlendShape)·눈동자 시선 제어가 이미 세팅됨.                                  |
+| **표정 · BlendShape**  | 변환 시 클립 이름·순서가 흐트러질 수 있어 수동 재매핑 필요.           | `VRMBlendShapeProxy`가 웃음/슬픔/놀람 등 표준 슬롯을 유지. 바로 Playable API·Timeline에서 호출 가능. |
+| **헤어/치마 물리**         | Dynamic Bone·Unity Physics 등을 직접 붙여야 함.       | `VRMSpringBone`이 메타데이터 기반으로 즉시 동작.                                            |
+| **메타데이터 (작가, 라이선스)** | FBX에는 안 남음 → 별도 관리 필요.                        | `VRMMeta` 컴포넌트에 포함(저작자·라이선스·연령등급).                                            |
+| **런타임 아바타 교체**       | Addressables 혹은 애셋번들 직접 제작 필요.                | `VRMImporterContext.LoadAsync(byte[])` 하나로 외부 VRM 파일 로드 가능.                   |
+| **빌드 크기·성능**         | 컴포넌트 수가 적어 약간 가벼움.                            | 스크립트·컴포넌트 추가(≈ 20 ~ 50 KB, 무시 가능).                                            |
+| **유지보수**             | 표준 FBX 파이프라인 → 아티스트·툴 전환 쉬움.                  | UniVRM 업데이트(0.x → 1.x) 따라가야 함.                                                |
+| **VR/소셜 지원**         | 직접 구현.                                        | VCI / VRM 1.0 규격과 호환.                                                         |
+
+**UniVRM가 해주는 일**
+
+| 컴포넌트                                          | 역할                                                   |
+| --------------------------------------------- | ---------------------------------------------------- |
+| `VRMHumanoidDescription`                      | IK 입력(목·눈·손) → Humanoid Rig 매핑 자동화                   |
+| `VRMBlendShapeProxy`                          | 52 종 표준 BlendShape 슬롯 + 커스텀 클립 제어 API 제공             |
+| `VRMSpringBone`, `VRMSpringBoneColliderGroup` | 머리카락·치마 물리(간단 반‑객체 동역학)                              |
+| `VRMLookAtHead`, `VRMLookAtBoneApplyer`       | 카메라·타깃을 향해 눈/목 회전                                    |
+| `VRMFirstPerson`                              | VR / 1인칭 렌더링 시 머리 숨김, 눈 깊이 클립 오프셋                    |
+| `VRMMeta`                                     | Title, Author, Contact, License(商用/改変/再配布) 등 json 추출 |
 
 
 ## 🦫 디버깅

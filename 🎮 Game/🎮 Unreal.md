@@ -1,7 +1,10 @@
-
 - [[#📌 팁|📌 팁]]
 - [[#⚙️ 설정|⚙️ 설정]]
 	- [[#⚙️ 설정#🏷️ World Settings|🏷️ World Settings]]
+- [[#🧱 Build|🧱 Build]]
+	- [[#🧱 Build#Build Workflow|Build Workflow]]
+	- [[#🧱 Build#빌드 관련 폴더|빌드 관련 폴더]]
+	- [[#🧱 Build#Visual Studio|Visual Studio]]
 - [[#🖱️ 조작|🖱️ 조작]]
 	- [[#🖱️ 조작#🏷️ Selection Mode|🏷️ Selection Mode]]
 	- [[#🖱️ 조작#🏷️ Material Editor|🏷️ Material Editor]]
@@ -9,24 +12,32 @@
 - [[#🖥️ Script|🖥️ Script]]
 	- [[#🖥️ Script#클래스|클래스]]
 		- [[#클래스#클래스 추가 후 C++ 프로젝트 리컴파일|클래스 추가 후 C++ 프로젝트 리컴파일]]
-	- [[#🖥️ Script#UPROPERTY()|UPROPERTY()]]
-	- [[#🖥️ Script#UFUNCTION()|UFUNCTION()]]
-- [[#📄 Manual|📄 Manual]]
-	- [[#📄 Manual#🏷️ Selection Mode|🏷️ Selection Mode]]
+	- [[#🖥️ Script#문법|문법]]
+		- [[#문법#UPROPERTY()|UPROPERTY()]]
+		- [[#문법#UFUNCTION()|UFUNCTION()]]
+		- [[#문법#Template 함수|Template 함수]]
+- [[#📘 Blueprint|📘 Blueprint]]
+- [[#🧑‍💻 Editor|🧑‍💻 Editor]]
+	- [[#🧑‍💻 Editor#🏷️ Selection Mode|🏷️ Selection Mode]]
 		- [[#🏷️ Selection Mode#Light|Light]]
 			- [[#Light#Sky Light|Sky Light]]
 		- [[#🏷️ Selection Mode#Visual Effects|Visual Effects]]
 			- [[#Visual Effects#Post Process Volume|Post Process Volume]]
 			- [[#Visual Effects#Exponential Height Fog|Exponential Height Fog]]
-	- [[#📄 Manual#🏷️ Landscape Mode|🏷️ Landscape Mode]]
-	- [[#📄 Manual#🏷️ Blueprint|🏷️ Blueprint]]
-	- [[#📄 Manual#🏷️ 디버그 명령어|🏷️ 디버그 명령어]]
-- [[#🧾 주제별|🧾 주제별]]
-	- [[#🧾 주제별#기본 Lighting 세팅|기본 Lighting 세팅]]
-	- [[#🧾 주제별#Static Light Bake|Static Light Bake]]
+	- [[#🧑‍💻 Editor#🏷️ Landscape Mode|🏷️ Landscape Mode]]
+	- [[#🧑‍💻 Editor#🏷️ 디버그 명령어|🏷️ 디버그 명령어]]
+- [[#📦 Asset|📦 Asset]]
+	- [[#📦 Asset#Animation Sequence|Animation Sequence]]
+- [[#🔧 Task Based|🔧 Task Based]]
+	- [[#🔧 Task Based#기본 Lighting 세팅|기본 Lighting 세팅]]
+	- [[#🔧 Task Based#Static Light Bake|Static Light Bake]]
+	- [[#🔧 Task Based#Enhanced Input Component|Enhanced Input Component]]
 - [[#🦫 디버깅|🦫 디버깅]]
+	- [[#🦫 디버깅#🏷️ Editor|🏷️ Editor]]
+		- [[#🏷️ Editor#기본 씬 열었는데 GPU Usage Max|기본 씬 열었는데 GPU Usage Max]]
+		- [[#🏷️ Editor#끄고 빌드하고 다시 켜도 반영이 안됨|끄고 빌드하고 다시 켜도 반영이 안됨]]
+	- [[#🦫 디버깅#🏷️Blueprint|🏷️Blueprint]]
 	- [[#🦫 디버깅#🏷️ Selection Mode|🏷️ Selection Mode]]
-		- [[#🏷️ Selection Mode#기본 씬 열었는데 GPU Usage Max|기본 씬 열었는데 GPU Usage Max]]
 	- [[#🦫 디버깅#🏷️ Material Editor|🏷️ Material Editor]]
 		- [[#🏷️ Material Editor#Static Switch 이름 변경이 안됨|Static Switch 이름 변경이 안됨]]
 
@@ -34,12 +45,7 @@
 ## 📌 팁
 ---
 
-### Build Workflow
-- 헤더 파일이나 생성자 건드린게 아니라면 Live Coding 이용
-- BP로 프로토타이핑 한 후에 C++ 작성
-- 에디터 켜지 말고 IDE에서 Game을 직접 실행해보기
-- "Preview Blueprint Header in C++" 기능으로 BP에서 C++ 전환 (없어졌다는 얘기가 있다?)
-- - 헤더 파일에서 불필요하게 다른 클래스를 `#include`하지 말고, 포인터나 참조만 쓸 거라면 `class Foo;` 같은 전방 선언으로 대체.
+
 
 
 ## ⚙️ 설정
@@ -63,7 +69,12 @@
 ## 🧱 Build
 ---
 
-- 
+### Build Workflow
+- 헤더 파일이나 생성자 건드린게 아니라면 Live Coding 이용
+- BP로 프로토타이핑 한 후에 C++ 작성
+- 에디터 켜지 말고 IDE에서 Game을 직접 실행해보기
+- "Preview Blueprint Header in C++" 기능으로 BP에서 C++ 전환 (없어졌다는 얘기가 있다?)
+- - 헤더 파일에서 불필요하게 다른 클래스를 `#include`하지 말고, 포인터나 참조만 쓸 거라면 `class Foo;` 같은 전방 선언으로 대체.
 
 ### 빌드 관련 폴더
 
@@ -220,7 +231,14 @@ float i = calculator.Subtract<int>(3, 2);
 ```
 
 
-## 📄 Manual
+## 📘 Blueprint
+---
+
+- 블루프린트 오브젝트 parameter 노출 : Details > Insatnce Editable, Exposure on Spawn 체크
+- 맵 에디터에서 오브젝트를 선택한 후 돌아와서 우클하면 해당 오브젝트와 관련된 노드 추가 가능
+
+
+## 🧑‍💻 Editor
 ---
 
 ### 🏷️ Selection Mode
@@ -250,10 +268,6 @@ float i = calculator.Subtract<int>(3, 2);
 - Landscape 새로 만들 때 크기 참고 : [링크](https://dev.epicgames.com/documentation/en-us/unreal-engine/landscape-technical-guide-in-unreal-engine)
 
 
-### 🏷️ Blueprint
-
-- 블루프린트 오브젝트 parameter 노출 : Details > Insatnce Editable, Exposure on Spawn 체크
-- 맵 에디터에서 오브젝트를 선택한 후 돌아와서 우클하면 해당 오브젝트와 관련된 노드 추가 가능
 
 
 ### 🏷️ 디버그 명령어
@@ -263,7 +277,16 @@ float i = calculator.Subtract<int>(3, 2);
 - t.Maxfps : 최대 fps 설정. 0이면 기본 값으로 돌아감.
 
 
-## 🧾 주제별
+## 📦 Asset
+---
+
+### Animation Sequence
+- 왼쪽에 있는 노티파이 트랙 추가는 노티파이가 아니라 노티파이가 들어갈 수 있는 영역을 추가하는 것
+- Animation Track에 노티파이를 추가하려면 해당 노티파이와 같은 높이에서 트랙에 우클릭
+
+
+
+## 🔧 Task Based
 ---
 
 ### 기본 Lighting 세팅
@@ -285,6 +308,25 @@ float i = calculator.Subtract<int>(3, 2);
 - Lightmap density 올리기 : viewmode 바꾼 상태에서 오브젝트 클릭 > Details > Lighting > Overrides Light Map Res 증가
 - Ambient Occlusion 그림자하고 겹치니까 Post Process Volume > Details > Rendering Features > Ambient Occlusion > Intensity > 0
 
+### Enhanced Input Component
+
+1. Input Action 애셋을 생성하고 트리거를 지정한다. 
+  - 지정 안 해도 기본으로 Pressed 트리거처럼 동작하긴 함
+2. Input Mapping Context 애셋 (기본은 IMC_Default) 에 Input Action 애셋을 할당하고 키도 할당한다.
+3. 헤더 파일에서 Input Mapping Context 애셋과 Input Action 애셋을 선언한다 
+  - 블루프린트나 details에 할당된다.
+  - BP_~PlayerController의 Default Mapping Context에서 Input Mapping Context 애셋이 할당되어 있는 것을 찾을 수 있다.
+4. Input Mapping Context를 Subsystem->AddMappingContext(); 해준다
+5. 각각의 Input Action 애셋을 EnhancedInputComponent->BindAction(); 해준다.
+  - 여기서 ETriggerEvent는 트리거의 정확한 조건을 지정한다.
+  - pressed면 started랑 triggered의 발동 조건이 똑같다.
+
+| 이벤트         | 설명                   | 실행 조건                           |
+| ----------- | -------------------- | ------------------------------- |
+| `Started`   | 입력이 시작됨          | 키를 누른 순간 / 입력 발생                |
+| `Triggered` | 트리거 조건이 충족됨      | `Hold`나 `Tap` 등의 조건이 충족된 순간 |
+| `Completed` | 입력이 정상적으로 끝남     | 조건 충족 후, 키를 놓았을 때           |
+| `Canceled`  | 조건 충족 전에 입력이 중단됨 | 예: `Hold` 도중 너무 빨리 뗀 경우         |
 
 
 
@@ -306,6 +348,11 @@ float i = calculator.Subtract<int>(3, 2);
 Development Editor로 하셈
 DebugGame Editor로 하면 에디터에 반영 안됨
 
+
+### 🏷️Blueprint
+
+- BlendSpace1D 노드는 Content Drawer에서 만들어야 State Machine의 각 State에서 추가하여 사용할 수 있다.
+- Animation Blueprint에서 Blend Space 1D 쓸 때 우클릭해서 Variable을 Bind해줘야 함
 
 ### 🏷️ Selection Mode
 
