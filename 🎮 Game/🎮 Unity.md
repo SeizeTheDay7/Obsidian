@@ -52,6 +52,7 @@
 		- [[#🏷️ Graphic#모델 노말 계산 설정|모델 노말 계산 설정]]
 	- [[#📋 Detail#🏷️ Component|🏷️ Component]]
 		- [[#🏷️ Component#Animation Rigging|Animation Rigging]]
+	- [[#📋 Detail#🏷️ Animation|🏷️ Animation]]
 - [[#📦 애셋 사용법|📦 애셋 사용법]]
 	- [[#📦 애셋 사용법#Analytic Volumetric Light|Analytic Volumetric Light]]
 	- [[#📦 애셋 사용법#VRoid|VRoid]]
