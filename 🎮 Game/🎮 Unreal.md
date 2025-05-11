@@ -17,6 +17,7 @@
 		- [[#문법#UFUNCTION()|UFUNCTION()]]
 		- [[#문법#Template 함수|Template 함수]]
 - [[#📘 Blueprint|📘 Blueprint]]
+	- [[#📘 Blueprint#🏷️ Animation Blueprint|🏷️ Animation Blueprint]]
 - [[#🧑‍💻 Editor|🧑‍💻 Editor]]
 	- [[#🧑‍💻 Editor#🏷️ Selection Mode|🏷️ Selection Mode]]
 		- [[#🏷️ Selection Mode#Light|Light]]
@@ -25,20 +26,23 @@
 			- [[#Visual Effects#Post Process Volume|Post Process Volume]]
 			- [[#Visual Effects#Exponential Height Fog|Exponential Height Fog]]
 	- [[#🧑‍💻 Editor#🏷️ Landscape Mode|🏷️ Landscape Mode]]
-	- [[#🧑‍💻 Editor#🏷️ 디버그 명령어|🏷️ 디버그 명령어]]
 - [[#📦 Asset|📦 Asset]]
 	- [[#📦 Asset#Animation Sequence|Animation Sequence]]
+- [[#🦫 디버깅|🦫 디버깅]]
+	- [[#🦫 디버깅#🏷️ Editor|🏷️ Editor]]
+	- [[#🦫 디버깅#🏷️ Script|🏷️ Script]]
+	- [[#🦫 디버깅#🏷️ Blueprint|🏷️ Blueprint]]
 - [[#🔧 Task Based|🔧 Task Based]]
 	- [[#🔧 Task Based#기본 Lighting 세팅|기본 Lighting 세팅]]
 	- [[#🔧 Task Based#Static Light Bake|Static Light Bake]]
 	- [[#🔧 Task Based#Enhanced Input Component|Enhanced Input Component]]
-- [[#🦫 디버깅|🦫 디버깅]]
-	- [[#🦫 디버깅#🏷️ Editor|🏷️ Editor]]
+- [[#🛠️ TroubleShooting|🛠️ TroubleShooting]]
+	- [[#🛠️ TroubleShooting#🏷️ Editor|🏷️ Editor]]
 		- [[#🏷️ Editor#기본 씬 열었는데 GPU Usage Max|기본 씬 열었는데 GPU Usage Max]]
 		- [[#🏷️ Editor#끄고 빌드하고 다시 켜도 반영이 안됨|끄고 빌드하고 다시 켜도 반영이 안됨]]
-	- [[#🦫 디버깅#🏷️Blueprint|🏷️Blueprint]]
-	- [[#🦫 디버깅#🏷️ Selection Mode|🏷️ Selection Mode]]
-	- [[#🦫 디버깅#🏷️ Material Editor|🏷️ Material Editor]]
+	- [[#🛠️ TroubleShooting#🏷️Blueprint|🏷️Blueprint]]
+	- [[#🛠️ TroubleShooting#🏷️ Selection Mode|🏷️ Selection Mode]]
+	- [[#🛠️ TroubleShooting#🏷️ Material Editor|🏷️ Material Editor]]
 		- [[#🏷️ Material Editor#Static Switch 이름 변경이 안됨|Static Switch 이름 변경이 안됨]]
 
 
@@ -125,6 +129,7 @@
 - point light 추가 : L 누르고 좌클
 - Directional Light 회전 : Ctrl + L 누르고 마우스 이동
 
+- Navmesh 보이게 하거나 숨기기 : P
 ### 🏷️ Material Editor
 
 - 연결 옮기기 : Ctrl + 연결 부분 누르며 드래그
@@ -241,7 +246,14 @@ float i = calculator.Subtract<int>(3, 2);
 
 - State Machine에서 조건을 설정해놓으면 State Machine이 조건을 매 틱 보고 변화를 감지해줌
 
-
+워크 플로우
+- c++로 만든 애니메이션 인스턴스 부모 클래스로 하는 Animation Blueprint를 만든다
+- Skeleton을 선택한다
+- 상태에 따른 State를 추가한다.
+- 필요하다면 AnimGraph에 State machine을 추가한다.
+- 각 State에 대응하는 애니메이션을 State 안에 추가한다
+- Transition을 설정하고, Transition 안에 Transition 조건을 추가한다.
+- 필요하다면 각 애니메이션에 설정했던 이벤트들을 별도로 작성한 핸들러 함수와 연결한다.
 
 ## 🧑‍💻 Editor
 ---
@@ -273,15 +285,6 @@ float i = calculator.Subtract<int>(3, 2);
 - Landscape 새로 만들 때 크기 참고 : [링크](https://dev.epicgames.com/documentation/en-us/unreal-engine/landscape-technical-guide-in-unreal-engine)
 
 
-
-
-### 🏷️ 디버그 명령어
-
-플레이 모드에서 백틱으로 열고 입력하는 명령어들
-
-- t.Maxfps : 최대 fps 설정. 0이면 기본 값으로 돌아감.
-
-
 ## 📦 Asset
 ---
 
@@ -289,6 +292,31 @@ float i = calculator.Subtract<int>(3, 2);
 - 왼쪽에 있는 노티파이 트랙 추가는 노티파이가 아니라 노티파이가 들어갈 수 있는 영역을 추가하는 것
 - Animation Track에 노티파이를 추가하려면 해당 노티파이와 같은 높이에서 트랙에 우클릭
 
+
+## 🦫 디버깅
+---
+
+### 🏷️ Editor
+
+- 재생 버튼 옆에 점 세 개 누르면 플레이어 캐릭터 없이 Simulate만 하거나 Standalone으로 실행할수도 있다.
+
+**플레이 모드에서 백틱으로 열고 입력하는 명령어들**
+- t.Maxfps : 최대 fps 설정. 0이면 기본 값으로 돌아감.
+
+### 🏷️ Script
+
+```cpp
+GEngine->AddOnScreenDebugMessage(0, 5.f, FColor::Green, TEXT("첫 번째 메시지"));
+GEngine->AddOnScreenDebugMessage(1, 5.f, FColor::Red, TEXT("두 번째 메시지"));
+```
+
+첫번째 인자를 -1로 두면 새로운 메시지가 계속 생성됨
+
+### 🏷️ Blueprint
+
+- 각 노드에 breakpoint 추가하고 게임 실행하면 해당 노드에서 게임이 멈춘다.
+- isValid 노드를 쓰거나 Get 노드를 우클하여 Convert To Validated Get으로 바꾼 다음 Is Not Valid에 print string 노드 달아놓기
+- Tools > Blueprint Debugger에서 특정 Blueprint Class의 현황을 볼 수 있다. 특정 노드의 특정 점을 우클하고 Watch This Value를 선택하면 Blueprint Debugger에서 해당 변수가 눈에 띄도록 별도로 등록된다.
 
 
 ## 🔧 Task Based
@@ -334,11 +362,8 @@ float i = calculator.Subtract<int>(3, 2);
 | `Canceled`  | 조건 충족 전에 입력이 중단됨 | 예: `Hold` 도중 너무 빨리 뗀 경우         |
 
 
-
-
-## 🦫 디버깅
+## 🛠️ TroubleShooting
 ---
-
 ### 🏷️ Editor
 
 #### 기본 씬 열었는데 GPU Usage Max
