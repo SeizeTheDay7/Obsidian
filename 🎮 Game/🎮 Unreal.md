@@ -73,6 +73,23 @@
 ## 🧱 Build
 ---
 
+### 폴더 추가하고 반영하기 (하면 안됨)
+
+선요약 : 폴더 추가하지 말고 visual studio에선 필터로 관리해라
+
+**폴더**는 **탐색기**에서 만들어야되고, 
+**클래스**는 **에디터**에서 등록해야 되고, 
+**visual studio**에서 할 수 있는건 **코드 편집**밖에 없다.
+파일을 다른 폴더로 옮기는 건 에디터에서 안 해도 된다.
+
+폴더 만들고 파일 옮긴 후엔
+해당 언리얼 프로젝트 폴더 가서
+sln 삭제한 후에 `Generate Visual Studio project files`
+(추가로 만진게 있거나 이상해졌다면 `Intermediate`, `Binaries`까지 삭제)
+빌드까지 한 후에 에디터 열기
+
+를 하면 안되는 이유 : include 경로는 자동으로 업데이트되지 않음. 이를 해결하려면 resharper 같은 유료 툴을 써야 함.
+
 ### Build Workflow
 - 헤더 파일이나 생성자 건드린게 아니라면 Live Coding 이용
 - BP로 프로토타이핑 한 후에 C++ 작성
@@ -185,6 +202,15 @@ PlayerController
 
 ### 문법
 
+| 접두어 | 의미                  | 예시                               |
+| --- | ------------------- | -------------------------------- |
+| `U` | UObject 기반 클래스      | `UActorComponent`, `UStaticMesh` |
+| `A` | Actor 기반 클래스        | `ACharacter`, `AWeapon`          |
+| `F` | 구조체 (`struct`)      | `FVector`, `FName`, `FTransform` |
+| `I` | 인터페이스 (`interface`) | `IInteractable`, `IDamageable`   |
+| `E` | 열거형 (`enum`)        | `EWeaponType`, `EMovementMode`   |
+| `T` | 템플릿 클래스 (컨테이너)      | `TArray`, `TMap`, `TSet`         |
+
 #### UPROPERTY()
 
 | 지정자                           | 설명                                                                       |
@@ -217,23 +243,60 @@ PlayerController
 |---|---|
 |`DisplayName = "Property Name"`|이 함수는 에디터에서 코드 이름 대신 `"Property Name"`으로 표시된다|
 
-#### Template 함수
+#### Overlap
 
 ```cpp
-template <typename T>
-T Add<T>(T a, T b)
+void AWeapon::BeginPlay()
 {
-	return a + b;
+	Super::BeginPlay();
+	
+	OnActorBeginOverlap.AddDynamic(this, &AWeapon::OnWeaponBeginOverlap);
 }
-template <typename T>
-T Subtract<T>(T a, T b)
-{
-	return a - b;
-}
-
-float f = calculator.Add<float>(1.5f, 2.0f);
-float i = calculator.Subtract<int>(3, 2);
 ```
+
+`OnActorBeginOverlap`은 델리게이트 변수라서 직접 호출하거나 편집 불가.
+BeginPlay()에서 OnActorBeginOverlap에 특정 함수를 바인딩해주면 충돌할 때 그 함수 호출
+
+
+```cpp
+UFUNCTION()
+void OnWeaponBeginOverlap(AActor* OverlappedActor, AActor* OtherActor);
+```
+
+OverlappedActor : overlap 당한 액터 (이 함수 갖고 있는 놈)
+OtherActor : overlap 한 액터 (와서 충돌한 놈)
+
+
+#### AddDynamic
+
+UFUNCTION 핸들러를 런타임 델리게이트에 리플렉션 기반으로 바인딩.  
+블루프린트와의 연결, GC 관리가 필요할 때 필수.  
+그냥 핸들러 바인딩이라고 보면 되지만, 리플렉션 시스템 때문에 일반 C++ 델리게이트보다 더 무겁다.
+
+### 자료형
+
+#### FString, FText, FName
+
+| 타입        | 특징                           | 예시                                           |
+| --------- | ---------------------------- | -------------------------------------------- |
+| `FString` | 일반 문자열 (변경 가능, 메모리 많이 씀)     | `FString MyName = "Hello";`                  |
+| `FText`   | 로컬라이징 지원 문자열 (UI 텍스트 전용)     | `FText MyText = FText::FromString("Hello");` |
+| `FName`   | 고정 이름 (빠르고 메모리 효율 높음, 변경 불가) | `FName MyTag = "EnemyTag";`                  |
+`FName`은 문자열을 직접 비교하지 않고, 내부적으로 **이름 해시 테이블의 인덱스(정수)로 비교**
+소켓 이름 지정할 때 `FName` 사용
+
+#### FAttachmentTransformRules
+
+액터 또는 컴포넌트를 다른 컴포넌트에 부착(Attach)할 때 부착 방식(트랜스폼 동기화 방식)을 정의하는 구조체
+
+| 옵션                              | 의미                                        |
+| ------------------------------- | ----------------------------------------- |
+| `KeepRelativeTransform`         | 현재 상대 트랜스폼을 유지하면서 부착. (기존 위치 그대로 유지)      |
+| `KeepWorldTransform`            | 현재 월드 트랜스폼 유지. (월드 좌표에서 그대로 유지됨)          |
+| `SnapToTargetNotIncludingScale` | 대상 소켓의 위치, 회전만 따라감. 스케일은 현재 스케일 유지.       |
+| `SnapToTargetIncludingScale`    | 대상 소켓의 위치, 회전, 스케일까지 모두 따라감. (가장 강력한 동기화) |
+
+
 
 
 ## 📘 Blueprint
@@ -278,6 +341,22 @@ float i = calculator.Subtract<int>(3, 2);
 - 그림자 노이즈 없애기 : Details > Lumen Global Volume > Final Gather Quality 증가
 ##### Exponential Height Fog
 - Start Distance 멀리 놓아야 가까운 곳에 fog 안 생김
+
+#### Actor
+
+- Generate Overlap Events가 2개의 액터 모두에 켜져 있어야 Overlap 이벤트 발생.
+- Simulation Generates Hit Events가 2개의 액터 모두에 켜져 있어야 Hit 이벤트 발생.
+
+##### Collision presets
+- Custom: 개발자가 모든 콜리전 설정을 변경할 수 있다
+- NoCollision: 충돌 발생 안 함
+- BlockAll: 씬의 모든 액터와 Hit. OnActorHit와 OnComponentHit 이벤트 발생.
+- OverlapAll: 씬의 모든 액터와 Overlap. BeginOverlap과 EndOverlap 이벤트 발생.
+- BlockAllDynamic: BlockAll과 동일하지만 pawn, camera, vehicle에만 적용.
+- OverlapAllDynamic: OverlapAll과 동일하지만 pawn, camera, vehicle에만 적용.
+- OverlapOnlyPawn: OverlapAll과 동일하지만 pawn에만 적용.
+
+
 
 
 ### 🏷️ Landscape Mode

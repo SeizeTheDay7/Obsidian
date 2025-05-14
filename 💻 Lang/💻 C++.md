@@ -52,5 +52,24 @@ namespace {
 ## 문법
 
 
+### Template 함수
+
+```cpp
+template <typename T>
+T Add<T>(T a, T b)
+{
+	return a + b;
+}
+template <typename T>
+T Subtract<T>(T a, T b)
+{
+	return a - b;
+}
+
+float f = calculator.Add<float>(1.5f, 2.0f);
+float i = calculator.Subtract<int>(3, 2);
+```
+
+
 
 

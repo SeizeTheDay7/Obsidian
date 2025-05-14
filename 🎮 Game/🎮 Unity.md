@@ -109,6 +109,7 @@
   - Tools에서 세팅하기 
   - `using Baracuda.Monitoring;` 
   - 인스턴스는 시작할 때 `this.StartMonitoring()`
+- Unity 엔진 내부에서는 **값이 실제로 바뀔 때**만 C++ 레이어로 내려가서 `Renderer::SetEnabled()`  등 프로퍼티를 호출
 
 ### 단축키
 
