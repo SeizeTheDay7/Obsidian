@@ -1,8 +1,9 @@
 - [[#📌 팁|📌 팁]]
 	- [[#📌 팁#단축키|단축키]]
 	- [[#📌 팁#에디터|에디터]]
-	- [[#📌 팁#스니펫|스니펫]]
-		- [[#스니펫#싱글톤|싱글톤]]
+- [[#✂️ 스니펫|✂️ 스니펫]]
+	- [[#✂️ 스니펫#싱글톤|싱글톤]]
+	- [[#✂️ 스니펫#Player Input|Player Input]]
 - [[#⚙️ 설정|⚙️ 설정]]
 	- [[#⚙️ 설정#🏷️ 성능|🏷️ 성능]]
 		- [[#🏷️ 성능#수정 후 빠르게 재생|수정 후 빠르게 재생]]
@@ -15,44 +16,43 @@
 	- [[#💾 개념#🏷️ Script|🏷️ Script]]
 		- [[#🏷️ Script#재정의(override) 가능한 메서드|재정의(override) 가능한 메서드]]
 		- [[#🏷️ Script#Unity : Coroutine|Unity : Coroutine]]
-- [[#📄 Manual|📄 Manual]]
-	- [[#📄 Manual#🏷️ Component|🏷️ Component]]
+- [[#📖 Manual|📖 Manual]]
+	- [[#📖 Manual#🏷️ Component|🏷️ Component]]
 		- [[#🏷️ Component#Rigidbody|Rigidbody]]
 			- [[#Rigidbody#Body Type|Body Type]]
 		- [[#🏷️ Component#CharacterController|CharacterController]]
-		- [[#🏷️ Component#Player Input|Player Input]]
 		- [[#🏷️ Component#Mesh Renderer|Mesh Renderer]]
 		- [[#🏷️ Component#Cinemachine|Cinemachine]]
 			- [[#Cinemachine#Aim|Aim]]
 		- [[#🏷️ Component#Line Renderer|Line Renderer]]
-	- [[#📄 Manual#🏷️ Script|🏷️ Script]]
+	- [[#📖 Manual#🏷️ Script|🏷️ Script]]
 		- [[#🏷️ Script#OnRenderImage()|OnRenderImage()]]
 		- [[#🏷️ Script#`[ImageEffectOpaque]`|`[ImageEffectOpaque]`]]
 		- [[#🏷️ Script#Graphics.Blit()|Graphics.Blit()]]
-	- [[#📄 Manual#🏷️ UI|🏷️ UI]]
+	- [[#📖 Manual#🏷️ UI|🏷️ UI]]
 		- [[#🏷️ UI#Scroll View|Scroll View]]
-	- [[#📄 Manual#🏷️ Shader Graph|🏷️ Shader Graph]]
+	- [[#📖 Manual#🏷️ Shader Graph|🏷️ Shader Graph]]
 		- [[#🏷️ Shader Graph#노드|노드]]
-	- [[#📄 Manual#🏷️ Settings|🏷️ Settings]]
+	- [[#📖 Manual#🏷️ Settings|🏷️ Settings]]
 		- [[#🏷️ Settings#오클루전 컬링 활성화하는 법|오클루전 컬링 활성화하는 법]]
-- [[#📋 Detail|📋 Detail]]
-	- [[#📋 Detail#🏷️ Editor|🏷️ Editor]]
+- [[#📄 Detail|📄 Detail]]
+	- [[#📄 Detail#🏷️ Editor|🏷️ Editor]]
 		- [[#🏷️ Editor#Import|Import]]
 		- [[#🏷️ Editor#커서 어케 바꿈|커서 어케 바꿈]]
-	- [[#📋 Detail#🏷️ Script|🏷️ Script]]
+	- [[#📄 Detail#🏷️ Script|🏷️ Script]]
 		- [[#🏷️ Script#GetKey 차이|GetKey 차이]]
 		- [[#🏷️ Script#GetAxis, GetAxisRaw 차이|GetAxis, GetAxisRaw 차이]]
 		- [[#🏷️ Script#private void vs void|private void vs void]]
 		- [[#🏷️ Script#변수를 꼭 밖으로 뺄 이유는 없다|변수를 꼭 밖으로 뺄 이유는 없다]]
-	- [[#📋 Detail#🏷️ Physics|🏷️ Physics]]
+	- [[#📄 Detail#🏷️ Physics|🏷️ Physics]]
 		- [[#🏷️ Physics#Collision|Collision]]
 		- [[#🏷️ Physics#Trigger|Trigger]]
-	- [[#📋 Detail#🏷️ Graphic|🏷️ Graphic]]
+	- [[#📄 Detail#🏷️ Graphic|🏷️ Graphic]]
 		- [[#🏷️ Graphic#Image vs Raw Image|Image vs Raw Image]]
 		- [[#🏷️ Graphic#모델 노말 계산 설정|모델 노말 계산 설정]]
-	- [[#📋 Detail#🏷️ Component|🏷️ Component]]
+	- [[#📄 Detail#🏷️ Component|🏷️ Component]]
 		- [[#🏷️ Component#Animation Rigging|Animation Rigging]]
-	- [[#📋 Detail#🏷️ Animation|🏷️ Animation]]
+	- [[#📄 Detail#🏷️ Animation|🏷️ Animation]]
 - [[#📦 애셋 사용법|📦 애셋 사용법]]
 	- [[#📦 애셋 사용법#Analytic Volumetric Light|Analytic Volumetric Light]]
 	- [[#📦 애셋 사용법#VRoid|VRoid]]
@@ -119,9 +119,16 @@
 ### 에디터
 - 프리팹 옆에 있는 화살표 누르면 프리팹 편집기로 바로 들어갈 수 있다.
 
-### 스니펫
+## ✂️ 스니펫
+---
 
-#### 싱글톤
+### 2D 랜덤 방향
+
+```cs
+Random.insideUnitCircle.normalized
+```
+
+### 싱글톤
 
 ```cs
 using UnityEngine;
@@ -140,6 +147,29 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+}
+```
+
+### Player Input
+
+```cs
+public class PlayerMove : MonoBehaviour
+{
+    [SerializeField] float moveSpeed;
+    [SerializeField] InputActionReference inputAction;
+    CharacterController cc;
+
+    void Start()
+    {
+        cc = GetComponent<CharacterController>();
+    }
+
+    void Update()
+    {
+        Vector2 moveInput = inputAction.action.ReadValue<Vector2>();
+        Vector3 moveDirection = new Vector3(moveInput.x, 0, moveInput.y).normalized;
+        cc.Move(moveDirection * moveSpeed * Time.deltaTime);
     }
 }
 ```
@@ -199,7 +229,7 @@ Edit - Project Settings - Graphics - Scriptable Pipeline Settings 확인
 - Monobehaviour 스크립트는 enabled false로 해도 코루틴 안 꺼짐
 
 
-## 📄 Manual
+## 📖 Manual
 ---
 
 ### 🏷️ Component
@@ -215,29 +245,6 @@ Edit - Project Settings - Graphics - Scriptable Pipeline Settings 확인
 - Rigidbody 없이도 이동 및 점프 구현 가능  
 - 플레이어 이동을 세밀하게 조정 가능  
 - 물리 연산이 불필요하여 성능 최적화 가능 
-
-#### Player Input
-
-```cs
-public class PlayerMove : MonoBehaviour
-{
-    [SerializeField] float moveSpeed;
-    [SerializeField] InputActionReference inputAction;
-    CharacterController cc;
-
-    void Start()
-    {
-        cc = GetComponent<CharacterController>();
-    }
-
-    void Update()
-    {
-        Vector2 moveInput = inputAction.action.ReadValue<Vector2>();
-        Vector3 moveDirection = new Vector3(moveInput.x, 0, moveInput.y).normalized;
-        cc.Move(moveDirection * moveSpeed * Time.deltaTime);
-    }
-}
-```
 
 #### Mesh Renderer
 - 기본 역할: 정적(Static) 또는 변형되지 않는 3D 메시에 대한 렌더링을 처리.
@@ -264,6 +271,14 @@ Conrner Vertices : 모서리 둥글기
 End Cap Vertices : 끝점 둥글기
 
 ### 🏷️ Script
+
+### Rect Transform
+- RectTransform.rect는 Scale With Screen Size일 때 Reference Resolution을 반환
+- Camera.WorldToScreenPoint()는 특정 월드 좌표의 스크린 좌표계를 반환
+- Camera.WorldToViewportPoint()는 특정 월드 좌표의 뷰포트 좌표계를 반환
+- rect transform의 anchor가 범위라면 부모 오브젝트(캔버스도 포함)를 상대적 비율로 덮음
+- anchor의 y를 각각 0과 1로 두면 width만 조절하면 알아서 화면 꽉 채워줌
+- UI 요소 크기 공식 : actualSize = (anchorMax - anchorMin) * 부모크기 + sizeDelta
 
 #### OnRenderImage()
 - 카메라 포스트 프로세싱에 사용되는 함수
@@ -302,7 +317,7 @@ End Cap Vertices : 끝점 둥글기
 - Scene View의 Visualisation 탭 활성화하여 미리 보기
 
 
-## 📋 Detail
+## 📄 Detail
 ---
 ### 🏷️ Editor
 
@@ -498,6 +513,9 @@ Include all 체크 해제
 #### PSD import가 안됨
 Texture의 Inspector 상단에서 Importer를 PSD Importer로 바꾸셈
 
+#### SRP Batcher가 없음
+URP Asset > Rendering > 우측 상단 점 세개
+
 
 ### 🏷️ 인게임
 
@@ -580,6 +598,7 @@ rigidbody 붙이셈
 #### print()가 안됨
 그거 MonoBehaviour랑 ScriptableObject에서만 됨.
 대신 Debug.log() 쓰셈
+내 코드 중에 Debug라는 이름 가진 클래스 있어도 안됨.
 
 ### 🏷️ Shader Graph
 

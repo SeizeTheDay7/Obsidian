@@ -50,6 +50,20 @@
             }
           },
           {
+            "id": "28979db08cc1c40a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🎮 Game/🎨 Aseprite.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "🎨 Aseprite"
+            }
+          },
+          {
             "id": "fc8aa98fe3fafd17",
             "type": "leaf",
             "state": {
@@ -92,7 +106,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -246,22 +260,26 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "fc8aa98fe3fafd17",
+  "active": "cf34fd38052225ef",
   "lastOpenFiles": [
-    "💻 Lang/💻 C++.md",
-    "🎮 Game/🎮 Unreal.md",
-    "🎨 ClipStudio.md",
+    "🎮 Game/🎨 Aseprite.md",
+    "🎮 Game/♟️ Blender/_Layout.md",
+    "🎮 Game/♟️ Blender/🗿 Sculpting.md",
+    "🎮 Game/♟️ Blender/학습 로드맵.md",
+    "🎮 Game/♟️ Blender/🗺️ UV Editing.md",
+    "🎮 Game/♟️ Blender/🖌️ Texture Paint.md",
+    "🎮 Game/♟️ Blender/🎨 Shading.md",
+    "🎮 Game/♟️ Blender/🎬 Animation.md",
     "🎮 Game/🎮 Unity.md",
+    "🎮 Game/🎮 Unreal.md",
+    "💻 Lang/💻 C++.md",
+    "🎨 ClipStudio.md",
     "🎨 Drawing.md",
     "Pic/Pasted image 20240128153139.png",
     "Pic/Pasted image 20240128153034.png",
-    "🎮 Game/♟️ Blender/_Layout.md",
     "🎮 Game/♟️ Blender/_주제별.md",
-    "🎮 Game/♟️ Blender/🎨 Shading.md",
-    "🎮 Game/♟️ Blender/🖌️ Texture Paint.md",
     "🎮 Game/♟️ Blender/분류.md",
     "무제.md",
-    "🎮 Game/♟️ Blender/🗺️ UV Editing.md",
     "🥚 Algorithm.md",
     "🔌 Coding Memo.md",
     "🎵 Music.md",
@@ -270,11 +288,8 @@
     "🎮 Game/🎨 Affinity Designer.md",
     "🎮 Game/🎹 Cakewalk.md",
     "🔨 Tools/🎨 Inkscape.md",
-    "🎮 Game/♟️ Blender/학습 로드맵.md",
     "🔨 Tools/📕 Visual Studio.md",
     "🎮 Game/🎮 Unity Shader.md",
-    "🔨 Tools/🪄 GIMP.md",
-    "💻 Lang/💻 C#.md",
     "Pic/Pasted image 20240920203431.png",
     "Pic/Pasted image 20240806155005.png",
     "Pic/Pasted image 20240701173114.png",

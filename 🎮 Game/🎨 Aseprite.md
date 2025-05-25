@@ -1,3 +1,5 @@
+- 테두리 : Shift + O 
+
 #### 메뉴 기능
 캔버스 사이즈 바꾸기 : Sprite > Sprite Size 또는 Canvas Size
 
