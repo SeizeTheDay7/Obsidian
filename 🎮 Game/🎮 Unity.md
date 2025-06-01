@@ -300,13 +300,21 @@ End Cap Vertices : 끝점 둥글기
 
 ### 🏷️ Script
 
-### Rect Transform
+#### Rect Transform
 - RectTransform.rect는 Scale With Screen Size일 때 Reference Resolution을 반환
 - Camera.WorldToScreenPoint()는 특정 월드 좌표의 스크린 좌표계를 반환
 - Camera.WorldToViewportPoint()는 특정 월드 좌표의 뷰포트 좌표계를 반환
 - rect transform의 anchor가 범위라면 부모 오브젝트(캔버스도 포함)를 상대적 비율로 덮음
 - anchor의 y를 각각 0과 1로 두면 width만 조절하면 알아서 화면 꽉 채워줌
 - UI 요소 크기 공식 : actualSize = (anchorMax - anchorMin) * 부모크기 + sizeDelta
+
+#### TMP_Text
+| 항목         | TMP_Text      | TextMeshProUGUI              | TextMeshPro             |
+| ---------- | ------------- | ---------------------------- | ----------------------- |
+| 타입         | 부모 (공통 인터페이스) | 자식 (UI용)                     | 자식 (3D용)                |
+| 렌더링 기반     | N/A           | Canvas (UGUI, RectTransform) | MeshRenderer, Transform |
+| 사용 위치      | N/A           | UI 패널, 버튼, 인벤토리 등            | 3D 공간, 월드 오브젝트          |
+| 코드에서 공통 속성 | `.text` 등 동일  | `.text` 등 동일                 | `.text` 등 동일            |
 
 #### OnRenderImage()
 - 카메라 포스트 프로세싱에 사용되는 함수
@@ -315,20 +323,19 @@ End Cap Vertices : 끝점 둥글기
 - 이 함수가 호출되려면, 스크립트가 카메라에 붙어 있어야 하고, 
   해당 카메라에 depthTextureMode 또는 PostProcess 관련 설정이 있어야 함.
 
-#### `OnAudioFilterRead(float[] data, int channels)`
-- 오디오 처리할 때 콜백 함수. 
-- data에 샘플들 담겨있다. (샘플 : 소리 크기 숫자, 이것들을 다 이으면 오디오 된다.)
-- 채널 2개면 data에 번갈아가며 저장돼있다.
-- 메인 쓰레드와 별개의 쓰레드에서 호출된다.
-
 #### `[ImageEffectOpaque]`
 - 렌더 순서를 opaque 렌더링 이후(transparent 이전)로 설정
 
 #### Graphics.Blit()
 - Blit = Bit Block Transfer : 텍스처를 복사하거나 가공해서 다른 텍스쳐로 넘기는 함수
 - `Graphics.Blit(source, destination);` : source 이미지를 destination으로 그냥 복사
-- `Graphics.Blit(source, destination, _Material);` : _Material에 연결된 셰이더를 사용해서 source를 처리한 뒤 destination에 씀
+- `Graphics.Blit(source, destination, _Material);` : `_Material`에 연결된 셰이더를 사용해서 source를 처리한 뒤 destination에 씀
 
+#### `OnAudioFilterRead(float[] data, int channels)`
+- 오디오 처리할 때 콜백 함수. 
+- data에 샘플들 담겨있다. (샘플 : 소리 크기 숫자, 이것들을 다 이으면 오디오 된다.)
+- 채널 2개면 data에 번갈아가며 저장돼있다.
+- 메인 쓰레드와 별개의 쓰레드에서 호출된다.
 
 ### 🏷️ UI
 
@@ -438,7 +445,63 @@ Smoothing Angle을 조절하면 폴리곤 단위에 가깝게 노말 계산
 UnityEditor namespace를 추가하고 EditorWindow를 상속받은 후 `[MenuItem("Window/메뉴 이름")]` 이 특성을 static 메서드 앞에 붙이면 지정한 메뉴 클릭 시 해당 메서드 호출
 
 
+### 🏷️ `MenuItem()`
 
+#### 단축키 지정
+
+| 단축키 기호 | 의미                         |
+| ------ | -------------------------- |
+| `%`    | Ctrl (Windows) / Cmd (Mac) |
+| `#`    | Shift                      |
+| `&`    | Alt                        |
+| 알파벳    | 단일 문자 키                    |
+
+```cs
+[MenuItem("Tools/My Tool %#&g")]
+```
+
+→ Ctrl + Shift + Alt + G
+
+#### 우선순위 지정
+
+```cs
+[MenuItem("Tools/First", false, 10)]
+public static void First() { }
+
+[MenuItem("Tools/Second", false, 20)]
+public static void Second() { }
+```
+
+구분선은 **우선순위 값이 11의 배수에서 다음 항목과 차이가 11 이상일 때** 자동으로 생긴다.
+
+
+## 🖼️ UI Toolkit
+---
+
+
+### 🏷️ Tags
+
+| UXML 태그           | C# 타입         | 설명                   |
+| ----------------- | ------------- | -------------------- |
+| `<VisualElement>` | VisualElement | 모든 UI의 기본 컨테이너, 빈 블록 |
+| `<Label>`         | Label         | 단순 텍스트 표시            |
+| `<Button>`        | Button        | 버튼, 클릭 이벤트 처리 가능     |
+| `<TextField>`     | TextField     | 텍스트 입력 필드            |
+| `<Toggle>`        | Toggle        | 체크박스 또는 토글 스위치       |
+| `<ScrollView>`    | ScrollView    | 스크롤 가능한 영역           |
+| `<ListView>`      | ListView      | 리스트형 데이터 UI          |
+| `<Image>`         | Image         | 이미지 표시               |
+
+
+### 🏷️ 문법
+
+#### 네임스페이스
+
+```
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Label text="Hello" />
+</ui:UXML>
+```
 
 
 
@@ -661,8 +724,11 @@ global light 2d는 target sorting layer가 있어서 그걸 벗어나면 비춰�
 Character Controller는 내부 상태 유지 때문에 순간이동 무시함
 순간이동 시킬 땐 enabled false 했다가 이동시키고 true하면 됨
 
-### fbx export 했는데 blender에서 인식 안돼
+#### fbx export 했는데 blender에서 인식 안돼
 export format을 binary로 바꿔
+
+#### font asset 한글 폰트인데 글자가 깨져
+atlas width랑 height 늘려
 
 ### 🏷️ 스크립트
 
