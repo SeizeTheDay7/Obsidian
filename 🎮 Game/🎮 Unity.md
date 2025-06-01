@@ -1,101 +1,3 @@
-- [[#📌 팁|📌 팁]]
-	- [[#📌 팁#단축키|단축키]]
-	- [[#📌 팁#에디터|에디터]]
-- [[#✂️ 스니펫|✂️ 스니펫]]
-	- [[#✂️ 스니펫#싱글톤|싱글톤]]
-	- [[#✂️ 스니펫#Player Input|Player Input]]
-- [[#⚙️ 설정|⚙️ 설정]]
-	- [[#⚙️ 설정#🏷️ 성능|🏷️ 성능]]
-		- [[#🏷️ 성능#수정 후 빠르게 재생|수정 후 빠르게 재생]]
-	- [[#⚙️ 설정#🏷️ 디버그|🏷️ 디버그]]
-		- [[#🏷️ 디버그#애셋 직렬화 방식 통일|애셋 직렬화 방식 통일]]
-		- [[#🏷️ 디버그#프로젝트 렌더링 파이프라인 확인|프로젝트 렌더링 파이프라인 확인]]
-- [[#💾 개념|💾 개념]]
-	- [[#💾 개념#🏷️ General|🏷️ General]]
-		- [[#🏷️ General#.meta 파일|.meta 파일]]
-	- [[#💾 개념#🏷️ Script|🏷️ Script]]
-		- [[#🏷️ Script#재정의(override) 가능한 메서드|재정의(override) 가능한 메서드]]
-		- [[#🏷️ Script#Unity : Coroutine|Unity : Coroutine]]
-- [[#📖 Manual|📖 Manual]]
-	- [[#📖 Manual#🏷️ Component|🏷️ Component]]
-		- [[#🏷️ Component#Rigidbody|Rigidbody]]
-			- [[#Rigidbody#Body Type|Body Type]]
-		- [[#🏷️ Component#CharacterController|CharacterController]]
-		- [[#🏷️ Component#Mesh Renderer|Mesh Renderer]]
-		- [[#🏷️ Component#Cinemachine|Cinemachine]]
-			- [[#Cinemachine#Aim|Aim]]
-		- [[#🏷️ Component#Line Renderer|Line Renderer]]
-	- [[#📖 Manual#🏷️ Script|🏷️ Script]]
-		- [[#🏷️ Script#OnRenderImage()|OnRenderImage()]]
-		- [[#🏷️ Script#`[ImageEffectOpaque]`|`[ImageEffectOpaque]`]]
-		- [[#🏷️ Script#Graphics.Blit()|Graphics.Blit()]]
-	- [[#📖 Manual#🏷️ UI|🏷️ UI]]
-		- [[#🏷️ UI#Scroll View|Scroll View]]
-	- [[#📖 Manual#🏷️ Shader Graph|🏷️ Shader Graph]]
-		- [[#🏷️ Shader Graph#노드|노드]]
-	- [[#📖 Manual#🏷️ Settings|🏷️ Settings]]
-		- [[#🏷️ Settings#오클루전 컬링 활성화하는 법|오클루전 컬링 활성화하는 법]]
-- [[#📄 Detail|📄 Detail]]
-	- [[#📄 Detail#🏷️ Editor|🏷️ Editor]]
-		- [[#🏷️ Editor#Import|Import]]
-		- [[#🏷️ Editor#커서 어케 바꿈|커서 어케 바꿈]]
-	- [[#📄 Detail#🏷️ Script|🏷️ Script]]
-		- [[#🏷️ Script#GetKey 차이|GetKey 차이]]
-		- [[#🏷️ Script#GetAxis, GetAxisRaw 차이|GetAxis, GetAxisRaw 차이]]
-		- [[#🏷️ Script#private void vs void|private void vs void]]
-		- [[#🏷️ Script#변수를 꼭 밖으로 뺄 이유는 없다|변수를 꼭 밖으로 뺄 이유는 없다]]
-	- [[#📄 Detail#🏷️ Physics|🏷️ Physics]]
-		- [[#🏷️ Physics#Collision|Collision]]
-		- [[#🏷️ Physics#Trigger|Trigger]]
-	- [[#📄 Detail#🏷️ Graphic|🏷️ Graphic]]
-		- [[#🏷️ Graphic#Image vs Raw Image|Image vs Raw Image]]
-		- [[#🏷️ Graphic#모델 노말 계산 설정|모델 노말 계산 설정]]
-	- [[#📄 Detail#🏷️ Component|🏷️ Component]]
-		- [[#🏷️ Component#Animation Rigging|Animation Rigging]]
-	- [[#📄 Detail#🏷️ Animation|🏷️ Animation]]
-- [[#📦 애셋 사용법|📦 애셋 사용법]]
-	- [[#📦 애셋 사용법#Analytic Volumetric Light|Analytic Volumetric Light]]
-	- [[#📦 애셋 사용법#VRoid|VRoid]]
-- [[#🦫 디버깅|🦫 디버깅]]
-	- [[#🦫 디버깅#🏷️ Editor|🏷️ Editor]]
-		- [[#🏷️ Editor#Tile Pallete 타일 크기 작음|Tile Pallete 타일 크기 작음]]
-		- [[#🏷️ Editor#라이트에 쿠키 넣고 텍스쳐 타입 바꿨더니 조명 꺼짐|라이트에 쿠키 넣고 텍스쳐 타입 바꿨더니 조명 꺼짐]]
-		- [[#🏷️ Editor#Render Texture 크기 변경 안됨|Render Texture 크기 변경 안됨]]
-		- [[#🏷️ Editor#Package Export 종속성만 체크가 안됨|Package Export 종속성만 체크가 안됨]]
-		- [[#🏷️ Editor#PSD import가 안됨|PSD import가 안됨]]
-	- [[#🦫 디버깅#🏷️ 인게임|🏷️ 인게임]]
-		- [[#🏷️ 인게임#📌 Collision 관련|📌 Collision 관련]]
-		- [[#🏷️ 인게임#오브젝트들 전부 살짝 흐림|오브젝트들 전부 살짝 흐림]]
-		- [[#🏷️ 인게임#Cinemachine 따라가기 덜덜 떨림|Cinemachine 따라가기 덜덜 떨림]]
-		- [[#🏷️ 인게임#콜라이더 적용해도 벽뚫|콜라이더 적용해도 벽뚫]]
-		- [[#🏷️ 인게임#플레이어가 벽에 달라붙음|플레이어가 벽에 달라붙음]]
-		- [[#🏷️ 인게임#플레이어가 벽에 닿으면 계속 점프 가능함|플레이어가 벽에 닿으면 계속 점프 가능함]]
-		- [[#🏷️ 인게임#Navmesh Bake 안 보임|Navmesh Bake 안 보임]]
-		- [[#🏷️ 인게임#Raycast 안됨|Raycast 안됨]]
-		- [[#🏷️ 인게임#머테리얼을 Transparent로 설정해도 살짝 불투명|머테리얼을 Transparent로 설정해도 살짝 불투명]]
-		- [[#🏷️ 인게임#플레이어 이동에 약간 딜레이|플레이어 이동에 약간 딜레이]]
-		- [[#🏷️ 인게임#스프라이트 마스크 어떻게 씀?|스프라이트 마스크 어떻게 씀?]]
-		- [[#🏷️ 인게임#Camera.main이 null임|Camera.main이 null임]]
-		- [[#🏷️ 인게임#DontDestroyOnLoad() 해도 사라짐|DontDestroyOnLoad() 해도 사라짐]]
-		- [[#🏷️ 인게임#콜라이더가 분명 하나인데 더 달려있음|콜라이더가 분명 하나인데 더 달려있음]]
-		- [[#🏷️ 인게임#Rigidbody 중력 작용 안 함|Rigidbody 중력 작용 안 함]]
-		- [[#🏷️ 인게임#sorting layer 바꿨더니 검은색 됨|sorting layer 바꿨더니 검은색 됨]]
-		- [[#🏷️ 인게임#위치 순간이동 로직 짰는데 순간이동 안 함|위치 순간이동 로직 짰는데 순간이동 안 함]]
-	- [[#🦫 디버깅#fbx export 했는데 blender에서 인식 안돼|fbx export 했는데 blender에서 인식 안돼]]
-	- [[#🦫 디버깅#🏷️ 스크립트|🏷️ 스크립트]]
-		- [[#🏷️ 스크립트#using Cinemachine이 안 먹힘|using Cinemachine이 안 먹힘]]
-		- [[#🏷️ 스크립트#Trigger가 안됨|Trigger가 안됨]]
-		- [[#🏷️ 스크립트#print()가 안됨|print()가 안됨]]
-	- [[#🦫 디버깅#🏷️ Shader Graph|🏷️ Shader Graph]]
-		- [[#🏷️ Shader Graph#2D Sprite Texture 연결했는데 전부 단색으로 나옴|2D Sprite Texture 연결했는데 전부 단색으로 나옴]]
-	- [[#🦫 디버깅#🏷️ UI|🏷️ UI]]
-		- [[#🏷️ UI#9-slice 적용 안됨|9-slice 적용 안됨]]
-	- [[#🦫 디버깅#🏷️ 협업|🏷️ 협업]]
-		- [[#🏷️ 협업#깃 pull 할 때마다 메타파일 갱신|깃 pull 할 때마다 메타파일 갱신]]
-- [[#🚀 최적화|🚀 최적화]]
-	- [[#🚀 최적화#유나이트 서울 2020 - 최대 성능을 위한 최적화 팁|유나이트 서울 2020 - 최대 성능을 위한 최적화 팁]]
-		- [[#유나이트 서울 2020 - 최대 성능을 위한 최적화 팁#플랫폼별 적절한 Tris(폴리곤) 개수 가이드라인|플랫폼별 적절한 Tris(폴리곤) 개수 가이드라인]]
-		- [[#유나이트 서울 2020 - 최대 성능을 위한 최적화 팁#씬 내 폴리곤 최적화|씬 내 폴리곤 최적화]]
 
 
 
@@ -205,6 +107,11 @@ Edit - Project Settings - Graphics - Scriptable Pipeline Settings 확인
 깃허브에 커밋할 때 .meta 빠뜨리면 안되고
 외부에 깃 말고 보낼 땐 .unitypackage로 만들어라.
 
+#### Assembly Definition (asmdef)
+- 기본적으로 Unity 프로젝트의 모든 C# 스크립트는 UnityEngine.dll에 하나로 컴파일한다.
+- 이때 `.asmdef` 파일을 추가하면 해당 폴더와 하위 폴더의 스크립트들을 별도의 어셈블리로 컴파일하게 만들 수 있다.
+- 근데 의존성을 일일이 추가해줘야 한다. 불편하긴 하지만 의존성 관리에 용이.
+
 ### 🏷️ Script
 #### 재정의(override) 가능한 메서드
 - 부모 클래스의 메서드가 `virtual`, `abstract`, 또는 `override`로 선언되지 않았다면, 자식 클래스에서 해당 메서드를 `override`로 재정의할 수 없습니다.
@@ -227,6 +134,15 @@ Edit - Project Settings - Graphics - Scriptable Pipeline Settings 확인
 - StopCoroutine(), StopAllCoroutines()
 - 코루틴 붙은 오브젝트 SetActive(false), Destroy()
 - Monobehaviour 스크립트는 enabled false로 해도 코루틴 안 꺼짐
+
+#### Managed Object
+- .NET 런타임(예: CLR, Common Language Runtime)의 관리 아래 존재하는 객체
+- 메모리 할당, 해제, 가비지 컬렉션 같은 작업을 자동 관리
+- 예
+  - new로 만든 C# 객체들 (예: new MyClass())
+  - Unity의 MonoBehaviour, ScriptableObject 같은 컴포넌트 객체들
+  - 배열, 리스트, 딕셔너리 등 .NET 기본 자료구조들
+- 이거 쓰면 Burst Compiler 못 씀
 
 
 ## 📖 Manual
@@ -286,6 +202,12 @@ End Cap Vertices : 끝점 둥글기
 - 렌더링된 결과(`source`)를 받아서 필터/이펙트 처리 후 `destination`에 출력하는 구조
 - 이 함수가 호출되려면, 스크립트가 카메라에 붙어 있어야 하고, 
   해당 카메라에 depthTextureMode 또는 PostProcess 관련 설정이 있어야 함.
+
+#### `OnAudioFilterRead(float[] data, int channels)`
+- 오디오 처리할 때 콜백 함수. 
+- data에 샘플들 담겨있다. (샘플 : 소리 크기 숫자, 이것들을 다 이으면 오디오 된다.)
+- 채널 2개면 data에 번갈아가며 저장돼있다.
+- 메인 쓰레드와 별개의 쓰레드에서 호출된다.
 
 #### `[ImageEffectOpaque]`
 - 렌더 순서를 opaque 렌더링 이후(transparent 이전)로 설정
@@ -396,6 +318,38 @@ Smoothing Angle을 조절하면 폴리곤 단위에 가깝게 노말 계산
 - 모델을 클릭해야 Animation Clip을 수정할 수 있다
 - Animator Controller에서 새 레이어로 BlendShape override 가능하다
 - Animator Clip에서 스크롤바 늘려놔서 한꺼번에 보이게 하기
+
+## 💻 `C#`
+---
+
+### 🏷️ 구문
+
+#### `using` (네임스페이스 x)
+
+```cs
+using (var resource = new SomeResource())
+{
+    // 이 블록 안에서 resource 사용
+}
+// 블록 끝나면 resource.Dispose() 자동 호출됨
+```
+
+`IDisposable` 인터페이스를 구현한 객체의 `Dispose()` 메서드를 자동으로 호출해주는 구문.
+GC가 못 닫는 파일 핸들, 네트워크 소켓, 네이티브 메모리 같은 거 자동으로 `Dispose()`해준다.
+
+### 🏷️ 접근 제한자
+#### internal
+private 같은 접근 제한자의 일종.
+해당 코드(클래스, 메서드, 필드 등)가 같은 어셈블리 안에서만 접근 가능하도록 만듦.
+Burst 컴파일하면 using으로 자동 Dispose 호출 안 해준다.
+
+
+### 🏷️ 특성(Attribute)
+#### `[StructLayout()]`
+- .NET 런타임에서 구조체나 클래스의 메모리 배치를 지정할 때 사용
+- `StructLayout(LayoutKind.Sequential)` : 필드를 선언한 순서대로 메모리에 배치하라
+
+
 
 
 ## 📦 애셋 사용법
