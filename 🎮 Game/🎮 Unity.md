@@ -58,12 +58,13 @@
 	- [[#📄 Detail#🏷️ Component|🏷️ Component]]
 		- [[#🏷️ Component#Animation Rigging|Animation Rigging]]
 	- [[#📄 Detail#🏷️ Animation|🏷️ Animation]]
-- [[#💻 `C#`|💻 `C#`]]
-	- [[#💻 `C#`#🏷️ 구문|🏷️ 구문]]
+- [[#🛠️ Editor Script|🛠️ Editor Script]]
+- [[#💻 CSharp|💻 CSharp]]
+	- [[#💻 CSharp#🏷️ 구문|🏷️ 구문]]
 		- [[#🏷️ 구문#`using` (네임스페이스 x)|`using` (네임스페이스 x)]]
-	- [[#💻 `C#`#🏷️ 접근 제한자|🏷️ 접근 제한자]]
+	- [[#💻 CSharp#🏷️ 접근 제한자|🏷️ 접근 제한자]]
 		- [[#🏷️ 접근 제한자#internal|internal]]
-	- [[#💻 `C#`#🏷️ 특성(Attribute)|🏷️ 특성(Attribute)]]
+	- [[#💻 CSharp#🏷️ 특성(Attribute)|🏷️ 특성(Attribute)]]
 		- [[#🏷️ 특성(Attribute)#`[StructLayout()]`|`[StructLayout()]`]]
 - [[#📦 애셋 사용법|📦 애셋 사용법]]
 	- [[#📦 애셋 사용법#Analytic Volumetric Light|Analytic Volumetric Light]]
@@ -430,7 +431,18 @@ Smoothing Angle을 조절하면 폴리곤 단위에 가깝게 노말 계산
 - Animator Controller에서 새 레이어로 BlendShape override 가능하다
 - Animator Clip에서 스크롤바 늘려놔서 한꺼번에 보이게 하기
 
-## 💻 `C#`
+
+## 🛠️ Editor Script
+---
+
+UnityEditor namespace를 추가하고 EditorWindow를 상속받은 후 `[MenuItem("Window/메뉴 이름")]` 이 특성을 static 메서드 앞에 붙이면 지정한 메뉴 클릭 시 해당 메서드 호출
+
+
+
+
+
+
+## 💻 CSharp
 ---
 
 ### 🏷️ 구문
