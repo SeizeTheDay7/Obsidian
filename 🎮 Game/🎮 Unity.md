@@ -29,11 +29,12 @@
 			- [[#Cinemachine#Aim|Aim]]
 		- [[#🏷️ Component#Line Renderer|Line Renderer]]
 	- [[#📖 Manual#🏷️ Script|🏷️ Script]]
-	- [[#📖 Manual#Rect Transform|Rect Transform]]
-		- [[#Rect Transform#OnRenderImage()|OnRenderImage()]]
-		- [[#Rect Transform#`OnAudioFilterRead(float[] data, int channels)`|`OnAudioFilterRead(float[] data, int channels)`]]
-		- [[#Rect Transform#`[ImageEffectOpaque]`|`[ImageEffectOpaque]`]]
-		- [[#Rect Transform#Graphics.Blit()|Graphics.Blit()]]
+		- [[#🏷️ Script#Rect Transform|Rect Transform]]
+		- [[#🏷️ Script#TMP_Text|TMP_Text]]
+		- [[#🏷️ Script#OnRenderImage()|OnRenderImage()]]
+		- [[#🏷️ Script#`[ImageEffectOpaque]`|`[ImageEffectOpaque]`]]
+		- [[#🏷️ Script#Graphics.Blit()|Graphics.Blit()]]
+		- [[#🏷️ Script#`OnAudioFilterRead(float[] data, int channels)`|`OnAudioFilterRead(float[] data, int channels)`]]
 	- [[#📖 Manual#🏷️ UI|🏷️ UI]]
 		- [[#🏷️ UI#Scroll View|Scroll View]]
 	- [[#📖 Manual#🏷️ Shader Graph|🏷️ Shader Graph]]
@@ -59,6 +60,14 @@
 		- [[#🏷️ Component#Animation Rigging|Animation Rigging]]
 	- [[#📄 Detail#🏷️ Animation|🏷️ Animation]]
 - [[#🛠️ Editor Script|🛠️ Editor Script]]
+	- [[#🛠️ Editor Script#🏷️ `MenuItem()`|🏷️ `MenuItem()`]]
+		- [[#🏷️ `MenuItem()`#단축키 지정|단축키 지정]]
+		- [[#🏷️ `MenuItem()`#우선순위 지정|우선순위 지정]]
+- [[#🖼️ UI Toolkit|🖼️ UI Toolkit]]
+	- [[#🖼️ UI Toolkit#🏷️ Tip|🏷️ Tip]]
+	- [[#🖼️ UI Toolkit#🏷️ Tags|🏷️ Tags]]
+	- [[#🖼️ UI Toolkit#🏷️ 문법|🏷️ 문법]]
+		- [[#🏷️ 문법#네임스페이스|네임스페이스]]
 - [[#💻 CSharp|💻 CSharp]]
 	- [[#💻 CSharp#🏷️ 구문|🏷️ 구문]]
 		- [[#🏷️ 구문#`using` (네임스페이스 x)|`using` (네임스페이스 x)]]
@@ -95,7 +104,8 @@
 		- [[#🏷️ 인게임#Rigidbody 중력 작용 안 함|Rigidbody 중력 작용 안 함]]
 		- [[#🏷️ 인게임#sorting layer 바꿨더니 검은색 됨|sorting layer 바꿨더니 검은색 됨]]
 		- [[#🏷️ 인게임#위치 순간이동 로직 짰는데 순간이동 안 함|위치 순간이동 로직 짰는데 순간이동 안 함]]
-	- [[#🦫 디버깅#fbx export 했는데 blender에서 인식 안돼|fbx export 했는데 blender에서 인식 안돼]]
+		- [[#🏷️ 인게임#fbx export 했는데 blender에서 인식 안돼|fbx export 했는데 blender에서 인식 안돼]]
+		- [[#🏷️ 인게임#font asset 한글 폰트인데 글자가 깨져|font asset 한글 폰트인데 글자가 깨져]]
 	- [[#🦫 디버깅#🏷️ 스크립트|🏷️ 스크립트]]
 		- [[#🏷️ 스크립트#using Cinemachine이 안 먹힘|using Cinemachine이 안 먹힘]]
 		- [[#🏷️ 스크립트#Trigger가 안됨|Trigger가 안됨]]
@@ -110,7 +120,6 @@
 	- [[#🚀 최적화#유나이트 서울 2020 - 최대 성능을 위한 최적화 팁|유나이트 서울 2020 - 최대 성능을 위한 최적화 팁]]
 		- [[#유나이트 서울 2020 - 최대 성능을 위한 최적화 팁#플랫폼별 적절한 Tris(폴리곤) 개수 가이드라인|플랫폼별 적절한 Tris(폴리곤) 개수 가이드라인]]
 		- [[#유나이트 서울 2020 - 최대 성능을 위한 최적화 팁#씬 내 폴리곤 최적화|씬 내 폴리곤 최적화]]
-
 
 
 ## 📌 팁
@@ -478,6 +487,24 @@ public static void Second() { }
 ## 🖼️ UI Toolkit
 ---
 
+### 🏷️ Tip
+
+- visualelement에 추가한 후에 이벤트 등록해도 된다
+- 동적인 요소는 uss에서 name으로 스타일 지정하는게 불가능하다.
+
+uxml은 쓰레기라 z-index를 지원하지 않음
+- 요소가 먼저 추가될수록 아래
+- 나중에 추가될수록 위
+- 부모가 먼저 그려지고, 그 위에 자식들이 순서대로 그려진다
+
+style.width → 설정용 (float 아님)  
+resolvedStyle.width → 계산 결과용 (float)
+
+border의 alpha는 기본 0이라서 두께 지정해도 바로 안 보임.
+
+flex-grow 지정했는데 다른 요소 무시하고 전체 길이 차지해버림
+- 부모 요소에 display: flex, flex-direction: row; 지정
+- 무시당한 요소에서 position: absolute; 삭제
 
 ### 🏷️ Tags
 
@@ -502,6 +529,8 @@ public static void Second() { }
     <ui:Label text="Hello" />
 </ui:UXML>
 ```
+
+
 
 
 
