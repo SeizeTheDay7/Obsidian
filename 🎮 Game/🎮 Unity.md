@@ -500,13 +500,15 @@ uxml은 쓰레기라 z-index를 지원하지 않음
 style.width → 설정용 (float 아님)  
 resolvedStyle.width → 계산 결과용 (float)
 
-border의 alpha는 기본 0이라서 두께 지정해도 바로 안 보임.
-
 flex-grow 지정했는데 다른 요소 무시하고 전체 길이 차지해버림
 - 부모 요소에 display: flex, flex-direction: row; 지정
 - 무시당한 요소에서 position: absolute; 삭제
 
-### 🏷️ Tags
+`EventCallback<MouseMoveEvent>` 이런 식으로 delegate 선언해놓으면 Register할 때 무슨 콜백인지 명시 안 하고 바로 구독된다.
+
+### 🏷️ 문법
+
+#### 태그
 
 | UXML 태그           | C# 타입         | 설명                   |
 | ----------------- | ------------- | -------------------- |
@@ -519,18 +521,45 @@ flex-grow 지정했는데 다른 요소 무시하고 전체 길이 차지해버�
 | `<ListView>`      | ListView      | 리스트형 데이터 UI          |
 | `<Image>`         | Image         | 이미지 표시               |
 
+#### 콜백 함수
 
-### 🏷️ 문법
+`RegisterCallback<GeometryChangedEvent>(OnGeometryChanged);`
+: UI 요소의 크기나 위치가 변경될 때 OnGeometryChanged 콜백을 호출
+
+`generateVisualContent += OnGenerate;` 
+: custom geometry VisualElement를 그릴 때 사용한다. 
+맨 처음 그려질 때나 repaint가 필요할 때 호출됨.
+매 프레임마다 호출되진 않음.
+`MarkDirtyRepaint()` 호출하면 `OnGenerate()`도 호출됨.
+
 
 #### 네임스페이스
 
-```
+```cs
 <ui:UXML xmlns:ui="UnityEngine.UIElements">
     <ui:Label text="Hello" />
 </ui:UXML>
 ```
 
+#### 붙어있는 Class 확인
+```cs
+Debug.Log(string.Join(", ", node.GetClasses()));
+```
 
+#### 메뉴 만들기
+- `ContextualMenuManipulator`
+- `contextualMenuPopulateEvent`
+- MouseDown + `GenericMenu`
+
+
+### 🦫 Troubleshooting
+
+#### border가 안 보임
+border의 alpha는 기본 0이라서 두께 지정해도 바로 안 보임.
+
+#### TextField 문제
+- 여러 줄 입력을 위해 multiline을 true로 바꾸면 height 설정이 무효화됨 : `nodeTextField.verticalScrollerVisibility = ScrollerVisibility.AlwaysVisible;`
+- 엔터를 누르면 한 줄 밀려 올라가며 기존 텍스트가 보이지 않게 됨 : `input.style.unityTextAlign = TextAnchor.UpperLeft;`
 
 
 

@@ -111,6 +111,14 @@ string multiLines = @"
 	";
 ```
 
+**get 프로퍼티를 별도로 선언하면 향후 로직 추가 가능**
+```cs
+private Vector2 _currentMousePos;
+public Vector2 currentMousePos => _currentMousePos;
+```
+
+`public Vector2 currentMousePos { get; private set; }` 간단하게 자동 구현 프로퍼티 쓰면 그런거 불가능.
+
 ### 🏷️ Visual Studio
 
 **시작 개체 설정**
