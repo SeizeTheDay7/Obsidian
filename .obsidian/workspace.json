@@ -105,7 +105,8 @@
               "title": "💻 C#"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -259,8 +260,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "62a3e6b1f9364b85",
+  "active": "cf34fd38052225ef",
   "lastOpenFiles": [
+    "🎨 Drawing.md",
     "🎮 Game/🎮 Unity.md",
     "💻 Lang/💻 C#.md",
     "🎮 Game/🎮 Unreal.md",
@@ -275,7 +277,6 @@
     "🎮 Game/♟️ Blender/🎨 Shading.md",
     "🎮 Game/♟️ Blender/🎬 Animation.md",
     "🎨 ClipStudio.md",
-    "🎨 Drawing.md",
     "Pic/Pasted image 20240128153139.png",
     "Pic/Pasted image 20240128153034.png",
     "🎮 Game/♟️ Blender/_주제별.md",

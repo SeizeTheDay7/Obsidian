@@ -65,9 +65,16 @@
 		- [[#🏷️ `MenuItem()`#우선순위 지정|우선순위 지정]]
 - [[#🖼️ UI Toolkit|🖼️ UI Toolkit]]
 	- [[#🖼️ UI Toolkit#🏷️ Tip|🏷️ Tip]]
-	- [[#🖼️ UI Toolkit#🏷️ Tags|🏷️ Tags]]
 	- [[#🖼️ UI Toolkit#🏷️ 문법|🏷️ 문법]]
+		- [[#🏷️ 문법#태그|태그]]
+		- [[#🏷️ 문법#콜백 함수|콜백 함수]]
 		- [[#🏷️ 문법#네임스페이스|네임스페이스]]
+		- [[#🏷️ 문법#붙어있는 Class 확인|붙어있는 Class 확인]]
+		- [[#🏷️ 문법#메뉴 만들기|메뉴 만들기]]
+	- [[#🖼️ UI Toolkit#🦫 Troubleshooting|🦫 Troubleshooting]]
+		- [[#🦫 Troubleshooting#border가 안 보임|border가 안 보임]]
+		- [[#🦫 Troubleshooting#TextField 문제|TextField 문제]]
+		- [[#🦫 Troubleshooting#Object Field가 uxml 컴파일이 안됨|Object Field가 uxml 컴파일이 안됨]]
 - [[#💻 CSharp|💻 CSharp]]
 	- [[#💻 CSharp#🏷️ 구문|🏷️ 구문]]
 		- [[#🏷️ 구문#`using` (네임스페이스 x)|`using` (네임스페이스 x)]]
@@ -121,7 +128,8 @@
 		- [[#유나이트 서울 2020 - 최대 성능을 위한 최적화 팁#플랫폼별 적절한 Tris(폴리곤) 개수 가이드라인|플랫폼별 적절한 Tris(폴리곤) 개수 가이드라인]]
 		- [[#유나이트 서울 2020 - 최대 성능을 위한 최적화 팁#씬 내 폴리곤 최적화|씬 내 폴리곤 최적화]]
 
- 
+
+
 ## 📌 팁
 ---
 
@@ -506,6 +514,8 @@ flex-grow 지정했는데 다른 요소 무시하고 전체 길이 차지해버�
 
 `EventCallback<MouseMoveEvent>` 이런 식으로 delegate 선언해놓으면 Register할 때 무슨 콜백인지 명시 안 하고 바로 구독된다.
 
+UI Builder > uxml 선택 > Inspector > Editor Extension Authoring 체크하면 Editor에서만 쓸 수 있는 다양한 Component 추가됨
+
 ### 🏷️ 문법
 
 #### 태그
@@ -560,6 +570,14 @@ border의 alpha는 기본 0이라서 두께 지정해도 바로 안 보임.
 #### TextField 문제
 - 여러 줄 입력을 위해 multiline을 true로 바꾸면 height 설정이 무효화됨 : `nodeTextField.verticalScrollerVisibility = ScrollerVisibility.AlwaysVisible;`
 - 엔터를 누르면 한 줄 밀려 올라가며 기존 텍스트가 보이지 않게 됨 : `input.style.unityTextAlign = TextAnchor.UpperLeft;`
+
+#### Object Field가 uxml 컴파일이 안됨
+```xml
+<UXML xmlns="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+<uie:ObjectField name="myField" />
+```
+
+uxml 태그에 xmlns으로 namespace 지정해놨다면 ui builder가 붙여놓은 namespace와 중복되어 이상한 경로를 가리킴. 별도로 namespace 지정하는 attribute 추가해야함.
 
 
 
