@@ -142,6 +142,7 @@
   - 인스턴스는 시작할 때 `this.StartMonitoring()`
 - Unity 엔진 내부에서는 **값이 실제로 바뀔 때**만 C++ 레이어로 내려가서 `Renderer::SetEnabled()`  등 프로퍼티를 호출
 
+
 ### 단축키
 
 - 창 전체화면 : Shift + Space
@@ -505,8 +506,8 @@ uxml은 쓰레기라 z-index를 지원하지 않음
 - 나중에 추가될수록 위
 - 부모가 먼저 그려지고, 그 위에 자식들이 순서대로 그려진다
 
-style.width → 설정용 (float 아님)  
-resolvedStyle.width → 계산 결과용 (float)
+style.width → 설정용 (float 아님)  → float로 쓰려면 .value.value 붙여야 함
+resolvedStyle.width → 계산 결과용 (float) → 한 프레임 뒤에 확정
 
 flex-grow 지정했는데 다른 요소 무시하고 전체 길이 차지해버림
 - 부모 요소에 display: flex, flex-direction: row; 지정
@@ -516,7 +517,13 @@ flex-grow 지정했는데 다른 요소 무시하고 전체 길이 차지해버�
 
 UI Builder > uxml 선택 > Inspector > Editor Extension Authoring 체크하면 Editor에서만 쓸 수 있는 다양한 Component 추가됨
 
+부모 크기가 0일때 자식을 보이게 하려면 `Position.Absolute;` 설정
+
 ### 🏷️ 문법
+
+width px, % 설정 : 기본은 px. % 단위로 설정하려면 `style.width = new Length(100, LengthUnit.Percent)`
+
+`DisplayStyle.None`과 `Visibility.Hidden`의 차이 : `DisplayStyle.None`는 그 요소가 차지하던 공간까지 제거됨
 
 #### 태그
 
@@ -561,6 +568,9 @@ Debug.Log(string.Join(", ", node.GetClasses()));
 - `contextualMenuPopulateEvent`
 - MouseDown + `GenericMenu`
 
+#### 좌표계 기준 바꾸기
+`Layer1Element.ChangeCoordinatesTo(Layer2Element, localPosInL1);`
+
 
 ### 🦫 Troubleshooting
 
@@ -578,6 +588,10 @@ border의 alpha는 기본 0이라서 두께 지정해도 바로 안 보임.
 ```
 
 uxml 태그에 xmlns으로 namespace 지정해놨다면 ui builder가 붙여놓은 namespace와 중복되어 이상한 경로를 가리킴. 별도로 namespace 지정하는 attribute 추가해야함.
+
+#### 부모 요소 style과 관련 있어서 바로 렌더링 안됨
+`RegisterCallbackOnce<GeometryChangedEvent>(_ => LayoutBody());`
+
 
 
 
@@ -598,6 +612,24 @@ using (var resource = new SomeResource())
 
 `IDisposable` 인터페이스를 구현한 객체의 `Dispose()` 메서드를 자동으로 호출해주는 구문.
 GC가 못 닫는 파일 핸들, 네트워크 소켓, 네이티브 메모리 같은 거 자동으로 `Dispose()`해준다.
+
+#### custom 프로퍼티 backing field
+
+```cs
+private bool _highlight;
+public bool Highlight
+{
+    get => _highlight;
+    set
+    {
+        if (_highlight == value) return;
+        _highlight = value;
+        MarkDirtyRepaint();
+    }
+}
+```
+
+부수 효과가 있는 custom getter/setter는 backing field를 두어야 한다.
 
 ### 🏷️ 접근 제한자
 #### internal
@@ -818,6 +850,11 @@ rigidbody 붙이셈
 그거 MonoBehaviour랑 ScriptableObject에서만 됨.
 대신 Debug.log() 쓰셈
 내 코드 중에 Debug라는 이름 가진 클래스 있어도 안됨.
+
+#### JsonUtility 불러오기가 안됨
+JsonUtility는 최종적으로 감싸고 있는게 반드시 객체 (중괄호, `{}`)여야만 한다.
+그래서 List여도 `Serialization<T>` 같은 클래스로 또 감싸야 함.
+
 
 ### 🏷️ Shader Graph
 
