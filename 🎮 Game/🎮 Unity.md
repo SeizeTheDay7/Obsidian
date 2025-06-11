@@ -71,13 +71,21 @@
 		- [[#🏷️ 문법#네임스페이스|네임스페이스]]
 		- [[#🏷️ 문법#붙어있는 Class 확인|붙어있는 Class 확인]]
 		- [[#🏷️ 문법#메뉴 만들기|메뉴 만들기]]
+		- [[#🏷️ 문법#좌표계 기준 바꾸기|좌표계 기준 바꾸기]]
+		- [[#🏷️ 문법#요소 숨기기|요소 숨기기]]
+		- [[#🏷️ 문법#`targetObject`를 사용하는 이유|`targetObject`를 사용하는 이유]]
 	- [[#🖼️ UI Toolkit#🦫 Troubleshooting|🦫 Troubleshooting]]
 		- [[#🦫 Troubleshooting#border가 안 보임|border가 안 보임]]
 		- [[#🦫 Troubleshooting#TextField 문제|TextField 문제]]
 		- [[#🦫 Troubleshooting#Object Field가 uxml 컴파일이 안됨|Object Field가 uxml 컴파일이 안됨]]
+		- [[#🦫 Troubleshooting#부모 요소 style과 관련 있어서 바로 렌더링 안됨|부모 요소 style과 관련 있어서 바로 렌더링 안됨]]
 - [[#💻 CSharp|💻 CSharp]]
 	- [[#💻 CSharp#🏷️ 구문|🏷️ 구문]]
 		- [[#🏷️ 구문#`using` (네임스페이스 x)|`using` (네임스페이스 x)]]
+		- [[#🏷️ 구문#custom 프로퍼티 backing field|custom 프로퍼티 backing field]]
+	- [[#💻 CSharp#🏷️ Type 관련|🏷️ Type 관련]]
+		- [[#🏷️ Type 관련#`IsAssignableFrom(A)`|`IsAssignableFrom(A)`]]
+		- [[#🏷️ Type 관련#BindingFlags|BindingFlags]]
 	- [[#💻 CSharp#🏷️ 접근 제한자|🏷️ 접근 제한자]]
 		- [[#🏷️ 접근 제한자#internal|internal]]
 	- [[#💻 CSharp#🏷️ 특성(Attribute)|🏷️ 특성(Attribute)]]
@@ -117,6 +125,8 @@
 		- [[#🏷️ 스크립트#using Cinemachine이 안 먹힘|using Cinemachine이 안 먹힘]]
 		- [[#🏷️ 스크립트#Trigger가 안됨|Trigger가 안됨]]
 		- [[#🏷️ 스크립트#print()가 안됨|print()가 안됨]]
+		- [[#🏷️ 스크립트#JsonUtility 불러오기가 안됨|JsonUtility 불러오기가 안됨]]
+		- [[#🏷️ 스크립트#동적 타입 둘을 비교하고 싶음|동적 타입 둘을 비교하고 싶음]]
 	- [[#🦫 디버깅#🏷️ Shader Graph|🏷️ Shader Graph]]
 		- [[#🏷️ Shader Graph#2D Sprite Texture 연결했는데 전부 단색으로 나옴|2D Sprite Texture 연결했는데 전부 단색으로 나옴]]
 	- [[#🦫 디버깅#🏷️ UI|🏷️ UI]]
@@ -523,7 +533,6 @@ UI Builder > uxml 선택 > Inspector > Editor Extension Authoring 체크하면 E
 
 width px, % 설정 : 기본은 px. % 단위로 설정하려면 `style.width = new Length(100, LengthUnit.Percent)`
 
-`DisplayStyle.None`과 `Visibility.Hidden`의 차이 : `DisplayStyle.None`는 그 요소가 차지하던 공간까지 제거됨
 
 #### 태그
 
@@ -570,6 +579,15 @@ Debug.Log(string.Join(", ", node.GetClasses()));
 
 #### 좌표계 기준 바꾸기
 `Layer1Element.ChangeCoordinatesTo(Layer2Element, localPosInL1);`
+
+#### 요소 숨기기
+`DisplayStyle.None`과 `Visibility.Hidden`의 차이 : `DisplayStyle.None`는 그 요소가 차지하던 공간까지 제거됨
+ `Visibility.Hidden`과 `visible = false;`의 차이 : `visible = false;`는 공간도 안 차지하고 이벤트도 안 받음
+
+#### `targetObject`를 사용하는 이유
+SerializedObject는 Unity의 인스펙터에서 값을 직렬화하고 편집하기 위해 사용하는 래퍼 클래스다.
+하지만 이것은 진짜 객체 자체가 아니다. 직렬화된 필드 정보를 통해 간접적으로 데이터를 다루는 것이다.
+SerializedObject를 통해 실제 원본 객체에 접근하려면 .targetObject를 써야 한다.
 
 
 ### 🦫 Troubleshooting
@@ -630,6 +648,24 @@ public bool Highlight
 ```
 
 부수 효과가 있는 custom getter/setter는 backing field를 두어야 한다.
+
+
+### 🏷️ Type 관련
+
+#### `IsAssignableFrom(A)` 
+: A가 해당 타입을 상속하거나 구현하고 있는지 판단
+
+#### BindingFlags
+
+```cs
+var fields = type.GetFields(
+    BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.DeclaredOnly
+);
+```
+- BindingFlags.Instance: 인스턴스 필드 (static 제외)
+- BindingFlags.Public: public 필드 포함
+- BindingFlags.NonPublic: private, protected 필드 포함
+- BindingFlags.DeclaredOnly: 해당 클래스에 직접 선언된 필드만 포함, 부모 클래스에서 상속된 필드는 제외
 
 ### 🏷️ 접근 제한자
 #### internal
@@ -854,6 +890,21 @@ rigidbody 붙이셈
 #### JsonUtility 불러오기가 안됨
 JsonUtility는 최종적으로 감싸고 있는게 반드시 객체 (중괄호, `{}`)여야만 한다.
 그래서 List여도 `Serialization<T>` 같은 클래스로 또 감싸야 함.
+
+#### 동적 타입 둘을 비교하고 싶음
+```cs
+IComparable left = fieldValue as IComparable;
+IComparable right = parsedCondValue as IComparable;
+
+int result = left.CompareTo(right);
+
+switch (cond.compFunc)
+{
+	case CompFunc.Same: return result == 0;
+	case CompFunc.Diff: return result != 0;
+```
+
+`IComparable` 쓰셈
 
 
 ### 🏷️ Shader Graph
