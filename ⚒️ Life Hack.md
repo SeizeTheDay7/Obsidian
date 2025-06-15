@@ -11,17 +11,44 @@ Ctrl+D : 한 줄 전부 삭제
 
 
 
-## GPT 프롬프트
+### Youtube Download.py
 ---
 
-1.
-에 대해 영어권에서 최대한 자세히 찾은 다음 너의 지식을 총동원해서 한글로 최대한 자세히 설명해줘. 내용이 아무리 길어져도 괜찮아.
+```python
+import yt_dlp
 
+playlist_url = 'https://www.youtube.com/playlist?list=PLQjAgLjV4MYasYxTdq1JuCGC1Dj--Hteb&si=HYdhUV8316Qb7NLc'
+
+ydl_opts = {
+    'format': 'bestaudio/best',
+    'ffmpeg_location': r'C:\Users\bioma\Documents\ffmpeg\bin',
+    'outtmpl': 'downloads/%(title)s.%(ext)s',
+    'writethumbnail': True, 
+    'postprocessors': [
+        {
+            'key': 'FFmpegExtractAudio',
+            'preferredcodec': 'mp3',
+            'preferredquality': '192',
+        },
+        {
+            'key': 'EmbedThumbnail',
+            'already_have_thumbnail': False,
+        },
+        {
+            'key': 'FFmpegMetadata',
+        }
+    ]
+}
+
+with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+    ydl.download([playlist_url])
+
+```
 
 
 
 ## 윈도우 단축키
-<hr>
+---
 
 Ctrl+Shift+V : 서식 없이 붙여넣기
 win+D : 바탕화면 바로가기
@@ -30,14 +57,14 @@ Shift+Ins : 붙여넣기
 
 
 ## 파일 경로 표기법
-<hr>
+---
 
 **.** : 현재 웹페이지가 소속된 폴더
 **..** : 현재 웹페이지의 부모 폴더
 
 
 ## Github Copilot
-<hr>
+---
 
 ### 단축키
 - `Ctrl + I` : 명령 내리기
