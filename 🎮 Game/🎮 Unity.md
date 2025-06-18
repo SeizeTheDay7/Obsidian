@@ -365,6 +365,14 @@ End Cap Vertices : 끝점 둥글기
 - 채널 2개면 data에 번갈아가며 저장돼있다.
 - 메인 쓰레드와 별개의 쓰레드에서 호출된다.
 
+#### `ExposedRefernce<T>` 사용법
+
+- ExposedReference는 Scriptable에 직렬화하여 저장한다
+- 씬에 IExposedPropertyTable를 구현한 매니저를 만든다
+- ExposedReference를 씬 내 오브젝트와 연결하거나 불러오려고 할 때 Resolve()와 같은 ExposedReference 내장 메서드에 매니저를 넣어서 호출한다
+- 씬 내 오브젝트를 저장하려고 할 때 매니저에서 SetReferenceValue()를 호출하는 것을 잊으면 안된다
+- ExposedReference는 구조체라서, 메서드에 파라미터로 넘겨도 원본이 바뀌지 않는다는 것 주의
+
 ### 🏷️ UI
 
 #### Scroll View
@@ -528,6 +536,8 @@ flex-grow 지정했는데 다른 요소 무시하고 전체 길이 차지해버�
 UI Builder > uxml 선택 > Inspector > Editor Extension Authoring 체크하면 Editor에서만 쓸 수 있는 다양한 Component 추가됨
 
 부모 크기가 0일때 자식을 보이게 하려면 `Position.Absolute;` 설정
+
+dropdown.choices에 List를 넣고 List에 "분류/항목" 식으로 요소를 넣어주면 알아서 항목들을 분류해준다.
 
 ### 🏷️ 문법
 
