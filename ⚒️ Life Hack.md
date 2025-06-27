@@ -11,7 +11,7 @@ Ctrl+D : 한 줄 전부 삭제
 
 
 
-### Youtube Download.py
+## Youtube Download.py
 ---
 
 ```python
@@ -44,6 +44,76 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
     ydl.download([playlist_url])
 ```
 
+
+## mhtml 이미지 추출
+---
+```python
+import base64
+from email import message_from_file
+from pathlib import Path
+from PIL import Image
+from io import BytesIO
+
+# 설정
+source_dir = Path(r"C:\Users\bioma\Downloads\mhtmls")
+output_root = Path(r"C:\Users\bioma\Downloads\extracted")
+min_width = 500
+min_height = 500
+images_per_folder = 200
+
+output_root.mkdir(parents=True, exist_ok=True)
+
+# 전역 카운터
+global_img_count = 1
+
+# 수정 시간 기준 정렬 (오래된 순)
+mhtml_files = sorted(source_dir.glob("*.mhtml"), key=lambda f: f.stat().st_mtime)
+
+for mhtml_path in mhtml_files:
+    print(f"처리 중: {mhtml_path.name}")
+    try:
+        with open(mhtml_path, 'r', encoding='utf-8', errors='ignore') as f:
+            msg = message_from_file(f)
+    except Exception as e:
+        print(f"{mhtml_path.name} 열기 실패:", e)
+        continue
+
+    images = []
+
+    for part in msg.walk():
+        content_type = part.get_content_type()
+        if content_type == "image/jpeg" and "base64" in str(part.get("Content-Transfer-Encoding")):
+            try:
+                payload = part.get_payload(decode=True)
+                if not payload:
+                    continue
+
+                with Image.open(BytesIO(payload)) as img:
+                    width, height = img.size
+                    if width >= min_width and height >= min_height:
+                        images.append(img.copy())
+            except Exception as e:
+                print(f"{mhtml_path.name} 이미지 처리 오류:", e)
+
+    # 역순 저장
+    for img in reversed(images):
+        # 폴더 이름 계산
+        folder_start = ((global_img_count - 1) // images_per_folder) * images_per_folder + 1
+        folder_end = folder_start + images_per_folder - 1
+        folder_name = f"{folder_start}-{folder_end}"
+
+        folder_path = output_root / folder_name
+        folder_path.mkdir(parents=True, exist_ok=True)
+
+        # 파일 저장
+        output_file = folder_path / f"{global_img_count}.webp"
+        img.save(output_file, "WEBP")
+        print(f"{output_file} 저장됨")
+
+        global_img_count += 1
+
+print("모든 이미지 추출 및 저장 완료.")
+```
 
 
 ## 윈도우 단축키

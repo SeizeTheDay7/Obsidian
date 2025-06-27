@@ -151,7 +151,7 @@
   - `using Baracuda.Monitoring;` 
   - 인스턴스는 시작할 때 `this.StartMonitoring()`
 - Unity 엔진 내부에서는 **값이 실제로 바뀔 때**만 C++ 레이어로 내려가서 `Renderer::SetEnabled()`  등 프로퍼티를 호출
-
+- 프로젝트 이름 바꾸기 : UnityProject에 있는 프로젝트 폴더 이름 바꾸고 sln 삭제한 후 열기, Build Settings > Player Settings > Product name도 바꾸기
 
 ### 단축키
 
@@ -592,7 +592,7 @@ Debug.Log(string.Join(", ", node.GetClasses()));
 
 #### 요소 숨기기
 `DisplayStyle.None`과 `Visibility.Hidden`의 차이 : `DisplayStyle.None`는 그 요소가 차지하던 공간까지 제거됨
- `Visibility.Hidden`과 `visible = false;`의 차이 : `visible = false;`는 공간도 안 차지하고 이벤트도 안 받음
+ `Visibility.Hidden`과 `visible = false;`의 차이 : `visible = false;`는 공간도 안 차지하고 이벤트도 안 받음 (기존 스타일과 충돌하면 안 사라질수도)
 
 #### `targetObject`를 사용하는 이유
 SerializedObject는 Unity의 인스펙터에서 값을 직렬화하고 편집하기 위해 사용하는 래퍼 클래스다.
