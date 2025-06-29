@@ -5,16 +5,17 @@
 	- [[#자료형#정수형|정수형]]
 	- [[#자료형#실수형 (소수 포함 숫자)|실수형 (소수 포함 숫자)]]
 	- [[#자료형#스마트 포인터|스마트 포인터]]
-- [[#배열|배열]]
-	- [[#배열#std::vector|std::vector]]
-	- [[#배열#std::list|std::list]]
-	- [[#배열#c-style 배열|c-style 배열]]
-	- [[#배열#std::array|std::array]]
-	- [[#배열#스택|스택]]
-	- [[#배열#char|char]]
+	- [[#자료형#배열|배열]]
+		- [[#배열#std::vector|std::vector]]
+		- [[#배열#c-style 배열|c-style 배열]]
+		- [[#배열#std::array|std::array]]
+	- [[#자료형#std::list|std::list]]
+	- [[#자료형#스택|스택]]
+	- [[#자료형#char|char]]
 		- [[#char#UTF-8|UTF-8]]
 - [[#함수|함수]]
 	- [[#함수#최대값 비교|최대값 비교]]
+
 
 
 
@@ -101,9 +102,9 @@ RAII 철학 (Resource Acquisition Is Initialization) : 객체(생성자와 소�
 |`shared_ptr`|공유|여러 개|✅|✅|참조 공유가 필요한 구조|
 |`weak_ptr`|비소유|여러 개|❌|✅|순환 참조 방지|
 
-## 배열
+### 배열
 
-### std::vector
+#### std::vector
 
 - 동적 배열
 - 조회 : O(1)
@@ -114,12 +115,8 @@ RAII 철학 (Resource Acquisition Is Initialization) : 객체(생성자와 소�
 vector<int> mpp(256, -1); // 크기 256, 각 요소 -1로 초기화
 ```
 
-### std::list
 
-- 이중 연결 리스트
-- 접근 : O(n), `l[i]` 직접 접근 불가능
-- 삽입/삭제 : O(1)
-### c-style 배열
+#### c-style 배열
 
 - 고정 크기, 크기 변경 불가
 - 범위 초과 시 위험 (검사 없음)
@@ -133,12 +130,18 @@ int arr[5] = {};
 std::fill(table, table + 256, -1);
 ```
 → 모든 원소를 -1로 초기화
-### std::array
+#### std::array
 
 - 고정 크기 STL 배열
 - 내부적으로 C-style 배열을 감싸는 구조
 - `.size()`, `.at()`, `.begin()` 등 멤버 함수 제공
 - 복사/대입 가능, STL 호환
+
+### std::list
+
+- 이중 연결 리스트
+- 접근 : O(n), `l[i]` 직접 접근 불가능
+- 삽입/삭제 : O(1)
 
 ### 스택
 
