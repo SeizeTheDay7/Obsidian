@@ -1,6 +1,11 @@
-- [[#개념|개념]]
-	- [[#개념#namespace|namespace]]
-	- [[#개념#변수 초기화|변수 초기화]]
+- [[#팁|팁]]
+	- [[#팁#코테|코테]]
+		- [[#코테#cin, cout 더 빠르게|cin, cout 더 빠르게]]
+- [[#문법|문법]]
+	- [[#문법#namespace|namespace]]
+	- [[#문법#변수 초기화|변수 초기화]]
+		- [[#변수 초기화#초기화 리스트|초기화 리스트]]
+	- [[#문법#익명 네임스페이스|익명 네임스페이스]]
 - [[#자료형|자료형]]
 	- [[#자료형#정수형|정수형]]
 	- [[#자료형#실수형 (소수 포함 숫자)|실수형 (소수 포함 숫자)]]
@@ -17,13 +22,40 @@
 	- [[#함수#최대값 비교|최대값 비교]]
 
 
-
+---
+## 팁
 
 VSCode로 컴파일 및 실행 : 검색창 - run task - save and compile for c++ - execute 
 
+### 코테
+#### cin, cout 더 빠르게
+
+```cpp
+std::ios::sync_with_stdio(false);
+std::cin.tie(nullptr);
+```
+
+cin, cout 쓸 때 printf와 scanf와의 연동을 끊어서 속도 더 빨라지게 하는 테크닉
+
+#### 입력을 바로 할당
+
+```cpp
+for (int i = 0; i < n; ++i)
+	cin >> v[i];
+```
+
+#### 간단한 n번  for문
+
+```cpp
+while(n--)
+{
+}
+```
+
+
 
 ---
-## 개념
+## 문법
 
 ### namespace
 
@@ -72,9 +104,37 @@ RAII 철학 (Resource Acquisition Is Initialization) : 객체(생성자와 소�
 
 로컬 변수는 초기화 안 해주는 이유 : 성능, 개발자의 초기화 제어권
 
+#### 초기화 리스트
+
+```cpp
+Marine::Marine() : hp(50), coord_x(0), coord_y(0), damage(5), is_dead(false) {}
+```
+
+초기화 리스트를 사용하면 선언과 동시에 초기화를 해줌.
+이거 안 쓰면 선언 후에 초기화 함. 성능이 약간 더 좋아진다.
+
+### 익명 네임스페이스
+
+```cpp
+// some.cpp
+
+namespace {
+    void helper() {
+        std::cout << "파일 내부 전용\n";
+    }
+}
+
+void public_func() {
+    helper();  // ✅ 내부에서만 호출 가능
+}
+```
+
+.cpp 파일 안에서만 사용되는 함수 선언 가능
 
 ---
 ## 자료형
+
+static 멤버 변수 : '클래스' 하나에 종속된다. 프로그램이 종료될 때 소멸된다.
 
 ### 정수형
 
@@ -217,10 +277,20 @@ int maxVal = *std::max_element(v.begin(), v.end());  // 8
 
 `std::max_element` 사용하여 여러 값 비교
 
+### 안전한 형변환
+
+```cpp
+static_cast<int>(q.size())
+```
+
+`int(q.size())`처럼 C 스타일 형변환도 가능하지만, `static_cast`는 **타입 오류를 컴파일 시점에 잡아준다**는 점에서 더 안전하다.
 
 
+### push_back과 emplace_back 차이
 
+- `emplace_back()`은 **객체를 백터 내부에서 직접 생성**하는 함수다.
+- `push_back()`은 **이미 만들어진 객체를 복사 또는 이동**해서 벡터에 넣는다.
 
-
-
+따라서 단순한 자료형(예: `int`, `double`)에는 **차이 없다.**  
+하지만 복잡한 객체일 경우, **불필요한 복사/이동을 피하기 위해 `emplace_back()`이 더 효율적**이다.
 
