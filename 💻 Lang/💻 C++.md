@@ -294,3 +294,14 @@ static_cast<int>(q.size())
 따라서 단순한 자료형(예: `int`, `double`)에는 **차이 없다.**  
 하지만 복잡한 객체일 경우, **불필요한 복사/이동을 피하기 위해 `emplace_back()`이 더 효율적**이다.
 
+### 메모리 미리 할당 :: reserve()
+
+```cpp
+vector<T>::reserve(size_t n)
+```
+
+최소한 n개의 요소를 저장할 수 있는 메모리를 미리 할당합니다.
+실제 요소 개수는 증가하지 않음 (size()는 그대로).
+중간에 reallocation 없이 더 빠르게 .push_back()을 할 수 있음.
+
+vector, string 등에서만 작동.
