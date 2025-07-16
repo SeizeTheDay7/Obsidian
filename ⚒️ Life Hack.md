@@ -9,11 +9,10 @@
 
 Ctrl+D : 한 줄 전부 삭제
 
-
-
 ## Youtube Download.py
 ---
 
+### mp3
 ```python
 import yt_dlp
 
@@ -44,6 +43,27 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
     ydl.download([playlist_url])
 ```
 
+### mp4
+```python
+import yt_dlp
+
+playlist_url = 'https://www.youtube.com/playlist?list=PLQjAgLjV4MYasYxTdq1JuCGC1Dj--Hteb&si=HYdhUV8316Qb7NLc'
+
+ydl_opts = {
+    'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4',
+    'ffmpeg_location': r'C:\Users\bioma\Documents\ffmpeg\bin',
+    'outtmpl': 'downloads/%(title)s.%(ext)s',
+    'merge_output_format': 'mp4',
+    'postprocessors': [
+        {
+            'key': 'FFmpegMetadata',
+        }
+    ]
+}
+
+with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+    ydl.download([playlist_url])
+```
 
 ## mhtml 이미지 추출
 ---

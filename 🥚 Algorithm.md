@@ -22,6 +22,62 @@
 	- [[#난이도 上#다익스트라|다익스트라]]
 
 
+# 팁
+---
+
+## template
+
+### .h
+```cpp
+#pragma once
+#include<iostream>
+#include<vector>
+#include<queue>
+
+class B
+{
+public:
+	static void Solution();
+};
+```
+
+### .cpp
+```cpp
+#include".h"
+#define INF 0x3f3f3f3f
+#define fastio cin.tie(0)->sync_with_stdio(0)
+using namespace std;
+typedef pair<int, int> pii;
+
+void B::Solution()
+{
+	fastio;
+}
+```
+
+- 조금 절어도 시간 많으니까 침착하게 문제 처음부터 끝까지 다 읽고 풀 것
+- 내가 무슨 구현을 할 건지 적으면서 구현하기
+
+```cpp
+#define INF 0x3f3f3f3f
+```
+- **16진수 0x3f3f3f3f = 약 1061109567**
+- 메모리 상에서 `memset()`으로 초기화할 수 있는 가장 큰 양수 중 하나
+- `int` 범위 내에서 충분히 큰 값이기 때문에 **"무한대처럼 쓰는 관례"**
+
+## 실수 
+---
+
+- 요소 인덱스가 0~N인지, 1~N까지인지 확인을 해줘야 함
+- 테케가 다를 때 모든 변수와 자료구조 초기화 해줘야 함
+- 문제를 대충 혹은 덜 읽고 조건 빠뜨리지 말기
+- 무지성으로 인덱스 작성하지 말고 접근하는 인덱스가 무슨 의미인지 생각하기
+
+- 초기화를 int max로 하면 오버플로우 발생 가능성 조심
+- 최소 우선순위 큐 선언할 때 자료형 int 아니면 다른 것도 int가 아니라 바꿔줘야 함
+- 분명 다른거 전부 double로 선언돼있는데도 손 나가는대로 변수를 int로 선언해버리지 말기
+- push() 때문에 size()가 변하는데 캐싱한답시고 이전 size()를 그대로 사용해서 로직 오류
+
 ## 난이도 下
 ---
 ### 문자열 조합
@@ -77,6 +133,15 @@ indegree가 0이 되면 그제야 해당 정점에서 갈 수 있는 다음 정�
 #### 2. 경로 역추적
 
 경로 역추적 (임계경로 문제) : [코드](https://lazyartisan.tistory.com/52)
+
+---
+### 그래프 사이클 검출
+
+- 유향 그래프
+  - dfs 하면서 방문하면 traced true, 방문 끝나면 traced false, visited true
+  - dfs 도중 visited true인 노드를 방문하면 해당 dfs 분기 끝, traced true인 노드를 방문하면 사이클 존재.
+- 무향 그래프 : dfs 하면서 부모가 아닌데 또 방문하게 됐다면 사이클 존재
+
 
 ---
 ### 최소 신장 트리 (MST)
