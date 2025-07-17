@@ -3,13 +3,22 @@
 	- [[#튜토#플레이어 생성|플레이어 생성]]
 	- [[#튜토#클라 검증 이동|클라 검증 이동]]
 	- [[#튜토#개체 스폰/디스폰|개체 스폰/디스폰]]
+	- [[#튜토#SyncVar로 색깔 싱크|SyncVar로 색깔 싱크]]
 - [[#Communication|Communication]]
 	- [[#Communication#SyncTypes|SyncTypes]]
 	- [[#Communication#Remote Procedure Calls|Remote Procedure Calls]]
 	- [[#Communication#Broadcasts|Broadcasts]]
 	- [[#Communication#Reliable and Unreliable|Reliable and Unreliable]]
+- [[#SyncTypes|SyncTypes]]
+	- [[#SyncTypes#Host Client Limitations|Host Client Limitations]]
 - [[#Remote Procedure Calls (RPCs)|Remote Procedure Calls (RPCs)]]
 	- [[#Remote Procedure Calls (RPCs)#ServerRpc|ServerRpc]]
+	- [[#Remote Procedure Calls (RPCs)#ObserversRpc|ObserversRpc]]
+	- [[#Remote Procedure Calls (RPCs)#TargetRpc|TargetRpc]]
+	- [[#Remote Procedure Calls (RPCs)#Multi-Purpose Rpc|Multi-Purpose Rpc]]
+	- [[#Remote Procedure Calls (RPCs)#Channels|Channels]]
+	- [[#Remote Procedure Calls (RPCs)#RunLocally|RunLocally]]
+	- [[#Remote Procedure Calls (RPCs)#DataLength|DataLength]]
 
 
 
@@ -46,9 +55,37 @@
 
 ### SyncVar로 색깔 싱크
 - `public readonly SyncVar<Color>` 변수 선언. readonly지만 get set 가능.
-- `color.OnChange`에 색깔 바꾸는 메서드 구독.
+- syncVar color의 `OnChange`에 색깔 바꾸는 메서드 구독.
+- 큐브 만든 후에 Spanw() 전에 syncVar color 바꾸면 연결된 클라에도 색깔 바뀐다
 
+### 카메라 세팅
+멀티 플레이에서 카메라 설정은 복잡해보이지만, 실은 로컬 플레이어 하나 당 카메라 한 개만 있으면 된다.
+1. 로컬 카메라 생성
+	- 메인 카메라를 프리팹화한다
+	- 플레이어 프리팹에 카메라 위치용 빈 게임 오브젝트 생성
+	- `OnStartClient`에서 isOwner라면 Instatiate하는 스크립트 추가
+	- OnStartClient : 이 오브젝트가 생성될 때 클라에서 한 번 실행됨
+2. 씬 카메라 이용
+	- 메인 카메라에 MainCamera 태그 확인
+	- 플레이어 프리팹에 카메라 위치용 빈 게임 오브젝트 생성
+	- `OnOwnershipClient`에서 IsOwner라면 Camera.main을 설정하는 스크립트 추가
+	- OnOwnershipClient : ownership 얻거나 잃을 때 호출됨
+3. 시네머신 기본 설정법
+	- 메인 카메라에 시네머신 브레인 추가
+	- 플레이어 프리팹에 카메라 위치용 빈 게임 오브젝트 생성하고 Cinemachine Camera 컴포넌트 추가
+	- `OnStartClient`에서 cinemachineCamera.enabled = IsOwner;하는 스크립트 추가
 
+### 원격 기기 접속
+1. 서버의 IP 주소 확인
+	- Local Network (LAN) : 서버와 클라가 동일한 로컬 네트워크에 있다면, 서버 기기의 로컬 IP를 알아야 함. 운영체제의 네트워크 세팅 보면 알 수 있다. (ipconfig로 활성화된 네트워크 어댑터의 IPv4 주소를 봐라.)
+	- Public Network (Internet) : 클라들이 인터넷에 연결돼있으면 서버의 public IP 주소를 알아야 한다. 주로 서버가 연결돼있는 라우터의 IP 주소이다. 서버 라우터에 port forwarding을 해서 게임 서버 포트에 들어오는 연결을 허용해야 한다
+2. 클라 연결 설정
+	1. NetworkManager에서 Transport 컴포넌트를 찾는다. (기본은 Tugboat이다. 없으면 추가.)
+	2. Transport 컴포넌트의 `Client Address` 필드를 찾아서 remote server의 주소를 적어라.
+	3. 기본 포트 말고 다른 포트 쓸거면 Port 필드 변경해라.
+3. 빌드 후 연결 테스트
+	1. 빌드한 후에 에디터, 로컬 빌드, 서버 빌드 아무데서나 기기를 하나 실행하고 서버로서 작동하게 한다. 데디케이티드 서버 빌드라면 FishNet server가 자동으로 실행될거고, 아니라면 NetworkHudCanvas Server 버튼이나 Autostart 옵션, 또는 코드에서 직접 시작해야 한다.
+	2. auto-start를 비활성화했다면, Start Client 버튼을 눌러라.
 
 ## Communication
 ---
